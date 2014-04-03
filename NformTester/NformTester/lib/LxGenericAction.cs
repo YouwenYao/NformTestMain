@@ -225,11 +225,11 @@ namespace NformTester.lib
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Search_device_table.Rows[1].Cells[1].PressKeys(item.getArg2Text() + "{TAB}{CONTROL down}{Akey}{CONTROL up}" +item.getArg3Text());
 				Delay.Duration(1000);				
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Next.Click();
-				Delay.Duration(40000);
+				Delay.Duration(4000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Next.Click();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Select_all.Click();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Finish.Click();
-				Delay.Duration(20000);
+				Delay.Duration(2000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device_Results.OK.Click();
 				repo.NFormApp.ManagedDevicesWindow.FormManaged_Devices.Close.Click();								
 			}			

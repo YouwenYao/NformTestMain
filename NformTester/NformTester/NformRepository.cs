@@ -18380,7 +18380,7 @@ namespace NformTester
                     base("FormConfirmActionSetDelete", "/form[@title='Confirm Action Set Delete']", parentFolder, 30000, true, "cf4bf6df-fa68-46e3-a2b9-4c41c33fdccb", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "cf4bf6df-fa68-46e3-a2b9-4c41c33fdccb");
-                _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='&Yes']", 30000, null, "aca1f6fb-b714-4a71-894f-f7665271b0d8");
+                _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='是(&Y)']", 30000, null, "aca1f6fb-b714-4a71-894f-f7665271b0d8");
                 _noInfo = new RepoItemInfo(this, "No", "button[@text='&No']", 30000, null, "fa5e5d3d-b568-4800-8caf-cb6a54db1659");
                 _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='Close']", 30000, null, "9902e3ae-c0ec-416a-9d2a-89841d7aa0d2");
             }
@@ -30409,10 +30409,10 @@ namespace NformTester
                 _enduser_agreementInfo = new RepoItemInfo(this, "EndUser_agreement", "text[@controlid='1451']", 30000, null, "77fb5405-cb11-4c59-987d-718cbd1d455e");
                 _print_eulaInfo = new RepoItemInfo(this, "Print_EULA", "button[@text='Print EULA']", 30000, null, "adf5ef58-1fbb-4b9e-81d5-e3a4249fbcf4");
                 _resetInfo = new RepoItemInfo(this, "Reset", "button[@text='&Reset']", 30000, null, "c797bd68-b891-4359-8e0c-57f085a1e9ec");
-                _sql_sever_nameInfo = new RepoItemInfo(this, "SQL_Sever_name", "text[@controlid='1580']", 30000, null, "ff89de9c-8297-4206-8e9a-f7e87264ea02");
-                _database_nameInfo = new RepoItemInfo(this, "Database_name", "text[@controlid='1582']", 30000, null, "ca86aa4c-ca45-4b74-9996-7a1ed51500e1");
-                _sql_user_nameInfo = new RepoItemInfo(this, "SQL_user_name", "text[@controlid='1388']", 30000, null, "b83291ea-bc2d-462e-8880-a4af4f3403ab");
-                _sql_passwordInfo = new RepoItemInfo(this, "SQL_password", "text[@controlid='1592']", 30000, null, "17f2f4d6-571e-4d15-9bb8-a1499a2701ea");
+                _sql_sever_nameInfo = new RepoItemInfo(this, "SQL_Sever_name", "text[@accessiblename='SQL Server Name:' and @accessiblerole='Text']", 30000, null, "ff89de9c-8297-4206-8e9a-f7e87264ea02");
+                _database_nameInfo = new RepoItemInfo(this, "Database_name", "text[@accessiblename='Database Name:' and @accessiblerole='Text']", 30000, null, "ca86aa4c-ca45-4b74-9996-7a1ed51500e1");
+                _sql_user_nameInfo = new RepoItemInfo(this, "SQL_user_name", "text[@accessiblename='SQL User Name:' and @accessiblerole='Text']", 30000, null, "b83291ea-bc2d-462e-8880-a4af4f3403ab");
+                _sql_passwordInfo = new RepoItemInfo(this, "SQL_password", "text[@accessiblename='SQL Password:' and @accessiblerole='Text']", 30000, null, "17f2f4d6-571e-4d15-9bb8-a1499a2701ea");
             }
 
             /// <summary>
@@ -31179,6 +31179,7 @@ namespace NformTester
             RepoItemInfo _cancelInfo;
             RepoItemInfo _repairbtnInfo;
             RepoItemInfo _finishInfo;
+            RepoItemInfo _buttonignoreInfo;
 
             /// <summary>
             /// Creates a new FormLiebert_Nform_Setup  folder.
@@ -31198,6 +31199,7 @@ namespace NformTester
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "button[@text='&Cancel']", 30000, null, "19405efa-7e31-4dab-b4d6-00e5ee66f1c7");
                 _repairbtnInfo = new RepoItemInfo(this, "RepairBtn", "button[@text='&Repair']", 30000, null, "6122f637-bda6-4790-99a0-3fdc72454820");
                 _finishInfo = new RepoItemInfo(this, "Finish", "button[@text='&Finish']", 30000, null, "1dcc37da-5403-417a-8a43-23c879a1837b");
+                _buttonignoreInfo = new RepoItemInfo(this, "ButtonIgnore", "button[@text='&Ignore']", 30000, null, "8f1fdbc7-9f03-442f-a66e-7679969be02c");
             }
 
             /// <summary>
@@ -31485,6 +31487,30 @@ namespace NformTester
                 get
                 {
                     return _finishInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonIgnore item.
+            /// </summary>
+            [RepositoryItem("8f1fdbc7-9f03-442f-a66e-7679969be02c")]
+            public virtual Ranorex.Button ButtonIgnore
+            {
+                get
+                {
+                    return _buttonignoreInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonIgnore item info.
+            /// </summary>
+            [RepositoryItemInfo("8f1fdbc7-9f03-442f-a66e-7679969be02c")]
+            public virtual RepoItemInfo ButtonIgnoreInfo
+            {
+                get
+                {
+                    return _buttonignoreInfo;
                 }
             }
         }

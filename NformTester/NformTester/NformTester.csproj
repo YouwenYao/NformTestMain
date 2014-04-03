@@ -145,6 +145,58 @@
       <id>ce0d6910-b470-4d36-b5a6-42a413c3d0ad</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\100.30.10_InstallandUninstallprocess.xlsx">
+      <id>577b31f5-362f-4c6f-8bbc-75468ad5c9f9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\100.30.20_InstallViewerOnly.xlsx">
+      <id>bb320c63-b69b-4e79-b068-637c8f77a773</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\100.30.40_InstallFullPackage.xlsx">
+      <id>60f76392-c5a3-496d-97f5-23bf84ac816b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.20.40_AddDevice.xlsx">
+      <id>a9e67be9-b601-4acc-bf66-f95b35204a80</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.20.50_EditDevice.xlsx">
+      <id>e49cb1af-42e5-4cca-b114-072faac1c19a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.30.50_DeleteDevice.xlsx">
+      <id>ecae2506-c84e-4b2c-ae22-299028d6793c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.10_ConfigureEmailAction.xlsx">
+      <id>baa82189-6aa2-4c57-9a54-d768f3f7834a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.20_ConfigureRuncommandAction.xlsx">
+      <id>bcb9c8a9-0ba7-48b5-bb89-b6046cfdbb32</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.30_ConfigureWriteFileAction.xlsx">
+      <id>d57fb111-c6cb-48b7-9f52-064b736ed1e9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.40_ConfigureShutDownAction.xlsx">
+      <id>7dc8d8b3-e11b-4b36-89d9-ae0c754ef514</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.50_ConfigureForwardtrapAction.xlsx">
+      <id>9a3e1aab-3a53-4054-9f59-e7506a246144</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.60_ConfigureReaddataAction.xlsx">
+      <id>d13afefe-63e3-4fd9-8ed3-ab946cb4e3e3</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.70_ConfigureWritedataAction.xlsx">
+      <id>d1f10c9d-4ac3-44d6-8ae8-9a0799dbf7c9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TestScripts.xlsx">
       <id>dc3efe77-47b9-49ba-baaa-19c2af620d18</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

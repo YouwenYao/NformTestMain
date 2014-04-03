@@ -192,6 +192,7 @@ namespace NformTester.lib
 					m_iRowEnd = Convert.ToInt16(range[1]);
 				}
 			}
+		
 			if(m_iRowStart == 1 && m_strApplicationName!="")
 			{
 				m_iProcessId = Host.Local.RunApplication(parseToValue(m_strApplicationName));
