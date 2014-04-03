@@ -48,6 +48,33 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="100.30.20_InstallViewerOnly"
+				id="6831e3c5-8ef7-4d02-bed3-6ab47978d4b1">
+					<testmodule
+					name="TestCaseDriver"
+					id="b256dcc9-6a12-46c7-8c8f-973846654286"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="100.30.40_InstallFullPackage"
+				id="0fdff5eb-ef9d-4d03-afed-b426761db4f6">
+					<testmodule
+					name="TestCaseDriver"
+					id="e8b4b022-b440-4182-a9c6-c9ec33fde807"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="100.30.10_InstallandUninstallprocess"
+				id="b3b4a8f8-7408-41e4-beef-d7d56bc19554">
+					<testmodule
+					name="TestCaseDriver"
+					id="d776f59b-3372-4679-af9d-32d6586f80a7"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="200._Upgrade1"
@@ -309,6 +336,33 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="fa08389d-2796-41bb-8345-651c7c5bd913"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.20.40_AddDevice"
+					id="cac6cfa8-f4ed-4f7a-908f-396ea4a5a5c4">
+						<testmodule
+						name="TestCaseDriver"
+						id="b592d9cd-27d0-4dcb-8a64-92103e5af552"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.20.50_EditDevice"
+					id="c5ea16fb-e4ff-4cb7-aa4c-64242c04861a">
+						<testmodule
+						name="TestCaseDriver"
+						id="46623f79-18dd-4b4b-b810-a52859ada283"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.30.50_DeleteDevice"
+					id="924bc462-e536-4a5e-a7d1-7ec798fb9687">
+						<testmodule
+						name="TestCaseDriver"
+						id="24a333b2-89da-49cf-92d1-5886bbdf91f7"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1150,6 +1204,69 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.20.30.10_ConfigureEmailAction"
+					id="333e18f3-eb9a-493b-bb30-bdeaa2b8f430">
+						<testmodule
+						name="TestCaseDriver"
+						id="887c4c7e-af20-437c-9d07-a89544060126"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.30.20_ConfigureRuncommandAction"
+					id="4ad6d197-b160-4253-a8c5-eabd307362a6">
+						<testmodule
+						name="TestCaseDriver"
+						id="4715e9f2-5675-4616-8621-799b76190ec7"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.30.30_ConfigureWriteFileAction"
+					id="8f87846e-d85a-4c38-8bf4-671ed7fa6331">
+						<testmodule
+						name="TestCaseDriver"
+						id="e0174265-e00b-46a2-9158-9d0d431a15f4"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.30.40_ConfigureShutDownAction"
+					id="c10f1188-32ce-46e3-8db7-dfe168c0731d">
+						<testmodule
+						name="TestCaseDriver"
+						id="218183a6-9afc-4bda-b4e0-3b41005e8121"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.30.50_ConfigureForwardtrapAction"
+					id="ee9a06e4-e723-4ed6-9d0a-85c70d345645">
+						<testmodule
+						name="TestCaseDriver"
+						id="36d6c9df-91ea-48e6-ab8d-116d73369a37"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.30.60_ConfigureReaddataAction"
+					id="36e624c5-65c8-4c99-8832-63ed5ea03628">
+						<testmodule
+						name="TestCaseDriver"
+						id="54d35569-6dc2-4c9e-8d6b-b0b92cca5eb6"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.30.70_ConfigureWritedataAction"
+					id="b02acdf2-601d-4b82-8133-51d9622b1c7f">
+						<testmodule
+						name="TestCaseDriver"
+						id="f9ad8656-88df-499a-a2af-2609b17431e2"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1783,7 +1900,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			<testcase
+			id="b02acdf2-601d-4b82-8133-51d9622b1c7f"/>
+			<testcase
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

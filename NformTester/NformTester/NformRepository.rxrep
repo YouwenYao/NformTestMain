@@ -5976,7 +5976,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='Confirm Action Set Delete']/button[@text='&amp;Yes']
+						/form[@title='Confirm Action Set Delete']/button[@text='&#26159;(&amp;Y)']
 					</item>
 					<item
 					name="No"
@@ -10090,7 +10090,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,nativewindow">
-						/form[@title='Liebert Nform Setup']/text[@controlid='1580']
+						/form[@title='Liebert Nform Setup']/text[@accessiblename='SQL Server Name:' and @accessiblerole='Text']
 					</item>
 					<item
 					name="Database_name"
@@ -10098,7 +10098,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,nativewindow">
-						/form[@title='Liebert Nform Setup']/text[@controlid='1582']
+						/form[@title='Liebert Nform Setup']/text[@accessiblename='Database Name:' and @accessiblerole='Text']
 					</item>
 					<item
 					name="SQL_user_name"
@@ -10106,7 +10106,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,nativewindow">
-						/form[@title='Liebert Nform Setup']/text[@controlid='1388']
+						/form[@title='Liebert Nform Setup']/text[@accessiblename='SQL User Name:' and @accessiblerole='Text']
 					</item>
 					<item
 					name="SQL_password"
@@ -10114,7 +10114,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,nativewindow">
-						/form[@title='Liebert Nform Setup']/text[@controlid='1592']
+						/form[@title='Liebert Nform Setup']/text[@accessiblename='SQL Password:' and @accessiblerole='Text']
 					</item>
 					<basepath>
 						/form[@title='Liebert Nform Setup']
@@ -10268,6 +10268,14 @@ oxiSyOwDKh3IMj0HOwUEyAORov+PF/gZjOWhmzkbXJZ4At2eA7Tyeh3WAAAAAElFTkSuQmCC
 					capname="button"
 					addcaps="button,nativewindow">
 						/form[@title='Liebert Nform Setup']/button[@text='&amp;Finish']
+					</item>
+					<item
+					name="ButtonIgnore"
+					id="8f1fdbc7-9f03-442f-a66e-7679969be02c"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Liebert Nform Setup']/button[@text='&amp;Ignore']
 					</item>
 					<basepath>
 						/form[@title='Liebert Nform Setup']
