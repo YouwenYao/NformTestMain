@@ -529,6 +529,51 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.60.20.10_SNMPSettings"
+					id="a1c9bff5-fba0-44f3-8d23-ae2c9e8e4c23">
+						<testmodule
+						name="TestCaseDriver"
+						id="78f7c6f4-8bf3-47f9-a37a-3dcbc240abda"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.20.100_DisabledForGlobalStatusPolling"
+					id="f1ddc60b-0f94-429f-b163-490ec9d45292">
+						<testmodule
+						name="TestCaseDriver"
+						id="cdd65001-f425-4d9d-856c-fb3d29ee1023"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.20.110_InteractionBetweenPolling"
+					id="a4fa24ce-f4e8-465a-a9dc-c22786700e2c">
+						<testmodule
+						name="TestCaseDriver"
+						id="a3d14ef8-aae3-4a82-b833-de7bdc611f13"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.30.40_IntervalForGlobalStatusPolling"
+					id="faa34360-d0eb-4ca8-b2e0-df5c9f54d97b">
+						<testmodule
+						name="TestCaseDriver"
+						id="1751a192-b7f6-4aa9-97ca-fec75e5e166a"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.30.90_DailyForGlobalStatusPolling"
+					id="45b543fb-1866-4207-8dfb-75d5ca63d83d">
+						<testmodule
+						name="TestCaseDriver"
+						id="1f992622-8d89-431d-8b38-6a6bfc32ddae"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password1"
@@ -1900,13 +1945,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			id="2879a82f-643e-4fc5-b047-df6434a6e45d"/>
 			<testcase
-			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
 			<testcase
-			id="b02acdf2-601d-4b82-8133-51d9622b1c7f"/>
+			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
 			<testcase
-			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
+			id="faa34360-d0eb-4ca8-b2e0-df5c9f54d97b"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

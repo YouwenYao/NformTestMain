@@ -197,6 +197,26 @@
       <id>d1f10c9d-4ac3-44d6-8ae8-9a0799dbf7c9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
+      <id>e23ff235-6cdb-456d-bae0-4a7eb5b60731</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.60.20.10_SNMPSettings.xlsx">
+      <id>6b73f001-e71c-4643-8bb7-2015cc9c830c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.60.20.110_InteractionBetweenPolling.xlsx">
+      <id>cb34b4f4-8a61-48b2-bb8b-c28bea00e84b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.60.30.40_IntervalForGlobalStatusPolling.xlsx">
+      <id>ec179ce7-ea63-4eec-8383-2a8e17883552</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.60.30.90_DailyForGlobalStatusPolling.xlsx">
+      <id>c0765315-25f3-4256-9aa0-dae8014d36e0</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TestScripts.xlsx">
       <id>dc3efe77-47b9-49ba-baaa-19c2af620d18</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
