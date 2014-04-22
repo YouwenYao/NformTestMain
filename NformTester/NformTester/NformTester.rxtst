@@ -366,6 +366,87 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.10.20.10_SamplingIntervalConfiguration"
+					id="b8379f60-6084-4ba6-bc9a-259ce14eda2b">
+						<testmodule
+						name="TestCaseDriver"
+						id="b30ac73f-0cf5-45e9-b53f-28ea0a8a44d1"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.20.30_ConfigurationOnDevice_properties"
+					id="423387dc-8ab5-4d03-b61d-d254e1f8a36b">
+						<testmodule
+						name="TestCaseDriver"
+						id="124e0902-42e5-4889-9187-fdbf9b2d8f29"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.20.60_DataLoggingForDeviceDataPoints"
+					id="eacf7191-4c5e-43c8-845a-499448d6f814">
+						<testmodule
+						name="TestCaseDriver"
+						id="c1b80380-6154-45ad-940c-dfbba511a612"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.20.70_ChangeAlarmSeverity"
+					id="c647918d-dd8c-4ff7-816f-a3c08091e59d">
+						<testmodule
+						name="TestCaseDriver"
+						id="969e245e-adcd-47c1-9292-135c87354d9b"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.20.80_DataPointsNameIsEditableOrNot"
+					id="5d1494f2-304e-406e-8ea8-28758d1c1e3a">
+						<testmodule
+						name="TestCaseDriver"
+						id="c6cfa5bf-2013-4462-ab01-0c9741abb9c9"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.20.90_AlarmDescriptionIsEditable"
+					id="9730cdf5-9603-498f-a825-70e55c7dbc1f">
+						<testmodule
+						name="TestCaseDriver"
+						id="a4a9a9cc-906a-4587-b4e5-146f473ab667"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.20.100_DeviceStatusPriorityPolling"
+					id="5a468944-9ee7-46f6-b61c-ecdf05104f97">
+						<testmodule
+						name="TestCaseDriver"
+						id="aaf77297-035d-465c-a0c7-e50dbab633f7"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.20.110_ConfigurationOnDeviceMaintenanceWindow"
+					id="fe62e0f7-9457-4b3d-97b1-042564389992">
+						<testmodule
+						name="TestCaseDriver"
+						id="72da81b4-3d78-4cc4-a961-11d41447dc61"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.20.120_ManualMaitenanceAndScheduledMaintenance"
+					id="d96cdf9a-9f29-4cc1-a82b-cae5d44b10c5">
+						<testmodule
+						name="TestCaseDriver"
+						id="76cd5fa3-be65-42ee-b7ea-7d0d032d555e"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.020._Actions1"
@@ -526,6 +607,51 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="e730f6a6-f43c-4156-8592-e7a25093463a"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.20.10_SNMPSettings"
+					id="a1c9bff5-fba0-44f3-8d23-ae2c9e8e4c23">
+						<testmodule
+						name="TestCaseDriver"
+						id="78f7c6f4-8bf3-47f9-a37a-3dcbc240abda"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.20.100_DisabledForGlobalStatusPolling"
+					id="f1ddc60b-0f94-429f-b163-490ec9d45292">
+						<testmodule
+						name="TestCaseDriver"
+						id="cdd65001-f425-4d9d-856c-fb3d29ee1023"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.20.110_InteractionBetweenPolling"
+					id="a4fa24ce-f4e8-465a-a9dc-c22786700e2c">
+						<testmodule
+						name="TestCaseDriver"
+						id="a3d14ef8-aae3-4a82-b833-de7bdc611f13"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.30.40_IntervalForGlobalStatusPolling"
+					id="faa34360-d0eb-4ca8-b2e0-df5c9f54d97b">
+						<testmodule
+						name="TestCaseDriver"
+						id="1751a192-b7f6-4aa9-97ca-fec75e5e166a"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.30.90_DailyForGlobalStatusPolling"
+					id="45b543fb-1866-4207-8dfb-75d5ca63d83d">
+						<testmodule
+						name="TestCaseDriver"
+						id="1f992622-8d89-431d-8b38-6a6bfc32ddae"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1900,13 +2026,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			id="402f8845-9c99-4944-86bb-cd38ff268fc2"/>
 			<testcase
-			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
 			<testcase
-			id="b02acdf2-601d-4b82-8133-51d9622b1c7f"/>
+			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
 			<testcase
-			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
+			id="d96cdf9a-9f29-4cc1-a82b-cae5d44b10c5"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

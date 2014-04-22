@@ -157,12 +157,48 @@
       <id>60f76392-c5a3-496d-97f5-23bf84ac816b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.10.20.100_DeviceStatusPriorityPolling.xlsx">
+      <id>ab2f29c8-22f4-424f-a132-eeacf5ec1a3c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.20.10_SamplingIntervalConfiguration.xlsx">
+      <id>ec8f83fd-a614-4311-b242-ec9d9cc7d145</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.20.110_ConfigurationOnDeviceMaintenanceWindow.xlsx">
+      <id>95ba798d-8e9d-4f5c-a3d9-d1be436373d6</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.20.120_ManualMaitenanceAndScheduledMaintenance.xlsx">
+      <id>218517cd-218c-47cd-8301-7ca8a1a5526f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.20.30_ConfigurationOnDevice_properties.xlsx">
+      <id>d39a3ca0-9cc1-4170-9801-5e3f203a0e9a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.10.20.40_AddDevice.xlsx">
       <id>a9e67be9-b601-4acc-bf66-f95b35204a80</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.10.20.50_EditDevice.xlsx">
       <id>e49cb1af-42e5-4cca-b114-072faac1c19a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.20.60_DataLoggingForDeviceDataPoints.xlsx">
+      <id>55211355-ee43-49bc-9e1d-0e10f9325dff</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.20.70_ChangeAlarmSeverity.xlsx">
+      <id>fffec046-fcd4-45f9-af20-92dd88a7099f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.20.80_DataPointsNameIsEditableOrNot.xlsx">
+      <id>342db929-e8e4-40b2-aaef-b91fddc4ceb1</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.20.90_AlarmDescriptionIsEditable.xlsx">
+      <id>b14a46b0-2394-4dea-9615-9ff7e65cc249</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.10.30.50_DeleteDevice.xlsx">
@@ -195,6 +231,26 @@
     </None>
     <None Include="Keywordscripts\600.20.30.70_ConfigureWritedataAction.xlsx">
       <id>d1f10c9d-4ac3-44d6-8ae8-9a0799dbf7c9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
+      <id>e23ff235-6cdb-456d-bae0-4a7eb5b60731</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.60.20.10_SNMPSettings.xlsx">
+      <id>6b73f001-e71c-4643-8bb7-2015cc9c830c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.60.20.110_InteractionBetweenPolling.xlsx">
+      <id>cb34b4f4-8a61-48b2-bb8b-c28bea00e84b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.60.30.40_IntervalForGlobalStatusPolling.xlsx">
+      <id>ec179ce7-ea63-4eec-8383-2a8e17883552</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.60.30.90_DailyForGlobalStatusPolling.xlsx">
+      <id>c0765315-25f3-4256-9aa0-dae8014d36e0</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TestScripts.xlsx">
