@@ -233,6 +233,14 @@
       <id>d1f10c9d-4ac3-44d6-8ae8-9a0799dbf7c9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.30.30.10_AddAndCopyView.xlsx">
+      <id>9acd7a4b-3d61-41ea-b361-6a892a4791ba</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.20_AddAnAreaInTheTreeForExistingView.xlsx">
+      <id>b80e43d8-1aa4-44be-a27b-2cd4e16c07c0</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
       <id>e23ff235-6cdb-456d-bae0-4a7eb5b60731</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

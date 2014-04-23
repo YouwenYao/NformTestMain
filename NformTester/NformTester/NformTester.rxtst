@@ -518,6 +518,24 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.30.30.10_AddAndCopyView"
+					id="c76def3d-e76f-4a23-9c2f-6c226817e93d">
+						<testmodule
+						name="TestCaseDriver"
+						id="720687b4-64ae-4768-9590-5a59c20ad399"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.30.30.20_AddAnAreaInTheTreeForExistingView"
+					id="61106a3e-5cf7-44fb-bd8f-1675a5e41c84">
+						<testmodule
+						name="TestCaseDriver"
+						id="2938b65c-33f2-423b-8d4a-b68397ac9289"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.040._Users_and_Groups1"
@@ -2026,13 +2044,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="402f8845-9c99-4944-86bb-cd38ff268fc2"/>
-			<testcase
 			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
 			<testcase
-			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
+			id="61106a3e-5cf7-44fb-bd8f-1675a5e41c84"/>
 			<testcase
-			id="d96cdf9a-9f29-4cc1-a82b-cae5d44b10c5"/>
+			id="6160e295-00eb-47ec-80a0-e2d91c11f389"/>
+			<testcase
+			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
