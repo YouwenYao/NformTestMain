@@ -536,6 +536,24 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.30.30.40_EditAreaInTreeUnderViews"
+					id="128d2ff0-65c0-42c3-a8f7-c563f6c310cf">
+						<testmodule
+						name="TestCaseDriver"
+						id="5dbb0c24-33e9-4ecf-865f-f3bde21c4d5a"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.30.30.30_AssignNavigationView"
+					id="18b16219-c557-4de1-be9c-2653329d545b">
+						<testmodule
+						name="TestCaseDriver"
+						id="07b85acc-1409-4368-abdd-7dc489d49097"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.040._Users_and_Groups1"
@@ -2044,9 +2062,9 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
+			id="18b16219-c557-4de1-be9c-2653329d545b"/>
 			<testcase
-			id="61106a3e-5cf7-44fb-bd8f-1675a5e41c84"/>
+			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
 			<testcase
 			id="6160e295-00eb-47ec-80a0-e2d91c11f389"/>
 			<testcase

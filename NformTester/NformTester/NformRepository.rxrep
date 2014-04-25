@@ -2812,6 +2812,14 @@ AAAASUVORK5CYII=
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxSaRemindDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']
 					</item>
+					<item
+					name="RawTextNo"
+					id="4cb2a493-195e-4ead-a810-b22712380820"
+					searchtimeout="30000ms"
+					capname="rawtext"
+					addcaps="unknown,rawtext">
+						/form[@controlname='LxSaRemindDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']/rawtext[@rawtext='No' and @row='0']
+					</item>
 					<basepath>
 						/form[@controlname='LxSaRemindDlg']
 					</basepath>

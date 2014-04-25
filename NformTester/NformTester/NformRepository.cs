@@ -8842,6 +8842,7 @@ namespace NformTester
             RepoItemInfo _yesInfo;
             RepoItemInfo _software_assuranceInfo;
             RepoItemInfo _okInfo;
+            RepoItemInfo _rawtextnoInfo;
 
             /// <summary>
             /// Creates a new FormReminder  folder.
@@ -8856,6 +8857,7 @@ namespace NformTester
                 _yesInfo = new RepoItemInfo(this, "Yes", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "c7cef8e8-15ff-4116-8bcf-3eef15e4acb2");
                 _software_assuranceInfo = new RepoItemInfo(this, "Software_Assurance", "text[@controlname='m_infoTbx']/text[@accessiblename~'^The\\ Software\\ Assurance\\ su']", 30000, null, "0f65f3e0-478e-4e35-ac3c-76938d95abc0");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "bbf4e39b-228d-41fa-a70b-e31141a87d8f");
+                _rawtextnoInfo = new RepoItemInfo(this, "RawTextNo", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']/rawtext[@rawtext='No' and @row='0']", 30000, null, "4cb2a493-195e-4ead-a810-b22712380820");
             }
 
             /// <summary>
@@ -9023,6 +9025,30 @@ namespace NformTester
                 get
                 {
                     return _okInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RawTextNo item.
+            /// </summary>
+            [RepositoryItem("4cb2a493-195e-4ead-a810-b22712380820")]
+            public virtual Ranorex.RawText RawTextNo
+            {
+                get
+                {
+                    return _rawtextnoInfo.CreateAdapter<Ranorex.RawText>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RawTextNo item info.
+            /// </summary>
+            [RepositoryItemInfo("4cb2a493-195e-4ead-a810-b22712380820")]
+            public virtual RepoItemInfo RawTextNoInfo
+            {
+                get
+                {
+                    return _rawtextnoInfo;
                 }
             }
         }

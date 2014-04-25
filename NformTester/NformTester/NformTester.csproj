@@ -145,6 +145,9 @@
       <id>ce0d6910-b470-4d36-b5a6-42a413c3d0ad</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="driver\600.30.30.40_EditAreaInTreeUnderViews.xlsx">
+      <id>b8a688fe-cc15-4d1f-b978-9cc9290ccce9</id>
+    </None>
     <None Include="Keywordscripts\100.30.10_InstallandUninstallprocess.xlsx">
       <id>577b31f5-362f-4c6f-8bbc-75468ad5c9f9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -239,6 +242,14 @@
     </None>
     <None Include="Keywordscripts\600.30.30.20_AddAnAreaInTheTreeForExistingView.xlsx">
       <id>b80e43d8-1aa4-44be-a27b-2cd4e16c07c0</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.30_AssignNavigationView.xlsx">
+      <id>168d5b72-50fa-41e9-9a76-49971212ffcc</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.40_EditAreaInTreeUnderViews.xlsx">
+      <id>b3c9aab7-303d-43e9-947c-060a65301913</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
