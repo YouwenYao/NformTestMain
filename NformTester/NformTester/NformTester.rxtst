@@ -532,11 +532,11 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
-					name="TST990_CreateNewUser"
-					id="6b0bbfe3-6585-42e5-a84b-6b41a6590290">
+					name="600.40.20.30_CreateNewUser"
+					id="0170ae9c-5104-4920-8786-ece9e8d9977a">
 						<testmodule
 						name="TestCaseDriver"
-						id="c9a6b776-6f2d-4ab7-af6d-37982e6f99a6"
+						id="0159d529-e8d6-4373-8f74-2328b0738dcf"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -2024,9 +2024,15 @@ reportlevel="Info;20">
 		<testconfiguration
 		name="TestRun">
 			<testcase
+			id="0170ae9c-5104-4920-8786-ece9e8d9977a"/>
+			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="15542ef7-bf90-431d-8e26-f8eb1c05a42e"/>
+			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
+			<testcase
+			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
+			<testcase
+			id="bff3c1c2-4026-4a4f-b05d-5a6ab718b27c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

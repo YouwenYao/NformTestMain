@@ -233,6 +233,10 @@
       <id>d1f10c9d-4ac3-44d6-8ae8-9a0799dbf7c9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.40.20.30_CreateNewUser.xlsx">
+      <id>584e8358-4a13-4a4f-84c8-af5c97c2d950</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
       <id>e23ff235-6cdb-456d-bae0-4a7eb5b60731</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -927,10 +931,6 @@
     </None>
     <None Include="keywordscripts\TST986_AddCustomGroup.xlsx">
       <id>26312dbc-0fa9-4f25-83bd-3bd4de247dda</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="keywordscripts\TST990_CreateNewUser.xlsx">
-      <id>550b342e-f276-496b-9ec0-de308eebb3f9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST992_DeleteUser.xlsx">
