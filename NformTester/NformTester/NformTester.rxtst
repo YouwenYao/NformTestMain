@@ -523,20 +523,20 @@ reportlevel="Info;20">
 				name="600.040._Users_and_Groups1"
 				id="bff3c1c2-4026-4a4f-b05d-5a6ab718b27c">
 					<testcase
-					name="TST986_AddCustomGroup"
-					id="eb05ebbc-01a0-41dc-a302-6db630fe0cd8">
-						<testmodule
-						name="TestCaseDriver"
-						id="3ff950ae-18f5-434d-b6b8-d9616f5955e3"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
 					name="600.40.20.30_CreateNewUser"
 					id="0170ae9c-5104-4920-8786-ece9e8d9977a">
 						<testmodule
 						name="TestCaseDriver"
 						id="0159d529-e8d6-4373-8f74-2328b0738dcf"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.20.50_AddCustomGroup"
+					id="e0bc63fc-8236-455a-9885-aab07ce430c1">
+						<testmodule
+						name="TestCaseDriver"
+						id="89033fd3-6fd2-4e59-956d-8568df14dbbd"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -2024,8 +2024,6 @@ reportlevel="Info;20">
 		<testconfiguration
 		name="TestRun">
 			<testcase
-			id="0170ae9c-5104-4920-8786-ece9e8d9977a"/>
-			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
 			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
@@ -2033,6 +2031,8 @@ reportlevel="Info;20">
 			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
 			<testcase
 			id="bff3c1c2-4026-4a4f-b05d-5a6ab718b27c"/>
+			<testcase
+			id="e0bc63fc-8236-455a-9885-aab07ce430c1"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
