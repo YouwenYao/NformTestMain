@@ -540,6 +540,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.30.70_EditCustomGroup"
+					id="b89e7de1-d024-4a95-b342-e59724fea827">
+						<testmodule
+						name="TestCaseDriver"
+						id="9a45b1f5-9ee7-4176-a4fc-8b317c9b1230"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses1"
@@ -2030,9 +2039,9 @@ reportlevel="Info;20">
 			<testcase
 			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
 			<testcase
-			id="bff3c1c2-4026-4a4f-b05d-5a6ab718b27c"/>
+			id="b89e7de1-d024-4a95-b342-e59724fea827"/>
 			<testcase
-			id="e0bc63fc-8236-455a-9885-aab07ce430c1"/>
+			id="bff3c1c2-4026-4a4f-b05d-5a6ab718b27c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
