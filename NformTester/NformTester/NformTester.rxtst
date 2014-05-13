@@ -549,6 +549,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.30.60_DeleteCustomGroup"
+					id="ca005a45-206d-49ff-8e46-7eb8f5cd56c7">
+						<testmodule
+						name="TestCaseDriver"
+						id="3e4ce30c-eb5f-4970-99ba-13dba3c64d39"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses1"
@@ -2039,9 +2048,9 @@ reportlevel="Info;20">
 			<testcase
 			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
 			<testcase
-			id="b89e7de1-d024-4a95-b342-e59724fea827"/>
-			<testcase
 			id="bff3c1c2-4026-4a4f-b05d-5a6ab718b27c"/>
+			<testcase
+			id="ca005a45-206d-49ff-8e46-7eb8f5cd56c7"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
