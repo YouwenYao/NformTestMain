@@ -269,6 +269,10 @@
       <id>c0765315-25f3-4256-9aa0-dae8014d36e0</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.80.30.20_UserOptionsWithDifferentLanguageOption.xlsx">
+      <id>3fe41def-6186-41e5-9c95-3a661a564cd9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TestScripts.xlsx">
       <id>dc3efe77-47b9-49ba-baaa-19c2af620d18</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

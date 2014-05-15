@@ -10999,7 +10999,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="menuitem"
 					addcaps="menuitem,accessible">
-						/form[@controlname='LxNformToolsGui']/menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Application']
+						/form[@controlname='LxNformToolsGui']/menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Application' or @accessiblename='Anwendung']
 					</item>
 					<item
 					name="Exit"
@@ -11096,6 +11096,14 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					capname="menuitem"
 					addcaps="menuitem,accessible">
 						/form[@controlname='LxNformToolsGui']/menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Install DTD...']
+					</item>
+					<item
+					name="Close"
+					id="917a074c-0004-47ed-8d4a-d630382b1e6f"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxNformToolsGui']/titlebar/button[@accessiblename='Close']
 					</item>
 					<basepath>
 						/form[@controlname='LxNformToolsGui']

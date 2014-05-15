@@ -33695,6 +33695,7 @@ namespace NformTester
             RepoItemInfo _toolsInfo;
             RepoItemInfo _import_2_5_dataInfo;
             RepoItemInfo _install_dtdInfo;
+            RepoItemInfo _closeInfo;
 
             /// <summary>
             /// Creates a new FormLiebertR_Nform_Tools  folder.
@@ -33703,7 +33704,7 @@ namespace NformTester
                     base("FormLiebertR_Nform_Tools", "/form[@controlname='LxNformToolsGui']", parentFolder, 30000, true, "dc460793-f1fb-446a-b4fc-eb0602f0a6f2", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "dc460793-f1fb-446a-b4fc-eb0602f0a6f2");
-                _applicationInfo = new RepoItemInfo(this, "Application", "menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Application']", 30000, null, "ad5b39d7-9c1e-4eff-bae2-eeba6020636c");
+                _applicationInfo = new RepoItemInfo(this, "Application", "menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Application' or @accessiblename='Anwendung']", 30000, null, "ad5b39d7-9c1e-4eff-bae2-eeba6020636c");
                 _exitInfo = new RepoItemInfo(this, "Exit", "menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Application']/menuitem[@accessiblename='Exit']", 30000, null, "37f78b72-fdcd-456e-bf06-f4290bcf2b6f");
                 _serviceInfo = new RepoItemInfo(this, "Service", "menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Application']/menuitem[@accessiblename='Service...']", 30000, null, "1b8d0050-fb78-440f-89fc-219130ae7673");
                 _databaseInfo = new RepoItemInfo(this, "Database", "menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Database']", 30000, null, "d1595011-6797-45f0-8fbf-96247ced5bcf");
@@ -33716,6 +33717,7 @@ namespace NformTester
                 _toolsInfo = new RepoItemInfo(this, "Tools", "menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Tools']", 30000, null, "5add0752-72f0-4fbb-adc2-ef64febb97f6");
                 _import_2_5_dataInfo = new RepoItemInfo(this, "Import_2_5_Data", "menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Import 2.5 Data...']", 30000, null, "f7d696f4-3e8e-418c-99ce-c86936d52655");
                 _install_dtdInfo = new RepoItemInfo(this, "Install_DTD", "menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Install DTD...']", 30000, null, "c02c7b3e-750a-4399-9135-226b22e9e3e1");
+                _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='Close']", 30000, null, "917a074c-0004-47ed-8d4a-d630382b1e6f");
             }
 
             /// <summary>
@@ -34051,6 +34053,30 @@ namespace NformTester
                 get
                 {
                     return _install_dtdInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("917a074c-0004-47ed-8d4a-d630382b1e6f")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("917a074c-0004-47ed-8d4a-d630382b1e6f")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
                 }
             }
         }

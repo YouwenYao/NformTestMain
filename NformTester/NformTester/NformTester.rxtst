@@ -679,7 +679,17 @@ reportlevel="Info;20">
 				id="93cef504-1df9-429b-ac29-1e7d498fbeb4"/>
 				<testcase
 				name="600.080._User_Options1"
-				id="dfa23b34-f9c5-4760-8ff9-15d09c802d64"/>
+				id="dfa23b34-f9c5-4760-8ff9-15d09c802d64">
+					<testcase
+					name="600.80.30.20_UserOptionsWithDifferentLanguageOption"
+					id="3b585a8b-dfb6-4a5e-9553-3838cf1a16a9">
+						<testmodule
+						name="TestCaseDriver"
+						id="c9fb53d8-d2e3-48bc-a4c8-b41ad76cc9a1"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+				</testcase>
 			</testcase>
 			<testcase
 			name="700._Tools1"
@@ -2044,13 +2054,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
+			id="3b585a8b-dfb6-4a5e-9553-3838cf1a16a9"/>
+			<testcase
 			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
 			<testcase
 			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
 			<testcase
-			id="bff3c1c2-4026-4a4f-b05d-5a6ab718b27c"/>
-			<testcase
-			id="ca005a45-206d-49ff-8e46-7eb8f5cd56c7"/>
+			id="dfa23b34-f9c5-4760-8ff9-15d09c802d64"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
