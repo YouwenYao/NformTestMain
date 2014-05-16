@@ -273,6 +273,10 @@
       <id>3fe41def-6186-41e5-9c95-3a661a564cd9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.80.30.40_VerifyGeneralUserOptionsforTimeZone.xlsx">
+      <id>edfdfca6-28d6-4f95-88c9-2d8586827044</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TestScripts.xlsx">
       <id>dc3efe77-47b9-49ba-baaa-19c2af620d18</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

@@ -689,6 +689,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.80.30.40_VerifyGeneralUserOptionsforTimeZone"
+					id="ef5ec7c6-5251-4a01-8ef3-16cad0f2d8a2">
+						<testmodule
+						name="TestCaseDriver"
+						id="e0e5a2f4-106a-46c3-b19d-cfc9a518f5dc"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 			</testcase>
 			<testcase
@@ -2061,6 +2070,8 @@ reportlevel="Info;20">
 			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
 			<testcase
 			id="dfa23b34-f9c5-4760-8ff9-15d09c802d64"/>
+			<testcase
+			id="ef5ec7c6-5251-4a01-8ef3-16cad0f2d8a2"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
