@@ -277,6 +277,10 @@
       <id>edfdfca6-28d6-4f95-88c9-2d8586827044</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\900.20.10_ConfigureTrendingGraph.xlsx">
+      <id>aa92dcb9-c13a-4f58-81fa-4b7c6d3da2da</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\900.20.30_Webpageview.xlsx">
       <id>6079733d-cf4f-401e-b0df-014fb4717867</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

@@ -935,6 +935,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="900.20.10_ConfigureTrendingGraph"
+				id="4d90cd2a-4047-4f86-b19b-1d3b4a889546">
+					<testmodule
+					name="TestCaseDriver"
+					id="28cad11a-768f-4fa3-871b-7453aeab4399"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="1000._Database1"
@@ -2074,9 +2083,9 @@ reportlevel="Info;20">
 			<testcase
 			id="36ac0910-eb83-4b7a-8d17-cd87b98f263c"/>
 			<testcase
-			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
+			id="4d90cd2a-4047-4f86-b19b-1d3b4a889546"/>
 			<testcase
-			id="5e2a1942-0def-47e5-8062-149bdb69a4fb"/>
+			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
