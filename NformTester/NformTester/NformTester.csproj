@@ -277,6 +277,10 @@
       <id>edfdfca6-28d6-4f95-88c9-2d8586827044</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\900.20.30_Webpageview.xlsx">
+      <id>6079733d-cf4f-401e-b0df-014fb4717867</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="keywordscripts\TestScripts.xlsx">
       <id>dc3efe77-47b9-49ba-baaa-19c2af620d18</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

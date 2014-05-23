@@ -926,6 +926,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="900.20.30_Webpageview"
+				id="5e2a1942-0def-47e5-8062-149bdb69a4fb">
+					<testmodule
+					name="TestCaseDriver"
+					id="47fc3584-dd4a-422f-abf6-142b00172fce"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="1000._Database1"
@@ -2063,15 +2072,11 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="3b585a8b-dfb6-4a5e-9553-3838cf1a16a9"/>
+			id="36ac0910-eb83-4b7a-8d17-cd87b98f263c"/>
 			<testcase
 			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
 			<testcase
-			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
-			<testcase
-			id="dfa23b34-f9c5-4760-8ff9-15d09c802d64"/>
-			<testcase
-			id="ef5ec7c6-5251-4a01-8ef3-16cad0f2d8a2"/>
+			id="5e2a1942-0def-47e5-8062-149bdb69a4fb"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
