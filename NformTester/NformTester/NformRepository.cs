@@ -4975,6 +4975,30 @@ namespace NformTester
             RepoItemInfo _pie_height_offset_txtInfo;
             RepoItemInfo _closeInfo;
             RepoItemInfo _applyInfo;
+            RepoItemInfo _severity_pie_height_offset_upInfo;
+            RepoItemInfo _severity_pie_height_offset_downInfo;
+            RepoItemInfo _severity_pie_height_offset_txtInfo;
+            RepoItemInfo _severity_pie_height_offsetInfo;
+            RepoItemInfo _severity_information_offset_upInfo;
+            RepoItemInfo _severity_information_offset_downInfo;
+            RepoItemInfo _severity_information_offset_txtInfo;
+            RepoItemInfo _severity_information_offsetInfo;
+            RepoItemInfo _severity_warning_offset_upInfo;
+            RepoItemInfo _severity_warning_offset_downInfo;
+            RepoItemInfo _severity_warning_offset_txtInfo;
+            RepoItemInfo _severity_warning_offsetInfo;
+            RepoItemInfo _severity_minor_offset_upInfo;
+            RepoItemInfo _severity_minor_offset_downInfo;
+            RepoItemInfo _severity_minor_offset_txtInfo;
+            RepoItemInfo _severity_minor_offsetInfo;
+            RepoItemInfo _severity_major_offset_upInfo;
+            RepoItemInfo _severity_major_offset_downInfo;
+            RepoItemInfo _severity_major_offset_txtInfo;
+            RepoItemInfo _severity_major_offsetInfo;
+            RepoItemInfo _severity_critical_offset_upInfo;
+            RepoItemInfo _severity_critical_offset_downInfo;
+            RepoItemInfo _severity_critical_offset_txtInfo;
+            RepoItemInfo _severity_critical_offsetInfo;
 
             /// <summary>
             /// Creates a new FormConfigure_Global_Gadget_Display  folder.
@@ -5002,18 +5026,18 @@ namespace NformTester
                 _fit_chartInfo = new RepoItemInfo(this, "Fit_chart", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_fitChartCheckBox']", 30000, null, "7016c61a-cbfa-42a1-8a90-30d954f19024");
                 _turn_labels_onInfo = new RepoItemInfo(this, "Turn_labels_on", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_labelsOnOffCheckBox']", 30000, null, "9bf37811-cfa1-4291-8fb5-081686addb4c");
                 _show_zero_sliceInfo = new RepoItemInfo(this, "Show_zero_slice", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_showZeroSliceCheckBox']", 30000, null, "3681a70e-325f-4d1d-aba2-5312424e0315");
-                _unacknowledged_offsetInfo = new RepoItemInfo(this, "Unacknowledged_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/combobox[@accessiblerole='ComboBox']", 30000, null, "9a9d7e21-3487-455a-ae30-423e0117ea65");
-                _unacknowledged_offset_downInfo = new RepoItemInfo(this, "Unacknowledged_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Down']", 30000, null, "4203a2d8-51dd-403d-a091-2c1eeda7e8d0");
-                _unacknowledged_offset_upInfo = new RepoItemInfo(this, "Unacknowledged_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Up']", 30000, null, "b4038c6c-7e55-42f7-a69a-100f63e80386");
-                _unacknowledged_offset_txtInfo = new RepoItemInfo(this, "Unacknowledged_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/text[@controlname='upDownEdit']", 30000, null, "d94ad6eb-a2d4-4115-892c-6fb3efde72a2");
-                _useracknowledged_offsetInfo = new RepoItemInfo(this, "Useracknowledged_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/combobox[@accessiblerole='ComboBox']", 30000, null, "27c3cb6b-075f-401b-a175-d1afa4837ee6");
-                _useracknowledged_offset_downInfo = new RepoItemInfo(this, "Useracknowledged_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Down']", 30000, null, "7b3c2e5e-db80-48ac-8c05-26c059953e4f");
-                _useracknowledged_offset_upInfo = new RepoItemInfo(this, "Useracknowledged_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Up']", 30000, null, "36ed0494-85e6-4c5c-858a-d462dc7b639d");
-                _useracknowledged_offset_txtInfo = new RepoItemInfo(this, "Useracknowledged_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/text[@controlname='upDownEdit']", 30000, null, "c1ce7945-4d13-46a3-95ab-b35f2734759a");
-                _sysacknowledged_offsetInfo = new RepoItemInfo(this, "Sysacknowledged_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/combobox[@accessiblerole='ComboBox']", 30000, null, "80a15a0c-3e97-49a9-9909-ed366a757c5e");
-                _sysacknowledged_offset_downInfo = new RepoItemInfo(this, "Sysacknowledged_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Down']", 30000, null, "dd61c72c-99ae-4870-805f-511f6772658c");
-                _sysacknowledged_offset_upInfo = new RepoItemInfo(this, "Sysacknowledged_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Up']", 30000, null, "3734298f-0668-40c0-8413-5ea1feb1e2a9");
-                _sysacknowledged_offset_txtInfo = new RepoItemInfo(this, "Sysacknowledged_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/text[@controlname='upDownEdit']", 30000, null, "99a81cb8-ac0d-4371-b132-3243449713a5");
+                _unacknowledged_offsetInfo = new RepoItemInfo(this, "Unacknowledged_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/combobox[@accessiblerole='ComboBox']", 30000, null, "9a9d7e21-3487-455a-ae30-423e0117ea65");
+                _unacknowledged_offset_downInfo = new RepoItemInfo(this, "Unacknowledged_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Down']", 30000, null, "4203a2d8-51dd-403d-a091-2c1eeda7e8d0");
+                _unacknowledged_offset_upInfo = new RepoItemInfo(this, "Unacknowledged_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Up']", 30000, null, "b4038c6c-7e55-42f7-a69a-100f63e80386");
+                _unacknowledged_offset_txtInfo = new RepoItemInfo(this, "Unacknowledged_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/text[@controlname='upDownEdit']", 30000, null, "d94ad6eb-a2d4-4115-892c-6fb3efde72a2");
+                _useracknowledged_offsetInfo = new RepoItemInfo(this, "Useracknowledged_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/combobox[@accessiblerole='ComboBox']", 30000, null, "27c3cb6b-075f-401b-a175-d1afa4837ee6");
+                _useracknowledged_offset_downInfo = new RepoItemInfo(this, "Useracknowledged_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Down']", 30000, null, "7b3c2e5e-db80-48ac-8c05-26c059953e4f");
+                _useracknowledged_offset_upInfo = new RepoItemInfo(this, "Useracknowledged_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Up']", 30000, null, "36ed0494-85e6-4c5c-858a-d462dc7b639d");
+                _useracknowledged_offset_txtInfo = new RepoItemInfo(this, "Useracknowledged_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/text[@controlname='upDownEdit']", 30000, null, "c1ce7945-4d13-46a3-95ab-b35f2734759a");
+                _sysacknowledged_offsetInfo = new RepoItemInfo(this, "Sysacknowledged_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/combobox[@accessiblerole='ComboBox']", 30000, null, "80a15a0c-3e97-49a9-9909-ed366a757c5e");
+                _sysacknowledged_offset_downInfo = new RepoItemInfo(this, "Sysacknowledged_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Down']", 30000, null, "dd61c72c-99ae-4870-805f-511f6772658c");
+                _sysacknowledged_offset_upInfo = new RepoItemInfo(this, "Sysacknowledged_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Up']", 30000, null, "3734298f-0668-40c0-8413-5ea1feb1e2a9");
+                _sysacknowledged_offset_txtInfo = new RepoItemInfo(this, "Sysacknowledged_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/text[@controlname='upDownEdit']", 30000, null, "99a81cb8-ac0d-4371-b132-3243449713a5");
                 _pie_height_offsetInfo = new RepoItemInfo(this, "Pie_height_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controlname='m_pieHeightNbx']/combobox[@accessiblerole='ComboBox']", 30000, null, "eeaee424-28a5-405c-b7a2-6e8c395c680a");
                 _pie_height_offset_downInfo = new RepoItemInfo(this, "Pie_height_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Down']", 30000, null, "fc1eee76-d570-41c9-81aa-2487e11236b3");
                 _minorInfo = new RepoItemInfo(this, "Minor", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/button[@controltypename='LxButton' and @instance='2']", 30000, null, "df4b738b-4f1a-4e23-ab17-b6a268f7ba1f");
@@ -5021,6 +5045,30 @@ namespace NformTester
                 _pie_height_offset_txtInfo = new RepoItemInfo(this, "Pie_height_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controlname='m_pieHeightNbx']/text[@controlname='upDownEdit']", 30000, null, "5fc7c374-c7a7-4148-bfca-99a054f338cd");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "e74806b8-b712-455d-9e08-f816bea7d19a");
                 _applyInfo = new RepoItemInfo(this, "Apply", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "4e8cae77-a931-4a25-a6a2-77bf1e4fb500");
+                _severity_pie_height_offset_upInfo = new RepoItemInfo(this, "Severity_Pie_height_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Up']", 30000, null, "54fc18bd-7287-4c27-bca2-08d7e37d92b8");
+                _severity_pie_height_offset_downInfo = new RepoItemInfo(this, "Severity_Pie_height_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Down']", 30000, null, "b5e956df-93ad-4f21-8899-86b4cf425fd1");
+                _severity_pie_height_offset_txtInfo = new RepoItemInfo(this, "Severity_Pie_height_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controlname='m_pieHeightNbx']/text[@controlname='upDownEdit']", 30000, null, "aa2dba31-dfa1-47ea-9301-de759df4c954");
+                _severity_pie_height_offsetInfo = new RepoItemInfo(this, "Severity_Pie_height_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controlname='m_pieHeightNbx']/combobox[@accessiblerole='ComboBox']", 30000, null, "ed2fdee4-f04b-40d6-8da1-0401f1115a3e");
+                _severity_information_offset_upInfo = new RepoItemInfo(this, "Severity_Information_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Up']", 30000, null, "8d4b280b-fe23-46c6-84b9-f2af3d82ba06");
+                _severity_information_offset_downInfo = new RepoItemInfo(this, "Severity_Information_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Down']", 30000, null, "38e24032-b8fb-4404-abad-acfdaf208766");
+                _severity_information_offset_txtInfo = new RepoItemInfo(this, "Severity_Information_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/text[@controlname='upDownEdit']", 30000, null, "99b67d98-5128-4c79-b8dc-bd2c604ffe13");
+                _severity_information_offsetInfo = new RepoItemInfo(this, "Severity_Information_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/combobox[@accessiblerole='ComboBox']", 30000, null, "76a879c4-a362-457d-b6e3-c5febba3c8ae");
+                _severity_warning_offset_upInfo = new RepoItemInfo(this, "Severity_Warning_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Up']", 30000, null, "8a73624a-23f0-4f32-9fb3-616167110a82");
+                _severity_warning_offset_downInfo = new RepoItemInfo(this, "Severity_Warning_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Down']", 30000, null, "cdc93c3d-b664-43a1-ba3f-f80ac15c280c");
+                _severity_warning_offset_txtInfo = new RepoItemInfo(this, "Severity_Warning_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/text[@controlname='upDownEdit']", 30000, null, "b75e4920-ec4b-4980-986f-b9d41c4d3076");
+                _severity_warning_offsetInfo = new RepoItemInfo(this, "Severity_Warning_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/combobox[@accessiblerole='ComboBox']", 30000, null, "c1a48655-04cd-4ecb-a914-f24ef95e24a5");
+                _severity_minor_offset_upInfo = new RepoItemInfo(this, "Severity_Minor_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Up']", 30000, null, "588bb8d3-8071-46b0-9322-85ab67707bf1");
+                _severity_minor_offset_downInfo = new RepoItemInfo(this, "Severity_Minor_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Down']", 30000, null, "2546f678-e563-4ad6-83ed-573f4415061d");
+                _severity_minor_offset_txtInfo = new RepoItemInfo(this, "Severity_Minor_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/text[@controlname='upDownEdit']", 30000, null, "ea9518a0-9ac6-4694-9c90-959471c34e75");
+                _severity_minor_offsetInfo = new RepoItemInfo(this, "Severity_Minor_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/combobox[@accessiblerole='ComboBox']", 30000, null, "f0dd6003-16fc-40fa-bf4b-2c4e58bc1ae5");
+                _severity_major_offset_upInfo = new RepoItemInfo(this, "Severity_Major_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='3']/container/button[@accessiblename='Up']", 30000, null, "cfac3766-95ba-4f59-b755-757bff789eb8");
+                _severity_major_offset_downInfo = new RepoItemInfo(this, "Severity_Major_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='3']/container/button[@accessiblename='Down']", 30000, null, "e2d4af94-d206-4b5d-8ae3-98f84312c207");
+                _severity_major_offset_txtInfo = new RepoItemInfo(this, "Severity_Major_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='3']/text[@controlname='upDownEdit']", 30000, null, "0b5ffd2f-6959-4836-a672-cdbb3c516e16");
+                _severity_major_offsetInfo = new RepoItemInfo(this, "Severity_Major_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='3']/combobox[@accessiblerole='ComboBox']", 30000, null, "ff9e3dfb-7ac4-4582-96c9-276d1f489eee");
+                _severity_critical_offset_upInfo = new RepoItemInfo(this, "Severity_Critical_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='4']/container/button[@accessiblename='Up']", 30000, null, "e1763e49-c5eb-4fd9-a586-b30cdca70389");
+                _severity_critical_offset_downInfo = new RepoItemInfo(this, "Severity_Critical_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='4']/container/button[@accessiblename='Down']", 30000, null, "c0cce2a8-7a8c-488a-8def-dccaac66c462");
+                _severity_critical_offset_txtInfo = new RepoItemInfo(this, "Severity_Critical_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='4']/text[@controlname='upDownEdit']", 30000, null, "6e20f9f0-84d9-4a41-8ff4-9bcb95bbc781");
+                _severity_critical_offsetInfo = new RepoItemInfo(this, "Severity_Critical_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='4']/combobox[@accessiblerole='ComboBox']", 30000, null, "9929cd4b-e6c5-4488-9d90-ee7fe54338ae");
             }
 
             /// <summary>
@@ -5956,6 +6004,582 @@ namespace NformTester
                 get
                 {
                     return _applyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Pie_height_offset_up item.
+            /// </summary>
+            [RepositoryItem("54fc18bd-7287-4c27-bca2-08d7e37d92b8")]
+            public virtual Ranorex.Button Severity_Pie_height_offset_up
+            {
+                get
+                {
+                    return _severity_pie_height_offset_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Pie_height_offset_up item info.
+            /// </summary>
+            [RepositoryItemInfo("54fc18bd-7287-4c27-bca2-08d7e37d92b8")]
+            public virtual RepoItemInfo Severity_Pie_height_offset_upInfo
+            {
+                get
+                {
+                    return _severity_pie_height_offset_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Pie_height_offset_down item.
+            /// </summary>
+            [RepositoryItem("b5e956df-93ad-4f21-8899-86b4cf425fd1")]
+            public virtual Ranorex.Button Severity_Pie_height_offset_down
+            {
+                get
+                {
+                    return _severity_pie_height_offset_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Pie_height_offset_down item info.
+            /// </summary>
+            [RepositoryItemInfo("b5e956df-93ad-4f21-8899-86b4cf425fd1")]
+            public virtual RepoItemInfo Severity_Pie_height_offset_downInfo
+            {
+                get
+                {
+                    return _severity_pie_height_offset_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Pie_height_offset_txt item.
+            /// </summary>
+            [RepositoryItem("aa2dba31-dfa1-47ea-9301-de759df4c954")]
+            public virtual Ranorex.Text Severity_Pie_height_offset_txt
+            {
+                get
+                {
+                    return _severity_pie_height_offset_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Pie_height_offset_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("aa2dba31-dfa1-47ea-9301-de759df4c954")]
+            public virtual RepoItemInfo Severity_Pie_height_offset_txtInfo
+            {
+                get
+                {
+                    return _severity_pie_height_offset_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Pie_height_offset item.
+            /// </summary>
+            [RepositoryItem("ed2fdee4-f04b-40d6-8da1-0401f1115a3e")]
+            public virtual Ranorex.ComboBox Severity_Pie_height_offset
+            {
+                get
+                {
+                    return _severity_pie_height_offsetInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Pie_height_offset item info.
+            /// </summary>
+            [RepositoryItemInfo("ed2fdee4-f04b-40d6-8da1-0401f1115a3e")]
+            public virtual RepoItemInfo Severity_Pie_height_offsetInfo
+            {
+                get
+                {
+                    return _severity_pie_height_offsetInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Information_offset_up item.
+            /// </summary>
+            [RepositoryItem("8d4b280b-fe23-46c6-84b9-f2af3d82ba06")]
+            public virtual Ranorex.Button Severity_Information_offset_up
+            {
+                get
+                {
+                    return _severity_information_offset_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Information_offset_up item info.
+            /// </summary>
+            [RepositoryItemInfo("8d4b280b-fe23-46c6-84b9-f2af3d82ba06")]
+            public virtual RepoItemInfo Severity_Information_offset_upInfo
+            {
+                get
+                {
+                    return _severity_information_offset_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Information_offset_down item.
+            /// </summary>
+            [RepositoryItem("38e24032-b8fb-4404-abad-acfdaf208766")]
+            public virtual Ranorex.Button Severity_Information_offset_down
+            {
+                get
+                {
+                    return _severity_information_offset_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Information_offset_down item info.
+            /// </summary>
+            [RepositoryItemInfo("38e24032-b8fb-4404-abad-acfdaf208766")]
+            public virtual RepoItemInfo Severity_Information_offset_downInfo
+            {
+                get
+                {
+                    return _severity_information_offset_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Information_offset_txt item.
+            /// </summary>
+            [RepositoryItem("99b67d98-5128-4c79-b8dc-bd2c604ffe13")]
+            public virtual Ranorex.Text Severity_Information_offset_txt
+            {
+                get
+                {
+                    return _severity_information_offset_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Information_offset_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("99b67d98-5128-4c79-b8dc-bd2c604ffe13")]
+            public virtual RepoItemInfo Severity_Information_offset_txtInfo
+            {
+                get
+                {
+                    return _severity_information_offset_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Information_offset item.
+            /// </summary>
+            [RepositoryItem("76a879c4-a362-457d-b6e3-c5febba3c8ae")]
+            public virtual Ranorex.ComboBox Severity_Information_offset
+            {
+                get
+                {
+                    return _severity_information_offsetInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Information_offset item info.
+            /// </summary>
+            [RepositoryItemInfo("76a879c4-a362-457d-b6e3-c5febba3c8ae")]
+            public virtual RepoItemInfo Severity_Information_offsetInfo
+            {
+                get
+                {
+                    return _severity_information_offsetInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Warning_offset_up item.
+            /// </summary>
+            [RepositoryItem("8a73624a-23f0-4f32-9fb3-616167110a82")]
+            public virtual Ranorex.Button Severity_Warning_offset_up
+            {
+                get
+                {
+                    return _severity_warning_offset_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Warning_offset_up item info.
+            /// </summary>
+            [RepositoryItemInfo("8a73624a-23f0-4f32-9fb3-616167110a82")]
+            public virtual RepoItemInfo Severity_Warning_offset_upInfo
+            {
+                get
+                {
+                    return _severity_warning_offset_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Warning_offset_down item.
+            /// </summary>
+            [RepositoryItem("cdc93c3d-b664-43a1-ba3f-f80ac15c280c")]
+            public virtual Ranorex.Button Severity_Warning_offset_down
+            {
+                get
+                {
+                    return _severity_warning_offset_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Warning_offset_down item info.
+            /// </summary>
+            [RepositoryItemInfo("cdc93c3d-b664-43a1-ba3f-f80ac15c280c")]
+            public virtual RepoItemInfo Severity_Warning_offset_downInfo
+            {
+                get
+                {
+                    return _severity_warning_offset_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Warning_offset_txt item.
+            /// </summary>
+            [RepositoryItem("b75e4920-ec4b-4980-986f-b9d41c4d3076")]
+            public virtual Ranorex.Text Severity_Warning_offset_txt
+            {
+                get
+                {
+                    return _severity_warning_offset_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Warning_offset_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("b75e4920-ec4b-4980-986f-b9d41c4d3076")]
+            public virtual RepoItemInfo Severity_Warning_offset_txtInfo
+            {
+                get
+                {
+                    return _severity_warning_offset_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Warning_offset item.
+            /// </summary>
+            [RepositoryItem("c1a48655-04cd-4ecb-a914-f24ef95e24a5")]
+            public virtual Ranorex.ComboBox Severity_Warning_offset
+            {
+                get
+                {
+                    return _severity_warning_offsetInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Warning_offset item info.
+            /// </summary>
+            [RepositoryItemInfo("c1a48655-04cd-4ecb-a914-f24ef95e24a5")]
+            public virtual RepoItemInfo Severity_Warning_offsetInfo
+            {
+                get
+                {
+                    return _severity_warning_offsetInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Minor_offset_up item.
+            /// </summary>
+            [RepositoryItem("588bb8d3-8071-46b0-9322-85ab67707bf1")]
+            public virtual Ranorex.Button Severity_Minor_offset_up
+            {
+                get
+                {
+                    return _severity_minor_offset_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Minor_offset_up item info.
+            /// </summary>
+            [RepositoryItemInfo("588bb8d3-8071-46b0-9322-85ab67707bf1")]
+            public virtual RepoItemInfo Severity_Minor_offset_upInfo
+            {
+                get
+                {
+                    return _severity_minor_offset_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Minor_offset_down item.
+            /// </summary>
+            [RepositoryItem("2546f678-e563-4ad6-83ed-573f4415061d")]
+            public virtual Ranorex.Button Severity_Minor_offset_down
+            {
+                get
+                {
+                    return _severity_minor_offset_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Minor_offset_down item info.
+            /// </summary>
+            [RepositoryItemInfo("2546f678-e563-4ad6-83ed-573f4415061d")]
+            public virtual RepoItemInfo Severity_Minor_offset_downInfo
+            {
+                get
+                {
+                    return _severity_minor_offset_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Minor_offset_txt item.
+            /// </summary>
+            [RepositoryItem("ea9518a0-9ac6-4694-9c90-959471c34e75")]
+            public virtual Ranorex.Text Severity_Minor_offset_txt
+            {
+                get
+                {
+                    return _severity_minor_offset_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Minor_offset_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("ea9518a0-9ac6-4694-9c90-959471c34e75")]
+            public virtual RepoItemInfo Severity_Minor_offset_txtInfo
+            {
+                get
+                {
+                    return _severity_minor_offset_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Minor_offset item.
+            /// </summary>
+            [RepositoryItem("f0dd6003-16fc-40fa-bf4b-2c4e58bc1ae5")]
+            public virtual Ranorex.ComboBox Severity_Minor_offset
+            {
+                get
+                {
+                    return _severity_minor_offsetInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Minor_offset item info.
+            /// </summary>
+            [RepositoryItemInfo("f0dd6003-16fc-40fa-bf4b-2c4e58bc1ae5")]
+            public virtual RepoItemInfo Severity_Minor_offsetInfo
+            {
+                get
+                {
+                    return _severity_minor_offsetInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Major_offset_up item.
+            /// </summary>
+            [RepositoryItem("cfac3766-95ba-4f59-b755-757bff789eb8")]
+            public virtual Ranorex.Button Severity_Major_offset_up
+            {
+                get
+                {
+                    return _severity_major_offset_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Major_offset_up item info.
+            /// </summary>
+            [RepositoryItemInfo("cfac3766-95ba-4f59-b755-757bff789eb8")]
+            public virtual RepoItemInfo Severity_Major_offset_upInfo
+            {
+                get
+                {
+                    return _severity_major_offset_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Major_offset_down item.
+            /// </summary>
+            [RepositoryItem("e2d4af94-d206-4b5d-8ae3-98f84312c207")]
+            public virtual Ranorex.Button Severity_Major_offset_down
+            {
+                get
+                {
+                    return _severity_major_offset_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Major_offset_down item info.
+            /// </summary>
+            [RepositoryItemInfo("e2d4af94-d206-4b5d-8ae3-98f84312c207")]
+            public virtual RepoItemInfo Severity_Major_offset_downInfo
+            {
+                get
+                {
+                    return _severity_major_offset_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Major_offset_txt item.
+            /// </summary>
+            [RepositoryItem("0b5ffd2f-6959-4836-a672-cdbb3c516e16")]
+            public virtual Ranorex.Text Severity_Major_offset_txt
+            {
+                get
+                {
+                    return _severity_major_offset_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Major_offset_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("0b5ffd2f-6959-4836-a672-cdbb3c516e16")]
+            public virtual RepoItemInfo Severity_Major_offset_txtInfo
+            {
+                get
+                {
+                    return _severity_major_offset_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Major_offset item.
+            /// </summary>
+            [RepositoryItem("ff9e3dfb-7ac4-4582-96c9-276d1f489eee")]
+            public virtual Ranorex.ComboBox Severity_Major_offset
+            {
+                get
+                {
+                    return _severity_major_offsetInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Major_offset item info.
+            /// </summary>
+            [RepositoryItemInfo("ff9e3dfb-7ac4-4582-96c9-276d1f489eee")]
+            public virtual RepoItemInfo Severity_Major_offsetInfo
+            {
+                get
+                {
+                    return _severity_major_offsetInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Critical_offset_up item.
+            /// </summary>
+            [RepositoryItem("e1763e49-c5eb-4fd9-a586-b30cdca70389")]
+            public virtual Ranorex.Button Severity_Critical_offset_up
+            {
+                get
+                {
+                    return _severity_critical_offset_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Critical_offset_up item info.
+            /// </summary>
+            [RepositoryItemInfo("e1763e49-c5eb-4fd9-a586-b30cdca70389")]
+            public virtual RepoItemInfo Severity_Critical_offset_upInfo
+            {
+                get
+                {
+                    return _severity_critical_offset_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Critical_offset_down item.
+            /// </summary>
+            [RepositoryItem("c0cce2a8-7a8c-488a-8def-dccaac66c462")]
+            public virtual Ranorex.Button Severity_Critical_offset_down
+            {
+                get
+                {
+                    return _severity_critical_offset_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Critical_offset_down item info.
+            /// </summary>
+            [RepositoryItemInfo("c0cce2a8-7a8c-488a-8def-dccaac66c462")]
+            public virtual RepoItemInfo Severity_Critical_offset_downInfo
+            {
+                get
+                {
+                    return _severity_critical_offset_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Critical_offset_txt item.
+            /// </summary>
+            [RepositoryItem("6e20f9f0-84d9-4a41-8ff4-9bcb95bbc781")]
+            public virtual Ranorex.Text Severity_Critical_offset_txt
+            {
+                get
+                {
+                    return _severity_critical_offset_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Critical_offset_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("6e20f9f0-84d9-4a41-8ff4-9bcb95bbc781")]
+            public virtual RepoItemInfo Severity_Critical_offset_txtInfo
+            {
+                get
+                {
+                    return _severity_critical_offset_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Critical_offset item.
+            /// </summary>
+            [RepositoryItem("9929cd4b-e6c5-4488-9d90-ee7fe54338ae")]
+            public virtual Ranorex.ComboBox Severity_Critical_offset
+            {
+                get
+                {
+                    return _severity_critical_offsetInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Critical_offset item info.
+            /// </summary>
+            [RepositoryItemInfo("9929cd4b-e6c5-4488-9d90-ee7fe54338ae")]
+            public virtual RepoItemInfo Severity_Critical_offsetInfo
+            {
+                get
+                {
+                    return _severity_critical_offsetInfo;
                 }
             }
         }
