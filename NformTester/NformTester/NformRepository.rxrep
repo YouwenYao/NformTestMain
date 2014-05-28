@@ -310,7 +310,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_banner']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnAlarm']/text[@controlname='m_statusBtnLbl']
 					</item>
 					<item
-					name="NewAlarmsGadget"
+					name="AlarmsGadget"
 					id="c22bb86d-730b-43d5-be62-fa06958a0072"
 					searchtimeout="30000ms"
 					capname="button"
@@ -318,7 +318,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/toolbar/button[@accessiblename='Alarms...']
 					</item>
 					<item
-					name="NewCommunicationGadget"
+					name="CommunicationGadget"
 					id="e057830b-cc40-4524-8d70-f8aad1f5030b"
 					searchtimeout="30000ms"
 					capname="button"

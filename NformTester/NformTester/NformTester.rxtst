@@ -953,6 +953,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="900.20.40_ReflectedWithChangeMade"
+				id="cb73f6d4-ca57-4cba-abaa-e0a5b04e35ef">
+					<testmodule
+					name="TestCaseDriver"
+					id="a38a86de-a678-46cf-86d9-d4a661d9c301"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="1000._Database1"
@@ -2094,7 +2103,7 @@ reportlevel="Info;20">
 			<testcase
 			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
 			<testcase
-			id="df4b79f8-6e4f-4402-b60c-4b90318ae0bf"/>
+			id="cb73f6d4-ca57-4cba-abaa-e0a5b04e35ef"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

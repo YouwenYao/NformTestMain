@@ -892,8 +892,8 @@ namespace NformTester
             RepoItemInfo _normal_countInfo;
             RepoItemInfo _nocomm_countInfo;
             RepoItemInfo _alarm_countInfo;
-            RepoItemInfo _newalarmsgadgetInfo;
-            RepoItemInfo _newcommunicationgadgetInfo;
+            RepoItemInfo _alarmsgadgetInfo;
+            RepoItemInfo _communicationgadgetInfo;
             RepoItemInfo _static_titleInfo;
             RepoItemInfo _global_optionsInfo;
             RepoItemInfo _scroll_upInfo;
@@ -1032,8 +1032,8 @@ namespace NformTester
                 _normal_countInfo = new RepoItemInfo(this, "Normal_count", "container[@controlname='m_banner']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnNormal']/text[@controlname='m_statusBtnLbl']", 30000, null, "17584ebc-db52-4caf-b909-d149982e940e");
                 _nocomm_countInfo = new RepoItemInfo(this, "NoComm_count", "container[@controlname='m_banner']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnNoComms']/text[@controlname='m_statusBtnLbl']", 30000, null, "4492c106-50ab-40dc-89fc-637a88d06722");
                 _alarm_countInfo = new RepoItemInfo(this, "Alarm_count", "container[@controlname='m_banner']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnAlarm']/text[@controlname='m_statusBtnLbl']", 30000, null, "937c043a-c41c-4747-b909-cdd74df8cccd");
-                _newalarmsgadgetInfo = new RepoItemInfo(this, "NewAlarmsGadget", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/toolbar/button[@accessiblename='Alarms...']", 30000, null, "c22bb86d-730b-43d5-be62-fa06958a0072");
-                _newcommunicationgadgetInfo = new RepoItemInfo(this, "NewCommunicationGadget", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/toolbar/button[@accessiblename='Communication...']", 30000, null, "e057830b-cc40-4524-8d70-f8aad1f5030b");
+                _alarmsgadgetInfo = new RepoItemInfo(this, "AlarmsGadget", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/toolbar/button[@accessiblename='Alarms...']", 30000, null, "c22bb86d-730b-43d5-be62-fa06958a0072");
+                _communicationgadgetInfo = new RepoItemInfo(this, "CommunicationGadget", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/toolbar/button[@accessiblename='Communication...']", 30000, null, "e057830b-cc40-4524-8d70-f8aad1f5030b");
                 _static_titleInfo = new RepoItemInfo(this, "Static_Title", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/toolbar/text[@accessiblename='']", 30000, null, "dee5143e-4d61-4cdc-8312-32547d4543a3");
                 _global_optionsInfo = new RepoItemInfo(this, "Global_Options", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/toolbar/button[@accessiblename='Global options...']", 30000, null, "073ea8e5-ff0b-481d-9b7f-32abbe01f004");
                 _scroll_upInfo = new RepoItemInfo(this, "Scroll_up", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/scrollbar[@style='Vertical']/button[@text='Up']", 30000, null, "fe35d40d-a010-42d8-b789-e068ca4f7743");
@@ -1582,50 +1582,50 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The NewAlarmsGadget item.
+            /// The AlarmsGadget item.
             /// </summary>
             [RepositoryItem("c22bb86d-730b-43d5-be62-fa06958a0072")]
-            public virtual Ranorex.Button NewAlarmsGadget
+            public virtual Ranorex.Button AlarmsGadget
             {
                 get
                 {
-                    return _newalarmsgadgetInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _alarmsgadgetInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The NewAlarmsGadget item info.
+            /// The AlarmsGadget item info.
             /// </summary>
             [RepositoryItemInfo("c22bb86d-730b-43d5-be62-fa06958a0072")]
-            public virtual RepoItemInfo NewAlarmsGadgetInfo
+            public virtual RepoItemInfo AlarmsGadgetInfo
             {
                 get
                 {
-                    return _newalarmsgadgetInfo;
+                    return _alarmsgadgetInfo;
                 }
             }
 
             /// <summary>
-            /// The NewCommunicationGadget item.
+            /// The CommunicationGadget item.
             /// </summary>
             [RepositoryItem("e057830b-cc40-4524-8d70-f8aad1f5030b")]
-            public virtual Ranorex.Button NewCommunicationGadget
+            public virtual Ranorex.Button CommunicationGadget
             {
                 get
                 {
-                    return _newcommunicationgadgetInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _communicationgadgetInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The NewCommunicationGadget item info.
+            /// The CommunicationGadget item info.
             /// </summary>
             [RepositoryItemInfo("e057830b-cc40-4524-8d70-f8aad1f5030b")]
-            public virtual RepoItemInfo NewCommunicationGadgetInfo
+            public virtual RepoItemInfo CommunicationGadgetInfo
             {
                 get
                 {
-                    return _newcommunicationgadgetInfo;
+                    return _communicationgadgetInfo;
                 }
             }
 
