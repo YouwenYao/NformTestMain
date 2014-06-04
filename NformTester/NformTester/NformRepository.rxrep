@@ -371,7 +371,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,accessible">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Severity: All']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Severity: .*']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']
 					</item>
 					<item
 					name="Alarm_severity_setup"
@@ -379,7 +379,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,control,nativewindow">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Severity: All']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Severity: .*']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
 					</item>
 					<item
 					name="Alarm_severity_minimum"
@@ -411,7 +411,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,accessible">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Status: .*']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']
 					</item>
 					<item
 					name="Alarm_status_minimum"
@@ -443,7 +443,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="table"
 					addcaps="table,control,nativewindow">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Device Status: All']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Device Status: .*']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
 					</item>
 					<item
 					name="Device_status_filter"
@@ -451,7 +451,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,accessible">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Device Status: All']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Device Status: .*']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']
 					</item>
 					<item
 					name="Device_status_setup"
@@ -459,7 +459,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,control,nativewindow">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Device Status: All']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Device Status: .*']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
 					</item>
 					<item
 					name="Device_status_minimum"
@@ -1099,7 +1099,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,control,nativewindow">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Status: .*']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
 					</item>
 					<item
 					name="AlarmStatusTable_UPS"
@@ -1131,7 +1131,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="table"
 					addcaps="table,control,nativewindow">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Status: .*']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
 					</item>
 					<item
 					name="AlarmLineUp"
@@ -1228,6 +1228,14 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					capname="menuitem"
 					addcaps="menuitem,accessible">
 						/form[@controlname='LxViewerFrame']/menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configura']/menuitem[@accessiblename='Opzioni utente...']
+					</item>
+					<item
+					name="AlarmSeverityTable"
+					id="bf9920a1-680e-4503-9ffb-9adb2b24f2bc"
+					searchtimeout="30000ms"
+					capname="table"
+					addcaps="table,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Severity: .*']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
 					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
