@@ -277,6 +277,10 @@
       <id>edfdfca6-28d6-4f95-88c9-2d8586827044</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\700.20.10_ExportIfExportAllLoggedDataPointsIsChecked.xlsx">
+      <id>e7cb1dbe-71db-4123-84e3-8a8993edfca5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\900.20.10_ConfigureTrendingGraph.xlsx">
       <id>aa92dcb9-c13a-4f58-81fa-4b7c6d3da2da</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
