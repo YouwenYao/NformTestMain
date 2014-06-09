@@ -293,6 +293,10 @@
       <id>0a54b46b-6013-486d-a0b6-2a5525a0e65e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\900.30.140_GadgetDisplayInformationInCorrespondingState.xlsx">
+      <id>1715f0bf-98fc-452e-a7f1-6ed7896b8ce1</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\900.30.160_GadgetFilterCapability.xlsx">
       <id>1b67260b-eca9-47e3-87ca-f56ae9fef13a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
