@@ -721,6 +721,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="700.30.90_DataLogHistoryforDevicesshowingtheresultssuccessandfailed"
+				id="0a0795b4-28c0-40b8-83ad-1edfaeae4b1a">
+					<testmodule
+					name="TestCaseDriver"
+					id="3b2fc5f7-cbcf-4c8a-8e70-877946442b72"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="800._Help1"
