@@ -233,13 +233,28 @@
       <id>d1f10c9d-4ac3-44d6-8ae8-9a0799dbf7c9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Keywordscripts\600.30.30.10_AddAndCopyView.xlsx">
+  <None Include="Keywordscripts\600.30.30.10_AddAndCopyView.xlsx">
       <id>9acd7a4b-3d61-41ea-b361-6a892a4791ba</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.30.30.20_AddAnAreaInTheTreeForExistingView.xlsx">
       <id>b80e43d8-1aa4-44be-a27b-2cd4e16c07c0</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.40.20.30_CreateNewUser.xlsx">
+      <id>584e8358-4a13-4a4f-84c8-af5c97c2d950</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.40.20.50_AddCustomGroup.xlsx">
+      <id>91f2b414-ad76-4b1c-babb-77d899e4bebd</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.40.30.60_DeleteCustomGroup.xlsx">
+      <id>e752c6b0-6540-4ba5-9b3a-41521dec543d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.40.30.70_EditCustomGroup.xlsx">
+      <id>8df58062-6c46-4d78-9ca1-ca604d531503</id>    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
       <id>e23ff235-6cdb-456d-bae0-4a7eb5b60731</id>
@@ -259,6 +274,46 @@
     </None>
     <None Include="Keywordscripts\600.60.30.90_DailyForGlobalStatusPolling.xlsx">
       <id>c0765315-25f3-4256-9aa0-dae8014d36e0</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.80.30.20_UserOptionsWithDifferentLanguageOption.xlsx">
+      <id>3fe41def-6186-41e5-9c95-3a661a564cd9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.80.30.40_VerifyGeneralUserOptionsforTimeZone.xlsx">
+      <id>edfdfca6-28d6-4f95-88c9-2d8586827044</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\700.20.10_ExportIfExportAllLoggedDataPointsIsChecked.xlsx">
+      <id>e7cb1dbe-71db-4123-84e3-8a8993edfca5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.20.10_ConfigureTrendingGraph.xlsx">
+      <id>aa92dcb9-c13a-4f58-81fa-4b7c6d3da2da</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.20.20_Gadgetglobaloffsetvalue.xlsx">
+      <id>e7d9f66f-2fd1-44e8-958f-4abbc9e0d0fd</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.20.30_Webpageview.xlsx">
+      <id>cf8f0f74-a9b1-42e9-8174-df1d1e5d839d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.20.40_ReflectedWithChangeMade.xlsx">
+      <id>0a54b46b-6013-486d-a0b6-2a5525a0e65e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.30.140_GadgetDisplayInformationInCorrespondingState.xlsx">
+      <id>1715f0bf-98fc-452e-a7f1-6ed7896b8ce1</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.30.160_GadgetFilterCapability.xlsx">
+      <id>1b67260b-eca9-47e3-87ca-f56ae9fef13a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.30.170_DisplayType.xlsx">
+      <id>f5bee873-275c-4176-909f-53bde9564fbe</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TestScripts.xlsx">
@@ -931,14 +986,6 @@
     </None>
     <None Include="Keywordscripts\TST983_UsersGroupManagement.xlsx">
       <id>6523db6d-bc38-46bc-b2d3-c3d1f4ae7e6b</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="keywordscripts\TST986_AddCustomGroup.xlsx">
-      <id>26312dbc-0fa9-4f25-83bd-3bd4de247dda</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="keywordscripts\TST990_CreateNewUser.xlsx">
-      <id>550b342e-f276-496b-9ec0-de308eebb3f9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST992_DeleteUser.xlsx">

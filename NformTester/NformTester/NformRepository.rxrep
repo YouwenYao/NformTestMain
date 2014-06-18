@@ -310,7 +310,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_banner']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnAlarm']/text[@controlname='m_statusBtnLbl']
 					</item>
 					<item
-					name="NewAlarmsGadget"
+					name="AlarmsGadget"
 					id="c22bb86d-730b-43d5-be62-fa06958a0072"
 					searchtimeout="30000ms"
 					capname="button"
@@ -318,7 +318,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/toolbar/button[@accessiblename='Alarms...']
 					</item>
 					<item
-					name="NewCommunicationGadget"
+					name="CommunicationGadget"
 					id="e057830b-cc40-4524-8d70-f8aad1f5030b"
 					searchtimeout="30000ms"
 					capname="button"
@@ -371,7 +371,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,accessible">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Severity: All']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Severity: .*']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']
 					</item>
 					<item
 					name="Alarm_severity_setup"
@@ -379,7 +379,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,control,nativewindow">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Severity: All']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Severity: .*']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
 					</item>
 					<item
 					name="Alarm_severity_minimum"
@@ -411,7 +411,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,accessible">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Status: .*']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']
 					</item>
 					<item
 					name="Alarm_status_minimum"
@@ -443,7 +443,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="table"
 					addcaps="table,control,nativewindow">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Device Status: All']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Device Status: .*']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
 					</item>
 					<item
 					name="Device_status_filter"
@@ -451,7 +451,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,accessible">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Device Status: All']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Device Status: .*']/container[@controlname='m_statusPnl']/container/text[@controlname='m_filterTbx-Ctl']/text[@accessiblename='Filter:']
 					</item>
 					<item
 					name="Device_status_setup"
@@ -459,7 +459,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,control,nativewindow">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Device Status: All']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Device Status: .*']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
 					</item>
 					<item
 					name="Device_status_minimum"
@@ -1099,7 +1099,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,control,nativewindow">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Status: .*']/container[@controlname='m_statusPnl']/button[@controlname='m_setupBtn']
 					</item>
 					<item
 					name="AlarmStatusTable_UPS"
@@ -1131,7 +1131,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="table"
 					addcaps="table,control,nativewindow">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Status: .*']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
 					</item>
 					<item
 					name="AlarmLineUp"
@@ -1228,6 +1228,14 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					capname="menuitem"
 					addcaps="menuitem,accessible">
 						/form[@controlname='LxViewerFrame']/menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configura']/menuitem[@accessiblename='Opzioni utente...']
+					</item>
+					<item
+					name="AlarmSeverityTable"
+					id="bf9920a1-680e-4503-9ffb-9adb2b24f2bc"
+					searchtimeout="30000ms"
+					capname="table"
+					addcaps="table,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Severity: .*']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
 					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
@@ -1608,7 +1616,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="combobox"
 					addcaps="combobox,accessible">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/combobox[@accessiblerole='ComboBox']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/combobox[@accessiblerole='ComboBox']
 					</item>
 					<item
 					name="Unacknowledged_offset_down"
@@ -1616,7 +1624,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,accessible">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Down']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Down']
 					</item>
 					<item
 					name="Unacknowledged_offset_up"
@@ -1624,7 +1632,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,accessible">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Up']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Up']
 					</item>
 					<item
 					name="Unacknowledged_offset_txt"
@@ -1632,7 +1640,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,control,nativewindow">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='0']/text[@controlname='upDownEdit']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/text[@controlname='upDownEdit']
 					</item>
 					<item
 					name="Useracknowledged_offset"
@@ -1640,7 +1648,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="combobox"
 					addcaps="combobox,accessible">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/combobox[@accessiblerole='ComboBox']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/combobox[@accessiblerole='ComboBox']
 					</item>
 					<item
 					name="Useracknowledged_offset_down"
@@ -1648,7 +1656,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,accessible">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Down']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Down']
 					</item>
 					<item
 					name="Useracknowledged_offset_up"
@@ -1656,7 +1664,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,accessible">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Up']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Up']
 					</item>
 					<item
 					name="Useracknowledged_offset_txt"
@@ -1664,7 +1672,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,control,nativewindow">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='1']/text[@controlname='upDownEdit']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/text[@controlname='upDownEdit']
 					</item>
 					<item
 					name="Sysacknowledged_offset"
@@ -1672,7 +1680,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="combobox"
 					addcaps="combobox,accessible">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/combobox[@accessiblerole='ComboBox']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/combobox[@accessiblerole='ComboBox']
 					</item>
 					<item
 					name="Sysacknowledged_offset_down"
@@ -1680,7 +1688,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,accessible">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Down']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Down']
 					</item>
 					<item
 					name="Sysacknowledged_offset_up"
@@ -1688,7 +1696,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,accessible">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Up']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Up']
 					</item>
 					<item
 					name="Sysacknowledged_offset_txt"
@@ -1696,7 +1704,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,control,nativewindow">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@caption='0.05' and @controltypename='LxNumericUpDown' and @instance='2']/text[@controlname='upDownEdit']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/text[@controlname='upDownEdit']
 					</item>
 					<item
 					name="Pie_height_offset"
@@ -1753,6 +1761,198 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="button"
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxCfgGadgetDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']
+					</item>
+					<item
+					name="Severity_Pie_height_offset_up"
+					id="54fc18bd-7287-4c27-bca2-08d7e37d92b8"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="Severity_Pie_height_offset_down"
+					id="b5e956df-93ad-4f21-8899-86b4cf425fd1"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="Severity_Pie_height_offset_txt"
+					id="aa2dba31-dfa1-47ea-9301-de759df4c954"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controlname='m_pieHeightNbx']/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="Severity_Pie_height_offset"
+					id="ed2fdee4-f04b-40d6-8da1-0401f1115a3e"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controlname='m_pieHeightNbx']/combobox[@accessiblerole='ComboBox']
+					</item>
+					<item
+					name="Severity_Information_offset_up"
+					id="8d4b280b-fe23-46c6-84b9-f2af3d82ba06"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="Severity_Information_offset_down"
+					id="38e24032-b8fb-4404-abad-acfdaf208766"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="Severity_Information_offset_txt"
+					id="99b67d98-5128-4c79-b8dc-bd2c604ffe13"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="Severity_Information_offset"
+					id="76a879c4-a362-457d-b6e3-c5febba3c8ae"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/combobox[@accessiblerole='ComboBox']
+					</item>
+					<item
+					name="Severity_Warning_offset_up"
+					id="8a73624a-23f0-4f32-9fb3-616167110a82"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="Severity_Warning_offset_down"
+					id="cdc93c3d-b664-43a1-ba3f-f80ac15c280c"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="Severity_Warning_offset_txt"
+					id="b75e4920-ec4b-4980-986f-b9d41c4d3076"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="Severity_Warning_offset"
+					id="c1a48655-04cd-4ecb-a914-f24ef95e24a5"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/combobox[@accessiblerole='ComboBox']
+					</item>
+					<item
+					name="Severity_Minor_offset_up"
+					id="588bb8d3-8071-46b0-9322-85ab67707bf1"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="Severity_Minor_offset_down"
+					id="2546f678-e563-4ad6-83ed-573f4415061d"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="Severity_Minor_offset_txt"
+					id="ea9518a0-9ac6-4694-9c90-959471c34e75"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="Severity_Minor_offset"
+					id="f0dd6003-16fc-40fa-bf4b-2c4e58bc1ae5"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/combobox[@accessiblerole='ComboBox']
+					</item>
+					<item
+					name="Severity_Major_offset_up"
+					id="cfac3766-95ba-4f59-b755-757bff789eb8"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='3']/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="Severity_Major_offset_down"
+					id="e2d4af94-d206-4b5d-8ae3-98f84312c207"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='3']/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="Severity_Major_offset_txt"
+					id="0b5ffd2f-6959-4836-a672-cdbb3c516e16"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='3']/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="Severity_Major_offset"
+					id="ff9e3dfb-7ac4-4582-96c9-276d1f489eee"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='3']/combobox[@accessiblerole='ComboBox']
+					</item>
+					<item
+					name="Severity_Critical_offset_up"
+					id="e1763e49-c5eb-4fd9-a586-b30cdca70389"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='4']/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="Severity_Critical_offset_down"
+					id="c0cce2a8-7a8c-488a-8def-dccaac66c462"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='4']/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="Severity_Critical_offset_txt"
+					id="6e20f9f0-84d9-4a41-8ff4-9bcb95bbc781"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='4']/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="Severity_Critical_offset"
+					id="9929cd4b-e6c5-4488-9d90-ee7fe54338ae"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='4']/combobox[@accessiblerole='ComboBox']
 					</item>
 					<basepath>
 						/form[@controlname='LxCfgGadgetDlg']
@@ -10999,7 +11199,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="menuitem"
 					addcaps="menuitem,accessible">
-						/form[@controlname='LxNformToolsGui']/menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Application']
+						/form[@controlname='LxNformToolsGui']/menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Application' or @accessiblename='Anwendung']
 					</item>
 					<item
 					name="Exit"
@@ -11096,6 +11296,14 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					capname="menuitem"
 					addcaps="menuitem,accessible">
 						/form[@controlname='LxNformToolsGui']/menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Install DTD...']
+					</item>
+					<item
+					name="Close"
+					id="917a074c-0004-47ed-8d4a-d630382b1e6f"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxNformToolsGui']/titlebar/button[@accessiblename='Close']
 					</item>
 					<basepath>
 						/form[@controlname='LxNformToolsGui']
