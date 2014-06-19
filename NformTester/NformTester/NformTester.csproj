@@ -287,6 +287,10 @@
     </None>
     <None Include="Keywordscripts\700.30.10_ExportActionHistoryforDeviceTypewithThreeTypes.xlsx">
       <id>4fd70c4c-c69d-4af7-a2df-d61f36bb4bb1</id>
+	   <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\700.30.60_ExportActionHistoryforAllAlarmTypewithSpecifiedStartandEndDate.xlsx">
+      <id>a5a760bc-8463-45f9-ae4e-da70cfc8fd15</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\700.30.70_ActionHistoryforAllAlarmTypeWithTheSpecifiedSeparator.xlsx">
