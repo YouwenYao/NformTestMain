@@ -2017,6 +2017,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="700.30.100_DataLogHistoryforDevicesforspecificduration"
+				id="0abe7908-373b-4818-9198-8783f72f6822">
+					<testmodule
+					name="TestCaseDriver"
+					id="2120d034-16e0-4f51-86da-b64095862f08"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="800._Help2"
@@ -2140,7 +2149,16 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="0abe7908-373b-4818-9198-8783f72f6822"/>
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="97d8e90e-39f2-4c80-b3df-7ff4e4941dfa"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>

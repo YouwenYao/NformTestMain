@@ -281,6 +281,10 @@
       <id>e7cb1dbe-71db-4123-84e3-8a8993edfca5</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\700.30.100_DataLogHistoryforDevicesforspecificduration.xlsx">
+      <id>dfdfbe17-a5cb-4bbd-829c-20aab27789b0</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\700.30.90_DataLogHistoryforDevicesshowingtheresultssuccessandfailed.xlsx">
       <id>030e9f89-1459-4e36-9b30-7ec1c0db11b7</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
