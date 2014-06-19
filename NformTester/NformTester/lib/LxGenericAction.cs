@@ -376,6 +376,13 @@ namespace NformTester.lib
 				return true;
 			}
 			
+			if(item.m_Type == "C" && item.m_WindowName == "DeleteLocalFile") 
+			{			
+				
+				DeleteLocalFile(item);
+				return true;
+			}
+			
 			if(item.m_Type == "C" && item.m_WindowName == "CloseApplication") 
 			{				
 				AppClose(item);
@@ -1048,5 +1055,24 @@ namespace NformTester.lib
 
             return addr.Replace("\"","");
         }
+		
+		/// Delete a local file
+		public static void DeleteLocalFile(LxScriptItem item)
+		{
+			
+		 Console.WriteLine("*****Start to Delete the File*****");
+			  
+		 string FilePath = parseToValue(item.m_Component);
+		 
+		 System.IO.File.Delete(FilePath);
+	     
+		  Console.WriteLine("*****Finish to Delete the File*****");
+		
+		}
+		
+		
+		
+		
+		
 	}
 }	
