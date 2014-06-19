@@ -2026,6 +2026,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="700.30.70_ActionHistoryforAllAlarmTypeWithTheSpecifiedSeparator"
+				id="553d5984-b91c-443d-906c-5e5b8e65c5b2">
+					<testmodule
+					name="TestCaseDriver"
+					id="8bd2be4e-c9a9-4cea-9f9b-ea5bde724e23"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="800._Help2"
