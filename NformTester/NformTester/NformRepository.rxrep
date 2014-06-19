@@ -2783,6 +2783,1693 @@ Acx2XGFCtAtABoDw1IXriXMBTAPMC+fOnfsPwugApwtgGmBOB9ENnZOIC4Oujmq4RcgGEO0CqLPA
 hmw/eA7sd5JcgGwAyBCYd0hyAUV5AZa2SaXhmYlUjTD1AHJC3EGQYdi3AAAAAElFTkSuQmCC
 					</icon>
 				</appfolder>
+				<appfolder
+				name="FormSaveAs"
+				id="9d75c489-2a7d-48f5-81c3-4d16cabf015c"
+				searchtimeout="30000ms"
+				capname="form"
+				addcaps="form,nativewindow"
+				isrooted="True"
+				usecache="True">
+					<item
+					name="Save"
+					id="2e88ba16-3142-40ad-abfd-8762bc17cfb3"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Save As']/button[@text='&amp;Save']
+					</item>
+					<item
+					name="Cancel"
+					id="2fbb7b13-5c78-4e4d-ac47-cbe537f2bf1d"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Save As']/button[@text='Cancel']
+					</item>
+					<item
+					name="FileNameText"
+					id="e30e07e6-827f-4d8e-b184-98c5192a7fc5"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,accessible">
+						/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']/combobox[@accessiblename='File name:']/text[@accessiblename='File name:']
+					</item>
+					<item
+					name="Close"
+					id="043962c0-29d7-42b9-a080-1da1cc539b55"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@title='Save As']/titlebar/button[@accessiblename='Close']
+					</item>
+					<folder
+					name="ControlHost1"
+					id="509ffccb-6ae7-4551-815c-3e5cea9df7f5"
+					searchtimeout="30000ms"
+					capname="container"
+					addcaps="container,accessible"
+					isrooted="True"
+					usecache="True">
+						<item
+						name="LineDown"
+						id="a33db76b-e193-4dcc-b19f-ab0d8b43f0cb"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/scrollbar/button[@accessiblename='Line down']
+						</item>
+						<item
+						name="LineUp"
+						id="c4962d86-aa4c-4f93-bfab-afe68bef4871"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/scrollbar/button[@accessiblename='Line up']
+						</item>
+						<item
+						name="PageDown3"
+						id="efd0953e-9313-4fab-b9e0-af5df9d705a4"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/scrollbar/button[@accessiblename='Page down']
+						</item>
+						<item
+						name="PageUp3"
+						id="eef10a5a-1d32-46fa-85c2-179818f5674e"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/scrollbar/button[@accessiblename='Page up']
+						</item>
+						<item
+						name="Position2"
+						id="ede5cfc2-ac92-4b4a-8fdf-b42d60068f33"
+						searchtimeout="30000ms"
+						capname="indicator"
+						addcaps="indicator,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/scrollbar/indicator[@accessiblename='Position']
+						</item>
+						<item
+						name="Vertical1"
+						id="d6fbbd22-0021-4a78-89d1-7cf2d05cc484"
+						searchtimeout="30000ms"
+						capname="scrollbar"
+						addcaps="scrollbar,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/scrollbar[@accessiblename='Vertical']
+						</item>
+						<item
+						name="Desktop3"
+						id="2a5b02f1-035e-4555-a66f-baafdf5c35e6"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Desktop']
+						</item>
+						<item
+						name="Computer1"
+						id="b656d213-2d0b-488b-a074-fac013f74c95"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Desktop']/treeitem[@accessiblename='Computer']
+						</item>
+						<item
+						name="LocalDiskE1"
+						id="888c1ad3-e809-44d4-bd26-3aef0c8d0bba"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Desktop']/treeitem[@accessiblename='Computer']/treeitem[@accessiblename='Local Disk (E:)']
+						</item>
+						<item
+						name="LocalDiskF1"
+						id="b13d6478-341f-4cf3-8550-4cedac131d60"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Desktop']/treeitem[@accessiblename='Computer']/treeitem[@accessiblename='Local Disk (F:)']
+						</item>
+						<item
+						name="LocalDiskG1"
+						id="cd536904-0f7a-4af7-9dd5-7550271d469a"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Desktop']/treeitem[@accessiblename='Computer']/treeitem[@accessiblename='Local Disk (G:)']
+						</item>
+						<item
+						name="LocalDiskH1"
+						id="e88c879d-ff69-4f8f-9c17-8df2207b6b69"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Desktop']/treeitem[@accessiblename='Computer']/treeitem[@accessiblename='Local Disk (H:)']
+						</item>
+						<item
+						name="OSC1"
+						id="1e37b778-53b5-4ab8-b7e8-7b14f6d1fea2"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Desktop']/treeitem[@accessiblename='Computer']/treeitem[@accessiblename='OS (C:)']
+						</item>
+						<item
+						name="Libraries1"
+						id="4ef62dab-a509-4ff4-815e-fe22d55d644c"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Desktop']/treeitem[@accessiblename='Libraries']
+						</item>
+						<item
+						name="Documents1"
+						id="92aec766-d663-4986-9981-59e7a942ff7d"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Desktop']/treeitem[@accessiblename='Libraries']/treeitem[@accessiblename='Documents']
+						</item>
+						<item
+						name="Music1"
+						id="44f5848c-7d3d-4619-8868-61f1d9e8f63a"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Desktop']/treeitem[@accessiblename='Libraries']/treeitem[@accessiblename='Music']
+						</item>
+						<item
+						name="Pictures1"
+						id="186142a4-e02c-43b1-906e-4387354e5a87"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Desktop']/treeitem[@accessiblename='Libraries']/treeitem[@accessiblename='Pictures']
+						</item>
+						<item
+						name="Videos1"
+						id="90732d60-ce30-46cd-ad82-bf12e75c760a"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Desktop']/treeitem[@accessiblename='Libraries']/treeitem[@accessiblename='Videos']
+						</item>
+						<item
+						name="Network1"
+						id="f59cf0ab-20f4-4574-8866-09ca002fc730"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Desktop']/treeitem[@accessiblename='Network']
+						</item>
+						<item
+						name="Favorites1"
+						id="de852c7c-a412-4141-9bc1-9256b26b507a"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Favorites']
+						</item>
+						<item
+						name="Desktop2"
+						id="46536b35-1580-4467-bbb0-63ef362ca400"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Favorites']/treeitem[@accessiblename='Desktop']
+						</item>
+						<item
+						name="Downloads1"
+						id="4de45b5b-5ff3-4a33-b33d-06772d0bbe5f"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Favorites']/treeitem[@accessiblename='Downloads']
+						</item>
+						<item
+						name="RecentPlaces1"
+						id="ae3cd913-c52a-4d4e-a887-1bbbb659c725"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem,accessible,accessibletreeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree/treeitem[@accessiblename='Favorites']/treeitem[@accessiblename='Recent Places']
+						</item>
+						<item
+						name="NamespaceTreeControl2"
+						id="97851ca5-ed52-429d-a5d9-ae13654a2a1c"
+						searchtimeout="30000ms"
+						capname="tree"
+						addcaps="tree,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']/tree[@accessiblename='Namespace Tree Control']
+						</item>
+						<basepath>
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Control Host']
+						</basepath>
+					</folder>
+					<folder
+					name="DetailsPane1"
+					id="d3dad18a-36fd-4e93-abfd-fe5b7d8ad50a"
+					searchtimeout="30000ms"
+					capname="container"
+					addcaps="container,accessible"
+					isrooted="True"
+					usecache="True">
+						<item
+						name="FileName2"
+						id="6519518e-3681-4cd3-a0b7-7ee2ebcb3eed"
+						searchtimeout="30000ms"
+						capname="combobox"
+						addcaps="combobox,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']/combobox[@accessiblename='File name:']
+						</item>
+						<item
+						name="Open"
+						id="901bced7-50b0-405a-a86b-4b60647fb343"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']/combobox[@accessiblename='File name:']/button[@accessiblename='Open']
+						</item>
+						<item
+						name="SaveAsType1"
+						id="618717a1-1b83-4885-bdf9-63a6dbeabb32"
+						searchtimeout="30000ms"
+						capname="combobox"
+						addcaps="combobox,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']/combobox[@accessiblename='Save as type:']
+						</item>
+						<item
+						name="Open1"
+						id="6d0c366b-7228-48f5-9bc8-2480852d1eaa"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']/combobox[@accessiblename='Save as type:']/button[@accessiblename='Open']
+						</item>
+						<item
+						name="StaticText"
+						id="c9f7cd11-abed-48c6-9582-41cecc44f422"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']/combobox[@accessiblename='Save as type:']/text[@accessiblerole='StaticText']
+						</item>
+						<item
+						name="FileName"
+						id="fb2ddb38-aef7-4118-912b-6684d6fd5a88"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']/text[@accessiblename='File name:']
+						</item>
+						<item
+						name="SaveAsType"
+						id="24e025ff-4209-4b15-92b6-4b77633d4013"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']/text[@accessiblename='Save as type:']
+						</item>
+						<item
+						name="SaveFields"
+						id="cc6c22ff-11e3-4de3-8f15-830888fb55cb"
+						searchtimeout="30000ms"
+						capname="tree"
+						addcaps="tree,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']/tree[@accessiblename='Save Fields']
+						</item>
+						<basepath>
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']
+						</basepath>
+					</folder>
+					<folder
+					name="ShellFolderView1"
+					id="0b4c1ea2-8bcc-438b-b3d5-5375a813e4bd"
+					searchtimeout="30000ms"
+					capname="container"
+					addcaps="container,accessible"
+					isrooted="True"
+					usecache="True">
+						<item
+						name="ColumnLeft3"
+						id="ad9d6911-b35c-4cbf-b9e8-fa75dc5f226e"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/container/scrollbar/button[@accessiblename='Column left']
+						</item>
+						<item
+						name="ColumnRight3"
+						id="d3c45d03-f6a7-4edb-938a-ba723db593e1"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/container/scrollbar/button[@accessiblename='Column right']
+						</item>
+						<item
+						name="PageRight3"
+						id="dfbea738-f6b3-46e6-9f53-8630fd1d573b"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/container/scrollbar/button[@accessiblename='Page right']
+						</item>
+						<item
+						name="Position4"
+						id="41d219e4-7b64-4794-8110-42a9667bc2da"
+						searchtimeout="30000ms"
+						capname="indicator"
+						addcaps="indicator,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/container/scrollbar/indicator[@accessiblename='Position']
+						</item>
+						<item
+						name="HorizontalScrollBar3"
+						id="50af344f-7bd1-4ea7-8428-e9ae059285fc"
+						searchtimeout="30000ms"
+						capname="scrollbar"
+						addcaps="scrollbar,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/container/scrollbar[@accessiblename='Horizontal Scroll Bar']
+						</item>
+						<item
+						name="DateModified4"
+						id="8d5ed0cd-c048-4693-ab28-aaf7bbd84f3f"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/list/button[@accessiblename='Date modified']
+						</item>
+						<item
+						name="FilterDropdown5"
+						id="ca447bbf-ef3a-49ac-a1a6-487b9430a968"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/list/button[@accessiblename='Date modified']/button[@accessiblename='Filter dropdown']
+						</item>
+						<item
+						name="Name4"
+						id="8aecba4d-f640-4114-965f-876a8277cfe4"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/list/button[@accessiblename='Name']
+						</item>
+						<item
+						name="FilterDropdown4"
+						id="77afdb32-f35b-4d97-abe1-edf276061ae0"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/list/button[@accessiblename='Name']/button[@accessiblename='Filter dropdown']
+						</item>
+						<item
+						name="Size4"
+						id="5ce02fa4-508c-4537-9f1e-99949bb565ee"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/list/button[@accessiblename='Size']
+						</item>
+						<item
+						name="FilterDropdown7"
+						id="7b3b9607-8219-48c0-9014-049a979a1ad2"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/list/button[@accessiblename='Size']/button[@accessiblename='Filter dropdown']
+						</item>
+						<item
+						name="Type4"
+						id="d5045b19-e4ef-4b1e-bfad-288e27fbaf6a"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/list/button[@accessiblename='Type']
+						</item>
+						<item
+						name="FilterDropdown6"
+						id="9ac0e5b0-ba7f-412e-85b8-6b2152249056"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/list/button[@accessiblename='Type']/button[@accessiblename='Filter dropdown']
+						</item>
+						<item
+						name="Header1"
+						id="ce28b6c0-e3df-48dc-90ac-8b8fc51923ba"
+						searchtimeout="30000ms"
+						capname="list"
+						addcaps="list,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/list[@accessiblename='Header']
+						</item>
+						<item
+						name="ListItem70030101ExportActionTesting1"
+						id="75a326a8-2fe9-419e-913c-fe8759c651eb"
+						searchtimeout="30000ms"
+						capname="listitem"
+						addcaps="listitem,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_1_Export_Action\ t']
+						</item>
+						<item
+						name="Graphic3"
+						id="5fd384c0-d5a4-4fd7-9c53-ed90bd22b898"
+						searchtimeout="30000ms"
+						capname="picture"
+						addcaps="picture,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_1_Export_Action\ t']/picture[@accessiblerole='Graphic']
+						</item>
+						<item
+						name="DateModified5"
+						id="2a3c7ac5-f3e3-4093-95c7-1c5e0d0965c9"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_1_Export_Action\ t']/text[@accessiblename='Date modified']
+						</item>
+						<item
+						name="Name5"
+						id="f9ad8702-6923-4770-91e1-f0ebce26c46a"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_1_Export_Action\ t']/text[@accessiblename='Name']
+						</item>
+						<item
+						name="Size5"
+						id="d6bd45bc-162b-46e8-9d9f-ebdac01a903d"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_1_Export_Action\ t']/text[@accessiblename='Size']
+						</item>
+						<item
+						name="Type5"
+						id="c14e8765-4d99-45a3-99ed-05aa0afd903f"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_1_Export_Action\ t']/text[@accessiblename='Type']
+						</item>
+						<item
+						name="ListItem70030102ExportActionTesting1"
+						id="5589b7d0-6390-46b3-ab4b-2c0ea98588cb"
+						searchtimeout="30000ms"
+						capname="listitem"
+						addcaps="listitem,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_2_Export_Action\ t']
+						</item>
+						<item
+						name="Graphic4"
+						id="54f8032a-c9ee-4843-8c2a-6710ca5ca075"
+						searchtimeout="30000ms"
+						capname="picture"
+						addcaps="picture,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_2_Export_Action\ t']/picture[@accessiblerole='Graphic']
+						</item>
+						<item
+						name="DateModified6"
+						id="95ae9b2d-5125-4902-b4a9-8ede0d45fe3d"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_2_Export_Action\ t']/text[@accessiblename='Date modified']
+						</item>
+						<item
+						name="Name6"
+						id="8ec7d2d6-daa3-4e34-9709-371a59f7c148"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_2_Export_Action\ t']/text[@accessiblename='Name']
+						</item>
+						<item
+						name="Size6"
+						id="8bec1f4d-5abe-4b80-b39a-12fa8873515c"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_2_Export_Action\ t']/text[@accessiblename='Size']
+						</item>
+						<item
+						name="Type6"
+						id="4176e890-e4a3-4053-b791-16696ff7bdcf"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_2_Export_Action\ t']/text[@accessiblename='Type']
+						</item>
+						<item
+						name="ListItem7003010ExportActionTesting1"
+						id="3aa8b3fa-836f-426a-9495-8c66ca737acf"
+						searchtimeout="30000ms"
+						capname="listitem"
+						addcaps="listitem,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_Export_Action\ tes']
+						</item>
+						<item
+						name="Graphic5"
+						id="fc224d9e-f468-433a-a426-aeb3d0cbe900"
+						searchtimeout="30000ms"
+						capname="picture"
+						addcaps="picture,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_Export_Action\ tes']/picture[@accessiblerole='Graphic']
+						</item>
+						<item
+						name="DateModified7"
+						id="b36150bd-7c66-45d7-ab64-8de5c24ed105"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_Export_Action\ tes']/text[@accessiblename='Date modified']
+						</item>
+						<item
+						name="Name7"
+						id="8729bbf5-4653-4f06-aa40-296049506afc"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_Export_Action\ tes']/text[@accessiblename='Name']
+						</item>
+						<item
+						name="Size7"
+						id="bb1ef1a7-6612-4cd1-8a8e-80568c1d6112"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_Export_Action\ tes']/text[@accessiblename='Size']
+						</item>
+						<item
+						name="Type7"
+						id="6ea8330d-e7e6-4f9c-991d-45cba7c1f853"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/listitem[@accessiblename~'^7003010_Export_Action\ tes']/text[@accessiblename='Type']
+						</item>
+						<item
+						name="ColumnLeft2"
+						id="ca6ce3de-4461-4f1b-aa65-41792ecc86af"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/scrollbar/button[@accessiblename='Column left']
+						</item>
+						<item
+						name="ColumnRight2"
+						id="4f707be5-b930-4645-963e-99ff3d891a0b"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/scrollbar/button[@accessiblename='Column right']
+						</item>
+						<item
+						name="PageRight2"
+						id="5c49f701-46f6-48b3-932e-1305982e5d9f"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/scrollbar/button[@accessiblename='Page right']
+						</item>
+						<item
+						name="Position3"
+						id="8e07e7a0-ea57-499e-8a1d-d8d2fbcb5fbf"
+						searchtimeout="30000ms"
+						capname="indicator"
+						addcaps="indicator,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/scrollbar/indicator[@accessiblename='Position']
+						</item>
+						<item
+						name="HorizontalScrollBar2"
+						id="91486af0-4666-4e89-8db1-120e6d3c3605"
+						searchtimeout="30000ms"
+						capname="scrollbar"
+						addcaps="scrollbar,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list/scrollbar[@accessiblename='Horizontal Scroll Bar']
+						</item>
+						<item
+						name="ItemsView1"
+						id="70163c07-7af1-4197-8fce-dccd93689141"
+						searchtimeout="30000ms"
+						capname="list"
+						addcaps="list,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']/list[@accessiblename='Items View']
+						</item>
+						<basepath>
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Shell Folder View']
+						</basepath>
+					</folder>
+					<folder
+					name="CommandModule1"
+					id="ddff3ae7-2e6d-4d9c-bbd8-da2ff64f0f45"
+					searchtimeout="30000ms"
+					capname="toolbar"
+					addcaps="toolbar,accessible"
+					isrooted="True"
+					usecache="True">
+						<item
+						name="Help"
+						id="e82c25a7-a501-4003-83fd-4202d37037d6"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/toolbar/button[@accessiblename='Help']
+						</item>
+						<item
+						name="NewFolder"
+						id="e2a28461-4c55-488f-9523-3e2cedb3173e"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/toolbar/button[@accessiblename='New folder']
+						</item>
+						<item
+						name="Organize"
+						id="22d4664f-b8cd-4782-b106-4b879bef7466"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/toolbar/button[@accessiblename='Organize']
+						</item>
+						<item
+						name="Views"
+						id="fcd66a01-8539-48ae-bd9b-114c3226331b"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/toolbar/button[@accessiblename='Views']
+						</item>
+						<item
+						name="ViewSlider"
+						id="97ab39e9-b1b6-427d-9bfc-f9f8be8eebf3"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/toolbar/button[@accessiblename='Views']/button[@accessiblename='View Slider']
+						</item>
+						<basepath>
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/toolbar
+						</basepath>
+					</folder>
+					<folder
+					name="DirectUIHWND3"
+					id="bb4b1949-2087-4475-aa16-31c24c526bee"
+					searchtimeout="30000ms"
+					capname="container"
+					addcaps="container,nativewindow"
+					isrooted="True"
+					usecache="True">
+						<item
+						name="CommandModule"
+						id="03ff5771-1063-40b1-ae3b-9c3e4fd57701"
+						searchtimeout="30000ms"
+						capname="toolbar"
+						addcaps="toolbar,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/toolbar[@accessiblename='Command Module']
+						</item>
+						<item
+						name="ApplicationControls"
+						id="dab3c28d-3d62-4504-89c8-3ca457ffe619"
+						searchtimeout="30000ms"
+						capname="tree"
+						addcaps="tree,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/tree[@accessiblename='Application Controls']
+						</item>
+						<item
+						name="CtrlNotifySink"
+						id="9af76e74-f8d1-40c0-a3e4-75dbe48a706d"
+						searchtimeout="30000ms"
+						capname="unknown"
+						addcaps="unknown,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']
+						</item>
+						<item
+						name="NamespaceTreeControl"
+						id="80b7c3e6-2b4b-4e80-b2bc-bb1152ffe2fe"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/text[@caption='Namespace Tree Control']
+						</item>
+						<item
+						name="Down"
+						id="61624023-abed-466a-8727-0e804dfb24ea"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/scrollbar/button[@text='Down']
+						</item>
+						<item
+						name="PageDown"
+						id="f901b2c2-f4fc-4889-b407-94f4c5e3b198"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/scrollbar/button[@text='PageDown']
+						</item>
+						<item
+						name="PageUp"
+						id="27eaada4-d24e-459e-89b7-cf0322f8325e"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/scrollbar/button[@text='PageUp']
+						</item>
+						<item
+						name="ButtonUp"
+						id="3f0b54a2-df2b-4345-b338-5e033aecbd76"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/scrollbar/button[@text='Up']
+						</item>
+						<item
+						name="SomeIndicator"
+						id="90ecf47b-9a2d-4635-aa66-80055ca711c9"
+						searchtimeout="30000ms"
+						capname="indicator"
+						addcaps="indicator">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/scrollbar/indicator
+						</item>
+						<item
+						name="Vertical"
+						id="b4762782-4895-4451-96be-fa6849040ab2"
+						searchtimeout="30000ms"
+						capname="scrollbar"
+						addcaps="scrollbar">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/scrollbar[@style='Vertical']
+						</item>
+						<item
+						name="Desktop1"
+						id="0d7ed78d-56d4-45a7-a95f-f4f6ee08612a"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Desktop']
+						</item>
+						<item
+						name="Computer"
+						id="a32c509b-c434-4e23-9dc5-62768b33c494"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Desktop']/treeitem[@text='Computer']
+						</item>
+						<item
+						name="LocalDiskE"
+						id="7d12d9b2-fbe4-470a-8792-060b159d0d23"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Desktop']/treeitem[@text='Computer']/treeitem[@text='Local Disk (E:)']
+						</item>
+						<item
+						name="LocalDiskF"
+						id="fb71a6ea-431b-424a-8e91-6eda3cfe3b44"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Desktop']/treeitem[@text='Computer']/treeitem[@text='Local Disk (F:)']
+						</item>
+						<item
+						name="LocalDiskG"
+						id="ad1bd7a2-a6a7-4ef9-9d06-02ba37f23919"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Desktop']/treeitem[@text='Computer']/treeitem[@text='Local Disk (G:)']
+						</item>
+						<item
+						name="LocalDiskH"
+						id="802b71b2-3aa7-4b12-963b-b7d8b0077601"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Desktop']/treeitem[@text='Computer']/treeitem[@text='Local Disk (H:)']
+						</item>
+						<item
+						name="OSC"
+						id="f6ca8713-dc4c-4854-a9ba-17a6b37a0924"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Desktop']/treeitem[@text='Computer']/treeitem[@text='OS (C:)']
+						</item>
+						<item
+						name="Libraries"
+						id="85112f57-54b2-4323-afad-85b83ab7550b"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Desktop']/treeitem[@text='Libraries']
+						</item>
+						<item
+						name="Documents"
+						id="5b4a422d-0606-42d3-a624-627b3816e7d1"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Desktop']/treeitem[@text='Libraries']/treeitem[@text='Documents']
+						</item>
+						<item
+						name="Music"
+						id="893f9ab8-6172-40a8-9b81-aac9856cde51"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Desktop']/treeitem[@text='Libraries']/treeitem[@text='Music']
+						</item>
+						<item
+						name="Pictures"
+						id="d22660de-5495-4e67-9fc0-a4e11f5bfeae"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Desktop']/treeitem[@text='Libraries']/treeitem[@text='Pictures']
+						</item>
+						<item
+						name="Videos"
+						id="7676c2b7-3785-4884-a8a0-26301959e29e"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Desktop']/treeitem[@text='Libraries']/treeitem[@text='Videos']
+						</item>
+						<item
+						name="Network"
+						id="61b69d8a-b064-462c-be88-5ef6dd75c9a7"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Desktop']/treeitem[@text='Network']
+						</item>
+						<item
+						name="Favorites"
+						id="9c424299-602f-45d5-9aa1-a718ac79dfac"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Favorites']
+						</item>
+						<item
+						name="Desktop"
+						id="29307ad9-3a82-44f6-a8d4-4315e61940ca"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Favorites']/treeitem[@text='Desktop']
+						</item>
+						<item
+						name="Downloads"
+						id="07630830-7483-4360-8edb-8d0dd844dce3"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Favorites']/treeitem[@text='Downloads']
+						</item>
+						<item
+						name="RecentPlaces"
+						id="1c7d6b80-cfec-47e1-a136-7ddcf9338ca3"
+						searchtimeout="30000ms"
+						capname="treeitem"
+						addcaps="treeitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree/treeitem[@text='Favorites']/treeitem[@text='Recent Places']
+						</item>
+						<item
+						name="Tree100"
+						id="4ad03b47-1287-4e67-bb05-5035823d9196"
+						searchtimeout="30000ms"
+						capname="tree"
+						addcaps="tree,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree[@controlid='100']
+						</item>
+						<item
+						name="NamespaceTreeControl1"
+						id="09f93547-a2c2-4fd3-a4f1-9ec654f08960"
+						searchtimeout="30000ms"
+						capname="unknown"
+						addcaps="unknown,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element[@class='NamespaceTreeControl']
+						</item>
+						<item
+						name="CtrlNotifySink3"
+						id="81f492ae-8689-4950-b248-45fbfc76227c"
+						searchtimeout="30000ms"
+						capname="unknown"
+						addcaps="unknown,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']
+						</item>
+						<item
+						name="CtrlNotifySink1"
+						id="b34c899a-06a9-49ee-8f13-baad29567630"
+						searchtimeout="30000ms"
+						capname="unknown"
+						addcaps="unknown,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[@class='CtrlNotifySink' and @instance='0']
+						</item>
+						<item
+						name="HorizontalScrollBar"
+						id="662b98db-9139-4c28-b704-657ac1550530"
+						searchtimeout="30000ms"
+						capname="scrollbar"
+						addcaps="scrollbar,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[@class='CtrlNotifySink' and @instance='0']/scrollbar[@accessiblename='Horizontal Scroll Bar']
+						</item>
+						<item
+						name="ColumnLeft"
+						id="2b3d44b9-4ae6-415f-8585-cb929f1080e1"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[@class='CtrlNotifySink' and @instance='0']/scrollbar[@accessiblename='Horizontal Scroll Bar']/button[@accessiblename='Column left']
+						</item>
+						<item
+						name="ColumnRight"
+						id="82bd5347-69d1-458d-ada5-0f1f5f851021"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[@class='CtrlNotifySink' and @instance='0']/scrollbar[@accessiblename='Horizontal Scroll Bar']/button[@accessiblename='Column right']
+						</item>
+						<item
+						name="PageRight"
+						id="df059a1b-b94b-481b-be71-e238b9769535"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[@class='CtrlNotifySink' and @instance='0']/scrollbar[@accessiblename='Horizontal Scroll Bar']/button[@accessiblename='Page right']
+						</item>
+						<item
+						name="Position"
+						id="7613ec42-4886-4570-9e5f-82439e5b40ce"
+						searchtimeout="30000ms"
+						capname="indicator"
+						addcaps="indicator,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[@class='CtrlNotifySink' and @instance='0']/scrollbar[@accessiblename='Horizontal Scroll Bar']/indicator[@accessiblename='Position']
+						</item>
+						<item
+						name="Custom"
+						id="2c9375cb-2517-4441-bdbf-3408fbc4870b"
+						searchtimeout="30000ms"
+						capname="scrollbar"
+						addcaps="scrollbar">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[@class='CtrlNotifySink' and @instance='0']/scrollbar[@style='Custom']
+						</item>
+						<item
+						name="Down1"
+						id="589a7c28-436c-4a8d-b8ab-72f419f8702b"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[@class='CtrlNotifySink' and @instance='0']/scrollbar[@style='Custom']/button[@text='Down']
+						</item>
+						<item
+						name="PageDown1"
+						id="044aac58-af47-4171-880a-737a4f75d521"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[@class='CtrlNotifySink' and @instance='0']/scrollbar[@style='Custom']/button[@text='PageDown']
+						</item>
+						<item
+						name="PageUp1"
+						id="5d203068-424a-471a-93de-81b6ed782389"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[@class='CtrlNotifySink' and @instance='0']/scrollbar[@style='Custom']/button[@text='PageUp']
+						</item>
+						<item
+						name="ButtonUp1"
+						id="fce2a5d1-2644-4e58-a41d-f961dd456db5"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[@class='CtrlNotifySink' and @instance='0']/scrollbar[@style='Custom']/button[@text='Up']
+						</item>
+						<item
+						name="SomeIndicator1"
+						id="c8c27dd9-73d3-4c13-9926-51cf899cf8d6"
+						searchtimeout="30000ms"
+						capname="indicator"
+						addcaps="indicator">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[@class='CtrlNotifySink' and @instance='0']/scrollbar[@style='Custom']/indicator
+						</item>
+						<item
+						name="CtrlNotifySink2"
+						id="963db1d6-08ed-4235-926d-6b15badc21d3"
+						searchtimeout="30000ms"
+						capname="unknown"
+						addcaps="unknown,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[2]
+						</item>
+						<item
+						name="Down2"
+						id="c67ea46f-15dc-4da1-baec-3b47bec39978"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[2]/scrollbar/button[@text='Down']
+						</item>
+						<item
+						name="PageDown2"
+						id="97516581-bf4c-41a1-adb2-ccd6bdce13a8"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[2]/scrollbar/button[@text='PageDown']
+						</item>
+						<item
+						name="PageUp2"
+						id="727aea7e-ccdb-4ab7-bd8c-a2af0a9f5ac6"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[2]/scrollbar/button[@text='PageUp']
+						</item>
+						<item
+						name="ButtonUp2"
+						id="5950ece4-1915-4697-a85e-506d835fb0aa"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[2]/scrollbar/button[@text='Up']
+						</item>
+						<item
+						name="SomeIndicator2"
+						id="56c22cda-ad28-4b3d-ba62-3e184f364135"
+						searchtimeout="30000ms"
+						capname="indicator"
+						addcaps="indicator">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[2]/scrollbar/indicator
+						</item>
+						<item
+						name="Custom1"
+						id="945eb12d-af81-4cf3-abbc-b04f5091e2ff"
+						searchtimeout="30000ms"
+						capname="scrollbar"
+						addcaps="scrollbar">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/element[2]/scrollbar[@style='Custom']
+						</item>
+						<item
+						name="DateModified"
+						id="542480f6-36b5-47fa-b289-292912a3bce7"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/list/button[@accessiblename='Date modified']
+						</item>
+						<item
+						name="FilterDropdown1"
+						id="bf076338-e2f7-46cd-88fd-4d2d18f9ff76"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/list/button[@accessiblename='Date modified']/button[@accessiblename='Filter dropdown']
+						</item>
+						<item
+						name="Name"
+						id="96a97d40-2af6-425c-b134-187242bd2c52"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/list/button[@accessiblename='Name']
+						</item>
+						<item
+						name="FilterDropdown"
+						id="551fb1f4-e79b-4586-ad20-ccd04789001e"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/list/button[@accessiblename='Name']/button[@accessiblename='Filter dropdown']
+						</item>
+						<item
+						name="Size"
+						id="e50f98de-58f1-43d4-81fa-5da1b8e803d8"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/list/button[@accessiblename='Size']
+						</item>
+						<item
+						name="FilterDropdown3"
+						id="217bc809-9023-4906-8b29-d3c22509b732"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/list/button[@accessiblename='Size']/button[@accessiblename='Filter dropdown']
+						</item>
+						<item
+						name="Type"
+						id="85e66c27-8b81-43d4-8b3a-610010e13757"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/list/button[@accessiblename='Type']
+						</item>
+						<item
+						name="FilterDropdown2"
+						id="8b064e61-7822-492e-8ed6-7f3de6306902"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/list/button[@accessiblename='Type']/button[@accessiblename='Filter dropdown']
+						</item>
+						<item
+						name="Header"
+						id="bff8feb7-87cf-4378-a675-0a2634c47241"
+						searchtimeout="30000ms"
+						capname="list"
+						addcaps="list,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/list[@accessiblename='Header']
+						</item>
+						<item
+						name="ListItem70030101ExportActionTesting"
+						id="3c3cac4a-f683-45d2-b3aa-a8f62fdaadb6"
+						searchtimeout="30000ms"
+						capname="listitem"
+						addcaps="listitem,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_1_Export_Action\ t']
+						</item>
+						<item
+						name="Graphic"
+						id="e775fcd0-af59-4cbb-bdc5-d65281693416"
+						searchtimeout="30000ms"
+						capname="picture"
+						addcaps="picture,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_1_Export_Action\ t']/picture[@accessiblerole='Graphic']
+						</item>
+						<item
+						name="DateModified1"
+						id="d08438e1-46e6-401a-b481-85dfbed550ff"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_1_Export_Action\ t']/text[@accessiblename='Date modified']
+						</item>
+						<item
+						name="Name1"
+						id="c2ed8fb3-0fe0-44e0-9db9-755f1a2a10a4"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_1_Export_Action\ t']/text[@accessiblename='Name']
+						</item>
+						<item
+						name="Size1"
+						id="24367ed3-a009-4d3a-9f5d-4bc698d6d16c"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_1_Export_Action\ t']/text[@accessiblename='Size']
+						</item>
+						<item
+						name="Type1"
+						id="46e89078-dd48-4bcc-827a-be25cc538b9b"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_1_Export_Action\ t']/text[@accessiblename='Type']
+						</item>
+						<item
+						name="ListItem70030102ExportActionTesting"
+						id="a41c9aaf-2c34-416d-a920-18fb4e2e2f9a"
+						searchtimeout="30000ms"
+						capname="listitem"
+						addcaps="listitem,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_2_Export_Action\ t']
+						</item>
+						<item
+						name="Graphic1"
+						id="192727cd-b1d3-4ba8-a970-493f71636859"
+						searchtimeout="30000ms"
+						capname="picture"
+						addcaps="picture,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_2_Export_Action\ t']/picture[@accessiblerole='Graphic']
+						</item>
+						<item
+						name="DateModified2"
+						id="d1866658-7a1b-4f3c-8a3d-097472060133"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_2_Export_Action\ t']/text[@accessiblename='Date modified']
+						</item>
+						<item
+						name="Name2"
+						id="5247f2a5-0646-4198-b34b-a322d9a63f47"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_2_Export_Action\ t']/text[@accessiblename='Name']
+						</item>
+						<item
+						name="Size2"
+						id="3394896e-868c-48eb-bfdd-adc3466904eb"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_2_Export_Action\ t']/text[@accessiblename='Size']
+						</item>
+						<item
+						name="Type2"
+						id="bab25cc9-72e2-4a80-91b4-fd82fcff9722"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_2_Export_Action\ t']/text[@accessiblename='Type']
+						</item>
+						<item
+						name="ListItem7003010ExportActionTesting"
+						id="356aa7a6-7806-42fc-8311-28b88c02642b"
+						searchtimeout="30000ms"
+						capname="listitem"
+						addcaps="listitem,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_Export_Action\ tes']
+						</item>
+						<item
+						name="Graphic2"
+						id="ae812903-62f7-48de-bc2d-83f3f8d8a49d"
+						searchtimeout="30000ms"
+						capname="picture"
+						addcaps="picture,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_Export_Action\ tes']/picture[@accessiblerole='Graphic']
+						</item>
+						<item
+						name="DateModified3"
+						id="a0eacf4c-3b0c-4f8e-a01e-bdd50b51c619"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_Export_Action\ tes']/text[@accessiblename='Date modified']
+						</item>
+						<item
+						name="Name3"
+						id="9a601129-3f50-4fcf-b2fd-fafe2f7367af"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_Export_Action\ tes']/text[@accessiblename='Name']
+						</item>
+						<item
+						name="Size3"
+						id="ee94a1bf-2d9c-42de-9e6d-adeeb0483ae3"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_Export_Action\ tes']/text[@accessiblename='Size']
+						</item>
+						<item
+						name="Type3"
+						id="33dce7b7-f3ff-49eb-b149-0f4bef1fabe0"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/listitem[@accessiblename~'^7003010_Export_Action\ tes']/text[@accessiblename='Type']
+						</item>
+						<item
+						name="ColumnLeft1"
+						id="c349f9c6-65d3-48e1-a912-dd66a83a7c6f"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/scrollbar/button[@accessiblename='Column left']
+						</item>
+						<item
+						name="ColumnRight1"
+						id="5776729c-84df-4947-8aa2-b759cfc0b7af"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/scrollbar/button[@accessiblename='Column right']
+						</item>
+						<item
+						name="PageRight1"
+						id="76c144cb-de40-4511-9c80-5ede9d225e6e"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/scrollbar/button[@accessiblename='Page right']
+						</item>
+						<item
+						name="Position1"
+						id="0baaf7ef-9b5e-4ffc-b8fc-f0cde3b286c9"
+						searchtimeout="30000ms"
+						capname="indicator"
+						addcaps="indicator,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/scrollbar/indicator[@accessiblename='Position']
+						</item>
+						<item
+						name="HorizontalScrollBar1"
+						id="158e1cca-31fd-4fa1-b399-991e0b82b3a2"
+						searchtimeout="30000ms"
+						capname="scrollbar"
+						addcaps="scrollbar,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list/scrollbar[@accessiblename='Horizontal Scroll Bar']
+						</item>
+						<item
+						name="ItemsView"
+						id="11951cbf-0072-46d5-8807-b7fa86615c46"
+						searchtimeout="30000ms"
+						capname="list"
+						addcaps="list,accessible">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list[@accessiblename='Items View']
+						</item>
+						<item
+						name="DirectUIHWND"
+						id="59a5d614-03b6-4561-bdea-6e40a7812d62"
+						searchtimeout="30000ms"
+						capname="container"
+						addcaps="container,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container[@caption='']
+						</item>
+						<item
+						name="ShellView"
+						id="f4143021-db03-427b-a1fd-e11a311ca5f7"
+						searchtimeout="30000ms"
+						capname="container"
+						addcaps="container,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container[@caption='ShellView']
+						</item>
+						<item
+						name="FloatNotifySink"
+						id="e6a86496-8099-49f1-b400-0e1383f4a524"
+						searchtimeout="30000ms"
+						capname="unknown"
+						addcaps="unknown,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='FloatNotifySink' and @instance='0']
+						</item>
+						<item
+						name="SomeButton"
+						id="a10c95d1-d418-4c91-9cf0-be4225513191"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='FloatNotifySink' and @instance='0']/combobox/button[@text='&gt;']
+						</item>
+						<item
+						name="List1000"
+						id="31253ab3-bd49-4146-8419-79b965c24842"
+						searchtimeout="30000ms"
+						capname="list"
+						addcaps="list,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='FloatNotifySink' and @instance='0']/combobox/list[@controlid='1000']
+						</item>
+						<item
+						name="Text1001"
+						id="1825ffca-8ec6-49a7-ba4a-28abb0fa4a16"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='FloatNotifySink' and @instance='0']/combobox/text[@controlid='1001']
+						</item>
+						<item
+						name="ComboBox"
+						id="9a2e8300-ca7e-4f0f-a5d7-d3774c651af5"
+						searchtimeout="30000ms"
+						capname="combobox"
+						addcaps="combobox,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='FloatNotifySink' and @instance='0']/combobox[@class='ComboBox']
+						</item>
+						<item
+						name="FloatNotifySink1"
+						id="4b5d609a-44a6-463b-8f74-80f11f43567d"
+						searchtimeout="30000ms"
+						capname="unknown"
+						addcaps="unknown,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='FloatNotifySink' and @instance='1']
+						</item>
+						<item
+						name="SomeButton1"
+						id="504450da-063f-4fc6-a526-1baba20557da"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='FloatNotifySink' and @instance='1']/combobox/button[@text='&gt;']
+						</item>
+						<item
+						name="AllFilesAsteriskAsterisk"
+						id="da67a61e-2a05-4c89-a5dc-e7c974a5e332"
+						searchtimeout="30000ms"
+						capname="listitem"
+						addcaps="listitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='FloatNotifySink' and @instance='1']/combobox/list/listitem[@text='All files (*.*)']
+						</item>
+						<item
+						name="CsvFilesAsteriskCsv"
+						id="3ceb34f9-7a4e-4e80-9891-d1e6172ab093"
+						searchtimeout="30000ms"
+						capname="listitem"
+						addcaps="listitem">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='FloatNotifySink' and @instance='1']/combobox/list/listitem[@text='csv files (*.csv)']
+						</item>
+						<item
+						name="List10001"
+						id="44e44cb6-d123-4b7b-a3e2-2ebb09af0061"
+						searchtimeout="30000ms"
+						capname="list"
+						addcaps="list,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='FloatNotifySink' and @instance='1']/combobox/list[@controlid='1000']
+						</item>
+						<item
+						name="ComboBox1"
+						id="c076f611-241f-45c7-9e8d-d04ffea3810d"
+						searchtimeout="30000ms"
+						capname="combobox"
+						addcaps="combobox,nativewindow">
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/element[@class='FloatNotifySink' and @instance='1']/combobox[@class='ComboBox']
+						</item>
+						<basepath>
+							/form[@title='Save As']/element[@class='DUIViewWndClassName']/container
+						</basepath>
+					</folder>
+					<folder
+					name="Container409651"
+					id="6eff343f-528c-4cb7-a9c0-f04450b59b85"
+					searchtimeout="30000ms"
+					capname="container"
+					addcaps="container,nativewindow"
+					isrooted="True"
+					usecache="True">
+						<item
+						name="TravelBand"
+						id="cda09800-cd6c-4161-a361-133fb21ef309"
+						searchtimeout="30000ms"
+						capname="unknown"
+						addcaps="unknown,nativewindow">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@class='TravelBand']
+						</item>
+						<item
+						name="Back"
+						id="30d18fe3-f989-478b-a2d2-2dde2bec6ff8"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,nativeitem,checkable">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@class='TravelBand']/toolbar/button[@text='Back']
+						</item>
+						<item
+						name="Forward"
+						id="3b5e829b-acc1-4038-9fde-7f89a691ec37"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,nativeitem,checkable">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@class='TravelBand']/toolbar/button[@text='Forward']
+						</item>
+						<item
+						name="RecentPages"
+						id="c3fa177f-70da-464d-a0c0-0915e72b2f1e"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,nativeitem,checkable">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@class='TravelBand']/toolbar/button[@text='Recent Pages']
+						</item>
+						<item
+						name="ToolbarWindow321"
+						id="26617104-5d65-4d51-bbdf-da01d2efe64f"
+						searchtimeout="30000ms"
+						capname="toolbar"
+						addcaps="toolbar,nativewindow">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@class='TravelBand']/toolbar[@class='ToolbarWindow32']
+						</item>
+						<item
+						name="UniversalSearchBand"
+						id="f470a5d9-63be-4345-aa0b-5dd8a272c576"
+						searchtimeout="30000ms"
+						capname="unknown"
+						addcaps="unknown,nativewindow">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@class='UniversalSearchBand']
+						</item>
+						<item
+						name="Search"
+						id="b9c96344-5c02-4b01-a0b1-4256e6a82b8c"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,accessible">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@class='UniversalSearchBand']/element/element/container/container/button[@accessiblename='Search']
+						</item>
+						<item
+						name="SearchBox"
+						id="d995a796-126b-4144-a047-25116bd3d827"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,accessible">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@class='UniversalSearchBand']/element/element/container/container/text[@accessiblename='Search Box']
+						</item>
+						<item
+						name="ContainerSearchExport"
+						id="968c0025-1d3f-4b2c-801f-bd518c4178aa"
+						searchtimeout="30000ms"
+						capname="container"
+						addcaps="container,accessible">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@class='UniversalSearchBand']/element/element/container/container[@accessiblename=' Search export']
+						</item>
+						<item
+						name="DirectUIHWND2"
+						id="9bb617e1-1fc5-4cdc-9c03-5504a6c09144"
+						searchtimeout="30000ms"
+						capname="container"
+						addcaps="container,nativewindow">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@class='UniversalSearchBand']/element/element/container[@caption='']
+						</item>
+						<item
+						name="SearchEditBoxWrapperClass"
+						id="1258bdd4-959e-44de-9119-95df15fa6bfd"
+						searchtimeout="30000ms"
+						capname="unknown"
+						addcaps="unknown,nativewindow">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@class='UniversalSearchBand']/element/element[@class='SearchEditBoxWrapperClass']
+						</item>
+						<item
+						name="SearchBox1"
+						id="dac94720-0d5a-4429-b0f4-efe3c48d567e"
+						searchtimeout="30000ms"
+						capname="unknown"
+						addcaps="unknown,nativewindow">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@class='UniversalSearchBand']/element[@class='Search Box']
+						</item>
+						<item
+						name="Element41477"
+						id="70a789b4-18cf-4811-ae83-60e4af73d713"
+						searchtimeout="30000ms"
+						capname="unknown"
+						addcaps="unknown,nativewindow">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@controlid='41477']
+						</item>
+						<item
+						name="Computer2"
+						id="0ba086d5-6789-4509-a727-a397622722ee"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,nativeitem,checkable">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@controlid='41477']/progressbar/element/toolbar/button[@text='Computer']
+						</item>
+						<item
+						name="Desktop4"
+						id="3e7904ca-8719-4784-961f-af6389836dbc"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,nativeitem,checkable">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@controlid='41477']/progressbar/element/toolbar/button[@text='Desktop']
+						</item>
+						<item
+						name="Export"
+						id="3eec2082-ee35-4f87-917a-f7371a475c1f"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,nativeitem,checkable">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@controlid='41477']/progressbar/element/toolbar/button[@text='export']
+						</item>
+						<item
+						name="Nform"
+						id="5c9cf61c-aba0-47ee-8c6f-d92acb572a5b"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,nativeitem,checkable">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@controlid='41477']/progressbar/element/toolbar/button[@text='Nform']
+						</item>
+						<item
+						name="OSC2"
+						id="5b308b3b-29bf-49c3-b3d8-fa236d3d2ad3"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,nativeitem,checkable">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@controlid='41477']/progressbar/element/toolbar/button[@text='OS (C:)']
+						</item>
+						<item
+						name="User"
+						id="2336091c-b20c-4129-9765-b92f78d845e6"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,nativeitem,checkable">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@controlid='41477']/progressbar/element/toolbar/button[@text='user']
+						</item>
+						<item
+						name="ToolBar1001"
+						id="5c09965d-f93e-4c96-80b8-7418a480fe48"
+						searchtimeout="30000ms"
+						capname="toolbar"
+						addcaps="toolbar,nativewindow">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@controlid='41477']/progressbar/element/toolbar[@controlid='1001']
+						</item>
+						<item
+						name="BreadcrumbParent"
+						id="6bc3e078-3e76-4d9d-8f14-4d621636f520"
+						searchtimeout="30000ms"
+						capname="unknown"
+						addcaps="unknown,nativewindow">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@controlid='41477']/progressbar/element[@class='Breadcrumb Parent']
+						</item>
+						<item
+						name="PreviousLocations"
+						id="53f0988a-2aed-4b66-a01b-a21f01b99b5b"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,nativeitem,checkable">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@controlid='41477']/progressbar/toolbar/button[@text='Previous Locations']
+						</item>
+						<item
+						name="RefreshExport"
+						id="e3a20138-3fbb-4ea3-b0ad-91ff41a3ef23"
+						searchtimeout="30000ms"
+						capname="button"
+						addcaps="button,nativeitem,checkable">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@controlid='41477']/progressbar/toolbar/button[@text='Refresh &quot;export&quot;']
+						</item>
+						<item
+						name="ToolbarWindow322"
+						id="25d37bdb-ca41-4ace-a5ca-7a97de65c16b"
+						searchtimeout="30000ms"
+						capname="toolbar"
+						addcaps="toolbar,nativewindow">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@controlid='41477']/progressbar/toolbar[@class='ToolbarWindow32']
+						</item>
+						<item
+						name="MsctlsProgress32"
+						id="28edd6f1-4f14-4dbb-9f45-fb0e0c67ace3"
+						searchtimeout="30000ms"
+						capname="progressbar"
+						addcaps="progressbar,nativewindow">
+							/form[@title='Save As']/element[@class='WorkerW']/container/element[@controlid='41477']/progressbar[@class='msctls_progress32']
+						</item>
+						<basepath>
+							/form[@title='Save As']/element[@class='WorkerW']/container
+						</basepath>
+					</folder>
+					<basepath>
+						/form[@title='Save As']
+					</basepath>
+					<icon>
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAGISURBVDhPY2CgBjhw4MB/cjDcbpBmdIeAxK4u
+kYLjiwsl/5+eI/7/2Ayx//smiYAtJMqAf292/gfjl+v+/3264P/fh73/N7YLEmfA+fkSUI3zgRr7
+/v+9U/n/77WU/0tqeTENwBYGx6aLgW38e7vq/59rqf//XPD//+eM9f+ZJZyYBpzQ4vh/QIPr/3Y1
+7v/rVCA27OgVAtoI0fj7tM3/38c1//8+JPV/Qi5QLXoY7Fbj+v95y/r/r6ZM+D9fgR+sYHUz//8/
+p63//zmm+f/PYan/vw8IgHFvFjumAWuAtr6a2v//blri/34ZIbCC+ZU8/2cUc/2flM/xvy+bHayx
+N4sNuwFzFQT+30lP/H/e0vh/k6QoUekCJRr7ZIT/t0qJ/K+REPtfLCYONqBq/QM4Llt193/B4ltw
+p2OEAbZYAGladOj//75t//+XLP3/P6LzNG4DYM6BmQyiEyZd/N8P1Rw76c9/+9y9pBngXnbwv33e
+3v9W6bv+myZtB2NkC1DCgKLMREmOBgC1SP1voJFAuQAAAABJRU5ErkJggg==
+					</icon>
+				</appfolder>
 			</folder>
 			<folder
 			name="LicensesWindow"

@@ -2053,6 +2053,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="700.30.80_ActionHistorywithUserDefinedFileLocationandName"
+				id="1bc861fd-3366-4ffb-a236-76d158d6f5b8">
+					<testmodule
+					name="TestCaseDriver"
+					id="41e7ecb9-bfd1-46af-9a64-854aaaa8237b"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="800._Help2"
@@ -2187,4 +2196,3 @@ reportlevel="Info;20">
 		</reference>
 	</references>
 </testsuite>
-
