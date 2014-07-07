@@ -29,6 +29,7 @@ namespace NformTester
         NformRepositoryFolders.NFormAppFolder _nformapp;
         NformRepositoryFolders.ExternalAppFolder _externalapp;
         NformRepositoryFolders.ExplorerAppFolder _explorer;
+        NformRepositoryFolders.NformTesterAppFolder _nformtester;
 
         /// <summary>
         /// Gets the singleton class instance representing the NformRepository element repository.
@@ -48,6 +49,7 @@ namespace NformTester
             _nformapp = new NformRepositoryFolders.NFormAppFolder(this);
             _externalapp = new NformRepositoryFolders.ExternalAppFolder(this);
             _explorer = new NformRepositoryFolders.ExplorerAppFolder(this);
+            _nformtester = new NformRepositoryFolders.NformTesterAppFolder(this);
         }
 
 #region Variables
@@ -103,6 +105,15 @@ namespace NformTester
         public virtual NformRepositoryFolders.ExplorerAppFolder Explorer
         {
             get { return _explorer; }
+        }
+
+        /// <summary>
+        /// The NformTester folder.
+        /// </summary>
+        [RepositoryFolder("d37fd1e6-b141-4e18-8e0a-096a0d1b2f2d")]
+        public virtual NformRepositoryFolders.NformTesterAppFolder NformTester
+        {
+            get { return _nformtester; }
         }
     }
 
@@ -36329,6 +36340,74 @@ namespace NformTester
                 get
                 {
                     return _administratorliebertrnformunregistInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The NformTesterAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("d37fd1e6-b141-4e18-8e0a-096a0d1b2f2d")]
+        public partial class NformTesterAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _container40965Info;
+
+            /// <summary>
+            /// Creates a new NformTester  folder.
+            /// </summary>
+            public NformTesterAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("NformTester", "/form[@title='NformTester']", parentFolder, 30000, true, "d37fd1e6-b141-4e18-8e0a-096a0d1b2f2d", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "d37fd1e6-b141-4e18-8e0a-096a0d1b2f2d");
+                _container40965Info = new RepoItemInfo(this, "Container40965", "element[@controlid='40965']/container[@caption='']", 30000, null, "4d8741dd-6b14-4a03-951d-68c4f00d8042");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("d37fd1e6-b141-4e18-8e0a-096a0d1b2f2d")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d37fd1e6-b141-4e18-8e0a-096a0d1b2f2d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Container40965 item.
+            /// </summary>
+            [RepositoryItem("4d8741dd-6b14-4a03-951d-68c4f00d8042")]
+            public virtual Ranorex.Container Container40965
+            {
+                get
+                {
+                    return _container40965Info.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Container40965 item info.
+            /// </summary>
+            [RepositoryItemInfo("4d8741dd-6b14-4a03-951d-68c4f00d8042")]
+            public virtual RepoItemInfo Container40965Info
+            {
+                get
+                {
+                    return _container40965Info;
                 }
             }
         }

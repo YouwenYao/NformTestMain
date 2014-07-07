@@ -1641,6 +1641,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.30.10.20_UpDownArrowWhenMiddleDeviceSelected"
+					id="bc63c52d-b375-4b5e-94b7-c1dd3c6c1333">
+						<testmodule
+						name="TestCaseDriver"
+						id="9ebada02-a5cc-49a3-a7bf-4f9e421ec4c7"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.040._Users_and_Groups2"
@@ -1771,6 +1780,33 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.20.10_PermissionForNewActionOfEachGroup"
+					id="9a5c9905-8a92-41d7-831f-cea475ef697c">
+						<testmodule
+						name="TestCaseDriver"
+						id="4016416b-356b-425e-b521-73ae2adf48a9"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.20.70_InvokedAndRevokedSetDeviceData"
+					id="dfd1ff7f-f270-4673-a25e-5d989c14ae69">
+						<testmodule
+						name="TestCaseDriver"
+						id="3eb9ad55-6867-4fdd-b36d-2f9a46d175ef"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.10.30_InvokedAndRevokedEditDeviceDefinition"
+					id="4b3b4d54-7c90-446d-867d-2fee03f60498">
+						<testmodule
+						name="TestCaseDriver"
+						id="3c7d188e-7e2a-4f4c-8637-b732207e3440"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses2"
@@ -1878,6 +1914,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.60.20.20_SNMP_V3_setting_configure"
+					id="d4909fe2-4bc2-40a7-ac72-8a4cf21e5e8d">
+						<testmodule
+						name="TestCaseDriver"
+						id="fcbd9fe2-afce-4c1d-bd57-ee96ef6aff70"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password2"
@@ -1888,6 +1933,24 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="3388d6ae-c2a0-40b3-a5b8-b6784aa876bb"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.70.30.10_UserMustChangePasswordAtNextLogin"
+					id="efd512b6-bb47-484c-bbea-3d5265bbc090">
+						<testmodule
+						name="TestCaseDriver"
+						id="e6a08e55-05be-4180-abe6-8f660d68824d"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.70.20.10_ChangePasswordAdditionalInfo"
+					id="8efd1771-fa19-4ba1-8b95-61118e07ccbc">
+						<testmodule
+						name="TestCaseDriver"
+						id="71984282-36ed-45d5-b37b-7e2ad46b3594"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -2148,6 +2211,11 @@ reportlevel="Info;20">
 			<testcase
 			name="1100._Performance_and_Capacity2"
 			id="04d5b0a0-300e-419c-bba4-3ec0b669ed67"/>
+			<testmodule
+			name="GenerateAllForms"
+			id="e5865322-fb65-4ea9-b011-6c5aa2c512ba"
+			ref="1e793a50-da64-41a8-915c-08cbc67d8eb5"
+			type="UserCode"/>
 		</testcase>
 		<testcase
 		name="test"
@@ -2156,11 +2224,6 @@ reportlevel="Info;20">
 			name="myTest"
 			id="eb7da953-e10a-4d88-9f21-28f69daa1364"
 			ref="a201cdd0-ccda-48ad-b091-2eb9c38e066e"
-			type="UserCode"/>
-			<testmodule
-			name="GenerateAllForms"
-			id="e5865322-fb65-4ea9-b011-6c5aa2c512ba"
-			ref="1e793a50-da64-41a8-915c-08cbc67d8eb5"
 			type="UserCode"/>
 		</testcase>
 		<testcase
@@ -2176,7 +2239,18 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="4b3b4d54-7c90-446d-867d-2fee03f60498"/>
+			<testcase
+			id="64d6f7ed-643a-4648-9121-b2dc1ea70268"/>
+			<testcase
+			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
@@ -2187,4 +2261,3 @@ reportlevel="Info;20">
 		</reference>
 	</references>
 </testsuite>
-

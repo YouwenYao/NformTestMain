@@ -11951,6 +11951,35 @@ eXnjPzoG6QO7oK4qG0MSpPjp4ytYxWEGvX55/z/YBTCBqRMawIaBcWX2/56OSuxyQPkVS6aA5VBc
 A3cBPPBggUgkTXlKpCQfgJPygBsAABEv9phGO1VMAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
+		<appfolder
+		name="NformTester"
+		id="d37fd1e6-b141-4e18-8e0a-096a0d1b2f2d"
+		searchtimeout="30000ms"
+		capname="form"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="Container40965"
+			id="4d8741dd-6b14-4a03-951d-68c4f00d8042"
+			searchtimeout="30000ms"
+			capname="container"
+			addcaps="container,nativewindow">
+				/form[@title='NformTester']/element[@controlid='40965']/container[@caption='']
+			</item>
+			<basepath>
+				/form[@title='NformTester']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAOBJREFU
+OE9jYKAWOLdM8T8yJslckEZ0cGyexH+iDAEphIA5aPj/f5AcNoxiMNiA70DN33swMYa7IIbOqURy
+HdiA9y3/nx/3wmkjNlcsLeSAeBFswPUWsOZ7+7KR7PyOxX6g0PMWsDiaAdlgA76DvIERFmhhczwK
+qGYKqgHPtzmBoxBoLjAcpuDFz/cF/T+3LwrVAJDma/ssIbYDwwMnBjr//T4nhGZYGICd/7waYgCI
+xoXvV/+/B3Qt3P/IBoA1XwcGIgG8d54mqgFgQ6YBEwyRGCUNIKcokAQxmKjkTVdFAJ126FvNZ48R
+AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
 		<basepath/>
 	</rootfolder>
 	<variables>
