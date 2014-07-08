@@ -285,10 +285,6 @@
       <id>cb34b4f4-8a61-48b2-bb8b-c28bea00e84b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Keywordscripts\600.60.20.20_SNMP_V3_setting_configure.xlsx">
-      <id>7ce8e6f9-e8a8-404e-bbf8-471b5c0c1346</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Keywordscripts\600.60.30.40_IntervalForGlobalStatusPolling.xlsx">
       <id>ec179ce7-ea63-4eec-8383-2a8e17883552</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -359,10 +355,6 @@
     </None>
     <None Include="Keywordscripts\900.30.160_GadgetFilterCapability.xlsx">
       <id>1b67260b-eca9-47e3-87ca-f56ae9fef13a</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\900.30.170_DisplayType.xlsx">
-      <id>f5bee873-275c-4176-909f-53bde9564fbe</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TestScripts.xlsx">
