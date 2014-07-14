@@ -748,6 +748,7 @@ namespace NformTester
             NformRepositoryFolders.FormAlarm_DetailsAppFolder _formalarm_details;
             NformRepositoryFolders.FormToo_Many_Graph_PointsAppFolder _formtoo_many_graph_points;
             NformRepositoryFolders.FormContextMenuContextMenuStripAppFolder _formcontextmenucontextmenustrip;
+            NformRepositoryFolders.FormSaveAsAppFolder _formsaveas;
 
             /// <summary>
             /// Creates a new NformG2Window  folder.
@@ -766,6 +767,7 @@ namespace NformTester
                 _formalarm_details = new NformRepositoryFolders.FormAlarm_DetailsAppFolder(parentFolder);
                 _formtoo_many_graph_points = new NformRepositoryFolders.FormToo_Many_Graph_PointsAppFolder(parentFolder);
                 _formcontextmenucontextmenustrip = new NformRepositoryFolders.FormContextMenuContextMenuStripAppFolder(parentFolder);
+                _formsaveas = new NformRepositoryFolders.FormSaveAsAppFolder(parentFolder);
             }
 
             /// <summary>
@@ -865,6 +867,15 @@ namespace NformTester
             public virtual NformRepositoryFolders.FormContextMenuContextMenuStripAppFolder FormContextMenuContextMenuStrip
             {
                 get { return _formcontextmenucontextmenustrip; }
+            }
+
+            /// <summary>
+            /// The FormSaveAs folder.
+            /// </summary>
+            [RepositoryFolder("16d80d74-fb87-4f08-b795-0083de714dfe")]
+            public virtual NformRepositoryFolders.FormSaveAsAppFolder FormSaveAs
+            {
+                get { return _formsaveas; }
             }
         }
 
@@ -8970,6 +8981,152 @@ namespace NformTester
                 get
                 {
                     return _trendscopy_dataInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FormSaveAsAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("16d80d74-fb87-4f08-b795-0083de714dfe")]
+        public partial class FormSaveAsAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _saveInfo;
+            RepoItemInfo _cancelInfo;
+            RepoItemInfo _closeInfo;
+            RepoItemInfo _filenameInfo;
+
+            /// <summary>
+            /// Creates a new FormSaveAs  folder.
+            /// </summary>
+            public FormSaveAsAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormSaveAs", "/form[@title='Save As']", parentFolder, 30000, true, "16d80d74-fb87-4f08-b795-0083de714dfe", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "16d80d74-fb87-4f08-b795-0083de714dfe");
+                _saveInfo = new RepoItemInfo(this, "Save", "button[@text='&Save']", 30000, null, "e774daf1-455d-4ed1-968d-7fc67078f0db");
+                _cancelInfo = new RepoItemInfo(this, "Cancel", "button[@text='Cancel']", 30000, null, "21ad68bb-7b48-4ebc-98ad-f39a61ba3123");
+                _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='Close']", 30000, null, "06bb9f8f-6a98-452c-855d-73eb29eb24b9");
+                _filenameInfo = new RepoItemInfo(this, "FileName", "element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']/combobox[@accessiblename='File name:']/text[@accessiblename='File name:']", 30000, null, "4dc96d7c-327b-4a8a-8cca-7fa1768d73a9");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("16d80d74-fb87-4f08-b795-0083de714dfe")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("16d80d74-fb87-4f08-b795-0083de714dfe")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Save item.
+            /// </summary>
+            [RepositoryItem("e774daf1-455d-4ed1-968d-7fc67078f0db")]
+            public virtual Ranorex.Button Save
+            {
+                get
+                {
+                    return _saveInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Save item info.
+            /// </summary>
+            [RepositoryItemInfo("e774daf1-455d-4ed1-968d-7fc67078f0db")]
+            public virtual RepoItemInfo SaveInfo
+            {
+                get
+                {
+                    return _saveInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Cancel item.
+            /// </summary>
+            [RepositoryItem("21ad68bb-7b48-4ebc-98ad-f39a61ba3123")]
+            public virtual Ranorex.Button Cancel
+            {
+                get
+                {
+                    return _cancelInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Cancel item info.
+            /// </summary>
+            [RepositoryItemInfo("21ad68bb-7b48-4ebc-98ad-f39a61ba3123")]
+            public virtual RepoItemInfo CancelInfo
+            {
+                get
+                {
+                    return _cancelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("06bb9f8f-6a98-452c-855d-73eb29eb24b9")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("06bb9f8f-6a98-452c-855d-73eb29eb24b9")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FileName item.
+            /// </summary>
+            [RepositoryItem("4dc96d7c-327b-4a8a-8cca-7fa1768d73a9")]
+            public virtual Ranorex.Text FileName
+            {
+                get
+                {
+                    return _filenameInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FileName item info.
+            /// </summary>
+            [RepositoryItemInfo("4dc96d7c-327b-4a8a-8cca-7fa1768d73a9")]
+            public virtual RepoItemInfo FileNameInfo
+            {
+                get
+                {
+                    return _filenameInfo;
                 }
             }
         }
@@ -32723,6 +32880,7 @@ namespace NformTester
             RepoItemInfo _okInfo;
             RepoItemInfo _yesInfo;
             RepoItemInfo _noInfo;
+            RepoItemInfo _export_resultInfo;
 
             /// <summary>
             /// Creates a new FormExport_Alarm_History_Info  folder.
@@ -32734,6 +32892,7 @@ namespace NformTester
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "baebb237-5c25-4121-b787-6f04d6e0f3f9");
                 _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='是(&Y)' or @text='Yes']", 30000, null, "bab2b8eb-c5a0-4738-a175-d03ccd3cc468");
                 _noInfo = new RepoItemInfo(this, "No", "button[@text='否(&N)' or @text='No']", 30000, null, "053f9051-432f-4e8a-b648-6372bd9001f9");
+                _export_resultInfo = new RepoItemInfo(this, "Export_result", "text[@controlid='65535']", 30000, null, "ebe8030b-5e5f-4bad-8d75-bbc7548131ff");
             }
 
             /// <summary>
@@ -32829,6 +32988,30 @@ namespace NformTester
                 get
                 {
                     return _noInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Export_result item.
+            /// </summary>
+            [RepositoryItem("ebe8030b-5e5f-4bad-8d75-bbc7548131ff")]
+            public virtual Ranorex.Text Export_result
+            {
+                get
+                {
+                    return _export_resultInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Export_result item info.
+            /// </summary>
+            [RepositoryItemInfo("ebe8030b-5e5f-4bad-8d75-bbc7548131ff")]
+            public virtual RepoItemInfo Export_resultInfo
+            {
+                get
+                {
+                    return _export_resultInfo;
                 }
             }
         }
