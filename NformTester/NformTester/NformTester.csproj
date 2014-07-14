@@ -233,7 +233,7 @@
       <id>d1f10c9d-4ac3-44d6-8ae8-9a0799dbf7c9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-  <None Include="Keywordscripts\600.30.30.10_AddAndCopyView.xlsx">
+    <None Include="Keywordscripts\600.30.30.10_AddAndCopyView.xlsx">
       <id>9acd7a4b-3d61-41ea-b361-6a892a4791ba</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -254,7 +254,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.40.30.70_EditCustomGroup.xlsx">
-      <id>8df58062-6c46-4d78-9ca1-ca604d531503</id>    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>8df58062-6c46-4d78-9ca1-ca604d531503</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
       <id>e23ff235-6cdb-456d-bae0-4a7eb5b60731</id>
@@ -294,7 +295,11 @@
     </None>
     <None Include="Keywordscripts\700.30.10_ExportActionHistoryforDeviceTypewithThreeTypes.xlsx">
       <id>4fd70c4c-c69d-4af7-a2df-d61f36bb4bb1</id>
-	   <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\700.30.20_ExportAlarmHistoryofAlarmTypewithThreeTypes.xlsx">
+      <id>1e043840-a033-47f2-a233-da487d77824f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\700.30.60_ExportActionHistoryforAllAlarmTypewithSpecifiedStartandEndDate.xlsx">
       <id>a5a760bc-8463-45f9-ae4e-da70cfc8fd15</id>

@@ -32723,6 +32723,7 @@ namespace NformTester
             RepoItemInfo _okInfo;
             RepoItemInfo _yesInfo;
             RepoItemInfo _noInfo;
+            RepoItemInfo _export_resultInfo;
 
             /// <summary>
             /// Creates a new FormExport_Alarm_History_Info  folder.
@@ -32734,6 +32735,7 @@ namespace NformTester
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "baebb237-5c25-4121-b787-6f04d6e0f3f9");
                 _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='是(&Y)' or @text='Yes']", 30000, null, "bab2b8eb-c5a0-4738-a175-d03ccd3cc468");
                 _noInfo = new RepoItemInfo(this, "No", "button[@text='否(&N)' or @text='No']", 30000, null, "053f9051-432f-4e8a-b648-6372bd9001f9");
+                _export_resultInfo = new RepoItemInfo(this, "Export_result", "text[@controlid='65535']", 30000, null, "a1b6e5b3-d3d9-496c-bb69-d3bb4a5f2bac");
             }
 
             /// <summary>
@@ -32829,6 +32831,30 @@ namespace NformTester
                 get
                 {
                     return _noInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Export_result item.
+            /// </summary>
+            [RepositoryItem("a1b6e5b3-d3d9-496c-bb69-d3bb4a5f2bac")]
+            public virtual Ranorex.Text Export_result
+            {
+                get
+                {
+                    return _export_resultInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Export_result item info.
+            /// </summary>
+            [RepositoryItemInfo("a1b6e5b3-d3d9-496c-bb69-d3bb4a5f2bac")]
+            public virtual RepoItemInfo Export_resultInfo
+            {
+                get
+                {
+                    return _export_resultInfo;
                 }
             }
         }
