@@ -2053,6 +2053,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="700.30.50_AlarmHistoryWithUserDefinedStartandEndDate"
+				id="36dae839-32df-4c21-9ea7-9e89c8b862b6">
+					<testmodule
+					name="TestCaseDriver"
+					id="0410e31d-3f58-4630-9bf8-48755c24fe3e"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="800._Help2"
@@ -2187,4 +2196,3 @@ reportlevel="Info;20">
 		</reference>
 	</references>
 </testsuite>
-
