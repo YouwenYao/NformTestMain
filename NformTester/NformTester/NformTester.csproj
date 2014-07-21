@@ -233,7 +233,7 @@
       <id>d1f10c9d-4ac3-44d6-8ae8-9a0799dbf7c9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-  <None Include="Keywordscripts\600.30.30.10_AddAndCopyView.xlsx">
+    <None Include="Keywordscripts\600.30.30.10_AddAndCopyView.xlsx">
       <id>9acd7a4b-3d61-41ea-b361-6a892a4791ba</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -254,7 +254,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.40.30.70_EditCustomGroup.xlsx">
-      <id>8df58062-6c46-4d78-9ca1-ca604d531503</id>    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>8df58062-6c46-4d78-9ca1-ca604d531503</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.40.30.90_UsersandGroupsDisableUsersOwnAccount.xlsx">
+      <id>2435432e-80da-4f96-bf87-4009defd5ffe</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
       <id>e23ff235-6cdb-456d-bae0-4a7eb5b60731</id>
@@ -294,7 +299,7 @@
     </None>
     <None Include="Keywordscripts\700.30.10_ExportActionHistoryforDeviceTypewithThreeTypes.xlsx">
       <id>4fd70c4c-c69d-4af7-a2df-d61f36bb4bb1</id>
-	   <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\700.30.60_ExportActionHistoryforAllAlarmTypewithSpecifiedStartandEndDate.xlsx">
       <id>a5a760bc-8463-45f9-ae4e-da70cfc8fd15</id>
@@ -490,10 +495,6 @@
     </None>
     <None Include="Keywordscripts\TST1148_CreateNewLogicalGroupForAView.xlsx">
       <id>54d85963-e68a-4e25-9405-c257f63990ea</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\TST1149_DisablingUsersOwnAccount.xlsx">
-      <id>76b98dbd-c7a6-471d-90c7-1638f2f5e51d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\TST1151_CopyLogicalGroupUnderViews.xlsx">
