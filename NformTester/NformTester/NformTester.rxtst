@@ -567,7 +567,6 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-					
 					<testcase
 					name="600.40.30.110_UsersandGroupsUserCannotChangeAlertNotifications"
 					id="7cffba12-0f63-4a4a-8469-20146facce3a">
@@ -577,7 +576,6 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-					
 					<testcase
 					name="600.40.30.100_UserCannotChangePasswordFlag"
 					id="f0238533-9ef5-418e-83f7-ff51e2db7855">
@@ -593,6 +591,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="96fdbe61-9ebf-47ac-bb59-f266b39f5637"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.10_RightsCanBeInvokedAndRevokedForConfigureDevices"
+					id="4364c5c9-f51a-45b8-9108-d7c67f3820f1">
+						<testmodule
+						name="TestCaseDriver"
+						id="75aa7270-a6f1-4ddc-b85a-359a6d043b67"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
