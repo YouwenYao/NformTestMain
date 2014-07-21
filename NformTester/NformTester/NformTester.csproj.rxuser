@@ -2,20 +2,15 @@
 <projectusersettings>
 	<changestatecache>
 		<codegenfilechangeinfo
-		fileitemid="be55ff5e-522d-4087-a441-30853af41aaa"
-		changehash="18446744073327003955"
-		lastcodegentimestamp="130503933040996831"
-		filelength="1494751"/>
-		<codegenfilechangeinfo
 		fileitemid="cd2e6476-08de-4490-bccc-a5ee732b8f1b"
-		changehash="1408553602"
-		lastcodegentimestamp="130504006358876753"
-		filelength="546468">
+		changehash="1954524717"
+		lastcodegentimestamp="130504040900714355"
+		filelength="548597">
 			<codegenfilechangeinfo
 			fileitemid="be55ff5e-522d-4087-a441-30853af41aaa"
-			changehash="18446744073654087888"
-			lastcodegentimestamp="130504006358876753"
-			filelength="1492781"/>
+			changehash="180338921"
+			lastcodegentimestamp="130504040900714355"
+			filelength="1498540"/>
 		</codegenfilechangeinfo>
 	</changestatecache>
 </projectusersettings>
