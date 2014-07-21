@@ -23258,7 +23258,7 @@ namespace NformTester
             RepoItemInfo _highInfo;
             RepoItemInfo _daily_atInfo;
             RepoItemInfo _interval_everyInfo;
-            RepoItemInfo _globally_disabledInfo;
+            RepoItemInfo _globally_disabled_txtInfo;
             RepoItemInfo _timeoutInfo;
             RepoItemInfo _timeout_upInfo;
             RepoItemInfo _timeout_downInfo;
@@ -23321,7 +23321,7 @@ namespace NformTester
                 _highInfo = new RepoItemInfo(this, "High", "tabpagelist/tabpage[@controlname='m_commsPage']/container[@controlname='m_devPollCfgCtl']/container/radiobutton[@controlname='m_topRbtn']", 30000, null, "6989db19-f606-41b8-ba70-1ee6837eb1d4");
                 _daily_atInfo = new RepoItemInfo(this, "Daily_at", "tabpagelist/tabpage[@controlname='m_commsPage']/container[@controlname='m_devPollCfgCtl']/container/radiobutton[@controlname='m_topRbtn']", 30000, null, "259b076b-6df9-4dba-8114-a7dd15ef3d96");
                 _interval_everyInfo = new RepoItemInfo(this, "Interval_every", "tabpagelist/tabpage[@controlname='m_commsPage']/container[@controlname='m_devPollCfgCtl']/container/radiobutton[@controlname='m_topRbtn']", 30000, null, "19e062dd-aa94-4599-8fc8-38fad6399bdb");
-                _globally_disabledInfo = new RepoItemInfo(this, "Globally_disabled", "tabpagelist/tabpage[@controlname='m_commsPage']/container[@controlname='m_devPollCfgCtl']/container/text[@controlname='m_disabledLbl']", 30000, null, "e8e47ef7-983a-41e8-8662-b61b96617d95");
+                _globally_disabled_txtInfo = new RepoItemInfo(this, "Globally_disabled_txt", "tabpagelist/tabpage[@controlname='m_commsPage']/container[@controlname='m_devPollCfgCtl']/container/text[@controlname='m_disabledLbl']", 30000, null, "e8e47ef7-983a-41e8-8662-b61b96617d95");
                 _timeoutInfo = new RepoItemInfo(this, "Timeout", "tabpagelist/tabpage[@controlname='m_commsPage']/container[@controlname='m_timeoutRetryGcb']/container[@controlname='m_timeoutRetryLayout']/container[@controlname='m_timeoutNbx']/combobox[@accessiblename='Timeout (msec):']", 30000, null, "a3777f57-c9f2-436c-90c6-203ed8a1b9a6");
                 _timeout_upInfo = new RepoItemInfo(this, "Timeout_up", "tabpagelist/tabpage[@controlname='m_commsPage']/container[@controlname='m_timeoutRetryGcb']/container[@controlname='m_timeoutRetryLayout']/container[@controlname='m_timeoutNbx']/container/button[@accessiblename='Up']", 30000, null, "81b6cee7-3043-486e-b7a7-fac00034d4e4");
                 _timeout_downInfo = new RepoItemInfo(this, "Timeout_down", "tabpagelist/tabpage[@controlname='m_commsPage']/container[@controlname='m_timeoutRetryGcb']/container[@controlname='m_timeoutRetryLayout']/container[@controlname='m_timeoutNbx']/container/button[@accessiblename='Down']", 30000, null, "656f573c-0e14-4754-9f43-8f3bfb02a57f");
@@ -23840,26 +23840,26 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Globally_disabled item.
+            /// The Globally_disabled_txt item.
             /// </summary>
             [RepositoryItem("e8e47ef7-983a-41e8-8662-b61b96617d95")]
-            public virtual Ranorex.Text Globally_disabled
+            public virtual Ranorex.Text Globally_disabled_txt
             {
                 get
                 {
-                    return _globally_disabledInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _globally_disabled_txtInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Globally_disabled item info.
+            /// The Globally_disabled_txt item info.
             /// </summary>
             [RepositoryItemInfo("e8e47ef7-983a-41e8-8662-b61b96617d95")]
-            public virtual RepoItemInfo Globally_disabledInfo
+            public virtual RepoItemInfo Globally_disabled_txtInfo
             {
                 get
                 {
-                    return _globally_disabledInfo;
+                    return _globally_disabled_txtInfo;
                 }
             }
 
@@ -36190,6 +36190,7 @@ namespace NformTester
         {
             RepoItemInfo _selfInfo;
             RepoItemInfo _tableentityInfo;
+            RepoItemInfo _excelInfo;
 
             /// <summary>
             /// Creates a new FormExcel  folder.
@@ -36199,6 +36200,7 @@ namespace NformTester
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "ded0c69e-927c-4853-95e9-6f24cbeca027");
                 _tableentityInfo = new RepoItemInfo(this, "TableEntity", "element[@class='XLDESK']/workbook/table[@index='1']", 30000, null, "348bf51d-be77-4e75-8b57-8d845104766f");
+                _excelInfo = new RepoItemInfo(this, "EXCEL", "element[@class='EXCEL<']", 30000, null, "61fdaebc-7591-4aea-a4de-759350cd313f");
             }
 
             /// <summary>
@@ -36246,6 +36248,30 @@ namespace NformTester
                 get
                 {
                     return _tableentityInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EXCEL item.
+            /// </summary>
+            [RepositoryItem("61fdaebc-7591-4aea-a4de-759350cd313f")]
+            public virtual Ranorex.Unknown EXCEL
+            {
+                get
+                {
+                    return _excelInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EXCEL item info.
+            /// </summary>
+            [RepositoryItemInfo("61fdaebc-7591-4aea-a4de-759350cd313f")]
+            public virtual RepoItemInfo EXCELInfo
+            {
+                get
+                {
+                    return _excelInfo;
                 }
             }
         }
@@ -36351,7 +36377,6 @@ namespace NformTester
         public partial class NformTesterAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _selfInfo;
-            RepoItemInfo _container40965Info;
 
             /// <summary>
             /// Creates a new NformTester  folder.
@@ -36360,7 +36385,6 @@ namespace NformTester
                     base("NformTester", "/form[@title='NformTester']", parentFolder, 30000, true, "d37fd1e6-b141-4e18-8e0a-096a0d1b2f2d", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "d37fd1e6-b141-4e18-8e0a-096a0d1b2f2d");
-                _container40965Info = new RepoItemInfo(this, "Container40965", "element[@controlid='40965']/container[@caption='']", 30000, null, "4d8741dd-6b14-4a03-951d-68c4f00d8042");
             }
 
             /// <summary>
@@ -36384,30 +36408,6 @@ namespace NformTester
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Container40965 item.
-            /// </summary>
-            [RepositoryItem("4d8741dd-6b14-4a03-951d-68c4f00d8042")]
-            public virtual Ranorex.Container Container40965
-            {
-                get
-                {
-                    return _container40965Info.CreateAdapter<Ranorex.Container>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Container40965 item info.
-            /// </summary>
-            [RepositoryItemInfo("4d8741dd-6b14-4a03-951d-68c4f00d8042")]
-            public virtual RepoItemInfo Container40965Info
-            {
-                get
-                {
-                    return _container40965Info;
                 }
             }
         }

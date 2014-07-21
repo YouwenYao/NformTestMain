@@ -157,6 +157,14 @@
       <id>60f76392-c5a3-496d-97f5-23bf84ac816b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.10.10.10_GUIForDeviceStatusPolling.xlsx">
+      <id>f4aa9a27-f07f-4dc3-9e64-28beaeca31e4</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.10.30_DeviceMaintenanceLayoutAndDefaults.xlsx">
+      <id>7b3f5992-8355-45aa-a38f-03c0086b27a6</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.10.20.100_DeviceStatusPriorityPolling.xlsx">
       <id>ab2f29c8-22f4-424f-a132-eeacf5ec1a3c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -245,24 +253,52 @@
       <id>b80e43d8-1aa4-44be-a27b-2cd4e16c07c0</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.40.10.10_UserAndGroupDefaultPermissionRightForActions.xlsx">
+      <id>c8fe2dad-b5bc-4708-907d-c3bde941d236</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.40.10.20_UserAndGroupAUserWithoutForwardTrapConfigure.xlsx">
+      <id>5f9b7578-56be-418c-abf7-0bb9562e6a75</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.40.10.30_InvokedAndRevokedEditDeviceDefinition.xlsx">
       <id>b91ec7a6-248a-41e7-9368-a3cd0df3c280</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.40.20.100_CheckRightsAssociatedWithUserGroups.xlsx">
+      <id>57ac0e7e-2d48-44b8-85b8-a6fdb8f8b56d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.40.20.10_PermissionForNewActionOfEachGroup.xlsx">
       <id>9b2e073a-dd91-414e-938f-75bff6046172</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.40.20.20_UserAndGroupsReadWriteDataAction.xlsx">
+      <id>0f97fef6-8328-4717-8e49-d76df82b20c2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.40.20.30_CreateNewUser.xlsx">
       <id>584e8358-4a13-4a4f-84c8-af5c97c2d950</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.40.20.40_UserAndGroupsAutoLogout.xlsx">
+      <id>7679156a-6e1e-4b06-ac0b-ee133aa070d6</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.40.20.50_AddCustomGroup.xlsx">
       <id>91f2b414-ad76-4b1c-babb-77d899e4bebd</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.40.20.60_UserAndGroupChangesToLoggedInUser.xlsx">
+      <id>449ec535-0779-4ad1-a06e-ba6ef9e74c3a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.40.20.70_InvokedAndRevokedSetDeviceData.xlsx">
       <id>5e33896e-d541-460c-aefc-0cf36d80367f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.40.20.90_UserAndGroupAdministratorGroupManagement.xlsx">
+      <id>cdba6680-27c4-4405-b567-692f9130b4c8</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.40.30.60_DeleteCustomGroup.xlsx">

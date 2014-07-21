@@ -7654,7 +7654,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_commsPage']/container[@controlname='m_devPollCfgCtl']/container/radiobutton[@controlname='m_topRbtn']
 					</item>
 					<item
-					name="Globally_disabled"
+					name="Globally_disabled_txt"
 					id="e8e47ef7-983a-41e8-8662-b61b96617d95"
 					searchtimeout="30000ms"
 					capname="text"
@@ -11893,6 +11893,14 @@ wl4egeWrxKX+K8PL5/mtls7wXnxO6NspNG4Qys9tVQ/pv/Ffx1eL2x6qAAAAAElFTkSuQmCC
 				addcaps="table,excelworksheet">
 					/form[@processname='EXCEL']/element[@class='XLDESK']/workbook/table[@index='1']
 				</item>
+				<item
+				name="EXCEL"
+				id="61fdaebc-7591-4aea-a4de-759350cd313f"
+				searchtimeout="30000ms"
+				capname="unknown"
+				addcaps="unknown,nativewindow">
+					/form[@processname='EXCEL']/element[@class='EXCEL&lt;']
+				</item>
 				<basepath>
 					/form[@processname='EXCEL']
 				</basepath>
@@ -11959,14 +11967,6 @@ A3cBPPBggUgkTXlKpCQfgJPygBsAABEv9phGO1VMAAAAAElFTkSuQmCC
 		addcaps="form,nativewindow"
 		isrooted="True"
 		usecache="True">
-			<item
-			name="Container40965"
-			id="4d8741dd-6b14-4a03-951d-68c4f00d8042"
-			searchtimeout="30000ms"
-			capname="container"
-			addcaps="container,nativewindow">
-				/form[@title='NformTester']/element[@controlid='40965']/container[@caption='']
-			</item>
 			<basepath>
 				/form[@title='NformTester']
 			</basepath>
