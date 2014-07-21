@@ -267,8 +267,8 @@
     </None>
     <None Include="Keywordscripts\600.40.30.20_InvokedandRevokedforDiscoverNewDevice.xlsx">
       <id>26682d79-d110-43c6-a088-ef1786ddda79</id>
-	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	</None> 
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.40.30.110_UsersandGroupsUserCannotChangeAlertNotifications.xlsx">
       <id>940aaec1-c890-4ee7-b58e-b35dc5183daf</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -291,6 +291,10 @@
     </None>
     <None Include="Keywordscripts\600.40.30.70_EditCustomGroup.xlsx">
       <id>8df58062-6c46-4d78-9ca1-ca604d531503</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.40.30.90_UsersandGroupsDisableUsersOwnAccount.xlsx">
+      <id>7346df44-e4bc-4e52-ae65-13f1e92fbf64</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">

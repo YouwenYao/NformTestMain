@@ -603,6 +603,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.30.90_UsersandGroupsDisableUsersOwnAccount"
+					id="b5a54238-8c58-4120-a03c-eabe7c82a02f">
+						<testmodule
+						name="TestCaseDriver"
+						id="b197eed2-43e2-4e18-81bd-dbe9ab16c970"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses1"
@@ -1750,15 +1759,6 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="32c20fd4-03d5-463d-a36f-16fd0b9fe15a"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="TST1149_DisablingUsersOwnAccount"
-					id="a7e2dea6-fb52-4c87-9220-12c6296ed8a3">
-						<testmodule
-						name="TestCaseDriver"
-						id="85ddcd29-7a3b-49bc-9178-24f193d5b597"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
