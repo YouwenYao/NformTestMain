@@ -558,6 +558,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.30.100_UserCannotChangePasswordFlag"
+					id="f0238533-9ef5-418e-83f7-ff51e2db7855">
+						<testmodule
+						name="TestCaseDriver"
+						id="a616bbe8-0132-4281-942c-e3bbc6c8bfb5"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses1"
