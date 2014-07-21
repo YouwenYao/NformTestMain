@@ -265,6 +265,10 @@
       <id>5e33896e-d541-460c-aefc-0cf36d80367f</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.40.30.110_UsersandGroupsUserCannotChangeAlertNotifications.xlsx">
+      <id>940aaec1-c890-4ee7-b58e-b35dc5183daf</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.40.30.60_DeleteCustomGroup.xlsx">
       <id>e752c6b0-6540-4ba5-9b3a-41521dec543d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

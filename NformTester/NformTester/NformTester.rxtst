@@ -558,6 +558,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.30.110_UsersandGroupsUserCannotChangeAlertNotifications"
+					id="7cffba12-0f63-4a4a-8469-20146facce3a">
+						<testmodule
+						name="TestCaseDriver"
+						id="79cb45ce-2c86-43c6-9795-35b299f08bee"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses1"
