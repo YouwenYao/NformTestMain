@@ -558,6 +558,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.30.20_InvokedandRevokedforDiscoverNewDevice"
+					id="9f5d4ec3-3e95-41d0-aaed-d779da35ae69">
+						<testmodule
+						name="TestCaseDriver"
+						id="7bad7959-ebf3-4030-b91a-9a0d8e13b3a2"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses1"
