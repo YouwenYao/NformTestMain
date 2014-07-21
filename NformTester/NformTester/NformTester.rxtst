@@ -558,6 +558,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.30.10_RightsCanBeInvokedAndRevokedForConfigureDevices"
+					id="4364c5c9-f51a-45b8-9108-d7c67f3820f1">
+						<testmodule
+						name="TestCaseDriver"
+						id="75aa7270-a6f1-4ddc-b85a-359a6d043b67"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses1"
@@ -2239,7 +2248,18 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="4364c5c9-f51a-45b8-9108-d7c67f3820f1"/>
+			<testcase
+			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
+			<testcase
+			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
+			<testcase
+			id="bff3c1c2-4026-4a4f-b05d-5a6ab718b27c"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
