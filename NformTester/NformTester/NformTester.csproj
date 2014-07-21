@@ -233,24 +233,12 @@
       <id>d1f10c9d-4ac3-44d6-8ae8-9a0799dbf7c9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Keywordscripts\600.30.10.20_UpDownArrowWhenMiddleDeviceSelected.xlsx">
-      <id>f5cda59e-806f-45e5-b4d1-87df82b5ff42</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Keywordscripts\600.30.30.10_AddAndCopyView.xlsx">
       <id>9acd7a4b-3d61-41ea-b361-6a892a4791ba</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.30.30.20_AddAnAreaInTheTreeForExistingView.xlsx">
       <id>b80e43d8-1aa4-44be-a27b-2cd4e16c07c0</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\600.40.10.30_InvokedAndRevokedEditDeviceDefinition.xlsx">
-      <id>b91ec7a6-248a-41e7-9368-a3cd0df3c280</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\600.40.20.10_PermissionForNewActionOfEachGroup.xlsx">
-      <id>9b2e073a-dd91-414e-938f-75bff6046172</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.40.20.30_CreateNewUser.xlsx">
@@ -261,40 +249,12 @@
       <id>91f2b414-ad76-4b1c-babb-77d899e4bebd</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Keywordscripts\600.40.20.70_InvokedAndRevokedSetDeviceData.xlsx">
-      <id>5e33896e-d541-460c-aefc-0cf36d80367f</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\600.40.30.20_InvokedandRevokedforDiscoverNewDevice.xlsx">
-      <id>26682d79-d110-43c6-a088-ef1786ddda79</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\600.40.30.110_UsersandGroupsUserCannotChangeAlertNotifications.xlsx">
-      <id>940aaec1-c890-4ee7-b58e-b35dc5183daf</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\600.40.30.100_UserCannotChangePasswordFlag.xlsx">
-      <id>d4a656a7-5c8b-4fd6-8bce-ac377771cdbe</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\600.40.30.130_UsersandGroupsCopyUser.xlsx">
-      <id>a836a41e-6ef2-4187-93af-4d5483713726</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\600.40.30.10_RightsCanBeInvokedAndRevokedForConfigureDevices.xlsx">
-      <id>b3e20e08-df3d-44af-b93a-85f3bace4a3c</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Keywordscripts\600.40.30.60_DeleteCustomGroup.xlsx">
       <id>e752c6b0-6540-4ba5-9b3a-41521dec543d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.40.30.70_EditCustomGroup.xlsx">
       <id>8df58062-6c46-4d78-9ca1-ca604d531503</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\600.40.30.90_UsersandGroupsDisableUsersOwnAccount.xlsx">
-      <id>7346df44-e4bc-4e52-ae65-13f1e92fbf64</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
@@ -317,14 +277,6 @@
       <id>c0765315-25f3-4256-9aa0-dae8014d36e0</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Keywordscripts\600.70.20.10_ChangePasswordAdditionalInfo.xlsx">
-      <id>f79729b5-352f-458c-ab9f-4dbed2460473</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\600.70.30.10_UserMustChangePasswordAtNextLogin.xlsx">
-      <id>53a3402c-6479-47fe-b2f2-8b7f22b33417</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Keywordscripts\600.80.30.20_UserOptionsWithDifferentLanguageOption.xlsx">
       <id>3fe41def-6186-41e5-9c95-3a661a564cd9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -343,6 +295,10 @@
     </None>
     <None Include="Keywordscripts\700.30.10_ExportActionHistoryforDeviceTypewithThreeTypes.xlsx">
       <id>4fd70c4c-c69d-4af7-a2df-d61f36bb4bb1</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\700.30.40_AlarmHistorywithUserDefinedSeparatorinExportedFile.xlsx">
+      <id>279a8347-6368-4e2a-9f2a-2af6885bc427</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\700.30.60_ExportActionHistoryforAllAlarmTypewithSpecifiedStartandEndDate.xlsx">

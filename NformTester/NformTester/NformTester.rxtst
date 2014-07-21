@@ -2161,6 +2161,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="700.30.40_AlarmHistorywithUserDefinedSeparatorinExportedFile"
+				id="ecf5f838-ea25-40e6-a0e2-3dbc39cac532">
+					<testmodule
+					name="TestCaseDriver"
+					id="004368e7-dd9e-4661-a812-4105f6ec3214"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="800._Help2"
@@ -2284,7 +2293,12 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
