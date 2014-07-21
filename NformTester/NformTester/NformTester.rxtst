@@ -567,12 +567,23 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					
 					<testcase
 					name="600.40.30.110_UsersandGroupsUserCannotChangeAlertNotifications"
 					id="7cffba12-0f63-4a4a-8469-20146facce3a">
 						<testmodule
 						name="TestCaseDriver"
 						id="79cb45ce-2c86-43c6-9795-35b299f08bee"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					
+					<testcase
+					name="600.40.30.100_UserCannotChangePasswordFlag"
+					id="f0238533-9ef5-418e-83f7-ff51e2db7855">
+						<testmodule
+						name="TestCaseDriver"
+						id="a616bbe8-0132-4281-942c-e3bbc6c8bfb5"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
