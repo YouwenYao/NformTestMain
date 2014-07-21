@@ -267,6 +267,10 @@
     </None>
     <None Include="Keywordscripts\600.40.30.20_InvokedandRevokedforDiscoverNewDevice.xlsx">
       <id>26682d79-d110-43c6-a088-ef1786ddda79</id>
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None> 
+    <None Include="Keywordscripts\600.40.30.110_UsersandGroupsUserCannotChangeAlertNotifications.xlsx">
+      <id>940aaec1-c890-4ee7-b58e-b35dc5183daf</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.40.30.60_DeleteCustomGroup.xlsx">
