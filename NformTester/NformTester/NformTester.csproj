@@ -297,8 +297,8 @@
       <id>4fd70c4c-c69d-4af7-a2df-d61f36bb4bb1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Keywordscripts\700.30.20_ExportAlarmHistoryofAlarmTypewithThreeTypes.xlsx">
-      <id>1e043840-a033-47f2-a233-da487d77824f</id>
+    <None Include="Keywordscripts\700.30.50_AlarmHistoryWithUserDefinedStartandEndDate.xlsx">
+      <id>579a1587-71e5-4295-854d-da307246d78b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\700.30.60_ExportActionHistoryforAllAlarmTypewithSpecifiedStartandEndDate.xlsx">
