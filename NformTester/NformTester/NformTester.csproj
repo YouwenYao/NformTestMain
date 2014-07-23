@@ -297,16 +297,16 @@
       <id>4fd70c4c-c69d-4af7-a2df-d61f36bb4bb1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Keywordscripts\700.30.50_AlarmHistoryWithUserDefinedStartandEndDate.xlsx">
-      <id>579a1587-71e5-4295-854d-da307246d78b</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Keywordscripts\700.30.60_ExportActionHistoryforAllAlarmTypewithSpecifiedStartandEndDate.xlsx">
       <id>a5a760bc-8463-45f9-ae4e-da70cfc8fd15</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\700.30.70_ActionHistoryforAllAlarmTypeWithTheSpecifiedSeparator.xlsx">
       <id>f17c6501-805e-42c1-b7e6-21992d66c426</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\700.30.80_ActionHistorywithUserDefinedFileLocationandName.xlsx">
+      <id>9e4aad09-dda1-458d-9d15-7c3f0d0add51</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\700.30.90_DataLogHistoryforDevicesshowingtheresultssuccessandfailed.xlsx">
