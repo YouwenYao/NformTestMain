@@ -2783,6 +2783,61 @@ Acx2XGFCtAtABoDw1IXriXMBTAPMC+fOnfsPwugApwtgGmBOB9ENnZOIC4Oujmq4RcgGEO0CqLPA
 hmw/eA7sd5JcgGwAyBCYd0hyAUV5AZa2SaXhmYlUjTD1AHJC3EGQYdi3AAAAAElFTkSuQmCC
 					</icon>
 				</appfolder>
+				<appfolder
+				name="FormSaveAs"
+				id="16d80d74-fb87-4f08-b795-0083de714dfe"
+				searchtimeout="30000ms"
+				capname="form"
+				addcaps="form,nativewindow"
+				isrooted="True"
+				usecache="True">
+					<item
+					name="Save"
+					id="e774daf1-455d-4ed1-968d-7fc67078f0db"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Save As']/button[@text='&amp;Save']
+					</item>
+					<item
+					name="Cancel"
+					id="21ad68bb-7b48-4ebc-98ad-f39a61ba3123"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Save As']/button[@text='Cancel']
+					</item>
+					<item
+					name="Close"
+					id="06bb9f8f-6a98-452c-855d-73eb29eb24b9"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@title='Save As']/titlebar/button[@accessiblename='Close']
+					</item>
+					<item
+					name="FileName"
+					id="4dc96d7c-327b-4a8a-8cca-7fa1768d73a9"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,accessible">
+						/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']/combobox[@accessiblename='File name:']/text[@accessiblename='File name:']
+					</item>
+					<basepath>
+						/form[@title='Save As']
+					</basepath>
+					<icon>
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAGISURBVDhPY2CgBjhw4MB/cjDcbpBmdIeAxK4u
+kYLjiwsl/5+eI/7/2Ayx//smiYAtJMqAf292/gfjl+v+/3264P/fh73/N7YLEmfA+fkSUI3zgRr7
+/v+9U/n/77WU/0tqeTENwBYGx6aLgW38e7vq/59rqf//XPD//+eM9f+ZJZyYBpzQ4vh/QIPr/3Y1
+7v/rVCA27OgVAtoI0fj7tM3/38c1//8+JPV/Qi5QLXoY7Fbj+v95y/r/r6ZM+D9fgR+sYHUz//8/
+p63//zmm+f/PYan/vw8IgHFvFjumAWuAtr6a2v//blri/34ZIbCC+ZU8/2cUc/2flM/xvy+bHayx
+N4sNuwFzFQT+30lP/H/e0vh/k6QoUekCJRr7ZIT/t0qJ/K+REPtfLCYONqBq/QM4Llt193/B4ltw
+p2OEAbZYAGladOj//75t//+XLP3/P6LzNG4DYM6BmQyiEyZd/N8P1Rw76c9/+9y9pBngXnbwv33e
+3v9W6bv+myZtB2NkC1DCgKLMREmOBgC1SP1voJFAuQAAAABJRU5ErkJggg==
+					</icon>
+				</appfolder>
 			</folder>
 			<folder
 			name="LicensesWindow"
@@ -10700,6 +10755,14 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					addcaps="button,nativewindow">
 						/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']/button[@text='&#21542;(&amp;N)' or @text='No']
 					</item>
+					<item
+					name="Export_result"
+					id="ebe8030b-5e5f-4bad-8d75-bbc7548131ff"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,nativewindow">
+						/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']/text[@controlid='65535']
+					</item>
 					<basepath>
 						/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']
 					</basepath>
@@ -11949,35 +12012,6 @@ AAAOxAAADsQBlSsOGwAAALBJREFUOE9j/P//PwNFAGQAJZgizWDXr1899z8lmOHE0a3/v3x6RhC/
 eXnjPzoG6QO7oK4qG0MSpPjp4ytYxWEGvX55/z/YBTCBqRMawIaBcWX2/56OSuxyQPkVS6aA5VBc
 0NJQhDAAqKihOuf/y2cQV6DLwQxnOHNyJ15nYvM7shjcBR/fP/gPwuga3r6+g9MCcBiAXEBMLOBS
 A3cBPPBggUgkTXlKpCQfgJPygBsAABEv9phGO1VMAAAAAElFTkSuQmCC
-			</icon>
-		</appfolder>
-		<appfolder
-		name="NformTester"
-		id="d37fd1e6-b141-4e18-8e0a-096a0d1b2f2d"
-		searchtimeout="30000ms"
-		capname="form"
-		addcaps="form,nativewindow"
-		isrooted="True"
-		usecache="True">
-			<item
-			name="Container40965"
-			id="4d8741dd-6b14-4a03-951d-68c4f00d8042"
-			searchtimeout="30000ms"
-			capname="container"
-			addcaps="container,nativewindow">
-				/form[@title='NformTester']/element[@controlid='40965']/container[@caption='']
-			</item>
-			<basepath>
-				/form[@title='NformTester']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAOBJREFU
-OE9jYKAWOLdM8T8yJslckEZ0cGyexH+iDAEphIA5aPj/f5AcNoxiMNiA70DN33swMYa7IIbOqURy
-HdiA9y3/nx/3wmkjNlcsLeSAeBFswPUWsOZ7+7KR7PyOxX6g0PMWsDiaAdlgA76DvIERFmhhczwK
-qGYKqgHPtzmBoxBoLjAcpuDFz/cF/T+3LwrVAJDma/ssIbYDwwMnBjr//T4nhGZYGICd/7waYgCI
-xoXvV/+/B3Qt3P/IBoA1XwcGIgG8d54mqgFgQ6YBEwyRGCUNIKcokAQxmKjkTVdFAJ126FvNZ48R
-AAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<basepath/>

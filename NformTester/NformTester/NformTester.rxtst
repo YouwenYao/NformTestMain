@@ -558,6 +558,60 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.30.20_InvokedandRevokedforDiscoverNewDevice"
+					id="9f5d4ec3-3e95-41d0-aaed-d779da35ae69">
+						<testmodule
+						name="TestCaseDriver"
+						id="7bad7959-ebf3-4030-b91a-9a0d8e13b3a2"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.110_UsersandGroupsUserCannotChangeAlertNotifications"
+					id="7cffba12-0f63-4a4a-8469-20146facce3a">
+						<testmodule
+						name="TestCaseDriver"
+						id="79cb45ce-2c86-43c6-9795-35b299f08bee"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.100_UserCannotChangePasswordFlag"
+					id="f0238533-9ef5-418e-83f7-ff51e2db7855">
+						<testmodule
+						name="TestCaseDriver"
+						id="a616bbe8-0132-4281-942c-e3bbc6c8bfb5"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.130_UsersandGroupsCopyUser"
+					id="839b4f3c-c5ab-4538-bf02-6792bf12463b">
+						<testmodule
+						name="TestCaseDriver"
+						id="96fdbe61-9ebf-47ac-bb59-f266b39f5637"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.10_RightsCanBeInvokedAndRevokedForConfigureDevices"
+					id="4364c5c9-f51a-45b8-9108-d7c67f3820f1">
+						<testmodule
+						name="TestCaseDriver"
+						id="75aa7270-a6f1-4ddc-b85a-359a6d043b67"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.90_UsersandGroupsDisableUsersOwnAccount"
+					id="b5a54238-8c58-4120-a03c-eabe7c82a02f">
+						<testmodule
+						name="TestCaseDriver"
+						id="b197eed2-43e2-4e18-81bd-dbe9ab16c970"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses1"
@@ -1709,15 +1763,6 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
-					name="TST1149_DisablingUsersOwnAccount"
-					id="a7e2dea6-fb52-4c87-9220-12c6296ed8a3">
-						<testmodule
-						name="TestCaseDriver"
-						id="85ddcd29-7a3b-49bc-9178-24f193d5b597"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
 					name="TST499_UserShouldConfigureSETActionsUsingENABLEDISABLE"
 					id="8737cd40-a73d-4844-ae2a-c1a9c61f40f8">
 						<testmodule
@@ -2113,6 +2158,51 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="a2dd477c-2c9e-4419-8697-e817cee3960f"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="700.30.40_AlarmHistorywithUserDefinedSeparatorinExportedFile"
+				id="ecf5f838-ea25-40e6-a0e2-3dbc39cac532">
+					<testmodule
+					name="TestCaseDriver"
+					id="004368e7-dd9e-4661-a812-4105f6ec3214"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="700.30.30_AlarmHistorywithUserDefinedFileNameandLocation"
+				id="3a774760-0d8a-44b2-b3b7-a1df2f4c6387">
+					<testmodule
+					name="TestCaseDriver"
+					id="109e19fb-07cd-4aec-9522-0511f62221c6"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="700.30.20_ExportAlarmHistoryofAlarmTypewithThreeTypes"
+				id="7c1c2513-2f5d-4ff5-ac40-dbf808429b19">
+					<testmodule
+					name="TestCaseDriver"
+					id="6603b732-4609-4a37-93d3-e95f71610193"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="700.30.50_AlarmHistoryWithUserDefinedStartandEndDate"
+				id="36dae839-32df-4c21-9ea7-9e89c8b862b6">
+					<testmodule
+					name="TestCaseDriver"
+					id="0410e31d-3f58-4630-9bf8-48755c24fe3e"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="700.30.80_ActionHistorywithUserDefinedFileLocationandName"
+				id="1bc861fd-3366-4ffb-a236-76d158d6f5b8">
+					<testmodule
+					name="TestCaseDriver"
+					id="41e7ecb9-bfd1-46af-9a64-854aaaa8237b"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
