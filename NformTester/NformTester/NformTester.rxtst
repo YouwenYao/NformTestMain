@@ -1,6 +1,6 @@
 ﻿<testsuite
 name="NformTester"
-rxversion="4.0.1.21107"
+rxversion="4.0.3.22982"
 id="0ac6aa29-2786-479e-9a76-72fed1f11051"
 reportfilename="%S_%Y%M%D_%T.rxlog"
 reporttemplatefolder=""
@@ -2056,7 +2056,11 @@ reportlevel="Info;20">
 			</testcase>
 			<testcase
 			name="800._Help2"
-			id="1fa44bba-fe43-4270-baec-a0e41f2279c8"/>
+			id="1fa44bba-fe43-4270-baec-a0e41f2279c8">
+				<testcase
+				name="TestCase"
+				id="c4126c4f-4bd2-40d4-9c75-6308cc43632e"/>
+			</testcase>
 			<testcase
 			name="900._Operation_Using_Client_Viewer2"
 			id="a5e9adfd-9aee-44b1-a5b7-3963bd48c29d">
@@ -2150,17 +2154,12 @@ reportlevel="Info;20">
 			id="04d5b0a0-300e-419c-bba4-3ec0b669ed67"/>
 		</testcase>
 		<testcase
-		name="test"
+		name="TestScript"
 		id="b49c5248-5521-4369-98f1-d67f370014a2">
 			<testmodule
-			name="myTest"
-			id="eb7da953-e10a-4d88-9f21-28f69daa1364"
-			ref="a201cdd0-ccda-48ad-b091-2eb9c38e066e"
-			type="UserCode"/>
-			<testmodule
-			name="GenerateAllForms"
-			id="e5865322-fb65-4ea9-b011-6c5aa2c512ba"
-			ref="1e793a50-da64-41a8-915c-08cbc67d8eb5"
+			name="TestCaseDriver"
+			id="79e9623e-7ba3-4869-b1f8-b3608e6bdc3c"
+			ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 			type="UserCode"/>
 		</testcase>
 		<testcase
@@ -2172,11 +2171,25 @@ reportlevel="Info;20">
 			ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 			type="UserCode"/>
 		</testcase>
+		<testcase
+		name="TestScripts_rightClickTrendsGraph"
+		id="f948fa99-8c8b-46ac-bdbf-0b1f3e2ad68d">
+			<testmodule
+			name="TestCaseDriver"
+			id="7e22214a-a7fd-477f-b7c7-e68c8d12dfed"
+			ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+			type="UserCode"/>
+		</testcase>
 	</content>
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="f948fa99-8c8b-46ac-bdbf-0b1f3e2ad68d"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
@@ -2187,4 +2200,3 @@ reportlevel="Info;20">
 		</reference>
 	</references>
 </testsuite>
-
