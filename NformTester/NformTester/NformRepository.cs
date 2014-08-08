@@ -29,6 +29,8 @@ namespace NformTester
         NformRepositoryFolders.NFormAppFolder _nformapp;
         NformRepositoryFolders.ExternalAppFolder _externalapp;
         NformRepositoryFolders.ExplorerAppFolder _explorer;
+        NformRepositoryFolders.InboxMicrosoftOutlookAppFolder _inboxmicrosoftoutlook;
+        NformRepositoryFolders.ContextMenuStrip1AppFolder _contextmenustrip1;
 
         /// <summary>
         /// Gets the singleton class instance representing the NformRepository element repository.
@@ -48,6 +50,8 @@ namespace NformTester
             _nformapp = new NformRepositoryFolders.NFormAppFolder(this);
             _externalapp = new NformRepositoryFolders.ExternalAppFolder(this);
             _explorer = new NformRepositoryFolders.ExplorerAppFolder(this);
+            _inboxmicrosoftoutlook = new NformRepositoryFolders.InboxMicrosoftOutlookAppFolder(this);
+            _contextmenustrip1 = new NformRepositoryFolders.ContextMenuStrip1AppFolder(this);
         }
 
 #region Variables
@@ -103,6 +107,24 @@ namespace NformTester
         public virtual NformRepositoryFolders.ExplorerAppFolder Explorer
         {
             get { return _explorer; }
+        }
+
+        /// <summary>
+        /// The InboxMicrosoftOutlook folder.
+        /// </summary>
+        [RepositoryFolder("6c6d7532-83f6-4835-988c-1d2f8d9ae9e2")]
+        public virtual NformRepositoryFolders.InboxMicrosoftOutlookAppFolder InboxMicrosoftOutlook
+        {
+            get { return _inboxmicrosoftoutlook; }
+        }
+
+        /// <summary>
+        /// The ContextMenuStrip1 folder.
+        /// </summary>
+        [RepositoryFolder("e24b7160-a611-48d4-9e73-c899b8e05ac1")]
+        public virtual NformRepositoryFolders.ContextMenuStrip1AppFolder ContextMenuStrip1
+        {
+            get { return _contextmenustrip1; }
         }
     }
 
@@ -1019,6 +1041,7 @@ namespace NformTester
             RepoItemInfo _configure_itaInfo;
             RepoItemInfo _useroption_itaInfo;
             RepoItemInfo _alarmseveritytableInfo;
+            RepoItemInfo _rackpdu1264202215Info;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1160,6 +1183,7 @@ namespace NformTester
                 _configure_itaInfo = new RepoItemInfo(this, "Configure_Ita", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configura']", 30000, null, "e097dc65-e4e2-42db-9db1-9eff9f8df884");
                 _useroption_itaInfo = new RepoItemInfo(this, "UserOption_Ita", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configura']/menuitem[@accessiblename='Opzioni utente...']", 30000, null, "2a759347-ec1a-4e14-ab7b-e3cc769116be");
                 _alarmseveritytableInfo = new RepoItemInfo(this, "AlarmSeverityTable", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Severity: .*']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']", 30000, null, "bf9920a1-680e-4503-9ffb-9adb2b24f2bc");
+                _rackpdu1264202215Info = new RepoItemInfo(this, "RackPDU1264202215", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='RackPDU_126.4.202.215']", 30000, null, "afcc3de7-1328-4095-b31f-84b4c4da8bb5");
             }
 
             /// <summary>
@@ -4375,6 +4399,30 @@ namespace NformTester
                 get
                 {
                     return _alarmseveritytableInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RackPDU1264202215 item.
+            /// </summary>
+            [RepositoryItem("afcc3de7-1328-4095-b31f-84b4c4da8bb5")]
+            public virtual Ranorex.TreeItem RackPDU1264202215
+            {
+                get
+                {
+                    return _rackpdu1264202215Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RackPDU1264202215 item info.
+            /// </summary>
+            [RepositoryItemInfo("afcc3de7-1328-4095-b31f-84b4c4da8bb5")]
+            public virtual RepoItemInfo RackPDU1264202215Info
+            {
+                get
+                {
+                    return _rackpdu1264202215Info;
                 }
             }
         }
@@ -8730,29 +8778,29 @@ namespace NformTester
             /// Creates a new FormContextMenuContextMenuStrip  folder.
             /// </summary>
             public FormContextMenuContextMenuStripAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormContextMenuContextMenuStrip", "", parentFolder, 30000, true, "c520e7ed-237e-4d0c-8d71-680ef1d76a25", "")
+                    base("FormContextMenuContextMenuStrip", "/contextmenu[@controlname='contextMenuStrip1']", parentFolder, 30000, true, "c520e7ed-237e-4d0c-8d71-680ef1d76a25", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "c520e7ed-237e-4d0c-8d71-680ef1d76a25");
-                _trendscopyInfo = new RepoItemInfo(this, "TrendsCopy", "/menuitem[@accessiblename='Copy']", 30000, null, "4c914716-2c6b-4653-8cd8-4c11d8fd5731");
-                _trendspage_setupInfo = new RepoItemInfo(this, "TrendsPage_Setup", "/menuitem[@accessiblename='Page Setup...']", 30000, null, "354d6f45-5290-43ec-8126-07889dc979f4");
-                _trendsprintInfo = new RepoItemInfo(this, "TrendsPrint", "/menuitem[@accessiblename='Print...']", 30000, null, "60e9847b-a6ac-43f5-a957-4b5f41f15e56");
-                _trendsshow_point_valuesInfo = new RepoItemInfo(this, "TrendsShow_Point_Values", "/menuitem[@accessiblename='Show Point Values']", 30000, null, "7b992ac5-85c5-4237-a5aa-91f9932f8a99");
-                _trendsun_zoomInfo = new RepoItemInfo(this, "TrendsUn_Zoom", "/menuitem[@accessiblename='Un-Zoom']", 30000, null, "ff0c6c0a-a1ee-4564-93b8-d5efe2285650");
-                _trendsundo_all_zoom_panInfo = new RepoItemInfo(this, "TrendsUndo_All_Zoom_Pan", "/menuitem[@accessiblename~'Undo All Zoom']", 30000, null, "f449ca31-ddd8-4eed-b707-bda74ea12715");
-                _trendsset_scale_to_defaultInfo = new RepoItemInfo(this, "TrendsSet_Scale_to_Default", "/menuitem[@accessiblename='Set Scale to Default']", 30000, null, "f40de0d9-b7f0-4b6e-8b75-0a430f7f13e9");
-                _trendssave_image_asInfo = new RepoItemInfo(this, "TrendsSave_Image_As", "/menuitem[@accessiblename='Save Image As...']", 30000, null, "158de282-c7dc-42d7-8cf6-72e14cacd58e");
-                _trendscopy_dataInfo = new RepoItemInfo(this, "TrendsCopy_data", "/menuitem[@accessiblename='Copy data']", 30000, null, "3c79708b-6bac-45f0-aad3-5cc9b2b66bbd");
+                _trendscopyInfo = new RepoItemInfo(this, "TrendsCopy", "menuitem[@accessiblename='Copy']", 30000, null, "4c914716-2c6b-4653-8cd8-4c11d8fd5731");
+                _trendspage_setupInfo = new RepoItemInfo(this, "TrendsPage_Setup", "menuitem[@accessiblename='Page Setup...']", 30000, null, "354d6f45-5290-43ec-8126-07889dc979f4");
+                _trendsprintInfo = new RepoItemInfo(this, "TrendsPrint", "menuitem[@accessiblename='Print...']", 30000, null, "60e9847b-a6ac-43f5-a957-4b5f41f15e56");
+                _trendsshow_point_valuesInfo = new RepoItemInfo(this, "TrendsShow_Point_Values", "menuitem[@accessiblename='Show Point Values']", 30000, null, "7b992ac5-85c5-4237-a5aa-91f9932f8a99");
+                _trendsun_zoomInfo = new RepoItemInfo(this, "TrendsUn_Zoom", "menuitem[@accessiblename='Un-Zoom']", 30000, null, "ff0c6c0a-a1ee-4564-93b8-d5efe2285650");
+                _trendsundo_all_zoom_panInfo = new RepoItemInfo(this, "TrendsUndo_All_Zoom_Pan", "menuitem[@accessiblename~'Undo All Zoom']", 30000, null, "f449ca31-ddd8-4eed-b707-bda74ea12715");
+                _trendsset_scale_to_defaultInfo = new RepoItemInfo(this, "TrendsSet_Scale_to_Default", "menuitem[@accessiblename='Set Scale to Default']", 30000, null, "f40de0d9-b7f0-4b6e-8b75-0a430f7f13e9");
+                _trendssave_image_asInfo = new RepoItemInfo(this, "TrendsSave_Image_As", "menuitem[@accessiblename='Save Image As...']", 30000, null, "158de282-c7dc-42d7-8cf6-72e14cacd58e");
+                _trendscopy_dataInfo = new RepoItemInfo(this, "TrendsCopy_data", "menuitem[@accessiblename='Copy data']", 30000, null, "3c79708b-6bac-45f0-aad3-5cc9b2b66bbd");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
             [RepositoryItem("c520e7ed-237e-4d0c-8d71-680ef1d76a25")]
-            public virtual Ranorex.Unknown Self
+            public virtual Ranorex.ContextMenu Self
             {
                 get
                 {
-                    return _selfInfo.CreateAdapter<Ranorex.Unknown>(true);
+                    return _selfInfo.CreateAdapter<Ranorex.ContextMenu>(true);
                 }
             }
 
@@ -36363,6 +36411,7 @@ namespace NformTester
             RepoItemInfo _selfInfo;
             RepoItemInfo _tableentityInfo;
             RepoItemInfo _excelInfo;
+            RepoItemInfo _cellk34Info;
 
             /// <summary>
             /// Creates a new FormExcel  folder.
@@ -36373,6 +36422,7 @@ namespace NformTester
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "ded0c69e-927c-4853-95e9-6f24cbeca027");
                 _tableentityInfo = new RepoItemInfo(this, "TableEntity", "element[@class='XLDESK']/workbook/table[@index='1']", 30000, null, "348bf51d-be77-4e75-8b57-8d845104766f");
                 _excelInfo = new RepoItemInfo(this, "EXCEL", "element[@class='EXCEL<']", 30000, null, "61fdaebc-7591-4aea-a4de-759350cd313f");
+                _cellk34Info = new RepoItemInfo(this, "CellK34", "element[@class='XLDESK']/workbook/table[@name='Scripts']/row[@index='34']/cell[@address='K34']", 30000, null, "8ecb3b23-725e-403f-9826-4a2fe168fa22");
             }
 
             /// <summary>
@@ -36444,6 +36494,30 @@ namespace NformTester
                 get
                 {
                     return _excelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellK34 item.
+            /// </summary>
+            [RepositoryItem("8ecb3b23-725e-403f-9826-4a2fe168fa22")]
+            public virtual Ranorex.Cell CellK34
+            {
+                get
+                {
+                    return _cellk34Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellK34 item info.
+            /// </summary>
+            [RepositoryItemInfo("8ecb3b23-725e-403f-9826-4a2fe168fa22")]
+            public virtual RepoItemInfo CellK34Info
+            {
+                get
+                {
+                    return _cellk34Info;
                 }
             }
         }
@@ -36538,6 +36612,168 @@ namespace NformTester
                 get
                 {
                     return _administratorliebertrnformunregistInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The InboxMicrosoftOutlookAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("6c6d7532-83f6-4835-988c-1d2f8d9ae9e2")]
+        public partial class InboxMicrosoftOutlookAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _listitem2Info;
+            RepoItemInfo _statusbar101Info;
+
+            /// <summary>
+            /// Creates a new InboxMicrosoftOutlook  folder.
+            /// </summary>
+            public InboxMicrosoftOutlookAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("InboxMicrosoftOutlook", "/form[@title='Inbox - Microsoft Outlook']", parentFolder, 30000, true, "6c6d7532-83f6-4835-988c-1d2f8d9ae9e2", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "6c6d7532-83f6-4835-988c-1d2f8d9ae9e2");
+                _listitem2Info = new RepoItemInfo(this, "ListItem2", "statusbar/listitem[@index='2']", 30000, null, "3617b6b9-cfa6-4f64-96b2-f6b2ce0ef972");
+                _statusbar101Info = new RepoItemInfo(this, "StatusBar101", "statusbar[@controlid='101']", 30000, null, "70c99cb4-f984-4f3d-bd22-a724f0cffcfa");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("6c6d7532-83f6-4835-988c-1d2f8d9ae9e2")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("6c6d7532-83f6-4835-988c-1d2f8d9ae9e2")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ListItem2 item.
+            /// </summary>
+            [RepositoryItem("3617b6b9-cfa6-4f64-96b2-f6b2ce0ef972")]
+            public virtual Ranorex.ListItem ListItem2
+            {
+                get
+                {
+                    return _listitem2Info.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListItem2 item info.
+            /// </summary>
+            [RepositoryItemInfo("3617b6b9-cfa6-4f64-96b2-f6b2ce0ef972")]
+            public virtual RepoItemInfo ListItem2Info
+            {
+                get
+                {
+                    return _listitem2Info;
+                }
+            }
+
+            /// <summary>
+            /// The StatusBar101 item.
+            /// </summary>
+            [RepositoryItem("70c99cb4-f984-4f3d-bd22-a724f0cffcfa")]
+            public virtual Ranorex.StatusBar StatusBar101
+            {
+                get
+                {
+                    return _statusbar101Info.CreateAdapter<Ranorex.StatusBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The StatusBar101 item info.
+            /// </summary>
+            [RepositoryItemInfo("70c99cb4-f984-4f3d-bd22-a724f0cffcfa")]
+            public virtual RepoItemInfo StatusBar101Info
+            {
+                get
+                {
+                    return _statusbar101Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ContextMenuStrip1AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("e24b7160-a611-48d4-9e73-c899b8e05ac1")]
+        public partial class ContextMenuStrip1AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _copydataInfo;
+
+            /// <summary>
+            /// Creates a new ContextMenuStrip1  folder.
+            /// </summary>
+            public ContextMenuStrip1AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ContextMenuStrip1", "/contextmenu[@controlname='contextMenuStrip1']", parentFolder, 30000, true, "e24b7160-a611-48d4-9e73-c899b8e05ac1", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "e24b7160-a611-48d4-9e73-c899b8e05ac1");
+                _copydataInfo = new RepoItemInfo(this, "CopyData", "menuitem[@accessiblename='Copy data']", 30000, null, "c5be2bfa-2e60-444f-8744-2a281ddb5c9e");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e24b7160-a611-48d4-9e73-c899b8e05ac1")]
+            public virtual Ranorex.ContextMenu Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e24b7160-a611-48d4-9e73-c899b8e05ac1")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CopyData item.
+            /// </summary>
+            [RepositoryItem("c5be2bfa-2e60-444f-8744-2a281ddb5c9e")]
+            public virtual Ranorex.MenuItem CopyData
+            {
+                get
+                {
+                    return _copydataInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CopyData item info.
+            /// </summary>
+            [RepositoryItemInfo("c5be2bfa-2e60-444f-8744-2a281ddb5c9e")]
+            public virtual RepoItemInfo CopyDataInfo
+            {
+                get
+                {
+                    return _copydataInfo;
                 }
             }
         }

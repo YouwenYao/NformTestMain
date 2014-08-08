@@ -2299,7 +2299,11 @@ reportlevel="Info;20">
 			</testcase>
 			<testcase
 			name="800._Help2"
-			id="1fa44bba-fe43-4270-baec-a0e41f2279c8"/>
+			id="1fa44bba-fe43-4270-baec-a0e41f2279c8">
+				<testcase
+				name="TestCase"
+				id="c4126c4f-4bd2-40d4-9c75-6308cc43632e"/>
+			</testcase>
 			<testcase
 			name="900._Operation_Using_Client_Viewer2"
 			id="a5e9adfd-9aee-44b1-a5b7-3963bd48c29d">
@@ -2398,7 +2402,7 @@ reportlevel="Info;20">
 			type="UserCode"/>
 		</testcase>
 		<testcase
-		name="test"
+		name="TestScript"
 		id="b49c5248-5521-4369-98f1-d67f370014a2">
 			<testmodule
 			name="myTest"
@@ -2412,6 +2416,15 @@ reportlevel="Info;20">
 			<testmodule
 			name="TestCaseDriver"
 			id="047cc82b-ce0d-4b2a-83ce-5e91475749a7"
+			ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+			type="UserCode"/>
+		</testcase>
+		<testcase
+		name="TestScripts_rightClickTrendsGraph"
+		id="f948fa99-8c8b-46ac-bdbf-0b1f3e2ad68d">
+			<testmodule
+			name="TestCaseDriver"
+			id="7e22214a-a7fd-477f-b7c7-e68c8d12dfed"
 			ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 			type="UserCode"/>
 		</testcase>
