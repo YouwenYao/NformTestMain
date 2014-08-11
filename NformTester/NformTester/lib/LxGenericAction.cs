@@ -92,7 +92,7 @@ namespace NformTester.lib
 			m_ActionMap.Add("DoubleClickItem", new object[] {"DoubleClick","S10"});
 			m_ActionMap.Add("RightClick", new object[] {"RightClick","S11"});
 			m_ActionMap.Add("InputCell", new object[] {"Click","S12"});
-
+			
 			// Run the item in stepList
 			// If wrongCount =3, it means that the command fails three times continuously.
 			int wrongTime = 3;
@@ -101,8 +101,6 @@ namespace NformTester.lib
             string key="Try_Times";
             wrongTime = int.Parse(myparseToValue(groupName,key));
     //        MessageBox.Show("wrong Time ="+wrongTime);
-			
-            
 			bool finalResult = true;
 			foreach(LxScriptItem item in stepList)
 			{
@@ -151,7 +149,9 @@ namespace NformTester.lib
 				Del_Device(item);
 				break;
 				default:
-				break;		
+				break;	
+				
+				
 			}
 			return true;
 		}

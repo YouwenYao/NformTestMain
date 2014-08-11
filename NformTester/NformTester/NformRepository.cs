@@ -30,6 +30,9 @@ namespace NformTester
         NformRepositoryFolders.ExternalAppFolder _externalapp;
         NformRepositoryFolders.ExplorerAppFolder _explorer;
         NformRepositoryFolders.NformTesterAppFolder _nformtester;
+        NformRepositoryFolders.NAVIGATELiebertRNformAppFolder _navigateliebertrnform;
+        NformRepositoryFolders.ALARMSLiebertRNformAppFolder _alarmsliebertrnform;
+        NformRepositoryFolders.ServiceControlAppFolder _servicecontrol;
 
         /// <summary>
         /// Gets the singleton class instance representing the NformRepository element repository.
@@ -50,6 +53,9 @@ namespace NformTester
             _externalapp = new NformRepositoryFolders.ExternalAppFolder(this);
             _explorer = new NformRepositoryFolders.ExplorerAppFolder(this);
             _nformtester = new NformRepositoryFolders.NformTesterAppFolder(this);
+            _navigateliebertrnform = new NformRepositoryFolders.NAVIGATELiebertRNformAppFolder(this);
+            _alarmsliebertrnform = new NformRepositoryFolders.ALARMSLiebertRNformAppFolder(this);
+            _servicecontrol = new NformRepositoryFolders.ServiceControlAppFolder(this);
         }
 
 #region Variables
@@ -114,6 +120,33 @@ namespace NformTester
         public virtual NformRepositoryFolders.NformTesterAppFolder NformTester
         {
             get { return _nformtester; }
+        }
+
+        /// <summary>
+        /// The NAVIGATELiebertRNform folder.
+        /// </summary>
+        [RepositoryFolder("5c7b8232-914d-4a1d-a089-f9cb79e7a03a")]
+        public virtual NformRepositoryFolders.NAVIGATELiebertRNformAppFolder NAVIGATELiebertRNform
+        {
+            get { return _navigateliebertrnform; }
+        }
+
+        /// <summary>
+        /// The ALARMSLiebertRNform folder.
+        /// </summary>
+        [RepositoryFolder("bd0790de-9bac-4125-862f-593835ff2089")]
+        public virtual NformRepositoryFolders.ALARMSLiebertRNformAppFolder ALARMSLiebertRNform
+        {
+            get { return _alarmsliebertrnform; }
+        }
+
+        /// <summary>
+        /// The ServiceControl folder.
+        /// </summary>
+        [RepositoryFolder("aed92759-260c-481d-90c2-2bb666c80e36")]
+        public virtual NformRepositoryFolders.ServiceControlAppFolder ServiceControl
+        {
+            get { return _servicecontrol; }
         }
     }
 
@@ -1019,6 +1052,7 @@ namespace NformTester
             RepoItemInfo _configure_itaInfo;
             RepoItemInfo _useroption_itaInfo;
             RepoItemInfo _alarmseveritytableInfo;
+            RepoItemInfo _mainformtitleInfo;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1160,6 +1194,7 @@ namespace NformTester
                 _configure_itaInfo = new RepoItemInfo(this, "Configure_Ita", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configura']", 30000, null, "e097dc65-e4e2-42db-9db1-9eff9f8df884");
                 _useroption_itaInfo = new RepoItemInfo(this, "UserOption_Ita", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configura']/menuitem[@accessiblename='Opzioni utente...']", 30000, null, "2a759347-ec1a-4e14-ab7b-e3cc769116be");
                 _alarmseveritytableInfo = new RepoItemInfo(this, "AlarmSeverityTable", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Severity: .*']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']", 30000, null, "bf9920a1-680e-4503-9ffb-9adb2b24f2bc");
+                _mainformtitleInfo = new RepoItemInfo(this, "MainFormTitle", "titlebar[@accessiblerole='TitleBar']", 30000, null, "5bc2b84d-b2d0-4be5-803f-68729826adc7");
             }
 
             /// <summary>
@@ -4375,6 +4410,30 @@ namespace NformTester
                 get
                 {
                     return _alarmseveritytableInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MainFormTitle item.
+            /// </summary>
+            [RepositoryItem("5bc2b84d-b2d0-4be5-803f-68729826adc7")]
+            public virtual Ranorex.TitleBar MainFormTitle
+            {
+                get
+                {
+                    return _mainformtitleInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MainFormTitle item info.
+            /// </summary>
+            [RepositoryItemInfo("5bc2b84d-b2d0-4be5-803f-68729826adc7")]
+            public virtual RepoItemInfo MainFormTitleInfo
+            {
+                get
+                {
+                    return _mainformtitleInfo;
                 }
             }
         }
@@ -7917,7 +7976,7 @@ namespace NformTester
                     base("FormCreated_User", "/form[@title='Created User']", parentFolder, 30000, true, "e9e1dcd3-5aa6-4b2b-bd1b-12c0b5466664", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "e9e1dcd3-5aa6-4b2b-bd1b-12c0b5466664");
-                _okInfo = new RepoItemInfo(this, "OK", "button[@text='OK']", 30000, null, "86a117f4-77ee-4ec1-8314-680a8f853064");
+                _okInfo = new RepoItemInfo(this, "OK", "button[@text='OK' or @text='确定']", 30000, null, "86a117f4-77ee-4ec1-8314-680a8f853064");
             }
 
             /// <summary>
@@ -23307,7 +23366,7 @@ namespace NformTester
                 _device_typeInfo = new RepoItemInfo(this, "Device_type", "container[@controlname='m_deviceTypeCtl']/container/combobox[@controlname='m_devTypeCombo']", 30000, null, "256244f7-9d68-4694-85fb-8c8c53f683d1");
                 _protocolInfo = new RepoItemInfo(this, "Protocol", "container[@controlname='m_deviceTypeCtl']/container/combobox[@controlname='m_devProtocolCombo']", 30000, null, "7ff295b1-40b3-4cb7-b830-c82b01497be6");
                 _communicationsInfo = new RepoItemInfo(this, "Communications", "tabpagelist/tabpage[@accessiblename='Communications']", 30000, null, "231e1437-8231-4669-84fb-ba2c631a9e68");
-                _liebert_protocolInfo = new RepoItemInfo(this, "Liebert_protocol", "tabpagelist/tabpage[@accessiblename='Liebert protocol']", 30000, null, "24875cc4-81ed-4f35-a8b5-7b562cbed644");
+                _liebert_protocolInfo = new RepoItemInfo(this, "Liebert_protocol", "tabpagelist/tabpage[@accessiblename='Liebert protocol' or @accessiblename='Emerson protocol']", 30000, null, "24875cc4-81ed-4f35-a8b5-7b562cbed644");
                 _snmpInfo = new RepoItemInfo(this, "SNMP", "tabpagelist/tabpage[@accessiblename='SNMP']", 30000, null, "ff093a3f-5913-4f3f-bf60-f052c3c91329");
                 _info_linksInfo = new RepoItemInfo(this, "Info_links", "button[@controlname='m_linksBtn']", 30000, null, "0433466c-a171-474c-b5ea-b4d7ee97854e");
                 _alarms_and_dataInfo = new RepoItemInfo(this, "Alarms_and_data", "button[@controlname='m_alarmsDataBtn']", 30000, null, "89a1c202-8812-41cd-8347-df1361e439a5");
@@ -26013,6 +26072,7 @@ namespace NformTester
             RepoItemInfo _helpInfo;
             RepoItemInfo _current_devicesInfo;
             RepoItemInfo _remaining_licensesInfo;
+            RepoItemInfo _addressrow0Info;
 
             /// <summary>
             /// Creates a new FormManaged_Devices  folder.
@@ -26034,6 +26094,7 @@ namespace NformTester
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "32415cb4-72a6-4937-9086-0a8758db313c");
                 _current_devicesInfo = new RepoItemInfo(this, "Current_devices", "container[@controlname='m_biListGrp']/text[@controlname='m_countLbl']", 30000, null, "36b4d1ea-e602-4394-846c-511ed08093a9");
                 _remaining_licensesInfo = new RepoItemInfo(this, "Remaining_licenses", "container[@controlname='m_biListGrp']/text[@controlname='m_remLicLbl']", 30000, null, "a75acbd6-d739-4ebf-800f-3adf60614060");
+                _addressrow0Info = new RepoItemInfo(this, "AddressRow0", "container[@controlname='m_biListGrp']/container[@controlname='m_mgdDevListDgrid']/table/row[@accessiblename='Row 0']/cell[@accessiblename='Address Row 0']", 30000, null, "383846c2-2eee-424d-95ed-5322f62b2c9f");
             }
 
             /// <summary>
@@ -26369,6 +26430,30 @@ namespace NformTester
                 get
                 {
                     return _remaining_licensesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddressRow0 item.
+            /// </summary>
+            [RepositoryItem("383846c2-2eee-424d-95ed-5322f62b2c9f")]
+            public virtual Ranorex.Cell AddressRow0
+            {
+                get
+                {
+                    return _addressrow0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddressRow0 item info.
+            /// </summary>
+            [RepositoryItemInfo("383846c2-2eee-424d-95ed-5322f62b2c9f")]
+            public virtual RepoItemInfo AddressRow0Info
+            {
+                get
+                {
+                    return _addressrow0Info;
                 }
             }
         }
@@ -34754,6 +34839,7 @@ namespace NformTester
             RepoItemInfo _stopInfo;
             RepoItemInfo _startInfo;
             RepoItemInfo _restartInfo;
+            RepoItemInfo _nformservicestatusInfo;
 
             /// <summary>
             /// Creates a new FormService_Control  folder.
@@ -34767,6 +34853,7 @@ namespace NformTester
                 _stopInfo = new RepoItemInfo(this, "Stop", "button[@controlname='m_stopBtn']", 30000, null, "11584c5d-d3eb-4458-8adc-801eda2c37a8");
                 _startInfo = new RepoItemInfo(this, "Start", "button[@controlname='m_startBtn']", 30000, null, "c7fa4be8-9322-4b23-955f-ffbc1b207689");
                 _restartInfo = new RepoItemInfo(this, "Restart", "button[@controlname='m_restartBtn']", 30000, null, "4f353b76-41bf-4ef4-a2f4-2b74db222d2d");
+                _nformservicestatusInfo = new RepoItemInfo(this, "NformServiceStatus", "container[@controlname='m_srvcStatusTbx']/text[@controlname='m_srvcStatusTbx-Ctl']/text[@accessiblename='Nform service status:']", 30000, null, "7226e155-b6b0-4b41-ab6f-0db4c93e2e1b");
             }
 
             /// <summary>
@@ -34910,6 +34997,30 @@ namespace NformTester
                 get
                 {
                     return _restartInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NformServiceStatus item.
+            /// </summary>
+            [RepositoryItem("7226e155-b6b0-4b41-ab6f-0db4c93e2e1b")]
+            public virtual Ranorex.Text NformServiceStatus
+            {
+                get
+                {
+                    return _nformservicestatusInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NformServiceStatus item info.
+            /// </summary>
+            [RepositoryItemInfo("7226e155-b6b0-4b41-ab6f-0db4c93e2e1b")]
+            public virtual RepoItemInfo NformServiceStatusInfo
+            {
+                get
+                {
+                    return _nformservicestatusInfo;
                 }
             }
         }
@@ -36408,6 +36519,288 @@ namespace NformTester
                 get
                 {
                     return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The NAVIGATELiebertRNformAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("5c7b8232-914d-4a1d-a089-f9cb79e7a03a")]
+        public partial class NAVIGATELiebertRNformAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _alarmsliebertrnformInfo;
+            RepoItemInfo _buttonminnavigateInfo;
+
+            /// <summary>
+            /// Creates a new NAVIGATELiebertRNform  folder.
+            /// </summary>
+            public NAVIGATELiebertRNformAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("NAVIGATELiebertRNform", "/form[@controlname='LxFloatingWindow' and @title='NAVIGATE - Liebert® Nform']", parentFolder, 30000, true, "5c7b8232-914d-4a1d-a089-f9cb79e7a03a", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "5c7b8232-914d-4a1d-a089-f9cb79e7a03a");
+                _alarmsliebertrnformInfo = new RepoItemInfo(this, "ALARMSLiebertRNform", "", 30000, null, "00625b14-f30d-4325-b975-72728cd44faf");
+                _buttonminnavigateInfo = new RepoItemInfo(this, "Buttonminnavigate", "titlebar/button[@accessiblename='最小化']", 30000, null, "e482c789-28b1-47af-b512-016493898318");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("5c7b8232-914d-4a1d-a089-f9cb79e7a03a")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("5c7b8232-914d-4a1d-a089-f9cb79e7a03a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ALARMSLiebertRNform item.
+            /// </summary>
+            [RepositoryItem("00625b14-f30d-4325-b975-72728cd44faf")]
+            public virtual Ranorex.Form ALARMSLiebertRNform
+            {
+                get
+                {
+                    return _alarmsliebertrnformInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ALARMSLiebertRNform item info.
+            /// </summary>
+            [RepositoryItemInfo("00625b14-f30d-4325-b975-72728cd44faf")]
+            public virtual RepoItemInfo ALARMSLiebertRNformInfo
+            {
+                get
+                {
+                    return _alarmsliebertrnformInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Buttonminnavigate item.
+            /// </summary>
+            [RepositoryItem("e482c789-28b1-47af-b512-016493898318")]
+            public virtual Ranorex.Button Buttonminnavigate
+            {
+                get
+                {
+                    return _buttonminnavigateInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Buttonminnavigate item info.
+            /// </summary>
+            [RepositoryItemInfo("e482c789-28b1-47af-b512-016493898318")]
+            public virtual RepoItemInfo ButtonminnavigateInfo
+            {
+                get
+                {
+                    return _buttonminnavigateInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ALARMSLiebertRNformAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("bd0790de-9bac-4125-862f-593835ff2089")]
+        public partial class ALARMSLiebertRNformAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _alarmsliebertrnformInfo;
+            RepoItemInfo _buttonminalarmInfo;
+
+            /// <summary>
+            /// Creates a new ALARMSLiebertRNform  folder.
+            /// </summary>
+            public ALARMSLiebertRNformAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ALARMSLiebertRNform", "/form[@controlname='LxFloatingWindow' and @title='ALARMS - Liebert® Nform']", parentFolder, 30000, true, "bd0790de-9bac-4125-862f-593835ff2089", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "bd0790de-9bac-4125-862f-593835ff2089");
+                _alarmsliebertrnformInfo = new RepoItemInfo(this, "ALARMSLiebertRNform", "", 30000, null, "5981a24b-e038-4501-b273-d46814491030");
+                _buttonminalarmInfo = new RepoItemInfo(this, "Buttonminalarm", "titlebar/button[@accessiblename='最小化']", 30000, null, "6fd16bbd-25b5-47b4-b7b8-441c18390b9b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("bd0790de-9bac-4125-862f-593835ff2089")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("bd0790de-9bac-4125-862f-593835ff2089")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ALARMSLiebertRNform item.
+            /// </summary>
+            [RepositoryItem("5981a24b-e038-4501-b273-d46814491030")]
+            public virtual Ranorex.Form ALARMSLiebertRNform
+            {
+                get
+                {
+                    return _alarmsliebertrnformInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ALARMSLiebertRNform item info.
+            /// </summary>
+            [RepositoryItemInfo("5981a24b-e038-4501-b273-d46814491030")]
+            public virtual RepoItemInfo ALARMSLiebertRNformInfo
+            {
+                get
+                {
+                    return _alarmsliebertrnformInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Buttonminalarm item.
+            /// </summary>
+            [RepositoryItem("6fd16bbd-25b5-47b4-b7b8-441c18390b9b")]
+            public virtual Ranorex.Button Buttonminalarm
+            {
+                get
+                {
+                    return _buttonminalarmInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Buttonminalarm item info.
+            /// </summary>
+            [RepositoryItemInfo("6fd16bbd-25b5-47b4-b7b8-441c18390b9b")]
+            public virtual RepoItemInfo ButtonminalarmInfo
+            {
+                get
+                {
+                    return _buttonminalarmInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ServiceControlAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("aed92759-260c-481d-90c2-2bb666c80e36")]
+        public partial class ServiceControlAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _servicecontrolInfo;
+            RepoItemInfo _buttonokInfo;
+
+            /// <summary>
+            /// Creates a new ServiceControl  folder.
+            /// </summary>
+            public ServiceControlAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ServiceControl", "/form[@title='Service Control']", parentFolder, 30000, true, "aed92759-260c-481d-90c2-2bb666c80e36", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "aed92759-260c-481d-90c2-2bb666c80e36");
+                _servicecontrolInfo = new RepoItemInfo(this, "ServiceControl", "", 30000, null, "d4fc4e96-085f-4ad2-bfa9-e96b1f9521e9");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@text='确定' or @text='OK']", 30000, null, "b0492d5f-9728-45fc-b6c4-609a201b3c3b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("aed92759-260c-481d-90c2-2bb666c80e36")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("aed92759-260c-481d-90c2-2bb666c80e36")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ServiceControl item.
+            /// </summary>
+            [RepositoryItem("d4fc4e96-085f-4ad2-bfa9-e96b1f9521e9")]
+            public virtual Ranorex.Form ServiceControl
+            {
+                get
+                {
+                    return _servicecontrolInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ServiceControl item info.
+            /// </summary>
+            [RepositoryItemInfo("d4fc4e96-085f-4ad2-bfa9-e96b1f9521e9")]
+            public virtual RepoItemInfo ServiceControlInfo
+            {
+                get
+                {
+                    return _servicecontrolInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item.
+            /// </summary>
+            [RepositoryItem("b0492d5f-9728-45fc-b6c4-609a201b3c3b")]
+            public virtual Ranorex.Button ButtonOK
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item info.
+            /// </summary>
+            [RepositoryItemInfo("b0492d5f-9728-45fc-b6c4-609a201b3c3b")]
+            public virtual RepoItemInfo ButtonOKInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
                 }
             }
         }

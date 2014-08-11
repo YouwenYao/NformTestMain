@@ -1237,6 +1237,14 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					addcaps="table,control,nativewindow">
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Severity: .*']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
 					</item>
+					<item
+					name="MainFormTitle"
+					id="5bc2b84d-b2d0-4be5-803f-68729826adc7"
+					searchtimeout="30000ms"
+					capname="titlebar"
+					addcaps="titlebar,accessible">
+						/form[@controlname='LxViewerFrame']/titlebar[@accessiblerole='TitleBar']
+					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
 					</basepath>
@@ -2403,7 +2411,7 @@ AAAASUVORK5CYII=
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='Created User']/button[@text='OK']
+						/form[@title='Created User']/button[@text='OK' or @text='&#30830;&#23450;']
 					</item>
 					<basepath>
 						/form[@title='Created User']
@@ -7549,7 +7557,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="tabpage"
 					addcaps="tabpage,accessible">
-						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@accessiblename='Liebert protocol']
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@accessiblename='Liebert protocol' or @accessiblename='Emerson protocol']
 					</item>
 					<item
 					name="SNMP"
@@ -8495,6 +8503,14 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="text"
 					addcaps="text,control,nativewindow">
 						/form[@controlname='LxMgdDeviceListDlg']/container[@controlname='m_biListGrp']/text[@controlname='m_remLicLbl']
+					</item>
+					<item
+					name="AddressRow0"
+					id="383846c2-2eee-424d-95ed-5322f62b2c9f"
+					searchtimeout="30000ms"
+					capname="cell"
+					addcaps="cell,accessible">
+						/form[@controlname='LxMgdDeviceListDlg']/container[@controlname='m_biListGrp']/container[@controlname='m_mgdDevListDgrid']/table/row[@accessiblename='Row 0']/cell[@accessiblename='Address Row 0']
 					</item>
 					<basepath>
 						/form[@controlname='LxMgdDeviceListDlg']
@@ -11375,6 +11391,14 @@ N7DLAAAAAElFTkSuQmCC
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxServiceCtlDlg']/button[@controlname='m_restartBtn']
 					</item>
+					<item
+					name="NformServiceStatus"
+					id="7226e155-b6b0-4b41-ab6f-0db4c93e2e1b"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,accessible">
+						/form[@controlname='LxServiceCtlDlg']/container[@controlname='m_srvcStatusTbx']/text[@controlname='m_srvcStatusTbx-Ctl']/text[@accessiblename='Nform service status:']
+					</item>
 					<basepath>
 						/form[@controlname='LxServiceCtlDlg']
 					</basepath>
@@ -11978,6 +12002,128 @@ HdiA9y3/nx/3wmkjNlcsLeSAeBFswPUWsOZ7+7KR7PyOxX6g0PMWsDiaAdlgA76DvIERFmhhczwK
 qGYKqgHPtzmBoxBoLjAcpuDFz/cF/T+3LwrVAJDma/ssIbYDwwMnBjr//T4nhGZYGICd/7waYgCI
 xoXvV/+/B3Qt3P/IBoA1XwcGIgG8d54mqgFgQ6YBEwyRGCUNIKcokAQxmKjkTVdFAJ126FvNZ48R
 AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		name="NAVIGATELiebertRNform"
+		id="5c7b8232-914d-4a1d-a089-f9cb79e7a03a"
+		searchtimeout="30000ms"
+		capname="form"
+		addcaps="form,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ALARMSLiebertRNform"
+			id="00625b14-f30d-4325-b975-72728cd44faf"
+			searchtimeout="30000ms"
+			capname="form"
+			addcaps="form,control,nativewindow">
+				/form[@controlname='LxFloatingWindow' and @title='NAVIGATE - Liebert&#174; Nform']
+			</item>
+			<item
+			name="Buttonminnavigate"
+			id="e482c789-28b1-47af-b512-016493898318"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,accessible">
+				/form[@controlname='LxFloatingWindow' and @title='NAVIGATE - Liebert&#174; Nform']/titlebar/button[@accessiblename='&#26368;&#23567;&#21270;']
+			</item>
+			<basepath>
+				/form[@controlname='LxFloatingWindow' and @title='NAVIGATE - Liebert&#174; Nform']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAfJJREFUOE/Nk0FrE0EYhnP1V4gUEcGT9AcM/oBCLbpqKkFyCK0KaqFN
+TEjHBqJJazbtZg1piesStyGmdV2kqLWLY7BWSkIhEfYgUoqHPQTZQw459PC6O1UxjXruwMvMfDPf
+O9/Dx/h8R27AsQjam9TT4eLEVJRGIxNUK4p9Z7/v6noZ5xbWMZSuolU3meM4xLZtYuhr9PzCKk4/
+sxFYNPBPcv2Fa/CkiaHcBjZNg3mJrgFt7DTojKLy5Hyl8ncD7HdJeTHJCukYljJx5MUEi0/dYuKD
+OEvSMAsFhqndekfWDI1KD6O0okq9KBV5mo7EZfifNuFfbiKg1hFcqh3stSYuu2v5/iT8jw5QPKQe
+FCkyTK8XGW6utzFWquPsFREDQgEjd1XcdmOesmEBM0WVJ09k8/0GdLmGuS0HoYTLeUHjGhDySL/9
+yuOeQc+r6OzylqG9RbwKcs8/YLXVAZVf4tjFEjcYHBVR3fnO49nIIYNgqsDbNikr0B8nWPnVR2zv
+dfFpt4NYSkFoSkLVrPOYpz6Dq7Mqb9uYpGFFyTDjdQ3qygYGr8mc/4SrU5fmceOegu3Pe8glxnsR
+vjRM2nij0W+t97RrWyQ5HcZxN+kX/59zcDwGvTRL/vt9LMsiwh0ZJ4WMq+xPzeHM6Dx03WRH7u/5
+fgBINWExYY8bogAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		name="ALARMSLiebertRNform"
+		id="bd0790de-9bac-4125-862f-593835ff2089"
+		searchtimeout="30000ms"
+		capname="form"
+		addcaps="form,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ALARMSLiebertRNform"
+			id="5981a24b-e038-4501-b273-d46814491030"
+			searchtimeout="30000ms"
+			capname="form"
+			addcaps="form,control,nativewindow">
+				/form[@controlname='LxFloatingWindow' and @title='ALARMS - Liebert&#174; Nform']
+			</item>
+			<item
+			name="Buttonminalarm"
+			id="6fd16bbd-25b5-47b4-b7b8-441c18390b9b"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,accessible">
+				/form[@controlname='LxFloatingWindow' and @title='ALARMS - Liebert&#174; Nform']/titlebar/button[@accessiblename='&#26368;&#23567;&#21270;']
+			</item>
+			<basepath>
+				/form[@controlname='LxFloatingWindow' and @title='ALARMS - Liebert&#174; Nform']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAfJJREFUOE/Nk0FrE0EYhnP1V4gUEcGT9AcM/oBCLbpqKkFyCK0KaqFN
+TEjHBqJJazbtZg1piesStyGmdV2kqLWLY7BWSkIhEfYgUoqHPQTZQw459PC6O1UxjXruwMvMfDPf
+O9/Dx/h8R27AsQjam9TT4eLEVJRGIxNUK4p9Z7/v6noZ5xbWMZSuolU3meM4xLZtYuhr9PzCKk4/
+sxFYNPBPcv2Fa/CkiaHcBjZNg3mJrgFt7DTojKLy5Hyl8ncD7HdJeTHJCukYljJx5MUEi0/dYuKD
+OEvSMAsFhqndekfWDI1KD6O0okq9KBV5mo7EZfifNuFfbiKg1hFcqh3stSYuu2v5/iT8jw5QPKQe
+FCkyTK8XGW6utzFWquPsFREDQgEjd1XcdmOesmEBM0WVJ09k8/0GdLmGuS0HoYTLeUHjGhDySL/9
+yuOeQc+r6OzylqG9RbwKcs8/YLXVAZVf4tjFEjcYHBVR3fnO49nIIYNgqsDbNikr0B8nWPnVR2zv
+dfFpt4NYSkFoSkLVrPOYpz6Dq7Mqb9uYpGFFyTDjdQ3qygYGr8mc/4SrU5fmceOegu3Pe8glxnsR
+vjRM2nij0W+t97RrWyQ5HcZxN+kX/59zcDwGvTRL/vt9LMsiwh0ZJ4WMq+xPzeHM6Dx03WRH7u/5
+fgBINWExYY8bogAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		name="ServiceControl"
+		id="aed92759-260c-481d-90c2-2bb666c80e36"
+		searchtimeout="30000ms"
+		capname="form"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ServiceControl"
+			id="d4fc4e96-085f-4ad2-bfa9-e96b1f9521e9"
+			searchtimeout="30000ms"
+			capname="form"
+			addcaps="form,nativewindow">
+				/form[@title='Service Control']
+			</item>
+			<item
+			name="ButtonOK"
+			id="b0492d5f-9728-45fc-b6c4-609a201b3c3b"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,nativewindow">
+				/form[@title='Service Control']/button[@text='&#30830;&#23450;' or @text='OK']
+			</item>
+			<basepath>
+				/form[@title='Service Control']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAASJJREFU
+OE+9k7GKwkAQhlPeI9j6Budr+Ai+QvAJgs2xpJBgcSxXBQtBSx9DCyF2WghaWFxhkeKKLSx+9x/Y
+JJuLITYGBmaHzDf//pkEwTueZJbAzanmjbMHnwOoWBUN6kvB/JnibO4Aa0+FNwF+bzk4mZFbWB3q
+weqAcBwiXSxBCIM5a50VnE8HaUimVoEN5qx1BhTmETDTnh+dTCzd11AWYkxpqAfI4w+Y9RC4RsAl
+BM/VF9is4hYA78UmnEbAcejdM52nIp8Q/ZMC9lP+ky8KVn1gz+gVCqJJBP2tsdllyPYHyVlrBEjz
+zqrYBh5gs83EfQYhBFSXS2Ai3za6cB6wibLdROaNeyBXWJQQB3B74ACte+CMrH+Bl35YQlo3rUZ7
+AKnWLBvcTvzrAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<basepath/>

@@ -1052,7 +1052,11 @@ reportlevel="Info;20">
 			id="781843d7-5994-4e8a-990b-2c621b07e118"/>
 			<testcase
 			name="300._Software_Assurance2"
-			id="a873fb87-d502-4f35-a437-01a0134ce12d"/>
+			id="a873fb87-d502-4f35-a437-01a0134ce12d">
+				<description>
+					st
+				</description>
+			</testcase>
 			<testcase
 			name="400._Application2"
 			id="d102dd4f-4618-4b6b-b5cf-b29025582dd3">
@@ -1071,6 +1075,78 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="d6d4137d-a59d-4ad4-942d-f153388bd076"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="400.20.10_ApplicationNformToolsServiceControl"
+				id="eafc8430-7ab4-444a-8944-1583e73654c2">
+					<testmodule
+					name="TestCaseDriver"
+					id="7e27bd2e-b1d9-4c45-a0bb-30cec768a14b"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="400.10.20_ApplicationRestartSession"
+				id="47a2285e-f84f-47ea-9155-1584aaf446a9">
+					<testmodule
+					name="TestCaseDriver"
+					id="5935a1bc-26a9-420e-82ba-ed922915f23a"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="400.30.80_ApplicationAdministratorUserCanExportRegistrationFile"
+				id="0c1f13af-e6c4-460b-b68a-c08aae4ce9ec">
+					<testmodule
+					name="TestCaseDriver"
+					id="635cfde3-305c-4ee5-8df0-a53c7ff1b789"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="400.30.90_NformStatusBeforeRegistratoion"
+				id="7596a613-7f65-458c-a460-352099a81b11">
+					<testmodule
+					name="TestCaseDriver"
+					id="b0a505be-96a2-434f-bab3-316d3e83dccb"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="400.20.20_ApplicationNformToolsInsatllDeviceTypeDefinitions"
+				id="c48fc391-d303-4ddd-a6ec-8b7a63eda09b">
+					<testmodule
+					name="TestCaseDriver"
+					id="92b723a5-3cff-4fea-8216-054de4d0a6f0"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="400.30.10_ApplicationImportManagedDeviceFromG1"
+				id="8cdf791f-e047-42b7-801b-bcbb809546c1">
+					<testmodule
+					name="TestCaseDriver"
+					id="ba6a8273-3bef-4893-b011-fbac0b2c9aae"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="400.30.20_ApplicationImportEmailActionFromG1"
+				id="a33d365f-6c68-492f-bfbd-11f40b9290e2">
+					<testmodule
+					name="TestCaseDriver"
+					id="9f058925-81a0-44bd-bb7d-3969dad72e59"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="400.30.70_DeviceTypeShouldBePresentInEvaluationVersion"
+				id="df8e39e9-3dbd-42af-99b0-06a17845a038">
+					<testmodule
+					name="TestCaseDriver"
+					id="df0bcb41-8f1d-49fe-84f5-bd5ba6ac827e"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
@@ -1144,6 +1220,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="196b539c-dc87-4942-8e3d-7ad2f01e9ca6"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.10.40_VelocityDeviceSettingOnDevicePropertiesDialog"
+					id="3006cf1f-7171-4a68-ac2b-94b29d7c3c83">
+						<testmodule
+						name="TestCaseDriver"
+						id="c35a28af-6787-4f45-b603-df6a7e0a4f2c"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1665,6 +1750,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="9ebada02-a5cc-49a3-a7bf-4f9e421ec4c7"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.30.10.30_DefaultSettingOfFloorplanOfAllDevices"
+					id="f6f09ba4-1635-49e6-bb1d-b905a85e64ae">
+						<testmodule
+						name="TestCaseDriver"
+						id="9509aa99-73fd-4570-b356-fcfd1517d7ee"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -2324,13 +2418,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
+			id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
+			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="bf8d89e3-a747-4a38-bac2-d669014b54a6"/>
-			<testcase
-			id="d0a1375c-0e0f-4f34-a85d-106c8b6a47cc"/>
+			id="f6f09ba4-1635-49e6-bb1d-b905a85e64ae"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

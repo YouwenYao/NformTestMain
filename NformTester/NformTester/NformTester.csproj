@@ -157,12 +157,48 @@
       <id>60f76392-c5a3-496d-97f5-23bf84ac816b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\400.10.20_ApplicationRestartSession.xlsx">
+      <id>56c51a63-dc57-4132-9903-7b3c315cced6</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\400.20.10_ApplicationNformToolsServiceControl.xlsx">
+      <id>3bfe4139-9d5d-4fea-9eae-258e83c04af5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\400.20.20_ApplicationNformToolsInsatllDeviceTypeDefinitions.xlsx">
+      <id>7eaeb697-4494-46bc-bfa8-7b1a8678e9d4</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\400.30.10_ApplicationImportManagedDeviceFromG1.xlsx">
+      <id>cace79c4-193e-4272-a838-6711b1069272</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\400.30.20_ApplicationImportEmailActionFromG1.xlsx">
+      <id>40033ec9-b235-49c9-9f37-8f0c99d19282</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\400.30.70_DeviceTypeShouldBePresentInEvaluationVersion.xlsx">
+      <id>f68d767e-f1e1-49a8-8bd9-e2579f6ea6f3</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\400.30.80_ApplicationAdministratorUserCanExportRegistrationFile.xlsx">
+      <id>7dced6b8-ec1d-4797-b49a-4dbe723f3875</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\400.30.90_NformStatusBeforeRegistratoion.xlsx">
+      <id>45bf2b17-2ba8-4ca1-ad35-4d0f99862173</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.10.10.10_GUIForDeviceStatusPolling.xlsx">
       <id>f4aa9a27-f07f-4dc3-9e64-28beaeca31e4</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.10.10.30_DeviceMaintenanceLayoutAndDefaults.xlsx">
       <id>7b3f5992-8355-45aa-a38f-03c0086b27a6</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.10.40_VelocityDeviceSettingOnDevicePropertiesDialog.xlsx">
+      <id>6a77c01c-958c-49af-92bd-a5484c344794</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.10.20.100_DeviceStatusPriorityPolling.xlsx">
@@ -243,6 +279,10 @@
     </None>
     <None Include="Keywordscripts\600.30.10.20_UpDownArrowWhenMiddleDeviceSelected.xlsx">
       <id>f5cda59e-806f-45e5-b4d1-87df82b5ff42</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.10.30_DefaultSettingOfFloorplanOfAllDevices.xlsx">
+      <id>32fa884c-074d-47d8-a059-a57faa19b85b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.30.30.10_AddAndCopyView.xlsx">
