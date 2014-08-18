@@ -273,6 +273,10 @@
       <id>e8e28436-9559-4000-9234-f0ed98ab6906</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.40.30.40_InvokedandRevokedforConfigureDataLogging.xlsx">
+      <id>b5637d1f-b4bf-4d69-97f9-efefc38bc634</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.40.30.50_UsersandGroupsUserProfile.xlsx">
       <id>41e850f1-04f5-4645-94f2-d6500d1f6cab</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

@@ -630,6 +630,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.30.40_InvokedandRevokedforConfigureDataLogging"
+					id="ec676f22-3541-4f16-9520-e86aeb00b40a">
+						<testmodule
+						name="TestCaseDriver"
+						id="abaceb51-e51d-42bd-b515-31771d1d17bc"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses1"
