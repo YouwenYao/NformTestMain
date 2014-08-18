@@ -612,6 +612,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.30.30_InvokedandRevokedforConfigureNavigationView"
+					id="56b0c2c4-5826-4cd5-8320-d573ed115239">
+						<testmodule
+						name="TestCaseDriver"
+						id="5b5bc4eb-c263-424e-b939-79131b40d62b"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses1"
@@ -724,6 +733,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="1f992622-8d89-431d-8b38-6a6bfc32ddae"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.20.60_ServerOptionsEnableLiebertProtocolON"
+					id="b3366d6e-19d1-4622-b5dd-9afa5b20ee10">
+						<testmodule
+						name="TestCaseDriver"
+						id="afab55d0-85f9-4d06-b6a1-08ed76c9aff0"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>

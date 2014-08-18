@@ -269,6 +269,10 @@
       <id>ec2ff9be-ceab-495e-82d4-051e86f8230b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.40.30.30_InvokedandRevokedforConfigureNavigationView.xlsx">
+      <id>e8e28436-9559-4000-9234-f0ed98ab6906</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.40.30.60_DeleteCustomGroup.xlsx">
       <id>e752c6b0-6540-4ba5-9b3a-41521dec543d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -291,6 +295,10 @@
     </None>
     <None Include="Keywordscripts\600.60.20.110_InteractionBetweenPolling.xlsx">
       <id>cb34b4f4-8a61-48b2-bb8b-c28bea00e84b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.60.20.60_ServerOptionsEnableLiebertProtocolON.xlsx">
+      <id>c48f8aa0-5c52-48cc-b36b-1d446313a82f</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.60.30.40_IntervalForGlobalStatusPolling.xlsx">
