@@ -265,6 +265,10 @@
       <id>c2edb074-3a7f-4f05-b6e9-238956f4ec7f</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.40.30.140_UserAccountProperties.xlsx">
+      <id>396e1921-6dc0-484e-a121-d29b6a9492a4</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.40.30.20_InvokedandRevokedforDiscoverNewDevice.xlsx">
       <id>ec2ff9be-ceab-495e-82d4-051e86f8230b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

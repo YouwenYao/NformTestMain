@@ -639,6 +639,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.30.140_UserAccountProperties"
+					id="9d374d3f-5dc9-41a2-a5e7-9314b55e753f">
+						<testmodule
+						name="TestCaseDriver"
+						id="e957eb7c-a5de-4bc3-aebc-e20ed2453c43"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses1"
