@@ -781,6 +781,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.60.20.40_ServerOptionsViewandStoreAlarms"
+					id="55497f9d-9a32-4379-97b4-4bf80fad0af8">
+						<testmodule
+						name="TestCaseDriver"
+						id="e2677ade-d480-44b5-a00a-a4e4d39e6ce6"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password1"
@@ -2383,7 +2392,18 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="2879a82f-643e-4fc5-b047-df6434a6e45d"/>
+			<testcase
+			id="55497f9d-9a32-4379-97b4-4bf80fad0af8"/>
+			<testcase
+			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
+			<testcase
+			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>

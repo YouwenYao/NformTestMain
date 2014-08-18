@@ -313,6 +313,10 @@
       <id>cb34b4f4-8a61-48b2-bb8b-c28bea00e84b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.60.20.40_ServerOptionsViewandStoreAlarms.xlsx">
+      <id>f946d138-5735-455a-b26c-1d4620779ad2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.60.20.60_ServerOptionsEnableLiebertProtocolON.xlsx">
       <id>c48f8aa0-5c52-48cc-b36b-1d446313a82f</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
