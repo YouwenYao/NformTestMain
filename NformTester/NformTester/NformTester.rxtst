@@ -447,6 +447,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.10.30.100_AlarmandDataEditAlarmName"
+					id="6249af83-06a9-4363-a04c-ac229f658718">
+						<testmodule
+						name="TestCaseDriver"
+						id="c1c018bd-9947-4a3d-b935-a92bc8c007b9"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.020._Actions1"
