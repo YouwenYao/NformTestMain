@@ -273,6 +273,10 @@
       <id>e8e28436-9559-4000-9234-f0ed98ab6906</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.40.30.50_UsersandGroupsUserProfile.xlsx">
+      <id>41e850f1-04f5-4645-94f2-d6500d1f6cab</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.40.30.60_DeleteCustomGroup.xlsx">
       <id>e752c6b0-6540-4ba5-9b3a-41521dec543d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

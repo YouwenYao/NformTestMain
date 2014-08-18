@@ -621,6 +621,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.30.50_UsersandGroupsUserProfile"
+					id="56d967a9-166b-4d29-a22f-fd41e7425d86">
+						<testmodule
+						name="TestCaseDriver"
+						id="ad517719-6375-4b5d-88e5-ca2b2d730e98"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses1"
