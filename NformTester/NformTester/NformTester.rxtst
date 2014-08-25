@@ -817,6 +817,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.60.10.10_ServerOptionsChecktheGUIforGlobalStatusPolling"
+					id="fa67ace0-92ae-4c5f-9e3a-5bb6c5858982">
+						<testmodule
+						name="TestCaseDriver"
+						id="141b3a41-78ca-44a3-b9d7-0cbcaee50e89"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password1"

@@ -301,6 +301,10 @@
       <id>4a79d136-6919-43fe-8899-6c321d8b6271</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.60.10.10_ServerOptionsChecktheGUIforGlobalStatusPolling.xlsx">
+      <id>abaea679-5673-42d0-a773-182c72349662</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
       <id>e23ff235-6cdb-456d-bae0-4a7eb5b60731</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
