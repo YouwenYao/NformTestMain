@@ -799,6 +799,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.60.20.90_InputFormatforGlobalStatusPollingIntervalTime"
+					id="b57aeece-d17e-48d5-a8c4-d0000895e47e">
+						<testmodule
+						name="TestCaseDriver"
+						id="7437694a-05f3-40e2-8007-d29bcebaf78f"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password1"
