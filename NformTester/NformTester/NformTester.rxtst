@@ -808,6 +808,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.60.20.80_InputFormatforDailyPollingTime"
+					id="22c1936f-016f-4184-b173-9481e080d3a9">
+						<testmodule
+						name="TestCaseDriver"
+						id="d55dba58-5660-4163-9bb5-97fe9e67a24a"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password1"

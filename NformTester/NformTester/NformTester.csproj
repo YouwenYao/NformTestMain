@@ -325,6 +325,10 @@
       <id>c48f8aa0-5c52-48cc-b36b-1d446313a82f</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.60.20.80_InputFormatforDailyPollingTime.xlsx">
+      <id>82ded35a-5b23-4dea-8ebf-07a5c5ca4f6a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.60.20.90_InputFormatforGlobalStatusPollingIntervalTime.xlsx">
       <id>26078c34-5f18-4a6e-8916-c1aff3b0aad7</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
