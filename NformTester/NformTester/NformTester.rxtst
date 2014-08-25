@@ -465,6 +465,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.10.30.30_DevicesSupportedbyNformG2Product"
+					id="0020e498-85f4-49d1-b253-3cd4cf1c6fd0">
+						<testmodule
+						name="TestCaseDriver"
+						id="1d5797eb-ab55-474d-9461-a9e30b1b64c3"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.020._Actions1"

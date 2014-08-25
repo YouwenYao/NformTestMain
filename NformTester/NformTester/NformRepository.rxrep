@@ -7575,7 +7575,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxMgdDeviceEditDlg']/container[@controlname='m_deviceDscrTbx']/text[@controlname='m_deviceDscrTbx-Ctl']/text[@accessiblename='Description:']
 					</item>
 					<item
-					name="Device_type"
+					name="Device_type_409"
 					id="256244f7-9d68-4694-85fb-8c8c53f683d1"
 					searchtimeout="30000ms"
 					capname="combobox"
@@ -8051,6 +8051,14 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="text"
 					addcaps="text,control,nativewindow">
 						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/text[@controlname='m_rsdSiteIdGblLbl']
+					</item>
+					<item
+					name="Device_type"
+					id="13dc30a7-0b8a-420a-8ab4-aba5501c8638"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,control,nativewindow">
+						/form[@controlname='LxMgdDeviceEditDlg']/container[@controlname='m_deviceTypeCtl']/container/container[@controlname='m_devTypeCombo']/combobox[@controlname='m_devTypeCombo-Ctl']
 					</item>
 					<basepath>
 						/form[@controlname='LxMgdDeviceEditDlg']
@@ -9095,7 +9103,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 						/form[@controlname='LxMgdDeviceAddDlg']/container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceDscrTbx']/text[@controlname='m_s2DeviceDscrTbx-Ctl']/text[@accessiblename='Description:']
 					</item>
 					<item
-					name="Device_type"
+					name="Device_type_409"
 					id="7fe3dab9-cfb9-4903-97ed-489c8230afec"
 					searchtimeout="30000ms"
 					capname="combobox"
@@ -9261,6 +9269,14 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					capname="radiobutton"
 					addcaps="radiobutton,control,nativewindow">
 						/form[@controlname='LxMgdDeviceAddDlg']/container/container[@controlname='m_wizardPageI1']/container[@controlname='m_i1DelimiterCtl']/container/container/radiobutton[@controlname='m_tildeRbtn']
+					</item>
+					<item
+					name="Device_type"
+					id="293502db-1fee-4ce3-a8da-3063e633d17c"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,control,nativewindow">
+						/form[@controlname='LxMgdDeviceAddDlg']/container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/container[@controlname='m_devTypeCombo']/combobox[@controlname='m_devTypeCombo-Ctl']
 					</item>
 					<basepath>
 						/form[@controlname='LxMgdDeviceAddDlg']

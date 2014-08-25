@@ -205,6 +205,10 @@
       <id>75942075-440c-417f-93ad-8052fb41d75a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.10.30.30_DevicesSupportedbyNformG2Product.xlsx">
+      <id>2264b215-0478-49b5-b14c-4b309ec138e7</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.10.30.50_DeleteDevice.xlsx">
       <id>ecae2506-c84e-4b2c-ae22-299028d6793c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

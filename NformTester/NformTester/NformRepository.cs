@@ -23387,7 +23387,7 @@ namespace NformTester
             RepoItemInfo _selfInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
-            RepoItemInfo _device_typeInfo;
+            RepoItemInfo _device_type_409Info;
             RepoItemInfo _protocolInfo;
             RepoItemInfo _communicationsInfo;
             RepoItemInfo _liebert_protocolInfo;
@@ -23447,6 +23447,7 @@ namespace NformTester
             RepoItemInfo _siteidtextInfo;
             RepoItemInfo _openInfo;
             RepoItemInfo _globalvalueInfo;
+            RepoItemInfo _device_typeInfo;
 
             /// <summary>
             /// Creates a new FormDeviceProperties  folder.
@@ -23457,7 +23458,7 @@ namespace NformTester
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "16fe5b0b-360f-4bbf-b149-8047bb9e74f4");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_deviceNameTbx']/text[@controlname='m_deviceNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "720aa15b-eb73-478e-b935-577fa16f883d");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_deviceDscrTbx']/text[@controlname='m_deviceDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "8f9c62b8-c790-4cbb-ba99-61f2552ff284");
-                _device_typeInfo = new RepoItemInfo(this, "Device_type", "container[@controlname='m_deviceTypeCtl']/container/combobox[@controlname='m_devTypeCombo']", 30000, null, "256244f7-9d68-4694-85fb-8c8c53f683d1");
+                _device_type_409Info = new RepoItemInfo(this, "Device_type_409", "container[@controlname='m_deviceTypeCtl']/container/combobox[@controlname='m_devTypeCombo']", 30000, null, "256244f7-9d68-4694-85fb-8c8c53f683d1");
                 _protocolInfo = new RepoItemInfo(this, "Protocol", "container[@controlname='m_deviceTypeCtl']/container/combobox[@controlname='m_devProtocolCombo']", 30000, null, "7ff295b1-40b3-4cb7-b830-c82b01497be6");
                 _communicationsInfo = new RepoItemInfo(this, "Communications", "tabpagelist/tabpage[@accessiblename='Communications']", 30000, null, "231e1437-8231-4669-84fb-ba2c631a9e68");
                 _liebert_protocolInfo = new RepoItemInfo(this, "Liebert_protocol", "tabpagelist/tabpage[@accessiblename='Liebert protocol']", 30000, null, "24875cc4-81ed-4f35-a8b5-7b562cbed644");
@@ -23517,6 +23518,7 @@ namespace NformTester
                 _siteidtextInfo = new RepoItemInfo(this, "SiteIDText", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox/text[@controlid='1001']", 30000, null, "586dc3bf-ccc1-4ea1-b18b-e08134d59f68");
                 _openInfo = new RepoItemInfo(this, "Open", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox/button[@accessiblename='Open']", 30000, null, "a12c0848-07c3-43a6-8f42-59400f8723cb");
                 _globalvalueInfo = new RepoItemInfo(this, "GlobalValue", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/text[@controlname='m_rsdSiteIdGblLbl']", 30000, null, "93179fc4-937d-4c3a-88d2-1e3033c60ea0");
+                _device_typeInfo = new RepoItemInfo(this, "Device_type", "container[@controlname='m_deviceTypeCtl']/container/container[@controlname='m_devTypeCombo']/combobox[@controlname='m_devTypeCombo-Ctl']", 30000, null, "13dc30a7-0b8a-420a-8ab4-aba5501c8638");
             }
 
             /// <summary>
@@ -23592,26 +23594,26 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Device_type item.
+            /// The Device_type_409 item.
             /// </summary>
             [RepositoryItem("256244f7-9d68-4694-85fb-8c8c53f683d1")]
-            public virtual Ranorex.ComboBox Device_type
+            public virtual Ranorex.ComboBox Device_type_409
             {
                 get
                 {
-                    return _device_typeInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                    return _device_type_409Info.CreateAdapter<Ranorex.ComboBox>(true);
                 }
             }
 
             /// <summary>
-            /// The Device_type item info.
+            /// The Device_type_409 item info.
             /// </summary>
             [RepositoryItemInfo("256244f7-9d68-4694-85fb-8c8c53f683d1")]
-            public virtual RepoItemInfo Device_typeInfo
+            public virtual RepoItemInfo Device_type_409Info
             {
                 get
                 {
-                    return _device_typeInfo;
+                    return _device_type_409Info;
                 }
             }
 
@@ -25028,6 +25030,30 @@ namespace NformTester
                 get
                 {
                     return _globalvalueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Device_type item.
+            /// </summary>
+            [RepositoryItem("13dc30a7-0b8a-420a-8ab4-aba5501c8638")]
+            public virtual Ranorex.ComboBox Device_type
+            {
+                get
+                {
+                    return _device_typeInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Device_type item info.
+            /// </summary>
+            [RepositoryItemInfo("13dc30a7-0b8a-420a-8ab4-aba5501c8638")]
+            public virtual RepoItemInfo Device_typeInfo
+            {
+                get
+                {
+                    return _device_typeInfo;
                 }
             }
         }
@@ -27781,7 +27807,7 @@ namespace NformTester
             RepoItemInfo _obtain_setting_from_deviceInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
-            RepoItemInfo _device_typeInfo;
+            RepoItemInfo _device_type_409Info;
             RepoItemInfo _device_protocolInfo;
             RepoItemInfo _addsingle_editInfo;
             RepoItemInfo _customize_hostname_or_ip_addressInfo;
@@ -27802,6 +27828,7 @@ namespace NformTester
             RepoItemInfo _semicolonInfo;
             RepoItemInfo _tabInfo;
             RepoItemInfo _tildeInfo;
+            RepoItemInfo _device_typeInfo;
 
             /// <summary>
             /// Creates a new FormAdd_Device  folder.
@@ -27821,7 +27848,7 @@ namespace NformTester
                 _obtain_setting_from_deviceInfo = new RepoItemInfo(this, "Obtain_setting_from_device", "container/container[@controlname='m_wizardPageS1']/checkbox[@controlname='m_s1DiscoverChk']", 30000, null, "86ec74fa-a7ba-47a5-af0b-1c2e1aaf5a39");
                 _nameInfo = new RepoItemInfo(this, "Name", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceNameTbx']/text[@controlname='m_s2DeviceNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "611d9659-0449-434a-9b9f-ab4bf0afbf16");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceDscrTbx']/text[@controlname='m_s2DeviceDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "aa567937-6505-4cf5-a457-72c46336f9d8");
-                _device_typeInfo = new RepoItemInfo(this, "Device_type", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/combobox[@controlname='m_devTypeCombo']", 30000, null, "7fe3dab9-cfb9-4903-97ed-489c8230afec");
+                _device_type_409Info = new RepoItemInfo(this, "Device_type_409", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/combobox[@controlname='m_devTypeCombo']", 30000, null, "7fe3dab9-cfb9-4903-97ed-489c8230afec");
                 _device_protocolInfo = new RepoItemInfo(this, "Device_protocol", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/combobox[@controlname='m_devProtocolCombo']", 30000, null, "25cd4b6a-e82f-4a1f-b109-619b5cbdb078");
                 _addsingle_editInfo = new RepoItemInfo(this, "AddSingle_edit", "container/container[@controlname='m_wizardPageS2']/button[@controlname='m_s2EditBtn']", 30000, null, "326f10d0-e762-4eba-9d48-7a46b316e09f");
                 _customize_hostname_or_ip_addressInfo = new RepoItemInfo(this, "Customize_hostname_or_IP_address", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DevAddrTbx']/text[@controlname='m_s2DevAddrTbx-Ctl']/text[@accessiblename='Hostname or IP address:']", 30000, null, "cf0e05dd-827b-4b5d-a4e3-e7a28d4428e3");
@@ -27842,6 +27869,7 @@ namespace NformTester
                 _semicolonInfo = new RepoItemInfo(this, "Semicolon", "container/container[@controlname='m_wizardPageI1']/container[@controlname='m_i1DelimiterCtl']/container/container/radiobutton[@controlname='m_semiRbtn']", 30000, null, "cadb23c1-c0a5-4229-a4cb-5c7678a99998");
                 _tabInfo = new RepoItemInfo(this, "Tab", "container/container[@controlname='m_wizardPageI1']/container[@controlname='m_i1DelimiterCtl']/container/container/radiobutton[@controlname='m_tabRbtn']", 30000, null, "a415fae0-eab3-4f5b-9868-a1b30ea407f4");
                 _tildeInfo = new RepoItemInfo(this, "Tilde", "container/container[@controlname='m_wizardPageI1']/container[@controlname='m_i1DelimiterCtl']/container/container/radiobutton[@controlname='m_tildeRbtn']", 30000, null, "7105ef89-f20e-49c8-bc87-8e28f9109de6");
+                _device_typeInfo = new RepoItemInfo(this, "Device_type", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/container[@controlname='m_devTypeCombo']/combobox[@controlname='m_devTypeCombo-Ctl']", 30000, null, "293502db-1fee-4ce3-a8da-3063e633d17c");
             }
 
             /// <summary>
@@ -28133,26 +28161,26 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Device_type item.
+            /// The Device_type_409 item.
             /// </summary>
             [RepositoryItem("7fe3dab9-cfb9-4903-97ed-489c8230afec")]
-            public virtual Ranorex.ComboBox Device_type
+            public virtual Ranorex.ComboBox Device_type_409
             {
                 get
                 {
-                    return _device_typeInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                    return _device_type_409Info.CreateAdapter<Ranorex.ComboBox>(true);
                 }
             }
 
             /// <summary>
-            /// The Device_type item info.
+            /// The Device_type_409 item info.
             /// </summary>
             [RepositoryItemInfo("7fe3dab9-cfb9-4903-97ed-489c8230afec")]
-            public virtual RepoItemInfo Device_typeInfo
+            public virtual RepoItemInfo Device_type_409Info
             {
                 get
                 {
-                    return _device_typeInfo;
+                    return _device_type_409Info;
                 }
             }
 
@@ -28633,6 +28661,30 @@ namespace NformTester
                 get
                 {
                     return _tildeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Device_type item.
+            /// </summary>
+            [RepositoryItem("293502db-1fee-4ce3-a8da-3063e633d17c")]
+            public virtual Ranorex.ComboBox Device_type
+            {
+                get
+                {
+                    return _device_typeInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Device_type item info.
+            /// </summary>
+            [RepositoryItemInfo("293502db-1fee-4ce3-a8da-3063e633d17c")]
+            public virtual RepoItemInfo Device_typeInfo
+            {
+                get
+                {
+                    return _device_typeInfo;
                 }
             }
         }
