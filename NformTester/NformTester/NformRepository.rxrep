@@ -6466,7 +6466,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,accessible">
-						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_generalTab']/container[@controlname='m_rsdSiteIdGrp']/container/text[@controlname='m_rsdSiteIdTbx-Ctl']/text[@accessiblename='Site Id:']
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_generalTab']/container[@controlname='m_rsdSiteIdGrp']/container/text[@controlname='m_rsdSiteIdTbx-Ctl']/text[@accessiblename='Site ID:']
 					</item>
 					<item
 					name="Event_log_file"
@@ -7995,6 +7995,62 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="text"
 					addcaps="text,control,nativewindow">
 						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_velocityPage']/container[@controlname='m_velMstpGrp']/container[@controlname='m_velMstpNodeNbx']/container/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="LiebertRSD"
+					id="c218e52c-4f6f-41a3-b2f1-1929c70170a9"
+					searchtimeout="30000ms"
+					capname="tabpage"
+					addcaps="tabpage,accessible">
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@accessiblename='Liebert RSD']
+					</item>
+					<item
+					name="DeviceTag"
+					id="538a4606-b9d6-47e1-9381-0e49f2d68500"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdDevTagTbx']/text[@controlname='m_rsdDevTagTbx-Ctl']
+					</item>
+					<item
+					name="OverrideGlobalValue"
+					id="d0fb101e-d492-4af0-b51a-4d784f9affdc"
+					searchtimeout="30000ms"
+					capname="checkbox"
+					addcaps="checkbox,control,nativewindow">
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/container/checkbox[@controlname='m_checkBox']
+					</item>
+					<item
+					name="SiteIdCombo"
+					id="a1316cb4-70b7-4cad-9fbd-c92a5a27a64b"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,control,nativewindow">
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox[@controlname='m_rsdSiteIdDevCombo']
+					</item>
+					<item
+					name="SiteIDText"
+					id="586dc3bf-ccc1-4ea1-b18b-e08134d59f68"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,nativewindow">
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox/text[@controlid='1001']
+					</item>
+					<item
+					name="Open"
+					id="a12c0848-07c3-43a6-8f42-59400f8723cb"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox/button[@accessiblename='Open']
+					</item>
+					<item
+					name="GlobalValue"
+					id="93179fc4-937d-4c3a-88d2-1e3033c60ea0"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/text[@controlname='m_rsdSiteIdGblLbl']
 					</item>
 					<basepath>
 						/form[@controlname='LxMgdDeviceEditDlg']

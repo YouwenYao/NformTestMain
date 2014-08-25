@@ -790,6 +790,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.60.20.50_ServerOptionsRSDConfiguration"
+					id="2ffcc2ba-7b32-4fc9-953e-50212ea731d3">
+						<testmodule
+						name="TestCaseDriver"
+						id="5392ecf3-54d9-46c3-861f-d7e2f40815e7"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password1"

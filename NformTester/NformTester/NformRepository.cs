@@ -19559,7 +19559,7 @@ namespace NformTester
                 _logfile_maximum_size_downInfo = new RepoItemInfo(this, "Logfile_maximum_size_down", "tabpagelist/tabpage[@controlname='m_generalTab']/container[@controlname='m_auditLogGrp']/container/container/button[@accessiblename='Down']", 30000, null, "d5ed1abe-d6fd-44a2-bb20-fd6860477ada");
                 _logfile_maximum_size_txtInfo = new RepoItemInfo(this, "Logfile_maximum_size_txt", "tabpagelist/tabpage[@controlname='m_generalTab']/container[@controlname='m_auditLogGrp']/container/text[@controlname='upDownEdit']", 30000, null, "c42aaae2-4b49-4036-b89c-cdfa2ec5d198");
                 _enable_liebert_rsd_supportInfo = new RepoItemInfo(this, "Enable_Liebert_RSD_support", "tabpagelist/tabpage[@controlname='m_generalTab']/container[@controlname='m_rsdSiteIdGrp']/checkbox[@controlname='m_rsdSiteIdEnaChk']", 30000, null, "4022f37b-e5a1-4a28-ac0c-de2a04c0f4cc");
-                _site_idInfo = new RepoItemInfo(this, "Site_Id", "tabpagelist/tabpage[@controlname='m_generalTab']/container[@controlname='m_rsdSiteIdGrp']/container/text[@controlname='m_rsdSiteIdTbx-Ctl']/text[@accessiblename='Site Id:']", 30000, null, "72db0a5c-ebda-4b14-8b04-eef7da6f4ff6");
+                _site_idInfo = new RepoItemInfo(this, "Site_Id", "tabpagelist/tabpage[@controlname='m_generalTab']/container[@controlname='m_rsdSiteIdGrp']/container/text[@controlname='m_rsdSiteIdTbx-Ctl']/text[@accessiblename='Site ID:']", 30000, null, "72db0a5c-ebda-4b14-8b04-eef7da6f4ff6");
                 _event_log_fileInfo = new RepoItemInfo(this, "Event_log_file", "tabpagelist/tabpage[@controlname='m_eventLogTab']/container/text[@controlname='m_eventLogFileTbx']/text[@accessiblename='File:']", 30000, null, "1b00e2d5-9cac-42c4-aa68-8d56a5704065");
                 _event_logfile_maximumInfo = new RepoItemInfo(this, "Event_logfile_maximum", "tabpagelist/tabpage[@controlname='m_eventLogTab']/container/container/combobox[@accessiblename='Maximum size (MB):']", 30000, null, "b48caec7-15d0-421f-9418-df06f16efe19");
                 _event_logfile_maximum_upInfo = new RepoItemInfo(this, "Event_logfile_maximum_up", "tabpagelist/tabpage[@controlname='m_eventLogTab']/container/container/container/button[@accessiblename='Up']", 30000, null, "1abca7b0-6bf9-424c-aba9-7c0388825782");
@@ -23440,6 +23440,13 @@ namespace NformTester
             RepoItemInfo _mstp_node_upInfo;
             RepoItemInfo _mstp_node_downInfo;
             RepoItemInfo _mstp_node_txtInfo;
+            RepoItemInfo _liebertrsdInfo;
+            RepoItemInfo _devicetagInfo;
+            RepoItemInfo _overrideglobalvalueInfo;
+            RepoItemInfo _siteidcomboInfo;
+            RepoItemInfo _siteidtextInfo;
+            RepoItemInfo _openInfo;
+            RepoItemInfo _globalvalueInfo;
 
             /// <summary>
             /// Creates a new FormDeviceProperties  folder.
@@ -23503,6 +23510,13 @@ namespace NformTester
                 _mstp_node_upInfo = new RepoItemInfo(this, "MSTP_node_up", "tabpagelist/tabpage[@controlname='m_velocityPage']/container[@controlname='m_velMstpGrp']/container[@controlname='m_velMstpNodeNbx']/container/container/button[@accessiblename='Up']", 30000, null, "eba8a1dc-72d5-4bf7-8e50-8dece8368d55");
                 _mstp_node_downInfo = new RepoItemInfo(this, "MSTP_node_down", "tabpagelist/tabpage[@controlname='m_velocityPage']/container[@controlname='m_velMstpGrp']/container[@controlname='m_velMstpNodeNbx']/container/container/button[@accessiblename='Down']", 30000, null, "ee2c5125-6fdd-42c7-9009-23d1d3a627fa");
                 _mstp_node_txtInfo = new RepoItemInfo(this, "MSTP_node_txt", "tabpagelist/tabpage[@controlname='m_velocityPage']/container[@controlname='m_velMstpGrp']/container[@controlname='m_velMstpNodeNbx']/container/text[@controlname='upDownEdit']", 30000, null, "8b9b6f97-5237-4fb6-abfb-777aab3e5244");
+                _liebertrsdInfo = new RepoItemInfo(this, "LiebertRSD", "tabpagelist/tabpage[@accessiblename='Liebert RSD']", 30000, null, "c218e52c-4f6f-41a3-b2f1-1929c70170a9");
+                _devicetagInfo = new RepoItemInfo(this, "DeviceTag", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdDevTagTbx']/text[@controlname='m_rsdDevTagTbx-Ctl']", 30000, null, "538a4606-b9d6-47e1-9381-0e49f2d68500");
+                _overrideglobalvalueInfo = new RepoItemInfo(this, "OverrideGlobalValue", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/container/checkbox[@controlname='m_checkBox']", 30000, null, "d0fb101e-d492-4af0-b51a-4d784f9affdc");
+                _siteidcomboInfo = new RepoItemInfo(this, "SiteIdCombo", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox[@controlname='m_rsdSiteIdDevCombo']", 30000, null, "a1316cb4-70b7-4cad-9fbd-c92a5a27a64b");
+                _siteidtextInfo = new RepoItemInfo(this, "SiteIDText", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox/text[@controlid='1001']", 30000, null, "586dc3bf-ccc1-4ea1-b18b-e08134d59f68");
+                _openInfo = new RepoItemInfo(this, "Open", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox/button[@accessiblename='Open']", 30000, null, "a12c0848-07c3-43a6-8f42-59400f8723cb");
+                _globalvalueInfo = new RepoItemInfo(this, "GlobalValue", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/text[@controlname='m_rsdSiteIdGblLbl']", 30000, null, "93179fc4-937d-4c3a-88d2-1e3033c60ea0");
             }
 
             /// <summary>
@@ -24846,6 +24860,174 @@ namespace NformTester
                 get
                 {
                     return _mstp_node_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LiebertRSD item.
+            /// </summary>
+            [RepositoryItem("c218e52c-4f6f-41a3-b2f1-1929c70170a9")]
+            public virtual Ranorex.TabPage LiebertRSD
+            {
+                get
+                {
+                    return _liebertrsdInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LiebertRSD item info.
+            /// </summary>
+            [RepositoryItemInfo("c218e52c-4f6f-41a3-b2f1-1929c70170a9")]
+            public virtual RepoItemInfo LiebertRSDInfo
+            {
+                get
+                {
+                    return _liebertrsdInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DeviceTag item.
+            /// </summary>
+            [RepositoryItem("538a4606-b9d6-47e1-9381-0e49f2d68500")]
+            public virtual Ranorex.Text DeviceTag
+            {
+                get
+                {
+                    return _devicetagInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DeviceTag item info.
+            /// </summary>
+            [RepositoryItemInfo("538a4606-b9d6-47e1-9381-0e49f2d68500")]
+            public virtual RepoItemInfo DeviceTagInfo
+            {
+                get
+                {
+                    return _devicetagInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OverrideGlobalValue item.
+            /// </summary>
+            [RepositoryItem("d0fb101e-d492-4af0-b51a-4d784f9affdc")]
+            public virtual Ranorex.CheckBox OverrideGlobalValue
+            {
+                get
+                {
+                    return _overrideglobalvalueInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OverrideGlobalValue item info.
+            /// </summary>
+            [RepositoryItemInfo("d0fb101e-d492-4af0-b51a-4d784f9affdc")]
+            public virtual RepoItemInfo OverrideGlobalValueInfo
+            {
+                get
+                {
+                    return _overrideglobalvalueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SiteIdCombo item.
+            /// </summary>
+            [RepositoryItem("a1316cb4-70b7-4cad-9fbd-c92a5a27a64b")]
+            public virtual Ranorex.ComboBox SiteIdCombo
+            {
+                get
+                {
+                    return _siteidcomboInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SiteIdCombo item info.
+            /// </summary>
+            [RepositoryItemInfo("a1316cb4-70b7-4cad-9fbd-c92a5a27a64b")]
+            public virtual RepoItemInfo SiteIdComboInfo
+            {
+                get
+                {
+                    return _siteidcomboInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SiteIDText item.
+            /// </summary>
+            [RepositoryItem("586dc3bf-ccc1-4ea1-b18b-e08134d59f68")]
+            public virtual Ranorex.Text SiteIDText
+            {
+                get
+                {
+                    return _siteidtextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SiteIDText item info.
+            /// </summary>
+            [RepositoryItemInfo("586dc3bf-ccc1-4ea1-b18b-e08134d59f68")]
+            public virtual RepoItemInfo SiteIDTextInfo
+            {
+                get
+                {
+                    return _siteidtextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Open item.
+            /// </summary>
+            [RepositoryItem("a12c0848-07c3-43a6-8f42-59400f8723cb")]
+            public virtual Ranorex.Button Open
+            {
+                get
+                {
+                    return _openInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Open item info.
+            /// </summary>
+            [RepositoryItemInfo("a12c0848-07c3-43a6-8f42-59400f8723cb")]
+            public virtual RepoItemInfo OpenInfo
+            {
+                get
+                {
+                    return _openInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GlobalValue item.
+            /// </summary>
+            [RepositoryItem("93179fc4-937d-4c3a-88d2-1e3033c60ea0")]
+            public virtual Ranorex.Text GlobalValue
+            {
+                get
+                {
+                    return _globalvalueInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GlobalValue item info.
+            /// </summary>
+            [RepositoryItemInfo("93179fc4-937d-4c3a-88d2-1e3033c60ea0")]
+            public virtual RepoItemInfo GlobalValueInfo
+            {
+                get
+                {
+                    return _globalvalueInfo;
                 }
             }
         }
