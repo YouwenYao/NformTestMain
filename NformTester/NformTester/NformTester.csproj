@@ -209,6 +209,10 @@
       <id>ecae2506-c84e-4b2c-ae22-299028d6793c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.10.30.70_DataLoggingforOneDeviceDataPoints.xlsx">
+      <id>ba45e7bf-51e7-432c-800d-2136042f724c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.20.30.10_ConfigureEmailAction.xlsx">
       <id>baa82189-6aa2-4c57-9a54-d768f3f7834a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

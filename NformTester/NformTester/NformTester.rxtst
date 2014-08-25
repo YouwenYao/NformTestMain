@@ -456,6 +456,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.10.30.70_DataLoggingforOneDeviceDataPoints"
+					id="b59e97e1-0c5b-4677-86b1-12ad9c0a4a44">
+						<testmodule
+						name="TestCaseDriver"
+						id="f5de40eb-035f-4df8-b7ca-34e5b6ee2d73"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.020._Actions1"
