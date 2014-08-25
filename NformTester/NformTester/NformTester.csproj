@@ -301,6 +301,10 @@
       <id>4a79d136-6919-43fe-8899-6c321d8b6271</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.50.30.30_TheNumberofDeviceSupportedWithoutLicense.xlsx">
+      <id>e25a6eaa-93ef-4e6e-8e3e-8acf21c7ee1e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.60.10.10_ServerOptionsChecktheGUIforGlobalStatusPolling.xlsx">
       <id>abaea679-5673-42d0-a773-182c72349662</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

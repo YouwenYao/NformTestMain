@@ -660,7 +660,17 @@ reportlevel="Info;20">
 				</testcase>
 				<testcase
 				name="600.050._Licenses1"
-				id="9cf1a6f7-4c39-44c6-9783-7a270426cda0"/>
+				id="9cf1a6f7-4c39-44c6-9783-7a270426cda0">
+					<testcase
+					name="600.50.30.30_TheNumberofDeviceSupportedWithoutLicense"
+					id="ecb0c947-7043-45ad-822f-85bc9c888e45">
+						<testmodule
+						name="TestCaseDriver"
+						id="418b9d88-e1af-4b95-aa0a-0929fa635e4c"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+				</testcase>
 				<testcase
 				name="600.060._Server_Options1"
 				id="2879a82f-643e-4fc5-b047-df6434a6e45d">
