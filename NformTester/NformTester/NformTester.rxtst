@@ -826,6 +826,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.60.20.120_UsersConfigureOtherSMTPServerApartFromAutomatic"
+					id="873a33a2-caee-4c0e-b832-25893c50e933">
+						<testmodule
+						name="TestCaseDriver"
+						id="e71b97e5-a9ed-4625-b3da-4c6deae149eb"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password1"

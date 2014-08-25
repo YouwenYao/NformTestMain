@@ -317,6 +317,10 @@
       <id>cb34b4f4-8a61-48b2-bb8b-c28bea00e84b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.60.20.120_UsersConfigureOtherSMTPServerApartFromAutomatic.xlsx">
+      <id>1766a5d1-dc21-4d5e-93b6-7952ffea7c18</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.60.20.40_ServerOptionsViewandStoreAlarms.xlsx">
       <id>f946d138-5735-455a-b26c-1d4620779ad2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
