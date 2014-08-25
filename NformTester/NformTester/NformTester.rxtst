@@ -835,6 +835,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.60.10.20_ServerOptionsSNMPV3SettingLayout"
+					id="123f16f7-360f-42fc-b890-3a499f352520">
+						<testmodule
+						name="TestCaseDriver"
+						id="5bde5285-ed80-4750-923a-5d334aa90cdd"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.070._Change_Password1"

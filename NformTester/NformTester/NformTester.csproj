@@ -305,6 +305,10 @@
       <id>abaea679-5673-42d0-a773-182c72349662</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.60.10.20_ServerOptionsSNMPV3SettingLayout.xlsx">
+      <id>ddedcc4d-ec75-4b01-b788-66b5c3a07f8c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
       <id>e23ff235-6cdb-456d-bae0-4a7eb5b60731</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
