@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Created by Ranorex
  * User: y93248
  * Time: 14:56
@@ -92,6 +92,7 @@ namespace NformTester.lib
 			m_ActionMap.Add("DoubleClickItem", new object[] {"DoubleClick","S10"});
 			m_ActionMap.Add("RightClick", new object[] {"RightClick","S11"});
 			m_ActionMap.Add("InputCell", new object[] {"Click","S12"});
+			m_ActionMap.Add("ClickLocation", new object[] {"Click","S13"});
 
 			// Run the item in stepList
 			// If wrongCount =3, it means that the command fails three times continuously.
@@ -202,8 +203,8 @@ namespace NformTester.lib
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Next.Click();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Name.PressKeys(item.getArg3Text());
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Description.PressKeys(item.getArg4Text());
-				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Device_type_409.SelectedItemText = item.getArg5Text();
-				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Device_protocol.SelectedItemText = item.getArg6Text();
+				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Device_type.SelectedItemText = item.getArg5Text();
+				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Device_protocol_409.SelectedItemText = item.getArg6Text();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Finish.Click();
 				Delay.Milliseconds(5000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device_Results.OK.Click();
@@ -516,6 +517,15 @@ namespace NformTester.lib
 			if(arg[1].ToString() == "S12")
 			{
 				Input_Cell(item);
+				return true;
+			}
+			
+			if(arg[1].ToString() == "S13")	//click location
+			{
+				Adapter adapterObj = (Adapter)objComponet;
+				int x_loc = Convert.ToInt16(item.m_Arg2);
+				int y_loc = Convert.ToInt16(item.m_Arg3);
+				adapterObj.Click((item.m_Arg1.Equals("right") ? MouseButtons.Right : MouseButtons.Left),new Location(x_loc, y_loc));
 				return true;
 			}
 			
@@ -1076,3 +1086,4 @@ namespace NformTester.lib
 		
 	}
 }	
+

@@ -1328,6 +1328,24 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.10.10.10_GUIForDeviceStatusPolling"
+					id="d13a9874-45fa-4612-b546-aad94926be9f">
+						<testmodule
+						name="TestCaseDriver"
+						id="b6c6d21b-0b92-4c41-b512-d0130abf7e03"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.10.30_DeviceMaintenanceLayoutAndDefaults"
+					id="cbd020d5-12b3-4e9f-81b5-d3ba33b37d6d">
+						<testmodule
+						name="TestCaseDriver"
+						id="a56fb203-3bc9-46f5-8d31-c0a0dd627472"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.020._Actions2"
@@ -1997,6 +2015,69 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.10.10_UserAndGroupDefaultPermissionRightForActions"
+					id="ee367dfc-1302-45a4-af1f-4541d9da88b1">
+						<testmodule
+						name="TestCaseDriver"
+						id="47b3ac6c-4d3e-431d-997c-ea987e2aa20a"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.10.20_UserAndGroupAUserWithoutForwardTrapConfigure"
+					id="39724d9a-ce56-4faf-a895-99544692a025">
+						<testmodule
+						name="TestCaseDriver"
+						id="8aa2f574-42f9-4140-997a-0fafc1ac7371"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.20.20_UserAndGroupsReadWriteDataAction"
+					id="ea69e2dc-9f8a-4d0b-9765-4feb8628b36e">
+						<testmodule
+						name="TestCaseDriver"
+						id="ae3f5341-61c2-485f-ab13-61dda3121b19"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.20.40_UserAndGroupsAutoLogout"
+					id="e36c4da4-b975-4dc2-9538-dfaa45a286dc">
+						<testmodule
+						name="TestCaseDriver"
+						id="48e3e152-3f22-4b5f-be1a-07ab518ed718"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.20.60_UserAndGroupChangesToLoggedInUser"
+					id="6c0a2523-73b0-473c-9a7c-6c20b06775e5">
+						<testmodule
+						name="TestCaseDriver"
+						id="86fbb55e-5f64-415a-8396-76cc1d51ef1e"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.20.90_UserAndGroupAdministratorGroupManagement"
+					id="86e6e0bc-2d5e-4e86-b344-4835ca4948ac">
+						<testmodule
+						name="TestCaseDriver"
+						id="4eb6d390-67da-47a6-ab29-6982a3c8eba6"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.20.100_CheckRightsAssociatedWithUserGroups"
+					id="284cbd30-02f2-4895-8da8-1e23865f176e">
+						<testmodule
+						name="TestCaseDriver"
+						id="0b7b6592-1fb0-4ad6-a367-2c8e3a5f53ee"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses2"
@@ -2354,7 +2435,11 @@ reportlevel="Info;20">
 			</testcase>
 			<testcase
 			name="800._Help2"
-			id="1fa44bba-fe43-4270-baec-a0e41f2279c8"/>
+			id="1fa44bba-fe43-4270-baec-a0e41f2279c8">
+				<testcase
+				name="TestCase"
+				id="c4126c4f-4bd2-40d4-9c75-6308cc43632e"/>
+			</testcase>
 			<testcase
 			name="900._Operation_Using_Client_Viewer2"
 			id="a5e9adfd-9aee-44b1-a5b7-3963bd48c29d">
@@ -2453,7 +2538,7 @@ reportlevel="Info;20">
 			type="UserCode"/>
 		</testcase>
 		<testcase
-		name="test"
+		name="TestScript"
 		id="b49c5248-5521-4369-98f1-d67f370014a2">
 			<testmodule
 			name="myTest"
@@ -2467,6 +2552,15 @@ reportlevel="Info;20">
 			<testmodule
 			name="TestCaseDriver"
 			id="047cc82b-ce0d-4b2a-83ce-5e91475749a7"
+			ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+			type="UserCode"/>
+		</testcase>
+		<testcase
+		name="TestScripts_rightClickTrendsGraph"
+		id="f948fa99-8c8b-46ac-bdbf-0b1f3e2ad68d">
+			<testmodule
+			name="TestCaseDriver"
+			id="7e22214a-a7fd-477f-b7c7-e68c8d12dfed"
 			ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 			type="UserCode"/>
 		</testcase>
