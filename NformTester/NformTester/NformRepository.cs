@@ -23513,7 +23513,7 @@ namespace NformTester
                 _liebertrsdInfo = new RepoItemInfo(this, "LiebertRSD", "tabpagelist/tabpage[@accessiblename='Liebert RSD']", 30000, null, "c218e52c-4f6f-41a3-b2f1-1929c70170a9");
                 _devicetagInfo = new RepoItemInfo(this, "DeviceTag", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdDevTagTbx']/text[@controlname='m_rsdDevTagTbx-Ctl']", 30000, null, "538a4606-b9d6-47e1-9381-0e49f2d68500");
                 _overrideglobalvalueInfo = new RepoItemInfo(this, "OverrideGlobalValue", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/container/checkbox[@controlname='m_checkBox']", 30000, null, "d0fb101e-d492-4af0-b51a-4d784f9affdc");
-                _siteidcomboInfo = new RepoItemInfo(this, "SiteIdCombo", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox[@controlname='m_rsdSiteIdDevCombo']", 30000, null, "a1316cb4-70b7-4cad-9fbd-c92a5a27a64b");
+                _siteidcomboInfo = new RepoItemInfo(this, "SiteIDCombo", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox[@controlname='m_rsdSiteIdDevCombo']", 30000, null, "a1316cb4-70b7-4cad-9fbd-c92a5a27a64b");
                 _siteidtextInfo = new RepoItemInfo(this, "SiteIDText", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox/text[@controlid='1001']", 30000, null, "586dc3bf-ccc1-4ea1-b18b-e08134d59f68");
                 _openInfo = new RepoItemInfo(this, "Open", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox/button[@accessiblename='Open']", 30000, null, "a12c0848-07c3-43a6-8f42-59400f8723cb");
                 _globalvalueInfo = new RepoItemInfo(this, "GlobalValue", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/text[@controlname='m_rsdSiteIdGblLbl']", 30000, null, "93179fc4-937d-4c3a-88d2-1e3033c60ea0");
@@ -23810,10 +23810,10 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The SiteIdCombo item.
+            /// The SiteIDCombo item.
             /// </summary>
             [RepositoryItem("a1316cb4-70b7-4cad-9fbd-c92a5a27a64b")]
-            public virtual Ranorex.ComboBox SiteIdCombo
+            public virtual Ranorex.ComboBox SiteIDCombo
             {
                 get
                 {
@@ -23822,10 +23822,10 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The SiteIdCombo item info.
+            /// The SiteIDCombo item info.
             /// </summary>
             [RepositoryItemInfo("a1316cb4-70b7-4cad-9fbd-c92a5a27a64b")]
-            public virtual RepoItemInfo SiteIdComboInfo
+            public virtual RepoItemInfo SiteIDComboInfo
             {
                 get
                 {

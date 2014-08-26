@@ -7641,7 +7641,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/container/checkbox[@controlname='m_checkBox']
 					</item>
 					<item
-					name="SiteIdCombo"
+					name="SiteIDCombo"
 					id="a1316cb4-70b7-4cad-9fbd-c92a5a27a64b"
 					searchtimeout="30000ms"
 					capname="combobox"
