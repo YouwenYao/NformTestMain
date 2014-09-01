@@ -1614,6 +1614,79 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.20.20.30_ConfigureActionWriteDataActionPermission"
+					id="10c30e43-c5fd-486d-b670-bc767e982a2a">
+						<testmodule
+						name="TestCaseDriver"
+						id="b749005d-16db-41e3-9a6c-78cda829b0e6"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.20.80_ConfigureActionTimeoutOnShutdownActionProperties"
+					id="70cf8262-f4ac-4d90-a1ba-e03cfdadbb45">
+						<testmodule
+						name="TestCaseDriver"
+						id="94afba97-7163-4400-884f-d8981dd80a47"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.20.70_TabOrderonWriteDataActionProPertiesWindow"
+					id="5f9f38ee-5568-483d-bade-49abf11fddea">
+						<testmodule
+						name="TestCaseDriver"
+						id="eadac4a8-bcdc-4699-b8c4-58f1597e3d8a"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.20.100_UserCanNotConfigureActionSetWithoutConfigureActionPermission"
+					id="d86e16f0-2acb-4913-81ce-419563010067"
+					errorbehavior="Stop">
+						<testmodule
+						name="TestCaseDriver"
+						id="da4e48dc-0789-41cf-b6de-ec542e88a9d4"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.20.110_EditRightOnActionSetsbyPowerUser"
+					id="197d6147-85f3-4ecb-b0e5-3fc08a3ded21">
+						<testmodule
+						name="TestCaseDriver"
+						id="6d39236c-73d1-4042-a64a-755cf34f6afb"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.20.90_ConfiureActionShutDownActionwithoutShutdownClientpermission"
+					id="6875acf5-04e8-4898-a5f1-1a6dc65bedc4">
+						<testmodule
+						name="TestCaseDriver"
+						id="369b83b3-fca0-4c03-a7f1-5cf6e87b1a9c"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.20.10_ConfigureServerOptionSMTP"
+					id="c64d155c-1e3c-4a6f-9df7-237cc114570b">
+						<testmodule
+						name="TestCaseDriver"
+						id="cdd4f307-e18f-4b8c-99c9-4b93e9c57612"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.20.40_ConfigureActionEditMultilink1.5Client"
+					id="9ee4df9a-593c-4f9f-85a5-471b9e712e71">
+						<testmodule
+						name="TestCaseDriver"
+						id="07c2fbea-cf04-4dab-8a8f-643251d37a0b"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.030._Views2"
@@ -1759,6 +1832,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="9509aa99-73fd-4570-b356-fcfd1517d7ee"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.30.20.30_NoDuplicateGroupNameInLogicalGroupProperties"
+					id="0f0e278d-26e4-48ba-b2c4-3ebb5d4d41bf">
+						<testmodule
+						name="TestCaseDriver"
+						id="dc6430b7-a86f-4d0f-8a2c-458ffe02aba8"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1986,6 +2068,9 @@ reportlevel="Info;20">
 				<testcase
 				name="600.050._Licenses2"
 				id="9e61d856-cb7a-42ec-ae33-4de82b415f17">
+					<description>
+						calhost
+					</description>
 					<testcase
 					name="TST562_VerifyShutdownClientLicenseCount"
 					id="bafe4fe5-8fa6-451a-9a0f-00b970fd262c">
@@ -2418,13 +2503,13 @@ reportlevel="Info;20">
 			<testcase
 			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
 			<testcase
-			id="16b2d828-575c-4faf-8f7d-74b92c41fc12"/>
-			<testcase
 			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
 			<testcase
 			id="9e207544-3f17-4864-b512-c3f55be82b62"/>
 			<testcase
-			id="f6f09ba4-1635-49e6-bb1d-b905a85e64ae"/>
+			id="9ee4df9a-593c-4f9f-85a5-471b9e712e71"/>
+			<testcase
+			id="d41643b1-fe3b-44f7-976c-d23496fb374c"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

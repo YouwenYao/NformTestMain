@@ -249,6 +249,38 @@
       <id>ecae2506-c84e-4b2c-ae22-299028d6793c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.20.20.100_UserCanNotConfigureActionSetWithoutConfigureActionPermission.xlsx">
+      <id>a14b7b9a-a028-4aaa-b4bd-5730d0dafdf9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.10_ConfigureServerOptionSMTP.xlsx">
+      <id>5b373b21-2d88-4fdc-b6ea-592adfb9065f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.110_EditRightOnActionSetsbyPowerUser.xlsx">
+      <id>79c38d86-3851-49b9-b3e6-ee1a52eed1ee</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.30_ConfigureActionWriteDataActionPermission.xlsx">
+      <id>791f79d9-5e0f-44a9-8032-1d4fde7f2e7e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.40_ConfigureActionEditMultilink1.5Client.xlsx">
+      <id>b6f2fd79-31a7-4e86-a173-4ac7b8ae790c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.70_TabOrderonWriteDataActionProPertiesWindow.xlsx">
+      <id>c1a48672-2689-4ba5-9618-695413eb8b97</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.80_ConfigureActionTimeoutOnShutdownActionProperties.xlsx">
+      <id>95138e65-a8c6-4548-91d6-41257eebc4a1</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.90_ConfiureActionShutDownActionwithoutShutdownClientpermission.xlsx">
+      <id>155f6119-6df8-4535-9836-a7a6fb0d87d2</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.20.30.10_ConfigureEmailAction.xlsx">
       <id>baa82189-6aa2-4c57-9a54-d768f3f7834a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -283,6 +315,10 @@
     </None>
     <None Include="Keywordscripts\600.30.10.30_DefaultSettingOfFloorplanOfAllDevices.xlsx">
       <id>32fa884c-074d-47d8-a059-a57faa19b85b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.20.30_NoDuplicateGroupNameInLogicalGroupProperties.xlsx">
+      <id>a62c0a98-ea8c-47a5-a939-d41d838db49e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.30.30.10_AddAndCopyView.xlsx">

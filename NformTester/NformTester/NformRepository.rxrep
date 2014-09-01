@@ -12141,3 +12141,85 @@ AKnWLBvcTvzrAAAAAElFTkSuQmCC
 		</var>
 	</variables>
 </repository>
+ame='LxGroupBox' and @instance='6']/datetime[@controlname='m_toDtp']
+					</item>
+					<item
+					name="End_with_latest_alarm"
+					id="ac1a241e-3dc5-4f8b-9ac3-65f40ffa267e"
+					searchtimeout="30000ms"
+					capname="radiobutton"
+					addcaps="radiobutton,control,nativewindow">
+						/form[@controlname='LxExportAlarmHistoryDlg']/container[@controltypename='LxGroupBox' and @instance='6']/radiobutton[@controlname='m_endLatestRbtn']
+					</item>
+					<item
+					name="End_with_specified_date"
+					id="d48cf3df-8583-4331-ab73-a972a7cf8f95"
+					searchtimeout="30000ms"
+					capname="radiobutton"
+					addcaps="radiobutton,control,nativewindow">
+						/form[@controlname='LxExportAlarmHistoryDlg']/container[@controltypename='LxGroupBox' and @instance='6']/radiobutton[@controlname='m_selectEndDateRbtn']
+					</item>
+					<item
+					name="File"
+					id="691c7f24-c41d-473c-bd26-325fb9fbc989"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,accessible">
+						/form[@controlname='LxExportAlarmHistoryDlg']/container[@controlname='m_fileLocationGrp']/text[@controlname='m_fileLocationTxt']/text[@accessiblename='File:']
+					</item>
+					<basepath>
+						/form[@controlname='LxExportAlarmHistoryDlg']
+					</basepath>
+					<icon>
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAklJREFUOE+tk1tI02EUwP+VdoGIHuqty0u9FHR5CEoQhBACQcyoyCQJ
+tDl38ZYZiWVmZhfzssymczHWnE5zNmU6lM2pYRcXKmhomZZZrtQ27UL08MuZtGWEPfjBge8c+H6/
+88E5grAYp8Vmb7Hb7Bm+4ak9rJbSViXFXinBppfQrIvDohXToBHTZCzit9vzcH4jntpQWyTfnEq+
+vrnC5/4kpruO4+4IxmXdiUkduzDgZXMYXwbTme4VMdUZhrstgE+WrUyY1mNUibyAf32hvz5o1jo1
+Z500b2DcuAZnpR/VylNeQFdqNM6kCEZlRxkWhTMQFYLttIi+qh24W/fNWdfxsXolYxVLeacVMBT7
+AB6dicFluMdE2R3GcnMYSU+lPlFMj3YTk+aNs9YPBj/e65bwViPwWi2gL4rxdmBNFuEsuM5oRhpD
+cjEDkUeokEtwlK6dsa5iTP/LOnJXYFglMFgioFP4AEwJYoaTpLyIiqAv9ADdgXspk8povLaa9vwV
+tNxYTlOOPw1Z/tRd9MN4fhnagmhvB+UztucHQ+gJCsCxezuPt2xGERePuqF7NlTmLpSmZ9yueUqh
+oYNcXTvlta1eQG1RMaUSGcVxchRiOfmx8VTcUnLT4kJjB5UVChvh8gM4qweJGi4pm/6eA9+B8tyz
+asfJM0NmDaToIFYFJxQ/OHzVzbm8uoUBMvUoiVqIKYHI/O8cyp4gJO0V+xMcJGffXxgQnvmE0Au9
+BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
+					</icon>
+				</appfolder>
+				<appfolder
+				name="FormExport_Alarm_History_Info"
+				id="369b02b0-1c89-4d48-b91c-183e15ebe0f3"
+				searchtimeout="30000ms"
+				capname="form"
+				addcaps="form,nativewindow"
+				isrooted="True"
+				usecache="True">
+					<item
+					name="OK"
+					id="baebb237-5c25-4121-b787-6f04d6e0f3f9"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']/button[@text='&#30830;&#23450;' or @text='OK']
+					</item>
+					<item
+					name="Yes"
+					id="bab2b8eb-c5a0-4738-a175-d03ccd3cc468"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']/button[@text='&#26159;(&amp;Y)' or @text='Yes']
+					</item>
+					<item
+					name="No"
+					id="053f9051-432f-4e8a-b648-6372bd9001f9"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']/button[@text='&#21542;(&amp;N)' or @text='No']
+					</item>
+					<basepath>
+						/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']
+					</basepath>
+					<icon>
+						iVBORw0KGgoAAAANS
