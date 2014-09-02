@@ -102,8 +102,6 @@ namespace NformTester.lib
             string key="Try_Times";
             wrongTime = int.Parse(myparseToValue(groupName,key));
     //        MessageBox.Show("wrong Time ="+wrongTime);
-			
-            
 			bool finalResult = true;
 			foreach(LxScriptItem item in stepList)
 			{
@@ -152,7 +150,9 @@ namespace NformTester.lib
 				Del_Device(item);
 				break;
 				default:
-				break;		
+				break;	
+				
+				
 			}
 			return true;
 		}
@@ -1086,4 +1086,3 @@ namespace NformTester.lib
 		
 	}
 }	
-
