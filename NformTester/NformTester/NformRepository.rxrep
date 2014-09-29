@@ -1229,6 +1229,46 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					addcaps="menuitem,accessible">
 						/form[@controlname='LxViewerFrame']/menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configura']/menuitem[@accessiblename='Opzioni utente...']
 					</item>
+					<item
+					name="Normal"
+					id="c1524fe9-48e8-475f-a57c-8d688dfe50f2"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,accessible">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/toolbar/text[@accessiblename='Normal']
+					</item>
+					<item
+					name="NoCommunication"
+					id="1412c3e7-7f35-43af-97c2-716ca40087fe"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,accessible">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/toolbar/text[@accessiblename='No communication']
+					</item>
+					<item
+					name="Alarm"
+					id="7629c492-3aa1-4af3-a847-14e3b4848932"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,accessible">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/toolbar/text[@accessiblename='Alarm']
+					</item>
+					<item
+					name="DeviceStatusAll"
+					id="47922b2f-777d-4446-891b-ee72a45f5dbe"
+					searchtimeout="30000ms"
+					capname="rawtext"
+					addcaps="unknown,rawtext">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Device Status: All' and @controltypename='LxGadgetDeviceStatus' and @instance='0']/rawtext[1]
+					</item>
+					<item
+					name="TestView"
+					id="442ba2b4-b764-4e73-a328-f296f4afbe87"
+					searchtimeout="30000ms"
+					capname="rawtext"
+					addcaps="unknown,rawtext">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/rawtext[@rawtext='test view']
+					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
 					</basepath>
@@ -1754,6 +1794,14 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxCfgGadgetDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']
 					</item>
+					<item
+					name="RawTextOK"
+					id="c798a660-cc71-4a78-8b4a-be26b3588f8c"
+					searchtimeout="30000ms"
+					capname="rawtext"
+					addcaps="unknown,rawtext">
+						/form[@controlname='LxCfgGadgetDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']/rawtext[@rawtext='OK' and @row='0']
+					</item>
 					<basepath>
 						/form[@controlname='LxCfgGadgetDlg']
 					</basepath>
@@ -1795,7 +1843,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='Cancel']
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='Cancel' or @text='&#21462;&#28040;']
 					</item>
 					<item
 					name="BaseColorTable"
@@ -9540,6 +9588,30 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					addcaps="radiobutton,control,nativewindow">
 						/form[@controlname='LxFloorPlanDlg']/container[@controlname='m_labelPropertiesGrp']/container/radiobutton[@controlname='m_rightDfltPosnRbtn']
 					</item>
+					<item
+					name="Bigger"
+					id="67ba3f9b-3907-4a48-b1c1-d2caac5c6d1f"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxFloorPlanDlg']/container[@controlname='m_sizeSelectorGrp']/slider/button[@accessiblename='&#21521;&#21491;&#32763;&#39029;']
+					</item>
+					<item
+					name="Smaller"
+					id="c8e5e487-8c22-4da5-963e-f3756efc1bda"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxFloorPlanDlg']/container[@controlname='m_sizeSelectorGrp']/slider/button[@accessiblename='&#21521;&#24038;&#32763;&#39029;']
+					</item>
+					<item
+					name="MFloorPlan"
+					id="3103ddc0-699c-4132-9cc3-be0e06c2c22c"
+					searchtimeout="30000ms"
+					capname="container"
+					addcaps="container,control,nativewindow">
+						/form[@controlname='LxFloorPlanDlg']/container[@controlname='m_floorPlan']
+					</item>
 					<basepath>
 						/form[@controlname='LxFloorPlanDlg']
 					</basepath>
@@ -11210,6 +11282,14 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					addcaps="button,nativewindow">
 						/form[@title='Communications Failure']/button[@text='&#30830;&#23450;' or @text='OK']
 					</item>
+					<item
+					name="RawText确定"
+					id="597d514c-81a9-4837-9f21-2992748fa617"
+					searchtimeout="30000ms"
+					capname="rawtext"
+					addcaps="unknown,rawtext">
+						/form[@title='Communications Failure']/button/rawtext[@rawtext='&#30830;&#23450;']
+					</item>
 					<basepath>
 						/form[@title='Communications Failure']
 					</basepath>
@@ -11749,6 +11829,126 @@ AAAOxAAADsQBlSsOGwAAALBJREFUOE9j/P//PwNFAGQAJZgizWDXr1899z8lmOHE0a3/v3x6RhC/
 eXnjPzoG6QO7oK4qG0MSpPjp4ytYxWEGvX55/z/YBTCBqRMawIaBcWX2/56OSuxyQPkVS6aA5VBc
 0NJQhDAAqKihOuf/y2cQV6DLwQxnOHNyJ15nYvM7shjcBR/fP/gPwuga3r6+g9MCcBiAXEBMLOBS
 A3cBPPBggUgkTXlKpCQfgJPygBsAABEv9phGO1VMAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		name="NformViewer"
+		id="3627ff94-7b7c-4c00-8beb-d1fb22c0417f"
+		searchtimeout="30000ms"
+		capname="contextmenu"
+		addcaps="contextmenu,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="DefaultLabelProperties"
+			id="ec036c7b-d0e6-4b79-94c5-8d62bc8bb5cf"
+			searchtimeout="30000ms"
+			capname="rawtext"
+			addcaps="unknown,rawtext">
+				/contextmenu/rawtext
+			</item>
+			<item
+			name="ResetAllLabelProperties"
+			id="3d4d8bd0-66ea-4116-9ba2-56bdf9dbc93a"
+			searchtimeout="30000ms"
+			capname="menuitem"
+			addcaps="menuitem,accessible">
+				/contextmenu/menuitem[@accessiblename~'^Reset\ All\ Label\ Propertie']
+			</item>
+			<item
+			name="ResetAllLabelPositions"
+			id="41ba2486-1425-4d29-9a67-88fd69748dca"
+			searchtimeout="30000ms"
+			capname="menuitem"
+			addcaps="menuitem,accessible">
+				/contextmenu/menuitem[@accessiblename='Reset All Label Positions']
+			</item>
+			<basepath>
+				/contextmenu
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAKtJREFUOE9j+P//P0UYzrAJyP6/ZsVMojFWAxjAXMIApwEgADJkx8Hz
+/8va5/7PqJr4PzK75b9XbNl/mDwI4DUABAi5hKABIAAyZNnGff8jc5r/e8aWk+YCGMDlEqJdAMNT
+F64nzgUwDSAAos+dOwfG6ACnATANyIY0dE4iLgy6OqpBgmCA7gp0gNUAqCAYbD8IcQVJLkA2AARg
+3iHJBaRgDAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		name="DefaultLabelProperties"
+		id="367852c1-cb17-447d-84f5-5c2ca78f1c3d"
+		searchtimeout="30000ms"
+		capname="form"
+		addcaps="form,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="Close"
+			id="398df08c-4601-4fc3-9155-253af94e0130"
+			searchtimeout="30000ms"
+			capname="rawtext"
+			addcaps="unknown,rawtext">
+				/form[@controlname='LxFloorPlanLblPropDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']/rawtext[@rawtext='Close' and @row='0']
+			</item>
+			<item
+			name="MResetToDefaultsBtn"
+			id="a9b11623-cd1b-455d-a606-a446a8292781"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,control,nativewindow">
+				/form[@controlname='LxFloorPlanLblPropDlg']/button[@controlname='m_resetToDefaultsBtn']
+			</item>
+			<item
+			name="OK"
+			id="092da200-ec31-40e1-95be-9e36455e1bce"
+			searchtimeout="30000ms"
+			capname="rawtext"
+			addcaps="unknown,rawtext">
+				/form[@controlname='LxFloorPlanLblPropDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']/rawtext[@rawtext='OK' and @row='0']
+			</item>
+			<basepath>
+				/form[@controlname='LxFloorPlanLblPropDlg']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="NformHelp"
+		id="ddcf4073-e921-4c52-b212-5af510daf7d5"
+		searchtimeout="30000ms"
+		capname="form"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="HelpClose"
+			id="eebe2668-5296-4b3f-b5c2-b4bba9e64aba"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,accessible">
+				/form[@title='NformHelp']/titlebar/button[@accessiblename='&#20851;&#38381;']
+			</item>
+			<basepath>
+				/form[@title='NformHelp']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAACeSURBVDhPjZABEoQgDAN5Ok/jZ1xDCRdqFXYm
+KpCkajlRa+lR8+gMzL3vaq3dlWRhykvqe0kMYx33zOYFaIrCIY2cBuE5LVBgmodDPn0v/SyImOMR
+liHvBZwav30LAy3As8r3PsJACzL4D1Qz6mhBNBKz7SFFjRl4A7MtzfUfLdDp3DcLrktYjyDRggyz
+4LqE9QiSU8HVJ9jtRgml/AD3QwB62TRIxAAAAABJRU5ErkJggg==
 			</icon>
 		</appfolder>
 		<basepath/>

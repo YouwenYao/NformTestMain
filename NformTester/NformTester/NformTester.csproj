@@ -208,8 +208,76 @@
       <id>ecae2506-c84e-4b2c-ae22-299028d6793c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.20.10.10_VerifyTheCountAndRemainingLicensesOfShutdownClientsWindow.xlsx">
+      <id>446ab5b8-73e3-436b-ac09-ba49868f6f3f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.10.20_CheckNewActionsTypeForAdministrator.xlsx">
+      <id>53f1fef2-6afc-428e-bd58-f22fa8c30b3c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.10.40_VerifyFormatOfEamilAction.xlsx">
+      <id>16d82dce-d13b-4447-9834-1b92007744f8</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.120_UsersCanNotEditOnActionSetsIfTheyDoNotHaveRightsToAllAction.xlsx">
+      <id>fde82bba-ad08-4311-b5ba-b624db87a9b5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.140_ModifyForwardTrapAction.xlsx">
+      <id>63e1c6aa-c7c5-4764-bfb8-03c80b2646a4</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.150_ForwardTrapWithThePortNumberOtherThan162.xlsx">
+      <id>26a18b32-f02b-4ce0-b5a1-b4d393dacc94</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.170_UserShouldNotBeAbleToDeleteShutdownClientWhichIsMapped.xlsx">
+      <id>3217ea8d-5144-4374-92ad-ff80ca5cc7d9</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.180_DatabaseErrorDoNotOccurWhenModifyAction.xlsx">
+      <id>db89d0c7-5b80-4145-93a9-e7a8785c7447</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.190_AutomaticSendShouldBeCheckedByDefault.xlsx">
+      <id>6cf74384-1d0e-4a51-974d-0918c6d5e742</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.200_ConfigureWriteFileAction.xlsx">
+      <id>e3eccbfc-501a-446d-a69a-9c3914d05cf7</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.100_VerifyAllButtonsUnderShutdownActionPropertiesWindow.xlsx">
+      <id>028f75af-3a60-48c5-873d-5b2fb9ef1d81</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.20.30.10_ConfigureEmailAction.xlsx">
       <id>baa82189-6aa2-4c57-9a54-d768f3f7834a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.110_CheckActionSetsWithDifferentRight.xlsx">
+      <id>3d416ee1-eb7f-448e-be5d-ab73222fefc5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.130_UsersCanDeleteActionSetsIfTheyHaveRights.xlsx">
+      <id>22a08925-59fe-4ea3-829f-af1a4daa1169</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.140_PerformReadDataWhenStartingOrStoppingOfServer.xlsx">
+      <id>e9205387-4d0b-4216-8dae-d7fbafa79609</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.150_CheckWriteDataFunctionalityForCollingDeviceTypes.xlsx">
+      <id>ef4f4803-fafa-4cbd-a8e6-5ee9c0ba787f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.160_AddingTwoActions.xlsx">
+      <id>baf2b95e-9b8e-4bcb-bde2-bdcead188c34</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.170_NoUnhandledExceptionOccursWhenChangeTokenName.xlsx">
+      <id>bd99da3f-a2c9-41b1-90eb-4b1197e08d77</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.20.30.20_ConfigureRuncommandAction.xlsx">
@@ -236,8 +304,28 @@
       <id>d1f10c9d-4ac3-44d6-8ae8-9a0799dbf7c9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.20.30.90_ShutdownActionWithMultiLinkV1.5Clients.xlsx">
+      <id>456aee0b-d226-45fc-b5f7-271636531017</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.100_VerifyLabelProperties.xlsx">
+      <id>38c45880-f069-4345-9e1f-ad02ea2cc8ab</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.30.30.10_AddAndCopyView.xlsx">
       <id>9acd7a4b-3d61-41ea-b361-6a892a4791ba</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.110_EditAndDeleteLogicalGroup.xlsx">
+      <id>f52da1ec-fd18-4d39-b76a-95696967cc94</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.120_EditInfoLinks.xlsx">
+      <id>b29b5ed7-27d5-4b82-9322-7eabcd7c0d4d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.130_DeleteInfoLinks.xlsx">
+      <id>d48e111a-92b5-448e-b8bd-30cb9e1e429d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.30.30.20_AddAnAreaInTheTreeForExistingView.xlsx">
@@ -250,6 +338,22 @@
     </None>
     <None Include="Keywordscripts\600.30.30.40_EditAreaInTreeUnderViews.xlsx">
       <id>b3c9aab7-303d-43e9-947c-060a65301913</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.50_CopyAnExistingAreaAndCreateNewAreaInTheTreeOfView.xlsx">
+      <id>d6eadb13-f272-4981-adb2-b6e8273051c7</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.60_UpAndDownArrowEnabled.xlsx">
+      <id>15d66c3b-c673-4227-a01c-ed5caafb27f7</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.70_CreationOfNewLogicalGroupToViewTree.xlsx">
+      <id>7ecdd3e5-8399-4b57-892d-8c1e538824e5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.90_MoveDeviceFromNavigationTreetoAvailableDevices.xlsx">
+      <id>84bac6a7-d567-4fcf-913b-2d768f5cd26e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
@@ -270,6 +374,58 @@
     </None>
     <None Include="Keywordscripts\600.60.30.90_DailyForGlobalStatusPolling.xlsx">
       <id>c0765315-25f3-4256-9aa0-dae8014d36e0</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.80.20.10_ViewerToForeground.xlsx">
+      <id>371f7ec2-1ca0-40bf-8935-5b7e0794c20c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.80.20.20_TaskBarButtonFlashAlert.xlsx">
+      <id>95fae928-2632-4a44-8aa8-b512113884df</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.80.20.40_TimeZoneSelectionForTimestamp.xlsx">
+      <id>1932b782-3d92-4771-b872-fa84d4292852</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.80.20.50_VerifyExternalTabUserOption.xlsx">
+      <id>be62b497-514e-4367-8dbc-72b917637a3d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.80.20.60_ExternalUserOptionsForDifferentInputs.xlsx">
+      <id>413bca3f-a39a-4836-9ba9-f747221b5a2c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.80.20.70_UnacknowledgedAlarmColor.xlsx">
+      <id>2eaffdd0-d03f-4cae-b0ec-6d8413fa80fe</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.10.010_CheckGUIOfTrendGraph.xlsx">
+      <id>a33c2429-f83d-4b83-bb31-cac0b23a4211</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.10.020_DashboardDisplay.xlsx">
+      <id>96cb719e-7c4e-48fb-a84f-62d3b7523110</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.10.030_LargeNumberOfDevices.xlsx">
+      <id>655faa64-0ada-4ee8-ae48-149765c7f8ec</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.10.040_NavigateView.xlsx">
+      <id>473c61e1-0873-4382-bd70-d905b9eba852</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.10.060_DashboardViewBasedOnDeviceStatus.xlsx">
+      <id>c0645fb6-77f3-4b4e-b9a5-9a663c308163</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.10.080_ContextMenu.xlsx">
+      <id>1331cae3-02ae-495e-bfff-7be3296c8fa7</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.30.010_PlottingGraph.xlsx">
+      <id>db99a5be-860b-4520-9d00-9d72485b8d85</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TestScripts.xlsx">
