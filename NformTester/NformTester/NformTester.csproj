@@ -1,4 +1,4 @@
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{1FFD7331-E52E-41B1-9446-E46F5C1A94B9}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -245,7 +245,11 @@
       <id>b14a46b0-2394-4dea-9615-9ff7e65cc249</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.10.30.30_DevicesSupportedbyNformG2Product.xlsx">
+    <None Include="Keywordscripts\600.10.30.120_ImportDevicesFromAFile.xlsx">
+      <id>f0023321-20ce-40ac-ada6-34d9ab0b2470</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.30.30_DevicesSupportedbyNformG2Product.xlsx">
       <id>2264b215-0478-49b5-b14c-4b309ec138e7</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -253,19 +257,19 @@
       <id>ecae2506-c84e-4b2c-ae22-299028d6793c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.10.30.70_DataLoggingforOneDeviceDataPoints.xlsx">
+    <None Include="Keywordscripts\600.10.30.70_DataLoggingforOneDeviceDataPoints.xlsx">
       <id>ba45e7bf-51e7-432c-800d-2136042f724c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.10.30.90_DataLoggingSettingsOnDevicePropertiesAndOnTrends.xlsx">
+    <None Include="Keywordscripts\600.10.30.90_DataLoggingSettingsOnDevicePropertiesAndOnTrends.xlsx">
       <id>0186aa7c-7630-4477-975b-5e3f53514c85</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.10.30.100_AlarmandDataEditAlarmName.xlsx">
+    <None Include="Keywordscripts\600.10.30.100_AlarmandDataEditAlarmName.xlsx">
       <id>75942075-440c-417f-93ad-8052fb41d75a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.10.30.200_VerifyTheDeviceSiteIdCanBeStored.xlsx">
+    <None Include="Keywordscripts\600.10.30.200_VerifyTheDeviceSiteIdCanBeStored.xlsx">
       <id>e8ea1ffe-79cf-48b1-8197-df38043b44b3</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -397,23 +401,23 @@
       <id>cdba6680-27c4-4405-b567-692f9130b4c8</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="keywordscripts\600.40.30.10_RightsCanBeInvokedAndRevokedForConfigureDevices.xlsx">
+    <None Include="keywordscripts\600.40.30.10_RightsCanBeInvokedAndRevokedForConfigureDevices.xlsx">
       <id>ad79896c-d609-4727-9760-b28d3b29b855</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.40.30.20_InvokedandRevokedforDiscoverNewDevice.xlsx">
+    <None Include="Keywordscripts\600.40.30.20_InvokedandRevokedforDiscoverNewDevice.xlsx">
       <id>ec2ff9be-ceab-495e-82d4-051e86f8230b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.40.30.30_InvokedandRevokedforConfigureNavigationView.xlsx">
+    <None Include="Keywordscripts\600.40.30.30_InvokedandRevokedforConfigureNavigationView.xlsx">
       <id>e8e28436-9559-4000-9234-f0ed98ab6906</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.40.30.40_InvokedandRevokedforConfigureDataLogging.xlsx">
+    <None Include="Keywordscripts\600.40.30.40_InvokedandRevokedforConfigureDataLogging.xlsx">
       <id>b5637d1f-b4bf-4d69-97f9-efefc38bc634</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.40.30.50_UsersandGroupsUserProfile.xlsx">
+    <None Include="Keywordscripts\600.40.30.50_UsersandGroupsUserProfile.xlsx">
       <id>41e850f1-04f5-4645-94f2-d6500d1f6cab</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -424,40 +428,40 @@
     <None Include="Keywordscripts\600.40.30.70_EditCustomGroup.xlsx">
       <id>8df58062-6c46-4d78-9ca1-ca604d531503</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None> 
-	<None Include="keywordscripts\600.40.30.90_UsersandGroupsDisableUsersOwnAccount.xlsx">
+    </None>
+    <None Include="keywordscripts\600.40.30.90_UsersandGroupsDisableUsersOwnAccount.xlsx">
       <id>f48c58d5-24e6-437e-8904-3241420b11c4</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="keywordscripts\600.40.30.100_UserCannotChangePasswordFlag.xlsx">
+    <None Include="keywordscripts\600.40.30.100_UserCannotChangePasswordFlag.xlsx">
       <id>03d223e3-35d6-41ac-885a-56ee665dfd15</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="keywordscripts\600.40.30.110_UsersandGroupsUserCannotChangeAlertNotifications.xlsx">
+    <None Include="keywordscripts\600.40.30.110_UsersandGroupsUserCannotChangeAlertNotifications.xlsx">
       <id>55ba4725-be1c-4e9e-b7a4-59b749b4ac76</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="keywordscripts\600.40.30.130_UsersandGroupsCopyUser.xlsx">
+    <None Include="keywordscripts\600.40.30.130_UsersandGroupsCopyUser.xlsx">
       <id>bcaa2460-80d3-417c-8182-3edf0ed002b8</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.40.30.140_UserAccountProperties.xlsx">
+    <None Include="Keywordscripts\600.40.30.140_UserAccountProperties.xlsx">
       <id>396e1921-6dc0-484e-a121-d29b6a9492a4</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>	
-	<None Include="Keywordscripts\600.50.30.30_TheNumberofDeviceSupportedWithoutLicense.xlsx">
+    </None>
+    <None Include="Keywordscripts\600.50.30.30_TheNumberofDeviceSupportedWithoutLicense.xlsx">
       <id>e25a6eaa-93ef-4e6e-8e3e-8acf21c7ee1e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.60.10.10_ServerOptionsChecktheGUIforGlobalStatusPolling.xlsx">
+    <None Include="Keywordscripts\600.60.10.10_ServerOptionsChecktheGUIforGlobalStatusPolling.xlsx">
       <id>abaea679-5673-42d0-a773-182c72349662</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.60.10.20_ServerOptionsSNMPV3SettingLayout.xlsx">
+    <None Include="Keywordscripts\600.60.10.20_ServerOptionsSNMPV3SettingLayout.xlsx">
       <id>ddedcc4d-ec75-4b01-b788-66b5c3a07f8c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>	
-	<None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
+    </None>
+    <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
       <id>e23ff235-6cdb-456d-bae0-4a7eb5b60731</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -469,7 +473,7 @@
       <id>cb34b4f4-8a61-48b2-bb8b-c28bea00e84b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.60.20.120_UsersConfigureOtherSMTPServerApartFromAutomatic.xlsx">
+    <None Include="Keywordscripts\600.60.20.120_UsersConfigureOtherSMTPServerApartFromAutomatic.xlsx">
       <id>1766a5d1-dc21-4d5e-93b6-7952ffea7c18</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -477,23 +481,23 @@
       <id>7ce8e6f9-e8a8-404e-bbf8-471b5c0c1346</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.60.20.40_ServerOptionsViewandStoreAlarms.xlsx">
+    <None Include="Keywordscripts\600.60.20.40_ServerOptionsViewandStoreAlarms.xlsx">
       <id>f946d138-5735-455a-b26c-1d4620779ad2</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.60.20.50_ServerOptionsRSDConfiguration.xlsx">
+    <None Include="Keywordscripts\600.60.20.50_ServerOptionsRSDConfiguration.xlsx">
       <id>5dce6287-3fcf-487a-a85c-3cc3947a75a9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.60.20.60_ServerOptionsEnableLiebertProtocolON.xlsx">
+    <None Include="Keywordscripts\600.60.20.60_ServerOptionsEnableLiebertProtocolON.xlsx">
       <id>c48f8aa0-5c52-48cc-b36b-1d446313a82f</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.60.20.80_InputFormatforDailyPollingTime.xlsx">
+    <None Include="Keywordscripts\600.60.20.80_InputFormatforDailyPollingTime.xlsx">
       <id>82ded35a-5b23-4dea-8ebf-07a5c5ca4f6a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="Keywordscripts\600.60.20.90_InputFormatforGlobalStatusPollingIntervalTime.xlsx">
+    <None Include="Keywordscripts\600.60.20.90_InputFormatforGlobalStatusPollingIntervalTime.xlsx">
       <id>26078c34-5f18-4a6e-8916-c1aff3b0aad7</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -525,19 +529,19 @@
       <id>e7cb1dbe-71db-4123-84e3-8a8993edfca5</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="keywordscripts\700.30.20_ExportAlarmHistoryofAlarmTypewithThreeTypes.xlsx">
+    <None Include="keywordscripts\700.30.20_ExportAlarmHistoryofAlarmTypewithThreeTypes.xlsx">
       <id>873e4956-047d-48a2-8ebc-bbe3570ea12d</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="keywordscripts\700.30.30_AlarmHistorywithUserDefinedFileNameandLocation.xlsx">
+    <None Include="keywordscripts\700.30.30_AlarmHistorywithUserDefinedFileNameandLocation.xlsx">
       <id>9e9f1abb-8456-4f25-9404-fba15a1784ad</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="keywordscripts\700.30.40_AlarmHistorywithUserDefinedSeparatorinExportedFile.xlsx">
+    <None Include="keywordscripts\700.30.40_AlarmHistorywithUserDefinedSeparatorinExportedFile.xlsx">
       <id>9081bd18-12de-4c50-9e37-7aa3105d9ec8</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<None Include="keywordscripts\700.30.50_AlarmHistoryWithUserDefinedStartandEndDate.xlsx">
+    <None Include="keywordscripts\700.30.50_AlarmHistoryWithUserDefinedStartandEndDate.xlsx">
       <id>05db6dd8-10cd-4179-b92d-21029650c574</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1315,4 +1319,4 @@
     </Folder>
   </ItemGroup>
   <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
-  </Project>
+</Project>
