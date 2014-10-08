@@ -501,6 +501,33 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.10.30.110_ImportDeviceUsingDialogForEnteringPathnameofFlatFile"
+					id="17b59195-d71c-4b30-a8a1-cdee9e9d3647">
+						<testmodule
+						name="TestCaseDriver"
+						id="5d5ba8e1-1e27-4fe5-a17a-0068d77d370e"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.30.130_ImportDeviceFromFlatFileWithSpecifiedSeparator"
+					id="c216fb64-9ee9-4a03-a2af-b481ede15731">
+						<testmodule
+						name="TestCaseDriver"
+						id="4826da7a-834a-4ed7-a9db-12dd5a6df260"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.30.140_VerifyUserIsAbleToAddDevicesFromAFlatFile"
+					id="26255141-eb66-4240-8b9f-8f564216ecae">
+						<testmodule
+						name="TestCaseDriver"
+						id="218af62e-0899-461f-9164-1cf8df55343a"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.020._Actions1"
@@ -1230,6 +1257,15 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="01cc29e5-a326-4a2b-8dcd-88178df3b4a3"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="900.20.50_ConfigureMaintenance"
+				id="ca0eb1b4-de04-48c1-84da-b05affea644e">
+					<testmodule
+					name="TestCaseDriver"
+					id="66a8018c-4910-4a81-b5b7-e9cf79c48d76"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
@@ -2725,18 +2761,7 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun">
-			<testcase
-			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
-			<testcase
-			id="402f8845-9c99-4944-86bb-cd38ff268fc2"/>
-			<testcase
-			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
-			<testcase
-			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
-			<testcase
-			id="ad9041cc-cc54-4919-b97c-a72c73304703"/>
-		</testconfiguration>
+		name="TestRun"/>
 	</testconfigurations>
 	<references>
 		<reference>

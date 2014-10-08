@@ -245,8 +245,20 @@
       <id>b14a46b0-2394-4dea-9615-9ff7e65cc249</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.10.30.110_ImportDeviceUsingDialogForEnteringPathnameofFlatFile.xlsx">
+      <id>8ca29710-ea4d-4531-9906-b1f710b8b517</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.10.30.120_ImportDevicesFromAFile.xlsx">
       <id>f0023321-20ce-40ac-ada6-34d9ab0b2470</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.30.130_ImportDeviceFromFlatFileWithSpecifiedSeparator.xlsx">
+      <id>a840677b-abbf-4cf4-91fe-3acf5697987b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.30.140_VerifyUserIsAbleToAddDevicesFromAFlatFile.xlsx">
+      <id>db664c61-63c4-4ff9-b6bb-5703923feaaa</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.10.30.30_DevicesSupportedbyNformG2Product.xlsx">
@@ -482,7 +494,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.60.20.40_ServerOptionsViewandStoreAlarms.xlsx">
-      <id>f946d138-5735-455a-b26c-1d4620779ad2</id>
+      <id>2f2f75ec-5477-4471-a519-482f8e7adb6e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.60.20.50_ServerOptionsRSDConfiguration.xlsx">
@@ -579,6 +591,10 @@
     </None>
     <None Include="Keywordscripts\900.20.40_ReflectedWithChangeMade.xlsx">
       <id>0a54b46b-6013-486d-a0b6-2a5525a0e65e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.20.50_ConfigureMaintenance.xlsx">
+      <id>eae27a23-231a-46a7-b8ee-ec22f80c54b8</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\900.30.140_GadgetDisplayInformationInCorrespondingState.xlsx">
