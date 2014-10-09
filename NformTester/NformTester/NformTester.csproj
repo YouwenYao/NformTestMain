@@ -189,6 +189,10 @@
       <id>45bf2b17-2ba8-4ca1-ad35-4d0f99862173</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\500.30.10_ShowExpandedTopFrameAndBottomFrame.xlsx">
+      <id>391f80b9-af97-485d-a4a8-f733a72b4c0d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.10.10.10_GUIForDeviceStatusPolling.xlsx">
       <id>f4aa9a27-f07f-4dc3-9e64-28beaeca31e4</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -261,12 +265,28 @@
       <id>79c38d86-3851-49b9-b3e6-ee1a52eed1ee</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.20.20.130_UserCanEditActionSetIfHaveRightToAllActionType.xlsx">
+      <id>6de15f22-bc3b-4a4a-b19e-7beab7ee4e3e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.160_ConfiureActionAddShutDownActionUsingConfigureButton.xlsx">
+      <id>fcb0c2e7-fdb9-4716-9b2c-93c0f70f4286</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.20_ConfigureActionModifyExistingAction.xlsx">
+      <id>bf19712c-be4f-45c7-a6da-1ba50e0ac3ec</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.20.20.30_ConfigureActionWriteDataActionPermission.xlsx">
       <id>791f79d9-5e0f-44a9-8032-1d4fde7f2e7e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.20.20.40_ConfigureActionEditMultilink1.5Client.xlsx">
       <id>b6f2fd79-31a7-4e86-a173-4ac7b8ae790c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.20.60_ConfigureReaddataActionDurationAndSamplingInterval.xlsx">
+      <id>82203e1b-57e5-404f-ade7-a79967f07064</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.20.20.70_TabOrderonWriteDataActionProPertiesWindow.xlsx">
@@ -283,6 +303,10 @@
     </None>
     <None Include="Keywordscripts\600.20.30.10_ConfigureEmailAction.xlsx">
       <id>baa82189-6aa2-4c57-9a54-d768f3f7834a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.120_UserWithoutAllActionRightsCanNotDeleteActionSet.xlsx">
+      <id>a9eb34e4-8f10-4dfb-8481-d2c8f8ad8ba9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.20.30.20_ConfigureRuncommandAction.xlsx">
@@ -309,12 +333,20 @@
       <id>d1f10c9d-4ac3-44d6-8ae8-9a0799dbf7c9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.20.30.80_UserCanDeleteActionFromActionSet.xlsx">
+      <id>9716c285-c0d6-4af4-8a56-780b0613ef30</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.30.10.20_UpDownArrowWhenMiddleDeviceSelected.xlsx">
       <id>f5cda59e-806f-45e5-b4d1-87df82b5ff42</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.30.10.30_DefaultSettingOfFloorplanOfAllDevices.xlsx">
       <id>32fa884c-074d-47d8-a059-a57faa19b85b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.20.20_ViewsAllDevicesNavigationView.xlsx">
+      <id>150089ea-94e0-4244-86b3-4239e45d4252</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.30.20.30_NoDuplicateGroupNameInLogicalGroupProperties.xlsx">
@@ -325,8 +357,28 @@
       <id>9acd7a4b-3d61-41ea-b361-6a892a4791ba</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.30.30.110_EditAndDeleteLogicalGroupUnderViews.xlsx">
+      <id>163eedca-0086-487d-b582-c894ef4ed332</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.120_EditInfoLinksinLogicalGroupUnderViews.xlsx">
+      <id>1dec865b-fdec-4037-a8dc-4b88ec493012</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.130_DeleteInfoLinksinLogicalGroupUnderViews.xlsx">
+      <id>ddb1a415-292d-46c5-8b39-674f9f827bef</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.140_SimulataneousHandlingOfMultipleLogicalGroups.xlsx">
+      <id>5af69e3a-a9d9-4956-b7aa-54a9bc75b11e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.30.30.20_AddAnAreaInTheTreeForExistingView.xlsx">
       <id>b80e43d8-1aa4-44be-a27b-2cd4e16c07c0</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.30.90_NoDeviceCanBeMovedIfAllDeviceViewSelected.xlsx">
+      <id>edc98dc4-78c6-4978-9ab2-22e269bfdca7</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.40.10.10_UserAndGroupDefaultPermissionRightForActions.xlsx">
@@ -1203,5 +1255,4 @@
     </Folder>
   </ItemGroup>
   <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
- 
 </Project>

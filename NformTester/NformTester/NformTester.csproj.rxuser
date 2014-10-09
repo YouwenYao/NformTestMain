@@ -1,17 +1,16 @@
-﻿
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <projectusersettings>
 	<changestatecache>
 		<codegenfilechangeinfo
 		fileitemid="cd2e6476-08de-4490-bccc-a5ee732b8f1b"
-		changehash="1170970162"
-		lastcodegentimestamp="130530646763589960"
-		filelength="556608">
+		changehash="965199167"
+		lastcodegentimestamp="130130270391250000"
+		filelength="557056">
 			<codegenfilechangeinfo
 			fileitemid="be55ff5e-522d-4087-a441-30853af41aaa"
-			changehash="514727684"
-			lastcodegentimestamp="130530646763589960"
-			filelength="1508701"/>
+			changehash="18446744073506829975"
+			lastcodegentimestamp="130130270391250000"
+			filelength="1513503"/>
 		</codegenfilechangeinfo>
 	</changestatecache>
 </projectusersettings>

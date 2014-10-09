@@ -435,7 +435,7 @@ namespace NformTester
        	   					}
        	   						else
        	   						{
-									//MessageBox.Show(comName.ToString() + "     " + strComponentType);
+									MessageBox.Show(comName.ToString() + "     " + strComponentType);
        	   						}
        	   					Excel.Range rmgForAction = (Excel.Range)xSheetActions.Cells[1,iActionsCol];
        	   					rmgForAction.EntireColumn.Name = piLev2.Name+comName;
@@ -508,7 +508,7 @@ namespace NformTester
             Delay.SpeedFactor = 1.0;
             
 			
-			generateFormValDependList("test");
+			//generateFormValDependList("test");
 			
 			// replaceAllValDependList("test");
 			

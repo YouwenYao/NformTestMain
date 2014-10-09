@@ -447,6 +447,51 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.10.30.100_AlarmandDataEditAlarmName"
+					id="6249af83-06a9-4363-a04c-ac229f658718">
+						<testmodule
+						name="TestCaseDriver"
+						id="c1c018bd-9947-4a3d-b935-a92bc8c007b9"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.30.70_DataLoggingforOneDeviceDataPoints"
+					id="b59e97e1-0c5b-4677-86b1-12ad9c0a4a44">
+						<testmodule
+						name="TestCaseDriver"
+						id="f5de40eb-035f-4df8-b7ca-34e5b6ee2d73"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.30.30_DevicesSupportedbyNformG2Product"
+					id="0020e498-85f4-49d1-b253-3cd4cf1c6fd0">
+						<testmodule
+						name="TestCaseDriver"
+						id="1d5797eb-ab55-474d-9461-a9e30b1b64c3"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.30.200_VerifyTheDeviceSiteIdCanBeStored"
+					id="99f544f3-3a47-4bad-8a2e-757132fabad7">
+						<testmodule
+						name="TestCaseDriver"
+						id="f0edbf5f-c8f9-422d-bacd-68015eb76ca2"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.30.90_DataLoggingSettingsOnDevicePropertiesAndOnTrends"
+					id="85bc0980-5749-45fa-81aa-f713147bce3e">
+						<testmodule
+						name="TestCaseDriver"
+						id="a204c593-b543-4e7f-b016-efcd04c16b7f"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.020._Actions1"
@@ -558,10 +603,110 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.40.30.20_InvokedandRevokedforDiscoverNewDevice"
+					id="9f5d4ec3-3e95-41d0-aaed-d779da35ae69">
+						<testmodule
+						name="TestCaseDriver"
+						id="7bad7959-ebf3-4030-b91a-9a0d8e13b3a2"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.110_UsersandGroupsUserCannotChangeAlertNotifications"
+					id="7cffba12-0f63-4a4a-8469-20146facce3a">
+						<testmodule
+						name="TestCaseDriver"
+						id="79cb45ce-2c86-43c6-9795-35b299f08bee"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.100_UserCannotChangePasswordFlag"
+					id="f0238533-9ef5-418e-83f7-ff51e2db7855">
+						<testmodule
+						name="TestCaseDriver"
+						id="a616bbe8-0132-4281-942c-e3bbc6c8bfb5"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.130_UsersandGroupsCopyUser"
+					id="839b4f3c-c5ab-4538-bf02-6792bf12463b">
+						<testmodule
+						name="TestCaseDriver"
+						id="96fdbe61-9ebf-47ac-bb59-f266b39f5637"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.10_RightsCanBeInvokedAndRevokedForConfigureDevices"
+					id="4364c5c9-f51a-45b8-9108-d7c67f3820f1">
+						<testmodule
+						name="TestCaseDriver"
+						id="75aa7270-a6f1-4ddc-b85a-359a6d043b67"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.90_UsersandGroupsDisableUsersOwnAccount"
+					id="b5a54238-8c58-4120-a03c-eabe7c82a02f">
+						<testmodule
+						name="TestCaseDriver"
+						id="b197eed2-43e2-4e18-81bd-dbe9ab16c970"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.30_InvokedandRevokedforConfigureNavigationView"
+					id="56b0c2c4-5826-4cd5-8320-d573ed115239">
+						<testmodule
+						name="TestCaseDriver"
+						id="5b5bc4eb-c263-424e-b939-79131b40d62b"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.50_UsersandGroupsUserProfile"
+					id="56d967a9-166b-4d29-a22f-fd41e7425d86">
+						<testmodule
+						name="TestCaseDriver"
+						id="ad517719-6375-4b5d-88e5-ca2b2d730e98"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.40_InvokedandRevokedforConfigureDataLogging"
+					id="ec676f22-3541-4f16-9520-e86aeb00b40a">
+						<testmodule
+						name="TestCaseDriver"
+						id="abaceb51-e51d-42bd-b515-31771d1d17bc"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.140_UserAccountProperties"
+					id="9d374d3f-5dc9-41a2-a5e7-9314b55e753f">
+						<testmodule
+						name="TestCaseDriver"
+						id="e957eb7c-a5de-4bc3-aebc-e20ed2453c43"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.050._Licenses1"
-				id="9cf1a6f7-4c39-44c6-9783-7a270426cda0"/>
+				id="9cf1a6f7-4c39-44c6-9783-7a270426cda0">
+					<testcase
+					name="600.50.30.30_TheNumberofDeviceSupportedWithoutLicense"
+					id="ecb0c947-7043-45ad-822f-85bc9c888e45">
+						<testmodule
+						name="TestCaseDriver"
+						id="418b9d88-e1af-4b95-aa0a-0929fa635e4c"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+				</testcase>
 				<testcase
 				name="600.060._Server_Options1"
 				id="2879a82f-643e-4fc5-b047-df6434a6e45d">
@@ -670,6 +815,78 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="1f992622-8d89-431d-8b38-6a6bfc32ddae"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.20.60_ServerOptionsEnableLiebertProtocolON"
+					id="b3366d6e-19d1-4622-b5dd-9afa5b20ee10">
+						<testmodule
+						name="TestCaseDriver"
+						id="afab55d0-85f9-4d06-b6a1-08ed76c9aff0"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.20.40_ServerOptionsViewandStoreAlarms"
+					id="55497f9d-9a32-4379-97b4-4bf80fad0af8">
+						<testmodule
+						name="TestCaseDriver"
+						id="e2677ade-d480-44b5-a00a-a4e4d39e6ce6"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.20.50_ServerOptionsRSDConfiguration"
+					id="2ffcc2ba-7b32-4fc9-953e-50212ea731d3">
+						<testmodule
+						name="TestCaseDriver"
+						id="5392ecf3-54d9-46c3-861f-d7e2f40815e7"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.20.90_InputFormatforGlobalStatusPollingIntervalTime"
+					id="b57aeece-d17e-48d5-a8c4-d0000895e47e">
+						<testmodule
+						name="TestCaseDriver"
+						id="7437694a-05f3-40e2-8007-d29bcebaf78f"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.20.80_InputFormatforDailyPollingTime"
+					id="22c1936f-016f-4184-b173-9481e080d3a9">
+						<testmodule
+						name="TestCaseDriver"
+						id="d55dba58-5660-4163-9bb5-97fe9e67a24a"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.10.10_ServerOptionsChecktheGUIforGlobalStatusPolling"
+					id="fa67ace0-92ae-4c5f-9e3a-5bb6c5858982">
+						<testmodule
+						name="TestCaseDriver"
+						id="141b3a41-78ca-44a3-b9d7-0cbcaee50e89"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.20.120_UsersConfigureOtherSMTPServerApartFromAutomatic"
+					id="873a33a2-caee-4c0e-b832-25893c50e933">
+						<testmodule
+						name="TestCaseDriver"
+						id="e71b97e5-a9ed-4625-b3da-4c6deae149eb"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.10.20_ServerOptionsSNMPV3SettingLayout"
+					id="123f16f7-360f-42fc-b890-3a499f352520">
+						<testmodule
+						name="TestCaseDriver"
+						id="5bde5285-ed80-4750-923a-5d334aa90cdd"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1052,11 +1269,7 @@ reportlevel="Info;20">
 			id="781843d7-5994-4e8a-990b-2c621b07e118"/>
 			<testcase
 			name="300._Software_Assurance2"
-			id="a873fb87-d502-4f35-a437-01a0134ce12d">
-				<description>
-					st
-				</description>
-			</testcase>
+			id="a873fb87-d502-4f35-a437-01a0134ce12d"/>
 			<testcase
 			name="400._Application2"
 			id="d102dd4f-4618-4b6b-b5cf-b29025582dd3">
@@ -1075,78 +1288,6 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="d6d4137d-a59d-4ad4-942d-f153388bd076"
-					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-					type="UserCode"/>
-				</testcase>
-				<testcase
-				name="400.20.10_ApplicationNformToolsServiceControl"
-				id="eafc8430-7ab4-444a-8944-1583e73654c2">
-					<testmodule
-					name="TestCaseDriver"
-					id="7e27bd2e-b1d9-4c45-a0bb-30cec768a14b"
-					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-					type="UserCode"/>
-				</testcase>
-				<testcase
-				name="400.10.20_ApplicationRestartSession"
-				id="47a2285e-f84f-47ea-9155-1584aaf446a9">
-					<testmodule
-					name="TestCaseDriver"
-					id="5935a1bc-26a9-420e-82ba-ed922915f23a"
-					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-					type="UserCode"/>
-				</testcase>
-				<testcase
-				name="400.30.80_ApplicationAdministratorUserCanExportRegistrationFile"
-				id="0c1f13af-e6c4-460b-b68a-c08aae4ce9ec">
-					<testmodule
-					name="TestCaseDriver"
-					id="635cfde3-305c-4ee5-8df0-a53c7ff1b789"
-					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-					type="UserCode"/>
-				</testcase>
-				<testcase
-				name="400.30.90_NformStatusBeforeRegistratoion"
-				id="7596a613-7f65-458c-a460-352099a81b11">
-					<testmodule
-					name="TestCaseDriver"
-					id="b0a505be-96a2-434f-bab3-316d3e83dccb"
-					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-					type="UserCode"/>
-				</testcase>
-				<testcase
-				name="400.20.20_ApplicationNformToolsInsatllDeviceTypeDefinitions"
-				id="c48fc391-d303-4ddd-a6ec-8b7a63eda09b">
-					<testmodule
-					name="TestCaseDriver"
-					id="92b723a5-3cff-4fea-8216-054de4d0a6f0"
-					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-					type="UserCode"/>
-				</testcase>
-				<testcase
-				name="400.30.10_ApplicationImportManagedDeviceFromG1"
-				id="8cdf791f-e047-42b7-801b-bcbb809546c1">
-					<testmodule
-					name="TestCaseDriver"
-					id="ba6a8273-3bef-4893-b011-fbac0b2c9aae"
-					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-					type="UserCode"/>
-				</testcase>
-				<testcase
-				name="400.30.20_ApplicationImportEmailActionFromG1"
-				id="a33d365f-6c68-492f-bfbd-11f40b9290e2">
-					<testmodule
-					name="TestCaseDriver"
-					id="9f058925-81a0-44bd-bb7d-3969dad72e59"
-					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-					type="UserCode"/>
-				</testcase>
-				<testcase
-				name="400.30.70_DeviceTypeShouldBePresentInEvaluationVersion"
-				id="df8e39e9-3dbd-42af-99b0-06a17845a038">
-					<testmodule
-					name="TestCaseDriver"
-					id="df0bcb41-8f1d-49fe-84f5-bd5ba6ac827e"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
@@ -1207,28 +1348,19 @@ reportlevel="Info;20">
 					</testcase>
 					<testcase
 					name="600.10.10.10_GUIForDeviceStatusPolling"
-					id="07c6f05c-34d2-4d40-ba85-8338c42ff12e">
+					id="d13a9874-45fa-4612-b546-aad94926be9f">
 						<testmodule
 						name="TestCaseDriver"
-						id="676ab8d2-0a60-49ae-911b-0bff7fb386f4"
+						id="b6c6d21b-0b92-4c41-b512-d0130abf7e03"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
 					<testcase
 					name="600.10.10.30_DeviceMaintenanceLayoutAndDefaults"
-					id="d0a1375c-0e0f-4f34-a85d-106c8b6a47cc">
+					id="cbd020d5-12b3-4e9f-81b5-d3ba33b37d6d">
 						<testmodule
 						name="TestCaseDriver"
-						id="196b539c-dc87-4942-8e3d-7ad2f01e9ca6"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="600.10.10.40_VelocityDeviceSettingOnDevicePropertiesDialog"
-					id="3006cf1f-7171-4a68-ac2b-94b29d7c3c83">
-						<testmodule
-						name="TestCaseDriver"
-						id="c35a28af-6787-4f45-b603-df6a7e0a4f2c"
+						id="a56fb203-3bc9-46f5-8d31-c0a0dd627472"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1615,75 +1747,38 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
-					name="600.20.20.30_ConfigureActionWriteDataActionPermission"
-					id="10c30e43-c5fd-486d-b670-bc767e982a2a">
+					name="600.20.30.120_UserWithoutAllActionRightsCanNotDeleteActionSet"
+					id="831676c2-af4b-4cf5-bfea-6800f2977a94">
 						<testmodule
 						name="TestCaseDriver"
-						id="b749005d-16db-41e3-9a6c-78cda829b0e6"
+						id="7529a415-da1d-46f5-86b5-d760363d4b73"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
 					<testcase
-					name="600.20.20.80_ConfigureActionTimeoutOnShutdownActionProperties"
-					id="70cf8262-f4ac-4d90-a1ba-e03cfdadbb45">
+					name="600.20.20.160_ConfiureActionAddShutDownActionUsingConfigureButton"
+					id="d7e93d0a-3cce-4643-8fd7-525dc576e243">
 						<testmodule
 						name="TestCaseDriver"
-						id="94afba97-7163-4400-884f-d8981dd80a47"
+						id="c8e6f526-9af9-4e9f-9479-b049300640ca"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
 					<testcase
-					name="600.20.20.70_TabOrderonWriteDataActionProPertiesWindow"
-					id="5f9f38ee-5568-483d-bade-49abf11fddea">
+					name="600.20.30.80_UserCanDeleteActionFromActionSet"
+					id="29c2171c-d2cb-4c21-96e4-be350d38d106">
 						<testmodule
 						name="TestCaseDriver"
-						id="eadac4a8-bcdc-4699-b8c4-58f1597e3d8a"
+						id="44dd412c-48c3-4dd2-b800-6f4017330d20"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
 					<testcase
-					name="600.20.20.100_UserCanNotConfigureActionSetWithoutConfigureActionPermission"
-					id="d86e16f0-2acb-4913-81ce-419563010067"
-					errorbehavior="Stop">
+					name="600.20.20.130_UserCanEditActionSetIfHaveRightToAllActionType"
+					id="03238b0d-343f-4d39-858f-954a5de8ad63">
 						<testmodule
 						name="TestCaseDriver"
-						id="da4e48dc-0789-41cf-b6de-ec542e88a9d4"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="600.20.20.110_EditRightOnActionSetsbyPowerUser"
-					id="197d6147-85f3-4ecb-b0e5-3fc08a3ded21">
-						<testmodule
-						name="TestCaseDriver"
-						id="6d39236c-73d1-4042-a64a-755cf34f6afb"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="600.20.20.90_ConfiureActionShutDownActionwithoutShutdownClientpermission"
-					id="6875acf5-04e8-4898-a5f1-1a6dc65bedc4">
-						<testmodule
-						name="TestCaseDriver"
-						id="369b83b3-fca0-4c03-a7f1-5cf6e87b1a9c"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="600.20.20.10_ConfigureServerOptionSMTP"
-					id="c64d155c-1e3c-4a6f-9df7-237cc114570b">
-						<testmodule
-						name="TestCaseDriver"
-						id="cdd4f307-e18f-4b8c-99c9-4b93e9c57612"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="600.20.20.40_ConfigureActionEditMultilink1.5Client"
-					id="9ee4df9a-593c-4f9f-85a5-471b9e712e71">
-						<testmodule
-						name="TestCaseDriver"
-						id="07c2fbea-cf04-4dab-8a8f-643251d37a0b"
+						id="76dc096d-53b8-4c01-a785-77ef9990fc2f"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1827,20 +1922,11 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
-					name="600.30.10.30_DefaultSettingOfFloorplanOfAllDevices"
-					id="f6f09ba4-1635-49e6-bb1d-b905a85e64ae">
+					name="600.30.20.20_ViewsAllDevicesNavigationView"
+					id="4d67b50d-fa0e-42b4-81ca-c37c0703a112">
 						<testmodule
 						name="TestCaseDriver"
-						id="9509aa99-73fd-4570-b356-fcfd1517d7ee"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="600.30.20.30_NoDuplicateGroupNameInLogicalGroupProperties"
-					id="0f0e278d-26e4-48ba-b2c4-3ebb5d4d41bf">
-						<testmodule
-						name="TestCaseDriver"
-						id="dc6430b7-a86f-4d0f-8a2c-458ffe02aba8"
+						id="f41abcfd-ed3d-432c-b900-2e2eaff45e4c"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1899,15 +1985,6 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="32c20fd4-03d5-463d-a36f-16fd0b9fe15a"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="TST1149_DisablingUsersOwnAccount"
-					id="a7e2dea6-fb52-4c87-9220-12c6296ed8a3">
-						<testmodule
-						name="TestCaseDriver"
-						id="85ddcd29-7a3b-49bc-9178-24f193d5b597"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -2002,65 +2079,65 @@ reportlevel="Info;20">
 						type="UserCode"/>
 					</testcase>
 					<testcase
-					name="600.40.20.60_UserAndGroupChangesToLoggedInUser"
-					id="2036563e-bf5e-4e1d-9270-8ac25370588f">
+					name="600.40.10.10_UserAndGroupDefaultPermissionRightForActions"
+					id="ee367dfc-1302-45a4-af1f-4541d9da88b1">
 						<testmodule
 						name="TestCaseDriver"
-						id="ab83859b-9520-4875-84d5-8a47d424aad8"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="600.40.20.90_UserAndGroupAdministratorGroupManagement"
-					id="4a119099-f751-4618-9e32-8a20322b65a1">
-						<testmodule
-						name="TestCaseDriver"
-						id="978143fa-5a40-4d01-aaa2-1449fd6d3185"
+						id="47b3ac6c-4d3e-431d-997c-ea987e2aa20a"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
 					<testcase
 					name="600.40.10.20_UserAndGroupAUserWithoutForwardTrapConfigure"
-					id="d6c82ee9-ec1a-4b19-b642-bcb45d8dc851">
+					id="39724d9a-ce56-4faf-a895-99544692a025">
 						<testmodule
 						name="TestCaseDriver"
-						id="d3e5bdc4-c3e0-4c33-aebc-8db4e3136cd9"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="600.40.10.10_UserAndGroupDefaultPermissionRightForActions"
-					id="619d33cc-9036-4d16-8126-986a6b23d0e2">
-						<testmodule
-						name="TestCaseDriver"
-						id="c2189712-7024-4f72-a682-c89843ef0de3"
+						id="8aa2f574-42f9-4140-997a-0fafc1ac7371"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
 					<testcase
 					name="600.40.20.20_UserAndGroupsReadWriteDataAction"
-					id="2ce6e16b-0e68-4cf7-b692-694089d9ce69">
+					id="ea69e2dc-9f8a-4d0b-9765-4feb8628b36e">
 						<testmodule
 						name="TestCaseDriver"
-						id="fbfeff46-2fc3-47e9-940d-0972edd4c53f"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="600.40.20.100_CheckRightsAssociatedWithUserGroups"
-					id="30fe0717-08c5-4a2c-9b50-b4fb09088067">
-						<testmodule
-						name="TestCaseDriver"
-						id="981abb40-86c6-4501-b124-e3234980b2d8"
+						id="ae3f5341-61c2-485f-ab13-61dda3121b19"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
 					<testcase
 					name="600.40.20.40_UserAndGroupsAutoLogout"
-					id="839790f5-b5de-4f55-8c65-76ee2a457ed9">
+					id="e36c4da4-b975-4dc2-9538-dfaa45a286dc">
 						<testmodule
 						name="TestCaseDriver"
-						id="c15cc5c0-d453-4cde-aef5-4bae28c82f41"
+						id="48e3e152-3f22-4b5f-be1a-07ab518ed718"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.20.60_UserAndGroupChangesToLoggedInUser"
+					id="6c0a2523-73b0-473c-9a7c-6c20b06775e5">
+						<testmodule
+						name="TestCaseDriver"
+						id="86fbb55e-5f64-415a-8396-76cc1d51ef1e"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.20.90_UserAndGroupAdministratorGroupManagement"
+					id="86e6e0bc-2d5e-4e86-b344-4835ca4948ac">
+						<testmodule
+						name="TestCaseDriver"
+						id="4eb6d390-67da-47a6-ab29-6982a3c8eba6"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.20.100_CheckRightsAssociatedWithUserGroups"
+					id="284cbd30-02f2-4895-8da8-1e23865f176e">
+						<testmodule
+						name="TestCaseDriver"
+						id="0b7b6592-1fb0-4ad6-a367-2c8e3a5f53ee"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -2068,9 +2145,6 @@ reportlevel="Info;20">
 				<testcase
 				name="600.050._Licenses2"
 				id="9e61d856-cb7a-42ec-ae33-4de82b415f17">
-					<description>
-						calhost
-					</description>
 					<testcase
 					name="TST562_VerifyShutdownClientLicenseCount"
 					id="bafe4fe5-8fa6-451a-9a0f-00b970fd262c">
@@ -2376,10 +2450,59 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
+				<testcase
+				name="700.30.40_AlarmHistorywithUserDefinedSeparatorinExportedFile"
+				id="ecf5f838-ea25-40e6-a0e2-3dbc39cac532">
+					<testmodule
+					name="TestCaseDriver"
+					id="004368e7-dd9e-4661-a812-4105f6ec3214"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="700.30.30_AlarmHistorywithUserDefinedFileNameandLocation"
+				id="3a774760-0d8a-44b2-b3b7-a1df2f4c6387">
+					<testmodule
+					name="TestCaseDriver"
+					id="109e19fb-07cd-4aec-9522-0511f62221c6"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="700.30.20_ExportAlarmHistoryofAlarmTypewithThreeTypes"
+				id="7c1c2513-2f5d-4ff5-ac40-dbf808429b19">
+					<testmodule
+					name="TestCaseDriver"
+					id="6603b732-4609-4a37-93d3-e95f71610193"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="700.30.50_AlarmHistoryWithUserDefinedStartandEndDate"
+				id="36dae839-32df-4c21-9ea7-9e89c8b862b6">
+					<testmodule
+					name="TestCaseDriver"
+					id="0410e31d-3f58-4630-9bf8-48755c24fe3e"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="700.30.80_ActionHistorywithUserDefinedFileLocationandName"
+				id="1bc861fd-3366-4ffb-a236-76d158d6f5b8">
+					<testmodule
+					name="TestCaseDriver"
+					id="41e7ecb9-bfd1-46af-9a64-854aaaa8237b"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="800._Help2"
-			id="1fa44bba-fe43-4270-baec-a0e41f2279c8"/>
+			id="1fa44bba-fe43-4270-baec-a0e41f2279c8">
+				<testcase
+				name="TestCase"
+				id="c4126c4f-4bd2-40d4-9c75-6308cc43632e"/>
+			</testcase>
 			<testcase
 			name="900._Operation_Using_Client_Viewer2"
 			id="a5e9adfd-9aee-44b1-a5b7-3963bd48c29d">
@@ -2478,7 +2601,7 @@ reportlevel="Info;20">
 			type="UserCode"/>
 		</testcase>
 		<testcase
-		name="test"
+		name="TestScript"
 		id="b49c5248-5521-4369-98f1-d67f370014a2">
 			<testmodule
 			name="myTest"
@@ -2495,11 +2618,27 @@ reportlevel="Info;20">
 			ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 			type="UserCode"/>
 		</testcase>
+		<testcase
+		name="TestScripts_rightClickTrendsGraph"
+		id="f948fa99-8c8b-46ac-bdbf-0b1f3e2ad68d">
+			<testmodule
+			name="TestCaseDriver"
+			id="7e22214a-a7fd-477f-b7c7-e68c8d12dfed"
+			ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+			type="UserCode"/>
+		</testcase>
 	</content>
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="1fd60914-33d3-476c-83b1-3b9a69701d06"/>
+			<testcase
+			id="d102dd4f-4618-4b6b-b5cf-b29025582dd3"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>

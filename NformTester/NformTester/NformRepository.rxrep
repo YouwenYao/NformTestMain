@@ -1238,12 +1238,76 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Severity: .*']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']
 					</item>
 					<item
-					name="RackPDU1264202215"
-					id="afcc3de7-1328-4095-b31f-84b4c4da8bb5"
+					name="MainFormTitle"
+					id="5bc2b84d-b2d0-4be5-803f-68729826adc7"
 					searchtimeout="30000ms"
-					capname="treeitem"
-					addcaps="treeitem,accessible,accessibletreeitem">
-						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='RackPDU_126.4.202.215']
+					capname="titlebar"
+					addcaps="titlebar,accessible">
+						/form[@controlname='LxViewerFrame']/titlebar[@accessiblerole='TitleBar']
+					</item>
+					<item
+					name="InfoLinks"
+					id="953219c6-ba0a-4361-b424-4b2a201e12a0"
+					searchtimeout="30000ms"
+					capname="tabpage"
+					addcaps="tabpage,accessible">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@accessiblename='Info links']
+					</item>
+					<item
+					name="Resteeerer"
+					id="84499a1c-cec7-437f-b8c7-1add812d7b6b"
+					searchtimeout="30000ms"
+					capname="link"
+					addcaps="link,accessible">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_infoLinkTab']/container[@controlname='m_infoLinkDisplay']/container[@controlname='m_linksFlowPanel']/link/text/link
+					</item>
+					<item
+					name="Collapsed_Status_Normal"
+					id="939b1b52-0027-43d7-b91f-6f17e699aff2"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnNormal']/button[@controlname='m_statusBtn']
+					</item>
+					<item
+					name="Collapsed_Status_Nocom"
+					id="382235d6-105c-40b3-82b6-0ab19f81fd33"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnNoComms']/button[@controlname='m_statusBtn']
+					</item>
+					<item
+					name="Collapsed_Status_Alarm"
+					id="9606b92e-97ee-45e2-9bb0-187afdda9a12"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnAlarm']/button[@controlname='m_statusBtn']
+					</item>
+					<item
+					name="Collapsed_Normal_Count"
+					id="af32fb2a-0ce8-4a1a-9c47-96e8c2259d4c"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnNormal']/text[@controlname='m_statusBtnLbl']
+					</item>
+					<item
+					name="Collapsed_Nocom_Count"
+					id="6c757799-0815-4911-a608-0e21632e326c"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnNoComms']/text[@controlname='m_statusBtnLbl']
+					</item>
+					<item
+					name="Collapsed_Alarm_Count"
+					id="accca8bd-6785-436f-81e7-e6418118dbe4"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnAlarm']/text[@controlname='m_statusBtnLbl']
 					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
@@ -2411,7 +2475,7 @@ AAAASUVORK5CYII=
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='Created User']/button[@text='OK']
+						/form[@title='Created User']/button[@text='OK' or @text='&#30830;&#23450;']
 					</item>
 					<basepath>
 						/form[@title='Created User']
@@ -2699,153 +2763,6 @@ zIUYBgcgyexZe/+3HH7/36ly6X+OUAgWcK3+X73rHlgcZgA7O7uDKD+rAYYBLcv2/l96+f3/oMo5
 KAbMOf4cLA4zAK4xJDPkfVRbNdgpIMk56479P3b/+/+919//j6pd+t8pdwqYD8MYBigCFYGiBmbA
 0nVb/y/dtBeocc5/Ac8WMNaM7PmfDYzCa4+xuICVldUA5B+YAU6Ggvs5AqfAnQ8LBxCtZmj7HsMF
 WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
-					</icon>
-				</appfolder>
-				<appfolder
-				name="FormContextMenuContextMenuStrip"
-				id="c520e7ed-237e-4d0c-8d71-680ef1d76a25"
-				searchtimeout="30000ms"
-				capname="contextmenu"
-				addcaps="contextmenu,control,nativewindow"
-				isrooted="True"
-				usecache="True">
-					<item
-					name="TrendsCopy"
-					id="4c914716-2c6b-4653-8cd8-4c11d8fd5731"
-					searchtimeout="30000ms"
-					capname="menuitem"
-					addcaps="menuitem,accessible">
-						/contextmenu[@controlname='contextMenuStrip1']/menuitem[@accessiblename='Copy']
-					</item>
-					<item
-					name="TrendsPage_Setup"
-					id="354d6f45-5290-43ec-8126-07889dc979f4"
-					searchtimeout="30000ms"
-					capname="menuitem"
-					addcaps="menuitem,accessible">
-						/contextmenu[@controlname='contextMenuStrip1']/menuitem[@accessiblename='Page Setup...']
-					</item>
-					<item
-					name="TrendsPrint"
-					id="60e9847b-a6ac-43f5-a957-4b5f41f15e56"
-					searchtimeout="30000ms"
-					capname="menuitem"
-					addcaps="menuitem,accessible">
-						/contextmenu[@controlname='contextMenuStrip1']/menuitem[@accessiblename='Print...']
-					</item>
-					<item
-					name="TrendsShow_Point_Values"
-					id="7b992ac5-85c5-4237-a5aa-91f9932f8a99"
-					searchtimeout="30000ms"
-					capname="menuitem"
-					addcaps="menuitem,accessible">
-						/contextmenu[@controlname='contextMenuStrip1']/menuitem[@accessiblename='Show Point Values']
-					</item>
-					<item
-					name="TrendsUn_Zoom"
-					id="ff0c6c0a-a1ee-4564-93b8-d5efe2285650"
-					searchtimeout="30000ms"
-					capname="menuitem"
-					addcaps="menuitem,accessible">
-						/contextmenu[@controlname='contextMenuStrip1']/menuitem[@accessiblename='Un-Zoom']
-					</item>
-					<item
-					name="TrendsUndo_All_Zoom_Pan"
-					id="f449ca31-ddd8-4eed-b707-bda74ea12715"
-					searchtimeout="30000ms"
-					capname="menuitem"
-					addcaps="menuitem,accessible">
-						/contextmenu[@controlname='contextMenuStrip1']/menuitem[@accessiblename~'Undo All Zoom']
-					</item>
-					<item
-					name="TrendsSet_Scale_to_Default"
-					id="f40de0d9-b7f0-4b6e-8b75-0a430f7f13e9"
-					searchtimeout="30000ms"
-					capname="menuitem"
-					addcaps="menuitem,accessible">
-						/contextmenu[@controlname='contextMenuStrip1']/menuitem[@accessiblename='Set Scale to Default']
-					</item>
-					<item
-					name="TrendsSave_Image_As"
-					id="158de282-c7dc-42d7-8cf6-72e14cacd58e"
-					searchtimeout="30000ms"
-					capname="menuitem"
-					addcaps="menuitem,accessible">
-						/contextmenu[@controlname='contextMenuStrip1']/menuitem[@accessiblename='Save Image As...']
-					</item>
-					<item
-					name="TrendsCopy_data"
-					id="3c79708b-6bac-45f0-aad3-5cc9b2b66bbd"
-					searchtimeout="30000ms"
-					capname="menuitem"
-					addcaps="menuitem,accessible">
-						/contextmenu[@controlname='contextMenuStrip1']/menuitem[@accessiblename='Copy data']
-					</item>
-					<basepath>
-						/contextmenu[@controlname='contextMenuStrip1']
-					</basepath>
-					<icon>
-						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
-AAAOxAAADsQBlSsOGwAAALxJREFUOE9j/P//PwNFAGQACNsEZP9fs2Im0RimD6wZZgDQJUAmYQCy
-CKsBYFGgITsOnv9f1j73f0bVxP+R2S3/vWLL/oNcCAN4DYAZgs8dBA2AGbJs477/kTnN/z1jy0lz
-Acx2XGFCtAtABoDw1IXriXMBTAPMC+fOnfsPwugApwtgGmBOB9ENnZOIC4Oujmq4RcgGEO0CqLPA
-hmw/eA7sd5JcgGwAyBCYd0hyAUV5AZa2SaXhmYlUjTD1AHJC3EGQYdi3AAAAAElFTkSuQmCC
-					</icon>
-				</appfolder>
-				<appfolder
-				name="FormSaveAs"
-				id="16d80d74-fb87-4f08-b795-0083de714dfe"
-				searchtimeout="30000ms"
-				capname="form"
-				addcaps="form,nativewindow"
-				isrooted="True"
-				usecache="True">
-					<item
-					name="Save"
-					id="e774daf1-455d-4ed1-968d-7fc67078f0db"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,nativewindow">
-						/form[@title='Save As']/button[@text='&amp;Save']
-					</item>
-					<item
-					name="Cancel"
-					id="21ad68bb-7b48-4ebc-98ad-f39a61ba3123"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,nativewindow">
-						/form[@title='Save As']/button[@text='Cancel']
-					</item>
-					<item
-					name="Close"
-					id="06bb9f8f-6a98-452c-855d-73eb29eb24b9"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,accessible">
-						/form[@title='Save As']/titlebar/button[@accessiblename='Close']
-					</item>
-					<item
-					name="FileName"
-					id="4dc96d7c-327b-4a8a-8cca-7fa1768d73a9"
-					searchtimeout="30000ms"
-					capname="text"
-					addcaps="text,accessible">
-						/form[@title='Save As']/element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']/combobox[@accessiblename='File name:']/text[@accessiblename='File name:']
-					</item>
-					<basepath>
-						/form[@title='Save As']
-					</basepath>
-					<icon>
-						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAGISURBVDhPY2CgBjhw4MB/cjDcbpBmdIeAxK4u
-kYLjiwsl/5+eI/7/2Ayx//smiYAtJMqAf292/gfjl+v+/3264P/fh73/N7YLEmfA+fkSUI3zgRr7
-/v+9U/n/77WU/0tqeTENwBYGx6aLgW38e7vq/59rqf//XPD//+eM9f+ZJZyYBpzQ4vh/QIPr/3Y1
-7v/rVCA27OgVAtoI0fj7tM3/38c1//8+JPV/Qi5QLXoY7Fbj+v95y/r/r6ZM+D9fgR+sYHUz//8/
-p63//zmm+f/PYan/vw8IgHFvFjumAWuAtr6a2v//blri/34ZIbCC+ZU8/2cUc/2flM/xvy+bHayx
-N4sNuwFzFQT+30lP/H/e0vh/k6QoUekCJRr7ZIT/t0qJ/K+REPtfLCYONqBq/QM4Llt193/B4ltw
-p2OEAbZYAGladOj//75t//+XLP3/P6LzNG4DYM6BmQyiEyZd/N8P1Rw76c9/+9y9pBngXnbwv33e
-3v9W6bv+myZtB2NkC1DCgKLMREmOBgC1SP1voJFAuQAAAABJRU5ErkJggg==
 					</icon>
 				</appfolder>
 			</folder>
@@ -7614,7 +7531,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="tabpage"
 					addcaps="tabpage,accessible">
-						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@accessiblename='Liebert protocol']
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@accessiblename='Liebert protocol' or @accessiblename='Emerson protocol']
 					</item>
 					<item
 					name="SNMP"
@@ -8560,6 +8477,14 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="text"
 					addcaps="text,control,nativewindow">
 						/form[@controlname='LxMgdDeviceListDlg']/container[@controlname='m_biListGrp']/text[@controlname='m_remLicLbl']
+					</item>
+					<item
+					name="AddressRow0"
+					id="383846c2-2eee-424d-95ed-5322f62b2c9f"
+					searchtimeout="30000ms"
+					capname="cell"
+					addcaps="cell,accessible">
+						/form[@controlname='LxMgdDeviceListDlg']/container[@controlname='m_biListGrp']/container[@controlname='m_mgdDevListDgrid']/table/row[@accessiblename='Row 0']/cell[@accessiblename='Address Row 0']
 					</item>
 					<basepath>
 						/form[@controlname='LxMgdDeviceListDlg']
@@ -10765,14 +10690,6 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					addcaps="button,nativewindow">
 						/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']/button[@text='&#21542;(&amp;N)' or @text='No']
 					</item>
-					<item
-					name="Export_result"
-					id="ebe8030b-5e5f-4bad-8d75-bbc7548131ff"
-					searchtimeout="30000ms"
-					capname="text"
-					addcaps="text,nativewindow">
-						/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']/text[@controlid='65535']
-					</item>
 					<basepath>
 						/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']
 					</basepath>
@@ -11448,6 +11365,14 @@ N7DLAAAAAElFTkSuQmCC
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxServiceCtlDlg']/button[@controlname='m_restartBtn']
 					</item>
+					<item
+					name="NformServiceStatus"
+					id="7226e155-b6b0-4b41-ab6f-0db4c93e2e1b"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,accessible">
+						/form[@controlname='LxServiceCtlDlg']/container[@controlname='m_srvcStatusTbx']/text[@controlname='m_srvcStatusTbx-Ctl']/text[@accessiblename='Nform service status:']
+					</item>
 					<basepath>
 						/form[@controlname='LxServiceCtlDlg']
 					</basepath>
@@ -11929,6 +11854,14 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 				addcaps="text,nativewindow">
 					/form[@class='Notepad']/text
 				</item>
+				<item
+				name="Button关闭"
+				id="a47afc18-edbc-4cf1-bfc7-46de7be4e70c"
+				searchtimeout="30000ms"
+				capname="button"
+				addcaps="button,accessible">
+					/form[@class='Notepad']/titlebar/button[@accessiblename='&#20851;&#38381;']
+				</item>
 				<basepath>
 					/form[@class='Notepad']
 				</basepath>
@@ -11966,22 +11899,6 @@ wl4egeWrxKX+K8PL5/mtls7wXnxO6NspNG4Qys9tVQ/pv/Ffx1eL2x6qAAAAAElFTkSuQmCC
 				addcaps="table,excelworksheet">
 					/form[@processname='EXCEL']/element[@class='XLDESK']/workbook/table[@index='1']
 				</item>
-				<item
-				name="EXCEL"
-				id="61fdaebc-7591-4aea-a4de-759350cd313f"
-				searchtimeout="30000ms"
-				capname="unknown"
-				addcaps="unknown,nativewindow">
-					/form[@processname='EXCEL']/element[@class='EXCEL&lt;']
-				</item>
-				<item
-				name="CellK34"
-				id="8ecb3b23-725e-403f-9826-4a2fe168fa22"
-				searchtimeout="30000ms"
-				capname="cell"
-				addcaps="cell,excelrange">
-					/form[@processname='EXCEL']/element[@class='XLDESK']/workbook/table[@name='Scripts']/row[@index='34']/cell[@address='K34']
-				</item>
 				<basepath>
 					/form[@processname='EXCEL']
 				</basepath>
@@ -12012,22 +11929,6 @@ KMIpwiGC42/CR0s+FAM82wAAAABJRU5ErkJggg==
 		addcaps="menubar,nativewindow"
 		isrooted="True"
 		usecache="True">
-			<item
-			name="AdministratorLiebertRNform"
-			id="78852d45-6aee-41e7-94c4-c7e4e6d7a169"
-			searchtimeout="30000ms"
-			capname="button"
-			addcaps="button,nativeitem,checkable">
-				/menubar[@processname='explorer']/container[@caption='' and @controlid='40965']/container/toolbar/button[@text~'^Administrator\ -\ Liebert&#174;\ ' and @commandid='11']
-			</item>
-			<item
-			name="AdministratorLiebertRNformUNREGIST"
-			id="62053ade-52f0-478d-ac6c-844e23dec664"
-			searchtimeout="30000ms"
-			capname="button"
-			addcaps="button,nativeitem,checkable">
-				/menubar[@processname='explorer']/container[@caption='' and @controlid='40965']/container/toolbar/button[@text~'^Administrator\ -\ Liebert&#174;\ ']
-			</item>
 			<basepath>
 				/menubar[@processname='explorer']
 			</basepath>
@@ -12041,121 +11942,220 @@ A3cBPPBggUgkTXlKpCQfgJPygBsAABEv9phGO1VMAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<appfolder
-		name="InboxMicrosoftOutlook"
-		id="6c6d7532-83f6-4835-988c-1d2f8d9ae9e2"
+		name="NformTester"
+		id="d37fd1e6-b141-4e18-8e0a-096a0d1b2f2d"
+		searchtimeout="30000ms"
+		capname="form"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<basepath>
+				/form[@title='NformTester']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAOBJREFU
+OE9jYKAWOLdM8T8yJslckEZ0cGyexH+iDAEphIA5aPj/f5AcNoxiMNiA70DN33swMYa7IIbOqURy
+HdiA9y3/nx/3wmkjNlcsLeSAeBFswPUWsOZ7+7KR7PyOxX6g0PMWsDiaAdlgA76DvIERFmhhczwK
+qGYKqgHPtzmBoxBoLjAcpuDFz/cF/T+3LwrVAJDma/ssIbYDwwMnBjr//T4nhGZYGICd/7waYgCI
+xoXvV/+/B3Qt3P/IBoA1XwcGIgG8d54mqgFgQ6YBEwyRGCUNIKcokAQxmKjkTVdFAJ126FvNZ48R
+AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		name="NAVIGATELiebertRNform"
+		id="5c7b8232-914d-4a1d-a089-f9cb79e7a03a"
+		searchtimeout="30000ms"
+		capname="form"
+		addcaps="form,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ALARMSLiebertRNform"
+			id="00625b14-f30d-4325-b975-72728cd44faf"
+			searchtimeout="30000ms"
+			capname="form"
+			addcaps="form,control,nativewindow">
+				/form[@controlname='LxFloatingWindow' and @title='NAVIGATE - Liebert&#174; Nform']
+			</item>
+			<item
+			name="Buttonminnavigate"
+			id="e482c789-28b1-47af-b512-016493898318"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,accessible">
+				/form[@controlname='LxFloatingWindow' and @title='NAVIGATE - Liebert&#174; Nform']/titlebar/button[@accessiblename='&#26368;&#23567;&#21270;']
+			</item>
+			<basepath>
+				/form[@controlname='LxFloatingWindow' and @title='NAVIGATE - Liebert&#174; Nform']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAfJJREFUOE/Nk0FrE0EYhnP1V4gUEcGT9AcM/oBCLbpqKkFyCK0KaqFN
+TEjHBqJJazbtZg1piesStyGmdV2kqLWLY7BWSkIhEfYgUoqHPQTZQw459PC6O1UxjXruwMvMfDPf
+O9/Dx/h8R27AsQjam9TT4eLEVJRGIxNUK4p9Z7/v6noZ5xbWMZSuolU3meM4xLZtYuhr9PzCKk4/
+sxFYNPBPcv2Fa/CkiaHcBjZNg3mJrgFt7DTojKLy5Hyl8ncD7HdJeTHJCukYljJx5MUEi0/dYuKD
+OEvSMAsFhqndekfWDI1KD6O0okq9KBV5mo7EZfifNuFfbiKg1hFcqh3stSYuu2v5/iT8jw5QPKQe
+FCkyTK8XGW6utzFWquPsFREDQgEjd1XcdmOesmEBM0WVJ09k8/0GdLmGuS0HoYTLeUHjGhDySL/9
+yuOeQc+r6OzylqG9RbwKcs8/YLXVAZVf4tjFEjcYHBVR3fnO49nIIYNgqsDbNikr0B8nWPnVR2zv
+dfFpt4NYSkFoSkLVrPOYpz6Dq7Mqb9uYpGFFyTDjdQ3qygYGr8mc/4SrU5fmceOegu3Pe8glxnsR
+vjRM2nij0W+t97RrWyQ5HcZxN+kX/59zcDwGvTRL/vt9LMsiwh0ZJ4WMq+xPzeHM6Dx03WRH7u/5
+fgBINWExYY8bogAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		name="ALARMSLiebertRNform"
+		id="bd0790de-9bac-4125-862f-593835ff2089"
+		searchtimeout="30000ms"
+		capname="form"
+		addcaps="form,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ALARMSLiebertRNform"
+			id="5981a24b-e038-4501-b273-d46814491030"
+			searchtimeout="30000ms"
+			capname="form"
+			addcaps="form,control,nativewindow">
+				/form[@controlname='LxFloatingWindow' and @title='ALARMS - Liebert&#174; Nform']
+			</item>
+			<item
+			name="Buttonminalarm"
+			id="6fd16bbd-25b5-47b4-b7b8-441c18390b9b"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,accessible">
+				/form[@controlname='LxFloatingWindow' and @title='ALARMS - Liebert&#174; Nform']/titlebar/button[@accessiblename='&#26368;&#23567;&#21270;']
+			</item>
+			<basepath>
+				/form[@controlname='LxFloatingWindow' and @title='ALARMS - Liebert&#174; Nform']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAfJJREFUOE/Nk0FrE0EYhnP1V4gUEcGT9AcM/oBCLbpqKkFyCK0KaqFN
+TEjHBqJJazbtZg1piesStyGmdV2kqLWLY7BWSkIhEfYgUoqHPQTZQw459PC6O1UxjXruwMvMfDPf
+O9/Dx/h8R27AsQjam9TT4eLEVJRGIxNUK4p9Z7/v6noZ5xbWMZSuolU3meM4xLZtYuhr9PzCKk4/
+sxFYNPBPcv2Fa/CkiaHcBjZNg3mJrgFt7DTojKLy5Hyl8ncD7HdJeTHJCukYljJx5MUEi0/dYuKD
+OEvSMAsFhqndekfWDI1KD6O0okq9KBV5mo7EZfifNuFfbiKg1hFcqh3stSYuu2v5/iT8jw5QPKQe
+FCkyTK8XGW6utzFWquPsFREDQgEjd1XcdmOesmEBM0WVJ09k8/0GdLmGuS0HoYTLeUHjGhDySL/9
+yuOeQc+r6OzylqG9RbwKcs8/YLXVAZVf4tjFEjcYHBVR3fnO49nIIYNgqsDbNikr0B8nWPnVR2zv
+dfFpt4NYSkFoSkLVrPOYpz6Dq7Mqb9uYpGFFyTDjdQ3qygYGr8mc/4SrU5fmceOegu3Pe8glxnsR
+vjRM2nij0W+t97RrWyQ5HcZxN+kX/59zcDwGvTRL/vt9LMsiwh0ZJ4WMq+xPzeHM6Dx03WRH7u/5
+fgBINWExYY8bogAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		name="ServiceControl"
+		id="aed92759-260c-481d-90c2-2bb666c80e36"
 		searchtimeout="30000ms"
 		capname="form"
 		addcaps="form,nativewindow"
 		isrooted="True"
 		usecache="True">
 			<item
-			name="ListItem2"
-			id="3617b6b9-cfa6-4f64-96b2-f6b2ce0ef972"
+			name="ServiceControl"
+			id="d4fc4e96-085f-4ad2-bfa9-e96b1f9521e9"
 			searchtimeout="30000ms"
-			capname="listitem"
-			addcaps="listitem">
-				/form[@title='Inbox - Microsoft Outlook']/statusbar/listitem[@index='2']
+			capname="form"
+			addcaps="form,nativewindow">
+				/form[@title='Service Control']
 			</item>
 			<item
-			name="StatusBar101"
-			id="70c99cb4-f984-4f3d-bd22-a724f0cffcfa"
+			name="ButtonOK"
+			id="b0492d5f-9728-45fc-b6c4-609a201b3c3b"
 			searchtimeout="30000ms"
-			capname="statusbar"
-			addcaps="statusbar,nativewindow">
-				/form[@title='Inbox - Microsoft Outlook']/statusbar[@controlid='101']
+			capname="button"
+			addcaps="button,nativewindow">
+				/form[@title='Service Control']/button[@text='&#30830;&#23450;' or @text='OK']
 			</item>
 			<basepath>
-				/form[@title='Inbox - Microsoft Outlook']
+				/form[@title='Service Control']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKOSURBVDhPjZBdSJNhGIa/SqNIiKSjKKKDKCLS
-yqKT2UkURdRRO0kiKMHEsEwKHVirEKzUMp1zColhSmUm1ErNn7bcUlNbakPdHOrW3K9zm/v7vnn3
-+JmDJVI3XEfve93v8z7MUmZk+3bYZQm1jspEI4F/8UdbDIkXCZ9PU43/SVSBRZaQaClP5FjLIH8Y
-1MvhH3wWwTdQzuPtl2C2rwqu/ufRBeay/bW+4QZe9qhLeByKQljVlbB+rYNb1wnOPQ7/dB+8UwrY
-1bLoAmv1CXBeCzw9NXA238evd2LYhtsA1o35oA3zfiPm5/QIu4cQdn0DZ1fC3HhpltQYvsBcIUA4
-6IHzYwEma69jWtO6ohx2KMFZm8GZ36KnJf8M6asZU/ligbEuB9q6e7xsHZHTVIYVZc70AtM/Hiuo
-YAMzJaGCgAe96Ucw1dXEv1yftQ7KiuNgZwaiZG3DOejfp4CdrIJvrNhPBVuYiVIBQnMudKYmwTnU
-zo890V2K1zdi0SVNBmttB2v5gO81x/BJHAd7zy2whhKwugLEx63dwxhKBPC7HWhNOxz150lVAZpu
-xkItSUK3NAkd+Zvh0tyNyC6NyEUT7GXGnwjgm7WjNeMAgo7BqD8bu/Igz42B8tE2eLUPI3Jo5Db0
-HRk/qWA3oysWIOBxorcsDYbeV8sW5ugTIzguiZJD2lyoGjPbhELhIWa0MBmc3w3ThA6qp9kI2T5H
-bXthYX/LYy3XQqLsy1k0wSa+YAn5nVNolqbaQ6Y3K8g5GG25GnwpFdtI3k7EEpGsJuKJg9lXTov0
-qgejc2NFgQU5oM0LG79kGtvr0xWirPNFdGcnsZ5YljXERmIXcZQ4SwiJC0QKcZLYSizIqxiGYX4D
-i8yp2YuV8qsAAAAASUVORK5CYII=
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAASJJREFU
+OE+9k7GKwkAQhlPeI9j6Budr+Ai+QvAJgs2xpJBgcSxXBQtBSx9DCyF2WghaWFxhkeKKLSx+9x/Y
+JJuLITYGBmaHzDf//pkEwTueZJbAzanmjbMHnwOoWBUN6kvB/JnibO4Aa0+FNwF+bzk4mZFbWB3q
+weqAcBwiXSxBCIM5a50VnE8HaUimVoEN5qx1BhTmETDTnh+dTCzd11AWYkxpqAfI4w+Y9RC4RsAl
+BM/VF9is4hYA78UmnEbAcejdM52nIp8Q/ZMC9lP+ky8KVn1gz+gVCqJJBP2tsdllyPYHyVlrBEjz
+zqrYBh5gs83EfQYhBFSXS2Ai3za6cB6wibLdROaNeyBXWJQQB3B74ACte+CMrH+Bl35YQlo3rUZ7
+AKnWLBvcTvzrAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<appfolder
-		name="ContextMenuStrip1"
-		id="e24b7160-a611-48d4-9e73-c899b8e05ac1"
+		name="FormCreate_Graph"
+		id="6377761b-3d06-4386-bf18-52dec03cea32"
 		searchtimeout="30000ms"
-		capname="contextmenu"
-		addcaps="contextmenu,control,nativewindow"
+		capname="form"
+		addcaps="form,control,nativewindow"
 		isrooted="True"
 		usecache="True">
 			<item
-			name="CopyData"
-			id="c5be2bfa-2e60-444f-8744-2a281ddb5c9e"
+			name="CreateGraphdd"
+			id="c512cd99-c1b6-431c-9a1e-81be0023a78b"
 			searchtimeout="30000ms"
-			capname="menuitem"
-			addcaps="menuitem,accessible">
-				/contextmenu[@controlname='contextMenuStrip1']/menuitem[@accessiblename='Copy data']
+			capname="form"
+			addcaps="form,control,nativewindow">
+				/form[@controlname='LxTrendAlarmsDlg']
+			</item>
+			<item
+			name="CreateGraph"
+			id="b385fde9-5f81-43b7-93e8-bcf0f4fcfe31"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,control,nativewindow">
+				/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel1']/button[@controlname='m_createBtn']
+			</item>
+			<item
+			name="Refresh"
+			id="7390eacd-65e4-4455-8049-b735abbac2c1"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,control,nativewindow">
+				/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel1']/button[@controlname='m_refreshBtn']
+			</item>
+			<item
+			name="Data_point_Tree"
+			id="25be993b-29b9-4012-b653-a361f7908ed0"
+			searchtimeout="30000ms"
+			capname="tree"
+			addcaps="tree,accessible">
+				/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel1']/tree/tree[@accessiblerole='Outline']
+			</item>
+			<item
+			name="Close"
+			id="6d3a8da1-8cbc-4570-9203-ff0c406df04d"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,control,nativewindow">
+				/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']
+			</item>
+			<item
+			name="GraphControl"
+			id="16903037-fcba-46be-b623-ac442047b90a"
+			searchtimeout="30000ms"
+			capname="container"
+			addcaps="container,control,nativewindow">
+				/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel2']/container/container[@controlname='ZedGraphControl']
 			</item>
 			<basepath>
-				/contextmenu[@controlname='contextMenuStrip1']
+				/form[@controlname='LxTrendAlarmsDlg']
 			</basepath>
 			<icon>
-				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
+				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
+AAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<basepath/>
@@ -12173,3 +12173,32 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		</var>
 	</variables>
 </repository>
+b0-1c89-4d48-b91c-183e15ebe0f3"
+				searchtimeout="30000ms"
+				capname="form"
+				addcaps="form,nativewindow"
+				isrooted="True"
+				usecache="True">
+					<item
+					name="OK"
+					id="baebb237-5c25-4121-b787-6f04d6e0f3f9"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']/button[@text='&#30830;&#23450;' or @text='OK']
+					</item>
+					<item
+					name="Yes"
+					id="bab2b8eb-c5a0-4738-a175-d03ccd3cc468"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']/button[@text='&#26159;(&amp;Y)' or @text='Yes']
+					</item>
+					<item
+					name="No"
+					id="053f9051-432f-4e8a-b648-6372bd9001f9"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']/button[@text='&#21542;(&amp;N)' or
