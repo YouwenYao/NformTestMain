@@ -6719,7 +6719,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_smtpTab']/container[@controlname='m_smtpSrvrListGrp']/table/list[@accessiblename='Minimum free space (%):']
 					</item>
 					<item
-					name="Polling_Priority"
+					name="Polling_Priority_old"
 					id="12bbe2d0-1102-4adf-a529-731a7a0e95f4"
 					searchtimeout="30000ms"
 					capname="radiobutton"
@@ -6727,7 +6727,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/radiobutton[@controlname='m_devPollPriorityRbtn']
 					</item>
 					<item
-					name="Polling_Daily"
+					name="Polling_Daily_old"
 					id="fa571d17-d355-4580-8afe-7d172f1ec10d"
 					searchtimeout="30000ms"
 					capname="radiobutton"
@@ -6735,7 +6735,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/radiobutton[@controlname='m_devPollDailyRbtn']
 					</item>
 					<item
-					name="Polling_Interval"
+					name="Polling_Interval_old"
 					id="efd24149-0b8f-4887-84cf-df435cb16a2e"
 					searchtimeout="30000ms"
 					capname="radiobutton"
@@ -6743,7 +6743,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/radiobutton[@controlname='m_devPollIntervalRbtn']
 					</item>
 					<item
-					name="Polling_Disabled"
+					name="Polling_Disabled_old"
 					id="e3721dd5-60ba-4a30-91aa-db443bd03864"
 					searchtimeout="30000ms"
 					capname="radiobutton"
@@ -6751,7 +6751,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/radiobutton[@controlname='m_devPollDisabledRbtn']
 					</item>
 					<item
-					name="Daily_everyday_at"
+					name="Daily_everyday_at_old"
 					id="2c429004-72fb-4d23-ae5b-f2aae50b2fda"
 					searchtimeout="30000ms"
 					capname="datetime"
@@ -6759,7 +6759,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/datetime[@controlname='m_devPollTodDtp']
 					</item>
 					<item
-					name="Interval_every"
+					name="Interval_every_old"
 					id="b440841c-f48f-4044-b86a-b7e60649c9bc"
 					searchtimeout="30000ms"
 					capname="combobox"
@@ -6767,7 +6767,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/combobox[@accessiblename='-  every']
 					</item>
 					<item
-					name="Interval_every_up"
+					name="Interval_every_up_old"
 					id="1f63fefb-a868-4cc5-ab17-d7cbd8813b0e"
 					searchtimeout="30000ms"
 					capname="button"
@@ -6775,7 +6775,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container/button[@accessiblename='Up']
 					</item>
 					<item
-					name="Interval_every_down"
+					name="Interval_every_down_old"
 					id="333a8004-2704-433a-ab2f-ba51a95cf55a"
 					searchtimeout="30000ms"
 					capname="button"
@@ -7358,6 +7358,70 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 					addcaps="text,accessible">
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_updatesTab']/container[@controlname='m_updDnldDirTbx']/text[@controlname='m_updDnldDirTbx-Ctl']/text[@accessiblename~'^Download\ directory\ for\ up']
 					</item>
+					<item
+					name="Polling_Priority"
+					id="23f1d158-4fff-4d3e-b1ac-c0b2735df642"
+					searchtimeout="30000ms"
+					capname="radiobutton"
+					addcaps="radiobutton,control,nativewindow">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/radiobutton[@controlname='m_devPollPriorityRbtn']
+					</item>
+					<item
+					name="Polling_Daily"
+					id="c080ccbb-dddb-46fd-babf-7ddb204e7a35"
+					searchtimeout="30000ms"
+					capname="radiobutton"
+					addcaps="radiobutton,control,nativewindow">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/radiobutton[@controlname='m_devPollDailyRbtn']
+					</item>
+					<item
+					name="Polling_Interval"
+					id="241799d6-66fc-453e-b6cd-99e3b20b45aa"
+					searchtimeout="30000ms"
+					capname="radiobutton"
+					addcaps="radiobutton,control,nativewindow">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/radiobutton[@controlname='m_devPollIntervalRbtn']
+					</item>
+					<item
+					name="Polling_Disabled"
+					id="4a3f2aba-fb42-42b3-a1db-a66c62db304c"
+					searchtimeout="30000ms"
+					capname="radiobutton"
+					addcaps="radiobutton,control,nativewindow">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/radiobutton[@controlname='m_devPollDisabledRbtn']
+					</item>
+					<item
+					name="Daily_everyday_at"
+					id="ffa36963-117c-4d6d-ab31-d467bb3e2931"
+					searchtimeout="30000ms"
+					capname="datetime"
+					addcaps="datetime,control,nativewindow">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container[@controlname='m_devPollTodDtp']/datetime[@controlname='m_devPollTodDtp-Ctl']
+					</item>
+					<item
+					name="Interval_every"
+					id="ee31ee6b-c181-416e-a32a-8a86588a252e"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container[@controlname='m_devPollIntervalNbx']/container/combobox[@accessiblename='-  every']
+					</item>
+					<item
+					name="Interval_every_up"
+					id="826626f2-972e-4cd1-8577-4c698df1b907"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container[@controlname='m_devPollIntervalNbx']/container/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="Interval_every_down"
+					id="4cac9304-cba9-4936-a416-249e81d355b6"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container[@controlname='m_devPollIntervalNbx']/container/container/button[@accessiblename='Down']
+					</item>
 					<basepath>
 						/form[@controlname='LxServerPropsDlg']
 					</basepath>
@@ -7593,7 +7657,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxMgdDeviceEditDlg']/container[@controlname='m_deviceTypeCtl']/container/combobox[@controlname='m_devTypeCombo']
 					</item>
 					<item
-					name="Protocol"
+					name="Protocol_old"
 					id="7ff295b1-40b3-4cb7-b830-c82b01497be6"
 					searchtimeout="30000ms"
 					capname="combobox"
@@ -7879,7 +7943,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxMgdDeviceEditDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']
 					</item>
 					<item
-					name="IP_port_use_global_port"
+					name="IP_port_use_global_port_old"
 					id="b52b2c7a-7d3a-4c2d-9f9f-ad80ea58c3ca"
 					searchtimeout="30000ms"
 					capname="radiobutton"
@@ -7887,7 +7951,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/radiobutton[@controlname='m_stdRbtn']
 					</item>
 					<item
-					name="IP_port_use_custom_port"
+					name="IP_port_use_custom_port_old"
 					id="a755a70b-e496-4681-b8b0-5f2a76507b8b"
 					searchtimeout="30000ms"
 					capname="radiobutton"
@@ -8069,6 +8133,30 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="combobox"
 					addcaps="combobox,control,nativewindow">
 						/form[@controlname='LxMgdDeviceEditDlg']/container[@controlname='m_deviceTypeCtl']/container/container[@controlname='m_devTypeCombo']/combobox[@controlname='m_devTypeCombo-Ctl']
+					</item>
+					<item
+					name="Protocol"
+					id="d10974b4-ab79-4e91-a6c4-f7683a055246"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxMgdDeviceEditDlg']/container[@controlname='m_deviceTypeCtl']/container/container[@controlname='m_devProtocolTbx']/text[@controlname='m_devProtocolTbx-Ctl']
+					</item>
+					<item
+					name="IP_port_use_global_port"
+					id="1bf96f9d-3e8e-4948-86d0-5cd85d5c1288"
+					searchtimeout="30000ms"
+					capname="radiobutton"
+					addcaps="radiobutton,control,nativewindow">
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/radiobutton[@controlname='m_stdRbtn']
+					</item>
+					<item
+					name="IP_port_use_custom_port"
+					id="469aef8b-8a27-49a7-aa40-578bc8125af5"
+					searchtimeout="30000ms"
+					capname="radiobutton"
+					addcaps="radiobutton,control,nativewindow">
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/radiobutton[@controlname='m_customRbtn']
 					</item>
 					<basepath>
 						/form[@controlname='LxMgdDeviceEditDlg']

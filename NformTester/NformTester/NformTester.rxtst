@@ -528,6 +528,69 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.10.30.150_ExportOptionForExportingDevicesInFlatFile"
+					id="931fbff5-dc14-4a03-addb-636eeb4397ee">
+						<testmodule
+						name="TestCaseDriver"
+						id="e9f82f1b-4200-496b-a71e-b3f55320b946"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.30.80_DataLoggingWithMinAndMaxSampleInterval"
+					id="df84875c-789d-4865-956a-1043290e032b">
+						<testmodule
+						name="TestCaseDriver"
+						id="a8ce8e41-d0e3-4bab-bdf2-3e8a0651bae4"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.30.160_NewDeviceMustUseNewGlobalSettings"
+					id="fe88e59a-8de4-49b6-9404-7f14365e481b">
+						<testmodule
+						name="TestCaseDriver"
+						id="cb899b8b-1548-4155-bc33-a95cecd5cfb8"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.30.180_VerifyCopyDeviceFeature"
+					id="fc5df51a-0484-4fed-a6d6-a419a6395729">
+						<testmodule
+						name="TestCaseDriver"
+						id="0aa694cf-a70d-4d1e-952f-9ae0f68d3a37"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.30.40_DiscoveringSupportedDevices"
+					id="34fab7df-8d44-4ebc-a4dd-ed7ad202b5f5">
+						<testmodule
+						name="TestCaseDriver"
+						id="04895037-2cf0-4b77-ab7f-5338950d33da"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.20.130_VerifyIncreaseVelocityDiscoveryTimeout"
+					id="d881ed4c-1dd8-4fa6-9f7d-8d8d1980a1db">
+						<testmodule
+						name="TestCaseDriver"
+						id="099e659a-1857-45c8-936e-a571b63e2259"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.10.30.190_AlarmTriggeredByDeviceWhichUnderMaintenanceMode"
+					id="33498df5-505e-4b05-8abf-b2d0fb8e09b5">
+						<testmodule
+						name="TestCaseDriver"
+						id="896247fd-a9ee-4c68-846f-fdd6e812e7a9"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.020._Actions1"
@@ -742,6 +805,15 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
+					<testcase
+					name="600.50.30.20_EnterpriseEditionBaseLicenseHasAbilityToShutdownClient"
+					id="2afbbcf2-7a9e-42c8-80f2-d4e183c3f595">
+						<testmodule
+						name="TestCaseDriver"
+						id="8620ec97-50b5-48cc-befc-d25b7dbb68ec"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
 				</testcase>
 				<testcase
 				name="600.060._Server_Options1"
@@ -923,6 +995,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="5bde5285-ed80-4750-923a-5d334aa90cdd"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.60.10.30_LayoutAndDefaultOnUpdateTab"
+					id="4786b42d-1fe6-4b6e-b680-222159b053dc">
+						<testmodule
+						name="TestCaseDriver"
+						id="1ee3a74a-a5b6-4aeb-bb52-5da854bd463b"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>

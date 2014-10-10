@@ -217,6 +217,10 @@
       <id>218517cd-218c-47cd-8301-7ca8a1a5526f</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.10.20.130_VerifyIncreaseVelocityDiscoveryTimeout.xlsx">
+      <id>411ffc69-ffb6-4195-a47a-8fc9572e7632</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.10.20.30_ConfigurationOnDevice_properties.xlsx">
       <id>d39a3ca0-9cc1-4170-9801-5e3f203a0e9a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -261,8 +265,28 @@
       <id>db664c61-63c4-4ff9-b6bb-5703923feaaa</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.10.30.150_ExportOptionForExportingDevicesInFlatFile.xlsx">
+      <id>e1d444be-a179-4497-893f-aebef6ad95ee</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.30.160_NewDeviceMustUseNewGlobalSettings.xlsx">
+      <id>afe1d5e6-28e5-417e-b813-7c9a4d927ab1</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.30.180_VerifyCopyDeviceFeature.xlsx">
+      <id>1ace3afe-b1ec-4098-87e9-5c7e1e8c3d36</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.30.190_AlarmTriggeredByDeviceWhichUnderMaintenanceMode.xlsx">
+      <id>c2a5aecb-c6e8-4fae-99c8-da9134cb7b49</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.10.30.30_DevicesSupportedbyNformG2Product.xlsx">
       <id>2264b215-0478-49b5-b14c-4b309ec138e7</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.30.40_DiscoveringSupportedDevices.xlsx">
+      <id>9e5bec03-0e1c-4156-9e28-2f7bb6361ebe</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.10.30.50_DeleteDevice.xlsx">
@@ -271,6 +295,10 @@
     </None>
     <None Include="Keywordscripts\600.10.30.70_DataLoggingforOneDeviceDataPoints.xlsx">
       <id>ba45e7bf-51e7-432c-800d-2136042f724c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.10.30.80_DataLoggingWithMinAndMaxSampleInterval.xlsx">
+      <id>96ad7e19-3f7e-4fdd-a1de-64b01a23fdbd</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.10.30.90_DataLoggingSettingsOnDevicePropertiesAndOnTrends.xlsx">
@@ -461,6 +489,10 @@
       <id>396e1921-6dc0-484e-a121-d29b6a9492a4</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.50.30.20_EnterpriseEditionBaseLicenseHasAbilityToShutdownClient.xlsx">
+      <id>2f9af0fa-7d81-466c-9ef5-1925e1ba2117</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.50.30.30_TheNumberofDeviceSupportedWithoutLicense.xlsx">
       <id>e25a6eaa-93ef-4e6e-8e3e-8acf21c7ee1e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -471,6 +503,10 @@
     </None>
     <None Include="Keywordscripts\600.60.10.20_ServerOptionsSNMPV3SettingLayout.xlsx">
       <id>ddedcc4d-ec75-4b01-b788-66b5c3a07f8c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.60.10.30_LayoutAndDefaultOnUpdateTab.xlsx">
+      <id>780d8851-0d09-4470-bed7-72a84673216a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.60.20.100_DisabledForGlobalStatusPolling.xlsx">
