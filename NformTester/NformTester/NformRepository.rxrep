@@ -1245,6 +1245,54 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					addcaps="treeitem,accessible,accessibletreeitem">
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='RackPDU_126.4.202.215']
 					</item>
+					<item
+					name="ConfiguredGroups_L"
+					id="db93413f-9ee4-4d49-b1c8-ba68e060b9a4"
+					searchtimeout="30000ms"
+					capname="treeitem"
+					addcaps="treeitem,accessible,accessibletreeitem">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree[@controlname='m_grpTreeView']/tree/treeitem/treeitem[@accessiblename='Configured groups']
+					</item>
+					<item
+					name="NewGroup_L"
+					id="25a223d2-6d5c-4803-96a0-d38b1e93c66b"
+					searchtimeout="30000ms"
+					capname="treeitem"
+					addcaps="treeitem,accessible,accessibletreeitem">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree[@controlname='m_grpTreeView']/tree/treeitem/treeitem[@accessiblename='Configured groups']/treeitem[@accessiblename='New Group']
+					</item>
+					<item
+					name="InfoLinks"
+					id="5c5295b6-4d41-471f-8f26-38d04b82e9cc"
+					searchtimeout="30000ms"
+					capname="tabpage"
+					addcaps="tabpage,accessible">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@accessiblename='Info links']
+					</item>
+					<item
+					name="NewGroupLink"
+					id="782b1cbe-3082-4144-a4ca-4b793d29f37b"
+					searchtimeout="30000ms"
+					capname="link"
+					addcaps="link,accessible">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_infoLinkTab']/container[@controlname='m_infoLinkDisplay']/container[@controlname='m_linksFlowPanel']/link/text/link[@accessiblename='test link']
+					</item>
+					<item
+					name="LogicalGroups_tree"
+					id="3388296b-c047-4c4d-a80d-2b1bed9f0b94"
+					searchtimeout="30000ms"
+					capname="treeitem"
+					addcaps="treeitem,accessible,accessibletreeitem">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree[@controlname='m_grpTreeView']/tree/treeitem[@accessiblename='Logical Groups']
+					</item>
+					<item
+					name="CellSource_Row_0"
+					id="9815152f-fccd-4100-836b-9b98bd5fc6b8"
+					searchtimeout="30000ms"
+					capname="cell"
+					addcaps="cell,accessible">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/row[@accessiblename='Row 0']/cell[@accessiblename='Source Row 0']
+					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
 					</basepath>
@@ -1600,7 +1648,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_fitChartCheckBox']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage/container/checkbox[@controlname='m_fitChartCheckBox']
 					</item>
 					<item
 					name="Turn_labels_on"
@@ -1608,7 +1656,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_labelsOnOffCheckBox']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage/container/checkbox[@controlname='m_labelsOnOffCheckBox']
 					</item>
 					<item
 					name="Show_zero_slice"
@@ -1616,7 +1664,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="checkbox"
 					addcaps="checkbox,control,nativewindow">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_showZeroSliceCheckBox']
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage/container/checkbox[@controlname='m_showZeroSliceCheckBox']
 					</item>
 					<item
 					name="Unacknowledged_offset"
@@ -1819,14 +1867,6 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Down']
 					</item>
 					<item
-					name="Severity_Information_offset_txt"
-					id="99b67d98-5128-4c79-b8dc-bd2c604ffe13"
-					searchtimeout="30000ms"
-					capname="text"
-					addcaps="text,control,nativewindow">
-						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/text[@controlname='upDownEdit']
-					</item>
-					<item
 					name="Severity_Information_offset"
 					id="76a879c4-a362-457d-b6e3-c5febba3c8ae"
 					searchtimeout="30000ms"
@@ -1961,6 +2001,158 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="combobox"
 					addcaps="combobox,accessible">
 						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='4']/combobox[@accessiblerole='ComboBox']
+					</item>
+					<item
+					name="CommFitChart"
+					id="8e63562b-48de-417c-ac44-b04e86fe8997"
+					searchtimeout="30000ms"
+					capname="checkbox"
+					addcaps="checkbox,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/checkbox[@controlname='m_fitChartCheckBox']
+					</item>
+					<item
+					name="CommTurnLabelsOn"
+					id="8cc41f1b-eb4f-49aa-b7ad-5ae2ed09e4f6"
+					searchtimeout="30000ms"
+					capname="checkbox"
+					addcaps="checkbox,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/checkbox[@controlname='m_labelsOnOffCheckBox']
+					</item>
+					<item
+					name="CommShowZeroSlice"
+					id="d1d9df4a-d95b-48d1-a149-17022bf13570"
+					searchtimeout="30000ms"
+					capname="checkbox"
+					addcaps="checkbox,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/checkbox[@controlname='m_showZeroSliceCheckBox']
+					</item>
+					<item
+					name="Severity_Information_offset_txt"
+					id="61776d1a-f8f4-4488-a7d7-94542e8f6422"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="CommNormal_offset_txt"
+					id="bc91a01f-8f11-44ba-ad9e-c33c9a34127c"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="CommNormal_offset_up"
+					id="1c21d19b-0546-4fc9-92b3-c4e2fda4a33f"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="CommNormal_offset_down"
+					id="3cab4bb1-528c-4c24-8b59-00896f5a789a"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="CommAlarm_offset_up"
+					id="11a2534b-a0c1-4c77-84e7-041494798367"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="CommAlarm_offset_txt"
+					id="459e858b-26ad-411e-ac22-465d5d5d4e04"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="CommAlarm_offset_down"
+					id="4bb4eb4a-7e3f-44f5-882c-2b0d87b8bce5"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="CommNocommunication_offset_txt"
+					id="8aa0ec1c-3e82-48c2-9d7d-c2f00a6c4b65"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="CommNocommunication_offset_up"
+					id="0d5cfdb5-8070-46c0-8482-2fb4a7f6526f"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="CommNocommunication_offset_down"
+					id="11d622c5-9df5-4050-96b6-1bb430979325"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="CommMaintenance_offset_txt"
+					id="45aa2c6f-b0b3-456f-a17f-95209bab462a"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='3']/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="CommMaintenance_offset_up"
+					id="3a247545-9a87-41a4-90e7-90a5fa830d4d"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='3']/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="CommMaintenance_offset_down"
+					id="6118f25e-03e7-4770-a941-81bc72227089"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='3']/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="CommPie_height_offset_txt"
+					id="7f012af4-796a-4fe9-a2f3-bfe5a92afd8d"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controlname='m_pieHeightNbx']/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="CommPie_height_offset_up"
+					id="96ef5260-cc06-4805-8e4b-c3af75ce1c71"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="CommPie_height_offset_down"
+					id="8ac945ff-4ec8-4ade-b2c2-ab3a82f213b2"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxCfgGadgetDlg']/tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Down']
 					</item>
 					<basepath>
 						/form[@controlname='LxCfgGadgetDlg']
@@ -2621,7 +2813,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxAlarmDetailsDlg']/container[@controlname='m_alarmManagementGrp']/container[@controlname='m_alarmIncidentTbx']/text[@controlname='m_alarmIncidentTbx-Ctl']/text[@accessiblename='Incident:']
 					</item>
 					<item
-					name="Comment"
+					name="Comment_old"
 					id="1189765d-9f05-4746-b21f-23c7a766a509"
 					searchtimeout="30000ms"
 					capname="text"
@@ -2651,6 +2843,14 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="button"
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxAlarmDetailsDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']
+					</item>
+					<item
+					name="Comment"
+					id="a64e62c0-a9e4-4488-ab4b-bbe817240ac3"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,accessible">
+						/form[@controlname='LxAlarmDetailsDlg']/container[@controlname='m_alarmManagementGrp']/container[@controlname='m_alarmCommentTbx']/text[@controlname='m_alarmCommentTbx-Ctl']/text[@accessiblename='Comment:']
 					</item>
 					<basepath>
 						/form[@controlname='LxAlarmDetailsDlg']
@@ -6711,7 +6911,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_smtpTab']/container[@controlname='m_smtpAutoGrp']/container/text[@controlname='m_smtpSndrAddrTbx-Ctl']/text[@accessiblename='Sender''s address:']
 					</item>
 					<item
-					name="SMTP_servers_list"
+					name="SMTP_servers_list_old"
 					id="12861d91-ad08-431b-8d4f-9ac9dc8b358b"
 					searchtimeout="30000ms"
 					capname="list"
@@ -7421,6 +7621,14 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 					capname="button"
 					addcaps="button,accessible">
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container[@controlname='m_devPollIntervalNbx']/container/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="SMTP_servers_list"
+					id="2d128578-7e9d-4927-a9fb-af390be62835"
+					searchtimeout="30000ms"
+					capname="list"
+					addcaps="list,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_smtpTab']/container[@controlname='m_smtpSrvrListGrp']/table/list
 					</item>
 					<basepath>
 						/form[@controlname='LxServerPropsDlg']
@@ -8445,7 +8653,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventOverrideGrp']/container[@controlname='m_eventOverNameTbx']/text[@controlname='m_eventOverNameTbx-Ctl']/text[@accessiblename='Name:']
 					</item>
 					<item
-					name="Alarms_user_defined_severity"
+					name="Alarms_user_defined_severity_old"
 					id="93191fb6-f641-4df1-94ce-5fbf5637a00f"
 					searchtimeout="30000ms"
 					capname="combobox"
@@ -8461,12 +8669,28 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventOverrideGrp']/text[@controlname='m_eventOverDescriptionTbx']/text[@accessiblename='Description:']
 					</item>
 					<item
-					name="Alarms_commit"
+					name="Alarms_commit_old"
 					id="7c294da1-2c47-4cfa-9bdc-78481f646ff5"
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventOverrideGrp']/button[@controlname='m_eventCommitBtn']
+					</item>
+					<item
+					name="Alarms_user_defined_severity"
+					id="b2f18148-d4c2-4d1e-b21a-b9a41a6ec1e2"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,control,nativewindow">
+						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventUsrGrp']/container[@controlname='m_eventUsrSeverityCombo']/combobox[@controlname='m_eventUsrSeverityCombo-Ctl']
+					</item>
+					<item
+					name="Alarms_commit"
+					id="51ad0d22-2471-4552-8288-37d93f954993"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventUsrGrp']/button[@controlname='m_eventCommitBtn']
 					</item>
 					<basepath>
 						/form[@controlname='LxDeviceOverrideDlg']

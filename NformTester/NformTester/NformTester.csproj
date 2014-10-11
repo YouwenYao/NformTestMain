@@ -349,8 +349,20 @@
       <id>baa82189-6aa2-4c57-9a54-d768f3f7834a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.20.30.190_CheckTheFunctionalityOfSendTestButton.xlsx">
+      <id>e832c4b5-5dc1-4248-bc7b-3a2212431759</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.20.30.20_ConfigureRuncommandAction.xlsx">
       <id>bcb9c8a9-0ba7-48b5-bb89-b6046cfdbb32</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.210_VerifyThatSiteIdUsedInRunCommandAction.xlsx">
+      <id>7d09774b-1c8c-475f-991a-7dbaeedbc761</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.20.30.220_VerifyThatSiteIdUsedInWriteFileAction.xlsx">
+      <id>12db8a9a-c89e-4e91-b227-a5f1b0029867</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.20.30.30_ConfigureWriteFileAction.xlsx">
@@ -381,8 +393,32 @@
       <id>32fa884c-074d-47d8-a059-a57faa19b85b</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.30.20.100_VerifyDefaultSettingsOfTheFloorPlanOfTheCustomView.xlsx">
+      <id>bf241230-8347-4c3a-9fdd-4b78e5648f58</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.30.20.30_NoDuplicateGroupNameInLogicalGroupProperties.xlsx">
       <id>a62c0a98-ea8c-47a5-a939-d41d838db49e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.20.50_ToAddAnAreaInTheTreeForNewView.xlsx">
+      <id>ac972db4-3f74-4a84-bb8f-d6cedbfd0466</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.20.60_MoveDeviceFromNavigationViewTreetoAvailableDevices.xlsx">
+      <id>cca07879-10e8-4c24-90f5-f333d7738917</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.20.70_CopyAndChangePositionOfLogicalGroupUnderViews.xlsx">
+      <id>fa548839-3c6b-4904-bd8a-65be19d37e0a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.20.80_AddInfoLinksInALogicalGroupUnderViews.xlsx">
+      <id>756b5d2f-92cd-4299-9bd4-2a5dae017c94</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.30.20.90_ConfiguringFloorplan.xlsx">
+      <id>80e52681-84da-4aec-97d9-ce238191b9af</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.30.30.10_AddAndCopyView.xlsx">
@@ -467,6 +503,10 @@
     </None>
     <None Include="Keywordscripts\600.40.30.70_EditCustomGroup.xlsx">
       <id>8df58062-6c46-4d78-9ca1-ca604d531503</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\600.40.30.80_UsersAndGroupsDeleteUser.xlsx">
+      <id>f0bed553-edf4-4f30-8af8-fc8b20dbf8d9</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\600.40.30.90_UsersandGroupsDisableUsersOwnAccount.xlsx">
@@ -633,6 +673,10 @@
       <id>eae27a23-231a-46a7-b8ee-ec22f80c54b8</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\900.30.120_DashboardGlobalOptionsforGadgetDisplay.xlsx">
+      <id>cc91c5f0-6f8c-4b2b-b62c-ce499153d42d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\900.30.140_GadgetDisplayInformationInCorrespondingState.xlsx">
       <id>1715f0bf-98fc-452e-a7f1-6ed7896b8ce1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -643,6 +687,18 @@
     </None>
     <None Include="Keywordscripts\900.30.170_DisplayType.xlsx">
       <id>f5bee873-275c-4176-909f-53bde9564fbe</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.30.60_GlobalOptions.xlsx">
+      <id>a3303f99-11f7-496e-ac7c-20a051e20a34</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.30.70_AlarmNotification.xlsx">
+      <id>89fe2de1-12fc-4374-bbb8-19a4d63995c7</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\900.30.80_Multi-alarmsManagement.xlsx">
+      <id>d541179d-3120-4335-afe9-156515b05046</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TestScripts.xlsx">

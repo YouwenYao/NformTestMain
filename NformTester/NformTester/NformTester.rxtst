@@ -593,46 +593,6 @@ reportlevel="Info;20">
 					</testcase>
 				</testcase>
 				<testcase
-				name="600.020._Actions1"
-				id="e7d852e6-9f34-46d0-ab2c-207262cd68bd">
-					<testcase
-					name="TST425_SetActionForAlarmOrEvent"
-					id="ba7f3483-ca86-4113-9784-af01aaa94c68">
-						<testmodule
-						name="TestCaseDriver"
-						id="3d912de0-1d29-4eae-b830-10c09150f9bd"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="TST575_ExecuteTrapAlarmForward"
-					id="4fede5c5-d240-4a03-a281-8f77fefb0736">
-						<testmodule
-						name="TestCaseDriver"
-						id="0528b282-4704-416e-a5e4-87510ac5671c"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="TST594_ActionSet_DeletewithRightsToAllActionTypes"
-					id="f96cdeb2-e467-43ce-8e97-0281651286c6">
-						<testmodule
-						name="TestCaseDriver"
-						id="7eb8e171-4d9a-4128-8aff-070b7f6dca53"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-					<testcase
-					name="TST2806_VerifySiteIdUsedInRunCommandAction"
-					id="d81e018a-cd80-4f9e-8b3a-82b3c821d173">
-						<testmodule
-						name="TestCaseDriver"
-						id="cfd6004d-7a50-41d6-86f3-e4b35ad52708"
-						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-						type="UserCode"/>
-					</testcase>
-				</testcase>
-				<testcase
 				name="600.030._Views1"
 				id="6160e295-00eb-47ec-80a0-e2d91c11f389">
 					<testcase
@@ -659,6 +619,60 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="de68ad08-8cc4-4cc7-8343-284bd1fc392e"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.30.20.50_ToAddAnAreaInTheTreeForNewView"
+					id="0f35e3fe-a949-4cdc-896f-7f998fbbd15e">
+						<testmodule
+						name="TestCaseDriver"
+						id="95323803-166a-4a23-bc09-fa40403936a4"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.30.20.80_AddInfoLinksInALogicalGroupUnderViews"
+					id="fa492f27-9215-46e6-8bca-828dec30f76a">
+						<testmodule
+						name="TestCaseDriver"
+						id="e1f98c58-e19a-4aa1-9db7-0b261a699bd7"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.30.20.60_MoveDeviceFromNavigationViewTreetoAvailableDevices"
+					id="0b8630a1-0715-4def-b9fe-fdd4886f3a4a">
+						<testmodule
+						name="TestCaseDriver"
+						id="cd1d2f19-717d-4c91-936c-ea46d04f98fb"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.30.20.70_CopyAndChangePositionOfLogicalGroupUnderViews"
+					id="bb5daea5-9663-4abf-b156-a8e374af39c5">
+						<testmodule
+						name="TestCaseDriver"
+						id="df3739eb-cc8a-4620-8dba-7df308c92107"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.30.20.100_VerifyDefaultSettingsOfTheFloorPlanOfTheCustomView"
+					id="69d47f78-413c-47e8-b447-460ec2abe2a1">
+						<testmodule
+						name="TestCaseDriver"
+						id="ec2aec15-efb7-41c8-9493-4c2ff2dbfa7a"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.30.20.90_ConfiguringFloorplan"
+					id="59f2c2f8-cbc8-4bbb-b9fd-5a6c7e559a2a">
+						<testmodule
+						name="TestCaseDriver"
+						id="cc462e16-c000-4da8-9330-ab53acf1dbf3"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -789,6 +803,15 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="e957eb7c-a5de-4bc3-aebc-e20ed2453c43"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.40.30.80_UsersAndGroupsDeleteUser"
+					id="9fd09e13-0554-40fa-8470-f81f23288089">
+						<testmodule
+						name="TestCaseDriver"
+						id="f5b50d42-d0e0-4b08-84bd-338fd853c3a7"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1029,6 +1052,73 @@ reportlevel="Info;20">
 						<testmodule
 						name="TestCaseDriver"
 						id="e0e5a2f4-106a-46c3-b19d-cfc9a518f5dc"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+				</testcase>
+				<testcase
+				name="600.020._Actions1"
+				id="e7d852e6-9f34-46d0-ab2c-207262cd68bd">
+					<testcase
+					name="TST425_SetActionForAlarmOrEvent"
+					id="ba7f3483-ca86-4113-9784-af01aaa94c68">
+						<testmodule
+						name="TestCaseDriver"
+						id="3d912de0-1d29-4eae-b830-10c09150f9bd"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST575_ExecuteTrapAlarmForward"
+					id="4fede5c5-d240-4a03-a281-8f77fefb0736">
+						<testmodule
+						name="TestCaseDriver"
+						id="0528b282-4704-416e-a5e4-87510ac5671c"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST594_ActionSet_DeletewithRightsToAllActionTypes"
+					id="f96cdeb2-e467-43ce-8e97-0281651286c6">
+						<testmodule
+						name="TestCaseDriver"
+						id="7eb8e171-4d9a-4128-8aff-070b7f6dca53"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="TST2806_VerifySiteIdUsedInRunCommandAction"
+					id="d81e018a-cd80-4f9e-8b3a-82b3c821d173">
+						<testmodule
+						name="TestCaseDriver"
+						id="cfd6004d-7a50-41d6-86f3-e4b35ad52708"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.30.220_VerifyThatSiteIdUsedInWriteFileAction"
+					id="5527f1d3-0da4-44cb-a455-166a4a948692">
+						<testmodule
+						name="TestCaseDriver"
+						id="ae0da01a-461d-45ef-bb18-ed6bf0a90076"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.30.210_VerifyThatSiteIdUsedInRunCommandAction"
+					id="34e342da-1037-4ce7-98ba-87cf8eff51aa">
+						<testmodule
+						name="TestCaseDriver"
+						id="f2cc9a43-b253-4578-be41-67a9dc1ed6c5"
+						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+						type="UserCode"/>
+					</testcase>
+					<testcase
+					name="600.20.30.190_CheckTheFunctionalityOfSendTestButton"
+					id="9b9f16c5-7970-472b-90ca-1745140236ef">
+						<testmodule
+						name="TestCaseDriver"
+						id="1326d09b-edc8-4005-8249-a44b9c7845e9"
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
@@ -1347,6 +1437,42 @@ reportlevel="Info;20">
 					<testmodule
 					name="TestCaseDriver"
 					id="66a8018c-4910-4a81-b5b7-e9cf79c48d76"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="900.30.60_GlobalOptions"
+				id="354a6a1b-acc5-4190-a2eb-12782c1d3784">
+					<testmodule
+					name="TestCaseDriver"
+					id="646aa2fa-bf96-47f1-9597-65c7aa4905cd"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="900.30.80_Multi-alarmsManagement"
+				id="5c6d4fe2-4579-4a53-a621-f85cfa03c6c4">
+					<testmodule
+					name="TestCaseDriver"
+					id="20480007-4fab-470f-ae62-d94c4127e43e"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="900.30.70_AlarmNotification"
+				id="72de9ccb-a0a9-4bc3-a685-7e3f7c75d46f">
+					<testmodule
+					name="TestCaseDriver"
+					id="41461b06-7875-4c9a-8090-8406b80d6b8a"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="900.30.120_DashboardGlobalOptionsforGadgetDisplay"
+				id="64427ef9-0f72-4803-9ab8-ae9b67f06f71">
+					<testmodule
+					name="TestCaseDriver"
+					id="d76b0308-f6de-4dad-a7ef-70c228867050"
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
