@@ -23498,8 +23498,8 @@ namespace NformTester
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "16fe5b0b-360f-4bbf-b149-8047bb9e74f4");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_deviceNameTbx']/text[@controlname='m_deviceNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "720aa15b-eb73-478e-b935-577fa16f883d");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_deviceDscrTbx']/text[@controlname='m_deviceDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "8f9c62b8-c790-4cbb-ba99-61f2552ff284");
-                _device_typeInfo = new RepoItemInfo(this, "Device_type", "container[@controlname='m_deviceTypeCtl']/container/combobox[@controlname='m_devTypeCombo']", 30000, null, "256244f7-9d68-4694-85fb-8c8c53f683d1");
-                _protocolInfo = new RepoItemInfo(this, "Protocol", "container[@controlname='m_deviceTypeCtl']/container/combobox[@controlname='m_devProtocolCombo']", 30000, null, "7ff295b1-40b3-4cb7-b830-c82b01497be6");
+                _device_typeInfo = new RepoItemInfo(this, "Device_type", "container[@controlname='m_deviceTypeCtl']/container/container[@controlname='m_devTypeCombo']/combobox[@controlname='m_devTypeCombo-Ctl']", 30000, null, "256244f7-9d68-4694-85fb-8c8c53f683d1");
+                _protocolInfo = new RepoItemInfo(this, "Protocol", "container[@controlname='m_deviceTypeCtl']/container/container[@controlname='m_devProtocolTbx']/text[@controlname='m_devProtocolTbx-Ctl']/text[@accessiblename='Protocol:']", 30000, null, "7ff295b1-40b3-4cb7-b830-c82b01497be6");
                 _communicationsInfo = new RepoItemInfo(this, "Communications", "tabpagelist/tabpage[@accessiblename='Communications']", 30000, null, "231e1437-8231-4669-84fb-ba2c631a9e68");
                 _liebert_protocolInfo = new RepoItemInfo(this, "Liebert_protocol", "tabpagelist/tabpage[@accessiblename='Liebert protocol']", 30000, null, "24875cc4-81ed-4f35-a8b5-7b562cbed644");
                 _snmpInfo = new RepoItemInfo(this, "SNMP", "tabpagelist/tabpage[@accessiblename='SNMP']", 30000, null, "ff093a3f-5913-4f3f-bf60-f052c3c91329");
@@ -23528,13 +23528,13 @@ namespace NformTester
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "9e8e7c8d-5369-4178-860e-514139f3ad7a");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "c7d30e9f-0abe-428d-90aa-5120bf193a99");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "fe3d2ac7-53bd-42a6-b06e-74810592773a");
-                _ip_port_use_global_portInfo = new RepoItemInfo(this, "IP_port_use_global_port", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/radiobutton[@controlname='m_stdRbtn']", 30000, null, "b52b2c7a-7d3a-4c2d-9f9f-ad80ea58c3ca");
-                _ip_port_use_custom_portInfo = new RepoItemInfo(this, "IP_port_use_custom_port", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/radiobutton[@controlname='m_customRbtn']", 30000, null, "a755a70b-e496-4681-b8b0-5f2a76507b8b");
+                _ip_port_use_global_portInfo = new RepoItemInfo(this, "IP_port_use_global_port", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/radiobutton[@controlname='m_stdRbtn']", 30000, null, "b52b2c7a-7d3a-4c2d-9f9f-ad80ea58c3ca");
+                _ip_port_use_custom_portInfo = new RepoItemInfo(this, "IP_port_use_custom_port", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/radiobutton[@controlname='m_customRbtn']", 30000, null, "a755a70b-e496-4681-b8b0-5f2a76507b8b");
                 _ip_port_use_custom_port_comboInfo = new RepoItemInfo(this, "IP_port_use_custom_port_combo", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/container/combobox[@accessiblerole='ComboBox']", 30000, null, "a1a40646-a12d-4516-92b4-936c76cc2cad");
                 _ip_port_use_custom_port_upInfo = new RepoItemInfo(this, "IP_port_use_custom_port_up", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/container/container/button[@accessiblename='Up']", 30000, null, "ea5159a9-fc58-4112-b19e-3c9442e382d8");
                 _timeout_override_global_valueInfo = new RepoItemInfo(this, "Timeout_override_global_value", "tabpagelist/tabpage[@controlname='m_commsPage']/container[@controlname='m_timeoutRetryGcb']/container[@controlname='m_headerPnl']/checkbox[@controlname='m_checkBox']", 30000, null, "6752d479-e720-4e47-b2e6-253a136e5fb8");
                 _ip_port_use_custom_port_downInfo = new RepoItemInfo(this, "IP_port_use_custom_port_down", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/container/container/button[@accessiblename='Down']", 30000, null, "5de531f0-5016-448f-8ca2-794b774e02a5");
-                _ip_port_use_custom_port_txtInfo = new RepoItemInfo(this, "IP_port_use_custom_port_txt", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/container/text[@controlname='upDownEdit']", 30000, null, "c155a7e1-edd4-4803-b3a9-0108faf737b5");
+                _ip_port_use_custom_port_txtInfo = new RepoItemInfo(this, "IP_port_use_custom_port_txt", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/container/text[@controlname='upDownEdit']", 30000, null, "c155a7e1-edd4-4803-b3a9-0108faf737b5");
                 _snmpv2cInfo = new RepoItemInfo(this, "SNMPv2c", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpVersionCfg']/container/radiobutton[@controlname='m_v2cRbtn']", 30000, null, "9b854299-584c-413d-94b5-74d5c2b81329");
                 _snmpv1Info = new RepoItemInfo(this, "SNMPv1", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpVersionCfg']/container/radiobutton[@controlname='m_v1Rbtn']", 30000, null, "e389b6de-716c-4761-a234-e99ca9009bfe");
                 _snmpv3Info = new RepoItemInfo(this, "SNMPv3", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpVersionCfg']/container/radiobutton[@controlname='m_v3Rbtn']", 30000, null, "3b312bcd-5c2c-48a1-9726-ad67458a4abe");
@@ -23653,11 +23653,11 @@ namespace NformTester
             /// The Protocol item.
             /// </summary>
             [RepositoryItem("7ff295b1-40b3-4cb7-b830-c82b01497be6")]
-            public virtual Ranorex.ComboBox Protocol
+            public virtual Ranorex.Text Protocol
             {
                 get
                 {
-                    return _protocolInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                    return _protocolInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
@@ -27687,8 +27687,8 @@ namespace NformTester
                 _obtain_setting_from_deviceInfo = new RepoItemInfo(this, "Obtain_setting_from_device", "container/container[@controlname='m_wizardPageS1']/checkbox[@controlname='m_s1DiscoverChk']", 30000, null, "86ec74fa-a7ba-47a5-af0b-1c2e1aaf5a39");
                 _nameInfo = new RepoItemInfo(this, "Name", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceNameTbx']/text[@controlname='m_s2DeviceNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "611d9659-0449-434a-9b9f-ab4bf0afbf16");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceDscrTbx']/text[@controlname='m_s2DeviceDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "aa567937-6505-4cf5-a457-72c46336f9d8");
-                _device_typeInfo = new RepoItemInfo(this, "Device_type", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/combobox[@controlname='m_devTypeCombo']", 30000, null, "7fe3dab9-cfb9-4903-97ed-489c8230afec");
-                _device_protocolInfo = new RepoItemInfo(this, "Device_protocol", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/combobox[@controlname='m_devProtocolCombo']", 30000, null, "25cd4b6a-e82f-4a1f-b109-619b5cbdb078");
+                _device_typeInfo = new RepoItemInfo(this, "Device_type", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/container[@controlname='m_devTypeCombo']/combobox[@controlname='m_devTypeCombo-Ctl']", 30000, null, "7fe3dab9-cfb9-4903-97ed-489c8230afec");
+                _device_protocolInfo = new RepoItemInfo(this, "Device_protocol", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/container[@controlname='m_devProtocolTbx']/text[@controlname='m_devProtocolTbx-Ctl']/text[@accessiblename='Protocol:']", 30000, null, "25cd4b6a-e82f-4a1f-b109-619b5cbdb078");
                 _addsingle_editInfo = new RepoItemInfo(this, "AddSingle_edit", "container/container[@controlname='m_wizardPageS2']/button[@controlname='m_s2EditBtn']", 30000, null, "326f10d0-e762-4eba-9d48-7a46b316e09f");
                 _customize_hostname_or_ip_addressInfo = new RepoItemInfo(this, "Customize_hostname_or_IP_address", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DevAddrTbx']/text[@controlname='m_s2DevAddrTbx-Ctl']/text[@accessiblename='Hostname or IP address:']", 30000, null, "cf0e05dd-827b-4b5d-a4e3-e7a28d4428e3");
                 _search_device_tableInfo = new RepoItemInfo(this, "Search_device_table", "container/container[@controlname='m_wizardPageM1']/table[@controlname='m_m1SearchDgrid']", 30000, null, "81eafb32-b64c-4e27-acd3-dd0c58e40d22");
@@ -28026,11 +28026,11 @@ namespace NformTester
             /// The Device_protocol item.
             /// </summary>
             [RepositoryItem("25cd4b6a-e82f-4a1f-b109-619b5cbdb078")]
-            public virtual Ranorex.ComboBox Device_protocol
+            public virtual Ranorex.Text Device_protocol
             {
                 get
                 {
-                    return _device_protocolInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                    return _device_protocolInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 

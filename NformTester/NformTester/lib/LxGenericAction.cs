@@ -204,7 +204,7 @@ namespace NformTester.lib
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Name.PressKeys(item.getArg3Text());
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Description.PressKeys(item.getArg4Text());
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Device_type.SelectedItemText = item.getArg5Text();
-				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Device_protocol.SelectedItemText = item.getArg6Text();
+				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Device_protocol.TextValue = item.getArg6Text();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Finish.Click();
 				Delay.Milliseconds(5000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device_Results.OK.Click();

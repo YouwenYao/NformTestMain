@@ -7590,15 +7590,15 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="combobox"
 					addcaps="combobox,control,nativewindow">
-						/form[@controlname='LxMgdDeviceEditDlg']/container[@controlname='m_deviceTypeCtl']/container/combobox[@controlname='m_devTypeCombo']
+						/form[@controlname='LxMgdDeviceEditDlg']/container[@controlname='m_deviceTypeCtl']/container/container[@controlname='m_devTypeCombo']/combobox[@controlname='m_devTypeCombo-Ctl']
 					</item>
 					<item
 					name="Protocol"
 					id="7ff295b1-40b3-4cb7-b830-c82b01497be6"
 					searchtimeout="30000ms"
-					capname="combobox"
+					capname="text"
 					addcaps="combobox,control,nativewindow">
-						/form[@controlname='LxMgdDeviceEditDlg']/container[@controlname='m_deviceTypeCtl']/container/combobox[@controlname='m_devProtocolCombo']
+						/form[@controlname='LxMgdDeviceEditDlg']/container[@controlname='m_deviceTypeCtl']/container/container[@controlname='m_devProtocolTbx']/text[@controlname='m_devProtocolTbx-Ctl']/text[@accessiblename='Protocol:']
 					</item>
 					<item
 					name="Communications"
@@ -7828,7 +7828,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="radiobutton"
 					addcaps="radiobutton,control,nativewindow">
-						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/radiobutton[@controlname='m_stdRbtn']
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/radiobutton[@controlname='m_stdRbtn']
 					</item>
 					<item
 					name="IP_port_use_custom_port"
@@ -7836,7 +7836,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="radiobutton"
 					addcaps="radiobutton,control,nativewindow">
-						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/radiobutton[@controlname='m_customRbtn']
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/radiobutton[@controlname='m_customRbtn']
 					</item>
 					<item
 					name="IP_port_use_custom_port_combo"
@@ -7876,7 +7876,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="text"
 					addcaps="text,control,nativewindow">
-						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/container/text[@controlname='upDownEdit']
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/container/text[@controlname='upDownEdit']
 					</item>
 					<item
 					name="SNMPv2c"
@@ -9054,15 +9054,15 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="combobox"
 					addcaps="combobox,control,nativewindow">
-						/form[@controlname='LxMgdDeviceAddDlg']/container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/combobox[@controlname='m_devTypeCombo']
+						/form[@controlname='LxMgdDeviceAddDlg']/container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/container[@controlname='m_devTypeCombo']/combobox[@controlname='m_devTypeCombo-Ctl']
 					</item>
 					<item
 					name="Device_protocol"
 					id="25cd4b6a-e82f-4a1f-b109-619b5cbdb078"
 					searchtimeout="30000ms"
-					capname="combobox"
+					capname="text"
 					addcaps="combobox,control,nativewindow">
-						/form[@controlname='LxMgdDeviceAddDlg']/container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/combobox[@controlname='m_devProtocolCombo']
+						/form[@controlname='LxMgdDeviceAddDlg']/container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/container[@controlname='m_devProtocolTbx']/text[@controlname='m_devProtocolTbx-Ctl']/text[@accessiblename='Protocol:']
 					</item>
 					<item
 					name="AddSingle_edit"
