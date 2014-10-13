@@ -124,7 +124,7 @@ namespace NformTester.driver
 			p.Start();
 			p.StandardInput.WriteLine(command);
 			p.StandardInput.WriteLine("exit");
-			Delay.Duration(15000);
+			Delay.Duration(10000);
 			return  "";
 		}
 		

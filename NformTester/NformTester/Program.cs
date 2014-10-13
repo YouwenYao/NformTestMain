@@ -116,15 +116,6 @@ namespace NformTester
 			Delay.Duration(10000);
 			return  "";
 		}
-		
-		//**********************************************************************
-		/// <summary>
-		/// Copy all file from 'keywordscripts' folder into running folder, like debug
-		/// </summary>
-		public static string CopyScripts(string command)
-		{
-			return "";
-		}
         
     }
 }
