@@ -1042,6 +1042,12 @@ namespace NformTester
             RepoItemInfo _useroption_itaInfo;
             RepoItemInfo _alarmseveritytableInfo;
             RepoItemInfo _rackpdu1264202215Info;
+            RepoItemInfo _configuredgroups_lInfo;
+            RepoItemInfo _newgroup_lInfo;
+            RepoItemInfo _infolinksInfo;
+            RepoItemInfo _newgrouplinkInfo;
+            RepoItemInfo _logicalgroups_treeInfo;
+            RepoItemInfo _cellsource_row_0Info;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1184,6 +1190,12 @@ namespace NformTester
                 _useroption_itaInfo = new RepoItemInfo(this, "UserOption_Ita", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Configura']/menuitem[@accessiblename='Opzioni utente...']", 30000, null, "2a759347-ec1a-4e14-ab7b-e3cc769116be");
                 _alarmseveritytableInfo = new RepoItemInfo(this, "AlarmSeverityTable", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title~'^Alarm Severity: .*']/container[@controlname='LxGadgetListView']/table[@controlname='m_lvListView']", 30000, null, "bf9920a1-680e-4503-9ffb-9adb2b24f2bc");
                 _rackpdu1264202215Info = new RepoItemInfo(this, "RackPDU1264202215", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree/treeitem/treeitem[@accessiblename='RackPDU_126.4.202.215']", 30000, null, "afcc3de7-1328-4095-b31f-84b4c4da8bb5");
+                _configuredgroups_lInfo = new RepoItemInfo(this, "ConfiguredGroups_L", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree[@controlname='m_grpTreeView']/tree/treeitem/treeitem[@accessiblename='Configured groups']", 30000, null, "db93413f-9ee4-4d49-b1c8-ba68e060b9a4");
+                _newgroup_lInfo = new RepoItemInfo(this, "NewGroup_L", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree[@controlname='m_grpTreeView']/tree/treeitem/treeitem[@accessiblename='Configured groups']/treeitem[@accessiblename='New Group']", 30000, null, "25a223d2-6d5c-4803-96a0-d38b1e93c66b");
+                _infolinksInfo = new RepoItemInfo(this, "InfoLinks", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@accessiblename='Info links']", 30000, null, "5c5295b6-4d41-471f-8f26-38d04b82e9cc");
+                _newgrouplinkInfo = new RepoItemInfo(this, "NewGroupLink", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxVgViewerRhsMgr']/tabpagelist/tabpage[@controlname='m_infoLinkTab']/container[@controlname='m_infoLinkDisplay']/container[@controlname='m_linksFlowPanel']/link/text/link[@accessiblename='test link']", 30000, null, "782b1cbe-3082-4144-a4ca-4b793d29f37b");
+                _logicalgroups_treeInfo = new RepoItemInfo(this, "LogicalGroups_tree", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree[@controlname='m_grpTreeView']/tree/treeitem[@accessiblename='Logical Groups']", 30000, null, "3388296b-c047-4c4d-a80d-2b1bed9f0b94");
+                _cellsource_row_0Info = new RepoItemInfo(this, "CellSource_Row_0", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/row[@accessiblename='Row 0']/cell[@accessiblename='Source Row 0']", 30000, null, "9815152f-fccd-4100-836b-9b98bd5fc6b8");
             }
 
             /// <summary>
@@ -4425,6 +4437,150 @@ namespace NformTester
                     return _rackpdu1264202215Info;
                 }
             }
+
+            /// <summary>
+            /// The ConfiguredGroups_L item.
+            /// </summary>
+            [RepositoryItem("db93413f-9ee4-4d49-b1c8-ba68e060b9a4")]
+            public virtual Ranorex.TreeItem ConfiguredGroups_L
+            {
+                get
+                {
+                    return _configuredgroups_lInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ConfiguredGroups_L item info.
+            /// </summary>
+            [RepositoryItemInfo("db93413f-9ee4-4d49-b1c8-ba68e060b9a4")]
+            public virtual RepoItemInfo ConfiguredGroups_LInfo
+            {
+                get
+                {
+                    return _configuredgroups_lInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NewGroup_L item.
+            /// </summary>
+            [RepositoryItem("25a223d2-6d5c-4803-96a0-d38b1e93c66b")]
+            public virtual Ranorex.TreeItem NewGroup_L
+            {
+                get
+                {
+                    return _newgroup_lInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NewGroup_L item info.
+            /// </summary>
+            [RepositoryItemInfo("25a223d2-6d5c-4803-96a0-d38b1e93c66b")]
+            public virtual RepoItemInfo NewGroup_LInfo
+            {
+                get
+                {
+                    return _newgroup_lInfo;
+                }
+            }
+
+            /// <summary>
+            /// The InfoLinks item.
+            /// </summary>
+            [RepositoryItem("5c5295b6-4d41-471f-8f26-38d04b82e9cc")]
+            public virtual Ranorex.TabPage InfoLinks
+            {
+                get
+                {
+                    return _infolinksInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The InfoLinks item info.
+            /// </summary>
+            [RepositoryItemInfo("5c5295b6-4d41-471f-8f26-38d04b82e9cc")]
+            public virtual RepoItemInfo InfoLinksInfo
+            {
+                get
+                {
+                    return _infolinksInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NewGroupLink item.
+            /// </summary>
+            [RepositoryItem("782b1cbe-3082-4144-a4ca-4b793d29f37b")]
+            public virtual Ranorex.Link NewGroupLink
+            {
+                get
+                {
+                    return _newgrouplinkInfo.CreateAdapter<Ranorex.Link>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NewGroupLink item info.
+            /// </summary>
+            [RepositoryItemInfo("782b1cbe-3082-4144-a4ca-4b793d29f37b")]
+            public virtual RepoItemInfo NewGroupLinkInfo
+            {
+                get
+                {
+                    return _newgrouplinkInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LogicalGroups_tree item.
+            /// </summary>
+            [RepositoryItem("3388296b-c047-4c4d-a80d-2b1bed9f0b94")]
+            public virtual Ranorex.TreeItem LogicalGroups_tree
+            {
+                get
+                {
+                    return _logicalgroups_treeInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LogicalGroups_tree item info.
+            /// </summary>
+            [RepositoryItemInfo("3388296b-c047-4c4d-a80d-2b1bed9f0b94")]
+            public virtual RepoItemInfo LogicalGroups_treeInfo
+            {
+                get
+                {
+                    return _logicalgroups_treeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellSource_Row_0 item.
+            /// </summary>
+            [RepositoryItem("9815152f-fccd-4100-836b-9b98bd5fc6b8")]
+            public virtual Ranorex.Cell CellSource_Row_0
+            {
+                get
+                {
+                    return _cellsource_row_0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellSource_Row_0 item info.
+            /// </summary>
+            [RepositoryItemInfo("9815152f-fccd-4100-836b-9b98bd5fc6b8")]
+            public virtual RepoItemInfo CellSource_Row_0Info
+            {
+                get
+                {
+                    return _cellsource_row_0Info;
+                }
+            }
         }
 
         /// <summary>
@@ -5066,7 +5222,6 @@ namespace NformTester
             RepoItemInfo _severity_pie_height_offsetInfo;
             RepoItemInfo _severity_information_offset_upInfo;
             RepoItemInfo _severity_information_offset_downInfo;
-            RepoItemInfo _severity_information_offset_txtInfo;
             RepoItemInfo _severity_information_offsetInfo;
             RepoItemInfo _severity_warning_offset_upInfo;
             RepoItemInfo _severity_warning_offset_downInfo;
@@ -5084,6 +5239,25 @@ namespace NformTester
             RepoItemInfo _severity_critical_offset_downInfo;
             RepoItemInfo _severity_critical_offset_txtInfo;
             RepoItemInfo _severity_critical_offsetInfo;
+            RepoItemInfo _commfitchartInfo;
+            RepoItemInfo _commturnlabelsonInfo;
+            RepoItemInfo _commshowzerosliceInfo;
+            RepoItemInfo _severity_information_offset_txtInfo;
+            RepoItemInfo _commnormal_offset_txtInfo;
+            RepoItemInfo _commnormal_offset_upInfo;
+            RepoItemInfo _commnormal_offset_downInfo;
+            RepoItemInfo _commalarm_offset_upInfo;
+            RepoItemInfo _commalarm_offset_txtInfo;
+            RepoItemInfo _commalarm_offset_downInfo;
+            RepoItemInfo _commnocommunication_offset_txtInfo;
+            RepoItemInfo _commnocommunication_offset_upInfo;
+            RepoItemInfo _commnocommunication_offset_downInfo;
+            RepoItemInfo _commmaintenance_offset_txtInfo;
+            RepoItemInfo _commmaintenance_offset_upInfo;
+            RepoItemInfo _commmaintenance_offset_downInfo;
+            RepoItemInfo _commpie_height_offset_txtInfo;
+            RepoItemInfo _commpie_height_offset_upInfo;
+            RepoItemInfo _commpie_height_offset_downInfo;
 
             /// <summary>
             /// Creates a new FormConfigure_Global_Gadget_Display  folder.
@@ -5108,9 +5282,9 @@ namespace NformTester
                 _unacknowledged_colorInfo = new RepoItemInfo(this, "Unacknowledged_color", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/button[@controltypename='LxButton' and @instance='0']", 30000, null, "caceb2e7-6b71-410b-9898-e96a008d1da9");
                 _useracknowledged_colorInfo = new RepoItemInfo(this, "UserAcknowledged_color", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/button[@controltypename='LxButton' and @instance='1']", 30000, null, "d756a310-5291-453d-9d10-e5c582920426");
                 _sysacknowledged_colorInfo = new RepoItemInfo(this, "SysAcknowledged_color", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/button[@controltypename='LxButton' and @instance='2']", 30000, null, "b958a260-2087-4263-b90c-e6fc01db912e");
-                _fit_chartInfo = new RepoItemInfo(this, "Fit_chart", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_fitChartCheckBox']", 30000, null, "7016c61a-cbfa-42a1-8a90-30d954f19024");
-                _turn_labels_onInfo = new RepoItemInfo(this, "Turn_labels_on", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_labelsOnOffCheckBox']", 30000, null, "9bf37811-cfa1-4291-8fb5-081686addb4c");
-                _show_zero_sliceInfo = new RepoItemInfo(this, "Show_zero_slice", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/checkbox[@controlname='m_showZeroSliceCheckBox']", 30000, null, "3681a70e-325f-4d1d-aba2-5312424e0315");
+                _fit_chartInfo = new RepoItemInfo(this, "Fit_chart", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage/container/checkbox[@controlname='m_fitChartCheckBox']", 30000, null, "7016c61a-cbfa-42a1-8a90-30d954f19024");
+                _turn_labels_onInfo = new RepoItemInfo(this, "Turn_labels_on", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage/container/checkbox[@controlname='m_labelsOnOffCheckBox']", 30000, null, "9bf37811-cfa1-4291-8fb5-081686addb4c");
+                _show_zero_sliceInfo = new RepoItemInfo(this, "Show_zero_slice", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage/container/checkbox[@controlname='m_showZeroSliceCheckBox']", 30000, null, "3681a70e-325f-4d1d-aba2-5312424e0315");
                 _unacknowledged_offsetInfo = new RepoItemInfo(this, "Unacknowledged_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/combobox[@accessiblerole='ComboBox']", 30000, null, "9a9d7e21-3487-455a-ae30-423e0117ea65");
                 _unacknowledged_offset_downInfo = new RepoItemInfo(this, "Unacknowledged_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Down']", 30000, null, "4203a2d8-51dd-403d-a091-2c1eeda7e8d0");
                 _unacknowledged_offset_upInfo = new RepoItemInfo(this, "Unacknowledged_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmStatus']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Up']", 30000, null, "b4038c6c-7e55-42f7-a69a-100f63e80386");
@@ -5136,7 +5310,6 @@ namespace NformTester
                 _severity_pie_height_offsetInfo = new RepoItemInfo(this, "Severity_Pie_height_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controlname='m_pieHeightNbx']/combobox[@accessiblerole='ComboBox']", 30000, null, "ed2fdee4-f04b-40d6-8da1-0401f1115a3e");
                 _severity_information_offset_upInfo = new RepoItemInfo(this, "Severity_Information_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Up']", 30000, null, "8d4b280b-fe23-46c6-84b9-f2af3d82ba06");
                 _severity_information_offset_downInfo = new RepoItemInfo(this, "Severity_Information_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Down']", 30000, null, "38e24032-b8fb-4404-abad-acfdaf208766");
-                _severity_information_offset_txtInfo = new RepoItemInfo(this, "Severity_Information_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/text[@controlname='upDownEdit']", 30000, null, "99b67d98-5128-4c79-b8dc-bd2c604ffe13");
                 _severity_information_offsetInfo = new RepoItemInfo(this, "Severity_Information_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/combobox[@accessiblerole='ComboBox']", 30000, null, "76a879c4-a362-457d-b6e3-c5febba3c8ae");
                 _severity_warning_offset_upInfo = new RepoItemInfo(this, "Severity_Warning_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Up']", 30000, null, "8a73624a-23f0-4f32-9fb3-616167110a82");
                 _severity_warning_offset_downInfo = new RepoItemInfo(this, "Severity_Warning_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Down']", 30000, null, "cdc93c3d-b664-43a1-ba3f-f80ac15c280c");
@@ -5154,6 +5327,25 @@ namespace NformTester
                 _severity_critical_offset_downInfo = new RepoItemInfo(this, "Severity_Critical_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='4']/container/button[@accessiblename='Down']", 30000, null, "c0cce2a8-7a8c-488a-8def-dccaac66c462");
                 _severity_critical_offset_txtInfo = new RepoItemInfo(this, "Severity_Critical_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='4']/text[@controlname='upDownEdit']", 30000, null, "6e20f9f0-84d9-4a41-8ff4-9bcb95bbc781");
                 _severity_critical_offsetInfo = new RepoItemInfo(this, "Severity_Critical_offset", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='4']/combobox[@accessiblerole='ComboBox']", 30000, null, "9929cd4b-e6c5-4488-9d90-ee7fe54338ae");
+                _commfitchartInfo = new RepoItemInfo(this, "CommFitChart", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/checkbox[@controlname='m_fitChartCheckBox']", 30000, null, "8e63562b-48de-417c-ac44-b04e86fe8997");
+                _commturnlabelsonInfo = new RepoItemInfo(this, "CommTurnLabelsOn", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/checkbox[@controlname='m_labelsOnOffCheckBox']", 30000, null, "8cc41f1b-eb4f-49aa-b7ad-5ae2ed09e4f6");
+                _commshowzerosliceInfo = new RepoItemInfo(this, "CommShowZeroSlice", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/checkbox[@controlname='m_showZeroSliceCheckBox']", 30000, null, "d1d9df4a-d95b-48d1-a149-17022bf13570");
+                _severity_information_offset_txtInfo = new RepoItemInfo(this, "Severity_Information_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/text[@controlname='upDownEdit']", 30000, null, "61776d1a-f8f4-4488-a7d7-94542e8f6422");
+                _commnormal_offset_txtInfo = new RepoItemInfo(this, "CommNormal_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/text[@controlname='upDownEdit']", 30000, null, "bc91a01f-8f11-44ba-ad9e-c33c9a34127c");
+                _commnormal_offset_upInfo = new RepoItemInfo(this, "CommNormal_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Up']", 30000, null, "1c21d19b-0546-4fc9-92b3-c4e2fda4a33f");
+                _commnormal_offset_downInfo = new RepoItemInfo(this, "CommNormal_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='0']/container/button[@accessiblename='Down']", 30000, null, "3cab4bb1-528c-4c24-8b59-00896f5a789a");
+                _commalarm_offset_upInfo = new RepoItemInfo(this, "CommAlarm_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Up']", 30000, null, "11a2534b-a0c1-4c77-84e7-041494798367");
+                _commalarm_offset_txtInfo = new RepoItemInfo(this, "CommAlarm_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/text[@controlname='upDownEdit']", 30000, null, "459e858b-26ad-411e-ac22-465d5d5d4e04");
+                _commalarm_offset_downInfo = new RepoItemInfo(this, "CommAlarm_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='1']/container/button[@accessiblename='Down']", 30000, null, "4bb4eb4a-7e3f-44f5-882c-2b0d87b8bce5");
+                _commnocommunication_offset_txtInfo = new RepoItemInfo(this, "CommNocommunication_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/text[@controlname='upDownEdit']", 30000, null, "8aa0ec1c-3e82-48c2-9d7d-c2f00a6c4b65");
+                _commnocommunication_offset_upInfo = new RepoItemInfo(this, "CommNocommunication_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Up']", 30000, null, "0d5cfdb5-8070-46c0-8482-2fb4a7f6526f");
+                _commnocommunication_offset_downInfo = new RepoItemInfo(this, "CommNocommunication_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='2']/container/button[@accessiblename='Down']", 30000, null, "11d622c5-9df5-4050-96b6-1bb430979325");
+                _commmaintenance_offset_txtInfo = new RepoItemInfo(this, "CommMaintenance_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='3']/text[@controlname='upDownEdit']", 30000, null, "45aa2c6f-b0b3-456f-a17f-95209bab462a");
+                _commmaintenance_offset_upInfo = new RepoItemInfo(this, "CommMaintenance_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='3']/container/button[@accessiblename='Up']", 30000, null, "3a247545-9a87-41a4-90e7-90a5fa830d4d");
+                _commmaintenance_offset_downInfo = new RepoItemInfo(this, "CommMaintenance_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controltypename='LxNumericUpDown' and @instance='3']/container/button[@accessiblename='Down']", 30000, null, "6118f25e-03e7-4770-a941-81bc72227089");
+                _commpie_height_offset_txtInfo = new RepoItemInfo(this, "CommPie_height_offset_txt", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controlname='m_pieHeightNbx']/text[@controlname='upDownEdit']", 30000, null, "7f012af4-796a-4fe9-a2f3-bfe5a92afd8d");
+                _commpie_height_offset_upInfo = new RepoItemInfo(this, "CommPie_height_offset_up", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Up']", 30000, null, "96ef5260-cc06-4805-8e4b-c3af75ce1c71");
+                _commpie_height_offset_downInfo = new RepoItemInfo(this, "CommPie_height_offset_down", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_commsTabPage']/container/container[@controlname='m_pieHeightNbx']/container/button[@accessiblename='Down']", 30000, null, "8ac945ff-4ec8-4ade-b2c2-ab3a82f213b2");
             }
 
             /// <summary>
@@ -6237,30 +6429,6 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Severity_Information_offset_txt item.
-            /// </summary>
-            [RepositoryItem("99b67d98-5128-4c79-b8dc-bd2c604ffe13")]
-            public virtual Ranorex.Text Severity_Information_offset_txt
-            {
-                get
-                {
-                    return _severity_information_offset_txtInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Severity_Information_offset_txt item info.
-            /// </summary>
-            [RepositoryItemInfo("99b67d98-5128-4c79-b8dc-bd2c604ffe13")]
-            public virtual RepoItemInfo Severity_Information_offset_txtInfo
-            {
-                get
-                {
-                    return _severity_information_offset_txtInfo;
-                }
-            }
-
-            /// <summary>
             /// The Severity_Information_offset item.
             /// </summary>
             [RepositoryItem("76a879c4-a362-457d-b6e3-c5febba3c8ae")]
@@ -6665,6 +6833,462 @@ namespace NformTester
                 get
                 {
                     return _severity_critical_offsetInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommFitChart item.
+            /// </summary>
+            [RepositoryItem("8e63562b-48de-417c-ac44-b04e86fe8997")]
+            public virtual Ranorex.CheckBox CommFitChart
+            {
+                get
+                {
+                    return _commfitchartInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommFitChart item info.
+            /// </summary>
+            [RepositoryItemInfo("8e63562b-48de-417c-ac44-b04e86fe8997")]
+            public virtual RepoItemInfo CommFitChartInfo
+            {
+                get
+                {
+                    return _commfitchartInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommTurnLabelsOn item.
+            /// </summary>
+            [RepositoryItem("8cc41f1b-eb4f-49aa-b7ad-5ae2ed09e4f6")]
+            public virtual Ranorex.CheckBox CommTurnLabelsOn
+            {
+                get
+                {
+                    return _commturnlabelsonInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommTurnLabelsOn item info.
+            /// </summary>
+            [RepositoryItemInfo("8cc41f1b-eb4f-49aa-b7ad-5ae2ed09e4f6")]
+            public virtual RepoItemInfo CommTurnLabelsOnInfo
+            {
+                get
+                {
+                    return _commturnlabelsonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommShowZeroSlice item.
+            /// </summary>
+            [RepositoryItem("d1d9df4a-d95b-48d1-a149-17022bf13570")]
+            public virtual Ranorex.CheckBox CommShowZeroSlice
+            {
+                get
+                {
+                    return _commshowzerosliceInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommShowZeroSlice item info.
+            /// </summary>
+            [RepositoryItemInfo("d1d9df4a-d95b-48d1-a149-17022bf13570")]
+            public virtual RepoItemInfo CommShowZeroSliceInfo
+            {
+                get
+                {
+                    return _commshowzerosliceInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Information_offset_txt item.
+            /// </summary>
+            [RepositoryItem("61776d1a-f8f4-4488-a7d7-94542e8f6422")]
+            public virtual Ranorex.Text Severity_Information_offset_txt
+            {
+                get
+                {
+                    return _severity_information_offset_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Severity_Information_offset_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("61776d1a-f8f4-4488-a7d7-94542e8f6422")]
+            public virtual RepoItemInfo Severity_Information_offset_txtInfo
+            {
+                get
+                {
+                    return _severity_information_offset_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommNormal_offset_txt item.
+            /// </summary>
+            [RepositoryItem("bc91a01f-8f11-44ba-ad9e-c33c9a34127c")]
+            public virtual Ranorex.Text CommNormal_offset_txt
+            {
+                get
+                {
+                    return _commnormal_offset_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommNormal_offset_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("bc91a01f-8f11-44ba-ad9e-c33c9a34127c")]
+            public virtual RepoItemInfo CommNormal_offset_txtInfo
+            {
+                get
+                {
+                    return _commnormal_offset_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommNormal_offset_up item.
+            /// </summary>
+            [RepositoryItem("1c21d19b-0546-4fc9-92b3-c4e2fda4a33f")]
+            public virtual Ranorex.Button CommNormal_offset_up
+            {
+                get
+                {
+                    return _commnormal_offset_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommNormal_offset_up item info.
+            /// </summary>
+            [RepositoryItemInfo("1c21d19b-0546-4fc9-92b3-c4e2fda4a33f")]
+            public virtual RepoItemInfo CommNormal_offset_upInfo
+            {
+                get
+                {
+                    return _commnormal_offset_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommNormal_offset_down item.
+            /// </summary>
+            [RepositoryItem("3cab4bb1-528c-4c24-8b59-00896f5a789a")]
+            public virtual Ranorex.Button CommNormal_offset_down
+            {
+                get
+                {
+                    return _commnormal_offset_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommNormal_offset_down item info.
+            /// </summary>
+            [RepositoryItemInfo("3cab4bb1-528c-4c24-8b59-00896f5a789a")]
+            public virtual RepoItemInfo CommNormal_offset_downInfo
+            {
+                get
+                {
+                    return _commnormal_offset_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommAlarm_offset_up item.
+            /// </summary>
+            [RepositoryItem("11a2534b-a0c1-4c77-84e7-041494798367")]
+            public virtual Ranorex.Button CommAlarm_offset_up
+            {
+                get
+                {
+                    return _commalarm_offset_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommAlarm_offset_up item info.
+            /// </summary>
+            [RepositoryItemInfo("11a2534b-a0c1-4c77-84e7-041494798367")]
+            public virtual RepoItemInfo CommAlarm_offset_upInfo
+            {
+                get
+                {
+                    return _commalarm_offset_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommAlarm_offset_txt item.
+            /// </summary>
+            [RepositoryItem("459e858b-26ad-411e-ac22-465d5d5d4e04")]
+            public virtual Ranorex.Text CommAlarm_offset_txt
+            {
+                get
+                {
+                    return _commalarm_offset_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommAlarm_offset_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("459e858b-26ad-411e-ac22-465d5d5d4e04")]
+            public virtual RepoItemInfo CommAlarm_offset_txtInfo
+            {
+                get
+                {
+                    return _commalarm_offset_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommAlarm_offset_down item.
+            /// </summary>
+            [RepositoryItem("4bb4eb4a-7e3f-44f5-882c-2b0d87b8bce5")]
+            public virtual Ranorex.Button CommAlarm_offset_down
+            {
+                get
+                {
+                    return _commalarm_offset_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommAlarm_offset_down item info.
+            /// </summary>
+            [RepositoryItemInfo("4bb4eb4a-7e3f-44f5-882c-2b0d87b8bce5")]
+            public virtual RepoItemInfo CommAlarm_offset_downInfo
+            {
+                get
+                {
+                    return _commalarm_offset_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommNocommunication_offset_txt item.
+            /// </summary>
+            [RepositoryItem("8aa0ec1c-3e82-48c2-9d7d-c2f00a6c4b65")]
+            public virtual Ranorex.Text CommNocommunication_offset_txt
+            {
+                get
+                {
+                    return _commnocommunication_offset_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommNocommunication_offset_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("8aa0ec1c-3e82-48c2-9d7d-c2f00a6c4b65")]
+            public virtual RepoItemInfo CommNocommunication_offset_txtInfo
+            {
+                get
+                {
+                    return _commnocommunication_offset_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommNocommunication_offset_up item.
+            /// </summary>
+            [RepositoryItem("0d5cfdb5-8070-46c0-8482-2fb4a7f6526f")]
+            public virtual Ranorex.Button CommNocommunication_offset_up
+            {
+                get
+                {
+                    return _commnocommunication_offset_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommNocommunication_offset_up item info.
+            /// </summary>
+            [RepositoryItemInfo("0d5cfdb5-8070-46c0-8482-2fb4a7f6526f")]
+            public virtual RepoItemInfo CommNocommunication_offset_upInfo
+            {
+                get
+                {
+                    return _commnocommunication_offset_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommNocommunication_offset_down item.
+            /// </summary>
+            [RepositoryItem("11d622c5-9df5-4050-96b6-1bb430979325")]
+            public virtual Ranorex.Button CommNocommunication_offset_down
+            {
+                get
+                {
+                    return _commnocommunication_offset_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommNocommunication_offset_down item info.
+            /// </summary>
+            [RepositoryItemInfo("11d622c5-9df5-4050-96b6-1bb430979325")]
+            public virtual RepoItemInfo CommNocommunication_offset_downInfo
+            {
+                get
+                {
+                    return _commnocommunication_offset_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommMaintenance_offset_txt item.
+            /// </summary>
+            [RepositoryItem("45aa2c6f-b0b3-456f-a17f-95209bab462a")]
+            public virtual Ranorex.Text CommMaintenance_offset_txt
+            {
+                get
+                {
+                    return _commmaintenance_offset_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommMaintenance_offset_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("45aa2c6f-b0b3-456f-a17f-95209bab462a")]
+            public virtual RepoItemInfo CommMaintenance_offset_txtInfo
+            {
+                get
+                {
+                    return _commmaintenance_offset_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommMaintenance_offset_up item.
+            /// </summary>
+            [RepositoryItem("3a247545-9a87-41a4-90e7-90a5fa830d4d")]
+            public virtual Ranorex.Button CommMaintenance_offset_up
+            {
+                get
+                {
+                    return _commmaintenance_offset_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommMaintenance_offset_up item info.
+            /// </summary>
+            [RepositoryItemInfo("3a247545-9a87-41a4-90e7-90a5fa830d4d")]
+            public virtual RepoItemInfo CommMaintenance_offset_upInfo
+            {
+                get
+                {
+                    return _commmaintenance_offset_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommMaintenance_offset_down item.
+            /// </summary>
+            [RepositoryItem("6118f25e-03e7-4770-a941-81bc72227089")]
+            public virtual Ranorex.Button CommMaintenance_offset_down
+            {
+                get
+                {
+                    return _commmaintenance_offset_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommMaintenance_offset_down item info.
+            /// </summary>
+            [RepositoryItemInfo("6118f25e-03e7-4770-a941-81bc72227089")]
+            public virtual RepoItemInfo CommMaintenance_offset_downInfo
+            {
+                get
+                {
+                    return _commmaintenance_offset_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommPie_height_offset_txt item.
+            /// </summary>
+            [RepositoryItem("7f012af4-796a-4fe9-a2f3-bfe5a92afd8d")]
+            public virtual Ranorex.Text CommPie_height_offset_txt
+            {
+                get
+                {
+                    return _commpie_height_offset_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommPie_height_offset_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("7f012af4-796a-4fe9-a2f3-bfe5a92afd8d")]
+            public virtual RepoItemInfo CommPie_height_offset_txtInfo
+            {
+                get
+                {
+                    return _commpie_height_offset_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommPie_height_offset_up item.
+            /// </summary>
+            [RepositoryItem("96ef5260-cc06-4805-8e4b-c3af75ce1c71")]
+            public virtual Ranorex.Button CommPie_height_offset_up
+            {
+                get
+                {
+                    return _commpie_height_offset_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommPie_height_offset_up item info.
+            /// </summary>
+            [RepositoryItemInfo("96ef5260-cc06-4805-8e4b-c3af75ce1c71")]
+            public virtual RepoItemInfo CommPie_height_offset_upInfo
+            {
+                get
+                {
+                    return _commpie_height_offset_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CommPie_height_offset_down item.
+            /// </summary>
+            [RepositoryItem("8ac945ff-4ec8-4ade-b2c2-ab3a82f213b2")]
+            public virtual Ranorex.Button CommPie_height_offset_down
+            {
+                get
+                {
+                    return _commpie_height_offset_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CommPie_height_offset_down item info.
+            /// </summary>
+            [RepositoryItemInfo("8ac945ff-4ec8-4ade-b2c2-ab3a82f213b2")]
+            public virtual RepoItemInfo CommPie_height_offset_downInfo
+            {
+                get
+                {
+                    return _commpie_height_offset_downInfo;
                 }
             }
         }
@@ -8275,10 +8899,11 @@ namespace NformTester
             RepoItemInfo _alarmstatus_acknowledgeInfo;
             RepoItemInfo _alarmstatus_closeInfo;
             RepoItemInfo _incidentInfo;
-            RepoItemInfo _commentInfo;
+            RepoItemInfo _comment_oldInfo;
             RepoItemInfo _helpInfo;
             RepoItemInfo _closeInfo;
             RepoItemInfo _okInfo;
+            RepoItemInfo _commentInfo;
 
             /// <summary>
             /// Creates a new FormAlarm_Details  folder.
@@ -8298,10 +8923,11 @@ namespace NformTester
                 _alarmstatus_acknowledgeInfo = new RepoItemInfo(this, "Alarmstatus_Acknowledge", "container[@controlname='m_alarmManagementGrp']/container[@controlname='m_alarmStatusGrp']/checkbox[@controlname='m_acknowledgeChk']", 30000, null, "a548120a-8999-4079-97ae-633a26ae8d40");
                 _alarmstatus_closeInfo = new RepoItemInfo(this, "Alarmstatus_Close", "container[@controlname='m_alarmManagementGrp']/container[@controlname='m_alarmStatusGrp']/checkbox[@controlname='m_closeChk']", 30000, null, "90011abf-69e1-46f5-a4aa-5fe73172a430");
                 _incidentInfo = new RepoItemInfo(this, "Incident", "container[@controlname='m_alarmManagementGrp']/container[@controlname='m_alarmIncidentTbx']/text[@controlname='m_alarmIncidentTbx-Ctl']/text[@accessiblename='Incident:']", 30000, null, "63d94e5b-a2b3-49bf-8bfa-fc0dfb17ec59");
-                _commentInfo = new RepoItemInfo(this, "Comment", "container[@controlname='m_alarmManagementGrp']/text[@controlname='m_alarmCommentTbx']/text[@accessiblename='Comment:']", 30000, null, "1189765d-9f05-4746-b21f-23c7a766a509");
+                _comment_oldInfo = new RepoItemInfo(this, "Comment_old", "container[@controlname='m_alarmManagementGrp']/text[@controlname='m_alarmCommentTbx']/text[@accessiblename='Comment:']", 30000, null, "1189765d-9f05-4746-b21f-23c7a766a509");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "9600ea84-4bf9-4440-b6b5-e448f58e3bbe");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "44ce309e-83c5-4e7c-be80-6cdc59a85b0c");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "109cdc92-746e-4d57-aa7f-0fd217e4f4ce");
+                _commentInfo = new RepoItemInfo(this, "Comment", "container[@controlname='m_alarmManagementGrp']/container[@controlname='m_alarmCommentTbx']/text[@controlname='m_alarmCommentTbx-Ctl']/text[@accessiblename='Comment:']", 30000, null, "a64e62c0-a9e4-4488-ab4b-bbe817240ac3");
             }
 
             /// <summary>
@@ -8593,26 +9219,26 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Comment item.
+            /// The Comment_old item.
             /// </summary>
             [RepositoryItem("1189765d-9f05-4746-b21f-23c7a766a509")]
-            public virtual Ranorex.Text Comment
+            public virtual Ranorex.Text Comment_old
             {
                 get
                 {
-                    return _commentInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _comment_oldInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Comment item info.
+            /// The Comment_old item info.
             /// </summary>
             [RepositoryItemInfo("1189765d-9f05-4746-b21f-23c7a766a509")]
-            public virtual RepoItemInfo CommentInfo
+            public virtual RepoItemInfo Comment_oldInfo
             {
                 get
                 {
-                    return _commentInfo;
+                    return _comment_oldInfo;
                 }
             }
 
@@ -8685,6 +9311,30 @@ namespace NformTester
                 get
                 {
                     return _okInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Comment item.
+            /// </summary>
+            [RepositoryItem("a64e62c0-a9e4-4488-ab4b-bbe817240ac3")]
+            public virtual Ranorex.Text Comment
+            {
+                get
+                {
+                    return _commentInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Comment item info.
+            /// </summary>
+            [RepositoryItemInfo("a64e62c0-a9e4-4488-ab4b-bbe817240ac3")]
+            public virtual RepoItemInfo CommentInfo
+            {
+                get
+                {
+                    return _commentInfo;
                 }
             }
         }
@@ -19499,15 +20149,15 @@ namespace NformTester
             RepoItemInfo _smtp_editInfo;
             RepoItemInfo _smtp_deleteInfo;
             RepoItemInfo _smtp_senders_addressInfo;
-            RepoItemInfo _smtp_servers_listInfo;
-            RepoItemInfo _polling_priorityInfo;
-            RepoItemInfo _polling_dailyInfo;
-            RepoItemInfo _polling_intervalInfo;
-            RepoItemInfo _polling_disabledInfo;
-            RepoItemInfo _daily_everyday_atInfo;
-            RepoItemInfo _interval_everyInfo;
-            RepoItemInfo _interval_every_upInfo;
-            RepoItemInfo _interval_every_downInfo;
+            RepoItemInfo _smtp_servers_list_oldInfo;
+            RepoItemInfo _polling_priority_oldInfo;
+            RepoItemInfo _polling_daily_oldInfo;
+            RepoItemInfo _polling_interval_oldInfo;
+            RepoItemInfo _polling_disabled_oldInfo;
+            RepoItemInfo _daily_everyday_at_oldInfo;
+            RepoItemInfo _interval_every_oldInfo;
+            RepoItemInfo _interval_every_up_oldInfo;
+            RepoItemInfo _interval_every_down_oldInfo;
             RepoItemInfo _interval_every_txtInfo;
             RepoItemInfo _enable_liebert_protocolInfo;
             RepoItemInfo _datalog_maximum_storage_daysInfo;
@@ -19580,6 +20230,15 @@ namespace NformTester
             RepoItemInfo _check_updates_monthly_comboInfo;
             RepoItemInfo _check_updates_daily_timeInfo;
             RepoItemInfo _download_directory_for_updatesInfo;
+            RepoItemInfo _polling_priorityInfo;
+            RepoItemInfo _polling_dailyInfo;
+            RepoItemInfo _polling_intervalInfo;
+            RepoItemInfo _polling_disabledInfo;
+            RepoItemInfo _daily_everyday_atInfo;
+            RepoItemInfo _interval_everyInfo;
+            RepoItemInfo _interval_every_upInfo;
+            RepoItemInfo _interval_every_downInfo;
+            RepoItemInfo _smtp_servers_listInfo;
 
             /// <summary>
             /// Creates a new FormServerOptions  folder.
@@ -19607,7 +20266,7 @@ namespace NformTester
                 _logfile_maximum_size_downInfo = new RepoItemInfo(this, "Logfile_maximum_size_down", "tabpagelist/tabpage[@controlname='m_generalTab']/container[@controlname='m_auditLogGrp']/container/container/button[@accessiblename='Down']", 30000, null, "d5ed1abe-d6fd-44a2-bb20-fd6860477ada");
                 _logfile_maximum_size_txtInfo = new RepoItemInfo(this, "Logfile_maximum_size_txt", "tabpagelist/tabpage[@controlname='m_generalTab']/container[@controlname='m_auditLogGrp']/container/text[@controlname='upDownEdit']", 30000, null, "c42aaae2-4b49-4036-b89c-cdfa2ec5d198");
                 _enable_liebert_rsd_supportInfo = new RepoItemInfo(this, "Enable_Liebert_RSD_support", "tabpagelist/tabpage[@controlname='m_generalTab']/container[@controlname='m_rsdSiteIdGrp']/checkbox[@controlname='m_rsdSiteIdEnaChk']", 30000, null, "4022f37b-e5a1-4a28-ac0c-de2a04c0f4cc");
-                _site_idInfo = new RepoItemInfo(this, "Site_Id", "tabpagelist/tabpage[@controlname='m_generalTab']/container[@controlname='m_rsdSiteIdGrp']/container/text[@controlname='m_rsdSiteIdTbx-Ctl']/text[@accessiblename='Site Id:']", 30000, null, "72db0a5c-ebda-4b14-8b04-eef7da6f4ff6");
+                _site_idInfo = new RepoItemInfo(this, "Site_Id", "tabpagelist/tabpage[@controlname='m_generalTab']/container[@controlname='m_rsdSiteIdGrp']/container/text[@controlname='m_rsdSiteIdTbx-Ctl']/text[@accessiblename='Site ID:']", 30000, null, "72db0a5c-ebda-4b14-8b04-eef7da6f4ff6");
                 _event_log_fileInfo = new RepoItemInfo(this, "Event_log_file", "tabpagelist/tabpage[@controlname='m_eventLogTab']/container/text[@controlname='m_eventLogFileTbx']/text[@accessiblename='File:']", 30000, null, "1b00e2d5-9cac-42c4-aa68-8d56a5704065");
                 _event_logfile_maximumInfo = new RepoItemInfo(this, "Event_logfile_maximum", "tabpagelist/tabpage[@controlname='m_eventLogTab']/container/container/combobox[@accessiblename='Maximum size (MB):']", 30000, null, "b48caec7-15d0-421f-9418-df06f16efe19");
                 _event_logfile_maximum_upInfo = new RepoItemInfo(this, "Event_logfile_maximum_up", "tabpagelist/tabpage[@controlname='m_eventLogTab']/container/container/container/button[@accessiblename='Up']", 30000, null, "1abca7b0-6bf9-424c-aba9-7c0388825782");
@@ -19637,15 +20296,15 @@ namespace NformTester
                 _smtp_editInfo = new RepoItemInfo(this, "SMTP_Edit", "tabpagelist/tabpage[@controlname='m_smtpTab']/container[@controlname='m_smtpSrvrListGrp']/container/container/button[@controlname='m_button5']", 30000, null, "dd5a5a6e-7ed7-43ab-9613-4299465fab3b");
                 _smtp_deleteInfo = new RepoItemInfo(this, "SMTP_Delete", "tabpagelist/tabpage[@controlname='m_smtpTab']/container[@controlname='m_smtpSrvrListGrp']/container/container/button[@controlname='m_button6']", 30000, null, "afb9d4db-8828-4120-9f6b-aeec0b83e807");
                 _smtp_senders_addressInfo = new RepoItemInfo(this, "SMTP_Senders_address", "tabpagelist/tabpage[@controlname='m_smtpTab']/container[@controlname='m_smtpAutoGrp']/container/text[@controlname='m_smtpSndrAddrTbx-Ctl']/text[@accessiblename='Sender''s address:']", 30000, null, "e639e02d-9888-4597-b927-904b93655130");
-                _smtp_servers_listInfo = new RepoItemInfo(this, "SMTP_servers_list", "tabpagelist/tabpage[@controlname='m_smtpTab']/container[@controlname='m_smtpSrvrListGrp']/table/list[@accessiblename='Minimum free space (%):']", 30000, null, "12861d91-ad08-431b-8d4f-9ac9dc8b358b");
-                _polling_priorityInfo = new RepoItemInfo(this, "Polling_Priority", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/radiobutton[@controlname='m_devPollPriorityRbtn']", 30000, null, "12bbe2d0-1102-4adf-a529-731a7a0e95f4");
-                _polling_dailyInfo = new RepoItemInfo(this, "Polling_Daily", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/radiobutton[@controlname='m_devPollDailyRbtn']", 30000, null, "fa571d17-d355-4580-8afe-7d172f1ec10d");
-                _polling_intervalInfo = new RepoItemInfo(this, "Polling_Interval", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/radiobutton[@controlname='m_devPollIntervalRbtn']", 30000, null, "efd24149-0b8f-4887-84cf-df435cb16a2e");
-                _polling_disabledInfo = new RepoItemInfo(this, "Polling_Disabled", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/radiobutton[@controlname='m_devPollDisabledRbtn']", 30000, null, "e3721dd5-60ba-4a30-91aa-db443bd03864");
-                _daily_everyday_atInfo = new RepoItemInfo(this, "Daily_everyday_at", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/datetime[@controlname='m_devPollTodDtp']", 30000, null, "2c429004-72fb-4d23-ae5b-f2aae50b2fda");
-                _interval_everyInfo = new RepoItemInfo(this, "Interval_every", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/combobox[@accessiblename='-  every']", 30000, null, "b440841c-f48f-4044-b86a-b7e60649c9bc");
-                _interval_every_upInfo = new RepoItemInfo(this, "Interval_every_up", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container/button[@accessiblename='Up']", 30000, null, "1f63fefb-a868-4cc5-ab17-d7cbd8813b0e");
-                _interval_every_downInfo = new RepoItemInfo(this, "Interval_every_down", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container/button[@accessiblename='Down']", 30000, null, "333a8004-2704-433a-ab2f-ba51a95cf55a");
+                _smtp_servers_list_oldInfo = new RepoItemInfo(this, "SMTP_servers_list_old", "tabpagelist/tabpage[@controlname='m_smtpTab']/container[@controlname='m_smtpSrvrListGrp']/table/list[@accessiblename='Minimum free space (%):']", 30000, null, "12861d91-ad08-431b-8d4f-9ac9dc8b358b");
+                _polling_priority_oldInfo = new RepoItemInfo(this, "Polling_Priority_old", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/radiobutton[@controlname='m_devPollPriorityRbtn']", 30000, null, "12bbe2d0-1102-4adf-a529-731a7a0e95f4");
+                _polling_daily_oldInfo = new RepoItemInfo(this, "Polling_Daily_old", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/radiobutton[@controlname='m_devPollDailyRbtn']", 30000, null, "fa571d17-d355-4580-8afe-7d172f1ec10d");
+                _polling_interval_oldInfo = new RepoItemInfo(this, "Polling_Interval_old", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/radiobutton[@controlname='m_devPollIntervalRbtn']", 30000, null, "efd24149-0b8f-4887-84cf-df435cb16a2e");
+                _polling_disabled_oldInfo = new RepoItemInfo(this, "Polling_Disabled_old", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/radiobutton[@controlname='m_devPollDisabledRbtn']", 30000, null, "e3721dd5-60ba-4a30-91aa-db443bd03864");
+                _daily_everyday_at_oldInfo = new RepoItemInfo(this, "Daily_everyday_at_old", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/datetime[@controlname='m_devPollTodDtp']", 30000, null, "2c429004-72fb-4d23-ae5b-f2aae50b2fda");
+                _interval_every_oldInfo = new RepoItemInfo(this, "Interval_every_old", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/combobox[@accessiblename='-  every']", 30000, null, "b440841c-f48f-4044-b86a-b7e60649c9bc");
+                _interval_every_up_oldInfo = new RepoItemInfo(this, "Interval_every_up_old", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container/button[@accessiblename='Up']", 30000, null, "1f63fefb-a868-4cc5-ab17-d7cbd8813b0e");
+                _interval_every_down_oldInfo = new RepoItemInfo(this, "Interval_every_down_old", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container/button[@accessiblename='Down']", 30000, null, "333a8004-2704-433a-ab2f-ba51a95cf55a");
                 _interval_every_txtInfo = new RepoItemInfo(this, "Interval_every_txt", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/text[@controlname='upDownEdit']", 30000, null, "430bb00f-9c2e-4e3c-9a5c-61fb4b70ea56");
                 _enable_liebert_protocolInfo = new RepoItemInfo(this, "Enable_Liebert_protocol", "tabpagelist/tabpage[@controlname='m_deviceTab']/checkbox[@controlname='m_velEnableChk']", 30000, null, "1bc1fd05-39a1-425b-96ca-c5a1fe0b3ef7");
                 _datalog_maximum_storage_daysInfo = new RepoItemInfo(this, "Datalog_maximum_storage_days", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_dataLogDbGrp']/container[@controlname='m_dataLogDbMaxStoreAgeNbx']/combobox[@accessiblename='Maximum storage (days):']", 30000, null, "f666ca55-a512-499e-aaf5-a2e6b35926f6");
@@ -19718,6 +20377,15 @@ namespace NformTester
                 _check_updates_monthly_comboInfo = new RepoItemInfo(this, "check_updates_monthly_combo", "tabpagelist/tabpage[@controlname='m_updatesTab']/container[@controlname='m_updCheckGrp']/container/combobox[@accessiblerole='ComboBox']", 30000, null, "69b6b90e-6ac9-4dbd-b05f-a58b073facd3");
                 _check_updates_daily_timeInfo = new RepoItemInfo(this, "check_updates_daily_time", "tabpagelist/tabpage[@controlname='m_updatesTab']/container[@controlname='m_updCheckGrp']/datetime[@controlname='m_updCheckTimeDtp']", 30000, null, "b52a55db-2c94-4297-8137-c6548ac7b4f7");
                 _download_directory_for_updatesInfo = new RepoItemInfo(this, "Download_directory_for_updates", "tabpagelist/tabpage[@controlname='m_updatesTab']/container[@controlname='m_updDnldDirTbx']/text[@controlname='m_updDnldDirTbx-Ctl']/text[@accessiblename~'^Download\\ directory\\ for\\ up']", 30000, null, "f1b79876-4478-4a91-8759-6ed4c81afc4b");
+                _polling_priorityInfo = new RepoItemInfo(this, "Polling_Priority", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/radiobutton[@controlname='m_devPollPriorityRbtn']", 30000, null, "23f1d158-4fff-4d3e-b1ac-c0b2735df642");
+                _polling_dailyInfo = new RepoItemInfo(this, "Polling_Daily", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/radiobutton[@controlname='m_devPollDailyRbtn']", 30000, null, "c080ccbb-dddb-46fd-babf-7ddb204e7a35");
+                _polling_intervalInfo = new RepoItemInfo(this, "Polling_Interval", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/radiobutton[@controlname='m_devPollIntervalRbtn']", 30000, null, "241799d6-66fc-453e-b6cd-99e3b20b45aa");
+                _polling_disabledInfo = new RepoItemInfo(this, "Polling_Disabled", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/radiobutton[@controlname='m_devPollDisabledRbtn']", 30000, null, "4a3f2aba-fb42-42b3-a1db-a66c62db304c");
+                _daily_everyday_atInfo = new RepoItemInfo(this, "Daily_everyday_at", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container[@controlname='m_devPollTodDtp']/datetime[@controlname='m_devPollTodDtp-Ctl']", 30000, null, "ffa36963-117c-4d6d-ab31-d467bb3e2931");
+                _interval_everyInfo = new RepoItemInfo(this, "Interval_every", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container[@controlname='m_devPollIntervalNbx']/container/combobox[@accessiblename='-  every']", 30000, null, "ee31ee6b-c181-416e-a32a-8a86588a252e");
+                _interval_every_upInfo = new RepoItemInfo(this, "Interval_every_up", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container[@controlname='m_devPollIntervalNbx']/container/container/button[@accessiblename='Up']", 30000, null, "826626f2-972e-4cd1-8577-4c698df1b907");
+                _interval_every_downInfo = new RepoItemInfo(this, "Interval_every_down", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container[@controlname='m_devPollIntervalNbx']/container/container/button[@accessiblename='Down']", 30000, null, "4cac9304-cba9-4936-a416-249e81d355b6");
+                _smtp_servers_listInfo = new RepoItemInfo(this, "SMTP_servers_list", "tabpagelist/tabpage[@controlname='m_smtpTab']/container[@controlname='m_smtpSrvrListGrp']/table/list", 30000, null, "2d128578-7e9d-4927-a9fb-af390be62835");
             }
 
             /// <summary>
@@ -20921,218 +21589,218 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The SMTP_servers_list item.
+            /// The SMTP_servers_list_old item.
             /// </summary>
             [RepositoryItem("12861d91-ad08-431b-8d4f-9ac9dc8b358b")]
-            public virtual Ranorex.List SMTP_servers_list
+            public virtual Ranorex.List SMTP_servers_list_old
             {
                 get
                 {
-                    return _smtp_servers_listInfo.CreateAdapter<Ranorex.List>(true);
+                    return _smtp_servers_list_oldInfo.CreateAdapter<Ranorex.List>(true);
                 }
             }
 
             /// <summary>
-            /// The SMTP_servers_list item info.
+            /// The SMTP_servers_list_old item info.
             /// </summary>
             [RepositoryItemInfo("12861d91-ad08-431b-8d4f-9ac9dc8b358b")]
-            public virtual RepoItemInfo SMTP_servers_listInfo
+            public virtual RepoItemInfo SMTP_servers_list_oldInfo
             {
                 get
                 {
-                    return _smtp_servers_listInfo;
+                    return _smtp_servers_list_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Polling_Priority item.
+            /// The Polling_Priority_old item.
             /// </summary>
             [RepositoryItem("12bbe2d0-1102-4adf-a529-731a7a0e95f4")]
-            public virtual Ranorex.RadioButton Polling_Priority
+            public virtual Ranorex.RadioButton Polling_Priority_old
             {
                 get
                 {
-                    return _polling_priorityInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                    return _polling_priority_oldInfo.CreateAdapter<Ranorex.RadioButton>(true);
                 }
             }
 
             /// <summary>
-            /// The Polling_Priority item info.
+            /// The Polling_Priority_old item info.
             /// </summary>
             [RepositoryItemInfo("12bbe2d0-1102-4adf-a529-731a7a0e95f4")]
-            public virtual RepoItemInfo Polling_PriorityInfo
+            public virtual RepoItemInfo Polling_Priority_oldInfo
             {
                 get
                 {
-                    return _polling_priorityInfo;
+                    return _polling_priority_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Polling_Daily item.
+            /// The Polling_Daily_old item.
             /// </summary>
             [RepositoryItem("fa571d17-d355-4580-8afe-7d172f1ec10d")]
-            public virtual Ranorex.RadioButton Polling_Daily
+            public virtual Ranorex.RadioButton Polling_Daily_old
             {
                 get
                 {
-                    return _polling_dailyInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                    return _polling_daily_oldInfo.CreateAdapter<Ranorex.RadioButton>(true);
                 }
             }
 
             /// <summary>
-            /// The Polling_Daily item info.
+            /// The Polling_Daily_old item info.
             /// </summary>
             [RepositoryItemInfo("fa571d17-d355-4580-8afe-7d172f1ec10d")]
-            public virtual RepoItemInfo Polling_DailyInfo
+            public virtual RepoItemInfo Polling_Daily_oldInfo
             {
                 get
                 {
-                    return _polling_dailyInfo;
+                    return _polling_daily_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Polling_Interval item.
+            /// The Polling_Interval_old item.
             /// </summary>
             [RepositoryItem("efd24149-0b8f-4887-84cf-df435cb16a2e")]
-            public virtual Ranorex.RadioButton Polling_Interval
+            public virtual Ranorex.RadioButton Polling_Interval_old
             {
                 get
                 {
-                    return _polling_intervalInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                    return _polling_interval_oldInfo.CreateAdapter<Ranorex.RadioButton>(true);
                 }
             }
 
             /// <summary>
-            /// The Polling_Interval item info.
+            /// The Polling_Interval_old item info.
             /// </summary>
             [RepositoryItemInfo("efd24149-0b8f-4887-84cf-df435cb16a2e")]
-            public virtual RepoItemInfo Polling_IntervalInfo
+            public virtual RepoItemInfo Polling_Interval_oldInfo
             {
                 get
                 {
-                    return _polling_intervalInfo;
+                    return _polling_interval_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Polling_Disabled item.
+            /// The Polling_Disabled_old item.
             /// </summary>
             [RepositoryItem("e3721dd5-60ba-4a30-91aa-db443bd03864")]
-            public virtual Ranorex.RadioButton Polling_Disabled
+            public virtual Ranorex.RadioButton Polling_Disabled_old
             {
                 get
                 {
-                    return _polling_disabledInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                    return _polling_disabled_oldInfo.CreateAdapter<Ranorex.RadioButton>(true);
                 }
             }
 
             /// <summary>
-            /// The Polling_Disabled item info.
+            /// The Polling_Disabled_old item info.
             /// </summary>
             [RepositoryItemInfo("e3721dd5-60ba-4a30-91aa-db443bd03864")]
-            public virtual RepoItemInfo Polling_DisabledInfo
+            public virtual RepoItemInfo Polling_Disabled_oldInfo
             {
                 get
                 {
-                    return _polling_disabledInfo;
+                    return _polling_disabled_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Daily_everyday_at item.
+            /// The Daily_everyday_at_old item.
             /// </summary>
             [RepositoryItem("2c429004-72fb-4d23-ae5b-f2aae50b2fda")]
-            public virtual Ranorex.DateTime Daily_everyday_at
+            public virtual Ranorex.DateTime Daily_everyday_at_old
             {
                 get
                 {
-                    return _daily_everyday_atInfo.CreateAdapter<Ranorex.DateTime>(true);
+                    return _daily_everyday_at_oldInfo.CreateAdapter<Ranorex.DateTime>(true);
                 }
             }
 
             /// <summary>
-            /// The Daily_everyday_at item info.
+            /// The Daily_everyday_at_old item info.
             /// </summary>
             [RepositoryItemInfo("2c429004-72fb-4d23-ae5b-f2aae50b2fda")]
-            public virtual RepoItemInfo Daily_everyday_atInfo
+            public virtual RepoItemInfo Daily_everyday_at_oldInfo
             {
                 get
                 {
-                    return _daily_everyday_atInfo;
+                    return _daily_everyday_at_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Interval_every item.
+            /// The Interval_every_old item.
             /// </summary>
             [RepositoryItem("b440841c-f48f-4044-b86a-b7e60649c9bc")]
-            public virtual Ranorex.ComboBox Interval_every
+            public virtual Ranorex.ComboBox Interval_every_old
             {
                 get
                 {
-                    return _interval_everyInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                    return _interval_every_oldInfo.CreateAdapter<Ranorex.ComboBox>(true);
                 }
             }
 
             /// <summary>
-            /// The Interval_every item info.
+            /// The Interval_every_old item info.
             /// </summary>
             [RepositoryItemInfo("b440841c-f48f-4044-b86a-b7e60649c9bc")]
-            public virtual RepoItemInfo Interval_everyInfo
+            public virtual RepoItemInfo Interval_every_oldInfo
             {
                 get
                 {
-                    return _interval_everyInfo;
+                    return _interval_every_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Interval_every_up item.
+            /// The Interval_every_up_old item.
             /// </summary>
             [RepositoryItem("1f63fefb-a868-4cc5-ab17-d7cbd8813b0e")]
-            public virtual Ranorex.Button Interval_every_up
+            public virtual Ranorex.Button Interval_every_up_old
             {
                 get
                 {
-                    return _interval_every_upInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _interval_every_up_oldInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Interval_every_up item info.
+            /// The Interval_every_up_old item info.
             /// </summary>
             [RepositoryItemInfo("1f63fefb-a868-4cc5-ab17-d7cbd8813b0e")]
-            public virtual RepoItemInfo Interval_every_upInfo
+            public virtual RepoItemInfo Interval_every_up_oldInfo
             {
                 get
                 {
-                    return _interval_every_upInfo;
+                    return _interval_every_up_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Interval_every_down item.
+            /// The Interval_every_down_old item.
             /// </summary>
             [RepositoryItem("333a8004-2704-433a-ab2f-ba51a95cf55a")]
-            public virtual Ranorex.Button Interval_every_down
+            public virtual Ranorex.Button Interval_every_down_old
             {
                 get
                 {
-                    return _interval_every_downInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _interval_every_down_oldInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Interval_every_down item info.
+            /// The Interval_every_down_old item info.
             /// </summary>
             [RepositoryItemInfo("333a8004-2704-433a-ab2f-ba51a95cf55a")]
-            public virtual RepoItemInfo Interval_every_downInfo
+            public virtual RepoItemInfo Interval_every_down_oldInfo
             {
                 get
                 {
-                    return _interval_every_downInfo;
+                    return _interval_every_down_oldInfo;
                 }
             }
 
@@ -22863,6 +23531,222 @@ namespace NformTester
                     return _download_directory_for_updatesInfo;
                 }
             }
+
+            /// <summary>
+            /// The Polling_Priority item.
+            /// </summary>
+            [RepositoryItem("23f1d158-4fff-4d3e-b1ac-c0b2735df642")]
+            public virtual Ranorex.RadioButton Polling_Priority
+            {
+                get
+                {
+                    return _polling_priorityInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Polling_Priority item info.
+            /// </summary>
+            [RepositoryItemInfo("23f1d158-4fff-4d3e-b1ac-c0b2735df642")]
+            public virtual RepoItemInfo Polling_PriorityInfo
+            {
+                get
+                {
+                    return _polling_priorityInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Polling_Daily item.
+            /// </summary>
+            [RepositoryItem("c080ccbb-dddb-46fd-babf-7ddb204e7a35")]
+            public virtual Ranorex.RadioButton Polling_Daily
+            {
+                get
+                {
+                    return _polling_dailyInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Polling_Daily item info.
+            /// </summary>
+            [RepositoryItemInfo("c080ccbb-dddb-46fd-babf-7ddb204e7a35")]
+            public virtual RepoItemInfo Polling_DailyInfo
+            {
+                get
+                {
+                    return _polling_dailyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Polling_Interval item.
+            /// </summary>
+            [RepositoryItem("241799d6-66fc-453e-b6cd-99e3b20b45aa")]
+            public virtual Ranorex.RadioButton Polling_Interval
+            {
+                get
+                {
+                    return _polling_intervalInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Polling_Interval item info.
+            /// </summary>
+            [RepositoryItemInfo("241799d6-66fc-453e-b6cd-99e3b20b45aa")]
+            public virtual RepoItemInfo Polling_IntervalInfo
+            {
+                get
+                {
+                    return _polling_intervalInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Polling_Disabled item.
+            /// </summary>
+            [RepositoryItem("4a3f2aba-fb42-42b3-a1db-a66c62db304c")]
+            public virtual Ranorex.RadioButton Polling_Disabled
+            {
+                get
+                {
+                    return _polling_disabledInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Polling_Disabled item info.
+            /// </summary>
+            [RepositoryItemInfo("4a3f2aba-fb42-42b3-a1db-a66c62db304c")]
+            public virtual RepoItemInfo Polling_DisabledInfo
+            {
+                get
+                {
+                    return _polling_disabledInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Daily_everyday_at item.
+            /// </summary>
+            [RepositoryItem("ffa36963-117c-4d6d-ab31-d467bb3e2931")]
+            public virtual Ranorex.DateTime Daily_everyday_at
+            {
+                get
+                {
+                    return _daily_everyday_atInfo.CreateAdapter<Ranorex.DateTime>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Daily_everyday_at item info.
+            /// </summary>
+            [RepositoryItemInfo("ffa36963-117c-4d6d-ab31-d467bb3e2931")]
+            public virtual RepoItemInfo Daily_everyday_atInfo
+            {
+                get
+                {
+                    return _daily_everyday_atInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Interval_every item.
+            /// </summary>
+            [RepositoryItem("ee31ee6b-c181-416e-a32a-8a86588a252e")]
+            public virtual Ranorex.ComboBox Interval_every
+            {
+                get
+                {
+                    return _interval_everyInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Interval_every item info.
+            /// </summary>
+            [RepositoryItemInfo("ee31ee6b-c181-416e-a32a-8a86588a252e")]
+            public virtual RepoItemInfo Interval_everyInfo
+            {
+                get
+                {
+                    return _interval_everyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Interval_every_up item.
+            /// </summary>
+            [RepositoryItem("826626f2-972e-4cd1-8577-4c698df1b907")]
+            public virtual Ranorex.Button Interval_every_up
+            {
+                get
+                {
+                    return _interval_every_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Interval_every_up item info.
+            /// </summary>
+            [RepositoryItemInfo("826626f2-972e-4cd1-8577-4c698df1b907")]
+            public virtual RepoItemInfo Interval_every_upInfo
+            {
+                get
+                {
+                    return _interval_every_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Interval_every_down item.
+            /// </summary>
+            [RepositoryItem("4cac9304-cba9-4936-a416-249e81d355b6")]
+            public virtual Ranorex.Button Interval_every_down
+            {
+                get
+                {
+                    return _interval_every_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Interval_every_down item info.
+            /// </summary>
+            [RepositoryItemInfo("4cac9304-cba9-4936-a416-249e81d355b6")]
+            public virtual RepoItemInfo Interval_every_downInfo
+            {
+                get
+                {
+                    return _interval_every_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SMTP_servers_list item.
+            /// </summary>
+            [RepositoryItem("2d128578-7e9d-4927-a9fb-af390be62835")]
+            public virtual Ranorex.List SMTP_servers_list
+            {
+                get
+                {
+                    return _smtp_servers_listInfo.CreateAdapter<Ranorex.List>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SMTP_servers_list item info.
+            /// </summary>
+            [RepositoryItemInfo("2d128578-7e9d-4927-a9fb-af390be62835")]
+            public virtual RepoItemInfo SMTP_servers_listInfo
+            {
+                get
+                {
+                    return _smtp_servers_listInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -23435,10 +24319,17 @@ namespace NformTester
             RepoItemInfo _selfInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
-            RepoItemInfo _device_typeInfo;
-            RepoItemInfo _protocolInfo;
+            RepoItemInfo _device_type_409Info;
+            RepoItemInfo _protocol_oldInfo;
             RepoItemInfo _communicationsInfo;
             RepoItemInfo _liebert_protocolInfo;
+            RepoItemInfo _liebertrsdInfo;
+            RepoItemInfo _devicetagInfo;
+            RepoItemInfo _overrideglobalvalueInfo;
+            RepoItemInfo _siteidcomboInfo;
+            RepoItemInfo _siteidtextInfo;
+            RepoItemInfo _openInfo;
+            RepoItemInfo _globalvalueInfo;
             RepoItemInfo _snmpInfo;
             RepoItemInfo _info_linksInfo;
             RepoItemInfo _alarms_and_dataInfo;
@@ -23465,8 +24356,8 @@ namespace NformTester
             RepoItemInfo _helpInfo;
             RepoItemInfo _closeInfo;
             RepoItemInfo _okInfo;
-            RepoItemInfo _ip_port_use_global_portInfo;
-            RepoItemInfo _ip_port_use_custom_portInfo;
+            RepoItemInfo _ip_port_use_global_port_oldInfo;
+            RepoItemInfo _ip_port_use_custom_port_oldInfo;
             RepoItemInfo _ip_port_use_custom_port_comboInfo;
             RepoItemInfo _ip_port_use_custom_port_upInfo;
             RepoItemInfo _timeout_override_global_valueInfo;
@@ -23488,6 +24379,10 @@ namespace NformTester
             RepoItemInfo _mstp_node_upInfo;
             RepoItemInfo _mstp_node_downInfo;
             RepoItemInfo _mstp_node_txtInfo;
+            RepoItemInfo _device_typeInfo;
+            RepoItemInfo _protocolInfo;
+            RepoItemInfo _ip_port_use_global_portInfo;
+            RepoItemInfo _ip_port_use_custom_portInfo;
 
             /// <summary>
             /// Creates a new FormDeviceProperties  folder.
@@ -23498,10 +24393,17 @@ namespace NformTester
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "16fe5b0b-360f-4bbf-b149-8047bb9e74f4");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_deviceNameTbx']/text[@controlname='m_deviceNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "720aa15b-eb73-478e-b935-577fa16f883d");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_deviceDscrTbx']/text[@controlname='m_deviceDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "8f9c62b8-c790-4cbb-ba99-61f2552ff284");
-                _device_typeInfo = new RepoItemInfo(this, "Device_type", "container[@controlname='m_deviceTypeCtl']/container/container[@controlname='m_devTypeCombo']/combobox[@controlname='m_devTypeCombo-Ctl']", 30000, null, "256244f7-9d68-4694-85fb-8c8c53f683d1");
-                _protocolInfo = new RepoItemInfo(this, "Protocol", "container[@controlname='m_deviceTypeCtl']/container/container[@controlname='m_devProtocolTbx']/text[@controlname='m_devProtocolTbx-Ctl']/text[@accessiblename='Protocol:']", 30000, null, "7ff295b1-40b3-4cb7-b830-c82b01497be6");
+                _device_type_409Info = new RepoItemInfo(this, "Device_type_409", "container[@controlname='m_deviceTypeCtl']/container/combobox[@controlname='m_devTypeCombo']", 30000, null, "256244f7-9d68-4694-85fb-8c8c53f683d1");
+                _protocol_oldInfo = new RepoItemInfo(this, "Protocol_old", "container[@controlname='m_deviceTypeCtl']/container/combobox[@controlname='m_devProtocolCombo']", 30000, null, "7ff295b1-40b3-4cb7-b830-c82b01497be6");
                 _communicationsInfo = new RepoItemInfo(this, "Communications", "tabpagelist/tabpage[@accessiblename='Communications']", 30000, null, "231e1437-8231-4669-84fb-ba2c631a9e68");
                 _liebert_protocolInfo = new RepoItemInfo(this, "Liebert_protocol", "tabpagelist/tabpage[@accessiblename='Liebert protocol']", 30000, null, "24875cc4-81ed-4f35-a8b5-7b562cbed644");
+                _liebertrsdInfo = new RepoItemInfo(this, "LiebertRSD", "tabpagelist/tabpage[@accessiblename='Liebert RSD']", 30000, null, "c218e52c-4f6f-41a3-b2f1-1929c70170a9");
+                _devicetagInfo = new RepoItemInfo(this, "DeviceTag", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdDevTagTbx']/text[@controlname='m_rsdDevTagTbx-Ctl']", 30000, null, "538a4606-b9d6-47e1-9381-0e49f2d68500");
+                _overrideglobalvalueInfo = new RepoItemInfo(this, "OverrideGlobalValue", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/container/checkbox[@controlname='m_checkBox']", 30000, null, "d0fb101e-d492-4af0-b51a-4d784f9affdc");
+                _siteidcomboInfo = new RepoItemInfo(this, "SiteIDCombo", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox[@controlname='m_rsdSiteIdDevCombo']", 30000, null, "a1316cb4-70b7-4cad-9fbd-c92a5a27a64b");
+                _siteidtextInfo = new RepoItemInfo(this, "SiteIDText", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox/text[@controlid='1001']", 30000, null, "586dc3bf-ccc1-4ea1-b18b-e08134d59f68");
+                _openInfo = new RepoItemInfo(this, "Open", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/combobox/button[@accessiblename='Open']", 30000, null, "a12c0848-07c3-43a6-8f42-59400f8723cb");
+                _globalvalueInfo = new RepoItemInfo(this, "GlobalValue", "tabpagelist/tabpage[@controlname='m_rsdPage']/container[@controlname='m_rsdSiteIdDevGcb']/text[@controlname='m_rsdSiteIdGblLbl']", 30000, null, "93179fc4-937d-4c3a-88d2-1e3033c60ea0");
                 _snmpInfo = new RepoItemInfo(this, "SNMP", "tabpagelist/tabpage[@accessiblename='SNMP']", 30000, null, "ff093a3f-5913-4f3f-bf60-f052c3c91329");
                 _info_linksInfo = new RepoItemInfo(this, "Info_links", "button[@controlname='m_linksBtn']", 30000, null, "0433466c-a171-474c-b5ea-b4d7ee97854e");
                 _alarms_and_dataInfo = new RepoItemInfo(this, "Alarms_and_data", "button[@controlname='m_alarmsDataBtn']", 30000, null, "89a1c202-8812-41cd-8347-df1361e439a5");
@@ -23528,13 +24430,13 @@ namespace NformTester
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "9e8e7c8d-5369-4178-860e-514139f3ad7a");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "c7d30e9f-0abe-428d-90aa-5120bf193a99");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "fe3d2ac7-53bd-42a6-b06e-74810592773a");
-                _ip_port_use_global_portInfo = new RepoItemInfo(this, "IP_port_use_global_port", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/radiobutton[@controlname='m_stdRbtn']", 30000, null, "b52b2c7a-7d3a-4c2d-9f9f-ad80ea58c3ca");
-                _ip_port_use_custom_portInfo = new RepoItemInfo(this, "IP_port_use_custom_port", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/radiobutton[@controlname='m_customRbtn']", 30000, null, "a755a70b-e496-4681-b8b0-5f2a76507b8b");
+                _ip_port_use_global_port_oldInfo = new RepoItemInfo(this, "IP_port_use_global_port_old", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/radiobutton[@controlname='m_stdRbtn']", 30000, null, "b52b2c7a-7d3a-4c2d-9f9f-ad80ea58c3ca");
+                _ip_port_use_custom_port_oldInfo = new RepoItemInfo(this, "IP_port_use_custom_port_old", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/radiobutton[@controlname='m_customRbtn']", 30000, null, "a755a70b-e496-4681-b8b0-5f2a76507b8b");
                 _ip_port_use_custom_port_comboInfo = new RepoItemInfo(this, "IP_port_use_custom_port_combo", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/container/combobox[@accessiblerole='ComboBox']", 30000, null, "a1a40646-a12d-4516-92b4-936c76cc2cad");
                 _ip_port_use_custom_port_upInfo = new RepoItemInfo(this, "IP_port_use_custom_port_up", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/container/container/button[@accessiblename='Up']", 30000, null, "ea5159a9-fc58-4112-b19e-3c9442e382d8");
                 _timeout_override_global_valueInfo = new RepoItemInfo(this, "Timeout_override_global_value", "tabpagelist/tabpage[@controlname='m_commsPage']/container[@controlname='m_timeoutRetryGcb']/container[@controlname='m_headerPnl']/checkbox[@controlname='m_checkBox']", 30000, null, "6752d479-e720-4e47-b2e6-253a136e5fb8");
                 _ip_port_use_custom_port_downInfo = new RepoItemInfo(this, "IP_port_use_custom_port_down", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/container/container/button[@accessiblename='Down']", 30000, null, "5de531f0-5016-448f-8ca2-794b774e02a5");
-                _ip_port_use_custom_port_txtInfo = new RepoItemInfo(this, "IP_port_use_custom_port_txt", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/container/text[@controlname='upDownEdit']", 30000, null, "c155a7e1-edd4-4803-b3a9-0108faf737b5");
+                _ip_port_use_custom_port_txtInfo = new RepoItemInfo(this, "IP_port_use_custom_port_txt", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/container/text[@controlname='upDownEdit']", 30000, null, "c155a7e1-edd4-4803-b3a9-0108faf737b5");
                 _snmpv2cInfo = new RepoItemInfo(this, "SNMPv2c", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpVersionCfg']/container/radiobutton[@controlname='m_v2cRbtn']", 30000, null, "9b854299-584c-413d-94b5-74d5c2b81329");
                 _snmpv1Info = new RepoItemInfo(this, "SNMPv1", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpVersionCfg']/container/radiobutton[@controlname='m_v1Rbtn']", 30000, null, "e389b6de-716c-4761-a234-e99ca9009bfe");
                 _snmpv3Info = new RepoItemInfo(this, "SNMPv3", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpVersionCfg']/container/radiobutton[@controlname='m_v3Rbtn']", 30000, null, "3b312bcd-5c2c-48a1-9726-ad67458a4abe");
@@ -23551,6 +24453,10 @@ namespace NformTester
                 _mstp_node_upInfo = new RepoItemInfo(this, "MSTP_node_up", "tabpagelist/tabpage[@controlname='m_velocityPage']/container[@controlname='m_velMstpGrp']/container[@controlname='m_velMstpNodeNbx']/container/container/button[@accessiblename='Up']", 30000, null, "eba8a1dc-72d5-4bf7-8e50-8dece8368d55");
                 _mstp_node_downInfo = new RepoItemInfo(this, "MSTP_node_down", "tabpagelist/tabpage[@controlname='m_velocityPage']/container[@controlname='m_velMstpGrp']/container[@controlname='m_velMstpNodeNbx']/container/container/button[@accessiblename='Down']", 30000, null, "ee2c5125-6fdd-42c7-9009-23d1d3a627fa");
                 _mstp_node_txtInfo = new RepoItemInfo(this, "MSTP_node_txt", "tabpagelist/tabpage[@controlname='m_velocityPage']/container[@controlname='m_velMstpGrp']/container[@controlname='m_velMstpNodeNbx']/container/text[@controlname='upDownEdit']", 30000, null, "8b9b6f97-5237-4fb6-abfb-777aab3e5244");
+                _device_typeInfo = new RepoItemInfo(this, "Device_type", "container[@controlname='m_deviceTypeCtl']/container/container[@controlname='m_devTypeCombo']/combobox[@controlname='m_devTypeCombo-Ctl']", 30000, null, "5f3fae54-38dc-47f5-b788-044416210483");
+                _protocolInfo = new RepoItemInfo(this, "Protocol", "container[@controlname='m_deviceTypeCtl']/container/container[@controlname='m_devProtocolTbx']/text[@controlname='m_devProtocolTbx-Ctl']", 30000, null, "d10974b4-ab79-4e91-a6c4-f7683a055246");
+                _ip_port_use_global_portInfo = new RepoItemInfo(this, "IP_port_use_global_port", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/radiobutton[@controlname='m_stdRbtn']", 30000, null, "1bf96f9d-3e8e-4948-86d0-5cd85d5c1288");
+                _ip_port_use_custom_portInfo = new RepoItemInfo(this, "IP_port_use_custom_port", "tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/radiobutton[@controlname='m_customRbtn']", 30000, null, "469aef8b-8a27-49a7-aa40-578bc8125af5");
             }
 
             /// <summary>
@@ -23626,50 +24532,50 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Device_type item.
+            /// The Device_type_409 item.
             /// </summary>
             [RepositoryItem("256244f7-9d68-4694-85fb-8c8c53f683d1")]
-            public virtual Ranorex.ComboBox Device_type
+            public virtual Ranorex.ComboBox Device_type_409
             {
                 get
                 {
-                    return _device_typeInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                    return _device_type_409Info.CreateAdapter<Ranorex.ComboBox>(true);
                 }
             }
 
             /// <summary>
-            /// The Device_type item info.
+            /// The Device_type_409 item info.
             /// </summary>
             [RepositoryItemInfo("256244f7-9d68-4694-85fb-8c8c53f683d1")]
-            public virtual RepoItemInfo Device_typeInfo
+            public virtual RepoItemInfo Device_type_409Info
             {
                 get
                 {
-                    return _device_typeInfo;
+                    return _device_type_409Info;
                 }
             }
 
             /// <summary>
-            /// The Protocol item.
+            /// The Protocol_old item.
             /// </summary>
             [RepositoryItem("7ff295b1-40b3-4cb7-b830-c82b01497be6")]
-            public virtual Ranorex.Text Protocol
+            public virtual Ranorex.ComboBox Protocol_old
             {
                 get
                 {
-                    return _protocolInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _protocol_oldInfo.CreateAdapter<Ranorex.ComboBox>(true);
                 }
             }
 
             /// <summary>
-            /// The Protocol item info.
+            /// The Protocol_old item info.
             /// </summary>
             [RepositoryItemInfo("7ff295b1-40b3-4cb7-b830-c82b01497be6")]
-            public virtual RepoItemInfo ProtocolInfo
+            public virtual RepoItemInfo Protocol_oldInfo
             {
                 get
                 {
-                    return _protocolInfo;
+                    return _protocol_oldInfo;
                 }
             }
 
@@ -23718,6 +24624,174 @@ namespace NformTester
                 get
                 {
                     return _liebert_protocolInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LiebertRSD item.
+            /// </summary>
+            [RepositoryItem("c218e52c-4f6f-41a3-b2f1-1929c70170a9")]
+            public virtual Ranorex.TabPage LiebertRSD
+            {
+                get
+                {
+                    return _liebertrsdInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LiebertRSD item info.
+            /// </summary>
+            [RepositoryItemInfo("c218e52c-4f6f-41a3-b2f1-1929c70170a9")]
+            public virtual RepoItemInfo LiebertRSDInfo
+            {
+                get
+                {
+                    return _liebertrsdInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DeviceTag item.
+            /// </summary>
+            [RepositoryItem("538a4606-b9d6-47e1-9381-0e49f2d68500")]
+            public virtual Ranorex.Text DeviceTag
+            {
+                get
+                {
+                    return _devicetagInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DeviceTag item info.
+            /// </summary>
+            [RepositoryItemInfo("538a4606-b9d6-47e1-9381-0e49f2d68500")]
+            public virtual RepoItemInfo DeviceTagInfo
+            {
+                get
+                {
+                    return _devicetagInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OverrideGlobalValue item.
+            /// </summary>
+            [RepositoryItem("d0fb101e-d492-4af0-b51a-4d784f9affdc")]
+            public virtual Ranorex.CheckBox OverrideGlobalValue
+            {
+                get
+                {
+                    return _overrideglobalvalueInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OverrideGlobalValue item info.
+            /// </summary>
+            [RepositoryItemInfo("d0fb101e-d492-4af0-b51a-4d784f9affdc")]
+            public virtual RepoItemInfo OverrideGlobalValueInfo
+            {
+                get
+                {
+                    return _overrideglobalvalueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SiteIDCombo item.
+            /// </summary>
+            [RepositoryItem("a1316cb4-70b7-4cad-9fbd-c92a5a27a64b")]
+            public virtual Ranorex.ComboBox SiteIDCombo
+            {
+                get
+                {
+                    return _siteidcomboInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SiteIDCombo item info.
+            /// </summary>
+            [RepositoryItemInfo("a1316cb4-70b7-4cad-9fbd-c92a5a27a64b")]
+            public virtual RepoItemInfo SiteIDComboInfo
+            {
+                get
+                {
+                    return _siteidcomboInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SiteIDText item.
+            /// </summary>
+            [RepositoryItem("586dc3bf-ccc1-4ea1-b18b-e08134d59f68")]
+            public virtual Ranorex.Text SiteIDText
+            {
+                get
+                {
+                    return _siteidtextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SiteIDText item info.
+            /// </summary>
+            [RepositoryItemInfo("586dc3bf-ccc1-4ea1-b18b-e08134d59f68")]
+            public virtual RepoItemInfo SiteIDTextInfo
+            {
+                get
+                {
+                    return _siteidtextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Open item.
+            /// </summary>
+            [RepositoryItem("a12c0848-07c3-43a6-8f42-59400f8723cb")]
+            public virtual Ranorex.Button Open
+            {
+                get
+                {
+                    return _openInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Open item info.
+            /// </summary>
+            [RepositoryItemInfo("a12c0848-07c3-43a6-8f42-59400f8723cb")]
+            public virtual RepoItemInfo OpenInfo
+            {
+                get
+                {
+                    return _openInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GlobalValue item.
+            /// </summary>
+            [RepositoryItem("93179fc4-937d-4c3a-88d2-1e3033c60ea0")]
+            public virtual Ranorex.Text GlobalValue
+            {
+                get
+                {
+                    return _globalvalueInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GlobalValue item info.
+            /// </summary>
+            [RepositoryItemInfo("93179fc4-937d-4c3a-88d2-1e3033c60ea0")]
+            public virtual RepoItemInfo GlobalValueInfo
+            {
+                get
+                {
+                    return _globalvalueInfo;
                 }
             }
 
@@ -24346,50 +25420,50 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The IP_port_use_global_port item.
+            /// The IP_port_use_global_port_old item.
             /// </summary>
             [RepositoryItem("b52b2c7a-7d3a-4c2d-9f9f-ad80ea58c3ca")]
-            public virtual Ranorex.RadioButton IP_port_use_global_port
+            public virtual Ranorex.RadioButton IP_port_use_global_port_old
             {
                 get
                 {
-                    return _ip_port_use_global_portInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                    return _ip_port_use_global_port_oldInfo.CreateAdapter<Ranorex.RadioButton>(true);
                 }
             }
 
             /// <summary>
-            /// The IP_port_use_global_port item info.
+            /// The IP_port_use_global_port_old item info.
             /// </summary>
             [RepositoryItemInfo("b52b2c7a-7d3a-4c2d-9f9f-ad80ea58c3ca")]
-            public virtual RepoItemInfo IP_port_use_global_portInfo
+            public virtual RepoItemInfo IP_port_use_global_port_oldInfo
             {
                 get
                 {
-                    return _ip_port_use_global_portInfo;
+                    return _ip_port_use_global_port_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The IP_port_use_custom_port item.
+            /// The IP_port_use_custom_port_old item.
             /// </summary>
             [RepositoryItem("a755a70b-e496-4681-b8b0-5f2a76507b8b")]
-            public virtual Ranorex.RadioButton IP_port_use_custom_port
+            public virtual Ranorex.RadioButton IP_port_use_custom_port_old
             {
                 get
                 {
-                    return _ip_port_use_custom_portInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                    return _ip_port_use_custom_port_oldInfo.CreateAdapter<Ranorex.RadioButton>(true);
                 }
             }
 
             /// <summary>
-            /// The IP_port_use_custom_port item info.
+            /// The IP_port_use_custom_port_old item info.
             /// </summary>
             [RepositoryItemInfo("a755a70b-e496-4681-b8b0-5f2a76507b8b")]
-            public virtual RepoItemInfo IP_port_use_custom_portInfo
+            public virtual RepoItemInfo IP_port_use_custom_port_oldInfo
             {
                 get
                 {
-                    return _ip_port_use_custom_portInfo;
+                    return _ip_port_use_custom_port_oldInfo;
                 }
             }
 
@@ -24896,6 +25970,102 @@ namespace NformTester
                     return _mstp_node_txtInfo;
                 }
             }
+
+            /// <summary>
+            /// The Device_type item.
+            /// </summary>
+            [RepositoryItem("5f3fae54-38dc-47f5-b788-044416210483")]
+            public virtual Ranorex.ComboBox Device_type
+            {
+                get
+                {
+                    return _device_typeInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Device_type item info.
+            /// </summary>
+            [RepositoryItemInfo("5f3fae54-38dc-47f5-b788-044416210483")]
+            public virtual RepoItemInfo Device_typeInfo
+            {
+                get
+                {
+                    return _device_typeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Protocol item.
+            /// </summary>
+            [RepositoryItem("d10974b4-ab79-4e91-a6c4-f7683a055246")]
+            public virtual Ranorex.Text Protocol
+            {
+                get
+                {
+                    return _protocolInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Protocol item info.
+            /// </summary>
+            [RepositoryItemInfo("d10974b4-ab79-4e91-a6c4-f7683a055246")]
+            public virtual RepoItemInfo ProtocolInfo
+            {
+                get
+                {
+                    return _protocolInfo;
+                }
+            }
+
+            /// <summary>
+            /// The IP_port_use_global_port item.
+            /// </summary>
+            [RepositoryItem("1bf96f9d-3e8e-4948-86d0-5cd85d5c1288")]
+            public virtual Ranorex.RadioButton IP_port_use_global_port
+            {
+                get
+                {
+                    return _ip_port_use_global_portInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IP_port_use_global_port item info.
+            /// </summary>
+            [RepositoryItemInfo("1bf96f9d-3e8e-4948-86d0-5cd85d5c1288")]
+            public virtual RepoItemInfo IP_port_use_global_portInfo
+            {
+                get
+                {
+                    return _ip_port_use_global_portInfo;
+                }
+            }
+
+            /// <summary>
+            /// The IP_port_use_custom_port item.
+            /// </summary>
+            [RepositoryItem("469aef8b-8a27-49a7-aa40-578bc8125af5")]
+            public virtual Ranorex.RadioButton IP_port_use_custom_port
+            {
+                get
+                {
+                    return _ip_port_use_custom_portInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IP_port_use_custom_port item info.
+            /// </summary>
+            [RepositoryItemInfo("469aef8b-8a27-49a7-aa40-578bc8125af5")]
+            public virtual RepoItemInfo IP_port_use_custom_portInfo
+            {
+                get
+                {
+                    return _ip_port_use_custom_portInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -25276,8 +26446,10 @@ namespace NformTester
             RepoItemInfo _alarms_system_defined_severityInfo;
             RepoItemInfo _alarms_system_defined_description_Info;
             RepoItemInfo _alarms_user_defined_nameInfo;
-            RepoItemInfo _alarms_user_defined_severityInfo;
+            RepoItemInfo _alarms_user_defined_severity_oldInfo;
             RepoItemInfo _alarms_user_defined_description_Info;
+            RepoItemInfo _alarms_commit_oldInfo;
+            RepoItemInfo _alarms_user_defined_severityInfo;
             RepoItemInfo _alarms_commitInfo;
 
             /// <summary>
@@ -25304,9 +26476,11 @@ namespace NformTester
                 _alarms_system_defined_severityInfo = new RepoItemInfo(this, "Alarms_system_defined_severity", "tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_defaultEventGrp']/container[@controlname='m_eventDefaultSeverityTbx']/text[@controlname='m_eventDefaultSeverityTbx-Ctl']/text[@accessiblename='<Severity>']", 30000, null, "e2dac947-e102-4b04-81b4-eb11a1e5d2eb");
                 _alarms_system_defined_description_Info = new RepoItemInfo(this, "Alarms_system_defined_description_", "tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_defaultEventGrp']/text[@controlname='m_eventDefaultDescriptionTbx']/text[@accessiblename='Description:']", 30000, null, "2d62b90c-231c-45a8-9ee6-5400ac6741a8");
                 _alarms_user_defined_nameInfo = new RepoItemInfo(this, "Alarms_user_defined_name", "tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventOverrideGrp']/container[@controlname='m_eventOverNameTbx']/text[@controlname='m_eventOverNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "58889a48-7bde-41e6-9aac-f779a592efc4");
-                _alarms_user_defined_severityInfo = new RepoItemInfo(this, "Alarms_user_defined_severity", "tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventOverrideGrp']/container[@controlname='m_eventOverSeverityCombo']/combobox[@controlname='m_eventOverSeverityCombo-Ctl']", 30000, null, "93191fb6-f641-4df1-94ce-5fbf5637a00f");
+                _alarms_user_defined_severity_oldInfo = new RepoItemInfo(this, "Alarms_user_defined_severity_old", "tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventOverrideGrp']/container[@controlname='m_eventOverSeverityCombo']/combobox[@controlname='m_eventOverSeverityCombo-Ctl']", 30000, null, "93191fb6-f641-4df1-94ce-5fbf5637a00f");
                 _alarms_user_defined_description_Info = new RepoItemInfo(this, "Alarms_user_defined_description_", "tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventOverrideGrp']/text[@controlname='m_eventOverDescriptionTbx']/text[@accessiblename='Description:']", 30000, null, "3d7a908c-31f6-41d0-831a-cbe8a7b13cb8");
-                _alarms_commitInfo = new RepoItemInfo(this, "Alarms_commit", "tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventOverrideGrp']/button[@controlname='m_eventCommitBtn']", 30000, null, "7c294da1-2c47-4cfa-9bdc-78481f646ff5");
+                _alarms_commit_oldInfo = new RepoItemInfo(this, "Alarms_commit_old", "tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventOverrideGrp']/button[@controlname='m_eventCommitBtn']", 30000, null, "7c294da1-2c47-4cfa-9bdc-78481f646ff5");
+                _alarms_user_defined_severityInfo = new RepoItemInfo(this, "Alarms_user_defined_severity", "tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventUsrGrp']/container[@controlname='m_eventUsrSeverityCombo']/combobox[@controlname='m_eventUsrSeverityCombo-Ctl']", 30000, null, "b2f18148-d4c2-4d1e-b21a-b9a41a6ec1e2");
+                _alarms_commitInfo = new RepoItemInfo(this, "Alarms_commit", "tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventUsrGrp']/button[@controlname='m_eventCommitBtn']", 30000, null, "51ad0d22-2471-4552-8288-37d93f954993");
             }
 
             /// <summary>
@@ -25742,26 +26916,26 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Alarms_user_defined_severity item.
+            /// The Alarms_user_defined_severity_old item.
             /// </summary>
             [RepositoryItem("93191fb6-f641-4df1-94ce-5fbf5637a00f")]
-            public virtual Ranorex.ComboBox Alarms_user_defined_severity
+            public virtual Ranorex.ComboBox Alarms_user_defined_severity_old
             {
                 get
                 {
-                    return _alarms_user_defined_severityInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                    return _alarms_user_defined_severity_oldInfo.CreateAdapter<Ranorex.ComboBox>(true);
                 }
             }
 
             /// <summary>
-            /// The Alarms_user_defined_severity item info.
+            /// The Alarms_user_defined_severity_old item info.
             /// </summary>
             [RepositoryItemInfo("93191fb6-f641-4df1-94ce-5fbf5637a00f")]
-            public virtual RepoItemInfo Alarms_user_defined_severityInfo
+            public virtual RepoItemInfo Alarms_user_defined_severity_oldInfo
             {
                 get
                 {
-                    return _alarms_user_defined_severityInfo;
+                    return _alarms_user_defined_severity_oldInfo;
                 }
             }
 
@@ -25790,9 +26964,57 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Alarms_commit item.
+            /// The Alarms_commit_old item.
             /// </summary>
             [RepositoryItem("7c294da1-2c47-4cfa-9bdc-78481f646ff5")]
+            public virtual Ranorex.Button Alarms_commit_old
+            {
+                get
+                {
+                    return _alarms_commit_oldInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_commit_old item info.
+            /// </summary>
+            [RepositoryItemInfo("7c294da1-2c47-4cfa-9bdc-78481f646ff5")]
+            public virtual RepoItemInfo Alarms_commit_oldInfo
+            {
+                get
+                {
+                    return _alarms_commit_oldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_user_defined_severity item.
+            /// </summary>
+            [RepositoryItem("b2f18148-d4c2-4d1e-b21a-b9a41a6ec1e2")]
+            public virtual Ranorex.ComboBox Alarms_user_defined_severity
+            {
+                get
+                {
+                    return _alarms_user_defined_severityInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_user_defined_severity item info.
+            /// </summary>
+            [RepositoryItemInfo("b2f18148-d4c2-4d1e-b21a-b9a41a6ec1e2")]
+            public virtual RepoItemInfo Alarms_user_defined_severityInfo
+            {
+                get
+                {
+                    return _alarms_user_defined_severityInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_commit item.
+            /// </summary>
+            [RepositoryItem("51ad0d22-2471-4552-8288-37d93f954993")]
             public virtual Ranorex.Button Alarms_commit
             {
                 get
@@ -25804,7 +27026,7 @@ namespace NformTester
             /// <summary>
             /// The Alarms_commit item info.
             /// </summary>
-            [RepositoryItemInfo("7c294da1-2c47-4cfa-9bdc-78481f646ff5")]
+            [RepositoryItemInfo("51ad0d22-2471-4552-8288-37d93f954993")]
             public virtual RepoItemInfo Alarms_commitInfo
             {
                 get
@@ -27647,8 +28869,8 @@ namespace NformTester
             RepoItemInfo _obtain_setting_from_deviceInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
-            RepoItemInfo _device_typeInfo;
-            RepoItemInfo _device_protocolInfo;
+            RepoItemInfo _device_type_409Info;
+            RepoItemInfo _device_protocol_409Info;
             RepoItemInfo _addsingle_editInfo;
             RepoItemInfo _customize_hostname_or_ip_addressInfo;
             RepoItemInfo _search_device_tableInfo;
@@ -27668,6 +28890,8 @@ namespace NformTester
             RepoItemInfo _semicolonInfo;
             RepoItemInfo _tabInfo;
             RepoItemInfo _tildeInfo;
+            RepoItemInfo _device_typeInfo;
+            RepoItemInfo _device_protocolInfo;
 
             /// <summary>
             /// Creates a new FormAdd_Device  folder.
@@ -27687,8 +28911,8 @@ namespace NformTester
                 _obtain_setting_from_deviceInfo = new RepoItemInfo(this, "Obtain_setting_from_device", "container/container[@controlname='m_wizardPageS1']/checkbox[@controlname='m_s1DiscoverChk']", 30000, null, "86ec74fa-a7ba-47a5-af0b-1c2e1aaf5a39");
                 _nameInfo = new RepoItemInfo(this, "Name", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceNameTbx']/text[@controlname='m_s2DeviceNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "611d9659-0449-434a-9b9f-ab4bf0afbf16");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceDscrTbx']/text[@controlname='m_s2DeviceDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "aa567937-6505-4cf5-a457-72c46336f9d8");
-                _device_typeInfo = new RepoItemInfo(this, "Device_type", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/container[@controlname='m_devTypeCombo']/combobox[@controlname='m_devTypeCombo-Ctl']", 30000, null, "7fe3dab9-cfb9-4903-97ed-489c8230afec");
-                _device_protocolInfo = new RepoItemInfo(this, "Device_protocol", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/container[@controlname='m_devProtocolTbx']/text[@controlname='m_devProtocolTbx-Ctl']/text[@accessiblename='Protocol:']", 30000, null, "25cd4b6a-e82f-4a1f-b109-619b5cbdb078");
+                _device_type_409Info = new RepoItemInfo(this, "Device_type_409", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/combobox[@controlname='m_devTypeCombo']", 30000, null, "7fe3dab9-cfb9-4903-97ed-489c8230afec");
+                _device_protocol_409Info = new RepoItemInfo(this, "Device_protocol_409", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/combobox[@controlname='m_devProtocolCombo']", 30000, null, "25cd4b6a-e82f-4a1f-b109-619b5cbdb078");
                 _addsingle_editInfo = new RepoItemInfo(this, "AddSingle_edit", "container/container[@controlname='m_wizardPageS2']/button[@controlname='m_s2EditBtn']", 30000, null, "326f10d0-e762-4eba-9d48-7a46b316e09f");
                 _customize_hostname_or_ip_addressInfo = new RepoItemInfo(this, "Customize_hostname_or_IP_address", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DevAddrTbx']/text[@controlname='m_s2DevAddrTbx-Ctl']/text[@accessiblename='Hostname or IP address:']", 30000, null, "cf0e05dd-827b-4b5d-a4e3-e7a28d4428e3");
                 _search_device_tableInfo = new RepoItemInfo(this, "Search_device_table", "container/container[@controlname='m_wizardPageM1']/table[@controlname='m_m1SearchDgrid']", 30000, null, "81eafb32-b64c-4e27-acd3-dd0c58e40d22");
@@ -27708,6 +28932,8 @@ namespace NformTester
                 _semicolonInfo = new RepoItemInfo(this, "Semicolon", "container/container[@controlname='m_wizardPageI1']/container[@controlname='m_i1DelimiterCtl']/container/container/radiobutton[@controlname='m_semiRbtn']", 30000, null, "cadb23c1-c0a5-4229-a4cb-5c7678a99998");
                 _tabInfo = new RepoItemInfo(this, "Tab", "container/container[@controlname='m_wizardPageI1']/container[@controlname='m_i1DelimiterCtl']/container/container/radiobutton[@controlname='m_tabRbtn']", 30000, null, "a415fae0-eab3-4f5b-9868-a1b30ea407f4");
                 _tildeInfo = new RepoItemInfo(this, "Tilde", "container/container[@controlname='m_wizardPageI1']/container[@controlname='m_i1DelimiterCtl']/container/container/radiobutton[@controlname='m_tildeRbtn']", 30000, null, "7105ef89-f20e-49c8-bc87-8e28f9109de6");
+                _device_typeInfo = new RepoItemInfo(this, "Device_type", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/container[@controlname='m_devTypeCombo']/combobox[@controlname='m_devTypeCombo-Ctl']", 30000, null, "2b940f98-df55-4c7e-adb9-b0fdf129f673");
+                _device_protocolInfo = new RepoItemInfo(this, "Device_protocol", "container/container[@controlname='m_wizardPageS2']/container[@controlname='m_s2DeviceTypeCtl']/container/container[@controlname='m_devProtocolTbx']/text[@controlname='m_devProtocolTbx-Ctl']", 30000, null, "9394910f-349a-4881-87bb-418fb42abea4");
             }
 
             /// <summary>
@@ -27999,50 +29225,50 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Device_type item.
+            /// The Device_type_409 item.
             /// </summary>
             [RepositoryItem("7fe3dab9-cfb9-4903-97ed-489c8230afec")]
-            public virtual Ranorex.ComboBox Device_type
+            public virtual Ranorex.ComboBox Device_type_409
             {
                 get
                 {
-                    return _device_typeInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                    return _device_type_409Info.CreateAdapter<Ranorex.ComboBox>(true);
                 }
             }
 
             /// <summary>
-            /// The Device_type item info.
+            /// The Device_type_409 item info.
             /// </summary>
             [RepositoryItemInfo("7fe3dab9-cfb9-4903-97ed-489c8230afec")]
-            public virtual RepoItemInfo Device_typeInfo
+            public virtual RepoItemInfo Device_type_409Info
             {
                 get
                 {
-                    return _device_typeInfo;
+                    return _device_type_409Info;
                 }
             }
 
             /// <summary>
-            /// The Device_protocol item.
+            /// The Device_protocol_409 item.
             /// </summary>
             [RepositoryItem("25cd4b6a-e82f-4a1f-b109-619b5cbdb078")]
-            public virtual Ranorex.Text Device_protocol
+            public virtual Ranorex.ComboBox Device_protocol_409
             {
                 get
                 {
-                    return _device_protocolInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _device_protocol_409Info.CreateAdapter<Ranorex.ComboBox>(true);
                 }
             }
 
             /// <summary>
-            /// The Device_protocol item info.
+            /// The Device_protocol_409 item info.
             /// </summary>
             [RepositoryItemInfo("25cd4b6a-e82f-4a1f-b109-619b5cbdb078")]
-            public virtual RepoItemInfo Device_protocolInfo
+            public virtual RepoItemInfo Device_protocol_409Info
             {
                 get
                 {
-                    return _device_protocolInfo;
+                    return _device_protocol_409Info;
                 }
             }
 
@@ -28499,6 +29725,54 @@ namespace NformTester
                 get
                 {
                     return _tildeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Device_type item.
+            /// </summary>
+            [RepositoryItem("2b940f98-df55-4c7e-adb9-b0fdf129f673")]
+            public virtual Ranorex.ComboBox Device_type
+            {
+                get
+                {
+                    return _device_typeInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Device_type item info.
+            /// </summary>
+            [RepositoryItemInfo("2b940f98-df55-4c7e-adb9-b0fdf129f673")]
+            public virtual RepoItemInfo Device_typeInfo
+            {
+                get
+                {
+                    return _device_typeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Device_protocol item.
+            /// </summary>
+            [RepositoryItem("9394910f-349a-4881-87bb-418fb42abea4")]
+            public virtual Ranorex.Text Device_protocol
+            {
+                get
+                {
+                    return _device_protocolInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Device_protocol item info.
+            /// </summary>
+            [RepositoryItemInfo("9394910f-349a-4881-87bb-418fb42abea4")]
+            public virtual RepoItemInfo Device_protocolInfo
+            {
+                get
+                {
+                    return _device_protocolInfo;
                 }
             }
         }
