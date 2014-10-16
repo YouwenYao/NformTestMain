@@ -168,10 +168,14 @@ namespace NformTester.lib
 			repo.NFormApp.LogintoLiebertNformWindow.FormLogin_to_LiebertR_Nform.ServerCombo.PressKeys(item.getArg3Text());
 			repo.NFormApp.LogintoLiebertNformWindow.FormLogin_to_LiebertR_Nform.Login.Click();
 			Delay.Milliseconds(3000);
-			if(repo.NFormApp.LogintoLiebertNformWindow.FormEvaluation_Period_Expiration.OKInfo.Exists())
-			{
-				repo.NFormApp.LogintoLiebertNformWindow.FormEvaluation_Period_Expiration.OK.Click();
-			}
+		//	if(repo.NFormApp.LogintoLiebertNformWindow.FormEvaluation_Period_Expiration.OKInfo.Exists())
+		//	{
+		//		repo.NFormApp.LogintoLiebertNformWindow.FormEvaluation_Period_Expiration.OK.Click();
+		//	}
+		//	if(repo.NFormApp.LicensesWindow.FormReminder.RawTextNoInfo.Exists())
+		//	{
+		//		repo.NFormApp.LicensesWindow.FormReminder.RawTextNo.Click("53;10");
+		//	}
 		}
 		
 		//**********************************************************************

@@ -286,6 +286,14 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_banner']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnAlarm']/button[@controlname='m_statusBtn']
 					</item>
 					<item
+					name="Status_Maintainance"
+					id="3cc71125-a72b-4afb-bd70-296ff31f0ced"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_banner']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnMaint']/button[@controlname='m_statusBtn']
+					</item>
+					<item
 					name="Normal_count"
 					id="17584ebc-db52-4caf-b909-d149982e940e"
 					searchtimeout="30000ms"

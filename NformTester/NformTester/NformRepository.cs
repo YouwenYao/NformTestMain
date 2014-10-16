@@ -922,6 +922,7 @@ namespace NformTester
             RepoItemInfo _status_nocommInfo;
             RepoItemInfo _status_normalInfo;
             RepoItemInfo _status_alarmInfo;
+            RepoItemInfo _status_maintainanceInfo;
             RepoItemInfo _normal_countInfo;
             RepoItemInfo _nocomm_countInfo;
             RepoItemInfo _alarm_countInfo;
@@ -1070,6 +1071,7 @@ namespace NformTester
                 _status_nocommInfo = new RepoItemInfo(this, "Status_NoComm", "container[@controlname='m_banner']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnNoComms']/button[@controlname='m_statusBtn']", 30000, null, "991b13cd-c957-4e51-884c-7001e330725e");
                 _status_normalInfo = new RepoItemInfo(this, "Status_Normal", "container[@controlname='m_banner']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnNormal']/button[@controlname='m_statusBtn']", 30000, null, "e667bba4-ee7f-4acc-abba-2bcdb731c5a3");
                 _status_alarmInfo = new RepoItemInfo(this, "Status_Alarm", "container[@controlname='m_banner']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnAlarm']/button[@controlname='m_statusBtn']", 30000, null, "e625a5c1-33eb-4bc1-8aa0-dd7108462721");
+                _status_maintainanceInfo = new RepoItemInfo(this, "Status_Maintainance", "container[@controlname='m_banner']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnMaint']/button[@controlname='m_statusBtn']", 30000, null, "3cc71125-a72b-4afb-bd70-296ff31f0ced");
                 _normal_countInfo = new RepoItemInfo(this, "Normal_count", "container[@controlname='m_banner']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnNormal']/text[@controlname='m_statusBtnLbl']", 30000, null, "17584ebc-db52-4caf-b909-d149982e940e");
                 _nocomm_countInfo = new RepoItemInfo(this, "NoComm_count", "container[@controlname='m_banner']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnNoComms']/text[@controlname='m_statusBtnLbl']", 30000, null, "4492c106-50ab-40dc-89fc-637a88d06722");
                 _alarm_countInfo = new RepoItemInfo(this, "Alarm_count", "container[@controlname='m_banner']/container[@controlname='m_statusBtnPnl']/element[@controlname='m_btnAlarm']/text[@controlname='m_statusBtnLbl']", 30000, null, "937c043a-c41c-4747-b909-cdd74df8cccd");
@@ -1555,6 +1557,30 @@ namespace NformTester
                 get
                 {
                     return _status_alarmInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Status_Maintainance item.
+            /// </summary>
+            [RepositoryItem("3cc71125-a72b-4afb-bd70-296ff31f0ced")]
+            public virtual Ranorex.Button Status_Maintainance
+            {
+                get
+                {
+                    return _status_maintainanceInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Status_Maintainance item info.
+            /// </summary>
+            [RepositoryItemInfo("3cc71125-a72b-4afb-bd70-296ff31f0ced")]
+            public virtual RepoItemInfo Status_MaintainanceInfo
+            {
+                get
+                {
+                    return _status_maintainanceInfo;
                 }
             }
 
