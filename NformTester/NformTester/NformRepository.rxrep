@@ -1301,6 +1301,70 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					addcaps="cell,accessible">
 						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_alarmsPage']/container/container/table/row[@accessiblename='Row 0']/cell[@accessiblename='Source Row 0']
 					</item>
+					<item
+					name="Collapsed_Status_Nocom"
+					id="177a44a8-792b-4251-bd66-dc3a3b28be49"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='LxStatusButtonPanel']/element[@controlname='m_btnNoComms']/button[@controlname='m_statusBtn']
+					</item>
+					<item
+					name="Collapsed_Status_Normal"
+					id="3a0a0002-62a9-40f1-9b31-512a69e1f956"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='LxStatusButtonPanel']/element[@controlname='m_btnNormal']/button[@controlname='m_statusBtn']
+					</item>
+					<item
+					name="Collapsed_Status_Alarm"
+					id="698d914e-e052-4ec7-a011-b8fd53bb9426"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='LxStatusButtonPanel']/element[@controlname='m_btnAlarm']/button[@controlname='m_statusBtn']
+					</item>
+					<item
+					name="Collapsed_Status_Mainenance"
+					id="ba6c9227-5e5c-48f6-82d6-5413fab30cfa"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='LxStatusButtonPanel']/element[@controlname='m_btnMaint']/button[@controlname='m_statusBtn']
+					</item>
+					<item
+					name="Collapsed_Nocom_Count"
+					id="c30e9624-ba5d-4e0e-89ef-ba0c4cc4e4aa"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='LxStatusButtonPanel']/element[@controlname='m_btnNoComms']/text[@controlname='m_statusBtnLbl']
+					</item>
+					<item
+					name="Collapsed_Normal_Count"
+					id="766bc5cc-26c1-4e40-8f4f-b66685764d50"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='LxStatusButtonPanel']/element[@controlname='m_btnNormal']/text[@controlname='m_statusBtnLbl']
+					</item>
+					<item
+					name="Collapsed_Alarm_Count"
+					id="0bae4ba0-2bdb-460d-a32e-8bddd0b627ea"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='LxStatusButtonPanel']/element[@controlname='m_btnAlarm']/text[@controlname='m_statusBtnLbl']
+					</item>
+					<item
+					name="Collapsed_Mainenance_Count"
+					id="fb00acfb-e271-4e3c-abfc-0e16bcb47f5f"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='LxStatusButtonPanel']/element[@controlname='m_btnMaint']/text[@controlname='m_statusBtnLbl']
+					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
 					</basepath>
@@ -6444,12 +6508,12 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 				isrooted="True"
 				usecache="True">
 					<item
-					name="Yes"
+					name="Yes_old"
 					id="aca1f6fb-b714-4a71-894f-f7665271b0d8"
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='Confirm Action Set Delete']/button[@text='&#26159;(&amp;Y)']
+						/form[@title='Confirm Action Set Delete']/button[@text='Yes']
 					</item>
 					<item
 					name="No"
@@ -6466,6 +6530,14 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="button"
 					addcaps="button,accessible">
 						/form[@title='Confirm Action Set Delete']/titlebar/button[@accessiblename='Close']
+					</item>
+					<item
+					name="Yes"
+					id="039ae13a-48f7-4f7b-a14f-3245da1224dc"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Confirm Action Set Delete']/button[@text='&amp;Yes']
 					</item>
 					<basepath>
 						/form[@title='Confirm Action Set Delete']
@@ -6991,7 +7063,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container/button[@accessiblename='Down']
 					</item>
 					<item
-					name="Interval_every_txt"
+					name="Interval_every_txt_old"
 					id="430bb00f-9c2e-4e3c-9a5c-61fb4b70ea56"
 					searchtimeout="30000ms"
 					capname="text"
@@ -7638,6 +7710,14 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 					addcaps="list,accessible">
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_smtpTab']/container[@controlname='m_smtpSrvrListGrp']/table/list
 					</item>
+					<item
+					name="Interval_every_txt"
+					id="cf6de4a1-92e8-4a28-8d6b-6578b3a60c55"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container[@controlname='m_devPollIntervalNbx']/container/text[@controlname='upDownEdit']
+					</item>
 					<basepath>
 						/form[@controlname='LxServerPropsDlg']
 					</basepath>
@@ -7889,7 +7969,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@accessiblename='Communications']
 					</item>
 					<item
-					name="Liebert_protocol"
+					name="Liebert_protocol_old"
 					id="24875cc4-81ed-4f35-a8b5-7b562cbed644"
 					searchtimeout="30000ms"
 					capname="tabpage"
@@ -8207,7 +8287,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_ipPortCfg']/container/container/container/button[@accessiblename='Down']
 					</item>
 					<item
-					name="IP_port_use_custom_port_txt"
+					name="IP_port_use_custom_port_txt_old"
 					id="c155a7e1-edd4-4803-b3a9-0108faf737b5"
 					searchtimeout="30000ms"
 					capname="text"
@@ -8373,6 +8453,22 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="radiobutton"
 					addcaps="radiobutton,control,nativewindow">
 						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/radiobutton[@controlname='m_customRbtn']
+					</item>
+					<item
+					name="IP_port_use_custom_port_txt"
+					id="99aa770a-a46f-4607-92b2-34c41c9967f9"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@controlname='m_snmpPage']/container[@controlname='m_snmpPortCfg']/container/container/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="Liebert_protocol"
+					id="0ff3e4f8-7cd7-4c13-89ec-1755c9a67bb0"
+					searchtimeout="30000ms"
+					capname="tabpage"
+					addcaps="tabpage,accessible">
+						/form[@controlname='LxMgdDeviceEditDlg']/tabpagelist/tabpage[@accessiblename='Emerson protocol']
 					</item>
 					<basepath>
 						/form[@controlname='LxMgdDeviceEditDlg']
@@ -8589,7 +8685,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/table[@controlname='m_eventListView']
 					</item>
 					<item
-					name="Data_system_defined_name"
+					name="Data_system_defined_name_old"
 					id="f03ee6b3-0728-47b1-acba-c2a5f262a968"
 					searchtimeout="30000ms"
 					capname="text"
@@ -8597,7 +8693,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_dataPage']/container[@controlname='m_dataDefaultGrp']/container/text[@controlname='m_dataDefaultNameTbx-Ctl']/text[@accessiblename='Name:']
 					</item>
 					<item
-					name="Data_system_defined_description"
+					name="Data_system_defined_description_old"
 					id="6c2f349c-b446-49d1-b8e0-821753bbb309"
 					searchtimeout="30000ms"
 					capname="text"
@@ -8605,7 +8701,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_dataPage']/container[@controlname='m_dataDefaultGrp']/text[@controlname='m_dataDefaultDescriptionTbx']/text[@accessiblename='Description:']
 					</item>
 					<item
-					name="Data_user_defined_name"
+					name="Data_user_defined_name_old"
 					id="894784cf-fd9d-4b6d-b25f-987b6037e600"
 					searchtimeout="30000ms"
 					capname="text"
@@ -8613,7 +8709,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_dataPage']/container[@controlname='m_dataOverrideGrp']/container/text[@controlname='m_dataOverNameTbx-Ctl']/text[@accessiblename='Name:']
 					</item>
 					<item
-					name="Data_user_defined_description"
+					name="Data_user_defined_description_old"
 					id="20184c5b-1fe7-48b9-acc2-062b0b561a19"
 					searchtimeout="30000ms"
 					capname="text"
@@ -8621,7 +8717,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_dataPage']/container[@controlname='m_dataOverrideGrp']/text[@controlname='m_dataOverDescriptionTbx']/text[@accessiblerole='Text']
 					</item>
 					<item
-					name="Data_commit"
+					name="Data_commit_old"
 					id="05b58b07-132b-4355-ba4c-591bbe7ca282"
 					searchtimeout="30000ms"
 					capname="button"
@@ -8629,7 +8725,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_dataPage']/container[@controlname='m_dataOverrideGrp']/button[@controlname='m_dataCommitBtn']
 					</item>
 					<item
-					name="Alarms_system_defined_name"
+					name="Alarms_system_defined_name_old"
 					id="299b2898-e425-4b22-8024-63a5c8a587a8"
 					searchtimeout="30000ms"
 					capname="text"
@@ -8637,7 +8733,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_defaultEventGrp']/container[@controlname='m_eventDefaultNameTbx']/text[@controlname='m_eventDefaultNameTbx-Ctl']/text[@accessiblename='Name:']
 					</item>
 					<item
-					name="Alarms_system_defined_severity"
+					name="Alarms_system_defined_severity_old"
 					id="e2dac947-e102-4b04-81b4-eb11a1e5d2eb"
 					searchtimeout="30000ms"
 					capname="text"
@@ -8645,7 +8741,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_defaultEventGrp']/container[@controlname='m_eventDefaultSeverityTbx']/text[@controlname='m_eventDefaultSeverityTbx-Ctl']/text[@accessiblename='&lt;Severity&gt;']
 					</item>
 					<item
-					name="Alarms_system_defined_description_"
+					name="Alarms_system_defined_description_old"
 					id="2d62b90c-231c-45a8-9ee6-5400ac6741a8"
 					searchtimeout="30000ms"
 					capname="text"
@@ -8653,7 +8749,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_defaultEventGrp']/text[@controlname='m_eventDefaultDescriptionTbx']/text[@accessiblename='Description:']
 					</item>
 					<item
-					name="Alarms_user_defined_name"
+					name="Alarms_user_defined_name_old"
 					id="58889a48-7bde-41e6-9aac-f779a592efc4"
 					searchtimeout="30000ms"
 					capname="text"
@@ -8669,7 +8765,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventOverrideGrp']/container[@controlname='m_eventOverSeverityCombo']/combobox[@controlname='m_eventOverSeverityCombo-Ctl']
 					</item>
 					<item
-					name="Alarms_user_defined_description_"
+					name="Alarms_user_defined_description_old"
 					id="3d7a908c-31f6-41d0-831a-cbe8a7b13cb8"
 					searchtimeout="30000ms"
 					capname="text"
@@ -8699,6 +8795,86 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="button"
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventUsrGrp']/button[@controlname='m_eventCommitBtn']
+					</item>
+					<item
+					name="Alarms_system_defined_name"
+					id="433dfc45-b015-4938-b250-bd09a5a7f7c6"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventSysGrp']/container[@controlname='m_eventSysNameTbx']/text[@controlname='m_eventSysNameTbx-Ctl']
+					</item>
+					<item
+					name="Alarms_user_defined_name"
+					id="2ee6738e-7679-41f1-a66c-ac6ad1245c64"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventUsrGrp']/container[@controlname='m_eventUsrNameTbx']/text[@controlname='m_eventUsrNameTbx-Ctl']
+					</item>
+					<item
+					name="Alarms_system_defined_severity"
+					id="49546040-9980-43cf-b9b7-87d57be04dd0"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventSysGrp']/container[@controlname='m_eventSysSeverityTbx']/text[@controlname='m_eventSysSeverityTbx-Ctl']
+					</item>
+					<item
+					name="Data_commit"
+					id="d0b2bb62-e1eb-4c1f-8894-533ef11b5023"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_dataPage']/container[@controlname='m_dataUsrGrp']/button[@controlname='m_dataCommitBtn']
+					</item>
+					<item
+					name="Data_system_defined_name"
+					id="4c5d7135-b314-4505-9966-cecb2480bc56"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_dataPage']/container[@controlname='m_dataSysGrp']/container[@controlname='m_dataSysNameTbx']/text[@controlname='m_dataSysNameTbx-Ctl']
+					</item>
+					<item
+					name="Data_user_defined_name"
+					id="cdc02ad9-259c-4dab-baf1-80e45d9bb7f8"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_dataPage']/container[@controlname='m_dataUsrGrp']/container[@controlname='m_dataUsrNameTbx']/text[@controlname='m_dataUsrNameTbx-Ctl']
+					</item>
+					<item
+					name="Data_system_defined_description"
+					id="2072d7d1-7b44-4529-844b-0513ba632c92"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_dataPage']/container[@controlname='m_dataSysGrp']/container[@controlname='m_dataSysDscrTbx']/text[@controlname='m_dataSysDscrTbx-Ctl']
+					</item>
+					<item
+					name="Data_user_defined_description"
+					id="6f378df2-16ff-4745-b9d2-b62dc6d7e27e"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_dataPage']/container[@controlname='m_dataUsrGrp']/container[@controlname='m_dataUsrDscrTbx']/text[@controlname='m_dataUsrDscrTbx-Ctl']
+					</item>
+					<item
+					name="Alarms_system_defined_description_"
+					id="53606980-4617-4eb6-9797-f4bba8b8bf24"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventSysGrp']/container[@controlname='m_eventSysDscrTbx']/text[@controlname='m_eventSysDscrTbx-Ctl']
+					</item>
+					<item
+					name="Alarms_user_defined_description_"
+					id="703be4b3-7ed5-4f42-8032-0d131903e05f"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxDeviceOverrideDlg']/tabpagelist/tabpage[@controlname='m_eventPage']/container[@controlname='m_eventUsrGrp']/container[@controlname='m_eventUsrDscrTbx']/text[@controlname='m_eventUsrDscrTbx-Ctl']
 					</item>
 					<basepath>
 						/form[@controlname='LxDeviceOverrideDlg']
@@ -10142,14 +10318,6 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 						/form[@controlname='LxFloorPlanDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']
 					</item>
 					<item
-					name="Picture"
-					id="ee308404-edfc-42dd-abd3-657b13e68f9c"
-					searchtimeout="30000ms"
-					capname="picture"
-					addcaps="picture,control,nativewindow">
-						/form[@controlname='LxFloorPlanDlg']/container[@controlname='m_floorPlan']/picture[@controlname='m_pictureBox']
-					</item>
-					<item
 					name="Image_size"
 					id="ef338fc9-1373-4b5d-ad13-310ef9de3321"
 					searchtimeout="30000ms"
@@ -10196,6 +10364,30 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="radiobutton"
 					addcaps="radiobutton,control,nativewindow">
 						/form[@controlname='LxFloorPlanDlg']/container[@controlname='m_labelPropertiesGrp']/container/radiobutton[@controlname='m_rightDfltPosnRbtn']
+					</item>
+					<item
+					name="Bigger"
+					id="c9187c65-5cdd-4855-ad5d-8370e5c5c748"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxFloorPlanDlg']/container[@controlname='m_sizeSelectorGrp']/slider/button[@accessiblename='Page right']
+					</item>
+					<item
+					name="Smaller"
+					id="1c2748dd-c789-46cf-bf06-7b6744408dff"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxFloorPlanDlg']/container[@controlname='m_sizeSelectorGrp']/slider/button[@accessiblename='Page left']
+					</item>
+					<item
+					name="MFloorPlan"
+					id="8f6a2fff-f7af-463d-b4c0-1f40bfddb071"
+					searchtimeout="30000ms"
+					capname="container"
+					addcaps="container,control,nativewindow">
+						/form[@controlname='LxFloorPlanDlg']/container[@controlname='m_floorPlan']
 					</item>
 					<basepath>
 						/form[@controlname='LxFloorPlanDlg']
@@ -10353,6 +10545,171 @@ tNxYTlOOPw1Z/tRd9MN4fhnagmhvB+UztucHQ+gJCsCxezuPt2xGERePuqF7NlTmLpSmZ9yueUqh
 oYNcXTvlta1eQG1RMaUSGcVxchRiOfmx8VTcUnLT4kJjB5UVChvh8gM4qweJGi4pm/6eA9+B8tyz
 asfJM0NmDaToIFYFJxQ/OHzVzbm8uoUBMvUoiVqIKYHI/O8cyp4gJO0V+xMcJGffXxgQnvmE0Au9
 BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
+					</icon>
+				</appfolder>
+				<appfolder
+				name="FormDefault_Label_Properties"
+				id="3791a4e0-a108-43ff-b97e-f9fd9907e659"
+				searchtimeout="30000ms"
+				capname="form"
+				addcaps="form,control,nativewindow"
+				isrooted="True"
+				usecache="True">
+					<item
+					name="OK"
+					id="cd1d9c1d-74ec-4339-ae07-d09d0b4020c0"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxFloorPlanLblPropDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']
+					</item>
+					<item
+					name="Help"
+					id="fd9ad2bd-fdd6-4713-ba39-74a22a54d2d9"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxFloorPlanLblPropDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']
+					</item>
+					<item
+					name="MResetToDefaultsBtn"
+					id="6e708421-4c16-4021-b9aa-c5d4f6b20f2d"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxFloorPlanLblPropDlg']/button[@controlname='m_resetToDefaultsBtn']
+					</item>
+					<item
+					name="Close"
+					id="ad5d6f6a-a2ed-44c0-8e11-c7f3b627fe52"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxFloorPlanLblPropDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']
+					</item>
+					<item
+					name="VOILAvoila0123456789"
+					id="ba8118f8-83e9-47f0-948a-6d8b9fe58b0a"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,accessible">
+						/form[@controlname='LxFloorPlanLblPropDlg']/container[@controlname='m_sampleGrpBox']/text/text[@accessiblename='VOILAvoila!0123456789']
+					</item>
+					<item
+					name="MPreviewLbl"
+					id="0e97a3c2-f4ce-4ae5-89b7-987914a2ebb7"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxFloorPlanLblPropDlg']/container[@controlname='m_sampleGrpBox']/text[@controlname='m_previewLbl']
+					</item>
+					<item
+					name="CloseX"
+					id="b95b7819-0f36-4695-aa72-9723855e7504"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxFloorPlanLblPropDlg']/titlebar/button[@accessiblename='Close']
+					</item>
+					<item
+					name="MBackColorBtn"
+					id="3dd47b2d-33e4-48b5-8fd9-ba87bfac88a3"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxFloorPlanLblPropDlg']/container[@controlname='m_cfgGroupBox']/button[@controlname='m_backColorBtn']
+					</item>
+					<item
+					name="MForeColorBtn"
+					id="2c9b0362-5b19-4dc0-9fcb-2b1fbb362051"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxFloorPlanLblPropDlg']/container[@controlname='m_cfgGroupBox']/button[@controlname='m_foreColorBtn']
+					</item>
+					<item
+					name="MFontBtn"
+					id="1ea1aa5d-f16c-44e5-b082-1f3f6c9107fe"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxFloorPlanLblPropDlg']/container[@controlname='m_cfgGroupBox']/button[@controlname='m_fontBtn']
+					</item>
+					<item
+					name="MShowLblBorderChk"
+					id="8ed1d276-d30e-480e-8d56-1d42e183708b"
+					searchtimeout="30000ms"
+					capname="checkbox"
+					addcaps="checkbox,control,nativewindow">
+						/form[@controlname='LxFloorPlanLblPropDlg']/container[@controlname='m_cfgGroupBox']/checkbox[@controlname='m_showLblBorderChk']
+					</item>
+					<basepath>
+						/form[@controlname='LxFloorPlanLblPropDlg']
+					</basepath>
+					<icon>
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH2SURBVDhPrdNfSJNhFMfxR1DbCmXm1DLZTdAo
+jOgiIuwiCNMIAiUoFClmWVkJYZoZJpoIaix0tF6zjGnOmiNLykGjrEkYGFGRwVbNWrUtN5t/WkU3
+3zKieqEYZA+cy/P5HXjOEeJ/vDsDDv6lfmbPNP9pkCEpiU/jHXz0thB2VzM9UszU/VwmBtdyoSru
+V8/fgEGjmrCnkQ+uMqYfFTB5L4uJWyt536+hvWJeZOB2S+JvqRmE7FrG+5IZsyqQSufKgdEV0TiX
+x/A4PZbhZQocS5XY9fOZHMoiNJNq0xDojefdpWh8XQJDiVIOTF3tIWQ2EZAMeBuOY10cR3+jitAN
+LcG+JAI9SvzdUbztFHjOC/TFCjkQPGvE31SPp7KMF3sKMWgSuFKvIvgtdcwSg88seGMSvGoXuNsE
+DbvnyIHXx47g3l+EM28LT7LXU7UgGUtNPP6LUXh/pI6eEzxvFTglQV1hrBxwFWxjZFMmDzNWMZyu
+Za86NeJuyPagPCWFA+qFFCWmsj1hEfmqNCp7X9Lh4Hu13YSTNqi9DIe6YONhW+RvLDW7kOxw4jpU
+W+FgJ+xqhfzmL6zWdUcGdhofcNQCJSbQnYY8/Wdy6gJkVzxjSc6ZyEBu7QA7TsHWpjCba3xsKH/K
+un13WaO7RlpmsxyY1THN5qK/Am2J0IFS6yHBAAAAAElFTkSuQmCC
+					</icon>
+				</appfolder>
+				<appfolder
+				name="NformViewer"
+				id="0d760534-7cbf-485f-ab78-2f1a426f8c99"
+				searchtimeout="30000ms"
+				capname="contextmenu"
+				addcaps="contextmenu,control,nativewindow"
+				isrooted="True"
+				usecache="True">
+					<item
+					name="DefaultLabelProperties"
+					id="92345064-284e-4d02-bd7d-dbf4b0274572"
+					searchtimeout="30000ms"
+					capname="menuitem"
+					addcaps="menuitem,accessible">
+						/contextmenu/menuitem[@accessiblename~'^Default\ Label\ Properties\.']
+					</item>
+					<item
+					name="ResetAllLabelProperties"
+					id="146a33bb-ea63-4598-a3d4-8904d92302e6"
+					searchtimeout="30000ms"
+					capname="menuitem"
+					addcaps="menuitem,accessible">
+						/contextmenu/menuitem[@accessiblename~'^Reset\ All\ Label\ Propertie']
+					</item>
+					<item
+					name="ResetAllLabelPositions"
+					id="d102b0f2-ef1b-448a-9513-8e9fa5f3e0a7"
+					searchtimeout="30000ms"
+					capname="menuitem"
+					addcaps="menuitem,accessible">
+						/contextmenu/menuitem[@accessiblename='Reset All Label Positions']
+					</item>
+					<item
+					name="NformViewer"
+					id="f1115754-410a-46bc-8c3c-7a2ec6dc13cf"
+					searchtimeout="30000ms"
+					capname="contextmenu"
+					addcaps="contextmenu,control,nativewindow">
+						/contextmenu
+					</item>
+					<basepath>
+						/contextmenu
+					</basepath>
+					<icon>
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAALVJREFUOE9j+P//PwMlGK7ZJiD7/5oVM4nGMEtRDGBgAHEJA5BFWA0A
+iwIN2XHw/P+y9rn/M6om/o/MbvnvFVv2H+RCGMBrAMwQfO4gaADMkGUb9/2PzGn+7xlbTpoLYLbj
+ChOiXQAyAISnLlxPnAtgGmBeOHfu3H8QRgc4XQDTAHM6iG7onERcGHR1VMMtQjaAaBdAnQU2ZPvB
+c2C/k+QCZANAhsC8Q5ILKMoL5OZIirIyyFIAnawJImbUhwYAAAAASUVORK5CYII=
 					</icon>
 				</appfolder>
 			</folder>
@@ -11848,6 +12205,14 @@ N7DLAAAAAElFTkSuQmCC
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxServiceCtlDlg']/button[@controlname='m_restartBtn']
 					</item>
+					<item
+					name="NformServiceStatus"
+					id="e8ea60ff-fa8c-416a-bf94-eb3251190d6f"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,accessible">
+						/form[@controlname='LxServiceCtlDlg']/container[@controlname='m_srvcStatusTbx']/text[@controlname='m_srvcStatusTbx-Ctl']/text[@accessiblename='Nform service status:']
+					</item>
 					<basepath>
 						/form[@controlname='LxServiceCtlDlg']
 					</basepath>
@@ -12255,7 +12620,7 @@ gg==
 				isrooted="True"
 				usecache="True">
 					<item
-					name="Directory"
+					name="Directory_old"
 					id="61343b20-a409-46b5-9157-b4af2df3dfa1"
 					searchtimeout="30000ms"
 					capname="text"
@@ -12285,6 +12650,14 @@ gg==
 					capname="button"
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxImportG1DataDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']
+					</item>
+					<item
+					name="Directory"
+					id="d9d63c93-77d9-481b-956c-af8d5a62db36"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxImportG1DataDlg']/container[@controlname='m_importDirTbx']/text[@controlname='m_importDirTbx-Ctl']
 					</item>
 					<basepath>
 						/form[@controlname='LxImportG1DataDlg']
@@ -12482,80 +12855,6 @@ HRk/qWA3oysWIOBxorcsDYbeV8sW5ugTIzguiZJD2lyoGjPbhELhIWa0MBmc3w3ThA6qp9kI2T5H
 bXthYX/LYy3XQqLsy1k0wSa+YAn5nVNolqbaQ6Y3K8g5GG25GnwpFdtI3k7EEpGsJuKJg9lXTov0
 qgejc2NFgQU5oM0LG79kGtvr0xWirPNFdGcnsZ5YljXERmIXcZQ4SwiJC0QKcZLYSizIqxiGYX4D
 i8yp2YuV8qsAAAAASUVORK5CYII=
-			</icon>
-		</appfolder>
-		<appfolder
-		name="ContextMenuStrip1"
-		id="e24b7160-a611-48d4-9e73-c899b8e05ac1"
-		searchtimeout="30000ms"
-		capname="contextmenu"
-		addcaps="contextmenu,control,nativewindow"
-		isrooted="True"
-		usecache="True">
-			<item
-			name="CopyData"
-			id="c5be2bfa-2e60-444f-8744-2a281ddb5c9e"
-			searchtimeout="30000ms"
-			capname="menuitem"
-			addcaps="menuitem,accessible">
-				/contextmenu[@controlname='contextMenuStrip1']/menuitem[@accessiblename='Copy data']
-			</item>
-			<basepath>
-				/contextmenu[@controlname='contextMenuStrip1']
-			</basepath>
-			<icon>
-				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
 			</icon>
 		</appfolder>
 		<basepath/>

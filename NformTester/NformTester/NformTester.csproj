@@ -288,6 +288,10 @@
       <id>c2a5aecb-c6e8-4fae-99c8-da9134cb7b49</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.10.30.200_VerifyTheDeviceSiteIdCanBeStored.xlsx">
+      <id>7d10cc9a-9306-47e4-be4c-21f4ad68e69c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.10.30.30_DevicesSupportedbyNformG2Product.xlsx">
       <id>2264b215-0478-49b5-b14c-4b309ec138e7</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -314,10 +318,6 @@
     </None>
     <None Include="Keywordscripts\600.10.30.100_AlarmandDataEditAlarmName.xlsx">
       <id>75942075-440c-417f-93ad-8052fb41d75a</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\600.10.30.200_VerifyTheDeviceSiteIdCanBeStored.xlsx">
-      <id>e8ea1ffe-79cf-48b1-8197-df38043b44b3</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.20.20.100_UserCanNotConfigureActionSetWithoutConfigureActionPermission.xlsx">
@@ -413,7 +413,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.20.30.10_ConfigureEmailAction.xlsx">
-      <id>baa82189-6aa2-4c57-9a54-d768f3f7834a</id>
+      <id>36d0e0c2-8f16-41f7-8765-36f5dfb70234</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\600.20.30.120_UserWithoutAllActionRightsCanNotDeleteActionSet.xlsx">
@@ -560,6 +560,10 @@
       <id>b80e43d8-1aa4-44be-a27b-2cd4e16c07c0</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keywordscripts\600.30.30.60_UpAndDownArrowEnabled.xlsx">
+      <id>689bde15-faaf-4d79-a50b-fc162714f456</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Keywordscripts\600.40.10.10_UserAndGroupDefaultPermissionRightForActions.xlsx">
       <id>c8fe2dad-b5bc-4708-907d-c3bde941d236</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -694,10 +698,6 @@
     </None>
     <None Include="Keywordscripts\600.30.30.50_CopyAnExistingAreaAndCreateNewAreaInTheTreeOfView.xlsx">
       <id>d6eadb13-f272-4981-adb2-b6e8273051c7</id>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Keywordscripts\600.30.30.60_UpAndDownArrowEnabled.xlsx">
-      <id>15d66c3b-c673-4227-a01c-ed5caafb27f7</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Keywordscripts\600.30.30.70_CreationOfNewLogicalGroupToViewTree.xlsx">
