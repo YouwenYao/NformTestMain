@@ -760,6 +760,7 @@ namespace NformTester
             NformRepositoryFolders.FormToo_Many_Graph_PointsAppFolder _formtoo_many_graph_points;
             NformRepositoryFolders.FormContextMenuContextMenuStripAppFolder _formcontextmenucontextmenustrip;
             NformRepositoryFolders.FormSaveAsAppFolder _formsaveas;
+            NformRepositoryFolders.ALARMSNAVIGATELiebertRNformAppFolder _alarmsnavigateliebertrnform;
 
             /// <summary>
             /// Creates a new NformG2Window  folder.
@@ -779,6 +780,7 @@ namespace NformTester
                 _formtoo_many_graph_points = new NformRepositoryFolders.FormToo_Many_Graph_PointsAppFolder(parentFolder);
                 _formcontextmenucontextmenustrip = new NformRepositoryFolders.FormContextMenuContextMenuStripAppFolder(parentFolder);
                 _formsaveas = new NformRepositoryFolders.FormSaveAsAppFolder(parentFolder);
+                _alarmsnavigateliebertrnform = new NformRepositoryFolders.ALARMSNAVIGATELiebertRNformAppFolder(parentFolder);
             }
 
             /// <summary>
@@ -887,6 +889,15 @@ namespace NformTester
             public virtual NformRepositoryFolders.FormSaveAsAppFolder FormSaveAs
             {
                 get { return _formsaveas; }
+            }
+
+            /// <summary>
+            /// The ALARMSNAVIGATELiebertRNform folder.
+            /// </summary>
+            [RepositoryFolder("7ba0272c-6f1e-45bb-aeee-f4fff39cccd9")]
+            public virtual NformRepositoryFolders.ALARMSNAVIGATELiebertRNformAppFolder ALARMSNAVIGATELiebertRNform
+            {
+                get { return _alarmsnavigateliebertrnform; }
             }
         }
 
@@ -1046,6 +1057,8 @@ namespace NformTester
             RepoItemInfo _collapsed_normal_countInfo;
             RepoItemInfo _collapsed_alarm_countInfo;
             RepoItemInfo _collapsed_mainenance_countInfo;
+            RepoItemInfo _statustextInfo;
+            RepoItemInfo _mainformtitleInfo;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1203,6 +1216,8 @@ namespace NformTester
                 _collapsed_normal_countInfo = new RepoItemInfo(this, "Collapsed_Normal_Count", "container[@controlname='LxStatusButtonPanel']/element[@controlname='m_btnNormal']/text[@controlname='m_statusBtnLbl']", 30000, null, "766bc5cc-26c1-4e40-8f4f-b66685764d50");
                 _collapsed_alarm_countInfo = new RepoItemInfo(this, "Collapsed_Alarm_Count", "container[@controlname='LxStatusButtonPanel']/element[@controlname='m_btnAlarm']/text[@controlname='m_statusBtnLbl']", 30000, null, "0bae4ba0-2bdb-460d-a32e-8bddd0b627ea");
                 _collapsed_mainenance_countInfo = new RepoItemInfo(this, "Collapsed_Mainenance_Count", "container[@controlname='LxStatusButtonPanel']/element[@controlname='m_btnMaint']/text[@controlname='m_statusBtnLbl']", 30000, null, "fb00acfb-e271-4e3c-abfc-0e16bcb47f5f");
+                _statustextInfo = new RepoItemInfo(this, "StatusText", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/toolbar/text[@accessiblename='Normal' or @accessiblename='No communication' or @accessiblename='Alarm']", 30000, null, "25e01594-2a3f-4cc5-aa7f-b8d395c7b3a0");
+                _mainformtitleInfo = new RepoItemInfo(this, "MainFormTitle", "titlebar[@accessiblerole='TitleBar']", 30000, null, "d7d2979b-2261-42e9-93aa-bba8586a44e8");
             }
 
             /// <summary>
@@ -4804,6 +4819,54 @@ namespace NformTester
                     return _collapsed_mainenance_countInfo;
                 }
             }
+
+            /// <summary>
+            /// The StatusText item.
+            /// </summary>
+            [RepositoryItem("25e01594-2a3f-4cc5-aa7f-b8d395c7b3a0")]
+            public virtual Ranorex.Text StatusText
+            {
+                get
+                {
+                    return _statustextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The StatusText item info.
+            /// </summary>
+            [RepositoryItemInfo("25e01594-2a3f-4cc5-aa7f-b8d395c7b3a0")]
+            public virtual RepoItemInfo StatusTextInfo
+            {
+                get
+                {
+                    return _statustextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MainFormTitle item.
+            /// </summary>
+            [RepositoryItem("d7d2979b-2261-42e9-93aa-bba8586a44e8")]
+            public virtual Ranorex.TitleBar MainFormTitle
+            {
+                get
+                {
+                    return _mainformtitleInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MainFormTitle item info.
+            /// </summary>
+            [RepositoryItemInfo("d7d2979b-2261-42e9-93aa-bba8586a44e8")]
+            public virtual RepoItemInfo MainFormTitleInfo
+            {
+                get
+                {
+                    return _mainformtitleInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -7540,8 +7603,6 @@ namespace NformTester
             RepoItemInfo _addcustomercolorInfo;
             RepoItemInfo _helpInfo;
             RepoItemInfo _closeInfo;
-            RepoItemInfo _definecustomcolorsInfo;
-            RepoItemInfo _addtocustomcolorsInfo;
 
             /// <summary>
             /// Creates a new FormColor  folder.
@@ -7554,7 +7615,7 @@ namespace NformTester
                 _cancleInfo = new RepoItemInfo(this, "Cancle", "button[@text='Cancel']", 30000, null, "50192774-150e-4c7c-9daf-d185f098a9ea");
                 _basecolortableInfo = new RepoItemInfo(this, "BaseColorTable", "text[@controlid='720']", 30000, null, "40b0ed3e-fa1e-40bb-9505-cc517f81b741");
                 _customercolortableInfo = new RepoItemInfo(this, "CustomerColorTable", "text[@controlid='721']", 30000, null, "e7bcbef8-4b93-4e25-8933-dcd080d48399");
-                _customercolorInfo = new RepoItemInfo(this, "CustomerColor", "button[@text='规定自定义颜色(&D) >>']", 30000, null, "d99cc699-cf35-4bff-92ad-4b0f3455501a");
+                _customercolorInfo = new RepoItemInfo(this, "CustomerColor", "button[@text='规定自定义颜色(&D) >>' or @text='&Define Custom Colors >>']", 30000, null, "d99cc699-cf35-4bff-92ad-4b0f3455501a");
                 _colorpanInfo = new RepoItemInfo(this, "Colorpan", "text[@controlid='710']", 30000, null, "4947bd3d-7f8e-4ab5-8ae2-4b58fac82ed9");
                 _colorbarInfo = new RepoItemInfo(this, "Colorbar", "text[@controlid='702']", 30000, null, "d4c64ea7-c870-4c31-9207-2c8987da33df");
                 _colordisplaypanInfo = new RepoItemInfo(this, "ColorDisplaypan", "text[@controlid='709']", 30000, null, "397f9dc4-9cc0-4585-b4b8-50391dcd7026");
@@ -7564,11 +7625,9 @@ namespace NformTester
                 _gInfo = new RepoItemInfo(this, "G", "text[@controlid='707']", 30000, null, "95076705-f8a0-40c5-9bd4-9b25d8b847aa");
                 _buleInfo = new RepoItemInfo(this, "Bule", "text[@controlid='728']", 30000, null, "5b93021b-88dd-47e5-af0a-3ad32349b11f");
                 _bInfo = new RepoItemInfo(this, "B", "text[@controlid='708']", 30000, null, "9df18282-c621-4a1e-bc9e-e2d9df7216ef");
-                _addcustomercolorInfo = new RepoItemInfo(this, "AddCustomerColor", "button[@text='添加到自定义颜色(&A)']", 30000, null, "fd45d1df-05f3-40f4-859d-7e349e220f86");
+                _addcustomercolorInfo = new RepoItemInfo(this, "AddCustomerColor", "button[@text='添加到自定义颜色(&A)' or @text='&Add to Custom Colors']", 30000, null, "fd45d1df-05f3-40f4-859d-7e349e220f86");
                 _helpInfo = new RepoItemInfo(this, "Help", "titlebar/button[@accessiblename='上下文帮助']", 30000, null, "bbcecf5a-f66f-4f17-a4bb-be90169bb62d");
                 _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='关闭']", 30000, null, "45ad0326-8bdc-4d90-9d3a-b75db509b8a4");
-                _definecustomcolorsInfo = new RepoItemInfo(this, "DefineCustomColors", "button[@text='&Define Custom Colors >>']", 30000, null, "097e80d3-1e7d-42e6-a073-b03ddaaa5bf1");
-                _addtocustomcolorsInfo = new RepoItemInfo(this, "AddToCustomColors", "button[@text='&Add to Custom Colors']", 30000, null, "97c93336-0623-4be6-acde-a329b2bde145");
             }
 
             /// <summary>
@@ -8000,54 +8059,6 @@ namespace NformTester
                 get
                 {
                     return _closeInfo;
-                }
-            }
-
-            /// <summary>
-            /// The DefineCustomColors item.
-            /// </summary>
-            [RepositoryItem("097e80d3-1e7d-42e6-a073-b03ddaaa5bf1")]
-            public virtual Ranorex.Button DefineCustomColors
-            {
-                get
-                {
-                    return _definecustomcolorsInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The DefineCustomColors item info.
-            /// </summary>
-            [RepositoryItemInfo("097e80d3-1e7d-42e6-a073-b03ddaaa5bf1")]
-            public virtual RepoItemInfo DefineCustomColorsInfo
-            {
-                get
-                {
-                    return _definecustomcolorsInfo;
-                }
-            }
-
-            /// <summary>
-            /// The AddToCustomColors item.
-            /// </summary>
-            [RepositoryItem("97c93336-0623-4be6-acde-a329b2bde145")]
-            public virtual Ranorex.Button AddToCustomColors
-            {
-                get
-                {
-                    return _addtocustomcolorsInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The AddToCustomColors item info.
-            /// </summary>
-            [RepositoryItemInfo("97c93336-0623-4be6-acde-a329b2bde145")]
-            public virtual RepoItemInfo AddToCustomColorsInfo
-            {
-                get
-                {
-                    return _addtocustomcolorsInfo;
                 }
             }
         }
@@ -9916,7 +9927,7 @@ namespace NformTester
             RepoItemInfo _saveInfo;
             RepoItemInfo _cancelInfo;
             RepoItemInfo _closeInfo;
-            RepoItemInfo _filenameInfo;
+            RepoItemInfo _filenametextInfo;
 
             /// <summary>
             /// Creates a new FormSaveAs  folder.
@@ -9928,7 +9939,7 @@ namespace NformTester
                 _saveInfo = new RepoItemInfo(this, "Save", "button[@text='&Save']", 30000, null, "e774daf1-455d-4ed1-968d-7fc67078f0db");
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "button[@text='Cancel']", 30000, null, "21ad68bb-7b48-4ebc-98ad-f39a61ba3123");
                 _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='Close']", 30000, null, "06bb9f8f-6a98-452c-855d-73eb29eb24b9");
-                _filenameInfo = new RepoItemInfo(this, "FileName", "element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']/combobox[@accessiblename='File name:']/text[@accessiblename='File name:']", 30000, null, "4dc96d7c-327b-4a8a-8cca-7fa1768d73a9");
+                _filenametextInfo = new RepoItemInfo(this, "FileNameText", "element[@class='DUIViewWndClassName']/container/container/container[@accessiblename='Details Pane']/combobox[@accessiblename='File name:']/text[@accessiblename='File name:']", 30000, null, "4dc96d7c-327b-4a8a-8cca-7fa1768d73a9");
             }
 
             /// <summary>
@@ -10028,26 +10039,94 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The FileName item.
+            /// The FileNameText item.
             /// </summary>
             [RepositoryItem("4dc96d7c-327b-4a8a-8cca-7fa1768d73a9")]
-            public virtual Ranorex.Text FileName
+            public virtual Ranorex.Text FileNameText
             {
                 get
                 {
-                    return _filenameInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _filenametextInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The FileName item info.
+            /// The FileNameText item info.
             /// </summary>
             [RepositoryItemInfo("4dc96d7c-327b-4a8a-8cca-7fa1768d73a9")]
-            public virtual RepoItemInfo FileNameInfo
+            public virtual RepoItemInfo FileNameTextInfo
             {
                 get
                 {
-                    return _filenameInfo;
+                    return _filenametextInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ALARMSNAVIGATELiebertRNformAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("7ba0272c-6f1e-45bb-aeee-f4fff39cccd9")]
+        public partial class ALARMSNAVIGATELiebertRNformAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _buttonminInfo;
+
+            /// <summary>
+            /// Creates a new ALARMSNAVIGATELiebertRNform  folder.
+            /// </summary>
+            public ALARMSNAVIGATELiebertRNformAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ALARMSNAVIGATELiebertRNform", "/form[@controlname='LxFloatingWindow']", parentFolder, 30000, true, "7ba0272c-6f1e-45bb-aeee-f4fff39cccd9", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "7ba0272c-6f1e-45bb-aeee-f4fff39cccd9");
+                _buttonminInfo = new RepoItemInfo(this, "Buttonmin", "titlebar/button[@accessiblename='Minimize']", 30000, null, "a0ddf750-7151-4794-a600-1325b5f0f4ea");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("7ba0272c-6f1e-45bb-aeee-f4fff39cccd9")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7ba0272c-6f1e-45bb-aeee-f4fff39cccd9")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Buttonmin item.
+            /// </summary>
+            [RepositoryItem("a0ddf750-7151-4794-a600-1325b5f0f4ea")]
+            public virtual Ranorex.Button Buttonmin
+            {
+                get
+                {
+                    return _buttonminInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Buttonmin item info.
+            /// </summary>
+            [RepositoryItemInfo("a0ddf750-7151-4794-a600-1325b5f0f4ea")]
+            public virtual RepoItemInfo ButtonminInfo
+            {
+                get
+                {
+                    return _buttonminInfo;
                 }
             }
         }
@@ -20312,6 +20391,7 @@ namespace NformTester
         {
             NformRepositoryFolders.FormServerOptionsAppFolder _formserveroptions;
             NformRepositoryFolders.FormConfirmDeleteSendE_mailAppFolder _formconfirmdeletesende_mail;
+            NformRepositoryFolders.NformHelpAppFolder _nformhelp;
 
             /// <summary>
             /// Creates a new ServerOptionsWindow  folder.
@@ -20321,6 +20401,7 @@ namespace NformTester
             {
                 _formserveroptions = new NformRepositoryFolders.FormServerOptionsAppFolder(parentFolder);
                 _formconfirmdeletesende_mail = new NformRepositoryFolders.FormConfirmDeleteSendE_mailAppFolder(parentFolder);
+                _nformhelp = new NformRepositoryFolders.NformHelpAppFolder(parentFolder);
             }
 
             /// <summary>
@@ -20339,6 +20420,15 @@ namespace NformTester
             public virtual NformRepositoryFolders.FormConfirmDeleteSendE_mailAppFolder FormConfirmDeleteSendE_mail
             {
                 get { return _formconfirmdeletesende_mail; }
+            }
+
+            /// <summary>
+            /// The NformHelp folder.
+            /// </summary>
+            [RepositoryFolder("41a277e3-722b-4bf9-8159-dceffaa21e11")]
+            public virtual NformRepositoryFolders.NformHelpAppFolder NformHelp
+            {
+                get { return _nformhelp; }
             }
         }
 
@@ -20375,25 +20465,25 @@ namespace NformTester
             RepoItemInfo _event_logfile_maximum_downInfo;
             RepoItemInfo _event_logfile_maximum_txtInfo;
             RepoItemInfo _enable_diagnostic_event_loggingInfo;
-            RepoItemInfo _maximum_viewable_alarmsInfo;
-            RepoItemInfo _maximum_viewable_alarms_upInfo;
-            RepoItemInfo _maximum_viewable_alarms_downInfo;
-            RepoItemInfo _maximum_viewable_alarms_txtInfo;
+            RepoItemInfo _maximum_viewable_alarms_oldInfo;
+            RepoItemInfo _maximum_viewable_alarms_up_oldInfo;
+            RepoItemInfo _maximum_viewable_alarms_down_oldInfo;
+            RepoItemInfo _maximum_viewable_alarms_txt_oldInfo;
             RepoItemInfo _enable_auto_acknowledgeInfo;
             RepoItemInfo _severityInfo;
-            RepoItemInfo _alarms_maximum_storage_daysInfo;
-            RepoItemInfo _alarms_maximum_storage_days_upInfo;
-            RepoItemInfo _alarms_maximum_storage_days_downInfo;
-            RepoItemInfo _alarms_maximum_storage_days_txtInfo;
+            RepoItemInfo _alarms_maximum_storage_days_oldInfo;
+            RepoItemInfo _alarms_maximum_storage_days_up_oldInfo;
+            RepoItemInfo _alarms_maximum_storage_days_down_oldInfo;
+            RepoItemInfo _alarms_maximum_storage_days_txt_oldInfo;
             RepoItemInfo _enable_free_space_monitoringInfo;
-            RepoItemInfo _alarms_maximum_database_sizeInfo;
-            RepoItemInfo _alarms_maximum_database_size_upInfo;
-            RepoItemInfo _alarms_maximum_database_size_downInfo;
-            RepoItemInfo _alarms_maximum_database_size_txtInfo;
-            RepoItemInfo _alarms_minimum_free_spaceInfo;
-            RepoItemInfo _alarms_minimum_free_space_upInfo;
-            RepoItemInfo _alarms_minimum_free_space_downInfo;
-            RepoItemInfo _alarms_minimum_free_space_txtInfo;
+            RepoItemInfo _alarms_maximum_database_size_oldInfo;
+            RepoItemInfo _alarms_maximum_database_size_up_oldInfo;
+            RepoItemInfo _alarms_maximum_database_size_down_oldInfo;
+            RepoItemInfo _alarms_maximum_database_size_txt_oldInfo;
+            RepoItemInfo _alarms_minimum_free_space_oldInfo;
+            RepoItemInfo _alarms_minimum_free_space_up_oldInfo;
+            RepoItemInfo _alarms_minimum_free_space_down_oldInfo;
+            RepoItemInfo _alarms_minimum_free_space_txt_oldInfo;
             RepoItemInfo _smtp_addInfo;
             RepoItemInfo _smtp_editInfo;
             RepoItemInfo _smtp_deleteInfo;
@@ -20489,6 +20579,22 @@ namespace NformTester
             RepoItemInfo _interval_every_downInfo;
             RepoItemInfo _smtp_servers_listInfo;
             RepoItemInfo _interval_every_txtInfo;
+            RepoItemInfo _maximum_viewable_alarmsInfo;
+            RepoItemInfo _maximum_viewable_alarms_txtInfo;
+            RepoItemInfo _maximum_viewable_alarms_upInfo;
+            RepoItemInfo _maximum_viewable_alarms_downInfo;
+            RepoItemInfo _alarms_maximum_storage_daysInfo;
+            RepoItemInfo _alarms_maximum_storage_days_upInfo;
+            RepoItemInfo _alarms_maximum_storage_days_downInfo;
+            RepoItemInfo _alarms_maximum_database_sizeInfo;
+            RepoItemInfo _alarms_maximum_database_size_upInfo;
+            RepoItemInfo _alarms_maximum_database_size_downInfo;
+            RepoItemInfo _alarms_minimum_free_spaceInfo;
+            RepoItemInfo _alarms_minimum_free_space_upInfo;
+            RepoItemInfo _alarms_minimum_free_space_downInfo;
+            RepoItemInfo _alarms_minimum_free_space_txtInfo;
+            RepoItemInfo _alarms_maximum_database_size_txtInfo;
+            RepoItemInfo _alarms_maximum_storage_days_txtInfo;
 
             /// <summary>
             /// Creates a new FormServerOptions  folder.
@@ -20523,25 +20629,25 @@ namespace NformTester
                 _event_logfile_maximum_downInfo = new RepoItemInfo(this, "Event_logfile_maximum_down", "tabpagelist/tabpage[@controlname='m_eventLogTab']/container/container/container/button[@accessiblename='Down']", 30000, null, "ca31991d-1e11-47e2-b344-642f856e9ffc");
                 _event_logfile_maximum_txtInfo = new RepoItemInfo(this, "Event_logfile_maximum_txt", "tabpagelist/tabpage[@controlname='m_eventLogTab']/container/container/text[@controlname='upDownEdit']", 30000, null, "b07505f1-3302-4c72-acee-6374656529b7");
                 _enable_diagnostic_event_loggingInfo = new RepoItemInfo(this, "Enable_diagnostic_event_logging", "tabpagelist/tabpage[@controlname='m_eventLogTab']/checkbox[@controlname='m_eventLogDiagChk']", 30000, null, "83d49bfc-8030-4d2d-a305-a91b3e054601");
-                _maximum_viewable_alarmsInfo = new RepoItemInfo(this, "Maximum_viewable_alarms", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/combobox[@accessiblename='Maximum viewable alarms:']", 30000, null, "9185cf60-cf94-40d2-a711-aacf59a2a2c0");
-                _maximum_viewable_alarms_upInfo = new RepoItemInfo(this, "Maximum_viewable_alarms_up", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/container/button[@accessiblename='Up']", 30000, null, "1006da36-a332-4e1e-bff7-22a815cf1dbf");
-                _maximum_viewable_alarms_downInfo = new RepoItemInfo(this, "Maximum_viewable_alarms_down", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/container/button[@accessiblename='Down']", 30000, null, "42f0e43b-f416-4fa7-bfdc-4bfe26c23511");
-                _maximum_viewable_alarms_txtInfo = new RepoItemInfo(this, "Maximum_viewable_alarms_txt", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/text[@controlname='upDownEdit']", 30000, null, "6aa9cd4a-4735-444f-97e6-539700be1aef");
+                _maximum_viewable_alarms_oldInfo = new RepoItemInfo(this, "Maximum_viewable_alarms_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/combobox[@accessiblename='Maximum viewable alarms:']", 30000, null, "9185cf60-cf94-40d2-a711-aacf59a2a2c0");
+                _maximum_viewable_alarms_up_oldInfo = new RepoItemInfo(this, "Maximum_viewable_alarms_up_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/container/button[@accessiblename='Up']", 30000, null, "1006da36-a332-4e1e-bff7-22a815cf1dbf");
+                _maximum_viewable_alarms_down_oldInfo = new RepoItemInfo(this, "Maximum_viewable_alarms_down_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/container/button[@accessiblename='Down']", 30000, null, "42f0e43b-f416-4fa7-bfdc-4bfe26c23511");
+                _maximum_viewable_alarms_txt_oldInfo = new RepoItemInfo(this, "Maximum_viewable_alarms_txt_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/text[@controlname='upDownEdit']", 30000, null, "6aa9cd4a-4735-444f-97e6-539700be1aef");
                 _enable_auto_acknowledgeInfo = new RepoItemInfo(this, "Enable_auto_acknowledge", "tabpagelist/tabpage[@controlname='m_alarmsTab']/checkbox[@controlname='m_alarmAutoAckEnaChk']", 30000, null, "b05b233e-dc48-4023-86b1-10ebd48a365f");
                 _severityInfo = new RepoItemInfo(this, "Severity", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmAutoAckSevCombo']/combobox[@controlname='m_alarmAutoAckSevCombo-Ctl']", 30000, null, "02029e05-e20c-4d88-bdaa-85c2aed66b69");
-                _alarms_maximum_storage_daysInfo = new RepoItemInfo(this, "Alarms_Maximum_storage_days", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/combobox[@accessiblename='Maximum storage (days):']", 30000, null, "c6edc988-d9ee-480e-9773-527c1262e921");
-                _alarms_maximum_storage_days_upInfo = new RepoItemInfo(this, "Alarms_Maximum_storage_days_up", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/container/button[@accessiblename='Up']", 30000, null, "c175729e-39ae-4743-9d0e-d08dbb473f02");
-                _alarms_maximum_storage_days_downInfo = new RepoItemInfo(this, "Alarms_Maximum_storage_days_down", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/container/button[@accessiblename='Down']", 30000, null, "758fccd4-8bad-4af5-93dd-c4cddc17a1b7");
-                _alarms_maximum_storage_days_txtInfo = new RepoItemInfo(this, "Alarms_Maximum_storage_days_txt", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/text[@controlname='upDownEdit']", 30000, null, "087226f5-711d-4990-82b9-ca8f8ebbf1a6");
+                _alarms_maximum_storage_days_oldInfo = new RepoItemInfo(this, "Alarms_Maximum_storage_days_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/combobox[@accessiblename='Maximum storage (days):']", 30000, null, "c6edc988-d9ee-480e-9773-527c1262e921");
+                _alarms_maximum_storage_days_up_oldInfo = new RepoItemInfo(this, "Alarms_Maximum_storage_days_up_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/container/button[@accessiblename='Up']", 30000, null, "c175729e-39ae-4743-9d0e-d08dbb473f02");
+                _alarms_maximum_storage_days_down_oldInfo = new RepoItemInfo(this, "Alarms_Maximum_storage_days_down_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/container/button[@accessiblename='Down']", 30000, null, "758fccd4-8bad-4af5-93dd-c4cddc17a1b7");
+                _alarms_maximum_storage_days_txt_oldInfo = new RepoItemInfo(this, "Alarms_Maximum_storage_days_txt_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/text[@controlname='upDownEdit']", 30000, null, "087226f5-711d-4990-82b9-ca8f8ebbf1a6");
                 _enable_free_space_monitoringInfo = new RepoItemInfo(this, "Enable_free_space_monitoring", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/checkbox[@controlname='m_alarmDbMonitorChk']", 30000, null, "33838a6d-087b-4399-9b9a-022b1d6e191e");
-                _alarms_maximum_database_sizeInfo = new RepoItemInfo(this, "Alarms_Maximum_database_size", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/combobox[@accessiblename~'^Maximum\\ database\\ size\\ \\(MB']", 30000, null, "8f4b7a06-d523-4135-8b39-c5891a545e0d");
-                _alarms_maximum_database_size_upInfo = new RepoItemInfo(this, "Alarms_Maximum_database_size_up", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/container/button[@accessiblename='Up']", 30000, null, "d78408e5-d60d-40df-aa8d-bb126307e056");
-                _alarms_maximum_database_size_downInfo = new RepoItemInfo(this, "Alarms_Maximum_database_size_down", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/container/button[@accessiblename='Down']", 30000, null, "a5c776fd-cebc-4e9c-b9ae-f96fb9d4fc74");
-                _alarms_maximum_database_size_txtInfo = new RepoItemInfo(this, "Alarms_Maximum_database_size_txt", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/text[@controlname='upDownEdit']", 30000, null, "12e53b13-803a-4c16-a958-16ff4abd1665");
-                _alarms_minimum_free_spaceInfo = new RepoItemInfo(this, "Alarms_Minimum_free_space", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/combobox[@accessiblename='Minimum free space (%):']", 30000, null, "e73db48a-bc3f-4608-bf56-a8e627932e6c");
-                _alarms_minimum_free_space_upInfo = new RepoItemInfo(this, "Alarms_Minimum_free_space_up", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/container/button[@accessiblename='Up']", 30000, null, "22b9b0d2-8951-4d4b-a973-54bc099ac8d1");
-                _alarms_minimum_free_space_downInfo = new RepoItemInfo(this, "Alarms_Minimum_free_space_down", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/container/button[@accessiblename='Down']", 30000, null, "c988be1b-428c-459f-92bb-2a05f6dd3806");
-                _alarms_minimum_free_space_txtInfo = new RepoItemInfo(this, "Alarms_Minimum_free_space_txt", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/text[@controlname='upDownEdit']", 30000, null, "48f3c91d-5937-4cee-a60c-1cadb6a23c38");
+                _alarms_maximum_database_size_oldInfo = new RepoItemInfo(this, "Alarms_Maximum_database_size_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/combobox[@accessiblename~'^Maximum\\ database\\ size\\ \\(MB']", 30000, null, "8f4b7a06-d523-4135-8b39-c5891a545e0d");
+                _alarms_maximum_database_size_up_oldInfo = new RepoItemInfo(this, "Alarms_Maximum_database_size_up_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/container/button[@accessiblename='Up']", 30000, null, "d78408e5-d60d-40df-aa8d-bb126307e056");
+                _alarms_maximum_database_size_down_oldInfo = new RepoItemInfo(this, "Alarms_Maximum_database_size_down_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/container/button[@accessiblename='Down']", 30000, null, "a5c776fd-cebc-4e9c-b9ae-f96fb9d4fc74");
+                _alarms_maximum_database_size_txt_oldInfo = new RepoItemInfo(this, "Alarms_Maximum_database_size_txt_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/text[@controlname='upDownEdit']", 30000, null, "12e53b13-803a-4c16-a958-16ff4abd1665");
+                _alarms_minimum_free_space_oldInfo = new RepoItemInfo(this, "Alarms_Minimum_free_space_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/combobox[@accessiblename='Minimum free space (%):']", 30000, null, "e73db48a-bc3f-4608-bf56-a8e627932e6c");
+                _alarms_minimum_free_space_up_oldInfo = new RepoItemInfo(this, "Alarms_Minimum_free_space_up_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/container/button[@accessiblename='Up']", 30000, null, "22b9b0d2-8951-4d4b-a973-54bc099ac8d1");
+                _alarms_minimum_free_space_down_oldInfo = new RepoItemInfo(this, "Alarms_Minimum_free_space_down_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/container/button[@accessiblename='Down']", 30000, null, "c988be1b-428c-459f-92bb-2a05f6dd3806");
+                _alarms_minimum_free_space_txt_oldInfo = new RepoItemInfo(this, "Alarms_Minimum_free_space_txt_old", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/text[@controlname='upDownEdit']", 30000, null, "48f3c91d-5937-4cee-a60c-1cadb6a23c38");
                 _smtp_addInfo = new RepoItemInfo(this, "SMTP_Add", "tabpagelist/tabpage[@controlname='m_smtpTab']/container[@controlname='m_smtpSrvrListGrp']/container/container/button[@controlname='m_button4']", 30000, null, "6af5ad53-71fb-4ec7-a667-8fadaef4ca96");
                 _smtp_editInfo = new RepoItemInfo(this, "SMTP_Edit", "tabpagelist/tabpage[@controlname='m_smtpTab']/container[@controlname='m_smtpSrvrListGrp']/container/container/button[@controlname='m_button5']", 30000, null, "dd5a5a6e-7ed7-43ab-9613-4299465fab3b");
                 _smtp_deleteInfo = new RepoItemInfo(this, "SMTP_Delete", "tabpagelist/tabpage[@controlname='m_smtpTab']/container[@controlname='m_smtpSrvrListGrp']/container/container/button[@controlname='m_button6']", 30000, null, "afb9d4db-8828-4120-9f6b-aeec0b83e807");
@@ -20637,6 +20743,22 @@ namespace NformTester
                 _interval_every_downInfo = new RepoItemInfo(this, "Interval_every_down", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container[@controlname='m_devPollIntervalNbx']/container/container/button[@accessiblename='Down']", 30000, null, "4cac9304-cba9-4936-a416-249e81d355b6");
                 _smtp_servers_listInfo = new RepoItemInfo(this, "SMTP_servers_list", "tabpagelist/tabpage[@controlname='m_smtpTab']/container[@controlname='m_smtpSrvrListGrp']/table/list", 30000, null, "2d128578-7e9d-4927-a9fb-af390be62835");
                 _interval_every_txtInfo = new RepoItemInfo(this, "Interval_every_txt", "tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container[@controlname='m_devPollIntervalNbx']/container/text[@controlname='upDownEdit']", 30000, null, "cf6de4a1-92e8-4a28-8d6b-6578b3a60c55");
+                _maximum_viewable_alarmsInfo = new RepoItemInfo(this, "Maximum_viewable_alarms", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/container/combobox[@accessiblename='Maximum viewable alarms:']", 30000, null, "2f325bee-7a5a-4052-acc4-3506049e1ebc");
+                _maximum_viewable_alarms_txtInfo = new RepoItemInfo(this, "Maximum_viewable_alarms_txt", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/container/text[@controlname='upDownEdit']", 30000, null, "ea4308f4-b9ea-4515-b146-4f58ec261227");
+                _maximum_viewable_alarms_upInfo = new RepoItemInfo(this, "Maximum_viewable_alarms_up", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/container/container/button[@accessiblename='Up']", 30000, null, "85ae4fc0-55fa-411b-bc8d-f8430baa2a22");
+                _maximum_viewable_alarms_downInfo = new RepoItemInfo(this, "Maximum_viewable_alarms_down", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/container/container/button[@accessiblename='Down']", 30000, null, "b0fd0ba9-3fa6-4f81-8d6e-c18071898ba9");
+                _alarms_maximum_storage_daysInfo = new RepoItemInfo(this, "Alarms_Maximum_storage_days", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/container/combobox[@accessiblename='Maximum storage (days):']", 30000, null, "807aa9cb-c515-4ba1-968c-33f54eaf5103");
+                _alarms_maximum_storage_days_upInfo = new RepoItemInfo(this, "Alarms_Maximum_storage_days_up", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/container/container/button[@accessiblename='Up']", 30000, null, "136e4a3f-cdde-489f-95f4-47ac140e529e");
+                _alarms_maximum_storage_days_downInfo = new RepoItemInfo(this, "Alarms_Maximum_storage_days_down", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/container/container/button[@accessiblename='Down']", 30000, null, "f1fb1ce0-23f4-4ae0-94c4-5b8dae55e467");
+                _alarms_maximum_database_sizeInfo = new RepoItemInfo(this, "Alarms_Maximum_database_size", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/container/combobox[@accessiblename~'^Maximum\\ database\\ size\\ \\(MB']", 30000, null, "cf74ba5f-0a96-4ea7-809f-cb2852554022");
+                _alarms_maximum_database_size_upInfo = new RepoItemInfo(this, "Alarms_Maximum_database_size_up", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/container/container/button[@accessiblename='Up']", 30000, null, "bca60313-f81e-42ac-8064-774501e067b8");
+                _alarms_maximum_database_size_downInfo = new RepoItemInfo(this, "Alarms_Maximum_database_size_down", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/container/container/button[@accessiblename='Down']", 30000, null, "ebc081c6-7242-4b92-87af-f1d07bab4ea5");
+                _alarms_minimum_free_spaceInfo = new RepoItemInfo(this, "Alarms_Minimum_free_space", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/container/combobox[@accessiblename='Minimum free space (%):']", 30000, null, "1b3725f9-60e2-4b69-aa97-6e62bfb18612");
+                _alarms_minimum_free_space_upInfo = new RepoItemInfo(this, "Alarms_Minimum_free_space_up", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/container/container/button[@accessiblename='Up']", 30000, null, "fc52c0a4-cd63-49df-bdfa-3ddcbbe7ac9c");
+                _alarms_minimum_free_space_downInfo = new RepoItemInfo(this, "Alarms_Minimum_free_space_down", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/container/container/button[@accessiblename='Down']", 30000, null, "7bf41f64-f17f-4d4b-9d62-5d1c4a219362");
+                _alarms_minimum_free_space_txtInfo = new RepoItemInfo(this, "Alarms_Minimum_free_space_txt", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/container/text[@controlname='upDownEdit']", 30000, null, "8735febe-81e7-49cc-91c7-9e1c2b82c2e6");
+                _alarms_maximum_database_size_txtInfo = new RepoItemInfo(this, "Alarms_Maximum_database_size_txt", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/container/text[@controlname='upDownEdit']", 30000, null, "a0fe2b40-311f-4f96-901f-85e88676b59f");
+                _alarms_maximum_storage_days_txtInfo = new RepoItemInfo(this, "Alarms_Maximum_storage_days_txt", "tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/container/text[@controlname='upDownEdit']", 30000, null, "72e00afb-70a6-4020-ac09-c154880be130");
             }
 
             /// <summary>
@@ -21288,98 +21410,98 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Maximum_viewable_alarms item.
+            /// The Maximum_viewable_alarms_old item.
             /// </summary>
             [RepositoryItem("9185cf60-cf94-40d2-a711-aacf59a2a2c0")]
-            public virtual Ranorex.ComboBox Maximum_viewable_alarms
+            public virtual Ranorex.ComboBox Maximum_viewable_alarms_old
             {
                 get
                 {
-                    return _maximum_viewable_alarmsInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                    return _maximum_viewable_alarms_oldInfo.CreateAdapter<Ranorex.ComboBox>(true);
                 }
             }
 
             /// <summary>
-            /// The Maximum_viewable_alarms item info.
+            /// The Maximum_viewable_alarms_old item info.
             /// </summary>
             [RepositoryItemInfo("9185cf60-cf94-40d2-a711-aacf59a2a2c0")]
-            public virtual RepoItemInfo Maximum_viewable_alarmsInfo
+            public virtual RepoItemInfo Maximum_viewable_alarms_oldInfo
             {
                 get
                 {
-                    return _maximum_viewable_alarmsInfo;
+                    return _maximum_viewable_alarms_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Maximum_viewable_alarms_up item.
+            /// The Maximum_viewable_alarms_up_old item.
             /// </summary>
             [RepositoryItem("1006da36-a332-4e1e-bff7-22a815cf1dbf")]
-            public virtual Ranorex.Button Maximum_viewable_alarms_up
+            public virtual Ranorex.Button Maximum_viewable_alarms_up_old
             {
                 get
                 {
-                    return _maximum_viewable_alarms_upInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _maximum_viewable_alarms_up_oldInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Maximum_viewable_alarms_up item info.
+            /// The Maximum_viewable_alarms_up_old item info.
             /// </summary>
             [RepositoryItemInfo("1006da36-a332-4e1e-bff7-22a815cf1dbf")]
-            public virtual RepoItemInfo Maximum_viewable_alarms_upInfo
+            public virtual RepoItemInfo Maximum_viewable_alarms_up_oldInfo
             {
                 get
                 {
-                    return _maximum_viewable_alarms_upInfo;
+                    return _maximum_viewable_alarms_up_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Maximum_viewable_alarms_down item.
+            /// The Maximum_viewable_alarms_down_old item.
             /// </summary>
             [RepositoryItem("42f0e43b-f416-4fa7-bfdc-4bfe26c23511")]
-            public virtual Ranorex.Button Maximum_viewable_alarms_down
+            public virtual Ranorex.Button Maximum_viewable_alarms_down_old
             {
                 get
                 {
-                    return _maximum_viewable_alarms_downInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _maximum_viewable_alarms_down_oldInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Maximum_viewable_alarms_down item info.
+            /// The Maximum_viewable_alarms_down_old item info.
             /// </summary>
             [RepositoryItemInfo("42f0e43b-f416-4fa7-bfdc-4bfe26c23511")]
-            public virtual RepoItemInfo Maximum_viewable_alarms_downInfo
+            public virtual RepoItemInfo Maximum_viewable_alarms_down_oldInfo
             {
                 get
                 {
-                    return _maximum_viewable_alarms_downInfo;
+                    return _maximum_viewable_alarms_down_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Maximum_viewable_alarms_txt item.
+            /// The Maximum_viewable_alarms_txt_old item.
             /// </summary>
             [RepositoryItem("6aa9cd4a-4735-444f-97e6-539700be1aef")]
-            public virtual Ranorex.Text Maximum_viewable_alarms_txt
+            public virtual Ranorex.Text Maximum_viewable_alarms_txt_old
             {
                 get
                 {
-                    return _maximum_viewable_alarms_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _maximum_viewable_alarms_txt_oldInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Maximum_viewable_alarms_txt item info.
+            /// The Maximum_viewable_alarms_txt_old item info.
             /// </summary>
             [RepositoryItemInfo("6aa9cd4a-4735-444f-97e6-539700be1aef")]
-            public virtual RepoItemInfo Maximum_viewable_alarms_txtInfo
+            public virtual RepoItemInfo Maximum_viewable_alarms_txt_oldInfo
             {
                 get
                 {
-                    return _maximum_viewable_alarms_txtInfo;
+                    return _maximum_viewable_alarms_txt_oldInfo;
                 }
             }
 
@@ -21432,98 +21554,98 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Alarms_Maximum_storage_days item.
+            /// The Alarms_Maximum_storage_days_old item.
             /// </summary>
             [RepositoryItem("c6edc988-d9ee-480e-9773-527c1262e921")]
-            public virtual Ranorex.ComboBox Alarms_Maximum_storage_days
+            public virtual Ranorex.ComboBox Alarms_Maximum_storage_days_old
             {
                 get
                 {
-                    return _alarms_maximum_storage_daysInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                    return _alarms_maximum_storage_days_oldInfo.CreateAdapter<Ranorex.ComboBox>(true);
                 }
             }
 
             /// <summary>
-            /// The Alarms_Maximum_storage_days item info.
+            /// The Alarms_Maximum_storage_days_old item info.
             /// </summary>
             [RepositoryItemInfo("c6edc988-d9ee-480e-9773-527c1262e921")]
-            public virtual RepoItemInfo Alarms_Maximum_storage_daysInfo
+            public virtual RepoItemInfo Alarms_Maximum_storage_days_oldInfo
             {
                 get
                 {
-                    return _alarms_maximum_storage_daysInfo;
+                    return _alarms_maximum_storage_days_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Alarms_Maximum_storage_days_up item.
+            /// The Alarms_Maximum_storage_days_up_old item.
             /// </summary>
             [RepositoryItem("c175729e-39ae-4743-9d0e-d08dbb473f02")]
-            public virtual Ranorex.Button Alarms_Maximum_storage_days_up
+            public virtual Ranorex.Button Alarms_Maximum_storage_days_up_old
             {
                 get
                 {
-                    return _alarms_maximum_storage_days_upInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _alarms_maximum_storage_days_up_oldInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Alarms_Maximum_storage_days_up item info.
+            /// The Alarms_Maximum_storage_days_up_old item info.
             /// </summary>
             [RepositoryItemInfo("c175729e-39ae-4743-9d0e-d08dbb473f02")]
-            public virtual RepoItemInfo Alarms_Maximum_storage_days_upInfo
+            public virtual RepoItemInfo Alarms_Maximum_storage_days_up_oldInfo
             {
                 get
                 {
-                    return _alarms_maximum_storage_days_upInfo;
+                    return _alarms_maximum_storage_days_up_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Alarms_Maximum_storage_days_down item.
+            /// The Alarms_Maximum_storage_days_down_old item.
             /// </summary>
             [RepositoryItem("758fccd4-8bad-4af5-93dd-c4cddc17a1b7")]
-            public virtual Ranorex.Button Alarms_Maximum_storage_days_down
+            public virtual Ranorex.Button Alarms_Maximum_storage_days_down_old
             {
                 get
                 {
-                    return _alarms_maximum_storage_days_downInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _alarms_maximum_storage_days_down_oldInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Alarms_Maximum_storage_days_down item info.
+            /// The Alarms_Maximum_storage_days_down_old item info.
             /// </summary>
             [RepositoryItemInfo("758fccd4-8bad-4af5-93dd-c4cddc17a1b7")]
-            public virtual RepoItemInfo Alarms_Maximum_storage_days_downInfo
+            public virtual RepoItemInfo Alarms_Maximum_storage_days_down_oldInfo
             {
                 get
                 {
-                    return _alarms_maximum_storage_days_downInfo;
+                    return _alarms_maximum_storage_days_down_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Alarms_Maximum_storage_days_txt item.
+            /// The Alarms_Maximum_storage_days_txt_old item.
             /// </summary>
             [RepositoryItem("087226f5-711d-4990-82b9-ca8f8ebbf1a6")]
-            public virtual Ranorex.Text Alarms_Maximum_storage_days_txt
+            public virtual Ranorex.Text Alarms_Maximum_storage_days_txt_old
             {
                 get
                 {
-                    return _alarms_maximum_storage_days_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _alarms_maximum_storage_days_txt_oldInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Alarms_Maximum_storage_days_txt item info.
+            /// The Alarms_Maximum_storage_days_txt_old item info.
             /// </summary>
             [RepositoryItemInfo("087226f5-711d-4990-82b9-ca8f8ebbf1a6")]
-            public virtual RepoItemInfo Alarms_Maximum_storage_days_txtInfo
+            public virtual RepoItemInfo Alarms_Maximum_storage_days_txt_oldInfo
             {
                 get
                 {
-                    return _alarms_maximum_storage_days_txtInfo;
+                    return _alarms_maximum_storage_days_txt_oldInfo;
                 }
             }
 
@@ -21552,194 +21674,194 @@ namespace NformTester
             }
 
             /// <summary>
-            /// The Alarms_Maximum_database_size item.
+            /// The Alarms_Maximum_database_size_old item.
             /// </summary>
             [RepositoryItem("8f4b7a06-d523-4135-8b39-c5891a545e0d")]
-            public virtual Ranorex.ComboBox Alarms_Maximum_database_size
+            public virtual Ranorex.ComboBox Alarms_Maximum_database_size_old
             {
                 get
                 {
-                    return _alarms_maximum_database_sizeInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                    return _alarms_maximum_database_size_oldInfo.CreateAdapter<Ranorex.ComboBox>(true);
                 }
             }
 
             /// <summary>
-            /// The Alarms_Maximum_database_size item info.
+            /// The Alarms_Maximum_database_size_old item info.
             /// </summary>
             [RepositoryItemInfo("8f4b7a06-d523-4135-8b39-c5891a545e0d")]
-            public virtual RepoItemInfo Alarms_Maximum_database_sizeInfo
+            public virtual RepoItemInfo Alarms_Maximum_database_size_oldInfo
             {
                 get
                 {
-                    return _alarms_maximum_database_sizeInfo;
+                    return _alarms_maximum_database_size_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Alarms_Maximum_database_size_up item.
+            /// The Alarms_Maximum_database_size_up_old item.
             /// </summary>
             [RepositoryItem("d78408e5-d60d-40df-aa8d-bb126307e056")]
-            public virtual Ranorex.Button Alarms_Maximum_database_size_up
+            public virtual Ranorex.Button Alarms_Maximum_database_size_up_old
             {
                 get
                 {
-                    return _alarms_maximum_database_size_upInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _alarms_maximum_database_size_up_oldInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Alarms_Maximum_database_size_up item info.
+            /// The Alarms_Maximum_database_size_up_old item info.
             /// </summary>
             [RepositoryItemInfo("d78408e5-d60d-40df-aa8d-bb126307e056")]
-            public virtual RepoItemInfo Alarms_Maximum_database_size_upInfo
+            public virtual RepoItemInfo Alarms_Maximum_database_size_up_oldInfo
             {
                 get
                 {
-                    return _alarms_maximum_database_size_upInfo;
+                    return _alarms_maximum_database_size_up_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Alarms_Maximum_database_size_down item.
+            /// The Alarms_Maximum_database_size_down_old item.
             /// </summary>
             [RepositoryItem("a5c776fd-cebc-4e9c-b9ae-f96fb9d4fc74")]
-            public virtual Ranorex.Button Alarms_Maximum_database_size_down
+            public virtual Ranorex.Button Alarms_Maximum_database_size_down_old
             {
                 get
                 {
-                    return _alarms_maximum_database_size_downInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _alarms_maximum_database_size_down_oldInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Alarms_Maximum_database_size_down item info.
+            /// The Alarms_Maximum_database_size_down_old item info.
             /// </summary>
             [RepositoryItemInfo("a5c776fd-cebc-4e9c-b9ae-f96fb9d4fc74")]
-            public virtual RepoItemInfo Alarms_Maximum_database_size_downInfo
+            public virtual RepoItemInfo Alarms_Maximum_database_size_down_oldInfo
             {
                 get
                 {
-                    return _alarms_maximum_database_size_downInfo;
+                    return _alarms_maximum_database_size_down_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Alarms_Maximum_database_size_txt item.
+            /// The Alarms_Maximum_database_size_txt_old item.
             /// </summary>
             [RepositoryItem("12e53b13-803a-4c16-a958-16ff4abd1665")]
-            public virtual Ranorex.Text Alarms_Maximum_database_size_txt
+            public virtual Ranorex.Text Alarms_Maximum_database_size_txt_old
             {
                 get
                 {
-                    return _alarms_maximum_database_size_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _alarms_maximum_database_size_txt_oldInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Alarms_Maximum_database_size_txt item info.
+            /// The Alarms_Maximum_database_size_txt_old item info.
             /// </summary>
             [RepositoryItemInfo("12e53b13-803a-4c16-a958-16ff4abd1665")]
-            public virtual RepoItemInfo Alarms_Maximum_database_size_txtInfo
+            public virtual RepoItemInfo Alarms_Maximum_database_size_txt_oldInfo
             {
                 get
                 {
-                    return _alarms_maximum_database_size_txtInfo;
+                    return _alarms_maximum_database_size_txt_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Alarms_Minimum_free_space item.
+            /// The Alarms_Minimum_free_space_old item.
             /// </summary>
             [RepositoryItem("e73db48a-bc3f-4608-bf56-a8e627932e6c")]
-            public virtual Ranorex.ComboBox Alarms_Minimum_free_space
+            public virtual Ranorex.ComboBox Alarms_Minimum_free_space_old
             {
                 get
                 {
-                    return _alarms_minimum_free_spaceInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                    return _alarms_minimum_free_space_oldInfo.CreateAdapter<Ranorex.ComboBox>(true);
                 }
             }
 
             /// <summary>
-            /// The Alarms_Minimum_free_space item info.
+            /// The Alarms_Minimum_free_space_old item info.
             /// </summary>
             [RepositoryItemInfo("e73db48a-bc3f-4608-bf56-a8e627932e6c")]
-            public virtual RepoItemInfo Alarms_Minimum_free_spaceInfo
+            public virtual RepoItemInfo Alarms_Minimum_free_space_oldInfo
             {
                 get
                 {
-                    return _alarms_minimum_free_spaceInfo;
+                    return _alarms_minimum_free_space_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Alarms_Minimum_free_space_up item.
+            /// The Alarms_Minimum_free_space_up_old item.
             /// </summary>
             [RepositoryItem("22b9b0d2-8951-4d4b-a973-54bc099ac8d1")]
-            public virtual Ranorex.Button Alarms_Minimum_free_space_up
+            public virtual Ranorex.Button Alarms_Minimum_free_space_up_old
             {
                 get
                 {
-                    return _alarms_minimum_free_space_upInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _alarms_minimum_free_space_up_oldInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Alarms_Minimum_free_space_up item info.
+            /// The Alarms_Minimum_free_space_up_old item info.
             /// </summary>
             [RepositoryItemInfo("22b9b0d2-8951-4d4b-a973-54bc099ac8d1")]
-            public virtual RepoItemInfo Alarms_Minimum_free_space_upInfo
+            public virtual RepoItemInfo Alarms_Minimum_free_space_up_oldInfo
             {
                 get
                 {
-                    return _alarms_minimum_free_space_upInfo;
+                    return _alarms_minimum_free_space_up_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Alarms_Minimum_free_space_down item.
+            /// The Alarms_Minimum_free_space_down_old item.
             /// </summary>
             [RepositoryItem("c988be1b-428c-459f-92bb-2a05f6dd3806")]
-            public virtual Ranorex.Button Alarms_Minimum_free_space_down
+            public virtual Ranorex.Button Alarms_Minimum_free_space_down_old
             {
                 get
                 {
-                    return _alarms_minimum_free_space_downInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _alarms_minimum_free_space_down_oldInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Alarms_Minimum_free_space_down item info.
+            /// The Alarms_Minimum_free_space_down_old item info.
             /// </summary>
             [RepositoryItemInfo("c988be1b-428c-459f-92bb-2a05f6dd3806")]
-            public virtual RepoItemInfo Alarms_Minimum_free_space_downInfo
+            public virtual RepoItemInfo Alarms_Minimum_free_space_down_oldInfo
             {
                 get
                 {
-                    return _alarms_minimum_free_space_downInfo;
+                    return _alarms_minimum_free_space_down_oldInfo;
                 }
             }
 
             /// <summary>
-            /// The Alarms_Minimum_free_space_txt item.
+            /// The Alarms_Minimum_free_space_txt_old item.
             /// </summary>
             [RepositoryItem("48f3c91d-5937-4cee-a60c-1cadb6a23c38")]
-            public virtual Ranorex.Text Alarms_Minimum_free_space_txt
+            public virtual Ranorex.Text Alarms_Minimum_free_space_txt_old
             {
                 get
                 {
-                    return _alarms_minimum_free_space_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _alarms_minimum_free_space_txt_oldInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Alarms_Minimum_free_space_txt item info.
+            /// The Alarms_Minimum_free_space_txt_old item info.
             /// </summary>
             [RepositoryItemInfo("48f3c91d-5937-4cee-a60c-1cadb6a23c38")]
-            public virtual RepoItemInfo Alarms_Minimum_free_space_txtInfo
+            public virtual RepoItemInfo Alarms_Minimum_free_space_txt_oldInfo
             {
                 get
                 {
-                    return _alarms_minimum_free_space_txtInfo;
+                    return _alarms_minimum_free_space_txt_oldInfo;
                 }
             }
 
@@ -24022,6 +24144,390 @@ namespace NformTester
                     return _interval_every_txtInfo;
                 }
             }
+
+            /// <summary>
+            /// The Maximum_viewable_alarms item.
+            /// </summary>
+            [RepositoryItem("2f325bee-7a5a-4052-acc4-3506049e1ebc")]
+            public virtual Ranorex.ComboBox Maximum_viewable_alarms
+            {
+                get
+                {
+                    return _maximum_viewable_alarmsInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Maximum_viewable_alarms item info.
+            /// </summary>
+            [RepositoryItemInfo("2f325bee-7a5a-4052-acc4-3506049e1ebc")]
+            public virtual RepoItemInfo Maximum_viewable_alarmsInfo
+            {
+                get
+                {
+                    return _maximum_viewable_alarmsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Maximum_viewable_alarms_txt item.
+            /// </summary>
+            [RepositoryItem("ea4308f4-b9ea-4515-b146-4f58ec261227")]
+            public virtual Ranorex.Text Maximum_viewable_alarms_txt
+            {
+                get
+                {
+                    return _maximum_viewable_alarms_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Maximum_viewable_alarms_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("ea4308f4-b9ea-4515-b146-4f58ec261227")]
+            public virtual RepoItemInfo Maximum_viewable_alarms_txtInfo
+            {
+                get
+                {
+                    return _maximum_viewable_alarms_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Maximum_viewable_alarms_up item.
+            /// </summary>
+            [RepositoryItem("85ae4fc0-55fa-411b-bc8d-f8430baa2a22")]
+            public virtual Ranorex.Button Maximum_viewable_alarms_up
+            {
+                get
+                {
+                    return _maximum_viewable_alarms_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Maximum_viewable_alarms_up item info.
+            /// </summary>
+            [RepositoryItemInfo("85ae4fc0-55fa-411b-bc8d-f8430baa2a22")]
+            public virtual RepoItemInfo Maximum_viewable_alarms_upInfo
+            {
+                get
+                {
+                    return _maximum_viewable_alarms_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Maximum_viewable_alarms_down item.
+            /// </summary>
+            [RepositoryItem("b0fd0ba9-3fa6-4f81-8d6e-c18071898ba9")]
+            public virtual Ranorex.Button Maximum_viewable_alarms_down
+            {
+                get
+                {
+                    return _maximum_viewable_alarms_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Maximum_viewable_alarms_down item info.
+            /// </summary>
+            [RepositoryItemInfo("b0fd0ba9-3fa6-4f81-8d6e-c18071898ba9")]
+            public virtual RepoItemInfo Maximum_viewable_alarms_downInfo
+            {
+                get
+                {
+                    return _maximum_viewable_alarms_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_storage_days item.
+            /// </summary>
+            [RepositoryItem("807aa9cb-c515-4ba1-968c-33f54eaf5103")]
+            public virtual Ranorex.ComboBox Alarms_Maximum_storage_days
+            {
+                get
+                {
+                    return _alarms_maximum_storage_daysInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_storage_days item info.
+            /// </summary>
+            [RepositoryItemInfo("807aa9cb-c515-4ba1-968c-33f54eaf5103")]
+            public virtual RepoItemInfo Alarms_Maximum_storage_daysInfo
+            {
+                get
+                {
+                    return _alarms_maximum_storage_daysInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_storage_days_up item.
+            /// </summary>
+            [RepositoryItem("136e4a3f-cdde-489f-95f4-47ac140e529e")]
+            public virtual Ranorex.Button Alarms_Maximum_storage_days_up
+            {
+                get
+                {
+                    return _alarms_maximum_storage_days_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_storage_days_up item info.
+            /// </summary>
+            [RepositoryItemInfo("136e4a3f-cdde-489f-95f4-47ac140e529e")]
+            public virtual RepoItemInfo Alarms_Maximum_storage_days_upInfo
+            {
+                get
+                {
+                    return _alarms_maximum_storage_days_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_storage_days_down item.
+            /// </summary>
+            [RepositoryItem("f1fb1ce0-23f4-4ae0-94c4-5b8dae55e467")]
+            public virtual Ranorex.Button Alarms_Maximum_storage_days_down
+            {
+                get
+                {
+                    return _alarms_maximum_storage_days_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_storage_days_down item info.
+            /// </summary>
+            [RepositoryItemInfo("f1fb1ce0-23f4-4ae0-94c4-5b8dae55e467")]
+            public virtual RepoItemInfo Alarms_Maximum_storage_days_downInfo
+            {
+                get
+                {
+                    return _alarms_maximum_storage_days_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_database_size item.
+            /// </summary>
+            [RepositoryItem("cf74ba5f-0a96-4ea7-809f-cb2852554022")]
+            public virtual Ranorex.ComboBox Alarms_Maximum_database_size
+            {
+                get
+                {
+                    return _alarms_maximum_database_sizeInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_database_size item info.
+            /// </summary>
+            [RepositoryItemInfo("cf74ba5f-0a96-4ea7-809f-cb2852554022")]
+            public virtual RepoItemInfo Alarms_Maximum_database_sizeInfo
+            {
+                get
+                {
+                    return _alarms_maximum_database_sizeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_database_size_up item.
+            /// </summary>
+            [RepositoryItem("bca60313-f81e-42ac-8064-774501e067b8")]
+            public virtual Ranorex.Button Alarms_Maximum_database_size_up
+            {
+                get
+                {
+                    return _alarms_maximum_database_size_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_database_size_up item info.
+            /// </summary>
+            [RepositoryItemInfo("bca60313-f81e-42ac-8064-774501e067b8")]
+            public virtual RepoItemInfo Alarms_Maximum_database_size_upInfo
+            {
+                get
+                {
+                    return _alarms_maximum_database_size_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_database_size_down item.
+            /// </summary>
+            [RepositoryItem("ebc081c6-7242-4b92-87af-f1d07bab4ea5")]
+            public virtual Ranorex.Button Alarms_Maximum_database_size_down
+            {
+                get
+                {
+                    return _alarms_maximum_database_size_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_database_size_down item info.
+            /// </summary>
+            [RepositoryItemInfo("ebc081c6-7242-4b92-87af-f1d07bab4ea5")]
+            public virtual RepoItemInfo Alarms_Maximum_database_size_downInfo
+            {
+                get
+                {
+                    return _alarms_maximum_database_size_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Minimum_free_space item.
+            /// </summary>
+            [RepositoryItem("1b3725f9-60e2-4b69-aa97-6e62bfb18612")]
+            public virtual Ranorex.ComboBox Alarms_Minimum_free_space
+            {
+                get
+                {
+                    return _alarms_minimum_free_spaceInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Minimum_free_space item info.
+            /// </summary>
+            [RepositoryItemInfo("1b3725f9-60e2-4b69-aa97-6e62bfb18612")]
+            public virtual RepoItemInfo Alarms_Minimum_free_spaceInfo
+            {
+                get
+                {
+                    return _alarms_minimum_free_spaceInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Minimum_free_space_up item.
+            /// </summary>
+            [RepositoryItem("fc52c0a4-cd63-49df-bdfa-3ddcbbe7ac9c")]
+            public virtual Ranorex.Button Alarms_Minimum_free_space_up
+            {
+                get
+                {
+                    return _alarms_minimum_free_space_upInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Minimum_free_space_up item info.
+            /// </summary>
+            [RepositoryItemInfo("fc52c0a4-cd63-49df-bdfa-3ddcbbe7ac9c")]
+            public virtual RepoItemInfo Alarms_Minimum_free_space_upInfo
+            {
+                get
+                {
+                    return _alarms_minimum_free_space_upInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Minimum_free_space_down item.
+            /// </summary>
+            [RepositoryItem("7bf41f64-f17f-4d4b-9d62-5d1c4a219362")]
+            public virtual Ranorex.Button Alarms_Minimum_free_space_down
+            {
+                get
+                {
+                    return _alarms_minimum_free_space_downInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Minimum_free_space_down item info.
+            /// </summary>
+            [RepositoryItemInfo("7bf41f64-f17f-4d4b-9d62-5d1c4a219362")]
+            public virtual RepoItemInfo Alarms_Minimum_free_space_downInfo
+            {
+                get
+                {
+                    return _alarms_minimum_free_space_downInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Minimum_free_space_txt item.
+            /// </summary>
+            [RepositoryItem("8735febe-81e7-49cc-91c7-9e1c2b82c2e6")]
+            public virtual Ranorex.Text Alarms_Minimum_free_space_txt
+            {
+                get
+                {
+                    return _alarms_minimum_free_space_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Minimum_free_space_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("8735febe-81e7-49cc-91c7-9e1c2b82c2e6")]
+            public virtual RepoItemInfo Alarms_Minimum_free_space_txtInfo
+            {
+                get
+                {
+                    return _alarms_minimum_free_space_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_database_size_txt item.
+            /// </summary>
+            [RepositoryItem("a0fe2b40-311f-4f96-901f-85e88676b59f")]
+            public virtual Ranorex.Text Alarms_Maximum_database_size_txt
+            {
+                get
+                {
+                    return _alarms_maximum_database_size_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_database_size_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("a0fe2b40-311f-4f96-901f-85e88676b59f")]
+            public virtual RepoItemInfo Alarms_Maximum_database_size_txtInfo
+            {
+                get
+                {
+                    return _alarms_maximum_database_size_txtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_storage_days_txt item.
+            /// </summary>
+            [RepositoryItem("72e00afb-70a6-4020-ac09-c154880be130")]
+            public virtual Ranorex.Text Alarms_Maximum_storage_days_txt
+            {
+                get
+                {
+                    return _alarms_maximum_storage_days_txtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Alarms_Maximum_storage_days_txt item info.
+            /// </summary>
+            [RepositoryItemInfo("72e00afb-70a6-4020-ac09-c154880be130")]
+            public virtual RepoItemInfo Alarms_Maximum_storage_days_txtInfo
+            {
+                get
+                {
+                    return _alarms_maximum_storage_days_txtInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -24114,6 +24620,126 @@ namespace NformTester
                 get
                 {
                     return _noInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The NformHelpAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("41a277e3-722b-4bf9-8159-dceffaa21e11")]
+        public partial class NformHelpAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _helpcloseInfo;
+            RepoItemInfo _minimizeInfo;
+            RepoItemInfo _maximizeInfo;
+
+            /// <summary>
+            /// Creates a new NformHelp  folder.
+            /// </summary>
+            public NformHelpAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("NformHelp", "/form[@title='NformHelp']", parentFolder, 30000, true, "41a277e3-722b-4bf9-8159-dceffaa21e11", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "41a277e3-722b-4bf9-8159-dceffaa21e11");
+                _helpcloseInfo = new RepoItemInfo(this, "HelpClose", "titlebar/button[@accessiblename='Close']", 30000, null, "eb42e69c-033b-4574-8089-75cc6b965dc4");
+                _minimizeInfo = new RepoItemInfo(this, "Minimize", "titlebar/button[@accessiblename='Minimize']", 30000, null, "b41801ea-6178-4946-9949-e13c7ea4a6d7");
+                _maximizeInfo = new RepoItemInfo(this, "Maximize", "titlebar/button[@accessiblename='Maximize']", 30000, null, "23d5ebd2-4198-41ee-b81f-fac4148be660");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("41a277e3-722b-4bf9-8159-dceffaa21e11")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("41a277e3-722b-4bf9-8159-dceffaa21e11")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HelpClose item.
+            /// </summary>
+            [RepositoryItem("eb42e69c-033b-4574-8089-75cc6b965dc4")]
+            public virtual Ranorex.Button HelpClose
+            {
+                get
+                {
+                    return _helpcloseInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HelpClose item info.
+            /// </summary>
+            [RepositoryItemInfo("eb42e69c-033b-4574-8089-75cc6b965dc4")]
+            public virtual RepoItemInfo HelpCloseInfo
+            {
+                get
+                {
+                    return _helpcloseInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Minimize item.
+            /// </summary>
+            [RepositoryItem("b41801ea-6178-4946-9949-e13c7ea4a6d7")]
+            public virtual Ranorex.Button Minimize
+            {
+                get
+                {
+                    return _minimizeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Minimize item info.
+            /// </summary>
+            [RepositoryItemInfo("b41801ea-6178-4946-9949-e13c7ea4a6d7")]
+            public virtual RepoItemInfo MinimizeInfo
+            {
+                get
+                {
+                    return _minimizeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Maximize item.
+            /// </summary>
+            [RepositoryItem("23d5ebd2-4198-41ee-b81f-fac4148be660")]
+            public virtual Ranorex.Button Maximize
+            {
+                get
+                {
+                    return _maximizeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Maximize item info.
+            /// </summary>
+            [RepositoryItemInfo("23d5ebd2-4198-41ee-b81f-fac4148be660")]
+            public virtual RepoItemInfo MaximizeInfo
+            {
+                get
+                {
+                    return _maximizeInfo;
                 }
             }
         }
@@ -36875,6 +37501,7 @@ namespace NformTester
             NformRepositoryFolders.FormInstall_Device_Type_Definitions_DTDAppFolder _forminstall_device_type_definitions_dtd;
             NformRepositoryFolders.FormInstall_Device_Type_Definitions_InfoAppFolder _forminstall_device_type_definitions_info;
             NformRepositoryFolders.FormImport_Nform_2_5_DataAppFolder _formimport_nform_2_5_data;
+            NformRepositoryFolders.ServiceControlAppFolder _servicecontrol;
 
             /// <summary>
             /// Creates a new NformToolsWindow  folder.
@@ -36890,6 +37517,7 @@ namespace NformTester
                 _forminstall_device_type_definitions_dtd = new NformRepositoryFolders.FormInstall_Device_Type_Definitions_DTDAppFolder(parentFolder);
                 _forminstall_device_type_definitions_info = new NformRepositoryFolders.FormInstall_Device_Type_Definitions_InfoAppFolder(parentFolder);
                 _formimport_nform_2_5_data = new NformRepositoryFolders.FormImport_Nform_2_5_DataAppFolder(parentFolder);
+                _servicecontrol = new NformRepositoryFolders.ServiceControlAppFolder(parentFolder);
             }
 
             /// <summary>
@@ -36962,6 +37590,15 @@ namespace NformTester
             public virtual NformRepositoryFolders.FormImport_Nform_2_5_DataAppFolder FormImport_Nform_2_5_Data
             {
                 get { return _formimport_nform_2_5_data; }
+            }
+
+            /// <summary>
+            /// The ServiceControl folder.
+            /// </summary>
+            [RepositoryFolder("962c6680-3d38-4334-8e78-771d9d3c2802")]
+            public virtual NformRepositoryFolders.ServiceControlAppFolder ServiceControl
+            {
+                get { return _servicecontrol; }
             }
         }
 
@@ -38753,6 +39390,100 @@ namespace NformTester
                 get
                 {
                     return _directoryInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ServiceControlAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("962c6680-3d38-4334-8e78-771d9d3c2802")]
+        public partial class ServiceControlAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _buttonokInfo;
+            RepoItemInfo _closeInfo;
+
+            /// <summary>
+            /// Creates a new ServiceControl  folder.
+            /// </summary>
+            public ServiceControlAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ServiceControl", "/form[@title='Service Control']", parentFolder, 30000, true, "962c6680-3d38-4334-8e78-771d9d3c2802", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "962c6680-3d38-4334-8e78-771d9d3c2802");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@text='OK']", 30000, null, "1e0cef95-0890-4a2a-a7ef-cc5bac03e27e");
+                _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='Close']", 30000, null, "d63c6a5e-45ba-41ef-a4a1-ff265345cced");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("962c6680-3d38-4334-8e78-771d9d3c2802")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("962c6680-3d38-4334-8e78-771d9d3c2802")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item.
+            /// </summary>
+            [RepositoryItem("1e0cef95-0890-4a2a-a7ef-cc5bac03e27e")]
+            public virtual Ranorex.Button ButtonOK
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item info.
+            /// </summary>
+            [RepositoryItemInfo("1e0cef95-0890-4a2a-a7ef-cc5bac03e27e")]
+            public virtual RepoItemInfo ButtonOKInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("d63c6a5e-45ba-41ef-a4a1-ff265345cced")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("d63c6a5e-45ba-41ef-a4a1-ff265345cced")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
                 }
             }
         }

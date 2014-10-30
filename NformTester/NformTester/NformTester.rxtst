@@ -3524,15 +3524,15 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
-			</testcase>
-			<testcase
-			name="900.30.170_DisplayType"
-			id="f7ce22f5-5249-4877-bd67-958de4b2abdf">
-				<testmodule
-				name="TestCaseDriver"
-				id="bf267fa6-88d3-4dfb-9f2a-2c6eaae75f91"
-				ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-				type="UserCode"/>
+				<testcase
+				name="900.30.170_DisplayType"
+				id="f7ce22f5-5249-4877-bd67-958de4b2abdf">
+					<testmodule
+					name="TestCaseDriver"
+					id="bf267fa6-88d3-4dfb-9f2a-2c6eaae75f91"
+					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+					type="UserCode"/>
+				</testcase>
 			</testcase>
 			<testcase
 			name="1000._Database2"

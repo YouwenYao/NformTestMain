@@ -1365,6 +1365,22 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					addcaps="text,control,nativewindow">
 						/form[@controlname='LxViewerFrame']/container[@controlname='LxStatusButtonPanel']/element[@controlname='m_btnMaint']/text[@controlname='m_statusBtnLbl']
 					</item>
+					<item
+					name="StatusText"
+					id="25e01594-2a3f-4cc5-aa7f-b8d395c7b3a0"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,accessible">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/toolbar/text[@accessiblename='Normal' or @accessiblename='No communication' or @accessiblename='Alarm']
+					</item>
+					<item
+					name="MainFormTitle"
+					id="d7d2979b-2261-42e9-93aa-bba8586a44e8"
+					searchtimeout="30000ms"
+					capname="titlebar"
+					addcaps="titlebar,accessible">
+						/form[@controlname='LxViewerFrame']/titlebar[@accessiblerole='TitleBar']
+					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
 					</basepath>
@@ -2291,7 +2307,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&#35268;&#23450;&#33258;&#23450;&#20041;&#39068;&#33394;(&amp;D) &gt;&gt;']
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&#35268;&#23450;&#33258;&#23450;&#20041;&#39068;&#33394;(&amp;D) &gt;&gt;' or @text='&amp;Define Custom Colors &gt;&gt;']
 					</item>
 					<item
 					name="Colorpan"
@@ -2371,7 +2387,7 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&#28155;&#21152;&#21040;&#33258;&#23450;&#20041;&#39068;&#33394;(&amp;A)']
+						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&#28155;&#21152;&#21040;&#33258;&#23450;&#20041;&#39068;&#33394;(&amp;A)' or @text='&amp;Add to Custom Colors']
 					</item>
 					<item
 					name="Help"
@@ -2388,22 +2404,6 @@ BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
 					capname="button"
 					addcaps="button,accessible">
 						/form[@title='&#39068;&#33394;' or @title='Color']/titlebar/button[@accessiblename='&#20851;&#38381;']
-					</item>
-					<item
-					name="DefineCustomColors"
-					id="097e80d3-1e7d-42e6-a073-b03ddaaa5bf1"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&amp;Define Custom Colors &gt;&gt;']
-					</item>
-					<item
-					name="AddToCustomColors"
-					id="97c93336-0623-4be6-acde-a329b2bde145"
-					searchtimeout="30000ms"
-					capname="button"
-					addcaps="button,nativewindow">
-						/form[@title='&#39068;&#33394;' or @title='Color']/button[@text='&amp;Add to Custom Colors']
 					</item>
 					<basepath>
 						/form[@title='&#39068;&#33394;' or @title='Color']
@@ -3098,7 +3098,7 @@ hmw/eA7sd5JcgGwAyBCYd0hyAUV5AZa2SaXhmYlUjTD1AHJC3EGQYdi3AAAAAElFTkSuQmCC
 						/form[@title='Save As']/titlebar/button[@accessiblename='Close']
 					</item>
 					<item
-					name="FileName"
+					name="FileNameText"
 					id="4dc96d7c-327b-4a8a-8cca-7fa1768d73a9"
 					searchtimeout="30000ms"
 					capname="text"
@@ -3118,6 +3118,36 @@ p63//zmm+f/PYan/vw8IgHFvFjumAWuAtr6a2v//blri/34ZIbCC+ZU8/2cUc/2flM/xvy+bHayx
 N4sNuwFzFQT+30lP/H/e0vh/k6QoUekCJRr7ZIT/t0qJ/K+REPtfLCYONqBq/QM4Llt193/B4ltw
 p2OEAbZYAGladOj//75t//+XLP3/P6LzNG4DYM6BmQyiEyZd/N8P1Rw76c9/+9y9pBngXnbwv33e
 3v9W6bv+myZtB2NkC1DCgKLMREmOBgC1SP1voJFAuQAAAABJRU5ErkJggg==
+					</icon>
+				</appfolder>
+				<appfolder
+				name="ALARMSNAVIGATELiebertRNform"
+				id="7ba0272c-6f1e-45bb-aeee-f4fff39cccd9"
+				searchtimeout="30000ms"
+				capname="form"
+				addcaps="form,control,nativewindow"
+				isrooted="True"
+				usecache="True">
+					<item
+					name="Buttonmin"
+					id="a0ddf750-7151-4794-a600-1325b5f0f4ea"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxFloatingWindow']/titlebar/button[@accessiblename='Minimize']
+					</item>
+					<basepath>
+						/form[@controlname='LxFloatingWindow']
+					</basepath>
+					<icon>
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAEmSURBVDhPY2AYfuD/cnGFqMqe/yC8uDGwANmH
+1ZXF/zVXPQdjnD7/v1rcAaZoSmvW/tlzl9wHKZ49d2lDcWE2WLPlomu4DQApnlwZ2ADC/9fLC8yZ
+u3Q/zACiwtvQwPB/8rS9OHGQr9P/otTA/Ti9kl075X/ytudgHJVa/N8pEhgeuS1wMUUZRfwGFDdN
++d9y+P3/lnXn/jOELoXjlm3XwOIgA/B6pbptyv+l59//n7MN1YA5+66BxTEMKMqJPA+OtsIWsMkt
+XVP+H7v/HYyTc6vBXkjOLIaLYRiAHLegqOrpm/L/3uv//6tre/57ATWDDPCKbPlfXNsCFscwYGlr
+UAAs2kAuiAx0eu8VWY3if1hYgMS7SwLXE4xOXAZ4RlS9J6iZ7goACJkAvilkRYcAAAAASUVORK5C
+YII=
 					</icon>
 				</appfolder>
 			</folder>
@@ -6807,7 +6837,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_eventLogTab']/checkbox[@controlname='m_eventLogDiagChk']
 					</item>
 					<item
-					name="Maximum_viewable_alarms"
+					name="Maximum_viewable_alarms_old"
 					id="9185cf60-cf94-40d2-a711-aacf59a2a2c0"
 					searchtimeout="30000ms"
 					capname="combobox"
@@ -6815,7 +6845,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/combobox[@accessiblename='Maximum viewable alarms:']
 					</item>
 					<item
-					name="Maximum_viewable_alarms_up"
+					name="Maximum_viewable_alarms_up_old"
 					id="1006da36-a332-4e1e-bff7-22a815cf1dbf"
 					searchtimeout="30000ms"
 					capname="button"
@@ -6823,7 +6853,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/container/button[@accessiblename='Up']
 					</item>
 					<item
-					name="Maximum_viewable_alarms_down"
+					name="Maximum_viewable_alarms_down_old"
 					id="42f0e43b-f416-4fa7-bfdc-4bfe26c23511"
 					searchtimeout="30000ms"
 					capname="button"
@@ -6831,7 +6861,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/container/button[@accessiblename='Down']
 					</item>
 					<item
-					name="Maximum_viewable_alarms_txt"
+					name="Maximum_viewable_alarms_txt_old"
 					id="6aa9cd4a-4735-444f-97e6-539700be1aef"
 					searchtimeout="30000ms"
 					capname="text"
@@ -6855,7 +6885,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmAutoAckSevCombo']/combobox[@controlname='m_alarmAutoAckSevCombo-Ctl']
 					</item>
 					<item
-					name="Alarms_Maximum_storage_days"
+					name="Alarms_Maximum_storage_days_old"
 					id="c6edc988-d9ee-480e-9773-527c1262e921"
 					searchtimeout="30000ms"
 					capname="combobox"
@@ -6863,7 +6893,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/combobox[@accessiblename='Maximum storage (days):']
 					</item>
 					<item
-					name="Alarms_Maximum_storage_days_up"
+					name="Alarms_Maximum_storage_days_up_old"
 					id="c175729e-39ae-4743-9d0e-d08dbb473f02"
 					searchtimeout="30000ms"
 					capname="button"
@@ -6871,7 +6901,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/container/button[@accessiblename='Up']
 					</item>
 					<item
-					name="Alarms_Maximum_storage_days_down"
+					name="Alarms_Maximum_storage_days_down_old"
 					id="758fccd4-8bad-4af5-93dd-c4cddc17a1b7"
 					searchtimeout="30000ms"
 					capname="button"
@@ -6879,7 +6909,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/container/button[@accessiblename='Down']
 					</item>
 					<item
-					name="Alarms_Maximum_storage_days_txt"
+					name="Alarms_Maximum_storage_days_txt_old"
 					id="087226f5-711d-4990-82b9-ca8f8ebbf1a6"
 					searchtimeout="30000ms"
 					capname="text"
@@ -6895,7 +6925,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/checkbox[@controlname='m_alarmDbMonitorChk']
 					</item>
 					<item
-					name="Alarms_Maximum_database_size"
+					name="Alarms_Maximum_database_size_old"
 					id="8f4b7a06-d523-4135-8b39-c5891a545e0d"
 					searchtimeout="30000ms"
 					capname="combobox"
@@ -6903,7 +6933,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/combobox[@accessiblename~'^Maximum\ database\ size\ \(MB']
 					</item>
 					<item
-					name="Alarms_Maximum_database_size_up"
+					name="Alarms_Maximum_database_size_up_old"
 					id="d78408e5-d60d-40df-aa8d-bb126307e056"
 					searchtimeout="30000ms"
 					capname="button"
@@ -6911,7 +6941,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/container/button[@accessiblename='Up']
 					</item>
 					<item
-					name="Alarms_Maximum_database_size_down"
+					name="Alarms_Maximum_database_size_down_old"
 					id="a5c776fd-cebc-4e9c-b9ae-f96fb9d4fc74"
 					searchtimeout="30000ms"
 					capname="button"
@@ -6919,7 +6949,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/container/button[@accessiblename='Down']
 					</item>
 					<item
-					name="Alarms_Maximum_database_size_txt"
+					name="Alarms_Maximum_database_size_txt_old"
 					id="12e53b13-803a-4c16-a958-16ff4abd1665"
 					searchtimeout="30000ms"
 					capname="text"
@@ -6927,7 +6957,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/text[@controlname='upDownEdit']
 					</item>
 					<item
-					name="Alarms_Minimum_free_space"
+					name="Alarms_Minimum_free_space_old"
 					id="e73db48a-bc3f-4608-bf56-a8e627932e6c"
 					searchtimeout="30000ms"
 					capname="combobox"
@@ -6935,7 +6965,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/combobox[@accessiblename='Minimum free space (%):']
 					</item>
 					<item
-					name="Alarms_Minimum_free_space_up"
+					name="Alarms_Minimum_free_space_up_old"
 					id="22b9b0d2-8951-4d4b-a973-54bc099ac8d1"
 					searchtimeout="30000ms"
 					capname="button"
@@ -6943,7 +6973,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/container/button[@accessiblename='Up']
 					</item>
 					<item
-					name="Alarms_Minimum_free_space_down"
+					name="Alarms_Minimum_free_space_down_old"
 					id="c988be1b-428c-459f-92bb-2a05f6dd3806"
 					searchtimeout="30000ms"
 					capname="button"
@@ -6951,7 +6981,7 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/container/button[@accessiblename='Down']
 					</item>
 					<item
-					name="Alarms_Minimum_free_space_txt"
+					name="Alarms_Minimum_free_space_txt_old"
 					id="48f3c91d-5937-4cee-a60c-1cadb6a23c38"
 					searchtimeout="30000ms"
 					capname="text"
@@ -7718,6 +7748,134 @@ mAEArCvv3zgQncsAAAAASUVORK5CYII=
 					addcaps="text,control,nativewindow">
 						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_deviceTab']/container[@controlname='m_statusPollGrp']/container/container[@controlname='m_devPollIntervalNbx']/container/text[@controlname='upDownEdit']
 					</item>
+					<item
+					name="Maximum_viewable_alarms"
+					id="2f325bee-7a5a-4052-acc4-3506049e1ebc"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/container/combobox[@accessiblename='Maximum viewable alarms:']
+					</item>
+					<item
+					name="Maximum_viewable_alarms_txt"
+					id="ea4308f4-b9ea-4515-b146-4f58ec261227"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/container/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="Maximum_viewable_alarms_up"
+					id="85ae4fc0-55fa-411b-bc8d-f8430baa2a22"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/container/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="Maximum_viewable_alarms_down"
+					id="b0fd0ba9-3fa6-4f81-8d6e-c18071898ba9"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmMaxViewableNbx']/container/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="Alarms_Maximum_storage_days"
+					id="807aa9cb-c515-4ba1-968c-33f54eaf5103"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/container/combobox[@accessiblename='Maximum storage (days):']
+					</item>
+					<item
+					name="Alarms_Maximum_storage_days_up"
+					id="136e4a3f-cdde-489f-95f4-47ac140e529e"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/container/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="Alarms_Maximum_storage_days_down"
+					id="f1fb1ce0-23f4-4ae0-94c4-5b8dae55e467"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/container/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="Alarms_Maximum_database_size"
+					id="cf74ba5f-0a96-4ea7-809f-cb2852554022"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/container/combobox[@accessiblename~'^Maximum\ database\ size\ \(MB']
+					</item>
+					<item
+					name="Alarms_Maximum_database_size_up"
+					id="bca60313-f81e-42ac-8064-774501e067b8"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/container/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="Alarms_Maximum_database_size_down"
+					id="ebc081c6-7242-4b92-87af-f1d07bab4ea5"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/container/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="Alarms_Minimum_free_space"
+					id="1b3725f9-60e2-4b69-aa97-6e62bfb18612"
+					searchtimeout="30000ms"
+					capname="combobox"
+					addcaps="combobox,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/container/combobox[@accessiblename='Minimum free space (%):']
+					</item>
+					<item
+					name="Alarms_Minimum_free_space_up"
+					id="fc52c0a4-cd63-49df-bdfa-3ddcbbe7ac9c"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/container/container/button[@accessiblename='Up']
+					</item>
+					<item
+					name="Alarms_Minimum_free_space_down"
+					id="7bf41f64-f17f-4d4b-9d62-5d1c4a219362"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/container/container/button[@accessiblename='Down']
+					</item>
+					<item
+					name="Alarms_Minimum_free_space_txt"
+					id="8735febe-81e7-49cc-91c7-9e1c2b82c2e6"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMinFreeNbx']/container/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="Alarms_Maximum_database_size_txt"
+					id="a0fe2b40-311f-4f96-901f-85e88676b59f"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxSizeNbx']/container/text[@controlname='upDownEdit']
+					</item>
+					<item
+					name="Alarms_Maximum_storage_days_txt"
+					id="72e00afb-70a6-4020-ac09-c154880be130"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxServerPropsDlg']/tabpagelist/tabpage[@controlname='m_alarmsTab']/container[@controlname='m_alarmDbGrp']/container[@controlname='m_alarmDbMaxStoreAgeNbx']/container/text[@controlname='upDownEdit']
+					</item>
 					<basepath>
 						/form[@controlname='LxServerPropsDlg']
 					</basepath>
@@ -7773,6 +7931,49 @@ xDA4AElmz9r7v+Xw+/9OlUv/c4RCsIBr9f/qXffA4jADjh0/9v/5/WuYBrQs2/t/6eX3/4Mq56AY
 MOf4c7A4zAC4rdmV2f+j2qrBJoEk56w79v/Y/e//915//z+qdul/p9wpYD4MYxigCFQEihqYAUvX
 bf2/FBiVTrlz/gt4toCxZmTP/2xgFF57jMUFoPgF+QdmQEth0H+OwClw58PCAURbOnphegE93r9/
 /g6Mnilw22GuAAXk1n3naJSAKEp9lGoGANguDmDQlTsrAAAAAElFTkSuQmCC
+					</icon>
+				</appfolder>
+				<appfolder
+				name="NformHelp"
+				id="41a277e3-722b-4bf9-8159-dceffaa21e11"
+				searchtimeout="30000ms"
+				capname="form"
+				addcaps="form,nativewindow"
+				isrooted="True"
+				usecache="True">
+					<item
+					name="HelpClose"
+					id="eb42e69c-033b-4574-8089-75cc6b965dc4"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@title='NformHelp']/titlebar/button[@accessiblename='Close']
+					</item>
+					<item
+					name="Minimize"
+					id="b41801ea-6178-4946-9949-e13c7ea4a6d7"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@title='NformHelp']/titlebar/button[@accessiblename='Minimize']
+					</item>
+					<item
+					name="Maximize"
+					id="23d5ebd2-4198-41ee-b81f-fac4148be660"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@title='NformHelp']/titlebar/button[@accessiblename='Maximize']
+					</item>
+					<basepath>
+						/form[@title='NformHelp']
+					</basepath>
+					<icon>
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAACiSURBVDhPpVNBDsAgCPPpPs2fOQvDAYIcZkJm
+1Ja209aK0XubvirM3gdwTltjDCIsSSKwkDFJz0k8WCxoNUsBE4DJFzZ9N5xBZ1k3BGt1Dxx6N+nL
+3UmuySMl0GSYL40HWDVhC9GQrj4PA5YMhMBngXVNcIA9QayEM9Bl7oC2ECngHC4XJ8vgs0XgXcct
+rBSkv098VAp+E7yS7xa0x8s8fIAP90MAej3/8AgAAAAASUVORK5CYII=
 					</icon>
 				</appfolder>
 			</folder>
@@ -12676,6 +12877,54 @@ tNxYTlOOPw1Z/tRd9MN4fhnagmhvB+UztucHQ+gJCsCxezuPt2xGERePuqF7NlTmLpSmZ9yueUqh
 oYNcXTvlta1eQG1RMaUSGcVxchRiOfmx8VTcUnLT4kJjB5UVChvh8gM4qweJGi4pm/6eA9+B8tyz
 asfJM0NmDaToIFYFJxQ/OHzVzbm8uoUBMvUoiVqIKYHI/O8cyp4gJO0V+xMcJGffXxgQnvmE0Au9
 BKd0Eiixs+ekmV3HqtgWriE+0/AnYP4y/U++GIss/ASbSOwrtMvXyQAAAABJRU5ErkJggg==
+					</icon>
+				</appfolder>
+				<appfolder
+				name="ServiceControl"
+				id="962c6680-3d38-4334-8e78-771d9d3c2802"
+				searchtimeout="30000ms"
+				capname="form"
+				addcaps="form,nativewindow"
+				isrooted="True"
+				usecache="True">
+					<item
+					name="ButtonOK"
+					id="1e0cef95-0890-4a2a-a7ef-cc5bac03e27e"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,nativewindow">
+						/form[@title='Service Control']/button[@text='OK']
+					</item>
+					<item
+					name="Close"
+					id="d63c6a5e-45ba-41ef-a4a1-ff265345cced"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@title='Service Control']/titlebar/button[@accessiblename='Close']
+					</item>
+					<basepath>
+						/form[@title='Service Control']
+					</basepath>
+					<icon>
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAN0SURBVDhPfVJdTJNnFH6NGvzJPpTFsDGmiQRD
+ujESSImECYNY0ymFtLYCX+v316+2pZRQL1CMCSYaLgSHYMFYhJIK/RGhPxYkLk7d4sV2uwvnT3Qh
+2ZJtyfyhXYY3z963Ti49yZPvyflynnPOex5C/o/6+voN1dXVXGNjYyGD2WwuUFW12On0arq6uqp8
+Pl8FA+Ms5/F4ivR6fd67elJVVbWlpqZmV11dnZb+0DY3N2scDofW6/UagsEp9PSclKmAjXH6Pex0
+dla0tLRsWxPQaDQFtbW1e3U6HS4OD4EKHKITGMfHx5HN/oMTvb0XGFZX34DlXC5Xk9FoLF4TKCsr
++5hOcIgG/KN+JqDIsmyfnAzixYuXWFhYxMLiLWSyWUwGg3A6nQLPm3avCZSXlxdTAQstxNjlMRgM
+BrdAY2BwEHe+u4e/X77OgfFBmpMk6aDFYtn5PgFJEKwHIpGp1MjICJLJFBKJFC5d8oPlZNlWwfP8
+dnK3nmxIHSNbXLrCz9u/Llf5I02YuOqHaNpnd1v1WrvY+hXtdioSjeHGjXl0dnYNWK3WfbJs3kEf
+OI+w4oRCir45snX/aX5nn0/VIxoaRq+o8ZxzVFZ6JGOlzSa4o9HrCIWmoajqcbrZZ/TMm+n460jM
+THakJKJ9dYXDvw8MwF9ngT968GrqI/g7dum7haYDkqKeCEeimJmJwOF0nxFFcS8bn3mHxATySVIi
+ugczx7/Pxjngz6PA7824H+v+adhdcswrG7vT6VtIptKYm4sjHk+CmshllWUNXYUj862kJC0Ry8o0
+hzc/lgC/lQK/FiFzncOg/dPzE4FRxJM38ejpczx5toxE6iY98yhsNpsh54OFVrJnSSJ8ZoZ2X6bF
+y/nAszxkZzkMyEWBqatj+PnhIwQCgRx+efycnvky2IlNJuqD2yZSettOLBk6AZ4QWkzxlCAb5XBB
+/PDi0PlzmJ2bhyApQxIF4/39/Whvb3/rg0UjKV5SSMPrCQ6rdzYBj6nAQ4KVEIcRieuYnR6L9/X1
+oc1qNdOdzYxHIsEwXeGtD761kPz5o2RPQiXGH8K++5kwh5VrHOIO0jEqbG3otDVU0JNpaMdShne8
+ra2tMOeDRT3Ji9lJQdi+8YuQZ/Phu5HepXvR0+moY/3+CTl/90n+y+2i2LKNjpvPwLiiKB/kiqkP
+/gONzNOqVT5H4wAAAABJRU5ErkJggg==
 					</icon>
 				</appfolder>
 			</folder>
