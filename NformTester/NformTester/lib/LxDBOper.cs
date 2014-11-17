@@ -429,5 +429,21 @@ namespace NformTester.lib
 		
 		
 		
+		
+			/// <summary>
+		/// Delete Log file to clean the Nform.
+		/// </summary>
+		public void DeleteLogFile(String LogPath)
+		{ 
+		    if (File.Exists(LogPath))
+		 {
+			 System.IO.File.Delete(LogPath);
+			 Console.WriteLine("*****Finish to Delete the Log File*****");
+		 }	
+		 else
+		 	Console.WriteLine("*****This Log File is not existed.*****");
+		}	
+		
+		
 	}
 }

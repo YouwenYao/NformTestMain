@@ -66,10 +66,13 @@ namespace NformTester.lib
 		/// <summary>
 		/// Map the action and call executeCommand to run script's steps.
 		/// </summary>
-		public static bool performScripts(ArrayList stepList)
+		public static bool performScripts(ArrayList stepList, String DetailStep)
 		{
 			LxSetup mainOp = LxSetup.getInstance();
+			Validate.EnableReport = false;
+			LxLog.Info("Info", "start this scripts.");
 			
+			 
 			// Map action
 			m_ActionMap.Clear();
 			m_ActionMap.Add("InputKeys", new object[] {"PressKeys","1"});
@@ -116,17 +119,22 @@ namespace NformTester.lib
 					wrongCount++;
 					resultFlag = false;
 					finalResult = false;
-					LxLog.Error("Error",e.Message.ToString());
+					LxLog.Error("Error",item.m_Index+" "+e.Message.ToString());
 				}
-						
-				// Log each step is pass or not
-				mainOp.opXls.writeCell(Convert.ToInt32(item.m_Index)+1,14,resultFlag==true?"Pass":"Fail");
-				LxLog.Info("Info",item.m_Index+" "+item.m_Component+" "+item.m_Action+" "+ (resultFlag==true?"Success":"Failure"));
+				
+				// if user needs to look at the detail steps, Log each step is pass or not
+				if(DetailStep.Equals("Y"))
+				{
+					Validate.EnableReport = true;
+					mainOp.opXls.writeCell(Convert.ToInt32(item.m_Index)+1,14,resultFlag==true?"Pass":"Fail");
+		            LxLog.Info("Info",item.m_Index+" "+item.m_Component+" "+item.m_Action+" "+ (resultFlag==true?"Success":"Failure"));
+				}
 						
 		         //If this script fails three times continuously, break this execution.
 			     if(wrongCount==wrongTime) 
 			     	break;
 			}
+			LxLog.Info("Info","This test case is done.");
 				
 			return finalResult;
 		}
@@ -172,10 +180,12 @@ namespace NformTester.lib
 		//	{
 		//		repo.NFormApp.LogintoLiebertNformWindow.FormEvaluation_Period_Expiration.OK.Click();
 		//	}
-		//	if(repo.NFormApp.LicensesWindow.FormReminder.RawTextNoInfo.Exists())
-		//	{
-		//		repo.NFormApp.LicensesWindow.FormReminder.RawTextNo.Click("53;10");
-		//	}
+			if(repo.NFormApp.LicensesWindow.FormReminder.NoInfo.Exists())
+			{
+				repo.NFormApp.LicensesWindow.FormReminder.No.Click("53;10");
+			}
+		
+		
 		}
 		
 		//**********************************************************************
@@ -230,11 +240,12 @@ namespace NformTester.lib
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Search_device_table.Rows[1].Cells[1].PressKeys(item.getArg2Text() + "{TAB}{CONTROL down}{Akey}{CONTROL up}" +item.getArg3Text());
 				Delay.Duration(1000);				
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Next.Click();
-				Delay.Duration(4000);
+				Delay.Duration(8000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Next.Click();
+				Delay.Duration(1000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Select_all.Click();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Finish.Click();
-				Delay.Duration(2000);
+				Delay.Duration(8000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device_Results.OK.Click();
 				repo.NFormApp.ManagedDevicesWindow.FormManaged_Devices.Close.Click();								
 			}			
@@ -279,7 +290,6 @@ namespace NformTester.lib
 			{
 				Ranorex.NativeWindow nativeWnd = item.getComponentInfo().CreateAdapter<Ranorex.NativeWindow>(false);
 				string lableText = nativeWnd.WindowText;
-				
 				if(item.getArg2Text() == "Equal")
 				{string abc = item.getArg3Text();
 					Validate.AreEqual(lableText, item.getArg3Text());
@@ -722,28 +732,84 @@ namespace NformTester.lib
 		/// </summary>
 		public static void VerifyTxtfileValues(LxScriptItem item)
 		{
+			if(String.Equals("error", item.getArg2Text().Trim(),StringComparison.OrdinalIgnoreCase))
+			{
+				VerifyErrorInLog(item);
+			}
+		
+			else
+			{
+				
+				string strPath = item.getArgText();
+				string strFileName = strPath.Substring(strPath.LastIndexOf("/") + 1,strPath.Length - strPath.LastIndexOf("/") -1);
+				string flag = item.getArg3Text();  // flag=true, contains; flag=false, not contains.
+				
+				System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+	   			//startInfo.CreateNoWindow = true;
+	   			startInfo.FileName = "notepad.exe";
+				//startInfo.UseShellExecute = false;
+				//startInfo.RedirectStandardOutput = true;
+				//startInfo.RedirectStandardInput = true;
+	   			startInfo.Arguments = " " + strPath;
+	   			System.Diagnostics.Process process = System.Diagnostics.Process.Start(startInfo);   			
+	   			bool bContains = repo.ExternalApp.NotePad.MainContext.TextValue.IndexOf(item.getArg2Text())==-1?false:true;
+	
+	   			Delay.Milliseconds(6000);
+				process.Kill();
+				if(flag.Equals("True"))
+					Validate.AreEqual(bContains,true);
+				else
+					Validate.AreEqual(bContains,false);
+			}
+			
+		}
+		
+		
+		//**********************************************************************
+		/// <summary>
+		/// Verify content contains or not contains Error in Server.log and Viewer.log.
+		/// </summary>
+		public static void VerifyErrorInLog(LxScriptItem item)
+		{
 			string strPath = item.getArgText();
 			string strFileName = strPath.Substring(strPath.LastIndexOf("/") + 1,strPath.Length - strPath.LastIndexOf("/") -1);
 			string flag = item.getArg3Text();  // flag=true, contains; flag=false, not contains.
 			
+			
+			//Add some constant strings in Server.log and Viewer.log
+			//These three error infos are added when simulator devices are added, so we need to ignore these infos
+			string strConstantError = "Error configuring web card for";
+			string strConstantErrorCode = "ErrorCode=10061";
+			string strConstantErrorPerforming = "Error performing the request";
+			string strError = "Error";
+			bool bContains = false;
+			
+			
 			System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-   			//startInfo.CreateNoWindow = true;
    			startInfo.FileName = "notepad.exe";
-			//startInfo.UseShellExecute = false;
-			//startInfo.RedirectStandardOutput = true;
-			//startInfo.RedirectStandardInput = true;
    			startInfo.Arguments = " " + strPath;
-   			System.Diagnostics.Process process = System.Diagnostics.Process.Start(startInfo);   			
-   			bool bContains = repo.ExternalApp.NotePad.MainContext.TextValue.IndexOf(item.getArg2Text())==-1?false:true;
-
+   			System.Diagnostics.Process process = System.Diagnostics.Process.Start(startInfo); 
+   			string strLogFile = repo.ExternalApp.NotePad.MainContext.TextValue;
+   			if(strLogFile.LastIndexOf(strError)!=-1)
+   			{
+	   			string strLogOne = strLogFile.Substring(strLogFile.LastIndexOf(strError), strConstantError.Length);
+	   			string strLogTwo = strLogFile.Substring(strLogFile.LastIndexOf(strError), strConstantErrorCode.Length);
+	   			string strLogThree = strLogFile.Substring(strLogFile.LastIndexOf(strError), strConstantErrorPerforming.Length);
+	   			
+	   			if((strConstantError!=strLogOne)&&(strConstantErrorCode!=strLogTwo)&&(strConstantErrorPerforming!=strLogThree))
+	   			   bContains = true;
+   			}
+   			   
    			Delay.Milliseconds(6000);
 			process.Kill();
+		
 			if(flag.Equals("True"))
 				Validate.AreEqual(bContains,true);
 			else
 				Validate.AreEqual(bContains,false);
-			
 		}
+		
+		
 		
 		//**********************************************************************
 		/// <summary>
@@ -1078,10 +1144,15 @@ namespace NformTester.lib
 			  
 		 string FilePath = parseToValue(item.m_Component);
 		 
-		 System.IO.File.Delete(FilePath);
-	     
-		  Console.WriteLine("*****Finish to Delete the File*****");
-		
+		 if (File.Exists(FilePath))
+		 {
+			 System.IO.File.Delete(FilePath);
+		     
+			 Console.WriteLine("*****Finish to Delete the File*****");
+		 }	
+		 else
+		 	Console.WriteLine("*****This File is not existed.*****");
+		 	
 		}
 		
 		

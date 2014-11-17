@@ -54,7 +54,7 @@ namespace NformTester.driver
         /// <summary>
         /// Backup database.
         /// </summary>
-    	private void BackupDB (String RestoreDB)
+    	private void BackupDB (String RestoreDB, String ServerLogPath, String ViewerLogPath)
 		{
 			// If RestoreDB is Y, program will restore Database for Nform before scripts are executed.
            if(RestoreDB.Equals("Y"))
@@ -62,6 +62,11 @@ namespace NformTester.driver
            	 	//stop Nform service
 				Console.WriteLine("Stop Nform service...");
 				string strRst = RunCommand("sc stop Nform");
+				
+                //First, delete log files to clean the Nform.   
+                Delay.Duration(10000);
+                myLxDBOper.DeleteLogFile(ServerLogPath);
+                myLxDBOper.DeleteLogFile(ViewerLogPath);
 				
 				//Backup Database operation. Just do once before run all scripts.
 	            myLxDBOper.SetDbType();
@@ -83,7 +88,7 @@ namespace NformTester.driver
     	/// <summary>
         /// Restore database.
         /// </summary>
-    	private void RestoreDB (String RestoreDB)
+    	private void RestoreDB (String RestoreDB, String ServerLogPath, String ViewerLogPath)
 		{			
     		// If RestoreDB is Y, program will restore Database for Nform before scripts are executed.
            if(RestoreDB.Equals("Y"))
@@ -91,6 +96,11 @@ namespace NformTester.driver
 	            //stop Nform service
 				Console.WriteLine("Stop Nform service...");
 				RunCommand("sc stop Nform");
+				
+                //First, delete log files to clean the Nform.             
+      //          myLxDBOper.DeleteLogFile(ServerLogPath);
+      //          myLxDBOper.DeleteLogFile(ViewerLogPath);
+                
 	            // Restore Database operation.
 	            // If there is any error when perform Scripts, execute the restore DB operation.
 	            myLxDBOper.RestoreDataBase();
@@ -143,27 +153,32 @@ namespace NformTester.driver
             LxSetup mainOp = LxSetup.getInstance();  
             var configs = mainOp.configs;
             string RestoreDB_Flag = configs["RestoreDB_AfterEachTestCase"];
-            BackupDB(RestoreDB_Flag);
+            string ServerLogPath = configs["Server_Log_Path"];
+            string ViewerLogPath = configs["Viewer_Log_Path"];
+            string DetailSteps = configs["DetailSteps_InResult"];
+            BackupDB(RestoreDB_Flag, ServerLogPath,ViewerLogPath);
             
             string tsName = mainOp.getTestCaseName();
             string excelPath = "keywordscripts/" + tsName + ".xlsx";                                           
             Report.Info("INfo",excelPath);	
+            
             mainOp.StrExcelDirve = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
                                                  excelPath);
             mainOp.runApp();							//  ********* 1. run Application *********
             
             LxParse stepsRepository = mainOp.getSteps();
             // stepsRepository.doValidate();  				//  ********* 2. check scripts  syntax *********
+           
             ArrayList stepList = stepsRepository.getStepsList();
-            bool result = LxGenericAction.performScripts(stepList);	//  ********* 3. run scripts with reflection *********
-            
+            bool result = LxGenericAction.performScripts(stepList,DetailSteps);	//  ********* 3. run scripts with reflection *********
+           
             mainOp.setResult();
             mainOp.runOverOneCase(tsName);
             mainOp.opXls.close();
             Delay.Seconds(5);
             LxTearDown.closeApp(mainOp.ProcessId);		//  ********* 4. clean up for next running *********
 			
-            RestoreDB(RestoreDB_Flag);
+            RestoreDB(RestoreDB_Flag, ServerLogPath, ViewerLogPath);
             if(!result)
             {
 				throw new Ranorex.ValidationException("The test case running failed!", null);  
