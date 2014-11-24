@@ -7,7 +7,7 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
-
+using System.Windows.Forms;
 using Ranorex;
 
 namespace NformTester.lib
@@ -75,6 +75,7 @@ namespace NformTester.lib
 			}
 			Report.Error(category, message);
 		}
+		
 		
 		//**********************************************************************
 		/// <summary>

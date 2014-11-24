@@ -134,8 +134,9 @@ namespace NformTester.lib
 			     if(wrongCount==wrongTime) 
 			     	break;
 			}
+			
 			LxLog.Info("Info","This test case is done.");
-				
+			
 			return finalResult;
 		}
 		

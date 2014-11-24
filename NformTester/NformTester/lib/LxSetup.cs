@@ -494,6 +494,19 @@ namespace NformTester.lib
         	// return htLanguageInfo[LanguageID];
         	return "";
 	    }
-		
+        
+        
+        		
+		//**********************************************************************
+		/// <summary>
+		/// Create one file.
+		/// </summary>
+		public void CreateFile(string pathname)
+		{
+			if(!Directory.Exists(pathname))
+			{ 
+				Directory.CreateDirectory(pathname);
+			}
+		}		
 	}
 }

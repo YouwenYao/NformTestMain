@@ -10,6 +10,7 @@ using System;
 using System.Reflection;
 using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
 
 using Ranorex;
 using Ranorex.Core;
@@ -332,5 +333,6 @@ namespace NformTester.lib
        	   	
        	   	return null;
 		}
+		
 	}
 }
