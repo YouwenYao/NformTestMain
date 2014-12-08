@@ -771,7 +771,7 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					searchtimeout="30000ms"
 					capname="button"
 					addcaps="button,accessible">
-						/form[@controlname='LxViewerFrame']/titlebar/button[@accessiblename='&#20851;&#38381;']
+						/form[@controlname='LxViewerFrame']/titlebar/button[@accessiblename='&#20851;&#38381;' or @accessiblename='Close']
 					</item>
 					<item
 					name="Device_status_list"
@@ -1380,6 +1380,14 @@ WOJdgNc8+TzMdjgNDEhOfklwohpmAAC5cueWMhGtIQAAAABJRU5ErkJggg==
 					capname="titlebar"
 					addcaps="titlebar,accessible">
 						/form[@controlname='LxViewerFrame']/titlebar[@accessiblerole='TitleBar']
+					</item>
+					<item
+					name="MPieChartCtl"
+					id="eed95f36-931f-45b4-a27b-5cb8a4fa6845"
+					searchtimeout="30000ms"
+					capname="container"
+					addcaps="container,control,nativewindow">
+						/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='m_pieChartCtl']
 					</item>
 					<basepath>
 						/form[@controlname='LxViewerFrame']
@@ -11031,6 +11039,14 @@ c2C/k+QCZANAhsC8Q5ILKMoL5OZIirIyyFIAnawJImbUhwYAAAAASUVORK5CYII=
 					capname="button"
 					addcaps="button,control,nativewindow">
 						/form[@controlname='LxHelpAboutDlg']/button[@controlname='m_sysInfoBtn']
+					</item>
+					<item
+					name="RegistrationDscr"
+					id="7a973168-0397-458b-aede-4cf6720e532e"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,control,nativewindow">
+						/form[@controlname='LxHelpAboutDlg']/tabpagelist/tabpage[@controlname='m_registrationTab']/text[@controlname='m_registrationTbx']
 					</item>
 					<basepath>
 						/form[@controlname='LxHelpAboutDlg']

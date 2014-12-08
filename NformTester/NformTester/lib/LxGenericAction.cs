@@ -177,10 +177,10 @@ namespace NformTester.lib
 			repo.NFormApp.LogintoLiebertNformWindow.FormLogin_to_LiebertR_Nform.ServerCombo.PressKeys(item.getArg3Text());
 			repo.NFormApp.LogintoLiebertNformWindow.FormLogin_to_LiebertR_Nform.Login.Click();
 			Delay.Milliseconds(3000);
-		//	if(repo.NFormApp.LogintoLiebertNformWindow.FormEvaluation_Period_Expiration.OKInfo.Exists())
-		//	{
-		//		repo.NFormApp.LogintoLiebertNformWindow.FormEvaluation_Period_Expiration.OK.Click();
-		//	}
+			if(repo.NFormApp.LogintoLiebertNformWindow.FormEvaluation_Period_Expiration.OKInfo.Exists())
+			{
+				repo.NFormApp.LogintoLiebertNformWindow.FormEvaluation_Period_Expiration.OK.Click();
+			}
 			if(repo.NFormApp.LicensesWindow.FormReminder.NoInfo.Exists())
 			{
 				repo.NFormApp.LicensesWindow.FormReminder.No.Click("53;10");
@@ -1156,8 +1156,46 @@ namespace NformTester.lib
 		 	
 		}
 		
-		
-		
+	/*
+		/// Get color of gadget.
+		public static void VerifyColor(LxScriptItem item)
+		{
+			
+			object objComponet = item.getComponent();
+			RepoItemInfo objComponetInfo = item.getComponentInfo();
+			Type objType = objComponet.GetType();
+							
+			if(objType.Name.ToString() == "Table")
+			{
+				Ranorex.Table tb = (Ranorex.Table)objComponet;
+				tb.Rows[Convert.ToInt32(item.getArgText())].Cells[Convert.ToInt32(item.getArg2Text())].Click();
+			}									
+			
+	//		Ranorex.Container  myContainer = "/form[@controlname='LxViewerFrame']/container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='m_pieChartCtl']";
+			Ranorex.Container myContainer = "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='m_pieChartCtl']";
+			Object myCtrl = myContainer.Element;
+			
+		    System.Drawing.Color myColor = (Color)myCtrl;
+		    
+		    byte Red = myColor.R;
+		    byte Green = myColor.G;
+		    byte Blue = myColor.B;
+			
+            // Invoke Remotely   
+  
+            string colorOfCell = (string)myCtrl.InvokeRemotely( delegate(System.Windows.Forms.Control control, object input)
+            {   
+                     System.Windows.Forms.DataGridView dataGrid = (System.Windows.Forms.DataGridView) control;   
+                                                   
+                     // There you can access each cell:   
+                     Color color = dataGrid.Rows[1].Cells[2].Style.BackColor;   
+                     Console.WriteLine("Color: "+color);   
+                     return color.ToString();   
+             }
+             );
+            Report.Info("Color of Cell: "+colorOfCell);
+		}	
+		*/
 		
 		
 	}

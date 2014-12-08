@@ -1059,6 +1059,7 @@ namespace NformTester
             RepoItemInfo _collapsed_mainenance_countInfo;
             RepoItemInfo _statustextInfo;
             RepoItemInfo _mainformtitleInfo;
+            RepoItemInfo _mpiechartctlInfo;
 
             /// <summary>
             /// Creates a new FormMain  folder.
@@ -1141,7 +1142,7 @@ namespace NformTester
                 _mainmenuInfo = new RepoItemInfo(this, "MainMenu", "menubar[@controlname='m_mainMenu']", 30000, null, "40905bd2-a354-42a1-a80f-93f39a5dc5fa");
                 _minimumInfo = new RepoItemInfo(this, "Minimum", "titlebar/button[@accessiblename='最小化']", 30000, null, "52e0121d-7f34-40ed-a447-e790099facb2");
                 _maximumInfo = new RepoItemInfo(this, "Maximum", "titlebar/button[@accessiblename='最大化']", 30000, null, "1b37a526-3afd-47b6-8b2f-493eb50dca67");
-                _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='关闭']", 30000, null, "a6632a5b-d3c0-49ef-954d-0c4d850c47e8");
+                _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='关闭' or @accessiblename='Close']", 30000, null, "a6632a5b-d3c0-49ef-954d-0c4d850c47e8");
                 _device_status_listInfo = new RepoItemInfo(this, "Device_status_list", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Device Status: All']/container[@controlname='LxGadgetListView']/table/list[@accessiblerole='List']", 30000, null, "aeae1587-bf72-4e45-8dc7-a8d95e6800d6");
                 _device_treeInfo = new RepoItemInfo(this, "Device_tree", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel1']/tree/tree[@accessiblerole='Outline']", 30000, null, "4444c09e-3741-4817-8ab8-3b298c2f0efe");
                 _floor_planInfo = new RepoItemInfo(this, "Floor_Plan", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_devicesPage']/container/container/container[@controlname='panel2']/container[@controlname='LxViewerRhsMgr']/tabpagelist/tabpage[@accessiblename='Floor Plan']", 30000, null, "7e8891c3-4e82-4825-af3e-d9f687318a64");
@@ -1218,6 +1219,7 @@ namespace NformTester
                 _collapsed_mainenance_countInfo = new RepoItemInfo(this, "Collapsed_Mainenance_Count", "container[@controlname='LxStatusButtonPanel']/element[@controlname='m_btnMaint']/text[@controlname='m_statusBtnLbl']", 30000, null, "fb00acfb-e271-4e3c-abfc-0e16bcb47f5f");
                 _statustextInfo = new RepoItemInfo(this, "StatusText", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/toolbar/text[@accessiblename='Normal' or @accessiblename='No communication' or @accessiblename='Alarm']", 30000, null, "25e01594-2a3f-4cc5-aa7f-b8d395c7b3a0");
                 _mainformtitleInfo = new RepoItemInfo(this, "MainFormTitle", "titlebar[@accessiblerole='TitleBar']", 30000, null, "d7d2979b-2261-42e9-93aa-bba8586a44e8");
+                _mpiechartctlInfo = new RepoItemInfo(this, "MPieChartCtl", "container[@controlname='m_centerPnl']/tabpagelist/tabpage[@controlname='m_dashboardPage']/container/container/form[@controlname='LxGadgetAlarmsBySeverity' and @title='Alarm Status: All']/container[@controlname='m_pieChartCtl']", 30000, null, "eed95f36-931f-45b4-a27b-5cb8a4fa6845");
             }
 
             /// <summary>
@@ -4865,6 +4867,30 @@ namespace NformTester
                 get
                 {
                     return _mainformtitleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MPieChartCtl item.
+            /// </summary>
+            [RepositoryItem("eed95f36-931f-45b4-a27b-5cb8a4fa6845")]
+            public virtual Ranorex.Container MPieChartCtl
+            {
+                get
+                {
+                    return _mpiechartctlInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MPieChartCtl item info.
+            /// </summary>
+            [RepositoryItemInfo("eed95f36-931f-45b4-a27b-5cb8a4fa6845")]
+            public virtual RepoItemInfo MPieChartCtlInfo
+            {
+                get
+                {
+                    return _mpiechartctlInfo;
                 }
             }
         }
@@ -33678,6 +33704,7 @@ namespace NformTester
             RepoItemInfo _licensedetailInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _system_infoInfo;
+            RepoItemInfo _registrationdscrInfo;
 
             /// <summary>
             /// Creates a new FormAbout_LiebertR_Nform  folder.
@@ -33699,6 +33726,7 @@ namespace NformTester
                 _licensedetailInfo = new RepoItemInfo(this, "LicenseDetail", "tabpagelist/tabpage[@controlname='m_licenseTab']/text[@controlname='m_licDetailsTbx']/text[@accessiblerole='Text']", 30000, null, "c5689c27-7eee-413f-8143-c68933a91e84");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "b285e3cd-24d2-47c3-8e1b-8c8c6671260d");
                 _system_infoInfo = new RepoItemInfo(this, "System_info", "button[@controlname='m_sysInfoBtn']", 30000, null, "bed28360-8fbd-4463-9993-d90e2836cf5b");
+                _registrationdscrInfo = new RepoItemInfo(this, "RegistrationDscr", "tabpagelist/tabpage[@controlname='m_registrationTab']/text[@controlname='m_registrationTbx']", 30000, null, "7a973168-0397-458b-aede-4cf6720e532e");
             }
 
             /// <summary>
@@ -34034,6 +34062,30 @@ namespace NformTester
                 get
                 {
                     return _system_infoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RegistrationDscr item.
+            /// </summary>
+            [RepositoryItem("7a973168-0397-458b-aede-4cf6720e532e")]
+            public virtual Ranorex.Text RegistrationDscr
+            {
+                get
+                {
+                    return _registrationdscrInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RegistrationDscr item info.
+            /// </summary>
+            [RepositoryItemInfo("7a973168-0397-458b-aede-4cf6720e532e")]
+            public virtual RepoItemInfo RegistrationDscrInfo
+            {
+                get
+                {
+                    return _registrationdscrInfo;
                 }
             }
         }

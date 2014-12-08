@@ -18,6 +18,7 @@ using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace NformTester.lib
 {
@@ -32,6 +33,22 @@ namespace NformTester.lib
 		/// The only one instance of this class
 		/// </summary>
 		public static LxSetup m_instance;
+		
+		/// <summary>
+		/// The test object Login username
+		/// </summary>
+		public string m_strUserName = "";
+		
+		/// <summary>
+		/// The test object Login password
+		/// </summary>
+		public string m_stPassword = "";
+		
+		/// <summary>
+		/// The test object Login server name
+		/// </summary>
+		public string m_strServerName = "";
+		
 		
 		/// <summary>
 		/// The test object application file path
@@ -72,6 +89,12 @@ namespace NformTester.lib
 		/// End line of commands
 		/// </summary>
 		public int m_iRowEnd = 0;
+		
+		/// <summary>
+		/// Pre-condition.
+		/// </summary>
+		public string m_strPrecondition = "";
+		
 		
 		/// <summary>
 		/// Configs in app.config
@@ -170,7 +193,10 @@ namespace NformTester.lib
         	Console.WriteLine(m_strApplicationName);
 
 			m_iRowNum = Convert.ToInt16(opXls.readCell(7,2));
-
+			
+			m_strPrecondition = opXls.readCell(23,2);
+			
+			
 			string runningRange = opXls.readCell(8,2);
 			Regex rex = new Regex("[0-9]+");
 			
@@ -201,6 +227,11 @@ namespace NformTester.lib
 			{
 				m_iProcessId = 0;
 			}
+			
+			//Excute Precondition script to verify the Precondtion.
+			if (!(m_strPrecondition.Trim().Equals("")))
+				VerifyCondition();
+			
 		}
 		
 		/// <summary>
@@ -507,6 +538,147 @@ namespace NformTester.lib
 			{ 
 				Directory.CreateDirectory(pathname);
 			}
-		}		
+		}	
+		
+		//**********************************************************************
+		/// <summary>
+		/// Before excute, verify pre-condition.
+		/// </summary>
+		public void VerifyCondition()
+		{
+			//b_License=true, license is necessary;b_License=false, license is unnecessary;
+			//b_Register=true, Register is necessary;b_Register=false, Register is unnecessary;
+			//b_Device=true, many more devices are necessary;b_Device=false, many more devices are unnecessary;
+			//b_Alarm=true, Alarm is necessary;b_Alarm=false, Alarm is unnecessary;
+			bool b_License =getLicenseCP();
+			bool b_Register = getRegisterCP();
+			bool b_Device = getDeviceCP();
+			bool b_Alarm = getAlarmCP();
+			
+			//Login
+			NformRepository repo = NformRepository.Instance;
+			repo.NFormApp.LogintoLiebertNformWindow.FormLogin_to_LiebertR_Nform.Username.PressKeys(m_strUserName);
+			repo.NFormApp.LogintoLiebertNformWindow.FormLogin_to_LiebertR_Nform.Password.PressKeys(m_stPassword);
+			repo.NFormApp.LogintoLiebertNformWindow.FormLogin_to_LiebertR_Nform.ServerCombo.PressKeys(m_strServerName);
+			repo.NFormApp.LogintoLiebertNformWindow.FormLogin_to_LiebertR_Nform.Login.Click();
+			Delay.Milliseconds(3000);
+			
+			if(repo.NFormApp.LicensesWindow.FormReminder.NoInfo.Exists())
+			{
+				repo.NFormApp.LicensesWindow.FormReminder.No.Click("53;10");
+			}
+			
+			if(repo.NFormApp.LogintoLiebertNformWindow.FormEvaluation_Period_Expiration.OKInfo.Exists())
+			{
+				repo.NFormApp.LogintoLiebertNformWindow.FormEvaluation_Period_Expiration.OK.Click();
+			}
+			
+			
+			//Verify the license status
+			repo.NFormApp.NformG2Window.FormMain.Configure.Click();
+			repo.NFormApp.NformG2Window.FormMain.Licenses.Click();
+			int license_count = repo.NFormApp.LicensesWindow.FormLicenses.LicenseList.Items.Count;
+			if(license_count != 0)
+			   Validate.AreEqual(true, b_License);
+			else
+				Validate.AreEqual(false, b_License);
+			
+			repo.NFormApp.LicensesWindow.FormLicenses.Close.Click();
+			Delay.Milliseconds(1000);
+			
+			//Verify the Register status
+			repo.NFormApp.NformG2Window.FormMain.Help.Click();
+			repo.NFormApp.NformG2Window.FormMain.About_Liebert_Nform.Click();
+			repo.NFormApp.Help.FormAbout_LiebertR_Nform.TabRegistration.Click();
+			bool unregister_flag = repo.NFormApp.Help.FormAbout_LiebertR_Nform.RegistrationDscr.TextValue.Equals("Software assurance: Unregistered");
+			if (unregister_flag == true)
+				Validate.AreEqual(false, b_Register);
+			else
+				Validate.AreEqual(true, b_Register);
+			repo.NFormApp.Help.FormAbout_LiebertR_Nform.OK.Click();
+			Delay.Milliseconds(1000);
+
+			//Verify the Device status
+			repo.NFormApp.NformG2Window.FormMain.Configure.Click();
+			repo.NFormApp.NformG2Window.FormMain.Devices.Click();
+			int device_count = repo.NFormApp.ManagedDevicesWindow.FormManaged_Devices.Managed_device_table.Rows.Count;
+			if(device_count > 1)
+			   Validate.AreEqual(true, b_Device);
+			else
+				Validate.AreEqual(false, b_Device);
+			repo.NFormApp.ManagedDevicesWindow.FormManaged_Devices.Close.Click();
+			Delay.Milliseconds(1000);
+	
+			//Verify the Alarm status
+			repo.NFormApp.NformG2Window.FormMain.Navigate.Click();
+			repo.NFormApp.NformG2Window.FormMain.Alarms.Click();
+			int alarm_count = repo.NFormApp.NformG2Window.FormMain.All_alarms_table.Rows.Count;
+			if(alarm_count != 0)
+			   Validate.AreEqual(true, b_Alarm);
+			else
+				Validate.AreEqual(false, b_Alarm);
+			Delay.Milliseconds(1000);
+		
+			repo.NFormApp.NformG2Window.FormMain.Application.Click();
+			repo.NFormApp.NformG2Window.FormMain.Login_As.Click();
+			Delay.Milliseconds(1000);
+		
+		}	
+		
+		
+		
+		//**********************************************************************
+		/// <summary>
+		/// Get checkpoint of License 
+		/// </summary>
+		public bool getLicenseCP()
+		{
+			System.Xml.XmlDocument xdoc = new XmlDocument();
+			xdoc.Load(m_strPrecondition);
+			string License = xdoc.SelectSingleNode("configuration/License/text()").Value;
+			bool b_License = false;
+			return b_License = Convert.ToBoolean(License);
+		}
+		
+		//**********************************************************************
+		/// <summary>
+		/// Get checkpoint of Register 
+		/// </summary>
+		public bool getRegisterCP()
+		{
+			System.Xml.XmlDocument xdoc = new XmlDocument();
+			xdoc.Load(m_strPrecondition);
+			string Register = xdoc.SelectSingleNode("configuration/Register/text()").Value;
+			bool b_Register = false;
+			return b_Register = Convert.ToBoolean(Register);
+		}
+		
+		//**********************************************************************
+		/// <summary>
+		/// Get checkpoint of Device 
+		/// </summary>
+		public bool getDeviceCP()
+		{
+			System.Xml.XmlDocument xdoc = new XmlDocument();
+			xdoc.Load(m_strPrecondition);
+			string Device = xdoc.SelectSingleNode("configuration/Device/text()").Value;
+			bool b_Device = false;
+			return b_Device = Convert.ToBoolean(Device);
+		}
+		
+				//**********************************************************************
+		/// <summary>
+		/// Get checkpoint of Alarm 
+		/// </summary>
+		public bool getAlarmCP()
+		{
+			System.Xml.XmlDocument xdoc = new XmlDocument();
+			xdoc.Load(m_strPrecondition);
+			string Alarm = xdoc.SelectSingleNode("configuration/Alarm/text()").Value;
+			bool b_Alarm = false;
+			return b_Alarm = Convert.ToBoolean(Alarm);
+		}
+		
 	}
+
 }

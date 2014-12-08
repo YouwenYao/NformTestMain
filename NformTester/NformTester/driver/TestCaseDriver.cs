@@ -108,11 +108,14 @@ namespace NformTester.driver
 				//First, delete log files to clean the Nform.   
                 Delay.Duration(10000);
                 
-                //If NformService is still running, stop Nform again.
-                if(!isStopped())
+                //If NformService is still running, stop Nform again. Try 3 times.
+                for(int i=0;i<3;i++)
                 {
-                	RunCommand("sc stop Nform");
-                	Delay.Duration(10000);
+                	if(!isStopped())
+                	{
+	                	RunCommand("sc stop Nform");
+	                	Delay.Duration(10000);
+               		}
                 }
 				
                 myLxDBOper.DeleteLogFile(ServerLogPath);
@@ -133,12 +136,16 @@ namespace NformTester.driver
 	            Console.WriteLine("Start Nform service...");
 				strRst = RunCommand("sc start Nform");	
 				
-				//If Nform is not running, start Nform again.
-				if(!isStarted())
+				//If Nform is not running, start Nform again. Try 3 times.
+				for(int j=0;j<3;j++)
 				{
-					//start Nform service
-		            Console.WriteLine("Start Nform service...");
-					RunCommand("sc start Nform");		
+					if(!isStarted())
+					{
+						//start Nform service
+			            Console.WriteLine("Start Nform service...");
+						RunCommand("sc start Nform");		
+					}
+					
 				}
            }
 		}
@@ -155,12 +162,15 @@ namespace NformTester.driver
 				Console.WriteLine("Stop Nform service...");
 				RunCommand("sc stop Nform");
 				Delay.Duration(10000);
-				
-				//If NformService is still running, stop Nform again.
-                if(!isStopped())
+                
+                 //If NformService is still running, stop Nform again. Try 3 times.
+                for(int i=0;i<3;i++)
                 {
-                	RunCommand("sc stop Nform");
-                	Delay.Duration(10000);
+                	if(!isStopped())
+                	{
+	                	RunCommand("sc stop Nform");
+	                	Delay.Duration(10000);
+               		}
                 }
 				
 				
@@ -184,13 +194,17 @@ namespace NformTester.driver
 				RunCommand("sc start Nform");	
 				Delay.Duration(10000);
 				
-				//If Nform is not running, start Nform again.
-				if(!isStarted())
+				//If Nform is not running, start Nform again. Try 3 times.
+				for(int j=0;j<3;j++)
 				{
-					//start Nform service
-		            Console.WriteLine("Start Nform service...");
-					RunCommand("sc start Nform");		
-				}				
+					if(!isStarted())
+					{
+						//start Nform service
+			            Console.WriteLine("Start Nform service...");
+						RunCommand("sc start Nform");		
+					}
+					
+				}
            }
 		}
     	
@@ -273,6 +287,10 @@ namespace NformTester.driver
             string ServerLogPath = configs["Server_Log_Path"];
             string ViewerLogPath = configs["Viewer_Log_Path"];
             string DetailSteps = configs["DetailSteps_InResult"];
+            string strUserName = configs["UserName"];
+            string strPassword = configs["Password"];
+            string strServerName = configs["ServerName"];
+            
             BackupDB(RestoreDB_Flag, ServerLogPath,ViewerLogPath);
             
             string tsName = mainOp.getTestCaseName();
@@ -282,14 +300,19 @@ namespace NformTester.driver
             
             mainOp.StrExcelDirve = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
                                                  excelPath);
-            mainOp.runApp();							//  ********* 1. run Application *********
+            mainOp.m_strUserName = strUserName;
+            mainOp.m_stPassword = strPassword;
+            mainOp.m_strServerName = strServerName;
             
-            //Create Report folder
-            string reportDir = System.IO.Directory.GetCurrentDirectory();
-            System.IO.DirectoryInfo reportDirect = System.IO.Directory.CreateDirectory(reportDir + @"\" +"Report_" + System.DateTime.Now.ToString ("yyyyMMdd_HHmmss")); 
-            string reportPath = reportDirect.FullName+@"\";
+            mainOp.runApp();//  ********* 1. run Application *********
+            
+            //Copy script to Report folder
+            string reportPath = Program.getReport();
             string sourcePath = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
                                                  keywordName);
+            
+            string reprotFileName = reportPath + tsName + ".xlsx";
+            string sourceFileName = mainOp.StrExcelDirve;
             LxParse stepsRepository = mainOp.getSteps();
             // stepsRepository.doValidate();  				//  ********* 2. check scripts  syntax *********
            
@@ -310,8 +333,8 @@ namespace NformTester.driver
 			Report.LogHtml(ReportLevel.Info, "Info", html);
             
             //Copy all report created by Ranorex to Nform Report folder.
-            XCopy(sourcePath, reportPath);
-            
+//          XCopy(sourcePath, reportPath);
+            System.IO.File.Copy(sourceFileName,reprotFileName,true);
             
             if(!result)
             {

@@ -29,8 +29,8 @@ using Ranorex.Core.Testing;
 using NformTester.lib;
 
 namespace NformTester
-{
-    class Program
+{	
+   class Program
     {
     	/// <summary>
         /// Get all info from app.config.
@@ -49,6 +49,19 @@ namespace NformTester
 			return configs;
 		}
     	
+    	//Report name
+    	public static string ProReportFolder = "";
+    	
+    	public static string getReport()
+    	{
+    		return ProReportFolder;
+    	}
+    	
+    	public static void setReport(string path)
+    	{
+    		ProReportFolder = path; 
+    	}
+    	
     	[STAThread]
         public static int Main(string[] args)
         {
@@ -62,11 +75,20 @@ namespace NformTester
             	}
         	}                   
             */
-
              var configs = GetConfigs ();
              string CheckDevice = configs["CheckDevice_BeforeTesting"];
              string RestoreDB = configs["RestoreDB_AfterEachTestCase"];
-            
+             
+             
+             
+             
+             
+             //Create Report folder
+            string reportDir = System.IO.Directory.GetCurrentDirectory();
+            System.IO.DirectoryInfo reportDirect = System.IO.Directory.CreateDirectory(reportDir + @"\Report\" +"Report_" + System.DateTime.Now.ToString ("yyyyMMdd_HHmmss")); 
+     	    string ReportPath = reportDirect.FullName+@"\"; 
+     		setReport(ReportPath);
+     
             // If CheckDevice is Y, program will check these ip addresses are available or not.
              if(CheckDevice.Equals("Y"))
              {
