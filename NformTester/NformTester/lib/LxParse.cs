@@ -53,11 +53,11 @@ namespace NformTester.lib
 				m_Scripts.Remove(item);
 			}
 		}
-		
-		//**********************************************************************
+
 		/// <summary>
-		/// Get the list of scripts.
+		/// Get the list of scripts
 		/// </summary>
+		/// <returns>m_Scripts</returns>
 		public ArrayList getStepsList()
 		{
 			return m_Scripts;

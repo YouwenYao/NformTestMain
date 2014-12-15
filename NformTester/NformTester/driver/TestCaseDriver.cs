@@ -51,18 +51,11 @@ namespace NformTester.driver
             // Do not delete - a parameterless constructor is required!
         }
         
-        
-
-
 		
 		/// for an example：XCopy("c:\a\", "d:\b\");
-		
-		/// </summary>
-		
-		/// <param name="sourceDir">source directory</param>
-		
-		/// <param name="targetDir">target directory</param>
-		
+		/// <summary>Copy source script to report folder</summary>
+		/// <param name="sourceDir">sourceDir</param>
+		/// <param name="targetDir">targetDir</param>
 		public static void XCopy(string sourceDir, string targetDir)
 		
     	{
@@ -97,6 +90,9 @@ namespace NformTester.driver
         /// <summary>
         /// Backup database.
         /// </summary>
+        /// <param name="RestoreDB">RestoreDB</param>
+        /// <param name="ServerLogPath">ServerLogPath</param>
+        /// <param name="ViewerLogPath">ViewerLogPath</param> 
     	private void BackupDB (String RestoreDB, String ServerLogPath, String ViewerLogPath)
 		{
 			// If RestoreDB is Y, program will restore Database for Nform before scripts are executed.
@@ -153,6 +149,9 @@ namespace NformTester.driver
     	/// <summary>
         /// Restore database.
         /// </summary>
+        /// <param name="RestoreDB">RestoreDB</param>
+        /// <param name="ServerLogPath">ServerLogPath</param>
+        /// <param name="ViewerLogPath">ViewerLogPath</param> 
     	private void RestoreDB (String RestoreDB, String ServerLogPath, String ViewerLogPath)
 		{			
     		// If RestoreDB is Y, program will restore Database for Nform before scripts are executed.
@@ -213,6 +212,7 @@ namespace NformTester.driver
 		/// <summary>
 		/// Check Nform process is stopped.
 		/// </summary>
+		/// <returns>isStopped</returns>
 		public static bool isStopped()
 		{
     	        Process [] pList = Process.GetProcesses(); 
@@ -233,6 +233,7 @@ namespace NformTester.driver
 		/// <summary>
 		/// Check Nform process is started.
 		/// </summary>
+		/// <returns>isStarted</returns>
 		public static bool isStarted()
 		{
     	        Process [] pList = Process.GetProcesses(); 
@@ -253,6 +254,8 @@ namespace NformTester.driver
 		/// <summary>
 		/// Run cmd command
 		/// </summary>
+		/// <param name="command">command</param>
+		/// <returns>command</returns>
 		public static string RunCommand(string command)
 		{
 			Process p = new Process();

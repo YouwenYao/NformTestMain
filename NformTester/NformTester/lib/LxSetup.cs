@@ -102,7 +102,7 @@ namespace NformTester.lib
 		public  IDictionary<string, string> configs ;
 		
 		/// <summary>
-		/// Get method for ProcessId
+		///  Get method for ProcessId
 		/// </summary>
 		public int ProcessId {
 			get { return m_iProcessId; }
@@ -134,11 +134,11 @@ namespace NformTester.lib
 			m_Runlist = getRunlist();
 			configs = GetConfigs();
 		}
-		
-		//**********************************************************************
+
 		/// <summary>
 		/// Return the only one instance of this class
 		/// </summary>
+		/// <returns>m_instance</returns>
 		public static LxSetup getInstance() 
 		{
 			if ( m_instance == null )
@@ -147,11 +147,12 @@ namespace NformTester.lib
 			} // end if
 			return m_instance;
 		} // end getInstance
-		
-		//**********************************************************************
+
 		/// <summary>
 		/// Replace the name with value refer to app.config
 		/// </summary>
+		/// <param name="name">name</param>
+		/// <returns>string</returns>
 		private string parseToValue(string name)
         {
 			LxSetup mainOp = LxSetup.getInstance();
@@ -175,8 +176,7 @@ namespace NformTester.lib
 
             return addr.Replace("\"","");
 		}
-		
-		//**********************************************************************
+
 		/// <summary>
 		/// Read the application path from scripts and run
 		/// </summary>
@@ -234,9 +234,11 @@ namespace NformTester.lib
 			
 		}
 		
+
 		/// <summary>
-        /// Get all info from app.config.
-        /// </summary>
+		/// Get all info from app.config.
+		/// </summary>
+		/// <returns>configs</returns>
     	private static IDictionary<string, string> GetConfigs ()
 		{
 			var configs = new Dictionary<string, string> ();
@@ -352,10 +354,10 @@ namespace NformTester.lib
 			opXls.writeCell(20,2,regist);
 		}
 		
-		//**********************************************************************
 		/// <summary>
 		/// Return the testcase name from runlist according to the order in rxtst
 		/// </summary>
+		/// <returns>String</returns>
 		public string getTestCaseName()
 		{
 			if(m_Runlist.Count != 0) 
@@ -366,11 +368,11 @@ namespace NformTester.lib
 			
 			return "";
 		}
-		
-		//**********************************************************************
+
 		/// <summary>
 		/// After running one case, remove it from runlist
 		/// </summary>
+		/// <param name="testcaseName">testcaseName</param>
 		public void runOverOneCase(string testcaseName)
 		{
 			m_Runlist.RemoveAt(0);
@@ -397,10 +399,12 @@ namespace NformTester.lib
       		}
    		}
 
-		//**********************************************************************
 		/// <summary>
 		/// Recursion to browse all rxtst test cases tree to generate running list.
 		/// </summary>
+		/// <param name="xnf">xnf</param>
+		/// <param name="htAllCaseName">htAllCaseName</param>
+		/// <param name="iNum">iNum</param>
 		public void generateRunningList(XmlNode xnf, Hashtable htAllCaseName, ref int iNum)
 		{
 			if(xnf.HasChildNodes)
@@ -427,11 +431,10 @@ namespace NformTester.lib
         	        			
 		}
 		
-		
-		//**********************************************************************
 		/// <summary>
 		/// Load the rxtst file, and get the runlist of testcase name
 		/// </summary>
+		/// <returns>runlist</returns>
 		public ArrayList getRunlist()
 		{
 			ArrayList runlist = new ArrayList();
@@ -483,10 +486,10 @@ namespace NformTester.lib
 
 		}
 		
-		//**********************************************************************
-        /// <summary>
-        /// Load the languagefile
-        /// </summary>
+		/// <summary>
+		/// Load the languagefile
+		/// </summary>
+		/// <returns>htName</returns>
 		public Hashtable LoadLanguageInfo()
 		{
 			string currentLanguage = System.Globalization.CultureInfo.InstalledUICulture.Name.ToString();
@@ -515,23 +518,22 @@ namespace NformTester.lib
             
             return htName;
 		}
-		
-		//**********************************************************************
-        /// <summary>
-        /// Return the string text according to LanguageID
-        /// </summary>
+
+		/// <summary>
+		/// Return the string text according to LanguageID
+		/// </summary>
+		/// <param name="LanguageID">LanguageID</param>
+		/// <returns>String</returns>
         public string GetLanguageString(string LanguageID)
         {
         	// return htLanguageInfo[LanguageID];
         	return "";
 	    }
         
-        
-        		
-		//**********************************************************************
-		/// <summary>
-		/// Create one file.
-		/// </summary>
+        /// <summary>
+        ///  Create one file
+        /// </summary>
+        /// <param name="pathname">pathname</param>
 		public void CreateFile(string pathname)
 		{
 			if(!Directory.Exists(pathname))
@@ -625,12 +627,10 @@ namespace NformTester.lib
 		
 		}	
 		
-		
-		
-		//**********************************************************************
 		/// <summary>
-		/// Get checkpoint of License 
+		/// Get checkpoint of License
 		/// </summary>
+		/// <returns>Bool</returns>
 		public bool getLicenseCP()
 		{
 			System.Xml.XmlDocument xdoc = new XmlDocument();
@@ -639,11 +639,11 @@ namespace NformTester.lib
 			bool b_License = false;
 			return b_License = Convert.ToBoolean(License);
 		}
-		
-		//**********************************************************************
+
 		/// <summary>
 		/// Get checkpoint of Register 
 		/// </summary>
+		/// <returns>Bool</returns>
 		public bool getRegisterCP()
 		{
 			System.Xml.XmlDocument xdoc = new XmlDocument();
@@ -653,10 +653,10 @@ namespace NformTester.lib
 			return b_Register = Convert.ToBoolean(Register);
 		}
 		
-		//**********************************************************************
 		/// <summary>
-		/// Get checkpoint of Device 
+		/// Get checkpoint of Device
 		/// </summary>
+		/// <returns>Bool</returns>
 		public bool getDeviceCP()
 		{
 			System.Xml.XmlDocument xdoc = new XmlDocument();
@@ -666,10 +666,10 @@ namespace NformTester.lib
 			return b_Device = Convert.ToBoolean(Device);
 		}
 		
-				//**********************************************************************
 		/// <summary>
-		/// Get checkpoint of Alarm 
+		/// Get checkpoint of Alarm
 		/// </summary>
+		/// <returns>Bool</returns>
 		public bool getAlarmCP()
 		{
 			System.Xml.XmlDocument xdoc = new XmlDocument();

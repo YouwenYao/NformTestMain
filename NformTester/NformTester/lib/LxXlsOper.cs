@@ -44,21 +44,21 @@ namespace NformTester.lib
 		{
 			excelMain = new Excel.ApplicationClass();
 		}
-		
-		//**********************************************************************
+
 		/// <summary>
 		/// Open excel file from the giving path
 		/// </summary>
+		/// <param name="strPath">strPath</param>
 		public void open(string strPath)
         {
         	xBook = excelMain.Workbooks.Open(strPath,Missing.Value,Missing.Value,Missing.Value,Missing.Value,Missing.Value,Missing.Value,Missing.Value,Missing.Value,Missing.Value,Missing.Value,Missing.Value,Missing.Value);
             xSheet = (Excel.Worksheet)xBook.Sheets[1];
         }
-        
-		//**********************************************************************
+
 		/// <summary>
 		/// New excel file from the giving path
 		/// </summary>
+		/// <param name="strPath">strPath</param>
 		public void create(string strPath)
         {
 			if(File.Exists(strPath))
@@ -74,10 +74,14 @@ namespace NformTester.lib
 				Excel.XlSaveAsAccessMode.xlExclusive,Nothing,Nothing,Nothing,Nothing);
         }
 		
-		//**********************************************************************
+		
 		/// <summary>
-		/// Read multi-lines data from excel, begin iColBegin and iColEnd
+		///  Read multi-lines data from excel, begin iColBegin and iColEnd
 		/// </summary>
+		/// <param name="iRow">iRow</param>
+		/// <param name="iColBegin">iColBegin</param>
+		/// <param name="iColEnd">iColEnd</param>
+		/// <returns>List</returns>
         public ArrayList getData(int iRow, int iColBegin, int iColEnd)
         {
         	ArrayList al = new ArrayList();
@@ -96,11 +100,14 @@ namespace NformTester.lib
         	}
         	return al;
         }
-        
-        //**********************************************************************
-		/// <summary>
-		/// Write multi-lines data to excel, begin iColBegin and iColEnd
-		/// </summary>
+
+        /// <summary>
+        /// Write multi-lines data to excel, begin iColBegin and iColEnd
+        /// </summary>
+        /// <param name="iRow">iRow</param>
+        /// <param name="iColBegin">iColBegin</param>
+        /// <param name="iColEnd">iColEnd</param>
+        /// <param name="alData">alData</param>
         public void setData(int iRow, int iColBegin, int iColEnd, ArrayList alData)
         {
         	int i = iColBegin;
@@ -109,21 +116,25 @@ namespace NformTester.lib
         		xSheet.Cells[iRow,i++] = item;
         	}
         }
-		
-        //**********************************************************************
-        /// Read one cell
+
         /// <summary>
-		/// </summary>
+        /// Read one cell
+        /// </summary>
+        /// <param name="iRow">iRow</param>
+        /// <param name="iCol">iCol</param>
+        /// <returns>String</returns>
         public string readCell(int iRow, int iCol)
         {
         	Excel.Range rmg2 = (Excel.Range)xSheet.Cells[iRow,iCol];
         	return rmg2.Value2 != null ? rmg2.Value2.ToString() : "";
         }
         
-        //**********************************************************************
-		/// <summary>
-		/// write one cell
-		/// </summary>
+        /// <summary>
+        /// write one cell
+        /// </summary>
+        /// <param name="iRow">iRow</param>
+        /// <param name="iCol">iCol</param>
+        /// <param name="sData">sData</param>
         public void writeCell(int iRow, int iCol, string sData)
         {
         	xSheet.Cells[iRow,iCol] = sData;

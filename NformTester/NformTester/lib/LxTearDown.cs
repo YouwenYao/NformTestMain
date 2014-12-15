@@ -52,10 +52,10 @@ namespace NformTester.lib
 		{
 		}
 		
-		//**********************************************************************
 		/// <summary>
-		/// Close the test appliction
+		///  Close the test appliction
 		/// </summary>
+		/// <param name="processId">processId</param>
 		public static void closeApp(int processId)
 		{
 			try 

@@ -38,19 +38,20 @@ namespace NformTester.lib
 		/// </summary>
 		public static string logFile = "";
 
-		//**********************************************************************
 		/// <summary>
-		/// Set the flag how to log.
+		/// Set the flag how to log
 		/// </summary>
+		/// <param name="flagOutput">flagOutput</param>
 		public static void Setup(int flagOutput)
 		{
 			LxLog.flagOutput = flagOutput;
 		}
-		
-		//**********************************************************************
+
 		/// <summary>
-		/// Info level log method.
+		/// Info level log method
 		/// </summary>
+		/// <param name="category">category</param>
+		/// <param name="message">message</param>
 		public static void Info(string category, string message)
 		{
 			if(flagOutput == 1)
@@ -61,11 +62,12 @@ namespace NformTester.lib
 			
 			Report.Info(category, message);
 		}
-		
-		//**********************************************************************
+
 		/// <summary>
-		/// Error level log method.
+		/// Error level log method
 		/// </summary>
+		/// <param name="category">category</param>
+		/// <param name="message">message</param>
 		public static void Error(string category, string message)
 		{
 			if(flagOutput == 1)
@@ -76,11 +78,12 @@ namespace NformTester.lib
 			Report.Error(category, message);
 		}
 		
-		
-		//**********************************************************************
 		/// <summary>
-		/// Internal method to save logfile.
+		/// Internal method to save logfile
 		/// </summary>
+		/// <param name="type">type</param>
+		/// <param name="category">category</param>
+		/// <param name="message">message</param>
 		public static void LogToFile(string type, string category, string message)
 		{
 			

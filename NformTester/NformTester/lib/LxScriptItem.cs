@@ -90,11 +90,11 @@ namespace NformTester.lib
 		{
 		}
 		
-		//**********************************************************************
 		/// <summary>
 		/// If this command has arguments, then return true.
 		/// If this command has no arguments, then return false.
 		/// </summary>
+		/// <returns>true/false</returns>
 		public bool hasArg()
 		{
 			if (m_Arg1 == "" && m_Arg2 == "" && m_Arg3 == ""
@@ -104,65 +104,66 @@ namespace NformTester.lib
 			}
 			return true;
 		}
-		
-		//**********************************************************************
+
 		/// <summary>
-		/// If argument has text, then remove symbol "
+		/// If argument has text, then remove symbol"
 		/// </summary>
+		/// <returns>String</returns>
 		public string getArgText()
 		{
 			return parseToValue(m_Arg1);
 		}
-		
-		//**********************************************************************
+
 		/// <summary>
 		/// Get argument2
 		/// </summary>
+		/// <returns>String</returns>
 		public string getArg2Text()
 		{
 			return parseToValue(m_Arg2);
 		}
-		
-		//**********************************************************************
+
 		/// <summary>
 		/// Get argument3
 		/// </summary>
+		/// <returns>String</returns>
 		public string getArg3Text()
 		{
 			return parseToValue(m_Arg3);
 		}
 		
-		//**********************************************************************
 		/// <summary>
 		/// Get argument4
 		/// </summary>
+		/// <returns>String</returns>
 		public string getArg4Text()
 		{
 			return parseToValue(m_Arg4);
 		}
-		
-		//**********************************************************************
+
 		/// <summary>
 		/// Get argument5
 		/// </summary>
+		/// <returns>String</returns>
 		public string getArg5Text()
 		{
 			return parseToValue(m_Arg5);
 		}
-		
-		//**********************************************************************
+
 		/// <summary>
 		/// Get argument6
 		/// </summary>
+		/// <returns>String</returns>
 		public string getArg6Text()
 		{
 			return parseToValue(m_Arg6);
 		}				
     	
-		//**********************************************************************
 		/// <summary>
 		/// Replace the name with value refer to app.config
 		/// </summary>
+		/// <param name="name">name</param>
+		/// <returns>String</returns>
 		public string parseToValue(string name)
         {
             if (name.Equals(""))
@@ -238,11 +239,12 @@ namespace NformTester.lib
             return addr.Replace("\"","");
         }
 		
-		//**********************************************************************
+
 		/// <summary>
 		/// According to the name of windows and component, find the componentinfo
 		/// object in repository
 		/// </summary>
+		/// <returns>RepoItemInfo</returns>
 		public RepoItemInfo getComponentInfo()
 		
 		{
@@ -286,11 +288,11 @@ namespace NformTester.lib
        	   	return null;
 		}
 		
-		//**********************************************************************
 		/// <summary>
 		/// According to the name of windows and component, find the component
 		/// object in repository
 		/// </summary>
+		/// <returns>Object</returns>
 		public Object getComponent()
 		{
 			string windowsName = m_WindowName;

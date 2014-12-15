@@ -30,10 +30,13 @@ using NformTester.lib;
 
 namespace NformTester
 {	
+/// <summary>
+/// Main in Program Class
+/// </summary>
    class Program
     {
     	/// <summary>
-        /// Get all info from app.config.
+        /// Get all info from app.config
         /// </summary>
     	private static IDictionary<string, string> GetConfigs ()
 		{
@@ -50,18 +53,37 @@ namespace NformTester
 		}
     	
     	//Report name
+    	/// <summary>
+    	/// Report Folder.
+    	/// </summary>
     	public static string ProReportFolder = "";
     	
+    	
+    	
+    	/// <summary>
+        /// Get Report folder
+        /// </summary>
+        /// <returns>Report Folder</returns>
     	public static string getReport()
     	{
     		return ProReportFolder;
     	}
     	
+    	/// <summary>
+    	/// Set Report folder
+    	/// </summary>
+    	/// <param name="path">Report Path</param>
     	public static void setReport(string path)
     	{
     		ProReportFolder = path; 
     	}
     	
+    	
+    	/// <summary>
+        /// Main program
+        /// </summary>
+        /// <returns>Error Code</returns>
+        /// <param name="args">args</param>
     	[STAThread]
         public static int Main(string[] args)
         {
@@ -78,11 +100,7 @@ namespace NformTester
              var configs = GetConfigs ();
              string CheckDevice = configs["CheckDevice_BeforeTesting"];
              string RestoreDB = configs["RestoreDB_AfterEachTestCase"];
-             
-             
-             
-             
-             
+
              //Create Report folder
             string reportDir = System.IO.Directory.GetCurrentDirectory();
             System.IO.DirectoryInfo reportDirect = System.IO.Directory.CreateDirectory(reportDir + @"\Report\" +"Report_" + System.DateTime.Now.ToString ("yyyyMMdd_HHmmss")); 
@@ -123,6 +141,7 @@ namespace NformTester
 		/// <summary>
 		/// Run cmd command
 		/// </summary>
+		/// <returns>Result</returns>
 		public static string RunCommand(string command)
 		{
 			Process p = new Process();

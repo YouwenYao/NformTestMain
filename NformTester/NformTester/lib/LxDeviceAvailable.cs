@@ -41,7 +41,6 @@ namespace NformTester.lib
 		/// <summary>
 		///Set SNMP device Key name
 		/// </summary>
-		/// 
 		public void setSnmpKeyName()
 		{
 			string[] keyName={
@@ -115,6 +114,8 @@ namespace NformTester.lib
 		/// tester all available devices.
 		/// Author: Sashimi.
 		/// </summary>
+		/// <param name="keyName">keyName</param>
+		/// <returns>notAvailable</returns>
 		public static List<String> CheckSNMPDeviceAvailable(List<string> keyName){			
 			List<string> notAvailable = new List<string>();
 		    // There are all devices in Device.ini.
@@ -172,6 +173,8 @@ namespace NformTester.lib
 		/// tester all available devices.
 		/// Author: Sashimi.
 		/// </summary>
+		/// <param name="keyName">keyName</param>
+		/// <returns>notAvailable</returns>
 		public static List<String> CheckVelocityDeviceAvailable(List<string> keyName){
 			// There are all devices in Device.ini.
 			List<string> notAvailable = new List<string>();		
@@ -213,6 +216,9 @@ namespace NformTester.lib
 		/// Parse the value from Devices.ini.
 		/// Author: Sashimi.
 		/// </summary>
+		/// <param name="GroupName">GroupName</param>
+		/// <param name="key">key</param>
+		/// <returns>result</returns>
 		public static string myparseToValue(string GroupName, string key)
         {
 		  LxIniFile confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),

@@ -30,6 +30,8 @@ namespace NformTester.lib
 		/// If error happens when execute command, sometimes we need to retry this
 		/// command several times to see if can be pass or not.
 		/// </summary>
+		/// <param name="errorItem">errorItem</param>
+		/// <param name="retries">retries</param>
 		public static void Retries(LxScriptItem errorItem, int retries)
 		{
 		}
@@ -37,9 +39,11 @@ namespace NformTester.lib
 		//**********************************************************************
 		/// <summary>
 		/// If error happens when execute command, sometimes we need to operator's 
-		/// help, this method will popup a dialog and waite operator's action then
+		/// help, this method will popup a dialog and wait operator's action then
 		/// keep moving on next command.
 		/// </summary>
+		/// <param name="errorItem">errorItem</param>
+		/// <param name="waiteSeconds">waiteSeconds</param> 
 		public static void ShowDialogAndWaite(LxScriptItem errorItem, int waiteSeconds)
 		{
 		}

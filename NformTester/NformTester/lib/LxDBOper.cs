@@ -54,8 +54,9 @@ namespace NformTester.lib
 		}
 		
 		/// <summary>
-		/// Get DB_DbType.
+		/// Get DB_DbType
 		/// </summary>
+		/// <returns>DB_DbType</returns>
 		public int GetDbType()
 		{
 			return DB_DbType;
@@ -64,6 +65,7 @@ namespace NformTester.lib
 		/// <summary>
 		/// Get BackUpResult.
 		/// </summary>
+		/// <returns>BackUpResult</returns>
 		public bool GetBackUpResult()
 		{
 			return BackUpResult;
@@ -72,6 +74,7 @@ namespace NformTester.lib
 		/// <summary>
 		/// Get RestoreResult.
 		/// </summary>
+		/// <returns>RestoreResult</returns>
 		public bool GetRestoreResult()
 		{
 			return RestoreResult;
@@ -80,6 +83,9 @@ namespace NformTester.lib
 		/// <summary>
 		/// Parse the value from Devices.ini.
 		/// </summary>
+		/// <param name="GroupName">GroupName</param>
+		/// <param name="key">key</param>
+		/// <returns>result</returns>
 		public string ParseToValue(string GroupName, string key)
         {
 		  LxIniFile confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
@@ -92,6 +98,8 @@ namespace NformTester.lib
 		/// <summary>
 		/// Copy file.
 		/// </summary>
+		/// <param name="srcPath">srcPath</param>
+		/// <param name="aimPath">aimPath</param>
 	   public void CopyDir(string srcPath, string aimPath)
       {
         try
@@ -126,6 +134,7 @@ namespace NformTester.lib
 		/// <summary>
 		/// Open the SQL server connection.
 		/// </summary>
+		/// <param name="conn">conn</param>
 		public void OpenConnection(SqlConnection conn)
 		{
 		    try
@@ -141,6 +150,7 @@ namespace NformTester.lib
 		/// <summary>
 		/// Close the SQL server connection.
 		/// </summary>
+		/// <param name="conn">conn</param>
 		public void CloseConnection(SqlConnection conn)
 		{
 		    try
@@ -156,6 +166,7 @@ namespace NformTester.lib
 		/// <summary>
 		/// Get the database connection strin from Devices.ini.
 		/// </summary>
+		/// <returns>connString</returns>
 		public string GetDBConnString()
 		{
 		    string groupName="Database";
@@ -173,9 +184,6 @@ namespace NformTester.lib
 		/// <summary>
 		/// Back up for bundled database;
 		/// </summary>
-		/// 
-		
-
 		public void BackUpBundledDataBase()
 		{
 			   bool result = false;
@@ -209,6 +217,7 @@ namespace NformTester.lib
 		/// <summary>
 		/// Backpup database for SQL Server.
 		/// </summary>
+		/// <param name="conn">conn</param>
 		public void ExcuteBakupQuery(SqlConnection conn)
         {	
 			bool result = false;
@@ -301,6 +310,7 @@ namespace NformTester.lib
 		/// <summary>
 		/// Excute Resotre database query.
 		/// </summary>
+		/// <param name="conn">conn</param>
 		public void ExcuteRestoreQuery(SqlConnection conn)
         {	
 			bool result = false;
@@ -377,7 +387,7 @@ namespace NformTester.lib
        }
 		
 		/// <summary>
-		/// Restore SQL Server database;
+		/// Restore SQL Server database
 		/// </summary>
 		public void RestoreSQLServerDataBase()
 		{
@@ -425,14 +435,12 @@ namespace NformTester.lib
 				}
 			}
 		}	
+			
 		
-		
-		
-		
-		
-			/// <summary>
-		/// Delete Log file to clean the Nform.
+		/// <summary>
+		/// Delete Log file to clean the Nform
 		/// </summary>
+		/// <param name="LogPath">LogPath</param>
 		public void DeleteLogFile(String LogPath)
 		{ 
 		    if (File.Exists(LogPath))

@@ -66,6 +66,9 @@ namespace NformTester.lib
 		/// <summary>
 		/// Map the action and call executeCommand to run script's steps.
 		/// </summary>
+		/// <param name="stepList">stepList</param>
+		/// <param name="DetailStep">DetailStep</param>
+		/// <returns>finalResult</returns>
 		public static bool performScripts(ArrayList stepList, String DetailStep)
 		{
 			LxSetup mainOp = LxSetup.getInstance();
@@ -144,6 +147,8 @@ namespace NformTester.lib
 		/// <summary>
 		/// Execute form command.
 		/// </summary>
+		/// <param name="item">item</param>
+		/// <returns>true</returns>
 		public static bool executeFormCommand(LxScriptItem item)
 		{
 			string action = item.m_Component;
@@ -170,6 +175,7 @@ namespace NformTester.lib
 		/// <summary>
 		/// Form action: Login in.
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void Login(LxScriptItem item)
 		{
 			repo.NFormApp.LogintoLiebertNformWindow.FormLogin_to_LiebertR_Nform.Username.PressKeys(item.getArgText());
@@ -193,6 +199,7 @@ namespace NformTester.lib
 		/// <summary>
 		/// Form action: Add device.
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void Add_Device(LxScriptItem item)
 		{
 			repo.NFormApp.NformG2Window.FormMain.Configure.Click();
@@ -256,6 +263,7 @@ namespace NformTester.lib
 		/// <summary>
 		/// Form action: Del device.
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void Del_Device(LxScriptItem item)
 		{
 			repo.NFormApp.NformG2Window.FormMain.Configure.Click();
@@ -282,6 +290,7 @@ namespace NformTester.lib
 		/// <summary>
 		/// Form action: VerifyProperty equal, Contains, NotContains.
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void VerifyProperty(LxScriptItem item)
 		{	
 			//MessageBox.Show(item.getComponent().ToString());
@@ -349,6 +358,8 @@ namespace NformTester.lib
 		/// <summary>
 		/// Execute one command, parse the command.
 		/// </summary>
+		/// <param name="item">item</param>
+		/// <returns>true</returns>
 		public static bool executeCommand(LxScriptItem item)
 		{
 			if(item.m_Type == "F") 
@@ -553,6 +564,7 @@ namespace NformTester.lib
 		/// <summary>
 		/// RightClick to given items in the comoponet like Container.
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void RightClick_Item(LxScriptItem item)
 		{
 			object objComponet = item.getComponent();
@@ -572,6 +584,7 @@ namespace NformTester.lib
 		/// <summary>
 		/// DoubleClick to given items in the comoponet like List, Table and Tree.
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void DoubleClick_Item(LxScriptItem item)
 		{
 			object objComponet = item.getComponent();
@@ -630,6 +643,7 @@ namespace NformTester.lib
 		/// <summary>
 		/// Send command to simulator, sent traps, change data OID values.
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void SendCommandToSimulator(LxScriptItem item)
 		{
 			string strDestination = item.getArgText();
@@ -664,16 +678,21 @@ namespace NformTester.lib
             sender.Close();
         }
 
+		/// <summary>
+		/// String to Byte
+		/// </summary>
+		/// <param name="str">str</param>
+		/// <returns>Bytes</returns>
 		private static byte[] StrToByteArray(string str)
         {
             System.Text.UTF8Encoding encoding = new System.Text.UTF8Encoding();
             return encoding.GetBytes(str);
         }
 		
-		//**********************************************************************
 		/// <summary>
-		/// Copy Copydata from Trends graph to one txt file.
+		/// Copy Copydata from Trends graph to one txt file
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void CopyDataToFile(LxScriptItem item)
 		{
 			string strFilePath = item.getArgText();
@@ -690,20 +709,20 @@ namespace NformTester.lib
 			}
         }
 		
-		//**********************************************************************
 		/// <summary>
-		/// Start application.
+		/// Start application
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void AppStart(LxScriptItem item)
 		{
 			string strApplicationName = parseToValue(item.m_Component);
 			m_AppProcess[item.m_Action] = Host.Local.RunApplication(strApplicationName);
         }
 		
-		//**********************************************************************
 		/// <summary>
-		/// Close application.
+		/// Close application
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void AppClose(LxScriptItem item)
 		{
 			if(m_AppProcess[item.m_Action] != null)	
@@ -712,6 +731,11 @@ namespace NformTester.lib
 			}
         }
 		
+		/// <summary>
+		/// Write copydata to one file
+		/// </summary>
+		/// <param name="file_path">file_path</param>
+		/// <param name="copydata">copydata</param>
 		private static void Write_text(string file_path, string copydata)
 		{
 			if(System.IO.File.Exists(file_path))
@@ -727,10 +751,10 @@ namespace NformTester.lib
 			}
 		}
 		
-		//**********************************************************************
 		/// <summary>
-		/// Open txt file, verify content contains or not contains given string.
+		/// Open txt file, verify content contains or not contains given string
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void VerifyTxtfileValues(LxScriptItem item)
 		{
 			if(String.Equals("error", item.getArg2Text().Trim(),StringComparison.OrdinalIgnoreCase))
@@ -765,11 +789,10 @@ namespace NformTester.lib
 			
 		}
 		
-		
-		//**********************************************************************
 		/// <summary>
-		/// Verify content contains or not contains Error in Server.log and Viewer.log.
+		/// Verify content contains or not contains Error in Server.log and Viewer.log
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void VerifyErrorInLog(LxScriptItem item)
 		{
 			string strPath = item.getArgText();
@@ -810,12 +833,10 @@ namespace NformTester.lib
 				Validate.AreEqual(bContains,false);
 		}
 		
-		
-		
-		//**********************************************************************
 		/// <summary>
-		/// Open excel file, verify content contains or not contains given string.
+		/// Open excel file, verify content contains or not contains given string
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void VerifyExcelfileValues(LxScriptItem item)
 		{
 			string strPath = item.getArgText();
@@ -840,10 +861,10 @@ namespace NformTester.lib
 				Validate.AreEqual(bExists,false);
 		}
 		
-		//**********************************************************************
 		/// <summary>
-		/// Verify the comoponet like List, Table and Tree contains given items.
+		/// Verify the comoponet like List, Table and Tree contains given items
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void VerifyContains(LxScriptItem item)
 		{
 			object objComponet = item.getComponent();
@@ -882,10 +903,10 @@ namespace NformTester.lib
 			
 		}
 		
-		//**********************************************************************
 		/// <summary>
-		/// Verify the comoponet like List, Table and Tree not contains given items.
+		/// Verify the comoponet like List, Table and Tree not contains given items
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void VerifyNotContains(LxScriptItem item)
 		{
 			object objComponet = item.getComponent();
@@ -924,10 +945,10 @@ namespace NformTester.lib
 			
 		}
 		
-		//**********************************************************************
 		/// <summary>
-		/// Move mouse to given items in the comoponet like List, Table and Tree.
+		///  Move mouse to given items in the comoponet like List, Table and Tree
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void MoveTo(LxScriptItem item)
 		{
 			object objComponet = item.getComponent();
@@ -971,10 +992,10 @@ namespace NformTester.lib
 			
 		}
 		
-		//**********************************************************************
 		/// <summary>
-		/// Click to given items in the comoponet like List, Table and Tree.
+		/// Click to given items in the comoponet like List, Table and Tree
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void Select_Item(LxScriptItem item)
 		{
 			object objComponet = item.getComponent();
@@ -1048,10 +1069,10 @@ namespace NformTester.lib
 			
 		}
 		
-		//**********************************************************************
 		/// <summary>
-		/// Click to the Cell by given index in the Table.
+		/// Click to the Cell by given index in the Table
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void Click_Cell(LxScriptItem item)
 		{
 			object objComponet = item.getComponent();
@@ -1065,10 +1086,10 @@ namespace NformTester.lib
 			}									
 		}
 		
-		//**********************************************************************
 		/// <summary>
-		/// Input Cell by given index in the Table.
+		/// Input Cell by given index in the Table
 		/// </summary>
+		/// <param name="item">item</param>
 		public static void Input_Cell(LxScriptItem item)
 		{
 			object objComponet = item.getComponent();
@@ -1083,11 +1104,13 @@ namespace NformTester.lib
 			}									
 		}
 			
-		//**********************************************************************
 		/// <summary>
 		/// Parse the value from Devices.ini.
 		/// Author: Sashimi.
 		/// </summary>
+		/// <param name="GroupName">GroupName</param>
+		/// <param name="key">key</param>
+		/// <returns>result</returns>
 		public static string myparseToValue(string GroupName, string key)
         {
 		  LxIniFile confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
@@ -1096,11 +1119,12 @@ namespace NformTester.lib
           string result = confFile.GetString(GroupName, key, def);
           return result;
         }	
-		
-		//**********************************************************************
+
 		/// <summary>
 		/// Replace the name with value refer to app.config
 		/// </summary>
+		/// <param name="name">name</param>
+		/// <returns>result</returns>
 		public static string parseToValue(string name)
         {
             if (name.Equals(""))
@@ -1137,7 +1161,10 @@ namespace NformTester.lib
             return addr.Replace("\"","");
         }
 		
+		/// <summary>
 		/// Delete a local file
+		/// </summary>
+		/// <param name="item">item</param>
 		public static void DeleteLocalFile(LxScriptItem item)
 		{
 			

@@ -45,6 +45,7 @@ namespace NformTester
         /// <summary>
 		/// Replace all esxiting scritps depend value sheet
 		/// </summary>
+		/// <param name="sourceDependFile">sourceDependFile</param>
         public void replaceAllValDependList(string sourceDependFile)
         {
         	objExl_Source = new Excel.ApplicationClass();
@@ -71,6 +72,8 @@ namespace NformTester
         /// <summary>
 		/// Replace single scripts depend value sheet
 		/// </summary>
+		/// <param name="source">source</param>
+		/// <param name="file">file</param>
         public void DependentValReplace(string source, string file)
         {
             string _sPath_Source = source;
@@ -151,6 +154,7 @@ namespace NformTester
         /// <summary>
 		/// Create excel contains all dependent values for creating select list
 		/// </summary>
+		/// <param name="fileName">File Name</param>
         public void generateFormValDependList(string fileName)
         {
         	
