@@ -12,10 +12,10 @@ enabletracingscreenshots="True"
 description=""
 reportlevel="Info;20">
 	<content>
-		<testcase
+		<folder
 		name="Old_Scripts_BeforeMaintenance"
 		id="cb074b35-b4c8-4a85-8741-7a1d7a183da0">
-			<testcase
+			<folder
 			name="100._Install_and_Uninstall3"
 			id="7f90a0a0-5975-4d2d-a3b6-7ac080106890">
 				<testcase
@@ -45,14 +45,14 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
-			</testcase>
-			<testcase
+			</folder>
+			<folder
 			name="200._Upgrade3"
 			id="cc744dea-23f5-4c22-b590-1e4d172cd79f"/>
-			<testcase
+			<folder
 			name="300._Software_Assurance3"
 			id="1f67f2cc-56ad-4f72-a0e9-003a24d8968c"/>
-			<testcase
+			<folder
 			name="400._Application3"
 			id="82fdc88e-5d6b-4997-8bb7-b333fc41a3b6">
 				<testcase
@@ -82,8 +82,8 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
-			</testcase>
-			<testcase
+			</folder>
+			<folder
 			name="500._View3"
 			id="62713904-924c-43db-8ad3-efc6f85e8449">
 				<testcase
@@ -95,11 +95,11 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
-			</testcase>
-			<testcase
+			</folder>
+			<folder
 			name="600._Configure3"
 			id="54ab4bd1-a8f4-47e9-8ea6-bc0c35d0d82b">
-				<testcase
+				<folder
 				name="600.010._Devices3"
 				id="a3ac41c4-642b-43e2-b5fc-e608d5cd2c86">
 					<testcase
@@ -372,8 +372,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.020._Actions3"
 				id="b7518ea0-06d9-4c70-9cba-d9d53896da1c">
 					<testcase
@@ -727,8 +727,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.030._Views3"
 				id="052fea53-d8ae-43fc-b78d-bc95c9298e46">
 					<testcase
@@ -884,8 +884,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.040._Users_and_Groups3"
 				id="151d9945-8698-461a-8ad1-698cdce8fe87">
 					<testcase
@@ -1014,8 +1014,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.050._Licenses3"
 				id="70fb7264-4642-493a-8cdb-a1ff5125b08d">
 					<testcase
@@ -1027,8 +1027,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.060._Server_Options3"
 				id="ffc59cc2-ae4b-4a7d-ae3c-94fc5bf59738">
 					<testcase
@@ -1184,8 +1184,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.070._Change_Password3"
 				id="45c8702e-7083-403d-a4ab-d2aca0e760a7">
 					<testcase
@@ -1197,8 +1197,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.080._User_Options3"
 				id="eacf23d2-a2fb-4d0a-8cf8-8f0db6f0a760">
 					<testcase
@@ -1237,9 +1237,9 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-			</testcase>
-			<testcase
+				</folder>
+			</folder>
+			<folder
 			name="700._Tools3"
 			id="e4bb8afe-0ca1-40ee-ae84-46a65285a1a9">
 				<testcase
@@ -1332,11 +1332,11 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
-			</testcase>
-			<testcase
+			</folder>
+			<folder
 			name="800._Help3"
 			id="b54cd127-8959-45ae-bebb-190fd7a6c010"/>
-			<testcase
+			<folder
 			name="900._Operation_Using_Client_Viewer3"
 			id="a708d6fe-efae-49f1-8e98-28965c5c578b">
 				<testcase
@@ -1627,21 +1627,21 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
-			</testcase>
-			<testcase
+			</folder>
+			<folder
 			name="1000._Database3"
 			id="40d27ef8-2ae8-4d86-9b49-ba2183931ffd"/>
-			<testcase
+			<folder
 			name="1100._Performance_and_Capacity3"
 			id="be607c2c-3375-487d-9ed7-f6e82e6e5c56"/>
-		</testcase>
-		<testcase
+		</folder>
+		<folder
 		name="Smoke_Test"
 		id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a">
-			<testcase
+			<folder
 			name="000._New_Feature1"
 			id="b70db9f5-e40b-43a3-a018-37fa581cc743"/>
-			<testcase
+			<folder
 			name="100._Install_and_Uninstall1"
 			id="60f17151-19bc-4c5a-9b92-8826dafc4935">
 				<testcase
@@ -1671,17 +1671,17 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
-			</testcase>
-			<testcase
+			</folder>
+			<folder
 			name="200._Upgrade1"
 			id="ecd2c08e-2de9-4969-a3f6-28ad4a5d914d"/>
-			<testcase
+			<folder
 			name="300._Software_Assurance1"
 			id="be03642c-e3ab-414c-890c-937b7f1c7b41"/>
-			<testcase
+			<folder
 			name="400._Application1"
 			id="090eaee5-7b98-4900-aa6b-503ccd324ffc"/>
-			<testcase
+			<folder
 			name="500._View1"
 			id="b8248ebf-7d32-4147-a518-622add198ebc">
 				<testcase
@@ -1693,11 +1693,11 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
-			</testcase>
-			<testcase
+			</folder>
+			<folder
 			name="600._Configure1"
 			id="8e1a7dd5-143b-4931-811d-41f3f8a09914">
-				<testcase
+				<folder
 				name="600.010._Devices1"
 				id="402f8845-9c99-4944-86bb-cd38ff268fc2">
 					<testcase
@@ -1916,8 +1916,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.020._Actions1"
 				id="e7d852e6-9f34-46d0-ab2c-207262cd68bd">
 					<testcase
@@ -1992,8 +1992,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.030._Views1"
 				id="6160e295-00eb-47ec-80a0-e2d91c11f389">
 					<testcase
@@ -2014,8 +2014,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.040._Users_and_Groups1"
 				id="bff3c1c2-4026-4a4f-b05d-5a6ab718b27c">
 					<testcase
@@ -2036,11 +2036,11 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.050._Licenses1"
 				id="9cf1a6f7-4c39-44c6-9783-7a270426cda0"/>
-				<testcase
+				<folder
 				name="600.060._Server_Options1"
 				id="2879a82f-643e-4fc5-b047-df6434a6e45d">
 					<testcase
@@ -2088,11 +2088,11 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.070._Change_Password1"
 				id="93cef504-1df9-429b-ac29-1e7d498fbeb4"/>
-				<testcase
+				<folder
 				name="600.080._User_Options1"
 				id="dfa23b34-f9c5-4760-8ff9-15d09c802d64">
 					<testcase
@@ -2113,9 +2113,9 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-			</testcase>
-			<testcase
+				</folder>
+			</folder>
+			<folder
 			name="700._Tools1"
 			id="30de7998-6bea-4617-b328-e2842e6f3fac">
 				<testcase
@@ -2136,36 +2136,36 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
-			</testcase>
-			<testcase
+			</folder>
+			<folder
 			name="800._Help1"
 			id="52805009-dd6f-44be-9501-0eb6011e6bc4"/>
-			<testcase
+			<folder
 			name="900._Operation_Using_Client_Viewer1"
 			id="36ac0910-eb83-4b7a-8d17-cd87b98f263c"/>
-			<testcase
+			<folder
 			name="1000._Database1"
 			id="cf6fd1ab-df63-4e0b-a85e-5aba2ea009ea"/>
-			<testcase
+			<folder
 			name="1100._Performance_and_Capacity1"
 			id="b2255428-d262-44ce-a0e2-4297bbdb997e"/>
-		</testcase>
-		<testcase
+		</folder>
+		<folder
 		name="Regression_Test"
 		id="1fd60914-33d3-476c-83b1-3b9a69701d06">
-			<testcase
+			<folder
 			name="000._New_Feature2"
 			id="a1100054-8a6c-44f5-b7e8-fda0e3546290"/>
-			<testcase
+			<folder
 			name="100._Install_and_Uninstall2"
 			id="2eff9f79-c2c9-47a0-a110-79a15ead101f"/>
-			<testcase
+			<folder
 			name="200._Upgrade2"
 			id="781843d7-5994-4e8a-990b-2c621b07e118"/>
-			<testcase
+			<folder
 			name="300._Software_Assurance2"
 			id="a873fb87-d502-4f35-a437-01a0134ce12d"/>
-			<testcase
+			<folder
 			name="400._Application2"
 			id="d102dd4f-4618-4b6b-b5cf-b29025582dd3">
 				<testcase
@@ -2240,14 +2240,14 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
-			</testcase>
-			<testcase
+			</folder>
+			<folder
 			name="500._View2"
 			id="5abd2d22-0019-49e1-917e-e553e5a02ae2"/>
-			<testcase
+			<folder
 			name="600._Configure2"
 			id="9e207544-3f17-4864-b512-c3f55be82b62">
-				<testcase
+				<folder
 				name="600.010._Devices2"
 				id="bf8d89e3-a747-4a38-bac2-d669014b54a6">
 					<testcase
@@ -2313,8 +2313,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.020._Actions2"
 				id="d41643b1-fe3b-44f7-976c-d23496fb374c">
 					<testcase
@@ -2633,8 +2633,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.030._Views2"
 				id="16b2d828-575c-4faf-8f7d-74b92c41fc12">
 					<testcase
@@ -2826,8 +2826,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.040._Users_and_Groups2"
 				id="64d6f7ed-643a-4648-9121-b2dc1ea70268">
 					<testcase
@@ -3046,8 +3046,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.050._Licenses2"
 				id="9e61d856-cb7a-42ec-ae33-4de82b415f17">
 					<testcase
@@ -3068,8 +3068,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.060._Server_Options2"
 				id="df7edb2b-860c-49dc-9078-ff2dac2f7734">
 					<testcase
@@ -3162,8 +3162,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.070._Change_Password2"
 				id="36394186-13ed-405e-a63c-f06444713388">
 					<testcase
@@ -3184,8 +3184,8 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-				<testcase
+				</folder>
+				<folder
 				name="600.080._User_Options2"
 				id="a9a8f852-bfa2-49a4-adef-b36a6491793d">
 					<testcase
@@ -3242,9 +3242,9 @@ reportlevel="Info;20">
 						ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 						type="UserCode"/>
 					</testcase>
-				</testcase>
-			</testcase>
-			<testcase
+				</folder>
+			</folder>
+			<folder
 			name="700._Tools2"
 			id="97d8e90e-39f2-4c80-b3df-7ff4e4941dfa">
 				<testcase
@@ -3337,11 +3337,11 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
-			</testcase>
-			<testcase
+			</folder>
+			<folder
 			name="800._Help2"
 			id="1fa44bba-fe43-4270-baec-a0e41f2279c8"/>
-			<testcase
+			<folder
 			name="900._Operation_Using_Client_Viewer2"
 			id="a5e9adfd-9aee-44b1-a5b7-3963bd48c29d">
 				<testcase
@@ -3533,37 +3533,45 @@ reportlevel="Info;20">
 					ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
 					type="UserCode"/>
 				</testcase>
-			</testcase>
-			<testcase
+			</folder>
+			<folder
 			name="1000._Database2"
 			id="1c96d0cd-72e7-48fb-aa08-b7da957c730e"/>
-			<testcase
+			<folder
 			name="1100._Performance_and_Capacity2"
 			id="04d5b0a0-300e-419c-bba4-3ec0b669ed67"/>
-		</testcase>
-		<testcase
-		name="test"
+		</folder>
+		<folder
+		name="Mytest"
 		id="b49c5248-5521-4369-98f1-d67f370014a2">
-			<testmodule
-			name="myTest"
-			id="eb7da953-e10a-4d88-9f21-28f69daa1364"
-			ref="a201cdd0-ccda-48ad-b091-2eb9c38e066e"
-			type="UserCode"/>
-			<testmodule
-			name="GenerateAllForms"
-			id="e5865322-fb65-4ea9-b011-6c5aa2c512ba"
-			ref="1e793a50-da64-41a8-915c-08cbc67d8eb5"
-			type="UserCode"/>
-		</testcase>
-		<testcase
-		name="TestScripts"
+			<testcase
+			name="test"
+			id="7661cc56-fc46-4cf6-a6c9-dd0103e85442">
+				<testmodule
+				name="GenerateAllForms"
+				id="e5865322-fb65-4ea9-b011-6c5aa2c512ba"
+				ref="1e793a50-da64-41a8-915c-08cbc67d8eb5"
+				type="UserCode"/>
+				<testmodule
+				name="myTest"
+				id="eb7da953-e10a-4d88-9f21-28f69daa1364"
+				ref="a201cdd0-ccda-48ad-b091-2eb9c38e066e"
+				type="UserCode"/>
+			</testcase>
+		</folder>
+		<folder
+		name="MyTestScripts"
 		id="15542ef7-bf90-431d-8e26-f8eb1c05a42e">
-			<testmodule
-			name="TestCaseDriver"
-			id="047cc82b-ce0d-4b2a-83ce-5e91475749a7"
-			ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
-			type="UserCode"/>
-		</testcase>
+			<testcase
+			name="TestScripts"
+			id="5e1e0bcc-8dd0-4481-af47-ea21d0ef5d41">
+				<testmodule
+				name="TestCaseDriver"
+				id="047cc82b-ce0d-4b2a-83ce-5e91475749a7"
+				ref="78ce2fbf-d204-4698-98bf-68118d374e9f"
+				type="UserCode"/>
+			</testcase>
+		</folder>
 	</content>
 	<testconfigurations
 	default="TestRun">

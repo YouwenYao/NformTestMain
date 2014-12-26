@@ -189,46 +189,6 @@ namespace NformTester.lib
                 {
                 	result = configs["Default"];
                 }
-                
-                /*
-                string def = null;
-                if(key.IndexOf("SNMP")!=-1)
-                {
-                	def = confFile.GetString("SNMPDevices","Default","10.146.83.50");
-                	result = confFile.GetString("SNMPDevices",key,def);
-                }
-                
-                else if(key.IndexOf("Velocity")!=-1)
-                {
-                	def = confFile.GetString("VelocityDevices","Default","126.4.200.116");
-                	result = confFile.GetString("VelocityDevices",key,def);
-                }	
-                
-                else if(key.IndexOf("Trap")!=-1)
-                {
-                	def = confFile.GetString("TrapInfo","Default","-1:2:1:1.3.6.1.4.1.476.1.42.3.2.1.38.4");
-                	result = confFile.GetString("TrapInfo",key,def);
-                }
-                
-                 else if(key.IndexOf("Sys")!=-1)
-                {
-                	def = confFile.GetString("NformSysInfo","Default","Nform");
-                	result = confFile.GetString("NformSysInfo",key,def);
-                }
-                 
-                 else if(key.IndexOf("DB")!=-1)
-                {
-                	def = confFile.GetString("Database","Default","Nform");
-                	result = confFile.GetString("Database",key,def);
-                }
-                 
-                 else if(key.IndexOf("Try")!=-1)
-                {
-                	def = confFile.GetString("TryToRunTimes","Default","3");
-                	result = confFile.GetString("TryToRunTimes",key,def);
-                }
-                */
-               
                 addr = result;
                 
                 confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
@@ -239,7 +199,6 @@ namespace NformTester.lib
             return addr.Replace("\"","");
         }
 		
-
 		/// <summary>
 		/// According to the name of windows and component, find the componentinfo
 		/// object in repository

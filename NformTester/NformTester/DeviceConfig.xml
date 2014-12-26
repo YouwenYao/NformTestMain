@@ -1,0 +1,27 @@
+<configuration>
+	<snmp>
+		<device name="Default" ip="10.146.83.50"/>
+		<device name="SNMP_GXT_1" ip="10.146.83.2"/>
+		<device name="SNMP_GXT_2" ip="10.146.83.3"/>
+		<device name="SNMP_GXT_3" ip="10.146.84.254"/>
+		<device name="SNMP_GXT_4" ip="10.146.84.300"/>
+		<device name="SNMP_GXT_5" ip="10.146.84.6"/>
+		<device name="SNMP_device_0" ip="10.146.83.5"/>
+		<device name="SNMP_device_1" ip="10.146.84.5"/>
+		<device name="SNMP_device_2" ip="10.146.84.3"/>
+		<device name="SNMP_SearchStart" ip="10.146.83.10"/>
+		<device name="SNMP_SearchEnd" ip="10.146.83.14"/>
+		<device name="SNMP_SingleAuto_1" ip="126.4.203.10"/>
+		<device name="SNMP_SingleManual_1" ip="126.4.100.67"/>
+		<device name="SNMP_SwitchedPDU_0" ip="10.146.86.10"/>
+		<device name="SNMP_GXT_Ip_Port" ip="10.146.82.5"/>
+	</snmp>
+	<velocity>
+		<device name="Velocity_device_1" ip="10.146.87.10"/>
+		<device name="Velocity_device_2" ip="10.146.87.14"/>
+		<device name="Velocity_SearchEnd" ip="10.146.87.13"/>
+		<device name="Velocity_SinAuto_0" ip="126.4.100.69"/>
+		<device name="Velocity_SingleAuto_1" ip="126.4.203.10"/>
+		<device name="Velocity_SingleManual_1" ip="126.4.100.67"/>
+	</velocity>	
+</configuration>

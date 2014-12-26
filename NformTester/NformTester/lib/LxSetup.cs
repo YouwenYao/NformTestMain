@@ -18,7 +18,6 @@ using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Windows.Forms;
-using System.Xml;
 
 namespace NformTester.lib
 {
@@ -229,8 +228,16 @@ namespace NformTester.lib
 			}
 			
 			//Excute Precondition script to verify the Precondtion.
-			if (!(m_strPrecondition.Trim().Equals("")))
-				VerifyCondition();
+			try
+			{
+				if (!(m_strPrecondition.Trim().Equals("")))
+					VerifyCondition();
+			}
+			catch(Exception e)
+			{
+				LxLog.Error("Error","The Precondition is not ready because: "+e.Message.ToString());
+				return;
+			}
 			
 		}
 		
@@ -398,7 +405,7 @@ namespace NformTester.lib
      			return( iX.CompareTo(iY) );
       		}
    		}
-
+		
 		/// <summary>
 		/// Recursion to browse all rxtst test cases tree to generate running list.
 		/// </summary>
@@ -431,7 +438,9 @@ namespace NformTester.lib
         	        			
 		}
 		
+		
 		/// <summary>
+		/// Sashimi 
 		/// Load the rxtst file, and get the runlist of testcase name
 		/// </summary>
 		/// <returns>runlist</returns>
@@ -447,16 +456,14 @@ namespace NformTester.lib
         	XmlElement xe;
         	
         	Hashtable htAllCaseName = new Hashtable();
-        	nodes = xmldoc.SelectNodes("/testsuite/content/testcase");
-        	int iNum = 0;
-        	
-        	int abcddd = nodes.Count;
-        	
+			nodes = xmldoc.SelectNodes("/testsuite/content/folder");
+//			nodes = xmldoc.SelectNodes("/testsuite/content/testcase");
+        	int iNum = 0;  	
+        	int stabcddd = nodes.Count;
         	foreach(XmlNode xnf in nodes)
         	{	
         		generateRunningList(xnf,htAllCaseName, ref iNum);        		        			
         	}
-        	
         	
         	int abc = htAllCaseName.Count;
         	
@@ -485,6 +492,7 @@ namespace NformTester.lib
         	return runlist;
 
 		}
+
 		
 		/// <summary>
 		/// Load the languagefile
@@ -580,10 +588,17 @@ namespace NformTester.lib
 			repo.NFormApp.NformG2Window.FormMain.Configure.Click();
 			repo.NFormApp.NformG2Window.FormMain.Licenses.Click();
 			int license_count = repo.NFormApp.LicensesWindow.FormLicenses.LicenseList.Items.Count;
-			if(license_count != 0)
-			   Validate.AreEqual(true, b_License);
-			else
-				Validate.AreEqual(false, b_License);
+			try
+			{
+				if(license_count != 0)
+					Validate.AreEqual(true, b_License);
+				else
+					Validate.AreEqual(false, b_License);
+			}
+			catch(Exception ex)
+			{
+				LxLog.Info("LicenseNotReady",ex.StackTrace.ToString());
+			}
 			
 			repo.NFormApp.LicensesWindow.FormLicenses.Close.Click();
 			Delay.Milliseconds(1000);
@@ -593,10 +608,19 @@ namespace NformTester.lib
 			repo.NFormApp.NformG2Window.FormMain.About_Liebert_Nform.Click();
 			repo.NFormApp.Help.FormAbout_LiebertR_Nform.TabRegistration.Click();
 			bool unregister_flag = repo.NFormApp.Help.FormAbout_LiebertR_Nform.RegistrationDscr.TextValue.Equals("Software assurance: Unregistered");
-			if (unregister_flag == true)
-				Validate.AreEqual(false, b_Register);
-			else
-				Validate.AreEqual(true, b_Register);
+			try
+			{
+				if (unregister_flag == true)
+					Validate.AreEqual(false, b_Register);
+				else
+					Validate.AreEqual(true, b_Register);
+				
+			}
+			catch(Exception ex)
+			{
+				LxLog.Info("RegisterNotReady",ex.StackTrace.ToString());
+			}
+			
 			repo.NFormApp.Help.FormAbout_LiebertR_Nform.OK.Click();
 			Delay.Milliseconds(1000);
 
@@ -604,10 +628,18 @@ namespace NformTester.lib
 			repo.NFormApp.NformG2Window.FormMain.Configure.Click();
 			repo.NFormApp.NformG2Window.FormMain.Devices.Click();
 			int device_count = repo.NFormApp.ManagedDevicesWindow.FormManaged_Devices.Managed_device_table.Rows.Count;
-			if(device_count > 1)
-			   Validate.AreEqual(true, b_Device);
-			else
-				Validate.AreEqual(false, b_Device);
+			try
+			{
+				if(device_count > 1)
+				   Validate.AreEqual(true, b_Device);
+				else
+					Validate.AreEqual(false, b_Device);
+			}
+			catch(Exception ex)
+			{
+				LxLog.Info("DeviceNotReady",ex.StackTrace.ToString());
+			}
+
 			repo.NFormApp.ManagedDevicesWindow.FormManaged_Devices.Close.Click();
 			Delay.Milliseconds(1000);
 	
@@ -615,11 +647,27 @@ namespace NformTester.lib
 			repo.NFormApp.NformG2Window.FormMain.Navigate.Click();
 			repo.NFormApp.NformG2Window.FormMain.Alarms.Click();
 			int alarm_count = repo.NFormApp.NformG2Window.FormMain.All_alarms_table.Rows.Count;
-			if(alarm_count != 0)
-			   Validate.AreEqual(true, b_Alarm);
-			else
-				Validate.AreEqual(false, b_Alarm);
+			try
+			{
+				if(alarm_count != 0)
+				   Validate.AreEqual(true, b_Alarm);
+				else
+					Validate.AreEqual(false, b_Alarm);
+			}
+			catch(Exception ex)
+			{
+				LxLog.Info("AlarmNotReady",ex.StackTrace.ToString());
+			}
 			Delay.Milliseconds(1000);
+			
+			//Set Visual alert in oder to avoid input missing.
+			repo.NFormApp.NformG2Window.FormMain.Configure.Click();
+			repo.NFormApp.NformG2Window.FormMain.User_Options.Click();
+			repo.NFormApp.UserOptionsWindow.FormUser_Options.Visual_alerts.Click();
+			repo.NFormApp.UserOptionsWindow.FormUser_Options.Bring_app_to_foreground.Uncheck();
+			repo.NFormApp.UserOptionsWindow.FormUser_Options.Bring_app_to_foreground.Check();
+			repo.NFormApp.UserOptionsWindow.FormUser_Options.Bring_app_to_foreground.Uncheck();
+			repo.NFormApp.UserOptionsWindow.FormUser_Options.OK.Click();
 		
 			repo.NFormApp.NformG2Window.FormMain.Application.Click();
 			repo.NFormApp.NformG2Window.FormMain.Login_As.Click();

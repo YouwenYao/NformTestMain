@@ -96,11 +96,14 @@ namespace NformTester
             		return 0;
             	}
         	}                   
-            */
+            
              var configs = GetConfigs ();
              string CheckDevice = configs["CheckDevice_BeforeTesting"];
              string RestoreDB = configs["RestoreDB_AfterEachTestCase"];
-
+             */
+            
+             string CheckDevice = AppConfigOper.getConfigValue("CheckDevice_BeforeTesting");
+             string RestoreDB = AppConfigOper.getConfigValue("RestoreDB_AfterEachTestCase");
              //Create Report folder
             string reportDir = System.IO.Directory.GetCurrentDirectory();
             System.IO.DirectoryInfo reportDirect = System.IO.Directory.CreateDirectory(reportDir + @"\Report\" +"Report_" + System.DateTime.Now.ToString ("yyyyMMdd_HHmmss")); 
@@ -115,7 +118,7 @@ namespace NformTester
 				string strRst = RunCommand("sc stop Nform");
 			   //Be used to check devices are avalibale or not, which are configured in Device.ini
 	           LxDeviceAvailable myDeviceAvailable = new LxDeviceAvailable();
-	           myDeviceAvailable.CheckSnmpDevice();
+	       	   myDeviceAvailable.CheckSnmpDevice();
 	           myDeviceAvailable.CheckVelDevice();
 	           //start Nform service
 	           Console.WriteLine("Start Nform service...");
@@ -124,6 +127,7 @@ namespace NformTester
          
         	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;
+            /*
             try
             {
                 error = TestSuiteRunner.Run(typeof(Program), Environment.CommandLine);            	
@@ -134,6 +138,9 @@ namespace NformTester
             	Report.Error("Unexpected exception occurred: " + e.ToString());
                 error = -1;
             }
+            */
+           error = TestSuiteRunner.Run(typeof(Program), Environment.CommandLine);
+           
             return error;
         }
         

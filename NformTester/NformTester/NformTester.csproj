@@ -92,6 +92,9 @@
     <Compile Include="driver\TestCaseDriver.cs">
       <id>63aeabcc-fde4-468f-8e8b-434bd082b130</id>
     </Compile>
+    <Compile Include="lib\AppConfigOper.cs">
+      <id>ddafc060-0a3c-4a49-8705-b37a757d2e25</id>
+    </Compile>
     <Compile Include="lib\LxDBOper.cs">
       <id>edf34f91-171b-4480-95e2-fb0bcb49a6f1</id>
     </Compile>
@@ -142,9 +145,14 @@
     </Compile>
     <None Include="app.config">
       <id>788f223d-99d6-44c9-b193-94ff211120c7</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DeviceConfig.xml">
+      <id>dc660c65-20e6-4542-93de-470755276ac0</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Devices.ini">
-      <id>ce0d6910-b470-4d36-b5a6-42a413c3d0ad</id>
+      <id>dad83fa6-994c-44fe-9947-b22f375e7453</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="driver\600.30.30.40_EditAreaInTreeUnderViews.xlsx">
@@ -928,6 +936,10 @@
     </None>
     <None Include="Keywordscripts\900.30.010_PlottingGraph.xlsx">
       <id>db99a5be-860b-4520-9d00-9d72485b8d85</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Keywordscripts\MyTestScripts.xlsx">
+      <id>0b938426-9571-4742-9b1d-3b6dd215a686</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="keywordscripts\TestScripts.xlsx">

@@ -87,15 +87,16 @@ namespace NformTester.driver
 		   }
 		
 
-        /// <summary>
-        /// Backup database.
-        /// </summary>
-        /// <param name="RestoreDB">RestoreDB</param>
-        /// <param name="ServerLogPath">ServerLogPath</param>
-        /// <param name="ViewerLogPath">ViewerLogPath</param> 
-    	private void BackupDB (String RestoreDB, String ServerLogPath, String ViewerLogPath)
+		/// <summary>
+		/// Backup database
+		/// </summary>
+    	private void BackupDB ()
 		{
-			// If RestoreDB is Y, program will restore Database for Nform before scripts are executed.
+    		string RestoreDB = AppConfigOper.getConfigValue("RestoreDB_AfterEachTestCase");
+            string ServerLogPath = AppConfigOper.getConfigValue("Server_Log_Path");
+            string ViewerLogPath = AppConfigOper.getConfigValue("Viewer_Log_Path");
+            string DB_DbType = AppConfigOper.getConfigValue("DB_DbType");
+    		// If RestoreDB is Y, program will restore Database for Nform before scripts are executed.
            if(RestoreDB.Equals("Y"))
            {
            	 	//stop Nform service
@@ -118,7 +119,7 @@ namespace NformTester.driver
                 myLxDBOper.DeleteLogFile(ViewerLogPath);
 				
 				//Backup Database operation. Just do once before run all scripts.
-	            myLxDBOper.SetDbType();
+	            myLxDBOper.SetDbType(DB_DbType);
 	            myLxDBOper.BackUpDataBase();	
 	           if(myLxDBOper.GetBackUpResult() == false)
 	            {
@@ -145,15 +146,15 @@ namespace NformTester.driver
 				}
            }
 		}
-    	
+
     	/// <summary>
-        /// Restore database.
-        /// </summary>
-        /// <param name="RestoreDB">RestoreDB</param>
-        /// <param name="ServerLogPath">ServerLogPath</param>
-        /// <param name="ViewerLogPath">ViewerLogPath</param> 
-    	private void RestoreDB (String RestoreDB, String ServerLogPath, String ViewerLogPath)
+    	/// Restore Database
+    	/// </summary>
+    	private void RestoreDB ()
 		{			
+    		string RestoreDB = AppConfigOper.getConfigValue("RestoreDB_AfterEachTestCase");
+    		string ServerLogPath = AppConfigOper.getConfigValue("Server_Log_Path");
+    		string ViewerLogPath = AppConfigOper.getConfigValue("Viewer_Log_Path");
     		// If RestoreDB is Y, program will restore Database for Nform before scripts are executed.
            if(RestoreDB.Equals("Y"))
            {
@@ -282,19 +283,16 @@ namespace NformTester.driver
         {           
         	Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
-            Delay.SpeedFactor = 1.0;  
-                               
+            Delay.SpeedFactor = 1.0;                                 
             LxSetup mainOp = LxSetup.getInstance();  
             var configs = mainOp.configs;
-            string RestoreDB_Flag = configs["RestoreDB_AfterEachTestCase"];
-            string ServerLogPath = configs["Server_Log_Path"];
-            string ViewerLogPath = configs["Viewer_Log_Path"];
-            string DetailSteps = configs["DetailSteps_InResult"];
-            string strUserName = configs["UserName"];
-            string strPassword = configs["Password"];
-            string strServerName = configs["ServerName"];
             
-            BackupDB(RestoreDB_Flag, ServerLogPath,ViewerLogPath);
+            string DetailSteps = AppConfigOper.getConfigValue("DetailSteps_InResult");
+            string strUserName =  AppConfigOper.getConfigValue("UserName");
+            string strPassword =  AppConfigOper.getConfigValue("Password");
+            string strServerName =  AppConfigOper.getConfigValue("ServerName");
+            
+            BackupDB();
             
             string tsName = mainOp.getTestCaseName();
             string excelPath = "keywordscripts/" + tsName + ".xlsx"; 
@@ -319,16 +317,27 @@ namespace NformTester.driver
             LxParse stepsRepository = mainOp.getSteps();
             // stepsRepository.doValidate();  				//  ********* 2. check scripts  syntax *********
            
+            int myProcess = mainOp.ProcessId;
             ArrayList stepList = stepsRepository.getStepsList();
-            bool result = LxGenericAction.performScripts(stepList,DetailSteps);	//  ********* 3. run scripts with reflection *********
-           
+            bool result = true;	
+            //  ********* 3. run scripts with reflection *********
+ 			try
+ 			{
+ 				result = LxGenericAction.performScripts(stepList,DetailSteps);
+ 			}
+ 			catch(Exception e)
+ 			{
+ 				result = false;
+ 				LxLog.Error("Error",tsName+" "+e.Message.ToString());
+ 			}
+
             mainOp.setResult();
             mainOp.runOverOneCase(tsName);
             mainOp.opXls.close();
             Delay.Seconds(5);
             LxTearDown.closeApp(mainOp.ProcessId);		//  ********* 4. clean up for next running *********
 			
-            RestoreDB(RestoreDB_Flag, ServerLogPath, ViewerLogPath);
+            RestoreDB();
            
             // Add excel file link in Ranorex.report.
             string linkFile = reportPath + tsName +  ".xlsx";

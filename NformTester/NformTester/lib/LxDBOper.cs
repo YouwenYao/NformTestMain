@@ -40,7 +40,8 @@ namespace NformTester.lib
 		public LxDBOper()
 		{
 		}
-		
+	
+/*		
 		/// <summary>
 		/// Get database type from device.ini.
 		/// Set DB_DbType.
@@ -52,6 +53,18 @@ namespace NformTester.lib
 	        string DbType = ParseToValue(groupName,key);
 	        DB_DbType = (int.Parse(DbType));
 		}
+
+	*/	
+		
+		/// <summary>
+		/// Get database type from device.ini.
+		/// Set DB_DbType.
+		/// </summary>
+		public void SetDbType(string DbType)
+		{
+	        DB_DbType = (int.Parse(DbType));
+		}
+		
 		
 		/// <summary>
 		/// Get DB_DbType
@@ -80,6 +93,7 @@ namespace NformTester.lib
 			return RestoreResult;
 		}
 		
+		/*
 		/// <summary>
 		/// Parse the value from Devices.ini.
 		/// </summary>
@@ -95,6 +109,7 @@ namespace NformTester.lib
           return result;
         }
 		
+		*/
 		/// <summary>
 		/// Copy file.
 		/// </summary>
@@ -169,13 +184,9 @@ namespace NformTester.lib
 		/// <returns>connString</returns>
 		public string GetDBConnString()
 		{
-		    string groupName="Database";
-	        string DataSource="DB_SQL_Server_Name";
-			string UserName="DB_SQL_User_Name";
-			string Password="SQL_Password";
-			string DS = ParseToValue(groupName,DataSource);
-	        string UN = ParseToValue(groupName,UserName);
-	        string PWD = ParseToValue(groupName,Password);
+			string DS = AppConfigOper.getConfigValue("DB_SQL_Server_Name");
+			string UN = AppConfigOper.getConfigValue("DB_SQL_User_Name");
+			string PWD = AppConfigOper.getConfigValue("DB_SQL_Password");
 	        string connString = "Data Source="+DS+";"+"Initial Catalog=master;"+"User ID="+UN+";"+"Password="+PWD+";";
 	        return connString;
 		}
@@ -186,13 +197,10 @@ namespace NformTester.lib
 		/// </summary>
 		public void BackUpBundledDataBase()
 		{
-			   bool result = false;
+			  bool result = false;
 			  Console.WriteLine("*****Start to back up bundled Database*****");
-			  string groupName="Database";
-	          string keyOne="DB_Bundled_Path";
-	          string keyTwo="DB_Bundled_Backup_Path";
-			  string sourceDBPath = ParseToValue(groupName,keyOne);
-	          string targetDBPath = ParseToValue(groupName,keyTwo);
+			  string sourceDBPath = AppConfigOper.getConfigValue("DB_Bundled_Path");
+			  string targetDBPath = AppConfigOper.getConfigValue("DB_Bundled_Backup_Path");
 	          
 			   if (!Directory.Exists(sourceDBPath))
 			   {
@@ -288,12 +296,10 @@ namespace NformTester.lib
 		public void RestoreBundledDataBase()
 		{
 		  bool result = false;
-		  Console.WriteLine("*****Start to restore bundled Database*****");
-		  string groupName="Database";
-          string keyOne="DB_Bundled_Backup_Path";
-		  string keyTwo="DB_Bundled_Path";
-		  string sourceDBPath = ParseToValue(groupName,keyOne);
-          string targetDBPath = ParseToValue(groupName,keyTwo);   
+		  Console.WriteLine("*****Start to restore bundled Database*****");     
+		  string sourceDBPath = AppConfigOper.getConfigValue("DB_Bundled_Backup_Path");
+		  string targetDBPath = AppConfigOper.getConfigValue("DB_Bundled_Path");
+          
           //First delete the exsited directory.
 		  if (!Directory.Exists(targetDBPath))
 	      {
@@ -434,13 +440,11 @@ namespace NformTester.lib
 	        			break;
 				}
 			}
-		}	
-			
+		}
 		
 		/// <summary>
-		/// Delete Log file to clean the Nform
+		/// Delete Log file to clean the Nform.
 		/// </summary>
-		/// <param name="LogPath">LogPath</param>
 		public void DeleteLogFile(String LogPath)
 		{ 
 		    if (File.Exists(LogPath))
@@ -451,7 +455,5 @@ namespace NformTester.lib
 		 else
 		 	Console.WriteLine("*****This Log File is not existed.*****");
 		}	
-		
-		
 	}
 }

@@ -74,7 +74,7 @@ namespace NformTester.lib
 			LxSetup mainOp = LxSetup.getInstance();
 			Validate.EnableReport = false;
 			LxLog.Info("Info", "start this scripts.");
-			
+			var configs = mainOp.configs;
 			 
 			// Map action
 			m_ActionMap.Clear();
@@ -102,12 +102,10 @@ namespace NformTester.lib
 
 			// Run the item in stepList
 			// If wrongCount =3, it means that the command fails three times continuously.
-			int wrongTime = 3;
 			int wrongCount = 0;
-			string groupName="TryToRunTimes";
-            string key="Try_Times";
-            wrongTime = int.Parse(myparseToValue(groupName,key));
-    //        MessageBox.Show("wrong Time ="+wrongTime);
+			int wrongTime =int.Parse(configs["Try_Times"]);
+
+			
 			bool finalResult = true;
 			foreach(LxScriptItem item in stepList)
 			{
@@ -122,6 +120,7 @@ namespace NformTester.lib
 					wrongCount++;
 					resultFlag = false;
 					finalResult = false;
+					mainOp.opXls.writeCell(Convert.ToInt32(item.m_Index)+1,14,"Fail");
 					LxLog.Error("Error",item.m_Index+" "+e.Message.ToString());
 				}
 				
@@ -715,7 +714,7 @@ namespace NformTester.lib
 		/// <param name="item">item</param>
 		public static void AppStart(LxScriptItem item)
 		{
-			string strApplicationName = parseToValue(item.m_Component);
+			string strApplicationName = AppConfigOper.parseToValue(item.m_Component);
 			m_AppProcess[item.m_Action] = Host.Local.RunApplication(strApplicationName);
         }
 		
@@ -1104,6 +1103,7 @@ namespace NformTester.lib
 			}									
 		}
 			
+/*		
 		/// <summary>
 		/// Parse the value from Devices.ini.
 		/// Author: Sashimi.
@@ -1120,6 +1120,7 @@ namespace NformTester.lib
           return result;
         }	
 
+		
 		/// <summary>
 		/// Replace the name with value refer to app.config
 		/// </summary>
@@ -1161,6 +1162,7 @@ namespace NformTester.lib
             return addr.Replace("\"","");
         }
 		
+*/		
 		/// <summary>
 		/// Delete a local file
 		/// </summary>
@@ -1170,7 +1172,7 @@ namespace NformTester.lib
 			
 		 Console.WriteLine("*****Start to Delete the File*****");
 			  
-		 string FilePath = parseToValue(item.m_Component);
+		 string FilePath = AppConfigOper.parseToValue(item.m_Component);
 		 
 		 if (File.Exists(FilePath))
 		 {
