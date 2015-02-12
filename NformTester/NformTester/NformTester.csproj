@@ -75,6 +75,9 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data">
     </Reference>
+    <Reference Include="System.Data.SqlServerCe">
+      <HintPath>lib\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing">
     </Reference>
     <Reference Include="System.Windows.Forms">
@@ -94,6 +97,9 @@
     </Compile>
     <Compile Include="lib\AppConfigOper.cs">
       <id>ddafc060-0a3c-4a49-8705-b37a757d2e25</id>
+    </Compile>
+    <Compile Include="lib\LxCEDbOperation.cs">
+      <id>f5ea9169-5579-415d-b1bf-9c6f3bae9560</id>
     </Compile>
     <Compile Include="lib\LxDBOper.cs">
       <id>edf34f91-171b-4480-95e2-fb0bcb49a6f1</id>
@@ -121,6 +127,9 @@
     </Compile>
     <Compile Include="lib\LxSetup.cs">
       <id>ff389c82-b281-4f3d-90bd-0a4069d9b3a1</id>
+    </Compile>
+    <Compile Include="lib\LxSQLDbOperation.cs">
+      <id>6c1a9458-a84d-4df5-9e50-f232724f19c6</id>
     </Compile>
     <Compile Include="lib\LxTearDown.cs">
       <id>8826ff9e-a2d1-4cad-aa13-397e6db93944</id>

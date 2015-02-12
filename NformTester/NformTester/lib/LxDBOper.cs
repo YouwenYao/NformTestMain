@@ -10,6 +10,7 @@ using System;
 using System.Data.SqlClient;
 using System.Data;
 using System.IO;
+using System.Collections.Generic;
 
 namespace NformTester.lib
 {
@@ -159,8 +160,32 @@ namespace NformTester.lib
 	        catch(Exception ex)
 	        {
 	        	string log = ex.ToString();
+	        	 Console.WriteLine(log);
 	        }
        }
+		
+		
+		/// <summary>
+		/// Get size of database
+		/// </summary>
+		/// <returns></returns>
+		public int GetDbSize(SqlConnection conn)
+		{
+			conn.Open();
+			return 0;
+		}
+		
+		/// <summary>
+		/// Increase database size (we may integrate code or call the tool directly)
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <returns></returns>
+		public bool IncreaseDbSize(SqlConnection conn)
+		{
+			conn.Open();
+			return true;
+		}
+		
 		
 		/// <summary>
 		/// Close the SQL server connection.
@@ -454,6 +479,32 @@ namespace NformTester.lib
 		 }	
 		 else
 		 	Console.WriteLine("*****This Log File is not existed.*****");
-		}	
+		}
+		
+		
+				/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="ds"></param>
+		/// <returns></returns>
+		public static List<string[]> DataSetToList(DataSet ds)
+		{
+			List<string[]> strData = new List<string[]>();
+			foreach(System.Data.DataRow r in ds.Tables[0].Rows)
+			{
+				int colCount = ds.Tables[0].Columns.Count;
+				string[] items = new String[colCount];
+				for(int i=0;i<colCount;i++)
+				{
+					items[i] = Convert.ToString(r.ItemArray[i]);
+					string colName = ds.Tables[0].Columns[i].ColumnName;
+					Console.WriteLine(colName +" : "+items[i]);
+				}
+				strData.Add(items);
+			}
+			return strData;
+		}
+		
+		
 	}
 }

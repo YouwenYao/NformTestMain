@@ -22,11 +22,13 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Configuration;
 
+
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Reporting;
 using Ranorex.Core.Testing;
 using NformTester.lib;
+using System.Data.SqlClient;
 
 namespace NformTester
 {	
@@ -102,8 +104,79 @@ namespace NformTester
              string RestoreDB = configs["RestoreDB_AfterEachTestCase"];
              */
             
-             string CheckDevice = AppConfigOper.getConfigValue("CheckDevice_BeforeTesting");
-             string RestoreDB = AppConfigOper.getConfigValue("RestoreDB_AfterEachTestCase");
+            /*
+             * Get size of database for SQL SERVER
+     		LxSQLDbOperation SQLOper = new LxSQLDbOperation();
+     		SqlConnection conn = new SqlConnection();
+	        conn.ConnectionString =@"Data Source=10.146.64.56\SQLEXPRESS;Initial Catalog=master;User ID=sa;Password=sa@2013;";
+			SQLOper.OpenConnection(conn);
+     		string NformSize = SQLOper.GetDbSize(conn, "Nform");
+     		string NformAlmSize = SQLOper.GetDbSize(conn, "NformAlm");
+     		string NformLogSize = SQLOper.GetDbSize(conn, "NformLog");
+     		Console.WriteLine("The size of Nform is:"+NformSize);
+     		Console.WriteLine("The size of Nform is:"+NformAlmSize);
+     		Console.WriteLine("The size of Nform is:"+NformLogSize);
+     		*/
+     		
+     		/*
+     		 * Get size of database for SQL CE
+     		LxCEDbOperation CEOper = new LxCEDbOperation();
+     		double NformAlmSize = CEOper.GetAlarmDbSize();
+     		double NformDataLogSize = CEOper.GetDataLogDbSize();
+			Console.WriteLine("NformAlmSize is: " +NformAlmSize);
+     		Console.WriteLine("NformDataLogSize is: " +NformDataLogSize);
+     		 * */
+
+     	   /*
+     	    * Increase database for SQLCE 
+     	    LxCEDbOperation CEOper = new LxCEDbOperation();
+			CEOper.IncreaseAlarmDbSize();
+			CEOper.IncreaseDatalogDbSize();
+     	    * */
+     	   
+     	   /*
+     	    * Increase database for SQL SERVER 
+     	    LxSQLDbOperation SQLOper = new LxSQLDbOperation();
+			SqlConnection conn = new SqlConnection();
+	        conn.ConnectionString =@"Data Source=10.146.64.56\SQLEXPRESS;Initial Catalog=master;User ID=sa;Password=sa@2013;";
+			SQLOper.GetDbSize(conn,"NformAlm");
+			SQLOper.GetDbSize(conn,"NformLog");
+			SQLOper.IncreaseAlarmDbSize();
+			SQLOper.IncreaseDatalogDbSize();
+     	    * 
+     	    * */
+     	   
+     	   /*
+     	    * Get table value for SQLCE database
+     	    *      	   
+     	    LxCEDbOperation CEOper = new LxCEDbOperation();
+     	    string dbNformName = @"Nform.sdf";
+     	    string dbNformAlmName = @"NformAlm.sdf";
+     	    string dbNformLogName = @"NformLog.sdf";
+     	    string cmdVersion = @"SELECT * FROM Version;";
+     	    string cmdAlarm = @"SELECT * FROM Alarm;";
+     	    string cmdLog = @"SELECT * FROM DataLog;";
+	   	    CEOper.GetTableValue(dbNformName,cmdVersion);
+ 	  	    CEOper.GetTableValue(dbNformAlmName,cmdAlarm);
+    	    CEOper.GetTableValue(dbNformLogName,cmdLog);
+     	    * 
+     	    * */
+     	   
+     	   /*
+     	    * Get table value for SQLServer database
+     	    LxSQLDbOperation SQLOper = new LxSQLDbOperation();
+			SqlConnection conn = new SqlConnection();
+	        conn.ConnectionString =@"Data Source=10.146.64.56\SQLEXPRESS;Initial Catalog=master;User ID=sa;Password=sa@2013;";
+	        string cmdVersion = @"use Nform;SELECT * FROM Version;";
+	        string cmdAlarm = @"use NformAlm;SELECT * FROM Alarm;";
+	        string cmdLog = @"use NformLog;SELECT * FROM DataLog;";
+	        string cmdGrp = @"use Nform;SELECT * FROM UsrGrp;";  
+	        SQLOper.GetTableValue(conn,cmdVersion);
+	        SQLOper.GetTableValue(conn,cmdGrp);
+     	    * */
+     	   
+     		string CheckDevice = AppConfigOper.getConfigValue("CheckDevice_BeforeTesting");
+            string RestoreDB = AppConfigOper.getConfigValue("RestoreDB_AfterEachTestCase");
              //Create Report folder
             string reportDir = System.IO.Directory.GetCurrentDirectory();
             System.IO.DirectoryInfo reportDirect = System.IO.Directory.CreateDirectory(reportDir + @"\Report\" +"Report_" + System.DateTime.Now.ToString ("yyyyMMdd_HHmmss")); 
