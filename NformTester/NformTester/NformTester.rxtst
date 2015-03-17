@@ -1,6 +1,6 @@
 ﻿<testsuite
 name="NformTester"
-rxversion="4.0.1.21107"
+rxversion="5.3.0.22324"
 id="0ac6aa29-2786-479e-9a76-72fed1f11051"
 reportfilename="%S_%Y%M%D_%T.rxlog"
 reporttemplatefolder=""
@@ -9,7 +9,6 @@ placescreenshotsinfolder="True"
 reportwriteinterval="30000ms"
 reportcompress="False"
 enabletracingscreenshots="True"
-description=""
 reportlevel="Info;20">
 	<content>
 		<folder
@@ -3576,7 +3575,18 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="0ac6aa29-2786-479e-9a76-72fed1f11051"/>
+			<testcase
+			id="402f8845-9c99-4944-86bb-cd38ff268fc2"/>
+			<testcase
+			id="5ae57d1d-408c-4120-b1b0-aaca22ffc46a"/>
+			<testcase
+			id="8e1a7dd5-143b-4931-811d-41f3f8a09914"/>
+			<testcase
+			id="cac6cfa8-f4ed-4f7a-908f-396ea4a5a5c4"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>

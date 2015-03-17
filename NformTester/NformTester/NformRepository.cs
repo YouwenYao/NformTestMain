@@ -18,10 +18,11 @@ using Ranorex.Core.Testing;
 
 namespace NformTester
 {
+#pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     /// The class representing the NformRepository element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "4.0.1")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "5.3.0")]
     [RepositoryFolder("6a87c9de-ee82-4df6-9a1d-880f145582e5")]
     public partial class NformRepository : RepoGenBaseFolder
     {
@@ -44,7 +45,7 @@ namespace NformTester
         /// Repository class constructor.
         /// </summary>
         public NformRepository() 
-            : base("NformRepository", "", null, 30000, false, "6a87c9de-ee82-4df6-9a1d-880f145582e5", ".\\RepositoryImages\\NformRepository6a87c9de.rximgres")
+            : base("NformRepository", "/", null, 0, false, "6a87c9de-ee82-4df6-9a1d-880f145582e5", ".\\RepositoryImages\\NformRepository6a87c9de.rximgres")
         {
             _nformapp = new NformRepositoryFolders.NFormAppFolder(this);
             _externalapp = new NformRepositoryFolders.ExternalAppFolder(this);
@@ -79,6 +80,18 @@ namespace NformTester
         }
 
 #endregion
+
+        /// <summary>
+        /// The Self item info.
+        /// </summary>
+        [RepositoryItemInfo("6a87c9de-ee82-4df6-9a1d-880f145582e5")]
+        public virtual RepoItemInfo SelfInfo
+        {
+            get
+            {
+                return _selfInfo;
+            }
+        }
 
         /// <summary>
         /// The NFormApp folder.
@@ -120,7 +133,7 @@ namespace NformTester
     /// <summary>
     /// Inner folder classes.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "4.0.1")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "5.3.0")]
     public partial class NformRepositoryFolders
     {
         /// <summary>
@@ -154,28 +167,40 @@ namespace NformTester
             /// Creates a new NFormApp  folder.
             /// </summary>
             public NFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("NFormApp", "", parentFolder, 0, false, "b80efc81-3adb-4022-a925-057198078bf1", "")
+                    base("NFormApp", "", parentFolder, 0, null, false, "b80efc81-3adb-4022-a925-057198078bf1", "")
             {
-                _logintoliebertnformwindow = new NformRepositoryFolders.LogintoLiebertNformWindowFolder(parentFolder);
-                _nformg2window = new NformRepositoryFolders.NformG2WindowFolder(parentFolder);
-                _licenseswindow = new NformRepositoryFolders.LicensesWindowFolder(parentFolder);
-                _useroptionswindow = new NformRepositoryFolders.UserOptionsWindowFolder(parentFolder);
-                _changepasswordwindow = new NformRepositoryFolders.ChangePasswordWindowFolder(parentFolder);
-                _usersandgroupswindow = new NformRepositoryFolders.UsersandGroupsWindowFolder(parentFolder);
-                _actionsetswindow = new NformRepositoryFolders.ActionSetsWindowFolder(parentFolder);
-                _serveroptionswindow = new NformRepositoryFolders.ServerOptionsWindowFolder(parentFolder);
-                _smtpserverwindow = new NformRepositoryFolders.SMTPServerWindowFolder(parentFolder);
-                _devicepropertieswindow = new NformRepositoryFolders.DevicePropertiesWindowFolder(parentFolder);
-                _manageddeviceswindow = new NformRepositoryFolders.ManagedDevicesWindowFolder(parentFolder);
-                _adddevicewizard = new NformRepositoryFolders.AddDeviceWizardFolder(parentFolder);
-                _navigationviews = new NformRepositoryFolders.NavigationViewsFolder(parentFolder);
-                _help = new NformRepositoryFolders.HelpFolder(parentFolder);
-                _installationwizardwindow = new NformRepositoryFolders.InstallationWizardWindowFolder(parentFolder);
-                _uninstallationwindow = new NformRepositoryFolders.UninstallationWindowFolder(parentFolder);
-                _alarmhistorywindow = new NformRepositoryFolders.AlarmHistoryWindowFolder(parentFolder);
-                _actionhistorywindow = new NformRepositoryFolders.ActionHistoryWindowFolder(parentFolder);
-                _exportdatalogwindow = new NformRepositoryFolders.ExportDataLogWindowFolder(parentFolder);
-                _nformtoolswindow = new NformRepositoryFolders.NformToolsWindowFolder(parentFolder);
+                _logintoliebertnformwindow = new NformRepositoryFolders.LogintoLiebertNformWindowFolder(this);
+                _nformg2window = new NformRepositoryFolders.NformG2WindowFolder(this);
+                _licenseswindow = new NformRepositoryFolders.LicensesWindowFolder(this);
+                _useroptionswindow = new NformRepositoryFolders.UserOptionsWindowFolder(this);
+                _changepasswordwindow = new NformRepositoryFolders.ChangePasswordWindowFolder(this);
+                _usersandgroupswindow = new NformRepositoryFolders.UsersandGroupsWindowFolder(this);
+                _actionsetswindow = new NformRepositoryFolders.ActionSetsWindowFolder(this);
+                _serveroptionswindow = new NformRepositoryFolders.ServerOptionsWindowFolder(this);
+                _smtpserverwindow = new NformRepositoryFolders.SMTPServerWindowFolder(this);
+                _devicepropertieswindow = new NformRepositoryFolders.DevicePropertiesWindowFolder(this);
+                _manageddeviceswindow = new NformRepositoryFolders.ManagedDevicesWindowFolder(this);
+                _adddevicewizard = new NformRepositoryFolders.AddDeviceWizardFolder(this);
+                _navigationviews = new NformRepositoryFolders.NavigationViewsFolder(this);
+                _help = new NformRepositoryFolders.HelpFolder(this);
+                _installationwizardwindow = new NformRepositoryFolders.InstallationWizardWindowFolder(this);
+                _uninstallationwindow = new NformRepositoryFolders.UninstallationWindowFolder(this);
+                _alarmhistorywindow = new NformRepositoryFolders.AlarmHistoryWindowFolder(this);
+                _actionhistorywindow = new NformRepositoryFolders.ActionHistoryWindowFolder(this);
+                _exportdatalogwindow = new NformRepositoryFolders.ExportDataLogWindowFolder(this);
+                _nformtoolswindow = new NformRepositoryFolders.NformToolsWindowFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("b80efc81-3adb-4022-a925-057198078bf1")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -373,11 +398,23 @@ namespace NformTester
             /// Creates a new LogintoLiebertNformWindow  folder.
             /// </summary>
             public LogintoLiebertNformWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("LogintoLiebertNformWindow", "", parentFolder, 0, false, "45262c9d-aed7-4101-a4d9-1ec04ddbb2a2", "")
+                    base("LogintoLiebertNformWindow", "", parentFolder, 0, null, false, "45262c9d-aed7-4101-a4d9-1ec04ddbb2a2", "")
             {
-                _formlogin_to_liebertr_nform = new NformRepositoryFolders.FormLogin_to_LiebertR_NformAppFolder(parentFolder);
-                _formlogin_failure = new NformRepositoryFolders.FormLogin_FailureAppFolder(parentFolder);
-                _formevaluation_period_expiration = new NformRepositoryFolders.FormEvaluation_Period_ExpirationAppFolder(parentFolder);
+                _formlogin_to_liebertr_nform = new NformRepositoryFolders.FormLogin_to_LiebertR_NformAppFolder(this);
+                _formlogin_failure = new NformRepositoryFolders.FormLogin_FailureAppFolder(this);
+                _formevaluation_period_expiration = new NformRepositoryFolders.FormEvaluation_Period_ExpirationAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("45262c9d-aed7-4101-a4d9-1ec04ddbb2a2")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -414,7 +451,6 @@ namespace NformTester
         [RepositoryFolder("4ce09782-e085-417b-9346-b537ce92655a")]
         public partial class FormLogin_to_LiebertR_NformAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _usernameInfo;
             RepoItemInfo _passwordInfo;
             RepoItemInfo _loginInfo;
@@ -426,9 +462,8 @@ namespace NformTester
             /// Creates a new FormLogin_to_LiebertR_Nform  folder.
             /// </summary>
             public FormLogin_to_LiebertR_NformAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormLogin_to_LiebertR_Nform", "/form[@controlname='LxLoginDlg']", parentFolder, 30000, true, "4ce09782-e085-417b-9346-b537ce92655a", "")
+                    base("FormLogin_to_LiebertR_Nform", "/form[@controlname='LxLoginDlg']", parentFolder, 30000, null, true, "4ce09782-e085-417b-9346-b537ce92655a", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "4ce09782-e085-417b-9346-b537ce92655a");
                 _usernameInfo = new RepoItemInfo(this, "Username", "text[@controlname='m_userNameTbx']", 30000, null, "283a1e6c-ede0-49ba-a7f7-5f7ca5a09a7d");
                 _passwordInfo = new RepoItemInfo(this, "Password", "text[@controlname='m_passwordTbx']/text[@accessiblename='Password:']", 30000, null, "0fd0d674-e40b-4dda-b51b-8b6501da7abd");
                 _loginInfo = new RepoItemInfo(this, "Login", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "b4232d74-f995-4276-9ccd-bc438afa72ad");
@@ -612,16 +647,14 @@ namespace NformTester
         [RepositoryFolder("eafa73e0-0913-4a6f-ab35-b940955cd04b")]
         public partial class FormLogin_FailureAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormLogin_Failure  folder.
             /// </summary>
             public FormLogin_FailureAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormLogin_Failure", "/form[@title='Login Failure']", parentFolder, 30000, true, "eafa73e0-0913-4a6f-ab35-b940955cd04b", "")
+                    base("FormLogin_Failure", "/form[@title='Login Failure']", parentFolder, 30000, null, true, "eafa73e0-0913-4a6f-ab35-b940955cd04b", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "eafa73e0-0913-4a6f-ab35-b940955cd04b");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@class='Button']", 30000, null, "a6cbf1f0-6b30-49e9-b82e-33a5d4b537ab");
             }
 
@@ -680,16 +713,14 @@ namespace NformTester
         [RepositoryFolder("f9819093-fbc7-4eb9-a468-c5e04097ad7c")]
         public partial class FormEvaluation_Period_ExpirationAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormEvaluation_Period_Expiration  folder.
             /// </summary>
             public FormEvaluation_Period_ExpirationAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormEvaluation_Period_Expiration", "/form[@title~'^Evaluation\\ Period\\ Expirat']", parentFolder, 10000, true, "f9819093-fbc7-4eb9-a468-c5e04097ad7c", "")
+                    base("FormEvaluation_Period_Expiration", "/form[@title~'^Evaluation\\ Period\\ Expirat']", parentFolder, 10000, null, true, "f9819093-fbc7-4eb9-a468-c5e04097ad7c", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "f9819093-fbc7-4eb9-a468-c5e04097ad7c");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@class='Button']", 10000, null, "6f23ef5e-9a00-4873-b906-b41254c4b534");
             }
 
@@ -766,21 +797,33 @@ namespace NformTester
             /// Creates a new NformG2Window  folder.
             /// </summary>
             public NformG2WindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("NformG2Window", "", parentFolder, 0, false, "fc46378b-677b-4fcc-b16e-0756f4ac5be2", "")
+                    base("NformG2Window", "", parentFolder, 0, null, false, "fc46378b-677b-4fcc-b16e-0756f4ac5be2", "")
             {
-                _formmain = new NformRepositoryFolders.FormMainAppFolder(parentFolder);
-                _formgadget = new NformRepositoryFolders.FormGadgetAppFolder(parentFolder);
-                _formconfigure_global_gadget_display = new NformRepositoryFolders.FormConfigure_Global_Gadget_DisplayAppFolder(parentFolder);
-                _formcolor = new NformRepositoryFolders.FormColorAppFolder(parentFolder);
-                _formnform_system_startup = new NformRepositoryFolders.FormNform_System_StartupAppFolder(parentFolder);
-                _formcreated_user = new NformRepositoryFolders.FormCreated_UserAppFolder(parentFolder);
-                _formregistration_update = new NformRepositoryFolders.FormRegistration_UpdateAppFolder(parentFolder);
-                _formdata_point_details = new NformRepositoryFolders.FormData_Point_DetailsAppFolder(parentFolder);
-                _formalarm_details = new NformRepositoryFolders.FormAlarm_DetailsAppFolder(parentFolder);
-                _formtoo_many_graph_points = new NformRepositoryFolders.FormToo_Many_Graph_PointsAppFolder(parentFolder);
-                _formcontextmenucontextmenustrip = new NformRepositoryFolders.FormContextMenuContextMenuStripAppFolder(parentFolder);
-                _formsaveas = new NformRepositoryFolders.FormSaveAsAppFolder(parentFolder);
-                _alarmsnavigateliebertrnform = new NformRepositoryFolders.ALARMSNAVIGATELiebertRNformAppFolder(parentFolder);
+                _formmain = new NformRepositoryFolders.FormMainAppFolder(this);
+                _formgadget = new NformRepositoryFolders.FormGadgetAppFolder(this);
+                _formconfigure_global_gadget_display = new NformRepositoryFolders.FormConfigure_Global_Gadget_DisplayAppFolder(this);
+                _formcolor = new NformRepositoryFolders.FormColorAppFolder(this);
+                _formnform_system_startup = new NformRepositoryFolders.FormNform_System_StartupAppFolder(this);
+                _formcreated_user = new NformRepositoryFolders.FormCreated_UserAppFolder(this);
+                _formregistration_update = new NformRepositoryFolders.FormRegistration_UpdateAppFolder(this);
+                _formdata_point_details = new NformRepositoryFolders.FormData_Point_DetailsAppFolder(this);
+                _formalarm_details = new NformRepositoryFolders.FormAlarm_DetailsAppFolder(this);
+                _formtoo_many_graph_points = new NformRepositoryFolders.FormToo_Many_Graph_PointsAppFolder(this);
+                _formcontextmenucontextmenustrip = new NformRepositoryFolders.FormContextMenuContextMenuStripAppFolder(this);
+                _formsaveas = new NformRepositoryFolders.FormSaveAsAppFolder(this);
+                _alarmsnavigateliebertrnform = new NformRepositoryFolders.ALARMSNAVIGATELiebertRNformAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("fc46378b-677b-4fcc-b16e-0756f4ac5be2")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -907,7 +950,6 @@ namespace NformTester
         [RepositoryFolder("a14fa27a-1c25-4983-9755-ae295c095173")]
         public partial class FormMainAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _applicationInfo;
             RepoItemInfo _viewInfo;
             RepoItemInfo _toolsInfo;
@@ -1065,9 +1107,8 @@ namespace NformTester
             /// Creates a new FormMain  folder.
             /// </summary>
             public FormMainAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormMain", "/form[@controlname='LxViewerFrame']", parentFolder, 30000, true, "a14fa27a-1c25-4983-9755-ae295c095173", "")
+                    base("FormMain", "/form[@controlname='LxViewerFrame']", parentFolder, 30000, null, true, "a14fa27a-1c25-4983-9755-ae295c095173", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "a14fa27a-1c25-4983-9755-ae295c095173");
                 _applicationInfo = new RepoItemInfo(this, "Application", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Application']", 30000, null, "54764ee9-cee7-4c3f-8b50-28787768e0b7");
                 _viewInfo = new RepoItemInfo(this, "View", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='View']", 30000, null, "edcafbb5-ad2d-4dcc-a63e-2e8fd14fd328");
                 _toolsInfo = new RepoItemInfo(this, "Tools", "menubar[@controlname='m_mainMenu']/menuitem[@accessiblename='Tools']", 30000, null, "55e89d93-16d8-40b0-abbc-84661d5ce230");
@@ -4901,7 +4942,6 @@ namespace NformTester
         [RepositoryFolder("0a1e95ea-fb94-4ffd-acae-2bb8eb4962b2")]
         public partial class FormGadgetAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _applyInfo;
             RepoItemInfo _helpInfo;
             RepoItemInfo _alarmlistitemInfo;
@@ -4928,9 +4968,8 @@ namespace NformTester
             /// Creates a new FormGadget  folder.
             /// </summary>
             public FormGadgetAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormGadget", "/form[@controlname='LxCfgGadgetDlg']", parentFolder, 30000, true, "0a1e95ea-fb94-4ffd-acae-2bb8eb4962b2", "")
+                    base("FormGadget", "/form[@controlname='LxCfgGadgetDlg']", parentFolder, 30000, null, true, "0a1e95ea-fb94-4ffd-acae-2bb8eb4962b2", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "0a1e95ea-fb94-4ffd-acae-2bb8eb4962b2");
                 _applyInfo = new RepoItemInfo(this, "Apply", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "7106ae3e-43c0-4562-a30d-92e756c32cd8");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "350b2108-26f7-4390-85cf-c26369bb4f25");
                 _alarmlistitemInfo = new RepoItemInfo(this, "AlarmListItem", "tabpagelist/tabpage[@controlname='m_tabPageSetup']/container/container[@controlname='m_displayGrpBx']/container[@controlname='m_sliceColorsGrpBx']/list/list/listitem[@accessiblename='Alarm']", 30000, null, "46a8de18-c70c-45a6-9255-81a4ca7249d9");
@@ -5489,7 +5528,6 @@ namespace NformTester
         [RepositoryFolder("e7918683-6517-4971-a6ca-d2b5906a49d1")]
         public partial class FormConfigure_Global_Gadget_DisplayAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _helpInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _majorInfo;
@@ -5575,9 +5613,8 @@ namespace NformTester
             /// Creates a new FormConfigure_Global_Gadget_Display  folder.
             /// </summary>
             public FormConfigure_Global_Gadget_DisplayAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormConfigure_Global_Gadget_Display", "/form[@controlname='LxCfgGadgetDlg']", parentFolder, 30000, true, "e7918683-6517-4971-a6ca-d2b5906a49d1", "")
+                    base("FormConfigure_Global_Gadget_Display", "/form[@controlname='LxCfgGadgetDlg']", parentFolder, 30000, null, true, "e7918683-6517-4971-a6ca-d2b5906a49d1", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "e7918683-6517-4971-a6ca-d2b5906a49d1");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "2cd3669f-6045-4b90-9dea-564d30735109");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button1']", 30000, null, "4dfac86c-a379-461a-8074-280712ec68ec");
                 _majorInfo = new RepoItemInfo(this, "Major", "tabpagelist/tabpage[@controlname='m_tabPageDisplay']/tabpagelist/tabpage[@controlname='m_tabPageAlarms']/tabpagelist/tabpage[@controlname='m_tabPageAlarmSev']/container/button[@controltypename='LxButton' and @instance='3']", 30000, null, "cbb74b5f-b38e-4476-829a-5a52191db07c");
@@ -7611,7 +7648,6 @@ namespace NformTester
         [RepositoryFolder("19d1a804-7a24-4b93-80f8-e0b0a3b77425")]
         public partial class FormColorAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _cancleInfo;
             RepoItemInfo _basecolortableInfo;
@@ -7634,9 +7670,8 @@ namespace NformTester
             /// Creates a new FormColor  folder.
             /// </summary>
             public FormColorAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormColor", "/form[@title='颜色' or @title='Color']", parentFolder, 30000, true, "19d1a804-7a24-4b93-80f8-e0b0a3b77425", "")
+                    base("FormColor", "/form[@title='颜色' or @title='Color']", parentFolder, 30000, null, true, "19d1a804-7a24-4b93-80f8-e0b0a3b77425", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "19d1a804-7a24-4b93-80f8-e0b0a3b77425");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "6be39cf4-c658-4f52-8e07-bb0bd8a44db9");
                 _cancleInfo = new RepoItemInfo(this, "Cancle", "button[@text='Cancel']", 30000, null, "50192774-150e-4c7c-9daf-d185f098a9ea");
                 _basecolortableInfo = new RepoItemInfo(this, "BaseColorTable", "text[@controlid='720']", 30000, null, "40b0ed3e-fa1e-40bb-9505-cc517f81b741");
@@ -8095,7 +8130,6 @@ namespace NformTester
         [RepositoryFolder("b48bee86-8f41-4a89-b344-5fc0ca9da3f2")]
         public partial class FormNform_System_StartupAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _backInfo;
             RepoItemInfo _cancelInfo;
             RepoItemInfo _nextInfo;
@@ -8128,9 +8162,8 @@ namespace NformTester
             /// Creates a new FormNform_System_Startup  folder.
             /// </summary>
             public FormNform_System_StartupAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormNform_System_Startup", "/form[@controlname='LxNewSystemDlg']", parentFolder, 30000, true, "b48bee86-8f41-4a89-b344-5fc0ca9da3f2", "")
+                    base("FormNform_System_Startup", "/form[@controlname='LxNewSystemDlg']", parentFolder, 30000, null, true, "b48bee86-8f41-4a89-b344-5fc0ca9da3f2", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "b48bee86-8f41-4a89-b344-5fc0ca9da3f2");
                 _backInfo = new RepoItemInfo(this, "Back", "container/container[@controlname='m_buttonPnl']/button[@controlname='m_backBtn']", 30000, null, "c5263728-5b84-408b-a7a2-84894556dd36");
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "container/container[@controlname='m_buttonPnl']/button[@controlname='m_cancelBtn']", 30000, null, "c876a362-4ed6-42fd-96c2-7802addee986");
                 _nextInfo = new RepoItemInfo(this, "Next", "container/container[@controlname='m_buttonPnl']/button[@controlname='m_nextBtn']", 30000, null, "57bc4dbc-179f-443f-a5e4-abb391fab791");
@@ -8839,16 +8872,14 @@ namespace NformTester
         [RepositoryFolder("e9e1dcd3-5aa6-4b2b-bd1b-12c0b5466664")]
         public partial class FormCreated_UserAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormCreated_User  folder.
             /// </summary>
             public FormCreated_UserAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormCreated_User", "/form[@title='Created User']", parentFolder, 30000, true, "e9e1dcd3-5aa6-4b2b-bd1b-12c0b5466664", "")
+                    base("FormCreated_User", "/form[@title='Created User']", parentFolder, 30000, null, true, "e9e1dcd3-5aa6-4b2b-bd1b-12c0b5466664", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "e9e1dcd3-5aa6-4b2b-bd1b-12c0b5466664");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='OK']", 30000, null, "86a117f4-77ee-4ec1-8314-680a8f853064");
             }
 
@@ -8907,7 +8938,6 @@ namespace NformTester
         [RepositoryFolder("3e629e0c-8e93-4d21-bb8d-4d4e8cb3b294")]
         public partial class FormRegistration_UpdateAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _helpInfo;
 
@@ -8915,9 +8945,8 @@ namespace NformTester
             /// Creates a new FormRegistration_Update  folder.
             /// </summary>
             public FormRegistration_UpdateAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormRegistration_Update", "/form[@title='Registration Update']", parentFolder, 30000, true, "3e629e0c-8e93-4d21-bb8d-4d4e8cb3b294", "")
+                    base("FormRegistration_Update", "/form[@title='Registration Update']", parentFolder, 30000, null, true, "3e629e0c-8e93-4d21-bb8d-4d4e8cb3b294", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "3e629e0c-8e93-4d21-bb8d-4d4e8cb3b294");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "476b7bbd-c41e-401c-8f78-8ec12cf8653e");
                 _helpInfo = new RepoItemInfo(this, "Help", "button[@text='帮助' or @text='Help']", 30000, null, "80beabc8-423b-477c-ad54-8f0f4d944c9f");
             }
@@ -9001,7 +9030,6 @@ namespace NformTester
         [RepositoryFolder("130632eb-2426-4083-8520-7b8d9ff6e742")]
         public partial class FormData_Point_DetailsAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _closeInfo;
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _nameInfo;
@@ -9011,9 +9039,8 @@ namespace NformTester
             /// Creates a new FormData_Point_Details  folder.
             /// </summary>
             public FormData_Point_DetailsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormData_Point_Details", "/form[@controlname='LxDataPointDlg']", parentFolder, 30000, true, "130632eb-2426-4083-8520-7b8d9ff6e742", "")
+                    base("FormData_Point_Details", "/form[@controlname='LxDataPointDlg']", parentFolder, 30000, null, true, "130632eb-2426-4083-8520-7b8d9ff6e742", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "130632eb-2426-4083-8520-7b8d9ff6e742");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "44928dac-c761-4e18-84b3-6d41394405d7");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_mainGroupBox']/container[@controlname='m_descriptionTbx']/text[@controlname='m_descriptionTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "c0c34b3a-5a04-4c18-a9fc-ae47e99eb3cc");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_mainGroupBox']/container[@controlname='m_nameTbx']/text[@controlname='m_nameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "768e9aa6-d004-415a-bfb4-07b1bf7a5d8a");
@@ -9147,7 +9174,6 @@ namespace NformTester
         [RepositoryFolder("31770b81-649e-436b-864d-796a3ff540fb")]
         public partial class FormAlarm_DetailsAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionlabelInfo;
             RepoItemInfo _descriptionInfo;
@@ -9169,9 +9195,8 @@ namespace NformTester
             /// Creates a new FormAlarm_Details  folder.
             /// </summary>
             public FormAlarm_DetailsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormAlarm_Details", "/form[@controlname='LxAlarmDetailsDlg']", parentFolder, 30000, true, "31770b81-649e-436b-864d-796a3ff540fb", "")
+                    base("FormAlarm_Details", "/form[@controlname='LxAlarmDetailsDlg']", parentFolder, 30000, null, true, "31770b81-649e-436b-864d-796a3ff540fb", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "31770b81-649e-436b-864d-796a3ff540fb");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_alarmInfoGrp']/text[@controlname='m_alarmNameLbl']", 30000, null, "695d5435-5c58-47f8-a0ea-bd6e5a063f26");
                 _descriptionlabelInfo = new RepoItemInfo(this, "Descriptionlabel", "container[@controlname='m_alarmInfoGrp']/text[@controlname='m_alarmDscrLbl']", 30000, null, "fe81fadd-c1dc-4855-8ce2-69d84a7aac6f");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_alarmInfoGrp']/text[@controlname='m_alarmDscrTbx']/text[@accessiblename='Description:']", 30000, null, "7d885ac5-ced3-4053-950d-7a69d5d9ca2a");
@@ -9605,16 +9630,14 @@ namespace NformTester
         [RepositoryFolder("71d68da6-1fac-4487-b566-a5cee0d7707b")]
         public partial class FormToo_Many_Graph_PointsAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormToo_Many_Graph_Points  folder.
             /// </summary>
             public FormToo_Many_Graph_PointsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormToo_Many_Graph_Points", "/form[@title='Too Many Graph Points']", parentFolder, 30000, true, "71d68da6-1fac-4487-b566-a5cee0d7707b", "")
+                    base("FormToo_Many_Graph_Points", "/form[@title='Too Many Graph Points']", parentFolder, 30000, null, true, "71d68da6-1fac-4487-b566-a5cee0d7707b", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "71d68da6-1fac-4487-b566-a5cee0d7707b");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "65eb9512-e3d6-4d5c-b590-1ebf8e05ffd6");
             }
 
@@ -9673,7 +9696,6 @@ namespace NformTester
         [RepositoryFolder("c520e7ed-237e-4d0c-8d71-680ef1d76a25")]
         public partial class FormContextMenuContextMenuStripAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _trendscopyInfo;
             RepoItemInfo _trendspage_setupInfo;
             RepoItemInfo _trendsprintInfo;
@@ -9688,9 +9710,8 @@ namespace NformTester
             /// Creates a new FormContextMenuContextMenuStrip  folder.
             /// </summary>
             public FormContextMenuContextMenuStripAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormContextMenuContextMenuStrip", "/contextmenu[@controlname='contextMenuStrip1']", parentFolder, 30000, true, "c520e7ed-237e-4d0c-8d71-680ef1d76a25", "")
+                    base("FormContextMenuContextMenuStrip", "/contextmenu[@controlname='contextMenuStrip1']", parentFolder, 30000, null, true, "c520e7ed-237e-4d0c-8d71-680ef1d76a25", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "c520e7ed-237e-4d0c-8d71-680ef1d76a25");
                 _trendscopyInfo = new RepoItemInfo(this, "TrendsCopy", "menuitem[@accessiblename='Copy']", 30000, null, "4c914716-2c6b-4653-8cd8-4c11d8fd5731");
                 _trendspage_setupInfo = new RepoItemInfo(this, "TrendsPage_Setup", "menuitem[@accessiblename='Page Setup...']", 30000, null, "354d6f45-5290-43ec-8126-07889dc979f4");
                 _trendsprintInfo = new RepoItemInfo(this, "TrendsPrint", "menuitem[@accessiblename='Print...']", 30000, null, "60e9847b-a6ac-43f5-a957-4b5f41f15e56");
@@ -9949,7 +9970,6 @@ namespace NformTester
         [RepositoryFolder("16d80d74-fb87-4f08-b795-0083de714dfe")]
         public partial class FormSaveAsAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _saveInfo;
             RepoItemInfo _cancelInfo;
             RepoItemInfo _closeInfo;
@@ -9959,9 +9979,8 @@ namespace NformTester
             /// Creates a new FormSaveAs  folder.
             /// </summary>
             public FormSaveAsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormSaveAs", "/form[@title='Save As']", parentFolder, 30000, true, "16d80d74-fb87-4f08-b795-0083de714dfe", "")
+                    base("FormSaveAs", "/form[@title='Save As']", parentFolder, 30000, null, true, "16d80d74-fb87-4f08-b795-0083de714dfe", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "16d80d74-fb87-4f08-b795-0083de714dfe");
                 _saveInfo = new RepoItemInfo(this, "Save", "button[@text='&Save']", 30000, null, "e774daf1-455d-4ed1-968d-7fc67078f0db");
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "button[@text='Cancel']", 30000, null, "21ad68bb-7b48-4ebc-98ad-f39a61ba3123");
                 _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='Close']", 30000, null, "06bb9f8f-6a98-452c-855d-73eb29eb24b9");
@@ -10095,16 +10114,14 @@ namespace NformTester
         [RepositoryFolder("7ba0272c-6f1e-45bb-aeee-f4fff39cccd9")]
         public partial class ALARMSNAVIGATELiebertRNformAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _buttonminInfo;
 
             /// <summary>
             /// Creates a new ALARMSNAVIGATELiebertRNform  folder.
             /// </summary>
             public ALARMSNAVIGATELiebertRNformAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ALARMSNAVIGATELiebertRNform", "/form[@controlname='LxFloatingWindow']", parentFolder, 30000, true, "7ba0272c-6f1e-45bb-aeee-f4fff39cccd9", "")
+                    base("ALARMSNAVIGATELiebertRNform", "/form[@controlname='LxFloatingWindow']", parentFolder, 30000, null, true, "7ba0272c-6f1e-45bb-aeee-f4fff39cccd9", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "7ba0272c-6f1e-45bb-aeee-f4fff39cccd9");
                 _buttonminInfo = new RepoItemInfo(this, "Buttonmin", "titlebar/button[@accessiblename='Minimize']", 30000, null, "a0ddf750-7151-4794-a600-1325b5f0f4ea");
             }
 
@@ -10175,15 +10192,27 @@ namespace NformTester
             /// Creates a new LicensesWindow  folder.
             /// </summary>
             public LicensesWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("LicensesWindow", "", parentFolder, 0, false, "604d762a-6630-40f9-b715-8d6ae08d3a19", "")
+                    base("LicensesWindow", "", parentFolder, 0, null, false, "604d762a-6630-40f9-b715-8d6ae08d3a19", "")
             {
-                _formlicenses = new NformRepositoryFolders.FormLicensesAppFolder(parentFolder);
-                _formlicense_agreement = new NformRepositoryFolders.FormLicense_AgreementAppFolder(parentFolder);
-                _formadd_license = new NformRepositoryFolders.FormAdd_LicenseAppFolder(parentFolder);
-                _formreminder = new NformRepositoryFolders.FormReminderAppFolder(parentFolder);
-                _formmultilink_license_file = new NformRepositoryFolders.FormMultiLink_License_FileAppFolder(parentFolder);
-                _formconfirm_license_delete = new NformRepositoryFolders.FormConfirm_License_DeleteAppFolder(parentFolder);
-                _formlicensesalert = new NformRepositoryFolders.FormLicensesAlertAppFolder(parentFolder);
+                _formlicenses = new NformRepositoryFolders.FormLicensesAppFolder(this);
+                _formlicense_agreement = new NformRepositoryFolders.FormLicense_AgreementAppFolder(this);
+                _formadd_license = new NformRepositoryFolders.FormAdd_LicenseAppFolder(this);
+                _formreminder = new NformRepositoryFolders.FormReminderAppFolder(this);
+                _formmultilink_license_file = new NformRepositoryFolders.FormMultiLink_License_FileAppFolder(this);
+                _formconfirm_license_delete = new NformRepositoryFolders.FormConfirm_License_DeleteAppFolder(this);
+                _formlicensesalert = new NformRepositoryFolders.FormLicensesAlertAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("604d762a-6630-40f9-b715-8d6ae08d3a19")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -10256,7 +10285,6 @@ namespace NformTester
         [RepositoryFolder("7d18b307-2878-446c-b9ad-9c08320a060d")]
         public partial class FormLicensesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _multilink_addInfo;
             RepoItemInfo _addInfo;
             RepoItemInfo _deleteInfo;
@@ -10268,9 +10296,8 @@ namespace NformTester
             /// Creates a new FormLicenses  folder.
             /// </summary>
             public FormLicensesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormLicenses", "/form[@controlname='LxLicenseDlg']", parentFolder, 30000, true, "7d18b307-2878-446c-b9ad-9c08320a060d", "")
+                    base("FormLicenses", "/form[@controlname='LxLicenseDlg']", parentFolder, 30000, null, true, "7d18b307-2878-446c-b9ad-9c08320a060d", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "7d18b307-2878-446c-b9ad-9c08320a060d");
                 _multilink_addInfo = new RepoItemInfo(this, "MultiLink_add", "container[@controlname='m_licenseListCtl']/container[@controlname='m_licListGrp']/container[@controlname='m_multiLinkGrp']/button[@controlname='m_multiLinkBtn']", 30000, null, "50997ea0-736d-4e26-86e2-f6d6bb91cfbc");
                 _addInfo = new RepoItemInfo(this, "Add", "container[@controlname='m_licenseListCtl']/container[@controlname='m_licListGrp']/container[@controlname='m_licListBtns']/container/button[@controlname='m_button5']", 30000, null, "c989b4b9-dd12-4687-98bb-dc6d78176e0d");
                 _deleteInfo = new RepoItemInfo(this, "Delete", "container[@controlname='m_licenseListCtl']/container[@controlname='m_licListGrp']/container[@controlname='m_licListBtns']/container/button[@controlname='m_button6']", 30000, null, "e6007158-08ce-4c7f-9657-3a7845be1ca1");
@@ -10454,7 +10481,6 @@ namespace NformTester
         [RepositoryFolder("48044a80-c9f1-474c-8cf6-1a3fbc4ce184")]
         public partial class FormLicense_AgreementAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _acceptInfo;
             RepoItemInfo _cancelInfo;
 
@@ -10462,9 +10488,8 @@ namespace NformTester
             /// Creates a new FormLicense_Agreement  folder.
             /// </summary>
             public FormLicense_AgreementAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormLicense_Agreement", "/form[@controlname='LxLicenseEulaDlg']", parentFolder, 30000, true, "48044a80-c9f1-474c-8cf6-1a3fbc4ce184", "")
+                    base("FormLicense_Agreement", "/form[@controlname='LxLicenseEulaDlg']", parentFolder, 30000, null, true, "48044a80-c9f1-474c-8cf6-1a3fbc4ce184", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "48044a80-c9f1-474c-8cf6-1a3fbc4ce184");
                 _acceptInfo = new RepoItemInfo(this, "Accept", "container/container[@controlname='m_btnsFlowLayoutPanel']/button[@controlname='m_acceptBtn']", 30000, null, "b2133b65-563a-482e-ba6e-676e211758f0");
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "container/container[@controlname='m_btnsFlowLayoutPanel']/button[@controlname='m_cancelBtn']", 30000, null, "8d6a54a4-dec9-4a1e-a5fc-f6d223d06e7f");
             }
@@ -10548,7 +10573,6 @@ namespace NformTester
         [RepositoryFolder("d3a532f3-0759-45f3-91da-2460669fa3b0")]
         public partial class FormAdd_LicenseAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _keyInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _closeInfo;
@@ -10557,9 +10581,8 @@ namespace NformTester
             /// Creates a new FormAdd_License  folder.
             /// </summary>
             public FormAdd_LicenseAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormAdd_License", "/form[@controlname='LxLicenseAddDlg']", parentFolder, 30000, true, "d3a532f3-0759-45f3-91da-2460669fa3b0", "")
+                    base("FormAdd_License", "/form[@controlname='LxLicenseAddDlg']", parentFolder, 30000, null, true, "d3a532f3-0759-45f3-91da-2460669fa3b0", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "d3a532f3-0759-45f3-91da-2460669fa3b0");
                 _keyInfo = new RepoItemInfo(this, "Key", "text[@controlname='m_licenseTbx']/text[@accessiblename='Key:']", 30000, null, "f5f00377-e1fc-4800-a362-f7858ed8241e");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "c211e7e4-5107-45e4-8de7-61ace01d1d20");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "e291bf1e-1d63-47a6-9cde-21d19adccf24");
@@ -10668,7 +10691,6 @@ namespace NformTester
         [RepositoryFolder("d8866a10-3a3f-4846-99f6-80cfdce1e858")]
         public partial class FormReminderAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _donotshowInfo;
             RepoItemInfo _helpInfo;
             RepoItemInfo _noInfo;
@@ -10680,9 +10702,8 @@ namespace NformTester
             /// Creates a new FormReminder  folder.
             /// </summary>
             public FormReminderAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormReminder", "/form[@controlname='LxSaRemindDlg']", parentFolder, 30000, true, "d8866a10-3a3f-4846-99f6-80cfdce1e858", "")
+                    base("FormReminder", "/form[@controlname='LxSaRemindDlg']", parentFolder, 30000, null, true, "d8866a10-3a3f-4846-99f6-80cfdce1e858", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "d8866a10-3a3f-4846-99f6-80cfdce1e858");
                 _donotshowInfo = new RepoItemInfo(this, "DoNotShow", "checkbox[@controlname='m_doNotShowCbx']", 30000, null, "57b31b77-2db6-4a02-a571-d85f5a95aa07");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "34afe508-9c84-4434-ab3a-7b9af3e4a051");
                 _noInfo = new RepoItemInfo(this, "No", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "9fc8609a-1ebd-4304-b77d-f0f607a09369");
@@ -10866,7 +10887,6 @@ namespace NformTester
         [RepositoryFolder("7e79d7f5-c50d-4f64-a755-ea85ea075838")]
         public partial class FormMultiLink_License_FileAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _closeInfo;
             RepoItemInfo _browseInfo;
@@ -10876,9 +10896,8 @@ namespace NformTester
             /// Creates a new FormMultiLink_License_File  folder.
             /// </summary>
             public FormMultiLink_License_FileAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormMultiLink_License_File", "/form[@controlname='LxLicenseFileDlg']", parentFolder, 30000, true, "7e79d7f5-c50d-4f64-a755-ea85ea075838", "")
+                    base("FormMultiLink_License_File", "/form[@controlname='LxLicenseFileDlg']", parentFolder, 30000, null, true, "7e79d7f5-c50d-4f64-a755-ea85ea075838", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "7e79d7f5-c50d-4f64-a755-ea85ea075838");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "417993ff-66ae-4fae-ac57-a1472a189a79");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "ac508769-85e4-4986-b8f4-5fc0730664cc");
                 _browseInfo = new RepoItemInfo(this, "Browse", "button[@controlname='m_browseBtn']", 30000, null, "3dc13d07-a8f5-4d8d-bcfb-f1ee2371e51b");
@@ -11012,7 +11031,6 @@ namespace NformTester
         [RepositoryFolder("59e3fef5-2eac-4eda-b75b-2e1d789f8de4")]
         public partial class FormConfirm_License_DeleteAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _yesInfo;
             RepoItemInfo _noInfo;
 
@@ -11020,9 +11038,8 @@ namespace NformTester
             /// Creates a new FormConfirm_License_Delete  folder.
             /// </summary>
             public FormConfirm_License_DeleteAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormConfirm_License_Delete", "/form[@title='Confirm License Delete']", parentFolder, 30000, true, "59e3fef5-2eac-4eda-b75b-2e1d789f8de4", "")
+                    base("FormConfirm_License_Delete", "/form[@title='Confirm License Delete']", parentFolder, 30000, null, true, "59e3fef5-2eac-4eda-b75b-2e1d789f8de4", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "59e3fef5-2eac-4eda-b75b-2e1d789f8de4");
                 _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='是(&Y)' or @text='&Yes']", 30000, null, "96fa039b-149e-4a7c-a649-028a768e18e3");
                 _noInfo = new RepoItemInfo(this, "No", "button[@text='&No']", 30000, null, "dbcd79b4-8dc1-4159-adf8-3fee7a8bc8aa");
             }
@@ -11106,16 +11123,14 @@ namespace NformTester
         [RepositoryFolder("ecc8f67c-fbe9-44ef-84ae-a3f0440ed1ab")]
         public partial class FormLicensesAlertAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormLicensesAlert  folder.
             /// </summary>
             public FormLicensesAlertAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormLicensesAlert", "/form[@title='Licenses' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, true, "ecc8f67c-fbe9-44ef-84ae-a3f0440ed1ab", "")
+                    base("FormLicensesAlert", "/form[@title='Licenses' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, null, true, "ecc8f67c-fbe9-44ef-84ae-a3f0440ed1ab", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "ecc8f67c-fbe9-44ef-84ae-a3f0440ed1ab");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "428f7a3b-97ec-45dd-a18a-d19edcf52600");
             }
 
@@ -11180,9 +11195,21 @@ namespace NformTester
             /// Creates a new UserOptionsWindow  folder.
             /// </summary>
             public UserOptionsWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("UserOptionsWindow", "", parentFolder, 0, false, "7c7779df-202e-483e-a521-f1e1ba8c2c2f", "")
+                    base("UserOptionsWindow", "", parentFolder, 0, null, false, "7c7779df-202e-483e-a521-f1e1ba8c2c2f", "")
             {
-                _formuser_options = new NformRepositoryFolders.FormUser_OptionsAppFolder(parentFolder);
+                _formuser_options = new NformRepositoryFolders.FormUser_OptionsAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7c7779df-202e-483e-a521-f1e1ba8c2c2f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -11201,7 +11228,6 @@ namespace NformTester
         [RepositoryFolder("a701bd91-6156-4849-a2c8-fa6ed951ded6")]
         public partial class FormUser_OptionsAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _exitInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _closeInfo;
@@ -11242,9 +11268,8 @@ namespace NformTester
             /// Creates a new FormUser_Options  folder.
             /// </summary>
             public FormUser_OptionsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormUser_Options", "/form[@controlname='LxUserPropsDlg']", parentFolder, 30000, true, "a701bd91-6156-4849-a2c8-fa6ed951ded6", "")
+                    base("FormUser_Options", "/form[@controlname='LxUserPropsDlg']", parentFolder, 30000, null, true, "a701bd91-6156-4849-a2c8-fa6ed951ded6", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "a701bd91-6156-4849-a2c8-fa6ed951ded6");
                 _exitInfo = new RepoItemInfo(this, "Exit", "titlebar/button[@accessiblename='关闭']", 30000, null, "bb09518d-900b-4375-90ac-c146d428d8d6");
                 _okInfo = new RepoItemInfo(this, "OK", "container/container/button[@controlname='m_button2']", 30000, null, "10342449-00c8-4cbe-9191-9e9d57c6d7a5");
                 _closeInfo = new RepoItemInfo(this, "Close", "container/container/button[@controlname='m_button3']", 30000, null, "45048a77-a724-4266-b6ae-05c3cc7ff3c6");
@@ -12160,10 +12185,22 @@ namespace NformTester
             /// Creates a new ChangePasswordWindow  folder.
             /// </summary>
             public ChangePasswordWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("ChangePasswordWindow", "", parentFolder, 0, false, "7997ebc8-fd60-4641-b46c-dfc9c1352c8b", "")
+                    base("ChangePasswordWindow", "", parentFolder, 0, null, false, "7997ebc8-fd60-4641-b46c-dfc9c1352c8b", "")
             {
-                _formchange_password = new NformRepositoryFolders.FormChange_PasswordAppFolder(parentFolder);
-                _formchange_passwordremind = new NformRepositoryFolders.FormChange_PasswordRemindAppFolder(parentFolder);
+                _formchange_password = new NformRepositoryFolders.FormChange_PasswordAppFolder(this);
+                _formchange_passwordremind = new NformRepositoryFolders.FormChange_PasswordRemindAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7997ebc8-fd60-4641-b46c-dfc9c1352c8b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -12191,7 +12228,6 @@ namespace NformTester
         [RepositoryFolder("ea378af7-8459-4431-a167-f92e0a603abd")]
         public partial class FormChange_PasswordAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _old_passwordInfo;
             RepoItemInfo _new_passwordInfo;
             RepoItemInfo _confirm_passwordInfo;
@@ -12204,9 +12240,8 @@ namespace NformTester
             /// Creates a new FormChange_Password  folder.
             /// </summary>
             public FormChange_PasswordAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormChange_Password", "/form[@controlname='LxChgPasswordDlg']", parentFolder, 30000, true, "ea378af7-8459-4431-a167-f92e0a603abd", "")
+                    base("FormChange_Password", "/form[@controlname='LxChgPasswordDlg']", parentFolder, 30000, null, true, "ea378af7-8459-4431-a167-f92e0a603abd", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "ea378af7-8459-4431-a167-f92e0a603abd");
                 _old_passwordInfo = new RepoItemInfo(this, "Old_password", "text[@controlname='m_oldPswdTbx']/text[@accessiblename='Old password:']", 30000, null, "75b20a51-0e7f-4b5b-b7e3-8590293ab885");
                 _new_passwordInfo = new RepoItemInfo(this, "New_password", "text[@controlname='m_newPswdTbx']/text[@accessiblename='New password:']", 30000, null, "b211402e-262c-48dd-9256-5a1fc1e85264");
                 _confirm_passwordInfo = new RepoItemInfo(this, "Confirm_password", "text[@controlname='m_confPswdTbx']/text[@accessiblename='Confirm password:']", 30000, null, "be71571c-fcc3-4d63-a05d-4de3e18e3e35");
@@ -12415,16 +12450,14 @@ namespace NformTester
         [RepositoryFolder("131f2fb0-6688-49b4-9ae3-89a7003dbb68")]
         public partial class FormChange_PasswordRemindAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormChange_PasswordRemind  folder.
             /// </summary>
             public FormChange_PasswordRemindAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormChange_PasswordRemind", "/form[@title='Change Password' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, true, "131f2fb0-6688-49b4-9ae3-89a7003dbb68", "")
+                    base("FormChange_PasswordRemind", "/form[@title='Change Password' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, null, true, "131f2fb0-6688-49b4-9ae3-89a7003dbb68", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "131f2fb0-6688-49b4-9ae3-89a7003dbb68");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "5c14227f-8780-4350-9b29-62b9a043d29f");
             }
 
@@ -12493,13 +12526,25 @@ namespace NformTester
             /// Creates a new UsersandGroupsWindow  folder.
             /// </summary>
             public UsersandGroupsWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("UsersandGroupsWindow", "", parentFolder, 0, false, "899169b5-6e3c-4d85-9084-4c370611aea2", "")
+                    base("UsersandGroupsWindow", "", parentFolder, 0, null, false, "899169b5-6e3c-4d85-9084-4c370611aea2", "")
             {
-                _formusers_and_groups = new NformRepositoryFolders.FormUsers_and_GroupsAppFolder(parentFolder);
-                _formuserproperties = new NformRepositoryFolders.FormUserPropertiesAppFolder(parentFolder);
-                _formviewchanged = new NformRepositoryFolders.FormViewChangedAppFolder(parentFolder);
-                _formgroup_properties = new NformRepositoryFolders.FormGroup_PropertiesAppFolder(parentFolder);
-                _formaccountdisabled = new NformRepositoryFolders.FormAccountDisabledAppFolder(parentFolder);
+                _formusers_and_groups = new NformRepositoryFolders.FormUsers_and_GroupsAppFolder(this);
+                _formuserproperties = new NformRepositoryFolders.FormUserPropertiesAppFolder(this);
+                _formviewchanged = new NformRepositoryFolders.FormViewChangedAppFolder(this);
+                _formgroup_properties = new NformRepositoryFolders.FormGroup_PropertiesAppFolder(this);
+                _formaccountdisabled = new NformRepositoryFolders.FormAccountDisabledAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("899169b5-6e3c-4d85-9084-4c370611aea2")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -12554,7 +12599,6 @@ namespace NformTester
         [RepositoryFolder("50dee407-7543-4d09-8db9-383fe546f305")]
         public partial class FormUsers_and_GroupsAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _usersaddInfo;
             RepoItemInfo _userscopyInfo;
             RepoItemInfo _userseditInfo;
@@ -12573,9 +12617,8 @@ namespace NformTester
             /// Creates a new FormUsers_and_Groups  folder.
             /// </summary>
             public FormUsers_and_GroupsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormUsers_and_Groups", "/form[@controlname='LxUsersGroupsDlg']", parentFolder, 30000, true, "50dee407-7543-4d09-8db9-383fe546f305", "")
+                    base("FormUsers_and_Groups", "/form[@controlname='LxUsersGroupsDlg']", parentFolder, 30000, null, true, "50dee407-7543-4d09-8db9-383fe546f305", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "50dee407-7543-4d09-8db9-383fe546f305");
                 _usersaddInfo = new RepoItemInfo(this, "UsersAdd", "container[@controlname='m_usersGrp']/container/container/button[@controlname='m_button3']", 30000, null, "af2bd74f-dcd7-475f-9c38-933aa82b383c");
                 _userscopyInfo = new RepoItemInfo(this, "UsersCopy", "container[@controlname='m_usersGrp']/container/container/button[@controlname='m_button4']", 30000, null, "dec21086-f2ad-49be-adc8-831a90bc8064");
                 _userseditInfo = new RepoItemInfo(this, "UsersEdit", "container[@controlname='m_usersGrp']/container/container/button[@controlname='m_button5']", 30000, null, "243c9f1e-c3a9-455b-a00b-e6db203b52a6");
@@ -12934,7 +12977,6 @@ namespace NformTester
         [RepositoryFolder("aadb3a88-aa78-4551-bf54-394343d4b368")]
         public partial class FormUserPropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _passwordInfo;
             RepoItemInfo _nameInfo;
@@ -12974,9 +13016,8 @@ namespace NformTester
             /// Creates a new FormUserProperties  folder.
             /// </summary>
             public FormUserPropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormUserProperties", "/form[@controlname='LxUserDlg']", parentFolder, 30000, true, "aadb3a88-aa78-4551-bf54-394343d4b368", "")
+                    base("FormUserProperties", "/form[@controlname='LxUserDlg']", parentFolder, 30000, null, true, "aadb3a88-aa78-4551-bf54-394343d4b368", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "aadb3a88-aa78-4551-bf54-394343d4b368");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_tableLayoutPnl']/text[@controlname='m_descriptionTbx']/text[@accessiblename='Description:']", 30000, null, "a1260b68-b185-4973-9929-57711373ca35");
                 _passwordInfo = new RepoItemInfo(this, "Password", "container[@controlname='m_tableLayoutPnl']/text[@controlname='m_passwordTbx']/text[@accessiblename='Password:']", 30000, null, "6e885da7-42df-4884-af9d-bbe346fa8a9a");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_tableLayoutPnl']/text[@controlname='m_userNameTbx']/text[@accessiblename='Name:']", 30000, null, "de2d58c4-ba0e-4a1a-8099-d1bd8f3d9361");
@@ -13860,16 +13901,14 @@ namespace NformTester
         [RepositoryFolder("d5063b14-9007-4c17-ab11-8769661f24a6")]
         public partial class FormViewChangedAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormViewChanged  folder.
             /// </summary>
             public FormViewChangedAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormViewChanged", "/form[@title='View Assignment Changed']", parentFolder, 30000, true, "d5063b14-9007-4c17-ab11-8769661f24a6", "")
+                    base("FormViewChanged", "/form[@title='View Assignment Changed']", parentFolder, 30000, null, true, "d5063b14-9007-4c17-ab11-8769661f24a6", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "d5063b14-9007-4c17-ab11-8769661f24a6");
                 _okInfo = new RepoItemInfo(this, "OK", "button", 30000, null, "1f276bd8-df49-4ec7-98c5-bb66562fb084");
             }
 
@@ -13928,7 +13967,6 @@ namespace NformTester
         [RepositoryFolder("b9fab5fb-35ff-40f7-9895-6cfde14b9124")]
         public partial class FormGroup_PropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _cancelInfo;
             RepoItemInfo _helpInfo;
@@ -13967,9 +14005,8 @@ namespace NformTester
             /// Creates a new FormGroup_Properties  folder.
             /// </summary>
             public FormGroup_PropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormGroup_Properties", "/form[@controlname='LxGroupDlg']", parentFolder, 30000, true, "b9fab5fb-35ff-40f7-9895-6cfde14b9124", "")
+                    base("FormGroup_Properties", "/form[@controlname='LxGroupDlg']", parentFolder, 30000, null, true, "b9fab5fb-35ff-40f7-9895-6cfde14b9124", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "b9fab5fb-35ff-40f7-9895-6cfde14b9124");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "beb16ea3-807d-45f6-b628-15732e8c4c8e");
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "7ce05d23-2011-4c38-ad44-34174bfa42ef");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "b93e33de-329d-4056-b73a-f5a9354f041e");
@@ -14828,16 +14865,14 @@ namespace NformTester
         [RepositoryFolder("c543090f-3bb7-4e0b-b52c-8011043267e7")]
         public partial class FormAccountDisabledAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormAccountDisabled  folder.
             /// </summary>
             public FormAccountDisabledAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormAccountDisabled", "/form[@title='Account Disabled']", parentFolder, 30000, true, "c543090f-3bb7-4e0b-b52c-8011043267e7", "")
+                    base("FormAccountDisabled", "/form[@title='Account Disabled']", parentFolder, 30000, null, true, "c543090f-3bb7-4e0b-b52c-8011043267e7", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "c543090f-3bb7-4e0b-b52c-8011043267e7");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='OK']", 30000, null, "fb570ccb-3bb3-4fc1-9bf5-6d444a2d3a3b");
             }
 
@@ -14918,25 +14953,37 @@ namespace NformTester
             /// Creates a new ActionSetsWindow  folder.
             /// </summary>
             public ActionSetsWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("ActionSetsWindow", "", parentFolder, 0, false, "60165853-0ac6-45bd-9579-c60e3fe25934", "")
+                    base("ActionSetsWindow", "", parentFolder, 0, null, false, "60165853-0ac6-45bd-9579-c60e3fe25934", "")
             {
-                _formaction_sets = new NformRepositoryFolders.FormAction_SetsAppFolder(parentFolder);
-                _formaction_set_properties = new NformRepositoryFolders.FormAction_Set_PropertiesAppFolder(parentFolder);
-                _formselect_action_type = new NformRepositoryFolders.FormSelect_Action_TypeAppFolder(parentFolder);
-                _formreadwrite_data_action_properties = new NformRepositoryFolders.FormReadWrite_Data_Action_PropertiesAppFolder(parentFolder);
-                _forme_mail_action_properties = new NformRepositoryFolders.FormE_mail_Action_PropertiesAppFolder(parentFolder);
-                _formnform_users_addresses = new NformRepositoryFolders.FormNform_Users_AddressesAppFolder(parentFolder);
-                _formmissing_information = new NformRepositoryFolders.FormMissing_InformationAppFolder(parentFolder);
-                _forme_mail_action_advanced_properties = new NformRepositoryFolders.FormE_mail_Action_Advanced_PropertiesAppFolder(parentFolder);
-                _formrun_command_action_properties = new NformRepositoryFolders.FormRun_Command_Action_PropertiesAppFolder(parentFolder);
-                _formwrite_file_action_properties = new NformRepositoryFolders.FormWrite_File_Action_PropertiesAppFolder(parentFolder);
-                _formshutdown_action_properties = new NformRepositoryFolders.FormShutdown_Action_PropertiesAppFolder(parentFolder);
-                _formshutdown_clients = new NformRepositoryFolders.FormShutdown_ClientsAppFolder(parentFolder);
-                _formshutdown_client_properties = new NformRepositoryFolders.FormShutdown_Client_PropertiesAppFolder(parentFolder);
-                _formforward_trap_action_properties = new NformRepositoryFolders.FormForward_Trap_Action_PropertiesAppFolder(parentFolder);
-                _formmap_actions = new NformRepositoryFolders.FormMap_ActionsAppFolder(parentFolder);
-                _formconfirmactionsetdelete = new NformRepositoryFolders.FormConfirmActionSetDeleteAppFolder(parentFolder);
-                _formemailactionpropertiesl = new NformRepositoryFolders.FormEMailActionPropertiesLAppFolder(parentFolder);
+                _formaction_sets = new NformRepositoryFolders.FormAction_SetsAppFolder(this);
+                _formaction_set_properties = new NformRepositoryFolders.FormAction_Set_PropertiesAppFolder(this);
+                _formselect_action_type = new NformRepositoryFolders.FormSelect_Action_TypeAppFolder(this);
+                _formreadwrite_data_action_properties = new NformRepositoryFolders.FormReadWrite_Data_Action_PropertiesAppFolder(this);
+                _forme_mail_action_properties = new NformRepositoryFolders.FormE_mail_Action_PropertiesAppFolder(this);
+                _formnform_users_addresses = new NformRepositoryFolders.FormNform_Users_AddressesAppFolder(this);
+                _formmissing_information = new NformRepositoryFolders.FormMissing_InformationAppFolder(this);
+                _forme_mail_action_advanced_properties = new NformRepositoryFolders.FormE_mail_Action_Advanced_PropertiesAppFolder(this);
+                _formrun_command_action_properties = new NformRepositoryFolders.FormRun_Command_Action_PropertiesAppFolder(this);
+                _formwrite_file_action_properties = new NformRepositoryFolders.FormWrite_File_Action_PropertiesAppFolder(this);
+                _formshutdown_action_properties = new NformRepositoryFolders.FormShutdown_Action_PropertiesAppFolder(this);
+                _formshutdown_clients = new NformRepositoryFolders.FormShutdown_ClientsAppFolder(this);
+                _formshutdown_client_properties = new NformRepositoryFolders.FormShutdown_Client_PropertiesAppFolder(this);
+                _formforward_trap_action_properties = new NformRepositoryFolders.FormForward_Trap_Action_PropertiesAppFolder(this);
+                _formmap_actions = new NformRepositoryFolders.FormMap_ActionsAppFolder(this);
+                _formconfirmactionsetdelete = new NformRepositoryFolders.FormConfirmActionSetDeleteAppFolder(this);
+                _formemailactionpropertiesl = new NformRepositoryFolders.FormEMailActionPropertiesLAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("60165853-0ac6-45bd-9579-c60e3fe25934")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -15099,7 +15146,6 @@ namespace NformTester
         [RepositoryFolder("f42b535f-b983-4e94-840d-3a5d2aac57f8")]
         public partial class FormAction_SetsAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _addInfo;
             RepoItemInfo _deleteInfo;
             RepoItemInfo _closeInfo;
@@ -15113,9 +15159,8 @@ namespace NformTester
             /// Creates a new FormAction_Sets  folder.
             /// </summary>
             public FormAction_SetsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormAction_Sets", "/form[@controlname='LxActionSetListDlg']", parentFolder, 30000, true, "f42b535f-b983-4e94-840d-3a5d2aac57f8", "")
+                    base("FormAction_Sets", "/form[@controlname='LxActionSetListDlg']", parentFolder, 30000, null, true, "f42b535f-b983-4e94-840d-3a5d2aac57f8", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "f42b535f-b983-4e94-840d-3a5d2aac57f8");
                 _addInfo = new RepoItemInfo(this, "Add", "container[@controlname='m_biListGrp']/container/container/button[@controlname='m_button3']", 30000, null, "01dd143f-1846-42cd-9267-58f5c8eb55be");
                 _deleteInfo = new RepoItemInfo(this, "Delete", "container[@controlname='m_biListGrp']/container/container/button[@controlname='m_button6']", 30000, null, "380a92e7-964a-4896-bbf8-2393d2427561");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "7094cf42-4b43-48e6-90a0-d59a7d797e54");
@@ -15349,7 +15394,6 @@ namespace NformTester
         [RepositoryFolder("db2028cb-84db-4302-b039-41851c2ec066")]
         public partial class FormAction_Set_PropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _execute_sequentiallyInfo;
@@ -15368,9 +15412,8 @@ namespace NformTester
             /// Creates a new FormAction_Set_Properties  folder.
             /// </summary>
             public FormAction_Set_PropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormAction_Set_Properties", "/form[@controlname='LxActionSetEditDlg']", parentFolder, 30000, true, "db2028cb-84db-4302-b039-41851c2ec066", "")
+                    base("FormAction_Set_Properties", "/form[@controlname='LxActionSetEditDlg']", parentFolder, 30000, null, true, "db2028cb-84db-4302-b039-41851c2ec066", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "db2028cb-84db-4302-b039-41851c2ec066");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_actionSetNameTbx']/text[@controlname='m_actionSetNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "93b3a196-3172-492d-a89f-efc353de175e");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_actionSetDscrTbx']/text[@controlname='m_actionSetDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "8a507cb3-72ae-4487-8c64-0ca357a989f1");
                 _execute_sequentiallyInfo = new RepoItemInfo(this, "Execute_sequentially", "container[@controlname='m_execGrp']/checkbox[@controlname='m_sequentialChk']", 30000, null, "44d8a1f1-1427-4dae-98e1-7d63b70dad44");
@@ -15729,7 +15772,6 @@ namespace NformTester
         [RepositoryFolder("938265c7-8278-4422-b1f0-895e4a31bac1")]
         public partial class FormSelect_Action_TypeAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _cancelInfo;
             RepoItemInfo _read_dataInfo;
@@ -15744,9 +15786,8 @@ namespace NformTester
             /// Creates a new FormSelect_Action_Type  folder.
             /// </summary>
             public FormSelect_Action_TypeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormSelect_Action_Type", "/form[@controlname='LxActionTypeDlg']", parentFolder, 30000, true, "938265c7-8278-4422-b1f0-895e4a31bac1", "")
+                    base("FormSelect_Action_Type", "/form[@controlname='LxActionTypeDlg']", parentFolder, 30000, null, true, "938265c7-8278-4422-b1f0-895e4a31bac1", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "938265c7-8278-4422-b1f0-895e4a31bac1");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "2db2e110-7445-46e7-984e-4b731530e35d");
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "b1c915b8-188a-40ed-9e7d-962ce357d3fa");
                 _read_dataInfo = new RepoItemInfo(this, "Read_data", "container[@controlname='m_rbtnLayoutPnl']/radiobutton[@controlname='m_readDataRbtn']", 30000, null, "531a99d4-ea9d-4941-bab5-e68a5befc7f2");
@@ -16005,7 +16046,6 @@ namespace NformTester
         [RepositoryFolder("f2d702b2-fd1b-4084-8425-7e631a6efd0a")]
         public partial class FormReadWrite_Data_Action_PropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _cell_row_0Info;
             RepoItemInfo _okInfo;
             RepoItemInfo _cancelInfo;
@@ -16030,9 +16070,8 @@ namespace NformTester
             /// Creates a new FormReadWrite_Data_Action_Properties  folder.
             /// </summary>
             public FormReadWrite_Data_Action_PropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormReadWrite_Data_Action_Properties", "/form[@controlname='LxActionReadWriteDlg']", parentFolder, 30000, true, "f2d702b2-fd1b-4084-8425-7e631a6efd0a", "")
+                    base("FormReadWrite_Data_Action_Properties", "/form[@controlname='LxActionReadWriteDlg']", parentFolder, 30000, null, true, "f2d702b2-fd1b-4084-8425-7e631a6efd0a", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "f2d702b2-fd1b-4084-8425-7e631a6efd0a");
                 _cell_row_0Info = new RepoItemInfo(this, "Cell_Row_0", "container[@controlname='m_mgdDevGrp']/table/row[@accessiblename='Row 0']/cell[@accessiblename=' Row 0']", 30000, null, "c22cd2a6-31ea-4ba2-bfd0-16880f5426af");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "e7cbd45f-c792-4c61-aef3-9b44e41fe99e");
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "0adde165-e76c-4805-a5d4-6e2ea403d257");
@@ -16541,7 +16580,6 @@ namespace NformTester
         [RepositoryFolder("fc272301-bd03-479f-a0a4-3ae51c37f47a")]
         public partial class FormE_mail_Action_PropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _subjectInfo;
@@ -16566,9 +16604,8 @@ namespace NformTester
             /// Creates a new FormE_mail_Action_Properties  folder.
             /// </summary>
             public FormE_mail_Action_PropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormE_mail_Action_Properties", "/form[@controlname='LxActionEmailDlg']", parentFolder, 30000, true, "fc272301-bd03-479f-a0a4-3ae51c37f47a", "")
+                    base("FormE_mail_Action_Properties", "/form[@controlname='LxActionEmailDlg']", parentFolder, 30000, null, true, "fc272301-bd03-479f-a0a4-3ae51c37f47a", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "fc272301-bd03-479f-a0a4-3ae51c37f47a");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_actionNameTbx']/text[@controlname='m_actionNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "cfcf1284-afab-483c-9bf0-f5d84f8cde2d");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_actionDscrTbx']/text[@controlname='m_actionDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "8dc72eba-b46b-4866-9050-427fd304ad33");
                 _subjectInfo = new RepoItemInfo(this, "Subject", "container[@controlname='m_subjectTbx']/text/text[@accessiblerole='Text']", 30000, null, "57bb792c-5cf6-425a-801a-45966034e83f");
@@ -17077,7 +17114,6 @@ namespace NformTester
         [RepositoryFolder("03d022a7-13e8-4915-af1f-1055ba2b6121")]
         public partial class FormNform_Users_AddressesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _userstableInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _closeInfo;
@@ -17087,9 +17123,8 @@ namespace NformTester
             /// Creates a new FormNform_Users_Addresses  folder.
             /// </summary>
             public FormNform_Users_AddressesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormNform_Users_Addresses", "/form[@controlname='LxActionEmailUsersDlg']", parentFolder, 30000, true, "03d022a7-13e8-4915-af1f-1055ba2b6121", "")
+                    base("FormNform_Users_Addresses", "/form[@controlname='LxActionEmailUsersDlg']", parentFolder, 30000, null, true, "03d022a7-13e8-4915-af1f-1055ba2b6121", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "03d022a7-13e8-4915-af1f-1055ba2b6121");
                 _userstableInfo = new RepoItemInfo(this, "UsersTable", "table[@controlname='m_nformUsersDgrid']", 30000, null, "fd2af311-fd3a-4977-be15-c0a03dff4d31");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "448bdb76-3db8-4f65-8e38-9d8e2e0b1d14");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "421ce85a-65d0-4dc7-a08c-afb08c8f75d6");
@@ -17223,7 +17258,6 @@ namespace NformTester
         [RepositoryFolder("85682565-1525-4d68-9159-c4969e344782")]
         public partial class FormMissing_InformationAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _yesInfo;
             RepoItemInfo _noInfo;
 
@@ -17231,9 +17265,8 @@ namespace NformTester
             /// Creates a new FormMissing_Information  folder.
             /// </summary>
             public FormMissing_InformationAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormMissing_Information", "/form[@title='Missing Information']", parentFolder, 30000, true, "85682565-1525-4d68-9159-c4969e344782", "")
+                    base("FormMissing_Information", "/form[@title='Missing Information']", parentFolder, 30000, null, true, "85682565-1525-4d68-9159-c4969e344782", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "85682565-1525-4d68-9159-c4969e344782");
                 _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='&Yes']", 30000, null, "d6c677dd-101d-46b9-a066-21027e8a9467");
                 _noInfo = new RepoItemInfo(this, "No", "button[@text='&No']", 30000, null, "425dcf0a-2067-4bd7-9d35-be85469d2179");
             }
@@ -17317,7 +17350,6 @@ namespace NformTester
         [RepositoryFolder("a9756424-7808-4af5-b1b9-991d997d24e3")]
         public partial class FormE_mail_Action_Advanced_PropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _subjectencodingcomboInfo;
             RepoItemInfo _bodyencodingcomboInfo;
             RepoItemInfo _okInfo;
@@ -17332,9 +17364,8 @@ namespace NformTester
             /// Creates a new FormE_mail_Action_Advanced_Properties  folder.
             /// </summary>
             public FormE_mail_Action_Advanced_PropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormE_mail_Action_Advanced_Properties", "/form[@controlname='LxActionEmailAdvDlg']", parentFolder, 30000, true, "a9756424-7808-4af5-b1b9-991d997d24e3", "")
+                    base("FormE_mail_Action_Advanced_Properties", "/form[@controlname='LxActionEmailAdvDlg']", parentFolder, 30000, null, true, "a9756424-7808-4af5-b1b9-991d997d24e3", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "a9756424-7808-4af5-b1b9-991d997d24e3");
                 _subjectencodingcomboInfo = new RepoItemInfo(this, "SubjectEncodingCombo", "container[@controlname='m_subjectEncodingCombo']/combobox[@controlname='m_subjectEncodingCombo-Ctl']", 30000, null, "1350cc7d-0034-4ca3-834a-0bc0408655f6");
                 _bodyencodingcomboInfo = new RepoItemInfo(this, "BodyEncodingCombo", "container[@controlname='m_bodyEncodingCombo']/combobox[@controlname='m_bodyEncodingCombo-Ctl']", 30000, null, "e8ffdbbe-3a70-4f57-8b9b-a7fa82dd2e02");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "1093cacc-9f2e-46f6-954a-2ba5dfdd7290");
@@ -17593,7 +17624,6 @@ namespace NformTester
         [RepositoryFolder("2d5f04f3-0518-41a7-96da-a955e8c414c6")]
         public partial class FormRun_Command_Action_PropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _fileInfo;
@@ -17612,9 +17642,8 @@ namespace NformTester
             /// Creates a new FormRun_Command_Action_Properties  folder.
             /// </summary>
             public FormRun_Command_Action_PropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormRun_Command_Action_Properties", "/form[@controlname='LxActionRunCmdDlg']", parentFolder, 30000, true, "2d5f04f3-0518-41a7-96da-a955e8c414c6", "")
+                    base("FormRun_Command_Action_Properties", "/form[@controlname='LxActionRunCmdDlg']", parentFolder, 30000, null, true, "2d5f04f3-0518-41a7-96da-a955e8c414c6", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "2d5f04f3-0518-41a7-96da-a955e8c414c6");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_actionNameTbx']/text[@controlname='m_actionNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "ececb8db-b43a-4352-8b6c-89cad8d0e6dc");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_actionDscrTbx']/text[@controlname='m_actionDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "82ae7563-9cb4-42cf-8f84-5ae3138d87b7");
                 _fileInfo = new RepoItemInfo(this, "File", "container[@controlname='m_fileSpecTbx']/text[@controlname='m_fileSpecTbx-Ctl']/text[@accessiblename='File:']", 30000, null, "a220e722-d10c-4ca3-b1cd-be2d8eb29f5e");
@@ -17973,7 +18002,6 @@ namespace NformTester
         [RepositoryFolder("9ff76d0d-00a3-4dea-af64-4a7b2a879608")]
         public partial class FormWrite_File_Action_PropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _fileInfo;
@@ -17998,9 +18026,8 @@ namespace NformTester
             /// Creates a new FormWrite_File_Action_Properties  folder.
             /// </summary>
             public FormWrite_File_Action_PropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormWrite_File_Action_Properties", "/form[@controlname='LxActionWriteFileDlg']", parentFolder, 30000, true, "9ff76d0d-00a3-4dea-af64-4a7b2a879608", "")
+                    base("FormWrite_File_Action_Properties", "/form[@controlname='LxActionWriteFileDlg']", parentFolder, 30000, null, true, "9ff76d0d-00a3-4dea-af64-4a7b2a879608", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "9ff76d0d-00a3-4dea-af64-4a7b2a879608");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_actionNameTbx']/text[@controlname='m_actionNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "73625b8f-b592-4eb0-9121-a951b16d0496");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_actionDscrTbx']/text[@controlname='m_actionDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "bf6402e6-1c89-49a2-aff9-35eb8fc574fe");
                 _fileInfo = new RepoItemInfo(this, "File", "container[@controlname='m_fileSpecTbx']/text[@controlname='m_fileSpecTbx-Ctl']/text[@accessiblename='File:']", 30000, null, "e36a787e-d2b3-4643-b3ed-db878a4315bb");
@@ -18509,7 +18536,6 @@ namespace NformTester
         [RepositoryFolder("47d460b4-d705-4e89-82dc-01c9e4119a60")]
         public partial class FormShutdown_Action_PropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _cancel_pending_shutdownInfo;
@@ -18531,9 +18557,8 @@ namespace NformTester
             /// Creates a new FormShutdown_Action_Properties  folder.
             /// </summary>
             public FormShutdown_Action_PropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormShutdown_Action_Properties", "/form[@controlname='LxActionShutdownDlg']", parentFolder, 30000, true, "47d460b4-d705-4e89-82dc-01c9e4119a60", "")
+                    base("FormShutdown_Action_Properties", "/form[@controlname='LxActionShutdownDlg']", parentFolder, 30000, null, true, "47d460b4-d705-4e89-82dc-01c9e4119a60", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "47d460b4-d705-4e89-82dc-01c9e4119a60");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_actionNameTbx']/text[@controlname='m_actionNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "196ac486-504f-4d70-9794-da33bfed1140");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_actionDscrTbx']/text[@controlname='m_actionDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "419ccf24-a54c-422d-a314-cb72db56eb8f");
                 _cancel_pending_shutdownInfo = new RepoItemInfo(this, "Cancel_pending_shutdown", "container[@controlname='m_sdTypeGrp']/container/radiobutton[@controlname='m_sdTypeCancelRbtn']", 30000, null, "9c4e061d-6341-4aa6-a029-99991b646cd6");
@@ -18967,7 +18992,6 @@ namespace NformTester
         [RepositoryFolder("33707c9c-6dcf-4461-9f8a-c00bb67ec24d")]
         public partial class FormShutdown_ClientsAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _shutdown_clients_listInfo;
             RepoItemInfo _closeInfo;
             RepoItemInfo _helpInfo;
@@ -18982,9 +19006,8 @@ namespace NformTester
             /// Creates a new FormShutdown_Clients  folder.
             /// </summary>
             public FormShutdown_ClientsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormShutdown_Clients", "/form[@controlname='LxSdClientListDlg']", parentFolder, 30000, true, "33707c9c-6dcf-4461-9f8a-c00bb67ec24d", "")
+                    base("FormShutdown_Clients", "/form[@controlname='LxSdClientListDlg']", parentFolder, 30000, null, true, "33707c9c-6dcf-4461-9f8a-c00bb67ec24d", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "33707c9c-6dcf-4461-9f8a-c00bb67ec24d");
                 _shutdown_clients_listInfo = new RepoItemInfo(this, "Shutdown_clients_list", "container[@controlname='m_biListGrp']/table/list[@accessiblerole='List']", 30000, null, "12fcfde1-6fc1-40ff-adff-719f34fef5ad");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "7257fa2b-6a85-45f7-8e8d-75b1d947e123");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "f379eacc-8e11-4c77-8685-0f4f1a6a2a51");
@@ -19243,7 +19266,6 @@ namespace NformTester
         [RepositoryFolder("73e43036-eb60-4a83-8347-bc1e821739a9")]
         public partial class FormShutdown_Client_PropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _client_typeInfo;
@@ -19263,9 +19285,8 @@ namespace NformTester
             /// Creates a new FormShutdown_Client_Properties  folder.
             /// </summary>
             public FormShutdown_Client_PropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormShutdown_Client_Properties", "/form[@controlname='LxSdClientEditDlg']", parentFolder, 30000, true, "73e43036-eb60-4a83-8347-bc1e821739a9", "")
+                    base("FormShutdown_Client_Properties", "/form[@controlname='LxSdClientEditDlg']", parentFolder, 30000, null, true, "73e43036-eb60-4a83-8347-bc1e821739a9", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "73e43036-eb60-4a83-8347-bc1e821739a9");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_clientNameTbx']/text[@controlname='m_clientNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "bdb974d2-0344-4bb0-8041-e4db8fdcaa48");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_clientDscrTbx']/text[@controlname='m_clientDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "1120b364-6bd3-4a99-8abf-ae65d27e077a");
                 _client_typeInfo = new RepoItemInfo(this, "Client_Type", "container[@controlname='m_clientTypeCombo']/combobox[@controlname='m_clientTypeCombo-Ctl']", 30000, null, "a49344c0-0ecf-4846-886e-743796694696");
@@ -19649,7 +19670,6 @@ namespace NformTester
         [RepositoryFolder("13855925-a55c-4c1b-ade5-5c172560a03d")]
         public partial class FormForward_Trap_Action_PropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _trap_recipients_tableInfo;
@@ -19665,9 +19685,8 @@ namespace NformTester
             /// Creates a new FormForward_Trap_Action_Properties  folder.
             /// </summary>
             public FormForward_Trap_Action_PropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormForward_Trap_Action_Properties", "/form[@controlname='LxActionForwardTrapDlg']", parentFolder, 30000, true, "13855925-a55c-4c1b-ade5-5c172560a03d", "")
+                    base("FormForward_Trap_Action_Properties", "/form[@controlname='LxActionForwardTrapDlg']", parentFolder, 30000, null, true, "13855925-a55c-4c1b-ade5-5c172560a03d", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "13855925-a55c-4c1b-ade5-5c172560a03d");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_actionNameTbx']/text[@controlname='m_actionNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "cc7732dc-a266-48e8-b2bc-bb104682b862");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_actionDscrTbx']/text[@controlname='m_actionDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "4380895a-0222-4223-b616-77df635db074");
                 _trap_recipients_tableInfo = new RepoItemInfo(this, "Trap_recipients_table", "container[@controlname='m_trapTargetsGrp']/table[@controlname='m_trapTargetsDataGridView']", 30000, null, "722e667f-739a-478b-bcea-93d365f3d2bf");
@@ -19951,7 +19970,6 @@ namespace NformTester
         [RepositoryFolder("341a7944-a734-4654-a40b-56e29911db92")]
         public partial class FormMap_ActionsAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _managed_devicesInfo;
             RepoItemInfo _devices_treeInfo;
             RepoItemInfo _device_alarmsInfo;
@@ -19965,9 +19983,8 @@ namespace NformTester
             /// Creates a new FormMap_Actions  folder.
             /// </summary>
             public FormMap_ActionsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormMap_Actions", "/form[@controlname='LxMapActionsDlg']", parentFolder, 30000, true, "341a7944-a734-4654-a40b-56e29911db92", "")
+                    base("FormMap_Actions", "/form[@controlname='LxMapActionsDlg']", parentFolder, 30000, null, true, "341a7944-a734-4654-a40b-56e29911db92", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "341a7944-a734-4654-a40b-56e29911db92");
                 _managed_devicesInfo = new RepoItemInfo(this, "Managed_devices", "container[@controlname='m_devicesGrp']/combobox[@controlname='m_devFilterCombo']", 30000, null, "e992bc15-dc13-4383-b28f-c9182d790f6c");
                 _devices_treeInfo = new RepoItemInfo(this, "Devices_tree", "container[@controlname='m_devicesGrp']/tree/tree[@accessiblerole='Outline']", 30000, null, "34429417-b258-46cd-9343-d0a68f016f43");
                 _device_alarmsInfo = new RepoItemInfo(this, "Device_Alarms", "container[@controlname='m_alarmsGrp']/combobox[@controlname='m_alarmFilterCombo']", 30000, null, "b8239a4a-8fd1-4150-acf2-6108b6b625e5");
@@ -20201,7 +20218,6 @@ namespace NformTester
         [RepositoryFolder("cf4bf6df-fa68-46e3-a2b9-4c41c33fdccb")]
         public partial class FormConfirmActionSetDeleteAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _yes_oldInfo;
             RepoItemInfo _noInfo;
             RepoItemInfo _closeInfo;
@@ -20211,9 +20227,8 @@ namespace NformTester
             /// Creates a new FormConfirmActionSetDelete  folder.
             /// </summary>
             public FormConfirmActionSetDeleteAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormConfirmActionSetDelete", "/form[@title='Confirm Action Set Delete']", parentFolder, 30000, true, "cf4bf6df-fa68-46e3-a2b9-4c41c33fdccb", "")
+                    base("FormConfirmActionSetDelete", "/form[@title='Confirm Action Set Delete']", parentFolder, 30000, null, true, "cf4bf6df-fa68-46e3-a2b9-4c41c33fdccb", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "cf4bf6df-fa68-46e3-a2b9-4c41c33fdccb");
                 _yes_oldInfo = new RepoItemInfo(this, "Yes_old", "button[@text='Yes']", 30000, null, "aca1f6fb-b714-4a71-894f-f7665271b0d8");
                 _noInfo = new RepoItemInfo(this, "No", "button[@text='&No']", 30000, null, "fa5e5d3d-b568-4800-8caf-cb6a54db1659");
                 _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='Close']", 30000, null, "9902e3ae-c0ec-416a-9d2a-89841d7aa0d2");
@@ -20347,16 +20362,14 @@ namespace NformTester
         [RepositoryFolder("d631d317-3371-4701-9738-7e778a47f129")]
         public partial class FormEMailActionPropertiesLAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormEMailActionPropertiesL  folder.
             /// </summary>
             public FormEMailActionPropertiesLAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormEMailActionPropertiesL", "/form[@title='E-mail Action Properties' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, true, "d631d317-3371-4701-9738-7e778a47f129", "")
+                    base("FormEMailActionPropertiesL", "/form[@title='E-mail Action Properties' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, null, true, "d631d317-3371-4701-9738-7e778a47f129", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "d631d317-3371-4701-9738-7e778a47f129");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='OK']", 30000, null, "f1bf7725-6108-47e4-a795-c96bde6deb45");
             }
 
@@ -20423,11 +20436,23 @@ namespace NformTester
             /// Creates a new ServerOptionsWindow  folder.
             /// </summary>
             public ServerOptionsWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("ServerOptionsWindow", "", parentFolder, 0, false, "436fb81c-ae0f-443b-a350-7bf138de72e5", "")
+                    base("ServerOptionsWindow", "", parentFolder, 0, null, false, "436fb81c-ae0f-443b-a350-7bf138de72e5", "")
             {
-                _formserveroptions = new NformRepositoryFolders.FormServerOptionsAppFolder(parentFolder);
-                _formconfirmdeletesende_mail = new NformRepositoryFolders.FormConfirmDeleteSendE_mailAppFolder(parentFolder);
-                _nformhelp = new NformRepositoryFolders.NformHelpAppFolder(parentFolder);
+                _formserveroptions = new NformRepositoryFolders.FormServerOptionsAppFolder(this);
+                _formconfirmdeletesende_mail = new NformRepositoryFolders.FormConfirmDeleteSendE_mailAppFolder(this);
+                _nformhelp = new NformRepositoryFolders.NformHelpAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("436fb81c-ae0f-443b-a350-7bf138de72e5")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -20464,7 +20489,6 @@ namespace NformTester
         [RepositoryFolder("09e2b829-3ce5-403f-aadb-7f3938fa9abb")]
         public partial class FormServerOptionsAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _tabgeneralInfo;
             RepoItemInfo _tabevent_logInfo;
             RepoItemInfo _tabalarmsInfo;
@@ -20626,9 +20650,8 @@ namespace NformTester
             /// Creates a new FormServerOptions  folder.
             /// </summary>
             public FormServerOptionsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormServerOptions", "/form[@controlname='LxServerPropsDlg']", parentFolder, 30000, true, "09e2b829-3ce5-403f-aadb-7f3938fa9abb", "")
+                    base("FormServerOptions", "/form[@controlname='LxServerPropsDlg']", parentFolder, 30000, null, true, "09e2b829-3ce5-403f-aadb-7f3938fa9abb", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "09e2b829-3ce5-403f-aadb-7f3938fa9abb");
                 _tabgeneralInfo = new RepoItemInfo(this, "TabGeneral", "tabpagelist/tabpage[@controlname='m_generalTab']", 30000, null, "899e9bec-0445-4b07-8767-b55d313f1f07");
                 _tabevent_logInfo = new RepoItemInfo(this, "TabEvent_log", "tabpagelist/tabpage[@accessiblename='Event log']", 30000, null, "d7aa0a3c-50ce-4118-b3f7-4a837f9774f6");
                 _tabalarmsInfo = new RepoItemInfo(this, "TabAlarms", "tabpagelist/tabpage[@accessiblename='Alarms']", 30000, null, "66117ca1-8088-41bb-86b0-c77a69f36fa9");
@@ -24562,7 +24585,6 @@ namespace NformTester
         [RepositoryFolder("ee4fea69-43a2-46a3-bc28-422534c2b8ca")]
         public partial class FormConfirmDeleteSendE_mailAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _yesInfo;
             RepoItemInfo _noInfo;
 
@@ -24570,9 +24592,8 @@ namespace NformTester
             /// Creates a new FormConfirmDeleteSendE_mail  folder.
             /// </summary>
             public FormConfirmDeleteSendE_mailAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormConfirmDeleteSendE_mail", "/form[@title='Server Options' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, true, "ee4fea69-43a2-46a3-bc28-422534c2b8ca", "")
+                    base("FormConfirmDeleteSendE_mail", "/form[@title='Server Options' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, null, true, "ee4fea69-43a2-46a3-bc28-422534c2b8ca", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "ee4fea69-43a2-46a3-bc28-422534c2b8ca");
                 _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='&Yes']", 30000, null, "ef2e5a3f-7759-4d5c-a57d-74302d6e305c");
                 _noInfo = new RepoItemInfo(this, "No", "button[@text='&No']", 30000, null, "f8cad1a7-b933-48c1-82ad-b97be90837de");
             }
@@ -24656,7 +24677,6 @@ namespace NformTester
         [RepositoryFolder("41a277e3-722b-4bf9-8159-dceffaa21e11")]
         public partial class NformHelpAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _helpcloseInfo;
             RepoItemInfo _minimizeInfo;
             RepoItemInfo _maximizeInfo;
@@ -24665,9 +24685,8 @@ namespace NformTester
             /// Creates a new NformHelp  folder.
             /// </summary>
             public NformHelpAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("NformHelp", "/form[@title='NformHelp']", parentFolder, 30000, true, "41a277e3-722b-4bf9-8159-dceffaa21e11", "")
+                    base("NformHelp", "/form[@title='NformHelp']", parentFolder, 30000, null, true, "41a277e3-722b-4bf9-8159-dceffaa21e11", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "41a277e3-722b-4bf9-8159-dceffaa21e11");
                 _helpcloseInfo = new RepoItemInfo(this, "HelpClose", "titlebar/button[@accessiblename='Close']", 30000, null, "eb42e69c-033b-4574-8089-75cc6b965dc4");
                 _minimizeInfo = new RepoItemInfo(this, "Minimize", "titlebar/button[@accessiblename='Minimize']", 30000, null, "b41801ea-6178-4946-9949-e13c7ea4a6d7");
                 _maximizeInfo = new RepoItemInfo(this, "Maximize", "titlebar/button[@accessiblename='Maximize']", 30000, null, "23d5ebd2-4198-41ee-b81f-fac4148be660");
@@ -24782,9 +24801,21 @@ namespace NformTester
             /// Creates a new SMTPServerWindow  folder.
             /// </summary>
             public SMTPServerWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("SMTPServerWindow", "", parentFolder, 0, false, "2eb63597-b8ef-4c40-b7c4-a489c89f678b", "")
+                    base("SMTPServerWindow", "", parentFolder, 0, null, false, "2eb63597-b8ef-4c40-b7c4-a489c89f678b", "")
             {
-                _formsmtp_server = new NformRepositoryFolders.FormSMTP_ServerAppFolder(parentFolder);
+                _formsmtp_server = new NformRepositoryFolders.FormSMTP_ServerAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2eb63597-b8ef-4c40-b7c4-a489c89f678b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -24803,7 +24834,6 @@ namespace NformTester
         [RepositoryFolder("5a16be61-7821-4799-80f9-4307bd68aaf1")]
         public partial class FormSMTP_ServerAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _hostname_or_ip_addressInfo;
@@ -24822,9 +24852,8 @@ namespace NformTester
             /// Creates a new FormSMTP_Server  folder.
             /// </summary>
             public FormSMTP_ServerAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormSMTP_Server", "/form[@controlname='LxSmtpServerDlg']", parentFolder, 30000, true, "5a16be61-7821-4799-80f9-4307bd68aaf1", "")
+                    base("FormSMTP_Server", "/form[@controlname='LxSmtpServerDlg']", parentFolder, 30000, null, true, "5a16be61-7821-4799-80f9-4307bd68aaf1", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "5a16be61-7821-4799-80f9-4307bd68aaf1");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_smtpSrvrNameTbx']/text[@controlname='m_smtpSrvrNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "9fb26b4b-edf0-4573-998f-37d7c6e7b33f");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_smtpSrvrDscrTbx']/text[@controlname='m_smtpSrvrDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "28a088a8-2ae1-477e-a506-12472c1178a8");
                 _hostname_or_ip_addressInfo = new RepoItemInfo(this, "Hostname_or_IP_address", "container[@controlname='m_smtpSrvrHostTbx']/text[@controlname='m_smtpSrvrHostTbx-Ctl']/text[@accessiblename='Hostname or IP address:']", 30000, null, "b1e95482-6402-48d3-8885-8effd42fd2c2");
@@ -25192,12 +25221,24 @@ namespace NformTester
             /// Creates a new DevicePropertiesWindow  folder.
             /// </summary>
             public DevicePropertiesWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("DevicePropertiesWindow", "", parentFolder, 0, false, "92065f1c-94cb-4317-ab18-aa606404416b", "")
+                    base("DevicePropertiesWindow", "", parentFolder, 0, null, false, "92065f1c-94cb-4317-ab18-aa606404416b", "")
             {
-                _formdeviceproperties = new NformRepositoryFolders.FormDevicePropertiesAppFolder(parentFolder);
-                _forminformationlinks = new NformRepositoryFolders.FormInformationLinksAppFolder(parentFolder);
-                _formdevice_alarms_and_data = new NformRepositoryFolders.FormDevice_Alarms_and_DataAppFolder(parentFolder);
-                _formdevice_data_logging = new NformRepositoryFolders.FormDevice_Data_LoggingAppFolder(parentFolder);
+                _formdeviceproperties = new NformRepositoryFolders.FormDevicePropertiesAppFolder(this);
+                _forminformationlinks = new NformRepositoryFolders.FormInformationLinksAppFolder(this);
+                _formdevice_alarms_and_data = new NformRepositoryFolders.FormDevice_Alarms_and_DataAppFolder(this);
+                _formdevice_data_logging = new NformRepositoryFolders.FormDevice_Data_LoggingAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("92065f1c-94cb-4317-ab18-aa606404416b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -25243,7 +25284,6 @@ namespace NformTester
         [RepositoryFolder("16fe5b0b-360f-4bbf-b149-8047bb9e74f4")]
         public partial class FormDevicePropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _device_type_409Info;
@@ -25317,9 +25357,8 @@ namespace NformTester
             /// Creates a new FormDeviceProperties  folder.
             /// </summary>
             public FormDevicePropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormDeviceProperties", "/form[@controlname='LxMgdDeviceEditDlg']", parentFolder, 30000, true, "16fe5b0b-360f-4bbf-b149-8047bb9e74f4", "")
+                    base("FormDeviceProperties", "/form[@controlname='LxMgdDeviceEditDlg']", parentFolder, 30000, null, true, "16fe5b0b-360f-4bbf-b149-8047bb9e74f4", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "16fe5b0b-360f-4bbf-b149-8047bb9e74f4");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_deviceNameTbx']/text[@controlname='m_deviceNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "720aa15b-eb73-478e-b935-577fa16f883d");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_deviceDscrTbx']/text[@controlname='m_deviceDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "8f9c62b8-c790-4cbb-ba99-61f2552ff284");
                 _device_type_409Info = new RepoItemInfo(this, "Device_type_409", "container[@controlname='m_deviceTypeCtl']/container/combobox[@controlname='m_devTypeCombo']", 30000, null, "256244f7-9d68-4694-85fb-8c8c53f683d1");
@@ -27053,7 +27092,6 @@ namespace NformTester
         [RepositoryFolder("0e5b0cfd-881f-482c-a10e-827ba090b947")]
         public partial class FormInformationLinksAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _addInfo;
             RepoItemInfo _editInfo;
             RepoItemInfo _deleteInfo;
@@ -27071,9 +27109,8 @@ namespace NformTester
             /// Creates a new FormInformationLinks  folder.
             /// </summary>
             public FormInformationLinksAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormInformationLinks", "/form[@controlname='LxInfoLinkDlg']", parentFolder, 30000, true, "0e5b0cfd-881f-482c-a10e-827ba090b947", "")
+                    base("FormInformationLinks", "/form[@controlname='LxInfoLinkDlg']", parentFolder, 30000, null, true, "0e5b0cfd-881f-482c-a10e-827ba090b947", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "0e5b0cfd-881f-482c-a10e-827ba090b947");
                 _addInfo = new RepoItemInfo(this, "Add", "container[@controlname='m_linksBtns']/container/button[@controlname='m_button4']", 30000, null, "419b1d4b-ae8b-4dea-ae75-daa11a14fa63");
                 _editInfo = new RepoItemInfo(this, "Edit", "container[@controlname='m_linksBtns']/container/button[@controlname='m_button5']", 30000, null, "6aefa9c1-6559-4cb4-88ab-b91a6065f0a5");
                 _deleteInfo = new RepoItemInfo(this, "Delete", "container[@controlname='m_linksBtns']/container/button[@controlname='m_button6']", 30000, null, "e690990b-8586-432d-833d-c772e282399b");
@@ -27407,7 +27444,6 @@ namespace NformTester
         [RepositoryFolder("23cd02e8-a921-4a78-8870-942068eeefd5")]
         public partial class FormDevice_Alarms_and_DataAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _typeInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _closeInfo;
@@ -27445,9 +27481,8 @@ namespace NformTester
             /// Creates a new FormDevice_Alarms_and_Data  folder.
             /// </summary>
             public FormDevice_Alarms_and_DataAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormDevice_Alarms_and_Data", "/form[@controlname='LxDeviceOverrideDlg']", parentFolder, 30000, true, "23cd02e8-a921-4a78-8870-942068eeefd5", "")
+                    base("FormDevice_Alarms_and_Data", "/form[@controlname='LxDeviceOverrideDlg']", parentFolder, 30000, null, true, "23cd02e8-a921-4a78-8870-942068eeefd5", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "23cd02e8-a921-4a78-8870-942068eeefd5");
                 _typeInfo = new RepoItemInfo(this, "Type", "container[@controlname='m_multiModFilterCtl']/container/container[@controlname='m_moduleTypeCombo']/combobox[@controlname='m_moduleTypeCombo-Ctl']", 30000, null, "977559e9-32e2-4450-99fa-9d575153a41f");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "f5afee90-d5b1-4566-8bc7-4d5b45922874");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "0febe423-ebbc-4afa-a98d-20accefb59f4");
@@ -28281,7 +28316,6 @@ namespace NformTester
         [RepositoryFolder("949916c0-e8b8-4e7f-9550-065d4373612d")]
         public partial class FormDevice_Data_LoggingAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _select_allInfo;
             RepoItemInfo _clear_allInfo;
             RepoItemInfo _data_logging_tableInfo;
@@ -28297,9 +28331,8 @@ namespace NformTester
             /// Creates a new FormDevice_Data_Logging  folder.
             /// </summary>
             public FormDevice_Data_LoggingAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormDevice_Data_Logging", "/form[@controlname='LxDeviceDataLogDlg']", parentFolder, 30000, true, "949916c0-e8b8-4e7f-9550-065d4373612d", "")
+                    base("FormDevice_Data_Logging", "/form[@controlname='LxDeviceDataLogDlg']", parentFolder, 30000, null, true, "949916c0-e8b8-4e7f-9550-065d4373612d", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "949916c0-e8b8-4e7f-9550-065d4373612d");
                 _select_allInfo = new RepoItemInfo(this, "Select_all", "button[@controlname='m_selectAllBtn']", 30000, null, "26061e4e-06de-4241-919b-33e82355a128");
                 _clear_allInfo = new RepoItemInfo(this, "Clear_all", "button[@controlname='m_clearAllBtn']", 30000, null, "fac71b42-ae07-4b6d-b61c-7efd6098e76e");
                 _data_logging_tableInfo = new RepoItemInfo(this, "Data_logging_table", "table[@controlname='m_pointsGridView']", 30000, null, "cd0acf34-0da2-4ab2-96a6-edc3a62161ed");
@@ -28593,13 +28626,25 @@ namespace NformTester
             /// Creates a new ManagedDevicesWindow  folder.
             /// </summary>
             public ManagedDevicesWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("ManagedDevicesWindow", "", parentFolder, 0, false, "1242e0a7-265c-456d-bd4f-bc58be38530f", "")
+                    base("ManagedDevicesWindow", "", parentFolder, 0, null, false, "1242e0a7-265c-456d-bd4f-bc58be38530f", "")
             {
-                _formmanaged_devices = new NformRepositoryFolders.FormManaged_DevicesAppFolder(parentFolder);
-                _formconfirm_device_delete = new NformRepositoryFolders.FormConfirm_Device_DeleteAppFolder(parentFolder);
-                _formdevice_maintenance = new NformRepositoryFolders.FormDevice_MaintenanceAppFolder(parentFolder);
-                _formexport_devices = new NformRepositoryFolders.FormExport_DevicesAppFolder(parentFolder);
-                _formmanaged_devices_ok = new NformRepositoryFolders.FormManaged_Devices_OKAppFolder(parentFolder);
+                _formmanaged_devices = new NformRepositoryFolders.FormManaged_DevicesAppFolder(this);
+                _formconfirm_device_delete = new NformRepositoryFolders.FormConfirm_Device_DeleteAppFolder(this);
+                _formdevice_maintenance = new NformRepositoryFolders.FormDevice_MaintenanceAppFolder(this);
+                _formexport_devices = new NformRepositoryFolders.FormExport_DevicesAppFolder(this);
+                _formmanaged_devices_ok = new NformRepositoryFolders.FormManaged_Devices_OKAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1242e0a7-265c-456d-bd4f-bc58be38530f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -28654,7 +28699,6 @@ namespace NformTester
         [RepositoryFolder("c78aa3d0-00ac-454b-9d6f-f352723362fa")]
         public partial class FormManaged_DevicesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _addInfo;
             RepoItemInfo _copyInfo;
             RepoItemInfo _editInfo;
@@ -28673,9 +28717,8 @@ namespace NformTester
             /// Creates a new FormManaged_Devices  folder.
             /// </summary>
             public FormManaged_DevicesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormManaged_Devices", "/form[@controlname='LxMgdDeviceListDlg']", parentFolder, 30000, true, "c78aa3d0-00ac-454b-9d6f-f352723362fa", "")
+                    base("FormManaged_Devices", "/form[@controlname='LxMgdDeviceListDlg']", parentFolder, 30000, null, true, "c78aa3d0-00ac-454b-9d6f-f352723362fa", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "c78aa3d0-00ac-454b-9d6f-f352723362fa");
                 _addInfo = new RepoItemInfo(this, "Add", "container[@controlname='m_biListGrp']/container[@controlname='m_biListBtns']/container/button[@controlname='m_button3']", 30000, null, "35c60f14-21c4-4ce5-ac5d-b988613844fd");
                 _copyInfo = new RepoItemInfo(this, "Copy", "container[@controlname='m_biListGrp']/container[@controlname='m_biListBtns']/container/button[@controlname='m_button4']", 30000, null, "55a14098-43eb-4799-a41c-54c1c2a594c6");
                 _editInfo = new RepoItemInfo(this, "Edit", "container[@controlname='m_biListGrp']/container[@controlname='m_biListBtns']/container/button[@controlname='m_button5']", 30000, null, "12c09e4d-3592-4381-9335-0b6929c9fe7e");
@@ -29034,7 +29077,6 @@ namespace NformTester
         [RepositoryFolder("5b5680f4-24d8-4a07-8b91-fa5c2386089d")]
         public partial class FormConfirm_Device_DeleteAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _yesInfo;
             RepoItemInfo _noInfo;
 
@@ -29042,9 +29084,8 @@ namespace NformTester
             /// Creates a new FormConfirm_Device_Delete  folder.
             /// </summary>
             public FormConfirm_Device_DeleteAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormConfirm_Device_Delete", "/form[@title='Confirm Device Delete']", parentFolder, 30000, true, "5b5680f4-24d8-4a07-8b91-fa5c2386089d", "")
+                    base("FormConfirm_Device_Delete", "/form[@title='Confirm Device Delete']", parentFolder, 30000, null, true, "5b5680f4-24d8-4a07-8b91-fa5c2386089d", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "5b5680f4-24d8-4a07-8b91-fa5c2386089d");
                 _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='&Yes' or @text='是(&Y)']", 30000, null, "b23d3b3b-7e64-4179-b178-50f8dc755249");
                 _noInfo = new RepoItemInfo(this, "No", "button[@text='否(&N)' or @text='No']", 30000, null, "a778581f-c37f-43ea-a3a5-537cec62d634");
             }
@@ -29128,7 +29169,6 @@ namespace NformTester
         [RepositoryFolder("62825775-d492-43b0-84bd-5016e9454485")]
         public partial class FormDevice_MaintenanceAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _closeInfo;
             RepoItemInfo _helpInfo;
@@ -29147,9 +29187,8 @@ namespace NformTester
             /// Creates a new FormDevice_Maintenance  folder.
             /// </summary>
             public FormDevice_MaintenanceAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormDevice_Maintenance", "/form[@controlname='LxMgdDevMaintDlg']", parentFolder, 30000, true, "62825775-d492-43b0-84bd-5016e9454485", "")
+                    base("FormDevice_Maintenance", "/form[@controlname='LxMgdDevMaintDlg']", parentFolder, 30000, null, true, "62825775-d492-43b0-84bd-5016e9454485", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "62825775-d492-43b0-84bd-5016e9454485");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "baf02297-144d-4bb1-9d1d-400da3877945");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "5fed1cff-019a-4a16-9288-7fb097905ebb");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "2f160fb7-d399-411f-ab6f-cc81aa3a2262");
@@ -29508,7 +29547,6 @@ namespace NformTester
         [RepositoryFolder("b429375c-8d17-4059-8b75-cf6c8ed6ecb8")]
         public partial class FormExport_DevicesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _fileInfo;
             RepoItemInfo _browseInfo;
             RepoItemInfo _exportInfo;
@@ -29524,9 +29562,8 @@ namespace NformTester
             /// Creates a new FormExport_Devices  folder.
             /// </summary>
             public FormExport_DevicesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormExport_Devices", "/form[@controlname='LxMgdDevExportDlg']", parentFolder, 30000, true, "b429375c-8d17-4059-8b75-cf6c8ed6ecb8", "")
+                    base("FormExport_Devices", "/form[@controlname='LxMgdDevExportDlg']", parentFolder, 30000, null, true, "b429375c-8d17-4059-8b75-cf6c8ed6ecb8", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "b429375c-8d17-4059-8b75-cf6c8ed6ecb8");
                 _fileInfo = new RepoItemInfo(this, "File", "container[@controlname='m_fileSpecTbx']/text[@controlname='m_fileSpecTbx-Ctl']/text[@accessiblename='File:']", 30000, null, "30650f9f-fdcf-49de-970d-e0b596238154");
                 _browseInfo = new RepoItemInfo(this, "Browse", "button[@controlname='m_browseBtn']", 30000, null, "04aafb80-e3d9-4168-83f2-3bef26dda1ef");
                 _exportInfo = new RepoItemInfo(this, "Export", "button[@controlname='m_startExportBtn']", 30000, null, "e71ccc48-541a-4de3-8654-536c53ce371e");
@@ -29810,16 +29847,14 @@ namespace NformTester
         [RepositoryFolder("c96f8e58-23c8-44b6-85f5-b70d8671e945")]
         public partial class FormManaged_Devices_OKAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormManaged_Devices_OK  folder.
             /// </summary>
             public FormManaged_Devices_OKAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormManaged_Devices_OK", "/form[@title='Managed Devices' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, true, "c96f8e58-23c8-44b6-85f5-b70d8671e945", "")
+                    base("FormManaged_Devices_OK", "/form[@title='Managed Devices' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, null, true, "c96f8e58-23c8-44b6-85f5-b70d8671e945", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "c96f8e58-23c8-44b6-85f5-b70d8671e945");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "4a0b79f9-699e-44ac-9398-563d7b2e92b9");
             }
 
@@ -29889,14 +29924,26 @@ namespace NformTester
             /// Creates a new AddDeviceWizard  folder.
             /// </summary>
             public AddDeviceWizardFolder(RepoGenBaseFolder parentFolder) :
-                    base("AddDeviceWizard", "", parentFolder, 0, false, "b8cd057b-5610-4a49-90ca-5804318a446f", "")
+                    base("AddDeviceWizard", "", parentFolder, 0, null, false, "b8cd057b-5610-4a49-90ca-5804318a446f", "")
             {
-                _formconfiguration = new NformRepositoryFolders.FormConfigurationAppFolder(parentFolder);
-                _formwarning = new NformRepositoryFolders.FormWarningAppFolder(parentFolder);
-                _formadd_device = new NformRepositoryFolders.FormAdd_DeviceAppFolder(parentFolder);
-                _forminvalid_data = new NformRepositoryFolders.FormInvalid_DataAppFolder(parentFolder);
-                _formoperation_failed = new NformRepositoryFolders.FormOperation_FailedAppFolder(parentFolder);
-                _formadd_device_results = new NformRepositoryFolders.FormAdd_Device_ResultsAppFolder(parentFolder);
+                _formconfiguration = new NformRepositoryFolders.FormConfigurationAppFolder(this);
+                _formwarning = new NformRepositoryFolders.FormWarningAppFolder(this);
+                _formadd_device = new NformRepositoryFolders.FormAdd_DeviceAppFolder(this);
+                _forminvalid_data = new NformRepositoryFolders.FormInvalid_DataAppFolder(this);
+                _formoperation_failed = new NformRepositoryFolders.FormOperation_FailedAppFolder(this);
+                _formadd_device_results = new NformRepositoryFolders.FormAdd_Device_ResultsAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("b8cd057b-5610-4a49-90ca-5804318a446f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -29960,16 +30007,14 @@ namespace NformTester
         [RepositoryFolder("4095fb36-c5d8-4ae1-be6b-db31c63a2a81")]
         public partial class FormConfigurationAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormConfiguration  folder.
             /// </summary>
             public FormConfigurationAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormConfiguration", "/form[@title='Configuration']", parentFolder, 30000, true, "4095fb36-c5d8-4ae1-be6b-db31c63a2a81", "")
+                    base("FormConfiguration", "/form[@title='Configuration']", parentFolder, 30000, null, true, "4095fb36-c5d8-4ae1-be6b-db31c63a2a81", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "4095fb36-c5d8-4ae1-be6b-db31c63a2a81");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@class='Button']", 30000, null, "10e11eba-d083-4905-9e50-b3bcd24507d0");
             }
 
@@ -30028,16 +30073,14 @@ namespace NformTester
         [RepositoryFolder("6e0951d0-b429-4426-8ca9-e9f8e911e792")]
         public partial class FormWarningAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _confirmInfo;
 
             /// <summary>
             /// Creates a new FormWarning  folder.
             /// </summary>
             public FormWarningAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormWarning", "/form[@title='Warning']", parentFolder, 30000, true, "6e0951d0-b429-4426-8ca9-e9f8e911e792", "")
+                    base("FormWarning", "/form[@title='Warning']", parentFolder, 30000, null, true, "6e0951d0-b429-4426-8ca9-e9f8e911e792", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "6e0951d0-b429-4426-8ca9-e9f8e911e792");
                 _confirmInfo = new RepoItemInfo(this, "Confirm", "button[@class='Button']", 30000, null, "67ba7e31-e11c-45cb-ba0d-f493c9a789ef");
             }
 
@@ -30096,7 +30139,6 @@ namespace NformTester
         [RepositoryFolder("61b72245-6c4c-4537-abae-a09960063291")]
         public partial class FormAdd_DeviceAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _backInfo;
             RepoItemInfo _nextInfo;
             RepoItemInfo _cancelInfo;
@@ -30136,9 +30178,8 @@ namespace NformTester
             /// Creates a new FormAdd_Device  folder.
             /// </summary>
             public FormAdd_DeviceAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormAdd_Device", "/form[@controlname='LxMgdDeviceAddDlg']", parentFolder, 30000, true, "61b72245-6c4c-4537-abae-a09960063291", "")
+                    base("FormAdd_Device", "/form[@controlname='LxMgdDeviceAddDlg']", parentFolder, 30000, null, true, "61b72245-6c4c-4537-abae-a09960063291", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "61b72245-6c4c-4537-abae-a09960063291");
                 _backInfo = new RepoItemInfo(this, "Back", "container/container[@controlname='m_buttonPnl']/button[@controlname='m_backBtn']", 30000, null, "592cfd52-c87d-4563-ae21-4fdca81c8fe2");
                 _nextInfo = new RepoItemInfo(this, "Next", "container/container[@controlname='m_buttonPnl']/button[@controlname='m_nextBtn']", 30000, null, "cc130916-141a-4376-9b5f-723d09e4dad1");
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "container/container[@controlname='m_buttonPnl']/button[@controlname='m_cancelBtn']", 30000, null, "94160baf-13b9-43a6-8d1f-58548a5474ba");
@@ -31022,7 +31063,6 @@ namespace NformTester
         [RepositoryFolder("86d9f7b8-4b27-4a4c-b048-0714f8f985ea")]
         public partial class FormInvalid_DataAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _confirmInfo;
 
@@ -31030,9 +31070,8 @@ namespace NformTester
             /// Creates a new FormInvalid_Data  folder.
             /// </summary>
             public FormInvalid_DataAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormInvalid_Data", "/form[@title='Invalid Data']", parentFolder, 30000, true, "86d9f7b8-4b27-4a4c-b048-0714f8f985ea", "")
+                    base("FormInvalid_Data", "/form[@title='Invalid Data']", parentFolder, 30000, null, true, "86d9f7b8-4b27-4a4c-b048-0714f8f985ea", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "86d9f7b8-4b27-4a4c-b048-0714f8f985ea");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='OK' or @text='确定']", 30000, null, "0bc7a909-969a-4f04-809e-85851e7316b5");
                 _confirmInfo = new RepoItemInfo(this, "Confirm", "button[@class='Button']", 30000, null, "bc188fe0-7cd0-4a52-86ba-c0fef8c25a73");
             }
@@ -31116,16 +31155,14 @@ namespace NformTester
         [RepositoryFolder("187cdb11-ba6a-472b-b6de-3a36a23bb232")]
         public partial class FormOperation_FailedAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormOperation_Failed  folder.
             /// </summary>
             public FormOperation_FailedAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormOperation_Failed", "/form[@title='Operation Failed']", parentFolder, 30000, true, "187cdb11-ba6a-472b-b6de-3a36a23bb232", "")
+                    base("FormOperation_Failed", "/form[@title='Operation Failed']", parentFolder, 30000, null, true, "187cdb11-ba6a-472b-b6de-3a36a23bb232", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "187cdb11-ba6a-472b-b6de-3a36a23bb232");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='OK' or @text='确定']", 30000, null, "dda14e36-e959-4d76-bc67-7e6bbd994128");
             }
 
@@ -31184,16 +31221,14 @@ namespace NformTester
         [RepositoryFolder("90830790-3d80-4551-9abe-a69fb42473e5")]
         public partial class FormAdd_Device_ResultsAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormAdd_Device_Results  folder.
             /// </summary>
             public FormAdd_Device_ResultsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormAdd_Device_Results", "/form[@title='Add Device Results']", parentFolder, 30000, true, "90830790-3d80-4551-9abe-a69fb42473e5", "")
+                    base("FormAdd_Device_Results", "/form[@title='Add Device Results']", parentFolder, 30000, null, true, "90830790-3d80-4551-9abe-a69fb42473e5", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "90830790-3d80-4551-9abe-a69fb42473e5");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@class='Button']", 30000, null, "7bb53c25-6754-473f-b99e-a17ec5b8bd84");
             }
 
@@ -31264,15 +31299,27 @@ namespace NformTester
             /// Creates a new NavigationViews  folder.
             /// </summary>
             public NavigationViewsFolder(RepoGenBaseFolder parentFolder) :
-                    base("NavigationViews", "", parentFolder, 0, false, "a44d0f43-055d-42a5-a7d0-fd99a76573fd", "")
+                    base("NavigationViews", "", parentFolder, 0, null, false, "a44d0f43-055d-42a5-a7d0-fd99a76573fd", "")
             {
-                _formnavigationviews = new NformRepositoryFolders.FormNavigationViewsAppFolder(parentFolder);
-                _formnavigationviewproperties = new NformRepositoryFolders.FormNavigationViewPropertiesAppFolder(parentFolder);
-                _formareaproperties = new NformRepositoryFolders.FormAreaPropertiesAppFolder(parentFolder);
-                _formfloorplan_properties = new NformRepositoryFolders.FormFloorplan_PropertiesAppFolder(parentFolder);
-                _formlogical_group_properties = new NformRepositoryFolders.FormLogical_Group_PropertiesAppFolder(parentFolder);
-                _formdefault_label_properties = new NformRepositoryFolders.FormDefault_Label_PropertiesAppFolder(parentFolder);
-                _nformviewer = new NformRepositoryFolders.NformViewerAppFolder(parentFolder);
+                _formnavigationviews = new NformRepositoryFolders.FormNavigationViewsAppFolder(this);
+                _formnavigationviewproperties = new NformRepositoryFolders.FormNavigationViewPropertiesAppFolder(this);
+                _formareaproperties = new NformRepositoryFolders.FormAreaPropertiesAppFolder(this);
+                _formfloorplan_properties = new NformRepositoryFolders.FormFloorplan_PropertiesAppFolder(this);
+                _formlogical_group_properties = new NformRepositoryFolders.FormLogical_Group_PropertiesAppFolder(this);
+                _formdefault_label_properties = new NformRepositoryFolders.FormDefault_Label_PropertiesAppFolder(this);
+                _nformviewer = new NformRepositoryFolders.NformViewerAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("a44d0f43-055d-42a5-a7d0-fd99a76573fd")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -31345,7 +31392,6 @@ namespace NformTester
         [RepositoryFolder("21e89f3d-a0fd-4f2d-b737-e5826e5416ce")]
         public partial class FormNavigationViewsAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _addInfo;
             RepoItemInfo _copyInfo;
             RepoItemInfo _editInfo;
@@ -31360,9 +31406,8 @@ namespace NformTester
             /// Creates a new FormNavigationViews  folder.
             /// </summary>
             public FormNavigationViewsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormNavigationViews", "/form[@controlname='LxNavViewListDlg']", parentFolder, 30000, true, "21e89f3d-a0fd-4f2d-b737-e5826e5416ce", "")
+                    base("FormNavigationViews", "/form[@controlname='LxNavViewListDlg']", parentFolder, 30000, null, true, "21e89f3d-a0fd-4f2d-b737-e5826e5416ce", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "21e89f3d-a0fd-4f2d-b737-e5826e5416ce");
                 _addInfo = new RepoItemInfo(this, "Add", "container[@controlname='m_navViewGrp']/container/container/button[@controlname='m_button3']", 30000, null, "b83d9565-42f2-42ea-9e5e-665b0856d2a2");
                 _copyInfo = new RepoItemInfo(this, "Copy", "container[@controlname='m_navViewGrp']/container/container/button[@controlname='m_button4']", 30000, null, "53ccbb0b-228c-4b3a-b1bb-61fcfe10d152");
                 _editInfo = new RepoItemInfo(this, "Edit", "container[@controlname='m_navViewGrp']/container/container/button[@controlname='m_button5']", 30000, null, "d10d1b02-f3b2-48ec-88f6-95a7004a5bf5");
@@ -31621,7 +31666,6 @@ namespace NformTester
         [RepositoryFolder("72638b9d-c7e5-479b-aa8a-caaac4a7b504")]
         public partial class FormNavigationViewPropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _view_treeInfo;
@@ -31646,9 +31690,8 @@ namespace NformTester
             /// Creates a new FormNavigationViewProperties  folder.
             /// </summary>
             public FormNavigationViewPropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormNavigationViewProperties", "/form[@controlname='LxNavCfgDlg']", parentFolder, 30000, true, "72638b9d-c7e5-479b-aa8a-caaac4a7b504", "")
+                    base("FormNavigationViewProperties", "/form[@controlname='LxNavCfgDlg']", parentFolder, 30000, null, true, "72638b9d-c7e5-479b-aa8a-caaac4a7b504", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "72638b9d-c7e5-479b-aa8a-caaac4a7b504");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_navViewNameTbx']/text[@controlname='m_navViewNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "befe00a2-d162-463d-ab48-59f9b01aaa01");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_navViewDscrTbx']/text[@controlname='m_navViewDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "e2286cb7-1cdc-46ae-b8e5-071ba8d5a3b4");
                 _view_treeInfo = new RepoItemInfo(this, "View_tree", "container[@controlname='m_navCfgGrpBox']/tree/tree[@accessiblerole='Outline']", 30000, null, "cef8f501-cf20-4756-bd0d-3080b7477c87");
@@ -32157,7 +32200,6 @@ namespace NformTester
         [RepositoryFolder("7cf3e757-b0cb-4603-9516-443bb35db182")]
         public partial class FormAreaPropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _descriptionInfo;
             RepoItemInfo _file_nameInfo;
@@ -32171,9 +32213,8 @@ namespace NformTester
             /// Creates a new FormAreaProperties  folder.
             /// </summary>
             public FormAreaPropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormAreaProperties", "/form[@controlname='LxAreaDlg']", parentFolder, 30000, true, "7cf3e757-b0cb-4603-9516-443bb35db182", "")
+                    base("FormAreaProperties", "/form[@controlname='LxAreaDlg']", parentFolder, 30000, null, true, "7cf3e757-b0cb-4603-9516-443bb35db182", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "7cf3e757-b0cb-4603-9516-443bb35db182");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='m_areaNameTbx']/text[@controlname='m_areaNameTbx-Ctl']/text[@accessiblename='Name:']", 30000, null, "52b5e8bc-ebbe-432d-8b2e-c832be06eb2f");
                 _descriptionInfo = new RepoItemInfo(this, "Description", "container[@controlname='m_areaDscrTbx']/text[@controlname='m_areaDscrTbx-Ctl']/text[@accessiblename='Description:']", 30000, null, "5dcd8975-14eb-4d86-9c5a-7087601b9bb0");
                 _file_nameInfo = new RepoItemInfo(this, "File_name", "container[@controlname='m_locatorMapGrpBox']/container/text[@controlname='m_locatorMapFileNameTbx-Ctl']/text[@accessiblename='Filename:']", 30000, null, "7e8e51ff-696f-401f-b206-8f9f7695ddbc");
@@ -32407,7 +32448,6 @@ namespace NformTester
         [RepositoryFolder("dfa24b9f-a91f-41e9-aef3-c2b271702d57")]
         public partial class FormFloorplan_PropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _closeInfo;
             RepoItemInfo _helpInfo;
@@ -32425,9 +32465,8 @@ namespace NformTester
             /// Creates a new FormFloorplan_Properties  folder.
             /// </summary>
             public FormFloorplan_PropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormFloorplan_Properties", "/form[@controlname='LxFloorPlanDlg']", parentFolder, 30000, true, "dfa24b9f-a91f-41e9-aef3-c2b271702d57", "")
+                    base("FormFloorplan_Properties", "/form[@controlname='LxFloorPlanDlg']", parentFolder, 30000, null, true, "dfa24b9f-a91f-41e9-aef3-c2b271702d57", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "dfa24b9f-a91f-41e9-aef3-c2b271702d57");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "733caf87-f7fb-41ee-b67a-abadfbdb52e9");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "fb3820e3-c315-437f-a290-ddf7733f37b4");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "d0706d8f-a380-4c5b-bb7d-bd911944ea76");
@@ -32761,7 +32800,6 @@ namespace NformTester
         [RepositoryFolder("a4d4a197-6fa6-47da-a17e-358daf22c9f7")]
         public partial class FormLogical_Group_PropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _navigation_view_nameInfo;
             RepoItemInfo _navigation_view_descriptionInfo;
             RepoItemInfo _available_modules_treeInfo;
@@ -32781,9 +32819,8 @@ namespace NformTester
             /// Creates a new FormLogical_Group_Properties  folder.
             /// </summary>
             public FormLogical_Group_PropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormLogical_Group_Properties", "/form[@controlname='LxLogGroupCfgDlg']", parentFolder, 30000, true, "a4d4a197-6fa6-47da-a17e-358daf22c9f7", "")
+                    base("FormLogical_Group_Properties", "/form[@controlname='LxLogGroupCfgDlg']", parentFolder, 30000, null, true, "a4d4a197-6fa6-47da-a17e-358daf22c9f7", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "a4d4a197-6fa6-47da-a17e-358daf22c9f7");
                 _navigation_view_nameInfo = new RepoItemInfo(this, "Navigation_view_name", "container[@controlname='m_navViewNameTbx']/text[@controlname='m_navViewNameTbx-Ctl']/text[@accessiblename='Navigation view name:']", 30000, null, "9e403ef0-9a81-49c3-9f3b-55115dbaaf23");
                 _navigation_view_descriptionInfo = new RepoItemInfo(this, "Navigation_view_description", "container[@controlname='m_navViewDscrTbx']/text[@controlname='m_navViewDscrTbx-Ctl']/text[@accessiblename~'^Navigation\\ view\\ descripti']", 30000, null, "623ad7c7-f753-4ce8-a00c-a17a5d52663a");
                 _available_modules_treeInfo = new RepoItemInfo(this, "Available_modules_tree", "container[@controlname='m_modulesGrp']/tree/tree[@accessiblerole='Outline']", 30000, null, "7bf0af5d-e1a4-47b5-b54e-6cea34239454");
@@ -33167,7 +33204,6 @@ namespace NformTester
         [RepositoryFolder("3791a4e0-a108-43ff-b97e-f9fd9907e659")]
         public partial class FormDefault_Label_PropertiesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _helpInfo;
             RepoItemInfo _mresettodefaultsbtnInfo;
@@ -33184,9 +33220,8 @@ namespace NformTester
             /// Creates a new FormDefault_Label_Properties  folder.
             /// </summary>
             public FormDefault_Label_PropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormDefault_Label_Properties", "/form[@controlname='LxFloorPlanLblPropDlg']", parentFolder, 30000, true, "3791a4e0-a108-43ff-b97e-f9fd9907e659", "")
+                    base("FormDefault_Label_Properties", "/form[@controlname='LxFloorPlanLblPropDlg']", parentFolder, 30000, null, true, "3791a4e0-a108-43ff-b97e-f9fd9907e659", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "3791a4e0-a108-43ff-b97e-f9fd9907e659");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "cd1d9c1d-74ec-4339-ae07-d09d0b4020c0");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "fd9ad2bd-fdd6-4713-ba39-74a22a54d2d9");
                 _mresettodefaultsbtnInfo = new RepoItemInfo(this, "MResetToDefaultsBtn", "button[@controlname='m_resetToDefaultsBtn']", 30000, null, "6e708421-4c16-4021-b9aa-c5d4f6b20f2d");
@@ -33495,7 +33530,6 @@ namespace NformTester
         [RepositoryFolder("0d760534-7cbf-485f-ab78-2f1a426f8c99")]
         public partial class NformViewerAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _defaultlabelpropertiesInfo;
             RepoItemInfo _resetalllabelpropertiesInfo;
             RepoItemInfo _resetalllabelpositionsInfo;
@@ -33505,9 +33539,8 @@ namespace NformTester
             /// Creates a new NformViewer  folder.
             /// </summary>
             public NformViewerAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("NformViewer", "/contextmenu", parentFolder, 30000, true, "0d760534-7cbf-485f-ab78-2f1a426f8c99", "")
+                    base("NformViewer", "/contextmenu", parentFolder, 30000, null, true, "0d760534-7cbf-485f-ab78-2f1a426f8c99", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "0d760534-7cbf-485f-ab78-2f1a426f8c99");
                 _defaultlabelpropertiesInfo = new RepoItemInfo(this, "DefaultLabelProperties", "menuitem[@accessiblename~'^Default\\ Label\\ Properties\\.']", 30000, null, "92345064-284e-4d02-bd7d-dbf4b0274572");
                 _resetalllabelpropertiesInfo = new RepoItemInfo(this, "ResetAllLabelProperties", "menuitem[@accessiblename~'^Reset\\ All\\ Label\\ Propertie']", 30000, null, "146a33bb-ea63-4598-a3d4-8904d92302e6");
                 _resetalllabelpositionsInfo = new RepoItemInfo(this, "ResetAllLabelPositions", "menuitem[@accessiblename='Reset All Label Positions']", 30000, null, "d102b0f2-ef1b-448a-9513-8e9fa5f3e0a7");
@@ -33649,11 +33682,23 @@ namespace NformTester
             /// Creates a new Help  folder.
             /// </summary>
             public HelpFolder(RepoGenBaseFolder parentFolder) :
-                    base("Help", "", parentFolder, 0, false, "feb98f79-ac38-4867-bad2-07f3e39fc385", "")
+                    base("Help", "", parentFolder, 0, null, false, "feb98f79-ac38-4867-bad2-07f3e39fc385", "")
             {
-                _formabout_liebertr_nform = new NformRepositoryFolders.FormAbout_LiebertR_NformAppFolder(parentFolder);
-                _formsupported_device_types = new NformRepositoryFolders.FormSupported_Device_TypesAppFolder(parentFolder);
-                _formupdates_available = new NformRepositoryFolders.FormUpdates_AvailableAppFolder(parentFolder);
+                _formabout_liebertr_nform = new NformRepositoryFolders.FormAbout_LiebertR_NformAppFolder(this);
+                _formsupported_device_types = new NformRepositoryFolders.FormSupported_Device_TypesAppFolder(this);
+                _formupdates_available = new NformRepositoryFolders.FormUpdates_AvailableAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("feb98f79-ac38-4867-bad2-07f3e39fc385")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -33690,7 +33735,6 @@ namespace NformTester
         [RepositoryFolder("9ff638a0-5fa9-4f4a-b579-ccb0f4ba3426")]
         public partial class FormAbout_LiebertR_NformAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _tabdatabaseInfo;
             RepoItemInfo _tabserverInfo;
             RepoItemInfo _tabviewerInfo;
@@ -33710,9 +33754,8 @@ namespace NformTester
             /// Creates a new FormAbout_LiebertR_Nform  folder.
             /// </summary>
             public FormAbout_LiebertR_NformAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormAbout_LiebertR_Nform", "/form[@controlname='LxHelpAboutDlg']", parentFolder, 30000, true, "9ff638a0-5fa9-4f4a-b579-ccb0f4ba3426", "")
+                    base("FormAbout_LiebertR_Nform", "/form[@controlname='LxHelpAboutDlg']", parentFolder, 30000, null, true, "9ff638a0-5fa9-4f4a-b579-ccb0f4ba3426", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "9ff638a0-5fa9-4f4a-b579-ccb0f4ba3426");
                 _tabdatabaseInfo = new RepoItemInfo(this, "TabDatabase", "tabpagelist/tabpage[@accessiblename='Database']", 30000, null, "05a9b70b-d512-4e0c-9635-6ac5d47d1174");
                 _tabserverInfo = new RepoItemInfo(this, "TabServer", "tabpagelist/tabpage[@accessiblename='Server']", 30000, null, "f5aadd18-d548-4569-9732-8305d603efdd");
                 _tabviewerInfo = new RepoItemInfo(this, "TabViewer", "tabpagelist/tabpage[@accessiblename='Viewer']", 30000, null, "9b81e3e5-4a61-4d78-b1bc-35bd299d2ff4");
@@ -34096,7 +34139,6 @@ namespace NformTester
         [RepositoryFolder("0c548452-5d51-4ddb-bfeb-7621b73fd177")]
         public partial class FormSupported_Device_TypesAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _closeInfo;
             RepoItemInfo _supported_device_types_tableInfo;
 
@@ -34104,9 +34146,8 @@ namespace NformTester
             /// Creates a new FormSupported_Device_Types  folder.
             /// </summary>
             public FormSupported_Device_TypesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormSupported_Device_Types", "/form[@controlname='LxSupportedDevDlg']", parentFolder, 30000, true, "0c548452-5d51-4ddb-bfeb-7621b73fd177", "")
+                    base("FormSupported_Device_Types", "/form[@controlname='LxSupportedDevDlg']", parentFolder, 30000, null, true, "0c548452-5d51-4ddb-bfeb-7621b73fd177", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "0c548452-5d51-4ddb-bfeb-7621b73fd177");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "1edc3e8c-979c-4a59-b92e-e8df7182f3b8");
                 _supported_device_types_tableInfo = new RepoItemInfo(this, "Supported_device_types_table", "table[@controlname='m_devListDgridSupportedDevice']", 30000, null, "d240919c-797a-4827-9735-bd5c891779f9");
             }
@@ -34190,16 +34231,14 @@ namespace NformTester
         [RepositoryFolder("68de377e-f24a-41af-a904-3513626ff907")]
         public partial class FormUpdates_AvailableAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormUpdates_Available  folder.
             /// </summary>
             public FormUpdates_AvailableAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormUpdates_Available", "/form[@title='Updates Available']", parentFolder, 30000, true, "68de377e-f24a-41af-a904-3513626ff907", "")
+                    base("FormUpdates_Available", "/form[@title='Updates Available']", parentFolder, 30000, null, true, "68de377e-f24a-41af-a904-3513626ff907", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "68de377e-f24a-41af-a904-3513626ff907");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "8721801c-af6e-488f-b4d3-8da6347f550e");
             }
 
@@ -34265,10 +34304,22 @@ namespace NformTester
             /// Creates a new InstallationWizardWindow  folder.
             /// </summary>
             public InstallationWizardWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("InstallationWizardWindow", "", parentFolder, 0, false, "7db6a005-a4ea-42b6-8bdb-9b33428be80a", "")
+                    base("InstallationWizardWindow", "", parentFolder, 0, null, false, "7db6a005-a4ea-42b6-8bdb-9b33428be80a", "")
             {
-                _forminstallationwizard = new NformRepositoryFolders.FormInstallationWizardAppFolder(parentFolder);
-                _formliebert_setup_dialog = new NformRepositoryFolders.FormLiebert_Setup_dialogAppFolder(parentFolder);
+                _forminstallationwizard = new NformRepositoryFolders.FormInstallationWizardAppFolder(this);
+                _formliebert_setup_dialog = new NformRepositoryFolders.FormLiebert_Setup_dialogAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7db6a005-a4ea-42b6-8bdb-9b33428be80a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -34296,7 +34347,6 @@ namespace NformTester
         [RepositoryFolder("01bbdcf5-dc15-4252-ac5c-545d85a5c0df")]
         public partial class FormInstallationWizardAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _nextInfo;
             RepoItemInfo _backInfo;
             RepoItemInfo _cancelInfo;
@@ -34327,9 +34377,8 @@ namespace NformTester
             /// Creates a new FormInstallationWizard  folder.
             /// </summary>
             public FormInstallationWizardAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormInstallationWizard", "/form[@title='Liebert Nform Setup']", parentFolder, 30000, false, "01bbdcf5-dc15-4252-ac5c-545d85a5c0df", "")
+                    base("FormInstallationWizard", "/form[@title='Liebert Nform Setup']", parentFolder, 30000, null, false, "01bbdcf5-dc15-4252-ac5c-545d85a5c0df", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "01bbdcf5-dc15-4252-ac5c-545d85a5c0df");
                 _nextInfo = new RepoItemInfo(this, "Next", "button[@text='&Next >']", 30000, null, "37515ff9-c510-4469-a042-c1b57e27a3bf");
                 _backInfo = new RepoItemInfo(this, "Back", "button[@text='< &Back']", 30000, null, "d44e83bd-2709-4335-bd18-da93fc8033bc");
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "button[@text='&Cancel']", 30000, null, "09a1b73a-b3bb-4d21-913b-6c9d02fb9971");
@@ -34988,7 +35037,6 @@ namespace NformTester
         [RepositoryFolder("dba76b2d-df1f-49ab-8231-072ad38b00f7")]
         public partial class FormLiebert_Setup_dialogAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _yesInfo;
             RepoItemInfo _noInfo;
 
@@ -34996,9 +35044,8 @@ namespace NformTester
             /// Creates a new FormLiebert_Setup_dialog  folder.
             /// </summary>
             public FormLiebert_Setup_dialogAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormLiebert_Setup_dialog", "/form[@title='Liebert Nform Setup']", parentFolder, 30000, false, "dba76b2d-df1f-49ab-8231-072ad38b00f7", "")
+                    base("FormLiebert_Setup_dialog", "/form[@title='Liebert Nform Setup']", parentFolder, 30000, null, false, "dba76b2d-df1f-49ab-8231-072ad38b00f7", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "dba76b2d-df1f-49ab-8231-072ad38b00f7");
                 _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='&Yes']", 30000, null, "1f7a3e7f-5187-4aa2-a04d-2dfcdc5258a6");
                 _noInfo = new RepoItemInfo(this, "No", "button[@text='&No']", 30000, null, "28420050-0277-4c01-b533-af86e4e36d4f");
             }
@@ -35088,9 +35135,21 @@ namespace NformTester
             /// Creates a new UninstallationWindow  folder.
             /// </summary>
             public UninstallationWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("UninstallationWindow", "", parentFolder, 0, false, "676ee8b6-66fa-4c3e-a51b-3296af25fe1f", "")
+                    base("UninstallationWindow", "", parentFolder, 0, null, false, "676ee8b6-66fa-4c3e-a51b-3296af25fe1f", "")
             {
-                _formliebert_nform_setup = new NformRepositoryFolders.FormLiebert_Nform_SetupAppFolder(parentFolder);
+                _formliebert_nform_setup = new NformRepositoryFolders.FormLiebert_Nform_SetupAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("676ee8b6-66fa-4c3e-a51b-3296af25fe1f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -35109,7 +35168,6 @@ namespace NformTester
         [RepositoryFolder("d0b8236c-8225-4bca-8e03-180650519c20")]
         public partial class FormLiebert_Nform_SetupAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _remove_application_onlyInfo;
             RepoItemInfo _remove_complete_applicationInfo;
             RepoItemInfo _removebtnInfo;
@@ -35127,9 +35185,8 @@ namespace NformTester
             /// Creates a new FormLiebert_Nform_Setup  folder.
             /// </summary>
             public FormLiebert_Nform_SetupAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormLiebert_Nform_Setup", "/form[@title='Liebert Nform Setup']", parentFolder, 30000, true, "d0b8236c-8225-4bca-8e03-180650519c20", "")
+                    base("FormLiebert_Nform_Setup", "/form[@title='Liebert Nform Setup']", parentFolder, 30000, null, true, "d0b8236c-8225-4bca-8e03-180650519c20", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "d0b8236c-8225-4bca-8e03-180650519c20");
                 _remove_application_onlyInfo = new RepoItemInfo(this, "Remove_application_only", "button[@text='']/radiobutton[@text~'^Remove\\ application\\ progra']", 30000, null, "ca729444-63c3-4084-91cb-6ab9ceda50ad");
                 _remove_complete_applicationInfo = new RepoItemInfo(this, "Remove_complete_application", "button[@text='']/radiobutton[@text~'^Remove\\ complete\\ applicati']", 30000, null, "ca25bfbc-3c6c-4ea0-8883-74eb424ebb22");
                 _removebtnInfo = new RepoItemInfo(this, "RemoveBtn", "button[@text='&Remove']", 30000, null, "f05f0327-1fed-4b70-8661-9ddc0d041499");
@@ -35470,10 +35527,22 @@ namespace NformTester
             /// Creates a new AlarmHistoryWindow  folder.
             /// </summary>
             public AlarmHistoryWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("AlarmHistoryWindow", "", parentFolder, 0, false, "a40eb1f3-a2dd-409f-b83b-e9e3620c68cb", "")
+                    base("AlarmHistoryWindow", "", parentFolder, 0, null, false, "a40eb1f3-a2dd-409f-b83b-e9e3620c68cb", "")
             {
-                _formexport_alarm_history = new NformRepositoryFolders.FormExport_Alarm_HistoryAppFolder(parentFolder);
-                _formexport_alarm_history_info = new NformRepositoryFolders.FormExport_Alarm_History_InfoAppFolder(parentFolder);
+                _formexport_alarm_history = new NformRepositoryFolders.FormExport_Alarm_HistoryAppFolder(this);
+                _formexport_alarm_history_info = new NformRepositoryFolders.FormExport_Alarm_History_InfoAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("a40eb1f3-a2dd-409f-b83b-e9e3620c68cb")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -35501,7 +35570,6 @@ namespace NformTester
         [RepositoryFolder("6975efcd-20f8-4890-bed2-706a38538a10")]
         public partial class FormExport_Alarm_HistoryAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _separatorInfo;
             RepoItemInfo _changeInfo;
             RepoItemInfo _okInfo;
@@ -35525,9 +35593,8 @@ namespace NformTester
             /// Creates a new FormExport_Alarm_History  folder.
             /// </summary>
             public FormExport_Alarm_HistoryAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormExport_Alarm_History", "/form[@controlname='LxExportAlarmHistoryDlg']", parentFolder, 30000, true, "6975efcd-20f8-4890-bed2-706a38538a10", "")
+                    base("FormExport_Alarm_History", "/form[@controlname='LxExportAlarmHistoryDlg']", parentFolder, 30000, null, true, "6975efcd-20f8-4890-bed2-706a38538a10", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "6975efcd-20f8-4890-bed2-706a38538a10");
                 _separatorInfo = new RepoItemInfo(this, "Separator", "container[@controlname='m_fileLocationGrp']/combobox[@controlname='m_separatorCmb']", 30000, null, "34bbc674-ef12-4028-8308-b014d509b0f8");
                 _changeInfo = new RepoItemInfo(this, "Change", "container[@controlname='m_fileLocationGrp']/button[@controlname='m_changeBtn']", 30000, null, "a3a4fe41-db19-471a-b4b2-e934a24f9489");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "037240d6-3746-452d-81ec-6fd9315e9312");
@@ -36011,7 +36078,6 @@ namespace NformTester
         [RepositoryFolder("369b02b0-1c89-4d48-b91c-183e15ebe0f3")]
         public partial class FormExport_Alarm_History_InfoAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _yesInfo;
             RepoItemInfo _noInfo;
@@ -36021,9 +36087,8 @@ namespace NformTester
             /// Creates a new FormExport_Alarm_History_Info  folder.
             /// </summary>
             public FormExport_Alarm_History_InfoAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormExport_Alarm_History_Info", "/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, true, "369b02b0-1c89-4d48-b91c-183e15ebe0f3", "")
+                    base("FormExport_Alarm_History_Info", "/form[@title='Export Alarm History' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, null, true, "369b02b0-1c89-4d48-b91c-183e15ebe0f3", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "369b02b0-1c89-4d48-b91c-183e15ebe0f3");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "baebb237-5c25-4121-b787-6f04d6e0f3f9");
                 _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='是(&Y)' or @text='Yes']", 30000, null, "bab2b8eb-c5a0-4738-a175-d03ccd3cc468");
                 _noInfo = new RepoItemInfo(this, "No", "button[@text='否(&N)' or @text='No']", 30000, null, "053f9051-432f-4e8a-b648-6372bd9001f9");
@@ -36164,10 +36229,22 @@ namespace NformTester
             /// Creates a new ActionHistoryWindow  folder.
             /// </summary>
             public ActionHistoryWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("ActionHistoryWindow", "", parentFolder, 0, false, "4c8281db-02e4-4161-834f-021265e6b959", "")
+                    base("ActionHistoryWindow", "", parentFolder, 0, null, false, "4c8281db-02e4-4161-834f-021265e6b959", "")
             {
-                _formexport_action_history = new NformRepositoryFolders.FormExport_Action_HistoryAppFolder(parentFolder);
-                _formexport_action_history_info = new NformRepositoryFolders.FormExport_Action_History_InfoAppFolder(parentFolder);
+                _formexport_action_history = new NformRepositoryFolders.FormExport_Action_HistoryAppFolder(this);
+                _formexport_action_history_info = new NformRepositoryFolders.FormExport_Action_History_InfoAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("4c8281db-02e4-4161-834f-021265e6b959")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -36195,7 +36272,6 @@ namespace NformTester
         [RepositoryFolder("01bdb392-07e0-42b7-8303-585126dd5ff3")]
         public partial class FormExport_Action_HistoryAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _closeInfo;
             RepoItemInfo _helpInfo;
@@ -36219,9 +36295,8 @@ namespace NformTester
             /// Creates a new FormExport_Action_History  folder.
             /// </summary>
             public FormExport_Action_HistoryAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormExport_Action_History", "/form[@controlname='LxExportActionLogDlg']", parentFolder, 30000, true, "01bdb392-07e0-42b7-8303-585126dd5ff3", "")
+                    base("FormExport_Action_History", "/form[@controlname='LxExportActionLogDlg']", parentFolder, 30000, null, true, "01bdb392-07e0-42b7-8303-585126dd5ff3", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "01bdb392-07e0-42b7-8303-585126dd5ff3");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button2']", 30000, null, "54ec3b1b-6570-4bc5-8000-dba745af207b");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "cbe34121-2cd6-4a96-9593-a10673baa08f");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "03322f15-cfe4-4699-a423-d60b75f01f34");
@@ -36705,7 +36780,6 @@ namespace NformTester
         [RepositoryFolder("81f1cf1d-6f05-4b7e-8028-2bd1c7b94e2d")]
         public partial class FormExport_Action_History_InfoAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
             RepoItemInfo _yesInfo;
             RepoItemInfo _noInfo;
@@ -36714,9 +36788,8 @@ namespace NformTester
             /// Creates a new FormExport_Action_History_Info  folder.
             /// </summary>
             public FormExport_Action_History_InfoAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormExport_Action_History_Info", "/form[@title='Export Action History' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, true, "81f1cf1d-6f05-4b7e-8028-2bd1c7b94e2d", "")
+                    base("FormExport_Action_History_Info", "/form[@title='Export Action History' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, null, true, "81f1cf1d-6f05-4b7e-8028-2bd1c7b94e2d", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "81f1cf1d-6f05-4b7e-8028-2bd1c7b94e2d");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "843c59f3-77af-4fe0-a079-5bc26efa018a");
                 _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='是(&Y)' or @text='Yes']", 30000, null, "6fc2455c-2f50-495a-9770-c455e25f0fa1");
                 _noInfo = new RepoItemInfo(this, "No", "button[@text='否(&N)' or @text='No']", 30000, null, "16e42bad-d9f8-4fa2-beb2-a4a3bd70727f");
@@ -36832,10 +36905,22 @@ namespace NformTester
             /// Creates a new ExportDataLogWindow  folder.
             /// </summary>
             public ExportDataLogWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("ExportDataLogWindow", "", parentFolder, 0, false, "73c790a9-e647-40da-80fc-337d369b130b", "")
+                    base("ExportDataLogWindow", "", parentFolder, 0, null, false, "73c790a9-e647-40da-80fc-337d369b130b", "")
             {
-                _formexport_data_log = new NformRepositoryFolders.FormExport_data_logAppFolder(parentFolder);
-                _formexport_data_log_info = new NformRepositoryFolders.FormExport_data_log_InfoAppFolder(parentFolder);
+                _formexport_data_log = new NformRepositoryFolders.FormExport_data_logAppFolder(this);
+                _formexport_data_log_info = new NformRepositoryFolders.FormExport_data_log_InfoAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("73c790a9-e647-40da-80fc-337d369b130b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -36863,7 +36948,6 @@ namespace NformTester
         [RepositoryFolder("0b94e1bb-f9a5-4a5c-8c14-a930b00a1b76")]
         public partial class FormExport_data_logAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _backInfo;
             RepoItemInfo _cancelInfo;
             RepoItemInfo _nextInfo;
@@ -36890,9 +36974,8 @@ namespace NformTester
             /// Creates a new FormExport_data_log  folder.
             /// </summary>
             public FormExport_data_logAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormExport_data_log", "/form[@controlname='LxExportDataLogDlg']", parentFolder, 30000, true, "0b94e1bb-f9a5-4a5c-8c14-a930b00a1b76", "")
+                    base("FormExport_data_log", "/form[@controlname='LxExportDataLogDlg']", parentFolder, 30000, null, true, "0b94e1bb-f9a5-4a5c-8c14-a930b00a1b76", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "0b94e1bb-f9a5-4a5c-8c14-a930b00a1b76");
                 _backInfo = new RepoItemInfo(this, "Back", "container/container[@controlname='m_buttonPnl']/button[@controlname='m_backBtn']", 30000, null, "ca364bb7-6fb4-48ef-8776-6a5adc426945");
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "container/container[@controlname='m_buttonPnl']/button[@controlname='m_cancelBtn']", 30000, null, "07662ce5-8a2c-4a44-b740-8ef5eecc84ed");
                 _nextInfo = new RepoItemInfo(this, "Next", "container/container[@controlname='m_buttonPnl']/button[@controlname='m_nextBtn']", 30000, null, "77547a06-470c-49af-a91d-945665ac99f9");
@@ -37451,7 +37534,6 @@ namespace NformTester
         [RepositoryFolder("b025291d-d8d5-41e6-9d22-d1a747555870")]
         public partial class FormExport_data_log_InfoAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _yesInfo;
             RepoItemInfo _noInfo;
 
@@ -37459,9 +37541,8 @@ namespace NformTester
             /// Creates a new FormExport_data_log_Info  folder.
             /// </summary>
             public FormExport_data_log_InfoAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormExport_data_log_Info", "/form[@title='Export data log' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, true, "b025291d-d8d5-41e6-9d22-d1a747555870", "")
+                    base("FormExport_data_log_Info", "/form[@title='Export data log' and @processname='NformViewer' and @class='#32770']", parentFolder, 30000, null, true, "b025291d-d8d5-41e6-9d22-d1a747555870", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "b025291d-d8d5-41e6-9d22-d1a747555870");
                 _yesInfo = new RepoItemInfo(this, "Yes", "button[@text='是(&Y)' or @text='Yes']", 30000, null, "e11154ba-1742-432e-8da9-04f6675ae3cf");
                 _noInfo = new RepoItemInfo(this, "No", "button[@text='否(&N)' or @text='No']", 30000, null, "005dcf49-ee50-4afe-9523-ab5324ce9c81");
             }
@@ -37559,17 +37640,29 @@ namespace NformTester
             /// Creates a new NformToolsWindow  folder.
             /// </summary>
             public NformToolsWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("NformToolsWindow", "", parentFolder, 0, false, "d7214179-ec07-42fe-af6b-bf92803a6640", "")
+                    base("NformToolsWindow", "", parentFolder, 0, null, false, "d7214179-ec07-42fe-af6b-bf92803a6640", "")
             {
-                _formliebertr_nform_tools = new NformRepositoryFolders.FormLiebertR_Nform_ToolsAppFolder(parentFolder);
-                _formservice_control = new NformRepositoryFolders.FormService_ControlAppFolder(parentFolder);
-                _formcommunications_failure = new NformRepositoryFolders.FormCommunications_FailureAppFolder(parentFolder);
-                _formdatabase_connection = new NformRepositoryFolders.FormDatabase_ConnectionAppFolder(parentFolder);
-                _formembedded_database_operation = new NformRepositoryFolders.FormEmbedded_Database_OperationAppFolder(parentFolder);
-                _forminstall_device_type_definitions_dtd = new NformRepositoryFolders.FormInstall_Device_Type_Definitions_DTDAppFolder(parentFolder);
-                _forminstall_device_type_definitions_info = new NformRepositoryFolders.FormInstall_Device_Type_Definitions_InfoAppFolder(parentFolder);
-                _formimport_nform_2_5_data = new NformRepositoryFolders.FormImport_Nform_2_5_DataAppFolder(parentFolder);
-                _servicecontrol = new NformRepositoryFolders.ServiceControlAppFolder(parentFolder);
+                _formliebertr_nform_tools = new NformRepositoryFolders.FormLiebertR_Nform_ToolsAppFolder(this);
+                _formservice_control = new NformRepositoryFolders.FormService_ControlAppFolder(this);
+                _formcommunications_failure = new NformRepositoryFolders.FormCommunications_FailureAppFolder(this);
+                _formdatabase_connection = new NformRepositoryFolders.FormDatabase_ConnectionAppFolder(this);
+                _formembedded_database_operation = new NformRepositoryFolders.FormEmbedded_Database_OperationAppFolder(this);
+                _forminstall_device_type_definitions_dtd = new NformRepositoryFolders.FormInstall_Device_Type_Definitions_DTDAppFolder(this);
+                _forminstall_device_type_definitions_info = new NformRepositoryFolders.FormInstall_Device_Type_Definitions_InfoAppFolder(this);
+                _formimport_nform_2_5_data = new NformRepositoryFolders.FormImport_Nform_2_5_DataAppFolder(this);
+                _servicecontrol = new NformRepositoryFolders.ServiceControlAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d7214179-ec07-42fe-af6b-bf92803a6640")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -37660,7 +37753,6 @@ namespace NformTester
         [RepositoryFolder("dc460793-f1fb-446a-b4fc-eb0602f0a6f2")]
         public partial class FormLiebertR_Nform_ToolsAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _applicationInfo;
             RepoItemInfo _exitInfo;
             RepoItemInfo _serviceInfo;
@@ -37680,9 +37772,8 @@ namespace NformTester
             /// Creates a new FormLiebertR_Nform_Tools  folder.
             /// </summary>
             public FormLiebertR_Nform_ToolsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormLiebertR_Nform_Tools", "/form[@controlname='LxNformToolsGui']", parentFolder, 30000, true, "dc460793-f1fb-446a-b4fc-eb0602f0a6f2", "")
+                    base("FormLiebertR_Nform_Tools", "/form[@controlname='LxNformToolsGui']", parentFolder, 30000, null, true, "dc460793-f1fb-446a-b4fc-eb0602f0a6f2", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "dc460793-f1fb-446a-b4fc-eb0602f0a6f2");
                 _applicationInfo = new RepoItemInfo(this, "Application", "menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Application' or @accessiblename='Anwendung']", 30000, null, "ad5b39d7-9c1e-4eff-bae2-eeba6020636c");
                 _exitInfo = new RepoItemInfo(this, "Exit", "menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Application']/menuitem[@accessiblename='Exit']", 30000, null, "37f78b72-fdcd-456e-bf06-f4290bcf2b6f");
                 _serviceInfo = new RepoItemInfo(this, "Service", "menubar[@controlname='m_mainMenuStrip']/menuitem[@accessiblename='Application']/menuitem[@accessiblename='Service...']", 30000, null, "1b8d0050-fb78-440f-89fc-219130ae7673");
@@ -38066,7 +38157,6 @@ namespace NformTester
         [RepositoryFolder("cfb63985-7960-4931-ae05-dfa82e63aa21")]
         public partial class FormService_ControlAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _closeInfo;
             RepoItemInfo _helpInfo;
             RepoItemInfo _stopInfo;
@@ -38078,9 +38168,8 @@ namespace NformTester
             /// Creates a new FormService_Control  folder.
             /// </summary>
             public FormService_ControlAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormService_Control", "/form[@controlname='LxServiceCtlDlg']", parentFolder, 30000, true, "cfb63985-7960-4931-ae05-dfa82e63aa21", "")
+                    base("FormService_Control", "/form[@controlname='LxServiceCtlDlg']", parentFolder, 30000, null, true, "cfb63985-7960-4931-ae05-dfa82e63aa21", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "cfb63985-7960-4931-ae05-dfa82e63aa21");
                 _closeInfo = new RepoItemInfo(this, "Close", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "b316f6e0-f21d-404f-b32d-02890d84ee93");
                 _helpInfo = new RepoItemInfo(this, "Help", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "b1afe51f-5136-4223-b4d8-4c97ca0bf74d");
                 _stopInfo = new RepoItemInfo(this, "Stop", "button[@controlname='m_stopBtn']", 30000, null, "11584c5d-d3eb-4458-8adc-801eda2c37a8");
@@ -38264,16 +38353,14 @@ namespace NformTester
         [RepositoryFolder("eca2fba0-e5f1-476b-8431-bd4cb72529dd")]
         public partial class FormCommunications_FailureAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormCommunications_Failure  folder.
             /// </summary>
             public FormCommunications_FailureAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormCommunications_Failure", "/form[@title='Communications Failure']", parentFolder, 30000, true, "eca2fba0-e5f1-476b-8431-bd4cb72529dd", "")
+                    base("FormCommunications_Failure", "/form[@title='Communications Failure']", parentFolder, 30000, null, true, "eca2fba0-e5f1-476b-8431-bd4cb72529dd", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "eca2fba0-e5f1-476b-8431-bd4cb72529dd");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "736b438f-db68-4962-9f64-dc9902fc4859");
             }
 
@@ -38332,7 +38419,6 @@ namespace NformTester
         [RepositoryFolder("47a0fa13-b7d1-4fb4-acfa-3b785711735f")]
         public partial class FormDatabase_ConnectionAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _embedded_databaseInfo;
             RepoItemInfo _microsoft_sql_serverInfo;
             RepoItemInfo _okInfo;
@@ -38347,9 +38433,8 @@ namespace NformTester
             /// Creates a new FormDatabase_Connection  folder.
             /// </summary>
             public FormDatabase_ConnectionAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormDatabase_Connection", "/form[@controlname='LxDbConnDlg']", parentFolder, 30000, true, "47a0fa13-b7d1-4fb4-acfa-3b785711735f", "")
+                    base("FormDatabase_Connection", "/form[@controlname='LxDbConnDlg']", parentFolder, 30000, null, true, "47a0fa13-b7d1-4fb4-acfa-3b785711735f", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "47a0fa13-b7d1-4fb4-acfa-3b785711735f");
                 _embedded_databaseInfo = new RepoItemInfo(this, "Embedded_database", "radiobutton[@controlname='m_embeddedRbtn']", 30000, null, "fab431a3-a5de-4f2e-861b-ded126e0f09d");
                 _microsoft_sql_serverInfo = new RepoItemInfo(this, "Microsoft_SQL_Server", "radiobutton[@controlname='m_serverRbtn']", 30000, null, "f68eac33-851c-43bf-bb45-dc02841a20fe");
                 _okInfo = new RepoItemInfo(this, "OK", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "f2d3b3b6-5bef-41f9-93bf-c4104c09dcf3");
@@ -38608,7 +38693,6 @@ namespace NformTester
         [RepositoryFolder("5c3729b5-088a-4238-897f-76f46da27bae")]
         public partial class FormEmbedded_Database_OperationAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _verifyInfo;
             RepoItemInfo _cancelInfo;
             RepoItemInfo _alarms_databaseInfo;
@@ -38627,9 +38711,8 @@ namespace NformTester
             /// Creates a new FormEmbedded_Database_Operation  folder.
             /// </summary>
             public FormEmbedded_Database_OperationAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormEmbedded_Database_Operation", "/form[@controlname='LxSqlCeOprnDlg']", parentFolder, 30000, true, "5c3729b5-088a-4238-897f-76f46da27bae", "")
+                    base("FormEmbedded_Database_Operation", "/form[@controlname='LxSqlCeOprnDlg']", parentFolder, 30000, null, true, "5c3729b5-088a-4238-897f-76f46da27bae", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "5c3729b5-088a-4238-897f-76f46da27bae");
                 _verifyInfo = new RepoItemInfo(this, "Verify", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "9bd560e2-0ee1-4177-a17d-c2578080901c");
                 _cancelInfo = new RepoItemInfo(this, "Cancel", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']", 30000, null, "69e22847-bb04-47ea-8c1c-6373db881b72");
                 _alarms_databaseInfo = new RepoItemInfo(this, "Alarms_database", "container[@controlname='m_dbSelectionGrp']/checkbox[@controlname='m_almDbChk']", 30000, null, "58203568-cf0d-44bb-8b77-61e12e865827");
@@ -38988,7 +39071,6 @@ namespace NformTester
         [RepositoryFolder("5f177938-cf8c-456e-8062-49796b6b5514")]
         public partial class FormInstall_Device_Type_Definitions_DTDAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _download_linkInfo;
             RepoItemInfo _downloadInfo;
             RepoItemInfo _install_package_fileInfo;
@@ -39001,9 +39083,8 @@ namespace NformTester
             /// Creates a new FormInstall_Device_Type_Definitions_DTD  folder.
             /// </summary>
             public FormInstall_Device_Type_Definitions_DTDAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormInstall_Device_Type_Definitions_DTD", "/form[@controlname='LxDtdInstallDlg']", parentFolder, 30000, true, "5f177938-cf8c-456e-8062-49796b6b5514", "")
+                    base("FormInstall_Device_Type_Definitions_DTD", "/form[@controlname='LxDtdInstallDlg']", parentFolder, 30000, null, true, "5f177938-cf8c-456e-8062-49796b6b5514", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "5f177938-cf8c-456e-8062-49796b6b5514");
                 _download_linkInfo = new RepoItemInfo(this, "Download_link", "container[@controlname='m_downloadGrp']/text[@controlname='m_downloadTbx']/text[@accessiblename~'^If\\ you\\ have\\ a\\ link\\ \\(http\\ ']", 30000, null, "a71fa7bd-ef84-4d12-989f-c3322e21896a");
                 _downloadInfo = new RepoItemInfo(this, "Download", "container[@controlname='m_downloadGrp']/button[@controlname='m_downloadBtn']", 30000, null, "dc4f3bf8-8e0f-4431-8714-0c6c9378bf08");
                 _install_package_fileInfo = new RepoItemInfo(this, "Install_package_file", "container[@controlname='m_installDtdGrp']/text[@controlname='m_installDtdTbx']/text[@accessiblename~'^If\\ you\\ already\\ have\\ downl']", 30000, null, "e76d1690-3d4e-4726-b085-ee8ba3b3d451");
@@ -39212,16 +39293,14 @@ namespace NformTester
         [RepositoryFolder("1af677eb-af20-4f40-9c46-04c78fa6b510")]
         public partial class FormInstall_Device_Type_Definitions_InfoAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _okInfo;
 
             /// <summary>
             /// Creates a new FormInstall_Device_Type_Definitions_Info  folder.
             /// </summary>
             public FormInstall_Device_Type_Definitions_InfoAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormInstall_Device_Type_Definitions_Info", "/form[@title~'^Install\\ Device\\ Type\\ Defin' and @processname='NformTools' and @class='#32770']", parentFolder, 30000, true, "1af677eb-af20-4f40-9c46-04c78fa6b510", "")
+                    base("FormInstall_Device_Type_Definitions_Info", "/form[@title~'^Install\\ Device\\ Type\\ Defin' and @processname='NformTools' and @class='#32770']", parentFolder, 30000, null, true, "1af677eb-af20-4f40-9c46-04c78fa6b510", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "1af677eb-af20-4f40-9c46-04c78fa6b510");
                 _okInfo = new RepoItemInfo(this, "OK", "button[@text='确定' or @text='OK']", 30000, null, "da710a6a-04c3-40f2-b192-ee0b6ffab82d");
             }
 
@@ -39280,7 +39359,6 @@ namespace NformTester
         [RepositoryFolder("e9029a54-2aa8-45cc-a4fc-2711db6a4cdf")]
         public partial class FormImport_Nform_2_5_DataAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _directory_oldInfo;
             RepoItemInfo _browseInfo;
             RepoItemInfo _importInfo;
@@ -39291,9 +39369,8 @@ namespace NformTester
             /// Creates a new FormImport_Nform_2_5_Data  folder.
             /// </summary>
             public FormImport_Nform_2_5_DataAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormImport_Nform_2_5_Data", "/form[@controlname='LxImportG1DataDlg']", parentFolder, 30000, true, "e9029a54-2aa8-45cc-a4fc-2711db6a4cdf", "")
+                    base("FormImport_Nform_2_5_Data", "/form[@controlname='LxImportG1DataDlg']", parentFolder, 30000, null, true, "e9029a54-2aa8-45cc-a4fc-2711db6a4cdf", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "e9029a54-2aa8-45cc-a4fc-2711db6a4cdf");
                 _directory_oldInfo = new RepoItemInfo(this, "Directory_old", "text[@controlname='m_importDirTbx']/text[@accessiblename='Directory:']", 30000, null, "61343b20-a409-46b5-9157-b4af2df3dfa1");
                 _browseInfo = new RepoItemInfo(this, "Browse", "button[@controlname='m_browseBtn']", 30000, null, "16c7b1bf-45c1-44e9-8704-db9a2cd47166");
                 _importInfo = new RepoItemInfo(this, "Import", "container[@controlname='m_dialogBtns']/container/button[@controlname='m_button3']", 30000, null, "a75765c5-bcf5-41ee-9013-cb63f8bd1cf8");
@@ -39452,7 +39529,6 @@ namespace NformTester
         [RepositoryFolder("962c6680-3d38-4334-8e78-771d9d3c2802")]
         public partial class ServiceControlAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _buttonokInfo;
             RepoItemInfo _closeInfo;
 
@@ -39460,9 +39536,8 @@ namespace NformTester
             /// Creates a new ServiceControl  folder.
             /// </summary>
             public ServiceControlAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ServiceControl", "/form[@title='Service Control']", parentFolder, 30000, true, "962c6680-3d38-4334-8e78-771d9d3c2802", "")
+                    base("ServiceControl", "/form[@title='Service Control']", parentFolder, 30000, null, true, "962c6680-3d38-4334-8e78-771d9d3c2802", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "962c6680-3d38-4334-8e78-771d9d3c2802");
                 _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@text='OK']", 30000, null, "1e0cef95-0890-4a2a-a7ef-cc5bac03e27e");
                 _closeInfo = new RepoItemInfo(this, "Close", "titlebar/button[@accessiblename='Close']", 30000, null, "d63c6a5e-45ba-41ef-a4a1-ff265345cced");
             }
@@ -39553,10 +39628,22 @@ namespace NformTester
             /// Creates a new ExternalApp  folder.
             /// </summary>
             public ExternalAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ExternalApp", "", parentFolder, 0, false, "f4dfeaed-33b3-48b7-bfbd-765260a2b3fa", "")
+                    base("ExternalApp", "", parentFolder, 0, null, false, "f4dfeaed-33b3-48b7-bfbd-765260a2b3fa", "")
             {
-                _notepad = new NformRepositoryFolders.NotePadAppFolder(parentFolder);
-                _formexcel = new NformRepositoryFolders.FormExcelAppFolder(parentFolder);
+                _notepad = new NformRepositoryFolders.NotePadAppFolder(this);
+                _formexcel = new NformRepositoryFolders.FormExcelAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f4dfeaed-33b3-48b7-bfbd-765260a2b3fa")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
             }
 
             /// <summary>
@@ -39584,16 +39671,14 @@ namespace NformTester
         [RepositoryFolder("dd3fa2f2-9039-44a0-9984-ec9085a5253e")]
         public partial class NotePadAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _maincontextInfo;
 
             /// <summary>
             /// Creates a new NotePad  folder.
             /// </summary>
             public NotePadAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("NotePad", "/form[@class='Notepad']", parentFolder, 30000, true, "dd3fa2f2-9039-44a0-9984-ec9085a5253e", "")
+                    base("NotePad", "/form[@class='Notepad']", parentFolder, 30000, null, true, "dd3fa2f2-9039-44a0-9984-ec9085a5253e", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "dd3fa2f2-9039-44a0-9984-ec9085a5253e");
                 _maincontextInfo = new RepoItemInfo(this, "MainContext", "text", 30000, null, "2346320a-cf80-4411-a5dd-46189b146a3d");
             }
 
@@ -39652,7 +39737,6 @@ namespace NformTester
         [RepositoryFolder("ded0c69e-927c-4853-95e9-6f24cbeca027")]
         public partial class FormExcelAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _tableentityInfo;
             RepoItemInfo _excelInfo;
             RepoItemInfo _cellk34Info;
@@ -39661,9 +39745,8 @@ namespace NformTester
             /// Creates a new FormExcel  folder.
             /// </summary>
             public FormExcelAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormExcel", "/form[@processname='EXCEL']", parentFolder, 30000, true, "ded0c69e-927c-4853-95e9-6f24cbeca027", "")
+                    base("FormExcel", "/form[@processname='EXCEL']", parentFolder, 30000, null, true, "ded0c69e-927c-4853-95e9-6f24cbeca027", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "ded0c69e-927c-4853-95e9-6f24cbeca027");
                 _tableentityInfo = new RepoItemInfo(this, "TableEntity", "element[@class='XLDESK']/workbook/table[@index='1']", 30000, null, "348bf51d-be77-4e75-8b57-8d845104766f");
                 _excelInfo = new RepoItemInfo(this, "EXCEL", "element[@class='EXCEL<']", 30000, null, "61fdaebc-7591-4aea-a4de-759350cd313f");
                 _cellk34Info = new RepoItemInfo(this, "CellK34", "element[@class='XLDESK']/workbook/table[@name='Scripts']/row[@index='34']/cell[@address='K34']", 30000, null, "8ecb3b23-725e-403f-9826-4a2fe168fa22");
@@ -39772,7 +39855,6 @@ namespace NformTester
         [RepositoryFolder("a1e1116d-fb6b-4fd9-88ea-f6ef896eb0b5")]
         public partial class ExplorerAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _administratorliebertrnformInfo;
             RepoItemInfo _administratorliebertrnformunregistInfo;
 
@@ -39780,9 +39862,8 @@ namespace NformTester
             /// Creates a new Explorer  folder.
             /// </summary>
             public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Explorer", "/menubar[@processname='explorer']", parentFolder, 30000, true, "a1e1116d-fb6b-4fd9-88ea-f6ef896eb0b5", "")
+                    base("Explorer", "/menubar[@processname='explorer']", parentFolder, 30000, null, true, "a1e1116d-fb6b-4fd9-88ea-f6ef896eb0b5", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "a1e1116d-fb6b-4fd9-88ea-f6ef896eb0b5");
                 _administratorliebertrnformInfo = new RepoItemInfo(this, "AdministratorLiebertRNform", "container[@caption='' and @controlid='40965']/container/toolbar/button[@text~'^Administrator\\ -\\ Liebert®\\ ' and @commandid='11']", 30000, null, "78852d45-6aee-41e7-94c4-c7e4e6d7a169");
                 _administratorliebertrnformunregistInfo = new RepoItemInfo(this, "AdministratorLiebertRNformUNREGIST", "container[@caption='' and @controlid='40965']/container/toolbar/button[@text~'^Administrator\\ -\\ Liebert®\\ ']", 30000, null, "62053ade-52f0-478d-ac6c-844e23dec664");
             }
@@ -39866,7 +39947,6 @@ namespace NformTester
         [RepositoryFolder("6c6d7532-83f6-4835-988c-1d2f8d9ae9e2")]
         public partial class InboxMicrosoftOutlookAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
             RepoItemInfo _listitem2Info;
             RepoItemInfo _statusbar101Info;
 
@@ -39874,9 +39954,8 @@ namespace NformTester
             /// Creates a new InboxMicrosoftOutlook  folder.
             /// </summary>
             public InboxMicrosoftOutlookAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("InboxMicrosoftOutlook", "/form[@title='Inbox - Microsoft Outlook']", parentFolder, 30000, true, "6c6d7532-83f6-4835-988c-1d2f8d9ae9e2", "")
+                    base("InboxMicrosoftOutlook", "/form[@title='Inbox - Microsoft Outlook']", parentFolder, 30000, null, true, "6c6d7532-83f6-4835-988c-1d2f8d9ae9e2", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "6c6d7532-83f6-4835-988c-1d2f8d9ae9e2");
                 _listitem2Info = new RepoItemInfo(this, "ListItem2", "statusbar/listitem[@index='2']", 30000, null, "3617b6b9-cfa6-4f64-96b2-f6b2ce0ef972");
                 _statusbar101Info = new RepoItemInfo(this, "StatusBar101", "statusbar[@controlid='101']", 30000, null, "70c99cb4-f984-4f3d-bd22-a724f0cffcfa");
             }
@@ -39955,4 +40034,5 @@ namespace NformTester
         }
 
     }
+#pragma warning restore 0436
 }

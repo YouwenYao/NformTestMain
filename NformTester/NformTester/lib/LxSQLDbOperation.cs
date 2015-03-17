@@ -20,12 +20,10 @@ namespace NformTester.lib
 	/// </summary>
 	public class LxSQLDbOperation:LxDBOper
 	{
-		public LxSQLDbOperation()
-		{
-			
-		}
-		
-		
+	
+		/// <summary>
+		/// Get table value from database
+		/// </summary>
 		public List<string[]> GetTableValue(SqlConnection conn, string queryStr)
 		{
 			if (conn.State == ConnectionState.Closed)

@@ -20,11 +20,7 @@ namespace NformTester.lib
 	/// </summary>
 	public class LxCEDbOperation:LxDBOper
 	{
-		public LxCEDbOperation()
-		{
-		}
-		
-		
+	
 		/// <summary>
 		/// 
 		/// </summary>
@@ -174,7 +170,6 @@ namespace NformTester.lib
 		/// <summary>
 		/// 
 		/// </summary>
-		/// <param name="dbName"></param>
 		/// <returns></returns>
 		public string GetDBConnString(string dbName)
 		{
@@ -186,7 +181,6 @@ namespace NformTester.lib
 		/// <summary>
 		/// 
 		/// </summary>
-		/// <param name="tableName"></param>
 		/// <returns></returns>
 		public double GetTotalCnt(SqlCeConnection conn, string tableName)
 		{
@@ -214,7 +208,6 @@ namespace NformTester.lib
 		/// <summary>
 		/// 
 		/// </summary>
-		/// <param name="tableName"></param>
 		/// <returns></returns>
 		public double GetVarLenColumnSize(SqlCeConnection conn,string tableName)
 		{
@@ -252,7 +245,6 @@ namespace NformTester.lib
 		/// <summary>
 		/// 
 		/// </summary>
-		/// <param name="tableName"></param>
 		/// <returns></returns>
 		public double GetRecCnt(SqlCeConnection conn,string tableName)
 		{

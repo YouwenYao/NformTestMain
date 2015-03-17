@@ -6,7 +6,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>NformTester</RootNamespace>
     <AssemblyName>NformTester</AssemblyName>
-    <RanorexVersion>4</RanorexVersion>
+    <RanorexVersion>5</RanorexVersion>
     <DocumentationFile>bin\Debug\NformTester.xml</DocumentationFile>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
@@ -15,6 +15,7 @@
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <SignAssembly>False</SignAssembly>
     <DelaySign>False</DelaySign>
+    <projectdefaultrepository>a8de20ac-6b6f-43d6-a983-f8c5aec0ef87</projectdefaultrepository>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -55,9 +56,11 @@
     </Reference>
     <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)">
     </Reference>
+    <Reference Include="Ranorex.Plugin.Qt, Version=$(RanorexVersion)" />
     <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)">
     </Reference>
     <Reference Include="Ranorex.Plugin.Sap, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Uia, Version=$(RanorexVersion)" />
     <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)">
     </Reference>
     <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)">
@@ -163,9 +166,6 @@
     <None Include="Devices.ini">
       <id>dad83fa6-994c-44fe-9947-b22f375e7453</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="driver\600.30.30.40_EditAreaInTreeUnderViews.xlsx">
-      <id>b8a688fe-cc15-4d1f-b978-9cc9290ccce9</id>
     </None>
     <None Include="Keywordscripts\100.30.10_InstallandUninstallprocess.xlsx">
       <id>577b31f5-362f-4c6f-8bbc-75468ad5c9f9</id>
@@ -1650,6 +1650,12 @@
     <None Include="Keywordscripts\TST997_UerAccountProperties.xlsx">
       <id>8201be43-29e7-4922-87c7-bebc408a2864</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NformRepository.rximg">
+      <BoundTo>a8de20ac-6b6f-43d6-a983-f8c5aec0ef87</BoundTo>
+      <DependentUpon>NformRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>f5194fbc-5af7-4d09-ad89-9ca43ba69ad9</id>
     </None>
     <Resource Include="NformRepository.rxrep">
       <id>a8de20ac-6b6f-43d6-a983-f8c5aec0ef87</id>

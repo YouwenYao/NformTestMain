@@ -177,6 +177,7 @@ namespace NformTester
      	   
      		string CheckDevice = AppConfigOper.getConfigValue("CheckDevice_BeforeTesting");
             string RestoreDB = AppConfigOper.getConfigValue("RestoreDB_AfterEachTestCase");
+            string runOnVM = AppConfigOper.getConfigValue("RunOnVM");
              //Create Report folder
             string reportDir = System.IO.Directory.GetCurrentDirectory();
             System.IO.DirectoryInfo reportDirect = System.IO.Directory.CreateDirectory(reportDir + @"\Report\" +"Report_" + System.DateTime.Now.ToString ("yyyyMMdd_HHmmss")); 
@@ -192,12 +193,20 @@ namespace NformTester
 			   //Be used to check devices are avalibale or not, which are configured in Device.ini
 	           LxDeviceAvailable myDeviceAvailable = new LxDeviceAvailable();
 	       	   myDeviceAvailable.CheckSnmpDevice();
-	           myDeviceAvailable.CheckVelDevice();
+	           //myDeviceAvailable.CheckVelDevice();
 	           //start Nform service
 	           Console.WriteLine("Start Nform service...");
 			   strRst = RunCommand("sc start Nform");	
              }                        
          
+             if(CheckDevice.Equals("Y"))
+             {
+             	Keyboard.Enabled = false;  
+             	Mouse.Enabled = false;
+             	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;  
+             	NformRepository.Instance.SearchTimeout = new Duration(50000);
+             }
+             
         	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;
             /*
