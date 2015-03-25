@@ -107,7 +107,7 @@ namespace NformTester.lib
 		/// <param name="commandstr"></param>
 		public static void GenerateData(string commandstr)
 		{
-			string strApplicationName = AppConfigOper.getConfigValue(commandstr);
+			string strApplicationName = AppConfigOper.mainOp.getConfigValue(commandstr);
 			Console.WriteLine("Command is: " + strApplicationName);
 			Process clrpro = new Process();
 			FileInfo clrfile = new FileInfo(strApplicationName);

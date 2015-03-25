@@ -69,12 +69,25 @@ namespace NformTester.lib
             varlist.Add(var);
             Variable data;
             IList<Variable> resultdata;
-            Hashtable DeviceInfo = new Hashtable();
+            IDictionary<string, string> AllDeviceInfo = new Dictionary<string, string> ();
+            IDictionary<string, string> SNMPDeviceInfo = new Dictionary<string, string> ();
             
-            string DeviceConfigFile = AppConfigOper.getConfigValue("DeviceConfig");
-            DeviceInfo = AppConfigOper.GetDevicesInfo("snmp",DeviceConfigFile);
-            
-            foreach(string deviceIp in DeviceInfo.Values)
+            AllDeviceInfo = AppConfigOper.mainOp.DevConfigs;
+
+			foreach(string key in AllDeviceInfo.Keys)
+			{
+				if(key.ToUpper().StartsWith("SNMP"))
+				{
+					SNMPDeviceInfo.Add(key, AllDeviceInfo[key]);
+				}
+			}
+			
+			foreach (KeyValuePair<string, string>device in SNMPDeviceInfo)
+			{ 
+				Console.WriteLine("SNMPDeviceInfo: key={0},value={1}", device.Key, device.Value);
+			}
+			
+            foreach(string deviceIp in SNMPDeviceInfo.Values)
             {
             	try
             	{
@@ -103,14 +116,31 @@ namespace NformTester.lib
 		public static List<String> CheckVelocityDeviceAvailable(){
 			// There are all devices in Device.ini.
 			List<string> notAvailable = new List<string>();		
-			Hashtable DeviceInfo = new Hashtable();
+            IDictionary<string, string> AllDeviceInfo = new Dictionary<string, string> ();
+            IDictionary<string, string> VelDeviceInfo = new Dictionary<string, string> ();
+			AllDeviceInfo = AppConfigOper.mainOp.DevConfigs;
+
+			foreach(string key in AllDeviceInfo.Keys)
+			{
+				if(key.ToUpper().StartsWith("VELOCITY"))
+				{
+					VelDeviceInfo.Add(key, AllDeviceInfo[key]);
+				}
+			}
+			
+			foreach (KeyValuePair<string, string>device in VelDeviceInfo)
+			{ 
+				Console.WriteLine("VelDeviceInfo: key={0},value={1}", device.Key, device.Value);
+			}
             
-            string DeviceConfigFile = AppConfigOper.getConfigValue("DeviceConfig");
-            DeviceInfo = AppConfigOper.GetDevicesInfo("velocity",DeviceConfigFile);
+            
+            
 	        string NformPath = "";
 			RegistryKey Key;
 			Key = Registry.LocalMachine;
 			//Nform in Register table
+			// The path is based on your pc
+		//  RegistryKey myreg = Key.OpenSubKey("software\\Liebert\\Nform");
 			RegistryKey myreg = Key.OpenSubKey("software\\Wow6432Node\\Liebert\\Nform");
 			NformPath = myreg.GetValue("InstallDir").ToString();
 			myreg.Close();
@@ -133,7 +163,8 @@ namespace NformTester.lib
 	         {
 	         	Console.WriteLine("Can not open this channel! because: " + e.StackTrace.ToString());
 	         }
-		     foreach(string deviceIp in DeviceInfo.Values)
+	         
+		     foreach(string deviceIp in VelDeviceInfo.Values)
             {
             	if(channel != null)
             	{

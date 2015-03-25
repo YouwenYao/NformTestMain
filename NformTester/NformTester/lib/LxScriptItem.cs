@@ -11,6 +11,8 @@ using System.Reflection;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
+using System.Collections;
+using System.Xml;
 
 using Ranorex;
 using Ranorex.Core;
@@ -76,6 +78,16 @@ namespace NformTester.lib
 		/// </summary>
 		public string m_Arg6;
 		
+		/// <summary>
+		/// mainOp
+		/// </summary>
+		public static LxSetup mainOp = LxSetup.getInstance();
+		
+		/// <summary>
+		/// Devices in DeviceConfig.xml
+		/// </summary>
+		public static Hashtable DeviceInfo = new Hashtable();
+		
 		
 		/// <summary>
 		/// Get the repository instance
@@ -104,6 +116,17 @@ namespace NformTester.lib
 			}
 			return true;
 		}
+		
+		/// <summary>
+		/// git value from app.config for script. such as this format: $Ip_address$
+		/// </summary>
+		/// <param name="name">name</param>
+		/// <returns>value</returns>
+		public string parseToValue(string name)
+        {
+			return mainOp.parseToValue(name);
+        }
+		
 
 		/// <summary>
 		/// If argument has text, then remove symbol"
@@ -157,47 +180,8 @@ namespace NformTester.lib
 		public string getArg6Text()
 		{
 			return parseToValue(m_Arg6);
-		}				
-    	
-		/// <summary>
-		/// Replace the name with value refer to app.config
-		/// </summary>
-		/// <param name="name">name</param>
-		/// <returns>String</returns>
-		public string parseToValue(string name)
-        {
-            if (name.Equals(""))
-            {
-                return "";
-            }
-
-			LxSetup mainOp = LxSetup.getInstance();
-			var configs = mainOp.configs;
-            string addr = name;
-            if (name.Substring(0, 1) == "$" && name.Substring(name.Length - 1, 1) == "$")
-            {
-                string key = name.Substring(1, name.Length - 2);
-                LxIniFile confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
-                                                 "Devices.ini"));
-                string result = null;
-                
-                if(configs.ContainsKey(key))
-                {
-                	result = configs[key];
-                }
-                else
-                {
-                	result = configs["Default"];
-                }
-                addr = result;
-                
-                confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
-                                                 "UsedDevices.ini"));
-                confFile.WriteString("AvailableDevices",key,result);
-            }
-
-            return addr.Replace("\"","");
-        }
+		}	
+		
 		
 		/// <summary>
 		/// According to the name of windows and component, find the componentinfo

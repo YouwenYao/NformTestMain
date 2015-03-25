@@ -1,7 +1,7 @@
 ﻿<repository
 name="NformRepository"
 id="3e0c5f65-9093-49fd-9a9c-13a3b13623fb"
-rxversion="5.3.0.22324">
+rxversion="4.0.1.21107">
 	<codegen
 	classname="NformRepository"
 	namespace="NformTester"/>

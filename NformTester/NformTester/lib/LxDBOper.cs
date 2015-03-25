@@ -209,9 +209,9 @@ namespace NformTester.lib
 		/// <returns>connString</returns>
 		public string GetDBConnString()
 		{
-			string DS = AppConfigOper.getConfigValue("DB_SQL_Server_Name");
-			string UN = AppConfigOper.getConfigValue("DB_SQL_User_Name");
-			string PWD = AppConfigOper.getConfigValue("DB_SQL_Password");
+			string DS = AppConfigOper.mainOp.getConfigValue("DB_SQL_Server_Name");
+			string UN = AppConfigOper.mainOp.getConfigValue("DB_SQL_User_Name");
+			string PWD = AppConfigOper.mainOp.getConfigValue("DB_SQL_Password");
 	        string connString = "Data Source="+DS+";"+"Initial Catalog=master;"+"User ID="+UN+";"+"Password="+PWD+";";
 	        return connString;
 		}
@@ -224,8 +224,8 @@ namespace NformTester.lib
 		{
 			  bool result = false;
 			  Console.WriteLine("*****Start to back up bundled Database*****");
-			  string sourceDBPath = AppConfigOper.getConfigValue("DB_Bundled_Path");
-			  string targetDBPath = AppConfigOper.getConfigValue("DB_Bundled_Backup_Path");
+			  string sourceDBPath = AppConfigOper.mainOp.getConfigValue("DB_Bundled_Path");
+			  string targetDBPath = AppConfigOper.mainOp.getConfigValue("DB_Bundled_Backup_Path");
 	          
 			   if (!Directory.Exists(sourceDBPath))
 			   {
@@ -322,8 +322,8 @@ namespace NformTester.lib
 		{
 		  bool result = false;
 		  Console.WriteLine("*****Start to restore bundled Database*****");     
-		  string sourceDBPath = AppConfigOper.getConfigValue("DB_Bundled_Backup_Path");
-		  string targetDBPath = AppConfigOper.getConfigValue("DB_Bundled_Path");
+		  string sourceDBPath = AppConfigOper.mainOp.getConfigValue("DB_Bundled_Backup_Path");
+		  string targetDBPath = AppConfigOper.mainOp.getConfigValue("DB_Bundled_Path");
           
           //First delete the exsited directory.
 		  if (!Directory.Exists(targetDBPath))

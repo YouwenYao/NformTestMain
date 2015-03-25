@@ -7,7 +7,7 @@
 		<device name="SNMP_GXT_4" ip="10.146.84.300"/>
 		<device name="SNMP_GXT_5" ip="10.146.84.6"/>
 		<device name="SNMP_device_0" ip="10.146.83.5"/>
-		<device name="SNMP_device_1" ip="10.146.84.5"/>
+		<device name="SNMP_device_1" ip="10.146.83.6"/>
 		<device name="SNMP_device_2" ip="10.146.84.3"/>
 		<device name="SNMP_SearchStart" ip="10.146.83.10"/>
 		<device name="SNMP_SearchEnd" ip="10.146.83.14"/>

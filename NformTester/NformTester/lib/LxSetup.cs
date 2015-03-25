@@ -7,6 +7,7 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
+using System.Collections.Generic;
 using System.Collections;
 using System.Diagnostics;
 using System.IO;
@@ -15,7 +16,6 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using System.Xml;
 using System.Text.RegularExpressions;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Windows.Forms;
 
@@ -98,7 +98,12 @@ namespace NformTester.lib
 		/// <summary>
 		/// Configs in app.config
 		/// </summary>
-		public  IDictionary<string, string> configs ;
+		public IDictionary<string, string> configs ;
+		
+		/// <summary>
+		/// Configs in DeviceConfig.xml
+		/// </summary>
+		public IDictionary<string, string> DevConfigs;
 		
 		/// <summary>
 		///  Get method for ProcessId
@@ -132,6 +137,18 @@ namespace NformTester.lib
 			m_Runlist.Clear();
 			m_Runlist = getRunlist();
 			configs = GetConfigs();
+			DevConfigs = GetDevConfigs();
+			
+			foreach (KeyValuePair<string, string>ip in configs)
+			{ 
+				Console.WriteLine("GetConfigs: key={0},value={1}", ip.Key, ip.Value);
+			}
+			
+			foreach (KeyValuePair<string, string>ip2 in DevConfigs)
+			{ 
+				Console.WriteLine("GetDevConfigs: key={0},value={1}", ip2.Key, ip2.Value);
+			}
+
 		}
 
 		/// <summary>
@@ -148,33 +165,149 @@ namespace NformTester.lib
 		} // end getInstance
 
 		/// <summary>
-		/// Replace the name with value refer to app.config
+		/// Get value of key from app.config
+		/// </summary>
+		/// <param name="key">key</param>
+		/// <returns>value</returns>
+		public string getConfigValue(string key)
+		{
+			string value = null;
+            if(configs.ContainsKey(key))
+            {
+               value = configs[key];
+            }
+            else
+            {
+              	value = configs["Default"];
+            }
+            return value;
+		}
+
+		/// <summary>
+		/// GetDeviceInfo
+		/// </summary>
+		/// <param name="ConfigPath"></param>
+		/// <returns></returns>
+		public IDictionary<string, string> GetDevicesInfo(string ConfigPath)
+		{
+			IDictionary<string, string> Dev_Configs = new Dictionary<string, string> ();
+			XmlDocument xmldoc = GetDocument(ConfigPath);
+        	XmlNodeList nodes;
+        	nodes = xmldoc.SelectNodes("/configuration/snmp");
+        	foreach(XmlNode xnf in nodes)
+        	{	
+        		generateDeviceList(xnf,Dev_Configs);        		        			
+        	}
+        	nodes = xmldoc.SelectNodes("/configuration/velocity");
+        	foreach(XmlNode xnf in nodes)
+        	{	
+        		generateDeviceList(xnf,Dev_Configs);        		        			
+        	}
+        	return Dev_Configs;
+		}
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="ConfigPath"></param>
+		/// <returns></returns>
+		public XmlDocument GetDocument(string ConfigPath)
+		{
+			ArrayList runlist = new ArrayList();
+			string xmlpath = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
+                                                 ConfigPath);
+			XmlDocument xmldoc = new XmlDocument();
+        	xmldoc.Load(xmlpath);
+        	return xmldoc;
+		}
+		
+		
+		/// <summary>
+		/// get device ip
+		/// </summary>
+		/// <param name="xnf">xnf</param>
+		/// <param name="DeviceInfo">DeviceInfo</param>
+		public void generateDeviceList(XmlNode xnf,IDictionary<string, string> DeviceInfo)
+		{
+			if(xnf.HasChildNodes)
+        	{
+				//XmlNodeList childnodes = xnf.ChildNodes;    
+				foreach(XmlNode childnode in xnf.ChildNodes)
+				{
+					generateDeviceList(childnode,DeviceInfo);
+				}
+			}
+			else
+       		{        	   
+				if(xnf.Name.Equals("device"))
+				{					
+					XmlElement xe = (XmlElement)xnf;
+       				DeviceInfo.Add(xe.GetAttribute("name"),xe.GetAttribute("ip"));	
+				}	
+       		}        	
+        	        			
+		}
+		
+		
+		/// <summary>
+		/// ParseIp
+		/// </summary>
+		/// <param name="key"></param>
+		/// <returns></returns>
+		public string ParseIP(string key)
+		{
+			string IP = null;
+	
+			if (DevConfigs.ContainsKey(key))
+			{
+				IP = DevConfigs[key].ToString();
+			}
+			return IP;
+		}
+		
+		/// <summary>
+		/// git value from app.config for script. such as this format: $Ip_address$
 		/// </summary>
 		/// <param name="name">name</param>
-		/// <returns>string</returns>
-		private string parseToValue(string name)
+		/// <returns>value</returns>
+		public string parseToValue(string name)
         {
-			LxSetup mainOp = LxSetup.getInstance();
-			var configs = mainOp.configs;
-			
+            if (name.Equals(""))
+            {
+                return "";
+            }
             string addr = name;
             if (name.Substring(0, 1) == "$" && name.Substring(name.Length - 1, 1) == "$")
             {
                 string key = name.Substring(1, name.Length - 2);
-                string result = null;
-                if(configs.ContainsKey(key))
+                LxIniFile confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
+                                                 "Devices.ini"));
+                string result = null; 
+                if(key.ToUpper().StartsWith("SNMP")|| key.ToUpper().StartsWith("VELOCITY"))
+                {
+                	result = ParseIP(key);
+                }
+                else if(configs.ContainsKey(key))
                 {
                 	result = configs[key];
                 }
                 else
                 {
                 	result = configs["Default"];
-                }
-           		addr = result;
+                }                              
+               
+                addr = result;
+                
+                confFile = new LxIniFile(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
+                                                 "UsedDevices.ini"));
+                confFile.WriteString("AvailableDevices",key,result);
             }
 
+            if (addr==null)
+            	return addr;
             return addr.Replace("\"","");
-		}
+        }
+		
 
 		/// <summary>
 		/// Read the application path from scripts and run
@@ -231,7 +364,11 @@ namespace NformTester.lib
 			try
 			{
 				if (!(m_strPrecondition.Trim().Equals("")))
+				{
+					string PathValue = getConfigValue(m_strPrecondition);
+					m_strPrecondition = getPath(PathValue);
 					VerifyCondition();
+				}
 			}
 			catch(Exception e)
 			{
@@ -246,7 +383,7 @@ namespace NformTester.lib
 		/// Get all info from app.config.
 		/// </summary>
 		/// <returns>configs</returns>
-    	private static IDictionary<string, string> GetConfigs ()
+    	private IDictionary<string, string> GetConfigs ()
 		{
 			var configs = new Dictionary<string, string> ();
 			int len = ConfigurationManager.AppSettings.Count;
@@ -259,6 +396,15 @@ namespace NformTester.lib
 
 			return configs;
 		}
+    	
+    	private IDictionary<string, string>GetDevConfigs()
+    	{
+    		string PathValue = getConfigValue("DeviceConfig");
+    		string ConfigPath = getPath(PathValue);
+    		IDictionary<string, string>  DeviceInfo = new Dictionary<string, string> ();
+			DeviceInfo = GetDevicesInfo(ConfigPath);
+    		return DeviceInfo;
+    	}
     	
 		//**********************************************************************
 		/// <summary>
@@ -549,6 +695,21 @@ namespace NformTester.lib
 				Directory.CreateDirectory(pathname);
 			}
 		}	
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="filename"></param>
+		/// <returns></returns>
+		public string getPath(string filename)
+		{
+			string preDir = System.IO.Directory.GetCurrentDirectory();
+			string prePath = preDir + @"\" + filename;
+			string path = Path.GetFullPath(prePath);
+			return path;
+		}
+
+		
 		
 		//**********************************************************************
 		/// <summary>

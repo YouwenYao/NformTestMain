@@ -6,7 +6,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>NformTester</RootNamespace>
     <AssemblyName>NformTester</AssemblyName>
-    <RanorexVersion>5</RanorexVersion>
+    <RanorexVersion>4</RanorexVersion>
     <DocumentationFile>bin\Debug\NformTester.xml</DocumentationFile>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
@@ -1656,6 +1656,14 @@
       <DependentUpon>NformRepository.rxrep</DependentUpon>
       <imageblob>true</imageblob>
       <id>f5194fbc-5af7-4d09-ad89-9ca43ba69ad9</id>
+    </None>
+    <None Include="precondition_default.xml">
+      <id>868fe9b1-110c-476a-a549-9a687558ff1e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="precondition_license.xml">
+      <id>068bbb93-6724-4543-9e84-115bbd328c2d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <Resource Include="NformRepository.rxrep">
       <id>a8de20ac-6b6f-43d6-a983-f8c5aec0ef87</id>

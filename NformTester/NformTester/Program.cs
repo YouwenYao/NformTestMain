@@ -173,11 +173,16 @@ namespace NformTester
 	        string cmdGrp = @"use Nform;SELECT * FROM UsrGrp;";  
 	        SQLOper.GetTableValue(conn,cmdVersion);
 	        SQLOper.GetTableValue(conn,cmdGrp);
-     	    * */
-     	   
-     		string CheckDevice = AppConfigOper.getConfigValue("CheckDevice_BeforeTesting");
-            string RestoreDB = AppConfigOper.getConfigValue("RestoreDB_AfterEachTestCase");
-            string runOnVM = AppConfigOper.getConfigValue("RunOnVM");
+     	    * */  
+     	/*   
+     	   string ip1 = AppConfigOper.parseToValue("$SNMP_SingleAuto_1$");
+     	   string ip2 = AppConfigOper.parseToValue("$Velocity_device_2$");
+     	   Console.WriteLine("ip1 is:"+ip1);
+     	   Console.WriteLine("ip2 is:"+ip2);
+     	*/   
+     		string CheckDevice = AppConfigOper.mainOp.getConfigValue("CheckDevice_BeforeTesting");
+            string RestoreDB = AppConfigOper.mainOp.getConfigValue("RestoreDB_AfterEachTestCase");
+            string runOnVM = AppConfigOper.mainOp.getConfigValue("RunOnVM");
              //Create Report folder
             string reportDir = System.IO.Directory.GetCurrentDirectory();
             System.IO.DirectoryInfo reportDirect = System.IO.Directory.CreateDirectory(reportDir + @"\Report\" +"Report_" + System.DateTime.Now.ToString ("yyyyMMdd_HHmmss")); 
@@ -193,7 +198,7 @@ namespace NformTester
 			   //Be used to check devices are avalibale or not, which are configured in Device.ini
 	           LxDeviceAvailable myDeviceAvailable = new LxDeviceAvailable();
 	       	   myDeviceAvailable.CheckSnmpDevice();
-	           //myDeviceAvailable.CheckVelDevice();
+	           myDeviceAvailable.CheckVelDevice();
 	           //start Nform service
 	           Console.WriteLine("Start Nform service...");
 			   strRst = RunCommand("sc start Nform");	

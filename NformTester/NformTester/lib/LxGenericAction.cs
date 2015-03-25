@@ -214,7 +214,8 @@ namespace NformTester.lib
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Finish.Click();
 				Delay.Milliseconds(5000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device_Results.OK.Click();
-				repo.NFormApp.ManagedDevicesWindow.FormManaged_Devices.Close.Click();				
+				repo.NFormApp.ManagedDevicesWindow.FormManaged_Devices.Close.Click();	
+			
 			}
 			if(item.getArgText() == "SingleManual")
 			{
@@ -244,8 +245,9 @@ namespace NformTester.lib
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Search_device_table.Rows[1].Cells[0].Click();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Search_device_table.Rows[1].Cells[1].Click();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Search_device_table.Rows[1].Cells[1].Click();
-				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Search_device_table.Rows[1].Cells[1].PressKeys(item.getArg2Text() + "{TAB}{CONTROL down}{Akey}{CONTROL up}" +item.getArg3Text());
-				Delay.Duration(1000);				
+				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Search_device_table.Rows[1].Cells[1].PressKeys(
+					item.getArg2Text() + "{TAB}{CONTROL down}{Akey}{CONTROL up}" + item.getArg3Text());
+				Delay.Duration(6000);				
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Next.Click();
 				Delay.Duration(8000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Next.Click();
@@ -714,7 +716,7 @@ namespace NformTester.lib
 		/// <param name="item">item</param>
 		public static void AppStart(LxScriptItem item)
 		{
-			string strApplicationName = AppConfigOper.parseToValue(item.m_Component);
+			string strApplicationName = AppConfigOper.mainOp.parseToValue(item.m_Component);
 			m_AppProcess[item.m_Action] = Host.Local.RunApplication(strApplicationName);
         }
 		
@@ -1172,7 +1174,7 @@ namespace NformTester.lib
 			
 		 Console.WriteLine("*****Start to Delete the File*****");
 			  
-		 string FilePath = AppConfigOper.parseToValue(item.m_Component);
+		 string FilePath = AppConfigOper.mainOp.parseToValue(item.m_Component);
 		 
 		 if (File.Exists(FilePath))
 		 {

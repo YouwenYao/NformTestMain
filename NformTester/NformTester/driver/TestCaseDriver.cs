@@ -92,10 +92,10 @@ namespace NformTester.driver
 		/// </summary>
     	private void BackupDB ()
 		{
-    		string RestoreDB = AppConfigOper.getConfigValue("RestoreDB_AfterEachTestCase");
-            string ServerLogPath = AppConfigOper.getConfigValue("Server_Log_Path");
-            string ViewerLogPath = AppConfigOper.getConfigValue("Viewer_Log_Path");
-            string DB_DbType = AppConfigOper.getConfigValue("DB_DbType");
+    		string RestoreDB = AppConfigOper.mainOp.getConfigValue("RestoreDB_AfterEachTestCase");
+            string ServerLogPath = AppConfigOper.mainOp.getConfigValue("Server_Log_Path");
+            string ViewerLogPath = AppConfigOper.mainOp.getConfigValue("Viewer_Log_Path");
+            string DB_DbType = AppConfigOper.mainOp.getConfigValue("DB_DbType");
     		// If RestoreDB is Y, program will restore Database for Nform before scripts are executed.
            if(RestoreDB.Equals("Y"))
            {
@@ -152,9 +152,9 @@ namespace NformTester.driver
     	/// </summary>
     	private void RestoreDB ()
 		{			
-    		string RestoreDB = AppConfigOper.getConfigValue("RestoreDB_AfterEachTestCase");
-    		string ServerLogPath = AppConfigOper.getConfigValue("Server_Log_Path");
-    		string ViewerLogPath = AppConfigOper.getConfigValue("Viewer_Log_Path");
+    		string RestoreDB = AppConfigOper.mainOp.getConfigValue("RestoreDB_AfterEachTestCase");
+    		string ServerLogPath = AppConfigOper.mainOp.getConfigValue("Server_Log_Path");
+    		string ViewerLogPath = AppConfigOper.mainOp.getConfigValue("Viewer_Log_Path");
     		// If RestoreDB is Y, program will restore Database for Nform before scripts are executed.
            if(RestoreDB.Equals("Y"))
            {
@@ -287,10 +287,10 @@ namespace NformTester.driver
             LxSetup mainOp = LxSetup.getInstance();  
             var configs = mainOp.configs;
             
-            string DetailSteps = AppConfigOper.getConfigValue("DetailSteps_InResult");
-            string strUserName =  AppConfigOper.getConfigValue("UserName");
-            string strPassword =  AppConfigOper.getConfigValue("Password");
-            string strServerName =  AppConfigOper.getConfigValue("ServerName");
+            string DetailSteps = AppConfigOper.mainOp.getConfigValue("DetailSteps_InResult");
+            string strUserName =  AppConfigOper.mainOp.getConfigValue("UserName");
+            string strPassword =  AppConfigOper.mainOp.getConfigValue("Password");
+            string strServerName =  AppConfigOper.mainOp.getConfigValue("ServerName");
             
             BackupDB();
             
