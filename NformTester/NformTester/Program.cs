@@ -204,7 +204,7 @@ namespace NformTester
 			   strRst = RunCommand("sc start Nform");	
              }                        
          
-             if(CheckDevice.Equals("Y"))
+             if(runOnVM.Equals("Y"))
              {
              	Keyboard.Enabled = false;  
              	Mouse.Enabled = false;

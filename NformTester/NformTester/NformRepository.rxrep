@@ -6621,6 +6621,151 @@ FF57jMUF8lLyBiD/wAyIdJTYzxE4Be58WDiAaA0Tp/cYLkCPd3l5eQEBl+rzMNvhNDAgJY2DwIlq
 mAEArCvv3zgQncsAAAAASUVORK5CYII=
 					</icon>
 				</appfolder>
+				<appfolder
+				name="FormCreate_Graph"
+				id="1a4b15ca-d2ca-4c56-86ff-903c090690db"
+				searchtimeout="30000ms"
+				capname="form"
+				addcaps="form,control,nativewindow"
+				isrooted="True"
+				usecache="True">
+					<item
+					name="Close"
+					id="1dd855df-505a-47e7-ad1e-11ee940a490b"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_dialogBtns']/container/button[@controlname='m_button4']
+					</item>
+					<item
+					name="Minimize"
+					id="f6e109d2-a86d-49e9-8a41-39799f3891c9"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxTrendAlarmsDlg']/titlebar/button[@accessiblename='Minimize']
+					</item>
+					<item
+					name="Maximize"
+					id="2c877cf5-1f40-41ba-a121-ad8a75d49c8b"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxTrendAlarmsDlg']/titlebar/button[@accessiblename='Maximize']
+					</item>
+					<item
+					name="Exit"
+					id="d6e86a1c-9285-4cd2-ae56-4cb570c5f0e6"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxTrendAlarmsDlg']/titlebar/button[@accessiblename='Close']
+					</item>
+					<item
+					name="Refresh"
+					id="eb23896c-bca5-4f0b-afeb-f7a9daa3a2a5"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel1']/button[@controlname='m_refreshBtn']
+					</item>
+					<item
+					name="Data_point_Tree"
+					id="8dfe8d24-057b-40fd-8048-c7a399eee0bf"
+					searchtimeout="30000ms"
+					capname="tree"
+					addcaps="tree,accessible">
+						/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel1']/tree/tree[@accessiblerole='Outline']
+					</item>
+					<item
+					name="Data_point_Tree1"
+					id="fa0b87a5-9547-460e-8415-969762025653"
+					searchtimeout="30000ms"
+					capname="tree"
+					addcaps="tree,control,nativewindow">
+						/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel1']/tree[@controlname='m_cfgTreeView']
+					</item>
+					<item
+					name="MCreateBtn"
+					id="104491f6-70e4-4b91-8997-ae6bdd7728b2"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,control,nativewindow">
+						/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel1']/button[@controlname='m_createBtn']
+					</item>
+					<item
+					name="ColumnLeft"
+					id="cac02aa4-c381-46a1-b5ae-6774c9379a23"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel2']/container/container/scrollbar[@controlname='hScrollBar1']/button[@accessiblename='Column left']
+					</item>
+					<item
+					name="ColumnRight"
+					id="e40c5e74-efa8-47aa-84a4-3a38849dd33f"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel2']/container/container/scrollbar[@controlname='hScrollBar1']/button[@accessiblename='Column right']
+					</item>
+					<item
+					name="LineDown"
+					id="31fc0403-5b5d-4765-9d18-666b399ed06d"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel2']/container/container/scrollbar[@controlname='vScrollBar1']/button[@accessiblename='Line down']
+					</item>
+					<item
+					name="VScrollBar1"
+					id="0c7b1680-a9c1-4624-ad46-0e4450112d79"
+					searchtimeout="30000ms"
+					capname="scrollbar"
+					addcaps="scrollbar,control,nativewindow">
+						/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel2']/container/container/scrollbar[@controlname='vScrollBar1']
+					</item>
+					<item
+					name="LineUp"
+					id="a69bd989-c1a0-423a-9a16-99b70eb98aed"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,accessible">
+						/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel2']/container/container/scrollbar[@controlname='vScrollBar1']/button[@accessiblename='Line up']
+					</item>
+					<item
+					name="Position"
+					id="ad7e6c51-e8c8-4439-ad00-90aa0eb2ed6e"
+					searchtimeout="30000ms"
+					capname="indicator"
+					addcaps="indicator,accessible">
+						/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel2']/container/container/scrollbar[@controlname='hScrollBar1']/indicator[@accessiblename='Position']
+					</item>
+					<item
+					name="HScrollBar1"
+					id="2a964d04-48c4-4c39-b9f7-86285a7aef38"
+					searchtimeout="30000ms"
+					capname="scrollbar"
+					addcaps="scrollbar,control,nativewindow">
+						/form[@controlname='LxTrendAlarmsDlg']/container[@controlname='m_splitterContainer']/container[@controlname='panel2']/container/container/scrollbar[@controlname='hScrollBar1']
+					</item>
+					<basepath>
+						/form[@controlname='LxTrendAlarmsDlg']
+					</basepath>
+					<icon>
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH2SURBVDhPrdNfSJNhFMfxR1DbCmXm1DLZTdAo
+jOgiIuwiCNMIAiUoFClmWVkJYZoZJpoIaix0tF6zjGnOmiNLykGjrEkYGFGRwVbNWrUtN5t/WkU3
+3zKieqEYZA+cy/P5HXjOEeJ/vDsDDv6lfmbPNP9pkCEpiU/jHXz0thB2VzM9UszU/VwmBtdyoSru
+V8/fgEGjmrCnkQ+uMqYfFTB5L4uJWyt536+hvWJeZOB2S+JvqRmE7FrG+5IZsyqQSufKgdEV0TiX
+x/A4PZbhZQocS5XY9fOZHMoiNJNq0xDojefdpWh8XQJDiVIOTF3tIWQ2EZAMeBuOY10cR3+jitAN
+LcG+JAI9SvzdUbztFHjOC/TFCjkQPGvE31SPp7KMF3sKMWgSuFKvIvgtdcwSg88seGMSvGoXuNsE
+DbvnyIHXx47g3l+EM28LT7LXU7UgGUtNPP6LUXh/pI6eEzxvFTglQV1hrBxwFWxjZFMmDzNWMZyu
+Za86NeJuyPagPCWFA+qFFCWmsj1hEfmqNCp7X9Lh4Hu13YSTNqi9DIe6YONhW+RvLDW7kOxw4jpU
+W+FgJ+xqhfzmL6zWdUcGdhofcNQCJSbQnYY8/Wdy6gJkVzxjSc6ZyEBu7QA7TsHWpjCba3xsKH/K
+un13WaO7RlpmsxyY1THN5qK/Am2J0IFS6yHBAAAAAElFTkSuQmCC
+					</icon>
+				</appfolder>
 			</folder>
 			<folder
 			name="ServerOptionsWindow"
