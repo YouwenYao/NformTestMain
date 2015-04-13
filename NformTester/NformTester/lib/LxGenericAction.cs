@@ -212,7 +212,7 @@ namespace NformTester.lib
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Obtain_setting_from_device.Check();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Next.Click();
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device.Finish.Click();
-				Delay.Milliseconds(5000);
+				Delay.Milliseconds(12000);
 				repo.NFormApp.AddDeviceWizard.FormAdd_Device_Results.OK.Click();
 				repo.NFormApp.ManagedDevicesWindow.FormManaged_Devices.Close.Click();	
 			

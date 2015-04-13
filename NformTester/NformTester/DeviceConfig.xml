@@ -10,11 +10,12 @@
 		<device name="SNMP_device_1" ip="10.146.83.6"/>
 		<device name="SNMP_device_2" ip="10.146.83.7"/>
 		<device name="SNMP_SearchStart" ip="10.146.83.10"/>
-		<device name="SNMP_SearchEnd" ip="10.146.83.14"/>
+		<device name="SNMP_SearchEnd" ip="10.146.83.13"/>
 		<device name="SNMP_SingleAuto_1" ip="126.4.203.10"/>
 		<device name="SNMP_SingleManual_1" ip="126.4.100.67"/>
 		<device name="SNMP_SwitchedPDU_0" ip="10.146.86.10"/>
 		<device name="SNMP_GXT_Ip_Port" ip="10.146.83.5"/>
+	    <device name="SNMP_invalid" ip="10.146.83.300"/>
 	</snmp>
 	<velocity>
 		<device name="Velocity_device_1" ip="10.146.87.10"/>
